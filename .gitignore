@@ -23,3 +23,7 @@
 *.GIF
 *.mof
 *.MOF
+
+Thumbs.db
+*.png
+*.PNG
