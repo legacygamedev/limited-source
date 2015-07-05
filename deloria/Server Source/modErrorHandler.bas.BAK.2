@@ -1,0 +1,26 @@
+Attribute VB_Name = "modErrorHandler"
+Public Sub ReportError(CurrFile As String, CurrProc As String, ErrNum As Long, ErrDesc As String)
+On Error Goto ErrorHandler
+  Dim FileNumber As Integer
+
+  FileNumber = FreeFile 'Get an available file number so we don't mess with what's already open.
+
+  Open App.Path & "\Errors.Log" For Append As #FileNumber 'Open the Error Log File.
+  Print #FileNumber, "-------------------------------"
+  Print #FileNumber, Date + Time 'Assuming the user of the client has their computer's time set correctly :)
+  Print #FileNumber, "File: " & CurrFile
+  Print #FileNumber, "Procedure: " & CurrProc
+  Print #FileNumber, "Error #" & ErrNum
+  Print #FileNumber, "Description: " & ErrDesc
+  Print #FileNumber, ""
+  Close #FileNumber
+
+  'Now we notify the user that there has been an error with a message box.
+  MsgBox "INSERT MESSAGE HERE (1)" & vbCrLf & "File Name: " & CurrFile & vbCrLf & "Current Procedure: " & CurrProc & vbCrLf & "Error Number: " & ErrNum & vbCrLf & "Description: " & ErrDesc, vbExclamation, "Error While Executing MagiKnights!"
+ErrorHandlerEnd:
+  End 'Exit the application.
+ErrorHandler:
+  'If there was an error above, then we could not log the data. Inform the user.
+  MsgBox "There was an error while trying to write a previous error to disk. Please send the following information to YourName@YourDomain." & vbCrLf & "Received Error: (" & Err.Number & ") " & Err.Description & vbCrLf & "Originally attempted to log the following error information:" & vbCrLf & "File Name: " & CurrFile & vbCrLf & "Current Procedure: " & CurrProc & vbCrLf & "Error Number: " & ErrNum & vbCrLf & "Description: " & ErrDesc, vbExclamation, "Error While Executing MagiKnights!"
+  Resume ErrorHandlerEnd
+End Sub

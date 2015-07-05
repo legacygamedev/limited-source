@@ -1,0 +1,34 @@
+*Features*
+-Quest Editor
+-Item Scripting
+-Optional MultiServer
+-Player Descriptions
+-Optional Word Filter
+-Optional GameClock
+-Name and Class on In-Game
+-Server Notes
+-Player Editor (Server Side)
+-Emoticon Editor (Server Side)
+-MOTD Editor (Server Side)
+-Account Editor (Server Side)
+-User Panel if Access is 0
+--Can Edit Text on:
+	Main Menu
+-Credits Page larger with a seprate link for TORPGE Credits
+-Optional Name Hover when mouse comes
+-Rarity System
+-Press TAB to see item names
+-Poison/Subtract HP Tile
+-Optional Auto Updater/Patcher
+
+*Fixes*
+-Lag after first login
+-Trading Bug
+-PM Someone Offline
+-Party EXP
+-Player Notes
+-All buttons on server working
+-Commas in EXP to make easier to read
+-Reload Quests in server menu
+-FPS Lock lifted, runs faster
+-Any level can attack any level, no more above level 10

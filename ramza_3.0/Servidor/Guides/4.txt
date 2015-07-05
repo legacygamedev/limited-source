@@ -1,0 +1,9 @@
+Si quieres que tu servidor sea popular continua leyendo esto.
+
+Lo primero que tienes que asegurarte es que el server permanezca abierto! Te convendria tener una maquina solo para el servidor del juego, abierto las 24 hs todos los dias y una buena coneccion de internet.
+
+Otra cosa que tendras que tener en cuenta es el IP del servidor, si tienes un ip cambiable tendras que contratar un servidor dedicado o usar un programa tipo no-ip para que te mantenga una sola ip siemre!
+
+Si estas usando un servidor asegurate de que los puertos para que la gente se conecte al juego esten abiertos.
+
+Un buen nombre para el juego, trata de no usar la palabra "Online" o "World" que es lo que hace todo el mundo. Elije un nombre que sea atractivo para la gente!

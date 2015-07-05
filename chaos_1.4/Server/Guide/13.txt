@@ -1,0 +1,13 @@
+- c. Arrow Editor
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Requirements ::
+The arrow editor is reached by typing "/editarrow" or "/arroweditor" by a person with developer access or higher.
+
+
+:: The basics ::
+There are no basics of the arrow editor, it's as basic as it can get. All you do is define the arrow name and the sprite of the arrow. That's it and it's very easy to do. To use an arrow, you need to make a new item with a type "bow".
+
+You might be able to tell that I'm bored writing this guide, so I won't go ever the top with simple things.

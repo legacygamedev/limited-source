@@ -1,0 +1,116 @@
+- a. Map Editor
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Requirements ::
+The map editor is reached by typing "/mapeditor" or "/editmap" by a person with mapper access or higher.
+
+
+:: The basics ::
+There are four types of things you can do to a map with the map editor. They are:
+
+Tile Mapping
+Attributes
+Lighting
+Map Properties
+
+
+:: Tile Mapping ::
+This is the main piece of mapping and is the only fully visible part. The art of mapping is arranging tiles from a tile set into an organized collection to form a map. All you have to do is make sure you have tiles option selected (It's the picture to the far right with three layers (as of Diamond)), choose the layer, click on a section of the map editor tile display, and then click on the main screen.
+
+After clicking on the tiles option, you should get a bunch of options for layers. There are four basic types of layers.
+
+
+Ground - The one on the bottom of the deck. The transparent color does not act transparent for this layer (it's the only one that does that). This is used solely for floor tiles like grass and pavement.
+
+Mask - The next one up, but it still occurs under the player. However, the transparent color acts transparent. This is used for things like tree stumps and other uneven tiles without a grass background.
+
+Fringe - This layer is on top of the player. Transparent color acts as a transparent area. This is used for things like bridges and trees.
+
+Animation - This is a special layer that is combines with some of the above. All this does is make the picture blink on and off. Thus, it can create a movement effect (alternating between two frames). Used for things like clocks and fires.
+
+
+In the map editor, multiple types of these basic types are used. An example is "Fringe 2 Anim", which is just a second fringe layer (on top of the first) that blinks on and off.
+
+Now that you have selected a layer, you need to pick the tile to use. All the tile sheets are loaded onto the map editor for you to use. You can scroll down through them by clicking on the down and up arrows and you can change the tile set by clicking on the left and right arrows. Just click on the tile you want and a red box should surround it. Now, just find the location on the main game you want to place it at and then click on the screen. You have just placed a tile! Also, note the fact that you can select multiple tiles by holding the shift button.
+
+
+:: Attributes ::
+Attributes are VERY important in Elysium. Normally, a player can move without restriction. However, the attributes create the special tiles. All you have to do is click on the image with the flag (to specify the attribute part), choose an attribute, fill out the required information (if it is required for your tile), and then click on the game screen to place it. Here are the attributes you can use:
+
+
+Blocked - The basic, basic tile. It is used all the time and prevents anything from visiting the tile (that includes players, NPCs, and pets). However, you can touch a blocked tile if you are warped on one.
+
+Warp - You need to enter the map and coordinates to warp the player to. When they touch this tile, they are warped.
+
+Item - Sets a respawn point for an item. You can specify the amount and they respawn after an amount of time.
+
+NPC Avoid - Prevents a NPC from visiting the tile. Players and pets can still walk on it.
+
+Key - Requires a key (it's an item type) to be used to unblock the tile for a few seconds.
+
+Key Open - Opens the selected tile (specified) by unblocking it and removing the mask layer (to make it look open) for a few seconds.
+
+Heal - Gives the player who steps on it HP.
+
+Kill - Kills the player if they step on it.
+
+Play Sound - Plays the selected sound when stepped on.
+
+Scripted - Calls a part of the script. See "SadScript".
+
+Class Change - Changes the player's class when stepped on.
+
+Notice - A notice is something that when read, it just adds the text to the text box.
+
+Door - Used for navigating houses without keys.
+
+Sign - This creates a sign that when read, comes up in a little window reading off the lines you specified.
+
+Sprite Change - Changes the player's sprite when they step on it.
+
+Shop - Opens up a shop when stepped on. This is the only way to open a shop.
+
+Class Block - Blocks certain classes of players from stepping on it.
+
+Arena - When used in a safe zone, you are free to attack other players when both of you are on an arena tile (and no penalty). If a player is killed, they are just warped to the specified location (with full health).
+
+
+:: Lighting ::
+This is used for special night effects only. When you click on the light bulb button, it comes up with the 6th tile set. With the blue circle with grey surrounding, you can make cool lighting effects. Make sure night is turned on too (click the night screen).
+
+Now, lighting works just like tiling. Except, this time, there are no layers and instead of adding to the map, we are subtracting from it. The gray in the middle nullifies the dark effect, while the dark blue keeps it the same. So, by using a combination, we can achieve a balance. Use lighting to surround things like fire with some light areas to make it look realistic. That's all!
+
+
+:: Properties ::
+This sets the, well, properties of the map. You can set the name, the music, the NPCs, and many more things from this screen. You open up the properties window by clicking on the picture of the gear box thingy.
+
+You'll start on the tab with all of the stuff about the map. Typing in the name is obvious and you can choose the music too. The "Boot Map" section is where the player is warped if they die on this map. "Map Morality" sets the attacking standards. "Safe Zone" prevents PvP combat, "None" allows everything (with a PK penalty), and "No Penalty" is like none but free killing. The PK Penalty is just a red name and allowing people to avenge the other's death by killing you without penalty either.
+
+Now, the other tab is for NPCs. Simply, just click on the drop menu to choose the NPC you want to use for that slot. Normally, they randomly spawn within the boundaries. However, you can now set their spawn location with the spawn spot thing. Click on the spawn button for the NPC you want to set the point for and then click on the map to set the point. You can just click the button again when it asks for you to click on the screen to clear the spawn stuff. The "copy" button does as it sounds. It just copies the data from the above slot into the selected slot.
+
+Hit "Okay" to finalize everything!
+
+
+:: Other features ::
+There are some other things you can do with the map editor. Here goes:
+
+
+Save (floppy disk) - Saves the map after you answer the prompt.
+
+Exit (door with arrow) - Discards the changes and exits the editor.
+
+Minimize (down arrow) - Minimizes the map editor.
+
+Eyedropper - Is supposed to find the tile in the set from a selected tile on the map. I'm not sure it works.
+
+Paint (paint bucket) - Fills the map with the selected tile and layer.
+
+Clear (trash can) - Clears the map.
+
+Screenshot (camera) - Just makes the players and NPCs invisible for screenshot purposes (doesn't take it, just sets it up).
+
+Grid - Enables/disables the grids on the map (only for the editor).
+
+Night (computer with night scene) - Clicking this enables/disables night for the map editor only.

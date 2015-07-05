@@ -1,0 +1,12 @@
+[History]
+B0=Server/modNPCSpawn/SpawnAttributeNpc
+B1=Server/modServerTCP/HandleData
+B2=Server/clsCommands/BattleMsg
+B3=Server/clsCommands/SendOnlineList
+B4=Server/modServerTCP/SendOnlineList
+B5=Server/modGameLogic/PlayerMove
+B6=Server/modTypes/ClearItem
+B7=Server/modServerTCP/SendEditItemTo
+B8=Server/modServerTCP/SendUpdateItemTo
+B9=Server/modServerTCP/SendUpdateItemToAll
+B10=Server/modGeneral/InitServer

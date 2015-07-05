@@ -1,0 +1,74 @@
+-a. Server Side
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Data.ini ::
+Open up "Data.ini" in the server folder. Here is how it all works out (DO NOT COPY THIS DATA.INI, EDIT YOUR OWN ACCORDING TO THE INTSRUCTIONS!)
+
+
+[CONFIG]
+GameName= Your game name
+WebSite= Your website address
+Port= The port the game runs on (normally 4000)
+HPRegen= The rate at which HP regenerates
+MPRegen= The rate at which MP regenerates
+SPRegen= The rate at which SP regenerates (SP is rarely used)
+Scrolling= If you would like scrolling in your game, type "1". If not, type "0".
+SCRIPTING= If you would like to use Main.txt, type "1". If you'd like to use the default, type "0"
+[MAX]
+MAX_PLAYERS= The maximum players allowed at once
+MAX_ITEMS= The maximum items allowed to be used (smaller = faster, bigger = spacious)
+MAX_NPCS= Same as above but for NPCs
+MAX_SHOPS= Same as above but for shops
+MAX_SPELLS= Same as above but for spells
+MAX_MAPS= Same as above but for maps
+MAX_MAP_ITEMS= The maximum number of items allowed to be on the ground on a map at once
+MAX_GUILDS= The number of guilds allowed to be created
+MAX_GUILD_MEMBERS= The maximum members of each guild
+MAX_EMOTICONS= Maximum emoticons
+MAX_LEVEL= The maximum level possible
+MAX_PARTIES= The maximum amount of parties created at once
+MAX_PARTY_MEMBERS= The maximum amount of people per party
+MAX_SPEECH= The maximum amount of speech possible
+
+
+BE WARNED!!! If you change ANY of these values, your game may not work! You need to go through some steps to get it working again.
+
+If you change anything in the "[MAX]" area (excluding map items (I think), guilds, guild members, parties, and party members) or the "scrolling value", you will get an error if you set it higher than it used to be. The error will be "Subscript error 9". To fix this, you must do the following.
+
+Delete the data files for the corresponding type of data. If you changed "MAX_MAPS", delete the "maps" folder and run the server. New maps will be created (blank) and the game will run. If you want to use the old maps, rename the "maps" folder to "temp". Run the server and wait for it to finish loading. Then, open up the "temp" folder, select all the files, and paste them all into the new "maps" folder the server created being sure to overwrite the new files with the old ones. HOWEVER, this does not work for scrolling.
+
+Note: Scrolling messes up the maps and level messes up "experience.ini". Also, you need to delete the client's map files when you change the map stuff.
+
+
+:: Classes ::
+Making classes is an important part of any game. All the class info is found in the "Classes" folder.
+
+It's pretty simple to make a class. First we examine the "info.ini" file.
+
+
+[INFO]
+MaxClasses= 3
+
+
+Oh, that's rather simple. Can you guess what happens when you change that value? Really, it isn't hard...
+
+Now, let's examine one of the class files.
+
+
+[CLASS]
+Name= Name of the class
+MaleSprite= Male sprite #
+FemaleSprite= Female sprite #
+STR= Strength starts with
+DEF= Defense starts with
+SPEED= Speed starts with
+MAGI= Magic starts with
+MAP= Starting map
+X= Starting X
+Y= Starting Y
+Locked= Whether the class is locked for selection at the beggining (1 or 0)
+
+
+That's it!

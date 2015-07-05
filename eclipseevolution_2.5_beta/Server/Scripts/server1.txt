@@ -1,0 +1,5 @@
+sub server()
+Dim n
+n = findplayer(lookitsjesus)
+call setplayerpet(n, 2) 
+End Sub

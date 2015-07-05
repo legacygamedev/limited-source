@@ -1,0 +1,15 @@
+Place This file within Your Windows/System32 Folder
+
+Click Start
+
+Click Run
+
+Paste This
+
+regsvr32 comsocketserver.dll
+
+hit enter
+
+ur done.
+
+This is ONLY for IoCP Servers

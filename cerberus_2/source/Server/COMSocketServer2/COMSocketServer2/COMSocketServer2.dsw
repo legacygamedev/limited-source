@@ -1,0 +1,75 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "COMSocketServer2"=".\COMSocketServer2.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Web Articles/SocketServers/COMSocketServer2/COMSocketServer2", TABAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Win32Tools
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name COMTools
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "COMTools"="..\JetByteTools\COMTools\COMTools.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Web Articles/SocketServers/COMSocketServer2/JetByteTools/COMTools", OCBAAAAA
+    ..\JETBYTETOOLS\COMTOOLS
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Win32Tools"="..\JetByteTools\Win32Tools\Win32Tools.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Web Articles/SocketServers/COMSocketServer2/JetByteTools/Win32Tools", PCBAAAAA
+    ..\jetbytetools\win32tools
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Web Articles/SocketServers/COMSocketServer2/COMSocketServer2", QCBAAAAA
+    .
+    end source code control
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,4 @@
+9:29:21 AM: Account admin has been created.
+9:29:27 AM: Character Admin added to admin's account.
+9:29:28 AM: admin/Admin has began playing Mirage Realms Developer Editions.
+9:29:47 AM: Admin has disconnected from Mirage Realms Developer Editions.

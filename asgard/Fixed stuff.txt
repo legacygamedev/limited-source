@@ -1,0 +1,24 @@
+Fixed stuff by Lil N00b
+
+Client side
+
+-When registering a user it goes form the Desired account username line to the confirm password not the account password, so it skips a line if you press tab.
+
+-no minimise button to minimise game screen.
+
+-The text box and the game screen run off the screen just a little bit.
+
+
+Server Side
+
+-When you minimise the server to the tray you cannot bring it back up. It just stays their.
+
+-MAX_CONDITIONS bug fixed.
+
+-The .curcondition bug fixed. (Thanks to Rafiki)
+
+-Fixed SPELL_TYPE_GIVEITEM (Thanks to Rafiki)
+
+-Fixed the error that gives you an error thinking that I can connect to the mySQL database but asgard dosnt work off mySQL yet :P
+
+-[Now you can compile the Server to make the .EXE] <- not a bug but im telling you that you can at least compile the server.

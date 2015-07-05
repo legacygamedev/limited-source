@@ -1,0 +1,143 @@
+                                                                     Bug Fixes
+
+-Server Side
+Next Release:
++ Some buttons didn't work very well but they do now.
+2005-06-21:
++ Arrows Fixed, you can't kill everything anymore, now it is dependent on your PK level and also if the NPC is frienly or not and what board you are on.
++ HP Bar is now working just fine.
++ The Icons is now changed.
+2005-05-25:
++ InGame Bars was out of range, so they looks good now.
++ Shop Bug fixed: Minor bug of not being able to buy items past the 6 slot.
+
+
+-Client Side-
+Next Release:
++ Enemy HP Bar is now fixed, it was out of range before.
++ You can now equip a item without getting the stats on the ingame gui out of range.
++ All Stat names is now changed.
++ When the experience in the experience bar is more then half the text disappeared before, but you can now see the values all the time.
++ The Experience Bar isn't out of range anymore when it is full.
++ Run Time Error when player dies is fixed.
++ You can now kill NPC's with arrows.
++ You can't kill Firendly NPC's now with arrows.
+2005-06-21:
++ PKLEVEL bug is now fixed.
++ You can now login after a account is created and you do not need to exit it before you login.
++ The Client no longer crash when you press the change guild access button.
++ Client no longer crashes while you are attacking NPC's with spells.
++ Option Menu is now updated when changes is made.
++ Error when new code is added is removed in the server.
++ When a spell was selected and the player used the arrow keys to move up and down the spell changed. Now it keeps the last activated spell.
++ Added a Close button on the 'Create Guild'. And I changed the color on the buttons.
++ The Icons is now changed.
++ Fixed the Equipment Menu. Now it has: Armor, Weapon, Sword and Helmet, and a nice sprite.
+
+Added
+
+-Server Side-
+Next Release:
++ Change character size from the server: 32*32 and 32*64
++ Paperdoll is now working, you can change to it from the server at the same place as the character sizes. This means that the equipped items will be seen on the player. And the item screen in EditItem is smaller if it's paperdoll and larger if it's normal items.
++ You can now change the level to be pked.
++ Moved the PK Level options to a new frame.
++ You can now change the party level range from the server.
++ There's now a Reboot Program that you can run when your server is up. It checks so your server is running, so if your server had a run time error so nobody could login to your game, then the reboot program will restart your server. This will help you to have your server online all the time, without being afraid the server will shutdown.
++ Change MOTD is moved into a Frame.
++ Help about Paperdolling added to the servers Help form.
+2005-06-21:
++ Load Arrows added button added.
++ You can now Save: Classes, Items, Shops, Spells, NPCS, Maps, Logs and Arrows from the server.
++ Able to change minimum damage for players.
++ Able to change minimum damage for enemies.
++ Able to change exp taken away from player when killed by a player.
++ Able to change exp taken away from player when killed by enemy.
++ Mass Save button added.
++ You can now change the HPRegen, MPRegen, SPRegen and HPRegenSpeed, MPRegenSpeed, SPRegenSpeed from the Server.
++ Open a types link from the server.
++ Bug fixes list (run time errors). There's a button to open the best error list out there today.
++ Open Guides by writing the Guide number.
++ Open Classes by writing the class number.
++ Random Damage for players and enemies, <yourdamage> +1 or -1. So if you have 8 damage, you will hit with, 7 or 9. Just make more sence since the enemy can block some hits.
++ You can now write and save ntoes in the server.exe. You can even choose different catagories to make sure you don't forget about anything. Keep your own small diary hidden from the players.
++ Fixed the Account, so you can now open any account name from server.exe. You can also press a button called: Admin Account, which will open a account with the name 'Admin'.
++ The max PK Level is now 10.000 and not 1000.
++ Added one more button to check your IP.
++ Added a frame called 'Files' in the 'Control Panel', with some buttons to open .txt and .ini.
++ Added a new buttong to Edit MOTD.
++ Changed the places on all the frames in the 'Control Panel'.
++ Open Account: Write a Account name and the file will open up.
++ Added 1 more link to check your IP. And you can now see the Link URL.
+2005-05-25:
++ Added 'Documents' which includes:
+->All .ini and .txt files from the Server Folder so you can open them and edit them from the server.
+->All Vars from the Data.ini is now showed here too, with a button to change them.
+->Admin Account, fast way to open your account.
+->Reload: Main, Classes, Maps, Items, NPCS, Shops, Spells.
++ Control Panel is changed with some new features such as:
+->Changing the PK Level, so you can now write a number and change the PK Level to 2 if you like to. "This was to hard to do.
+It took me more then 2 hours, and you can't write anything like 'sdgsdgs' or '0' just numbers between 1-1000. =/ Could fix it if I knew
+how to make a string into a integer.
+->Write the MOTD.
++ Stat names changed to:
+->Strength
+->Defence
+->Wisdom
+->Agility
++ Change the MOTD in the Control Panel by writing the MOTD, and choose between buttons:
+->Save
+->Default
+->Clear
+
+
+-Client Side-
+Next Release:
++ You can now see the Quest Number in the Scripted TIle Attribute
++ Player Name and Guild Name moved correct above the player.
++ HP Bar is moved below the char instead of above.
+2005-06-21:
++ Change scrolling, on or off.
++ InGame GUI is fixed.
++ There is now 50% on dropping a item when killed by a enemy or player. So you don't drop all items now, well you could if you have bad luck.
++ You can now change the InentorySlot pictures by changing 'InventorySlot.gif' in the GUI folder.
++ Bug fixes list (run time errors). There's a button in the user panel to open the best error list out there today.
++ You can now move all windows and the Mainmenu shows up in the Startmenu on your computer.
++ Chat window is now moveable.
++ F2 - Uses a healing potion if you got one in your inventory
++ F3 - Uses a mana potion if you got one in your inventory.
++ All Graphic files in the GFX folder is changed, and I added a lot new items, sprites and some enourmos tile sets (including RMXP best tiles).
++ User Panel added, perss F2 ingame.
++ Edit Emoticon added to Admin Panel, so you can now create your own Emoticons.
++ Edit MOTD added to Admin Panel, now you can change your Welcome Message there.
++ You can now change the GFX on the Inventory Arrow Up and Down.
++ Stamina is now decreasing when you are running.
++ Server is now running faster due to less RAM Requirement.
++ Edit Rain added to Admin Panel, so you can now choose weather there.
++ Edit Arrow added to Admin Panel, so you can now create your arrows there.
++ Options Frame added to Admin Panel, which include buttons as 'Check FPS' and 'Refresh'.
+2005-05-25:
++ All old GUI's is changed and a new 'CharacterSelect' and 'NewCharacter' window, were you can see
+the stats on the player.
++ InGame GUI is changed, and added some more stats.
++ Server Status on the MainMenu
+
+Other
+Next Release:
++ Organized names on objects in the server.
++ Some small bugs fixed.
++ Options in Server moved to different places.
++ Game folder changed name to Client, because all the bug fixes is written with Client so I don't want to make people confused.
+2005-06-21:
++ Fixed some stat names in the Client and Server.
++ You can now change the background on almost all menus, even the menus ingame such as inventroy, equipment etc..
++ www.ramzaengine.com.ar is now the new Offical website.
++ All buttons is organized so there is no gaps or anything between them.
++ You can't write any symbols like: å, ä, ö
++ The Run Time Error list is strongly updated with many new fixes: 
+http://www.ramzaengine.com.ar 
++ Removed one class from the Server.
++ Fixed the Help text in the server program so it's now for Ramza engine.
++ Also added the feature list in the Help section.
++ Buttons in the server is now in order.
++ Some other things was fixed, can't exactly remember what. But it's a lot more then whats written above.

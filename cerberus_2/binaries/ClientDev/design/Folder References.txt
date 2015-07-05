@@ -1,0 +1,9 @@
+The folders in this 'Design' folder relate to the Main Menu backgrounds as follow;
+
+  1: Main Menu Background
+  2: Login Background
+  3: New Account Background
+  4: Delete Account Background
+  5: Credits Background
+  6: Player Character Background
+  7: New Character Background

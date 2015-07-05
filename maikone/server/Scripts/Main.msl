@@ -1,0 +1,47 @@
+' Maikone Engine Script
+'==========================================================================================
+  
+'///////////////////////////////////////////////////////////////////////////////  
+Sub JoinGame(Index)
+'//////////////////////////////////////////////////////////////////////////////
+
+Dim GameName
+Dim MOTD
+    
+    GameName = GetVar("System\Config\Data.ini", "GAME", "Name")
+    MOTD = GetVar("System\Config\MOTD.ini", "MOTD", "Msg")
+    
+    ' Message sent when player joins the game
+    If GetPlayerAccess(Index) <= ADMIN_MONITOR Then
+        Call GlobalMsg(GetPlayerName(Index) & " has joined " & GameName & ".", 15)
+    Else
+        Call GlobalMsg(GetPlayerName(Index) & " has joined " & GameName & ".", 14)
+    End If
+    
+    ' Welcome message
+    Call PlayerMsg(Index, "Welcome " & GetPlayerName(Index) & ".", 15)
+    
+    ' Send MOTD
+    If Trim(MOTD) <> "" Then
+        Call PlayerMsg(Index, "MOTD: " & MOTD, 11)
+    End If
+
+End Sub
+
+'///////////////////////////////////////////////////////////////////////////////
+Sub LeftGame(Index)
+'//////////////////////////////////////////////////////////////////////////////
+    
+    ' Message sent when player leaves the game
+    If GetPlayerAccess <= ADMIN_MONITOR Then
+        Call GlobalMsg(GetPlayerName(Index) & " has left the game.", 15)
+    Else
+        Call GlobalMsg(GetPlayerName(Index) & " has left the game.", 14)
+    End If
+
+End Sub
+
+
+
+
+

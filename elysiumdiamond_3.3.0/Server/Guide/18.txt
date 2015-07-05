@@ -1,0 +1,38 @@
+- g. Speech Editor
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Requirements ::
+The speech editor is reached by typing "/editspeech" or "/speecheditor" by a person with developer access or higher.
+
+
+:: The basics ::
+This is my favorite editor. Why? Because I made it.
+
+The only thing really basic about this is the name. You write a name for the speech. This isn't shown in game and is only visible to other developers editing the speech.
+
+
+:: The slider ::
+That scroll bar near the top specifies the section of the speech. Naturally, the speech normally starts at section 0. By scrolling up and down this slider, you can extend the speech and link to other sections.
+
+
+:: Section values ::
+We can some simple stuff, but I feel like I need to explain it all (as I did make the thing and it is new).
+
+
+"Exit?" - Check this box if you want the speech to exit the instant that this section is reached. This is only used if you'd like to use a script and then quit right away.
+
+"Script?" - Just like scripted tiles, it calls a sub in main.txt with the number you specify that is then used in a case.
+
+The text area - You just write what you want to be said here.
+
+"Said by" - By choosing the "NPC" option, you display the NPC's sprite next to the speech. By selecting the "Player" option, you display the player's own sprite next to the speech.
+
+"Responable?" - If checked, the use of responces is enabled.
+
+
+:: Responces ::
+You have a maximum of three responces. It's simple to make a responce. Just write the text, specify a section of the script to go to, and check if you want it to exit or not. If you make it exit, clicking the responce will instantly quit and the script on the other section will not be called.
+
+To choose the responces to use, just select the option above the LAST responce to use. By clicking above the second one, you are saying that only the first and second responce will be avaliable.

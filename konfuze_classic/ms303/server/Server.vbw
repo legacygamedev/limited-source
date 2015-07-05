@@ -1,0 +1,11 @@
+frmServer = 59, 52, 796, 638, C, 22, 22, 759, 610, C
+modDatabase = -10, -11, 713, 563, 
+modTypes = -2, 10, 810, 541, 
+modGameLogic = 1, 58, 724, 632, 
+modGeneral = 10, 58, 733, 632, 
+modText = 22, 22, 834, 553, C
+modServerTCP = -80, 99, 732, 630, 
+frmLoad = 163, 241, 882, 815, C, 425, 162, 1144, 736, C
+modSysTray = 238, 147, 741, 723, C
+INIread = 0, 0, 0, 0, C
+INIwrite = 0, 0, 0, 0, C

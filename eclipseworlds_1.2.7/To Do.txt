@@ -1,0 +1,18 @@
+- Add XW and Eclipse compatibility.
+- Add a screenshot method.
+- Add proper multiple characters. Just need to add ui part, the server already has it built into the architecture.
+- Add an arrow system for projectile weapons.
+- Add tutorial system.
+- Add sending of server constants to client EO 3.0.
+- Finish TODO commented lines.
+- Add a access editor. Something that allows you to customize what each access level can do. This will require a huge amount of work, because of all the security checks in the editors.
+- Add instanced map support.
+- Add name for rarity/access in editors.
+- Add chat channels (enter with prefix will change chat channel or toggling manually via drop down box).
+
+
+
+- For quest skill adjustment feature
+      - Adjust stat points.
+      - Adjust skill levels
+      - Adjust skill exp

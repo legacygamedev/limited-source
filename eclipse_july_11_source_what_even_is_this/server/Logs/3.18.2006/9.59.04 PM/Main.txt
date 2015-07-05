@@ -1,0 +1,27 @@
+
+Received connection from 127.0.0.1.
+mero has logged in from 127.0.0.1.
+mero/TheYellowMole has began playing D-Bugged.
+(global) TheYellowMole: At editnpc...1
+(global) TheYellowMole: At npceditorok...3
+(global) TheYellowMole: At sendsavenpc...3
+TheYellowMole has disconnected from D-Bugged.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+mero has logged in from 127.0.0.1.
+mero/TheYellowMole has began playing D-Bugged.
+(global) TheYellowMole: At editnpc...1
+(global) TheYellowMole: At npceditorok...4
+TheYellowMole has disconnected from D-Bugged.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+mero has logged in from 127.0.0.1.
+mero/TheYellowMole has began playing D-Bugged.
+(global) TheYellowMole: At editnpc...1
+(global) TheYellowMole: At npceditorok...3
+(global) TheYellowMole: At sendsavenpc...3
+TheYellowMole has disconnected from D-Bugged.
+Connection from 127.0.0.1 has been terminated.
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!

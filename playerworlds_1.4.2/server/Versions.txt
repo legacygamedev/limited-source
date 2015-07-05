@@ -1,0 +1,283 @@
+v1.4
+001. CHANGED Server down message now shows the value set in Data.ini by "Website = "
+002. ADDED Ability to now make shops require 2 items in exchange for 1
+003. CHANGED Banlist is now converted to an Access DataBase. This allows the use of the /delban command as well as bans by HDSN and IP address
+004. FIXED Spell GFX have been optimized
+005. FIXED HDD bans can no longer be bypassed
+006. ADDED Visual Inventory
+007. ADDED Warning message. This will send a message to a specified player which will pop-up a message box with the specified text (for warnings and messages) for all admin access levels. Useage :
+"#<playername> <message>
+008. CHANGED  NPC hit messages starting with a vowel now say "You hit AN ..." instead of "You hit A ..." (minor annoyance)
+009. CHANGED  "You see a <item> message (same as #008) (currency items will say "You see <ammount> <iten name>")
+010. CHANGED  Damage done is now randomized. Players will now hit for 90% to 100% of the possible damage they can do.
+011. CHANGED When an NPC is standing on an item, targeting the NPC will now take precedence over the item (which means that you can now click the NPC instead of the item)
+012. ADDED support for map scripts 
+013. New Script subs (for use with map scripts) OnScriptedTile, JoinMap, LeaveMap
+014. FIXED Duping Bug
+015. Added several new scripting functions such as getplayerx(player), getplayery(player), call OpenBrowser(player,URL), GetPlayerSprite(player), SetPlayerSprite(player), GetPlayerMana(player), SetPlayerMana       (player), WarpPlayer(player,MapNumber,X,Y,GetPlayerGuild(player), SetPlayerGuild(player), GetPlayerGuildAccess(player), SetPlayerGuildAccess(player),GetplayerSTR(player),GetPlayerDEF,Several others 
+PlaySound(player,Filename)**
+**Sound File must be a .wav file in the client/SFX folder .... do NOT include the extension -- example : call PlaySound(Player,Success) --- NOT call PlaySound(Player,Succes.wav)
+
+016. FIXED Running will not be possible after losing SP -- Players will lose 1 SP per step as they run.
+017. Various bug fixes
+018. SP now regenerates every 2.5 seconds instead of every 10
+019. ADDED in-game Class Editor
+020. ADDED in-game Player Stat Editor
+021. ADDED Message Customization. Some of the messages can now be customized by opening msg.pw with a text editor.
+022. FIXED Options menu should now work properly
+023. FIXED Ban system
+024. ADDED Level requirement option for all item types.
+025. ADDED Minimum MAGI requirement option for all spell types.
+026. CHANGED The MP used setting was previously only accessible for HP, MP, and SP altering spells. I moved this scrollbar out and now ALL spell types have a "MP Used" setting.  
+027. ADDED Support for EXTENSIVE NPC Chat scripts. Almost unlimited scripting capabilities.
+028. ADDED Client-side Script Designer* 
+
+******************************NOTE***********************************
+This is only a prototype. Due to the difficulty of reloading Scripts back into the editor,  Script creation is possible but the editing of currently existing Scripts is not AT THIS TIME. Scripts are saved on the Client-side and need to be moved to the Server to be installed (without reboot). This was done for several reasons, most important being the high volume of network traffic that would be created. I also left it so that ANYONE is able to create an NPC script and then submit it to the server owner for approval and installation, rather than just limiting it to a specific admin level. After all, it is stored client-side and is not useable until installed on the server.
+***********************************************************************
+
+
+11/6/03 v1.3
+001 FIXED several bugs, minor and Major including /ban .
+002 CHANGED max item pic in item editor from 255 to 1000
+003 CHANGED max npc pic in npc editor from 255 to 1000
+004 CHANGED format in banned.txt. It now displays in the following format :
+********************************************************************************
+account name/character name -- Banned by Admin name
+Hard Drive Serial information
+*.*.*.* (full IP address)
+********************************************************************************
+This new format is to provide for better management until I swap over to a database.
+005 CHANGED Logs (admin and player) now display date and time of each event logged instead of time only (very useful for those of you that keep backlogs )
+006 ADDED screenshots now have an option of file save formats (.bmp .gif .jpg .png)
+007 CHANGED spell GFX have been causing the screen to freeze when blitting out the animations giving the appearance of temporary 'lag'.
+         This is completely client-side and I have added the option for server owners to globally turn off and on the spell animations. I have also set the client so that 
+          If there are no spell GFX included in the client's GFX folder, then creating spell animations will not be possible.
+         I will NOT be providing the spell GFX commands or the basic spell GFX files in the general release. I *MIGHT* distribute them if there is a high enough demand, however.
+
+
+8/4/03 Player Worlds v 1.3
+001 ADDED Sign Editor
+002 CHANGED GUI
+003 CHANGED Maximum map items from 20 to 255
+004 ADDED Server List functionality is now optional. Options for how the page for your server is editable in the MOTD.ini file (self explanatory)
+
+
+7/18/03- Player Worlds version 1.3
+001 ADDED   Admin panel now opens and closes with F1
+002. ADDED   New map Report form. Clicking the mapreport button or using the /mapreport command will bring up a screen which lists all maps and their names.
+003. Added  Double clicking a map in the mapreport or highlighting and pressing the WARP button will now warp to to the specified map.
+
+7/1/03- Player Worlds version 1.2
+001. ADED   Screenshots can now be taken and stored in the "screenshots" folder (used with F12)
+002. ADDED  Spell memorization -- double-clicking a spell in the spell list sets it for use with the insert key even when spell list is closed
+
+6/6/03 - Player Worlds version 1.2
+001. ADDED    Different colors for admin access levels 
+002. ADDED    Browser function. The URL's for each button can be changed in the clients DATA.ini (plans to make buttons in browser editable)
+003. ADDED    Security features, allowing the account to be controlled at first only from the computer used to create it. More computers can be added.
+004. FIXED       Player bans now go by Hard drive ESN. 
+005. ADDED    PM Window
+006. FIXED       Music issue
+007. ADDED    Sounds
+008. ADDED    Options Menu
+009. ADDED    Guild system
+010. ADDED    New tile types : Damage, Heal (full recover) new warp type2 (plays sound on warp)
+011. ADDED    Non respawning maps
+012. ADDED    commands "/regen off" and "/regen on" which turn on and off the automatic HP and MP regeneration of the entire server
+013. ADDED    Various security features
+014. Changed    GUI
+015. ADDED     New textbox for chat which will scroll accross as longer sentences are typed, allowing players to see the entire sentence being typed (might go back to the old system)
+016. FIXED        items over 255 are now useable. These items will only spawn on some maps, but Npc's can drop them and shops can sell them
+017. CHANGED  Tileset is now 7 * 1000 instead of 7 * 255
+018. FIXED       Eliminated the server-side runtime 9 error which has been causing servers to crash due to this error
+019. ADDED    Guild/clan chat channel ( done with "@ <message>" ). This coincides with the guild system.
+020. FIXED       Multi-accounting is no longer allowed
+021. FIXED       Spell Level Requirement bug
+022. FIXED      Players can no longer commit suicide by casting spells on themselves
+023. ADDED    Level 2+ admins do not get PK status. Name always stay admin color.
+024. FIXED       HP/MP/SP increasing spells can now be cast in ALL zones
+025. ADDED    Damage tiles can be set to avoid damage if certain armor is worn
+026. FIXED       Error that prevented Level 1 admin from casting spells or being cast on in grey zone
+027. FIXED        Online list now works properly, only updating on 3 occasions :
+		1. When any player logs in
+		2. When any player logs out
+		3. When the "Who's Online" button is clicked
+028. ADDED     Double-clicking a player's name in the online list now opens the 
+	          PM window and sets the "send to" to that player, making it                                 easier to PM a player by finding their name in the list and 
+                                 double-clicking it.
+029 ADDED     	Admin panel. Automaticaly opens on client load and shows  
+		commands used according to access level (can be turned on and off with "/admin"
+030 Added	Guild Panel
+040 ADDED	Player Stat editor (for use by lvl 4+ admins)
+041 ADDED	Spell GFX section to spell editor for future use
+042 ADDED	Pics shown for worn equipment
+043 ADDED 	Pic shown for item selected in Item list
+044 ADDED	Logs now log date as well as time
+045 CHANGED	Global Chat channel --- can now be turned off and on with the commands "/global off" and "/global on" (default is currently set to off). When global chat is turned off, lvl3+ admins can give any player a "global voice" as well as take it away.
+046 ADDED	 Spell animations. They are currently using 2 GFX files to animatem 1 in full color and 1 as an inverted monochrome .bmp. This will need EXTENSIVE testing and will be released on Jerrath only until I perfect the system, so that I can release it with as few bugs as possible. If it proves to be a problem then I will have to further refine the code before releasing this feature to the general public.
+
+****Explanation of guild/clan system****
+
+1. It starts by a level 3+ admin typing "/setguild" and filling in the proper fields. This will create a guild owner, guild access level 4 (the person selected)
+2. In order for a member to join a clan/guild, a guild guardian (lvl2 Guild access) must show support for that player (train them for the guild) by typing "/support <playername>". At this point the player is not a "full member" of the guild, only a trainee.
+3. Once support is shown (i suggest that all "trainees go through a short period of training, about a week or two to make it worthwhile) a guild Leader (guild access lvl 3) must type "/induct <playername". This will make the player a full member of the guild ( Guild access level 1).
+4. any promotions can be done by a guild leader or a guild owner by using the command "/guildaccess <1-4> <playername>"
+5. additional commands are as follows :
+	"/disgrace <playername>" kicks a player out of the guild/clan
+	"/quitguild" allows a player to quit a guild/clan
+	"@ <message>" sends a message to all members of that players 	       guild/clan
+That should cover it all. I plan to add more functionality at a later date.
+
+*******************************************************************************************************************
+*******************************************************************************************************************
+
+01/19/2003 - Player Worlds1.0cx4 (Experimental)
+
+Fixes/Additions:
+'****************************************************************
+'* WHEN        WHO        WHAT
+'* ----        ---        ----
+'* 01/18/2003  Shannara   Fixed "fixitem" bug. Can only fix items on shops that allow '*                           such.
+'*                        Fixed "Any Packet Anywhere" bug.
+'*                        Fixed Item N * 2 bug.
+'*01/17/2003   Kael       Fixed npc max stat bug by adding scrollbars to handle expGiven 
+'*                           and StartHP at npc creation.
+'*01/18/2003   Kael       Added scrollbar to handle MP used at Spell creation.
+'*                        Increased scrollbar for spell STR(Vital Mod) to 999
+'*                        Fixed bug that chose spell level Req based on Vital Mod rather 
+'*                           than Level Req.
+'*                                             (Spell Level now based on Level req. set '*                                                 by scrollbar.)
+'*                        Fixed invisible player bug (hopefully). Needs stress test
+'*                        Level difference for partying has been changed from 5 to 30 
+'*                            (planning to make this scriptable)
+'*
+'*                        Admins can party, attack, and be attacked by other 
+'*                           players(might take this back out. Should probably make this '*                           scriptable)
+'*                        Increased Item STR (vital mod) on scrollbar from 255 to 999
+'*                        Icreased scrollbar for npc's from 255 to 999 on STR,DEF,MAGI, 
+'*                            and SPEED
+'*01/19/2003   Kael       "Friendly" NPC's can now "talk" (used with CTRL)
+'*
+'****************************************************************
+
+
+
+11/02/2002 - Player Worlds 1.0cx3 (Experimental)
+
+Fixes/Additions:
+
+001. NOTE.     To avoid any mysterious auto-kicks of clients, all players SHOULD
+               use the 1.0cx3 client.
+002. FIXED.    (?) booting players when saving all players.
+003. FIXED.    Banlist "blank line" bug.
+004. ADDED.    /banlist (now works), this will list the fkey, ip, time, date, and
+               by whom the ban was placed.
+005. ADDED.    /delban <FKey> command. Input the fkey of the ban you wish to lift.
+               This will only work with mapper access level and above.
+006. ADDED.    A little bit of security with playermove packet (grr).
+007. ADDED.    Scripting framework. There is now a scripts subdirectory. It contains two
+               files. Main.as, and Commands.as. Currently, the 2nd file is not being used.
+               Follow the instructions in the Main.as file, under the Init sub. Any 
+               questions? Ask on the forums.
+008. ADDED.    Client automatically saves last password, encrypted.
+009. ADDED.    Ability to shutdown server. Type in /shutdown. Server Owners only.
+010. ADDED.    Ability to auto ban on all hacking attempts (use carefully).
+011. ADDED.    Ability for server owners to reboot the server. Type in
+               /reboot. Server Owners only.
+012. ADDED.    /Banip <IP address> <reason> command. Very useful in some cases.
+013. CHANGED.  Some of the way the server handles data, should speed some things up.
+014. CHANGED.  The banlist now uses a table on a database. You can now delete the
+               banlist.txt file.
+015. CHANGED.  The client version will only be shown in the credits window, while the 
+               server name will be shown in the title bar and above the GUI flood bars.
+016. CHANGED.  /ban <player> <reason> . Now, when you ban a player, you can 
+               optionally specify a reason (up to 255 characters).
+017. CHANGED.  Encryption to a true Session Encryption Wheel. Expect future changes as needed.
+018. REMOVED.  Server side Data.ini file, it has been replaced with the Main.as Script.
+
+
+
+10/25/2002 - Player Worlds 1.0cx2 (Experimental)
+
+Fixes/Additions:
+
+001. NOTE.     This is trial basis fixing, report!
+002. FIXED.    Server side classes reloading... can't do that now.
+003. FIXED.    GFX error message. It now reads properly.
+004. FIXED.    If music scroll bar on map property is over the last actual midi file
+               number, the scroll bar will revert to last number.
+005. ADDED.    ServerName variable is added to the server's Data.ini file. You will
+               need to replace the current name with the name of your server. This 
+               will show up on the caption of the client's window, once connected.
+006. ADDED.    On the client side Data.ini.... Added two variables. Maximize, and 
+               Music. If music is set to 1, it will initialize the music engine 
+               and play any music the map has, if it has one. Set to 0 if you do
+               not want the music engine to be initialized. The Maximize variable
+               set to 1, will have the main menu start out as maximized, filling
+               your whole screen. If set to 0, it will be in normal size, centered
+               on your screen.
+007. ADDED.    Now supports up to 65,000 classes (overkill)
+008. ADDED.    Class numerical variables now support up to 65,000. (This might 
+               break other features). 
+009. ADDED.    Ability to change the Start map, x, and Y values. Look in the Server's
+               Data.ini file, and just change them, restart server for it to take
+               effect.
+010. CHANGED.  Map morals have been changed. 2 new ones added, thanks to Dannicus!
+               Savage Land(Yellow Color): Similar to the None moral, 
+               only this time there are lesser death penalties. You can kill others 
+               but they will only drop 1/4 of your gold and a random item.
+               Arena(Grey Color): This allows people to PK without being considerred 
+               one. In this moral, there is no exp loss nor coins/items dropped.
+               In otherwords, there are no dying penalties.
+
+
+
+10/21/2002 - Player Worlds 1.0cx1 (Experimental)
+
+Fixes/Additions:
+
+001. FIXED.    Invisible Player Bug. Depending on the settings of your MaxPlayers and 
+               MaxMaps in the server's Data.ini, will determine if this bug will happen.
+002. FIXED.    Client crashing when there is no such midi file in directory.
+003. ADDED.    Data.INI file for Server. All of the variables can be changed whenever you 
+               like, however, they will not take effect until you restart the computer.
+               You can choose your port number you wish. Remember that the data.ini for
+               the client will need to have the new port number in there, in order to 
+               connect to your server. MaxMaps and MaxPlayers are two variables you will 
+               need to fiddle with, to get the optimal settings for your server, based on
+               your hardware.
+004. ADDED.    Port variable for client side Data.ini. Make sure this is set to the port
+               of the server you wish to connect to.
+
+
+
+10/19/2002 - Player Worlds 1.0b
+
+Fixes/Additions:
+
+001. FIXED.    Music bug. When switching maps, if both maps have the same song, the song
+               will not restart. If new map has no music, the song will end. If new map
+               has a different song, then the new song will be played. Each song will
+               loop 999 times which should be enough for any server.
+002. ADDED.    Server cosmetic changes. (GUI, Messages)
+003. ADDED.    Proper Installation setup
+004. ADDED.    Support for 5000 maps
+005. ADDED.    Support for up to 100 players
+006. CHANGED.  Music should be in Music subdirectory
+007. CHANGED.  Graphics should be in GFX subdirectory
+008. REMOVED.  Some raw protocol
+009. REMOVED.  Web stats support.       
+
+
+
+03/08/2002 - Player Worlds 1.0a
+
+Fixes/Additions:
+
+001. FIXED.    Position Modification Bug
+002. FIXED.    Credits window.
+003. ADDED.    Client data.ini file
+004. ADDED.    Versions.txt
+005. ADDED.    Enter on password field will connect to server
+006. ADDED.    Readme.txt

@@ -1,0 +1,9 @@
+Extensions:
+.scf = Single Compressed File
+.crf = Collectively ReCompressed Files
+.mcf = Multiple Compressed Files
+
+Descriptions:
+1) Single Compressed File - one file that has been compressed.
+2) Collectively ReCompressed Files- a compression containing single compressed files.
+3) Multiple Compressed Files - multiple files that have been compressed together.

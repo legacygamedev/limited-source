@@ -1,0 +1,5 @@
+<Configuration>
+	<NumExecutions>1</NumExecutions>
+	<CheckFrequency>1</CheckFrequency>
+	<ApplicationVersion>6.2.13.10</ApplicationVersion>
+</Configuration>

@@ -1,0 +1,36 @@
+A. Starting Up
+Spirea Guide v 1.0
+Written by Genusis
+
+
+:: Table of contents for this guide ::
+
+ A. Starting Up
+ B. Definitions
+ C. Game Controls
+ D. Player Access Overview
+ - a. Normal Users
+ - b. Monitor Powers
+ - c. Mapper Powers
+ - d. Developer Powers
+ - e. Creator Powers
+ E. Editing Your Game
+ - a. Map Editor
+ - b. Item Editor
+ - c. Arrow Editor
+ - d. Emoticon Editor
+ - e. NPC Editor
+ - f. Shop Editor
+ - g. Spell Editor
+ - h. Speech Editor
+ - i. Main Editor
+ F. Customizing Your Game
+ - a. Server Side
+ - b. Client Side
+ G. SadScript
+ H. Bugs and Errors!
+ I. Suggestions
+
+
+:: Intro ::
+this is just an example of how you make a guide. it must include the stuff at the top and the index to help people find what they need. you can also transfer this to s special place on the client side so they can read tutorials and stuff on how to play the game and so on.

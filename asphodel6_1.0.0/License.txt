@@ -1,0 +1,9 @@
+Asphodel6 Engine is released as-is with no guarentees of service. This project is Public Domain with modified licensing. By opening any of the folders included with this License.txt you agree to the following:
+
+1) The original owner (Asphodel Games) is to remain the advertised owner of this source. You are not allowed to claim any of the materials released with this project as your own.
+
+2) Any modifications relating to project fixes are to be posted within the www.asphodelgames.com forums under the appropriate forum.
+
+3) This project package's License.txt must be included with any and all releases of this product. You are allowed to host yourself, but include this License.txt with EVERY sub-release you may make (including products made with this engine (ie games)).
+
+Asphodel6 Engine is a product of Asphodel Games owned and operated 2009-2010 by Harold P. McCloud.

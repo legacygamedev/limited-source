@@ -1,0 +1,20 @@
+Sub LeftGame(index)
+Dim GameName
+Dim n
+
+GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+
+    ' Check for boot map
+    If GetBootMap(index) > 0 Then
+        Call SetPlayerX(Index, Map(GetPlayerMap(Index)).BootX)
+        Call SetPlayerY(Index, Map(GetPlayerMap(Index)).BootY)
+        Call SetPlayerMap(Index, Map(GetPlayerMap(Index)).BootMap)
+    End If
+          
+    ' Send a global message that he/she left
+    If GetPlayerAccess(Index) <= 1 Then
+        Call GlobalMsg(GetPlayerName(Index) & " has left " & GameName & "!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(Index) & " has left " & GameName & "!", 15)
+    End If
+End Sub

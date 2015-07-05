@@ -1,0 +1,66 @@
+A. Starting Up
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Table of contents for this guide ::
+
+ A. Starting Up
+ B. Definitions
+ C. Game Controls
+ D. Player Access Overview
+ - a. Normal Users
+ - b. Monitor Powers
+ - c. Mapper Powers
+ - d. Developer Powers
+ - e. Creator Powers
+ E. Editing Your Game
+ - a. Map Editor
+ - b. Item Editor
+ - c. Arrow Editor
+ - d. Emoticon Editor
+ - e. NPC Editor
+ - f. Shop Editor
+ - g. Spell Editor
+ - h. Speech Editor
+ - i. Main Editor
+ F. Customizing Your Game
+ - a. Server Side
+ - b. Client Side
+ G. SadScript
+ H. Bugs and Errors!
+ I. Suggestions
+
+
+:: Intro ::
+I hope you use this guide wisely! I spent at least 15 hours writing it and it still isn't done. Everything is 100% original except for the bug section. This guide is covered under the same license as Elysium Diamond (GPL). Email anything to me at pingu@splamm.com
+-- pingu
+ 
+
+:: Basics ::
+First off, I need to explain the basics. This is pingu writing this guide, no claiming as your own, okay? You will need to ask me for permission to use the following files if your engine is not based off of Elysium Diamond. This guide is written for Elysium Diamond, so it may not correspond with the current version.
+
+Elysium works in a client to server relationship. The server is in charge of keeping all the players under control with the same data and the client is in charge of displaying the gaming interface and graphics for the player. Whenever you try to do something a packet of information is sent to the server, interpreted and acted on by the server, and then new data sent from the server to the client. All that you need to know is that somebody must host the server to which all the clients connect to.
+
+Thus, there is NO server on our site. You need to host your own server and cannot simply connect to a global server. The only reason the link to the Elysium site comes on the screen is because that is the default site url. I'm glad I got that covered, because this question comes up a lot ("why is the server down?").
+
+
+:: Starting your own game (server) ::
+Okay, now we start to do something. You need to first extract the download to a folder. You should have a client and a server folder (with some readmes maybe). As explained above, Elysium comes in two pieces. We need to start the server before anything else can be done. So, go in the server folder and locate "server.exe". It should be the only one with an interesting icon, the others should be text files and (if you downloaded source) source files. The server will begin to load and the progress will be shown. It'll load 100% in multiple areas and then will finish and load up the main screen. You might be able to read this text from the start position.
+
+We got the server up, now what? It’s time to get the client side going and connect to the server. First off, go back to the server. Click on the "Control Panel" tab and in the top left corner there should be a label that says "IP". Don't click on the one that says "click here to get IP", that is for later. Write down the IP onto a scrap sheet of paper or Notepad. It might be similar to this format: 127.0.0.1 (damn that was from memory...).
+
+
+:: Starting your own game (client) ::
+Go back to the main folder and enter the client folder now. Once again, look for the exe. In this version of Elysium, it is called "Diamond.exe". It will be the name of the engine most of the time. A little loading screen will come up as it loads some important things. As soon as it's done, a main menu will appear. Cool! Before you do anything, you need to make sure you are trying to connect to your server. Click on "IP Config" and type in the IP you wrote down in the IP field. The port should stay as the default unless you purposely changed it earlier (I'd expect not, leave it as 4000). Just as a test, click on "Login" now. You won't be able to log in until you create an account, but a little server status thing in the bottom right will tell you if the server is online or offline. If it doesn't say "online", you did something wrong and will need to start this whole thing over. click on the "x" to get back to the main menu.
+
+Before you can log in, you need to create an account. Surprisingly, the "New Account" button creates a new account for you. Click on it and type in what you want your account name to be (this will NOT show up in-game, you just need it to log in) and what password you want. If the account is created successfully, you should get a little message (I'm not sure if it still works) and should be back at the main menu. Click on "login" now. If the field says "Username" or "Password", just click on it and it will automatically clear for you so you can type in your username and password. It should connect to the server and send the login information. If it takes too long, hit escape and try again.
+
+If it works, you should now be at a character selection screen. You can have up to 3 characters on one account with Elysium. Now, you need to create a new character. Click on the top list area and click on "New Account". Type in the character name and select your class and gender. Hit the okay button and you will have a new character. Click on that character and then click on "Use character". Finally, let the game begin!
+
+Now, it will take a while to load. Be patient, as big files are being passed and big graphics are being loaded. Eventually, you should find yourself alone in the starting map. Try out the basics and follow any game play tutorials the admin might have set up for new users. Hmm, admin access would come in handy now, wouldn't it?
+
+Go back to the server. It should still be running and might be in the taskbar. Open up the "Players" tab and click on your name. Note, you should not have logged out in the client. Now, click on the button that says "Set Access". You should see a slider that allows you to set the access. Set it to "4" for now. If you want a better color, experiment with the numbers 4 - 15. You now have "creator" access and are able to edit your game!
+
+
+Good luck with your game!

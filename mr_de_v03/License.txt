@@ -1,0 +1,6 @@
+By using this source, you agree to the following terms:
+1. You can not claim this code as your own.
+2. You must credit where you got the source from.
+3. You can not use any of the graphics that come with this package.
+4. You can not sell any of the code.
+5. Post all bugs at www.mirage-realms.com.

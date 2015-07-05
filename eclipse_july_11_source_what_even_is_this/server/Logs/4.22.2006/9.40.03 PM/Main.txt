@@ -1,0 +1,18 @@
+
+Received connection from 127.0.0.1.
+Received connection from 127.0.0.1.
+Connection from 127.0.0.1 has been terminated.
+Demo has logged in from 127.0.0.1.
+(global) Demo: likeomfg!
+Demo/Demo has began playing Eclipse.
+(global) Demo: likeomfg!
+(global) Demo: likeomfg!
+(global) Demo: likeomfg!
+(global) Demo: likeomfg!
+(global) Demo: likeomfg!
+(global) Demo: likeomfg!
+(global) Demo: likeomfg!
+(global) Demo: likeomfg!
+Demo has disconnected from Eclipse.
+Connection from 127.0.0.1 has been terminated.
+Chat Logs Have Been Saved!

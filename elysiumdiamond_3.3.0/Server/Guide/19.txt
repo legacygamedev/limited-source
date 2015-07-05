@@ -1,0 +1,13 @@
+- g. Main Editor
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Requirements ::
+The main editor is reached by typing "/editmain" or "/maineditor" by a person with creator access or higher.
+
+
+:: The basics ::
+This is the same as the script editor on the server. Check on the section on "SadScript" to learn how to sad script.
+
+The only really important thing to know is that you can get all the commands in the help section.

@@ -1,0 +1,20 @@
+- e. Creators
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: The basics ::
+"Look at me, I'm the owner!" That's all the creator status does. There are a few bonus commands, but nothing too amazing. Your access can be from 4 to 15 with no difference except for the color of the name. I still don't know why the colors change (as it isn't coded in) but it looks cool anyway.
+
+
+:: The commands ::
+
+/setaccess (player name) (access number) - Changes the access level of the specified player. There are some restrictions, including changing your access, changing the access of somebody with higher access, and changing somebody else's access higher than yours.
+
+/nullbanlist - Destroys the ban list and unbans everybody.
+
+/debug - Loads up the debug window so you can analyze packets the client receives.
+
+/editmain - Opens up the main.txt editor. You can code in SadScript changes with this feature.
+
+/mainbackup - I'm not sure if it works, but it should fix up main.txt from the backup.

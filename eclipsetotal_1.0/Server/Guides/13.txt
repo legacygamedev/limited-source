@@ -1,0 +1,20 @@
+Scripted NPC's
+Scripted Item's
+Scripted Spell's
+Player Housing
+Menu Music
+96 x 96 Spell Animation's
+Potions can change up to 10000 HP/MP.
+OnAttack Script runs whenever players attack.
+HotScript runs whenever a player presses delete.
+Paperdoll and Non-Paperdoll in the same version.
+Sell Item's Fixed And improved
+32 x 64 Sprite Option ( paperdolled )
+Unlearn spell button
+Elements
+Stackable Potions
+Swear Filter
+New Item Slots ( Ring, Amulet, Legs, )
+Timers
+
+Much more !

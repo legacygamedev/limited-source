@@ -1,0 +1,10 @@
+If you have a weapon equipped it gets unequipped when you close the client.
+
+Duration on items are not properly updated in item info until you leave a map.(Client).
+
+Even if you have 0 SP you can still see arrows if you're shooting with a bow.
+
+Upon Deposit/Withdraw in the bank, item durability is set to max.
+
+Arrows can sometimes go through blocked tiles.
+

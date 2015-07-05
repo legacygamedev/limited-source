@@ -1,0 +1,16 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: TestScripts.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: TestScripts						'
+' Brief: tests if the script work properly.			'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub TestScripts(Index)
+	Call PlayerMsg(Index, "The scripts are working properly.", BRIGHTGREEN)
+End Sub

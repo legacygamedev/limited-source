@@ -1,0 +1,110 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: Profile.ess						'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 31th, 2009.					'
+' Version: 1.1.1						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: ShowProfile						'
+' Brief: shows the profile of the target.			'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Target: the index number of the target.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub ShowProfile(Index, Target)
+	On Error Resume Next
+
+	Dim ElementIndex
+
+	ElementIndex = 1
+
+	If Index < 1 Or Index > MAX_PLAYERS Then
+		Exit Sub
+	End If
+
+	If Target < 0 Or Target > MAX_PLAYERS Then
+		Exit Sub
+	End If
+
+	If Target = 0 Then
+		If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+			Exit Sub
+		End If
+
+		Target = CInt(GetCharVar(Index, "Profile", "Target"))
+	Else
+		Call PutCharVar(Index, "Profile", "Target", CStr(Target))
+	End If
+
+	Call CustomMenuShow(Index, "Player Profile", "\GUI\CUSTOM\test.bmp", 1)
+
+	Call CustomMenuLabel(Index, ElementIndex, "Player : " & GetPlayerName(Target), 150, 50, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	If GetPlayerAccess(Index) > ADMIN_PLAYER Then
+		Call CustomMenuLabel(Index, ElementIndex, "Account Name: " & GetPlayerLogin(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+		ElementIndex = ElementIndex + 1
+
+		Call CustomMenuLabel(Index, ElementIndex, "IP-address: " & GetPlayerIP(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+		ElementIndex = ElementIndex + 1
+
+		Call CustomMenuLabel(Index, ElementIndex, "Character Number: " & GetPlayerCharNum(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+		ElementIndex = ElementIndex + 1
+	End If
+
+	Call CustomMenuLabel(Index, ElementIndex, "Name: " & GetPlayerName(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "Access: " & GetPlayerAccessTitle(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	If GetPlayerGuild(Index) = "" Then
+		Call CustomMenuLabel(Index, ElementIndex, "Guild: None", 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+		ElementIndex = ElementIndex + 1
+	Else
+		Call CustomMenuLabel(Index, ElementIndex, "Guild: " & GetPlayerGuild(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+		ElementIndex = ElementIndex + 1
+	End If
+
+	Call CustomMenuLabel(Index, ElementIndex, "Class: " & GetPlayerClassName(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	If GetPlayerAccess(Index) > ADMIN_PLAYER Then
+		Call CustomMenuLabel(Index, ElementIndex, "Sprite: " & GetPlayerSprite(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+		ElementIndex = ElementIndex + 1
+	End If
+
+	Call CustomMenuLabel(Index, ElementIndex, "Level: " & GetPlayerLevel(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "Experience: " & GetPlayerExp(Target) & "/" & GetPlayerNextLevel(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "PK: " & GetPlayerPK(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "HP: " & GetPlayerHP(Target) & "/" & GetPlayerMaxHP(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "MP: " & GetPlayerMP(Target) & "/" & GetPlayerMaxMP(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "SP: " & GetPlayerSP(Target) & "/" & GetPlayerMaxSP(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "Strength: " & GetPlayerSTR(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "Defence: " & GetPlayerDEF(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "Speed: " & GetPlayerSPEED(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "Magic: " & GetPlayerMAGI(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+
+	Call CustomMenuLabel(Index, ElementIndex, "Points: " & GetPlayerPOINTS(Target), 20, 100 + (ElementIndex - 1) * 20, 10, WHITE, LEFT, 400, 20)
+	ElementIndex = ElementIndex + 1
+End Sub

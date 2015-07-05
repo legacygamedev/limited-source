@@ -1,0 +1,65 @@
+First off make sure you have SadScript3:
+http://www.pscode.com/vb/scripts/ShowZip.asp?lngWId=1&lngCodeId=36716&strZipAccessCode=tp%2FS367166177
+
+Ok in the zip folder you should see DLL and Sample.
+From the DLL folder copy the clsRC4 and clsSadScript put that into your game's server folder.
+Now go into the Sample folder.
+Copy clsCommands and put that into your game's server folder.
+Good now open up your game's server project.
+Now add all 3 of those Class Modules to your project.
+Go to Project>Reference and make reference to: Mircrosoft Script Control 1.0
+Now open clsSadScript and change:
+Code:
+Public Type define
+    sVari As String
+    sValue As String
+End Type
+
+to
+Code:
+Private Type define
+    sVari As String
+    sValue As String
+End Type
+
+Now find:
+Sub InitServer()
+Add this near the top:
+Code:
+Call SetStatus("Loading scripts...")
+        Set MyScript = New clsSadScript
+        Set clsScriptCommands = New clsCommands
+        MyScript.ReadInCode App.Path & "\ScriptFile.txt", "\ScriptFile.txt", MyScript.SControl, False
+        MyScript.SControl.AddObject "ScriptHardCode", clsScriptCommands, True
+
+Note: You can change \ScriptFile.txt to whatever you want, just make sure you know this name for later.
+
+Now add this anywhere you want the script to load:
+Code:
+MyScript.ExecuteStatement "ScriptFile.txt", "SubNameHere"
+
+Now change SubNameHere to whatever sub you want it to load.
+Ok now if you want variables like player index do this:
+Code:
+MyScript.ExecuteStatement "ScriptFile.txt", "SubNameHere " & index
+
+Note the space after the SubNameHere, you will always need that.
+Now if you want more variables do:
+Code:
+MyScript.ExecuteStatement "ScriptFile.txt", "SubNameHere " & index & "," & index
+
+And so on!
+
+I almost forgot! Add this in any module at the top:
+Code:
+Option Explicit
+Global MyScript As clsSadScript
+Public clsScriptCommands As clsCommands
+
+That should be it!
+
+If you got any questions just ask!
+
+Oh yeah another thing xD For some reason SadScript doesnt support sending strings to there subs, so you can only send numbers! What I mean by that is you CANT do:
+Code:
+MyScript.ExecuteStatement "ScriptFile.txt", "SubNameHere " & "Hello"

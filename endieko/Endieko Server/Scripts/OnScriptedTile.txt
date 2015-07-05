@@ -1,0 +1,8 @@
+Sub ScriptedTile(index, Script)
+Select Case Script
+    Case 0
+        Call Flash(index, "Intro.swf")
+    Case 1
+        Call Prompt(index, "Should it be Yes or No?", 1)
+End Select
+End Sub

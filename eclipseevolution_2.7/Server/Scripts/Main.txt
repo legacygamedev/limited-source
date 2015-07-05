@@ -1,0 +1,579 @@
+' Eclipse Evolution 2.7 Scripting File
+
+' Global Variables
+Public GameName
+Public MAX_MAPS
+Public MOTD
+
+' Color Constants
+Public Const BLACK = 0
+Public Const BLUE = 1
+Public Const GREEN = 2
+Public Const CYAN = 3
+Public Const RED = 4
+Public Const MAGENTA = 5
+Public Const BROWN = 6
+Public Const GREY = 7
+Public Const DARKGREY = 8
+Public Const BRIGHTBLUE = 9
+Public Const BRIGHTGREEN = 10
+Public Const BRIGHTCYAN = 11
+Public Const BRIGHTRED = 12
+Public Const PINK = 13
+Public Const YELLOW = 14
+Public Const WHITE = 15
+
+' Admin Constants
+Public Const ADMIN_MONITER = 1
+Public Const ADMIN_MAPPER = 2
+Public Const ADMIN_DEVELOPER = 3
+Public Const ADMIN_CREATOR = 4
+
+
+' Executes when the server initially loads.
+Sub OnServerLoad()
+	GameName = GetVar("Data.ini", "CONFIG", "GameName")
+	MAX_MAPS = GetVar("Data.ini", "MAX", "MAX_MAPS")
+	MOTD = GetVar("MOTD.ini", "MOTD", "Msg")
+End Sub
+
+' Executes when the scripts are reloaded.
+Sub OnScriptReload()
+	GameName = GetVar("Data.ini", "CONFIG", "GameName")
+	MAX_MAPS = GetVar("Data.ini", "MAX", "MAX_MAPS")
+	MOTD = GetVar("MOTD.ini", "MOTD", "Msg")
+End Sub
+
+' Executes the MOTD is changed by the client.
+Sub ChangeMOTD()
+	MOTD = GetVar("MOTD.ini", "MOTD", "Msg")
+End Sub
+
+' Executes when a new character is created.
+Sub OnNewChar(Index, CharNum)
+
+End Sub
+
+' Executes every second, based on the server time.
+Sub TimedEvent(Hours, Minutes, Seconds)
+	If Minutes = 0 Then
+		If Seconds = 0 Then
+			Call AdminMsg("Don't forget to vote for Eclipse.", YELLOW)
+		End If
+	End If
+End Sub
+
+' Executes when a player presses the CONTROL key.
+Sub OnAttack(Index, Damage)
+	Dim Target
+
+	If Int(Damage) > 0 Then
+		If Int(GetPlayerTarget(Index)) > 0 Then
+			Target = GetPlayerTarget(Index)
+			Call DamagePlayer(Index, Target, Damage)
+		Else
+			Target = GetPlayerTargetNPC(Index)
+			Call DamageNPC(Index, Target, Damage)
+		End If
+	End If
+End Sub
+
+Sub OnArrowHit(Index, Damage)
+	Dim Target
+
+	If Int(Damage) > 0 Then
+		If Int(GetPlayerTarget(Index)) > 0 Then
+			Target = GetPlayerTarget(Index)
+			Call DamagePlayer(Index, Target, Damage)
+		Else
+			Target = GetPlayerTargetNPC(Index)
+			Call DamageNPC(Index, Target, Damage)
+		End If
+	End If
+End Sub
+
+Sub PlayerHit(Index, NPCNum, Damage)
+	If Damage > 0 then
+		Call NPCAttack(NPCNum, Index, Damage)
+	End If
+End Sub
+
+' Executes when a hotkey is pressed client-side.
+Sub HotScript(Index, KeyID)
+	Select Case KeyID
+		' Executes when any player presses the PageUp key.
+		Case 1
+
+		' Executes when any player presses the Delete key.
+		Case 2
+
+		' Executes when players press the End key.
+		Case 3
+
+		' Executes when players press the PageDown key.
+		Case 4
+	End Select
+End Sub
+
+' Executes when something on a custom menu is clicked.
+Sub MenuScripts(Index, Clicked_Index, Menu_Type)
+	Dim MenuTitle
+	Dim FieldMessage
+
+	MenuTitle = getplayermenuclicktitle(Index)
+	FieldMessage = getplayermenuclickmsg(Index)
+
+	Select Case Menu_Type
+		Case 1
+			Call PlayerMsg(Index, "Clicked picture number " & Clicked_Index & " on the menu named " & MenuTitle, YELLOW)
+		Case 2
+			Call PlayerMsg(Index, "Clicked field number " & Clicked_Index & " on the menu named " & MenuTitle & ". The field text was " & FieldMessage, YELLOW)
+		Case 3
+			Call PlayerMsg(Index, "Clicked label number " & Clicked_Index & " on the menu named " & MenuTitle, YELLOW)
+	End Select
+End Sub
+
+' Executes when a player logs into the game.
+Sub JoinGame(Index)
+	If GetPlayerAccess(Index) = 0 Then
+		Call GlobalMsg(GetPlayerName(Index) & " has joined " & GameName & "!", GREY)
+	Else
+		Call GlobalMsg("Administrator " & GetPlayerName(Index) & " has joined " & GameName & "!", YELLOW)
+	End If
+
+	Call PlayerMsg(Index, "Welcome to " & GameName & "!", WHITE)
+
+	If LenB(MOTD) <> 0 Then
+		Call PlayerMsg(Index, "MOTD: " & MOTD, BRIGHTCYAN)
+	End If
+
+	Call SendWhosOnline(Index)
+End Sub
+
+' Executes when a player logs out of the game.
+Sub LeftGame(Index)
+	If GetPlayerAccess(Index) = 0 Then
+		Call GlobalMsg(GetPlayerName(Index) & " has left " & GameName & "!", GREY)
+	Else
+		Call GlobalMsg("Administrator " & GetPlayerName(Index) & " has left " & GameName & "!", YELLOW)
+	End If
+End Sub
+
+' Executes when a players experience exceeds the next level requirement.
+Sub PlayerLevelUp(Index)
+	Dim TotalExp
+
+	Do While GetPlayerExp(Index) >= GetPlayerNextLevel(Index)
+		TotalExp = GetPlayerExp(Index) - GetPlayerNextLevel(Index)
+		Call SetPlayerLevel(Index, GetPlayerLevel(Index) + 1)
+
+		Call SetPlayerPOINTS(Index, GetPlayerPOINTS(Index) + 1)
+		Call SetPlayerExp(Index, TotalExp)
+	Loop
+
+	Call BattleMsg(Index, "You have " & GetPlayerPOINTS(Index) & " stat points.", BRIGHTBLUE, 0)
+End Sub
+
+' Executes when a player uses one of the points given on an attribute to level up.
+Sub UsingStatPoints(Index, PointType)
+	Select Case PointType
+		Case 0
+			If GetPlayerSTR(Index) + 1 > 1000 Then
+				Call BattleMsg(Index, "You have maxed your strength!", BRIGHTRED, 0)
+				Exit Sub
+			End If
+			Call SetPlayerSTR(Index, GetPlayerSTR(Index) + 1)
+			Call BattleMsg(Index, "You have gained more strength!", WHITE, 0)
+
+		Case 1
+			If GetPlayerDEF(Index) + 1 > 1000 Then
+				Call BattleMsg(Index, "You have maxed your defence!", BRIGHTRED, 0)
+				Exit Sub
+			End If
+			Call SetPlayerDEF(Index, GetPlayerDEF(Index) + 1)
+			Call BattleMsg(Index, "You have gained more defense!", WHITE, 0)
+
+		Case 2
+			If GetPlayerMAGI(Index) + 1 > 1000 Then
+				Call BattleMsg(Index, "You have maxed your magic!", BRIGHTRED, 0)
+				Exit Sub
+			End If
+			Call SetPlayerMAGI(Index, GetPlayerMAGI(Index) + 1)
+			Call BattleMsg(Index, "You have gained more magic!", WHITE, 0)
+
+		Case 3
+			If GetPlayerSPEED(Index) + 1 > 1000 Then
+				Call BattleMsg(Index, "You have maxed your speed!", BRIGHTRED, 0)
+				Exit Sub
+			End If
+			Call SetPlayerSPEED(Index, GetPlayerSPEED(Index) + 1)
+			Call BattleMsg(Index, "You have gained more speed!", WHITE, 0)
+	End Select
+
+	' Remove one point after the sub in question is done
+	Call SetPlayerPOINTS(Index, GetPlayerPOINTS(Index) - 1)
+End Sub
+
+' Executes when a player steps onto a scripted tile.
+Sub ScriptedTile(Index, Script)
+	Select Case Script
+		Case 0
+			Call PlayerMsg(Index, "This scripted tile has no apparent use.", WHITE)
+			Exit Sub
+
+		Case Else
+			Call PlayerMsg(Index, "No tile script found. Please contact an admin to solve this problem.", WHITE)
+			Exit Sub
+	End Select
+End Sub
+
+' Executes when a player clicks on an OnClick tile.
+Sub OnClick(Index, Script)
+	Select Case Script
+		Case 0
+			Call PlayerMsg(Index, "This scripted tile has no apparent use.", WHITE)
+			Exit Sub
+
+		Case Else
+			Call PlayerMsg(Index, "No tile script found. Please contact an admin to solve this problem.", WHITE)
+			Exit Sub
+	End Select
+End Sub
+
+' Out-dated: Executes when a player chooses yes or no on a player prompt.
+Sub PlayerPrompt(Index, Prompt, Value)
+	If Prompt = 6 Then
+		Select Case Value
+			Case 0
+				Call GlobalMsg("Hi This is a Yes answer!", CYAN)
+			Case 1
+				Call GlobalMsg("This is case 1?", CYAN)
+		End Select
+	Else
+		Select Case Value
+			Case 0
+				Call GlobalMsg("Hi This is a No answer!", RED)
+			Case 1
+				Call GlobalMsg("This is no case 1?", RED)
+		End Select
+	End If
+End Sub
+
+' Out-dated: Executes query box responses.
+Sub QueryBox(Index, Prompt)
+	Value = GetVar("responses.ini", "Responses", CStr(Index))
+End Sub
+
+' Executes every time a player drops an item.
+Sub OnItemDrop(Index, Map, ItemNum, ItemVal, ItemDur, ItemIndex, InvSlot)
+
+End Sub
+
+' Executes each time a player changes map.
+Sub OnMapLoad(Index, OldMap, NewMap)
+
+End Sub
+
+' Executes whenever an NPC is killed.
+' Note: Death occurs as normal externally to this script.
+Sub OnNPCDeath(Index, Map, NPCNum, NPCIndex)
+	Call BattleMsg(Index, "You killed a " & getnpcname(NPCNum) & ".", BRIGHTRED, 0)
+End Sub
+
+' Executes when a player is killed by another.
+' Note: Death occurs as normal externally to this script.
+Sub OnPVPDeath(Attacker, Victim)
+	Call GlobalMsg(GetPlayerName(Victim) & " has been killed by " & GetPlayerName(Attacker), BRIGHTRED)
+End Sub
+
+' Executes when a player dies in an arena by another player.
+Sub OnArenaDeath(Attacker, Victim)
+	Dim Map
+	Dim X
+	Dim Y
+	Dim Data1
+	Dim Data2
+	Dim Data3
+
+	Map = GetPlayerMap(Victim)
+	X = GetPlayerX(Victim)
+	Y = GetPlayerY(Victim)
+
+	Call GlobalMsg(GetPlayerName(Victim) & " has been defeated in the arena by " & GetPlayerName(Attacker), BRIGHTRED)
+
+	Call SetPlayerHP(Victim, GetPlayerMaXHP(Victim))
+	Call SetPlayerMP(Victim, GetPlayerMaXMP(Victim))
+
+	Call sendHp(Victim)
+	Call sendMP(Victim)
+
+	Data1 = GetTileData1(Map, X, Y)
+	Data2 = GetTileData2(Map, X, Y)
+	Data3 = GetTileData3(Map, X, Y)
+
+	Call PlayerWarp(Victim, Data1, Data2, Data3)
+End Sub
+
+' Executes whenever a player casts a scripted spell.
+Sub ScriptedSpell(Index, Script)
+	Select Case Script
+		Case 0
+			Call PlayerMsg(Index, "This scripted spell has no apparent use.", WHITE)
+			Exit Sub
+
+		Case Else
+			Call PlayerMsg(Index, "No spell script found. Please contact an admin to solve this problem.", WHITE)
+			Exit Sub
+	End Select
+End Sub
+
+' Executes whenever a scripted NPC does an action.
+Sub ScriptedNPC(Index, Script)
+	Select Case Script
+		Case 0
+			Call PlayerMsg(Index, "This scripted NPC has no apparent use.", WHITE)
+			Exit Sub
+
+		Case Else
+			Call PlayerMsg(Index, "No NPC script found. Please contact an admin to solve this problem.", WHITE)
+			Exit Sub
+	End Select
+End Sub
+
+' Executed whenever a slash command is sent to the server.
+Sub Commands(Index)
+	Dim TextSay
+	Dim PlayerID
+	Dim MapNum
+
+	' Get the command and arguments from the cache.
+	TextSay = Trim(GetVar("Scripts\Command.ini", "TEMP", "Text" & Index))
+
+	' Split the command into an array. All arguments are seperated by spaces.
+	TextSay = Split(TextSay)
+
+	Select Case TextSay(0)
+		Case "/testscripts"
+			Call TestMain(Index)
+			Exit Sub
+
+		Case "/help"
+			Call PlayerMsg(Index, "Social Commands:", WHITE)
+			Call PlayerMsg(Index, "'msghere = Broadcast Message", WHITE)
+			Call PlayerMsg(Index, "-msghere = Emote Message", WHITE)
+			Call PlayerMsg(Index, "!namehere msghere = Player Message", WHITE)
+			Call PlayerMsg(Index, "Available Commands: /help, /info, /who, /fps, /inv, /stats, /train, /party, /join, /leave, /refresh", WHITE)
+			Exit Sub	
+
+		Case "/calladmins"
+			If GetPlayerAccess(Index) = 0 Then
+				Call AdminMsg(GetPlayerName(Index) & " needs your help!", BRIGHTGREEN)
+			Else
+				Call PlayerMsg(Index, "You are an admin! You cannot call for help!", BRIGHTGREEN)
+			End If
+			Exit Sub	
+
+		Case "/admin"
+			If GetPlayerAccess(Index) > 0 Then
+				Call PlayerMsg(Index, "Social Commands:", WHITE)
+				Call PlayerMsg(Index, """msghere = Global Admin Message", WHITE)
+				Call PlayerMsg(Index, "=msghere = Private Admin Message", WHITE)
+				Call PlayerMsg(Index, "Available Commands: /admin, /loc, /mapeditor, /warpmeto, /warptome, /warpto, /setsprite, /mapreport, /kick, /ban, /edititem, /respawn, /editnpc, /motd, /editshop, /ban, /editspell", WHITE)
+			End If
+			Exit Sub
+
+		Case "/warpmeto"
+			If GetPlayerAccess(Index) > 0 Then
+				PlayerID = FindPlayer(TextSay(1))
+
+				If PlayerID > 0 Then
+					Call PlayerWarp(Index, GetPlayerMap(PlayerID), GetPlayerX(PlayerID), GetPlayerY(PlayerID))
+					Call PlayerMsg(Index, "You have been warped to " & GetPlayerName(PlayerID) & ".", BROWN)
+				Else
+					Call PlayerMsg(Index, "Player is not online.", WHITE)
+				End If
+			End If
+			Exit Sub
+
+		Case "/warptome"
+			If GetPlayerAccess(Index) > 0 Then
+				PlayerID = FindPlayer(TextSay(1))
+
+				If PlayerID > 0 Then
+					Call PlayerWarp(PlayerID, GetPlayerMap(Index), GetPlayerX(Index), GetPlayerY(Index))
+					Call PlayerMsg(PlayerID, "You have been warped to " & GetPlayerName(Index) & ".", BROWN)
+				Else
+					Call PlayerMsg(Index, "Player is not online.", WHITE)
+				End If
+			End If
+			Exit Sub
+
+		Case "/warpto"
+			If GetPlayerAccess(Index) > 0 Then
+				MapNum = TextSay(1)
+
+				If MapNum > 0 And MapNum <= MAX_MAPS Then
+					Call PlayerWarp(Index, MapNum, GetPlayerX(Index), GetPlayerY(Index))
+					Call PlayerMsg(Index, "You have been warped to map #" & MapNum & ".", BRIGHTBLUE)
+				Else
+					Call PlayerMsg(Index, "Invalid map number.", BRIGHTRED)
+				End If
+			End If
+			Exit Sub
+	End Select
+
+	Call PlayerMsg(Index, "That is not a valid command.", BRIGHTRED)
+End Sub
+
+' Executes on death, dropping all of the players items.
+Sub DropItems(Index)
+	' Remove this to enable.
+	Exit Sub
+
+	If GetPlayerWeaponSlot(Index) > 0 Then
+	    Call PlayerMapDropItem(Index, GetPlayerWeaponSlot(Index), 0)
+	End If
+	
+	If GetPlayerArmorSlot(Index) > 0 Then
+	    Call PlayerMapDropItem(Index, GetPlayerArmorSlot(Index), 0)
+	End If
+	
+	If GetPlayerHelmetSlot(Index) > 0 Then
+	    Call PlayerMapDropItem(Index, GetPlayerHelmetSlot(Index), 0)
+	End If
+	
+	If GetPlayerShieldSlot(Index) > 0 Then
+	    Call PlayerMapDropItem(Index, GetPlayerShieldSlot(Index), 0)
+	End If
+	
+	If GetPlayerLegsSlot(Index) > 0 Then
+	    Call PlayerMapDropItem(Index, GetPlayerLegsSlot(Index), 0)
+	End If
+	
+	If GetPlayerRingSlot(Index) > 0 Then
+	    Call PlayerMapDropItem(Index, GetPlayerRingSlot(Index), 0)
+	End If
+	
+	If GetPlayerNecklaceSlot(Index) > 0 Then
+	    Call PlayerMapDropItem(Index, GetPlayerNecklaceSlot(Index), 0)
+	End If
+End Sub
+
+' Executes whenever somebody dies outside of an arena.
+Sub OnDeath(Index)
+	Dim MapNum
+	Dim ClassID
+	Dim X
+	Dim Y
+
+	If GetMapBootMap(Index) > 0 Then
+		Call PlayerWarp(Index, GetMapBootMap(Index), GetMapBootX(Index), GetMapBootY(Index))
+	Else
+		ClassID = GetPlayerClass(Index)
+
+		MapNum = GetVar("Classes\Class" & ClassID & ".ini", "CLASS", "Map")
+
+		X = GetVar("Classes\Class" & ClassID & ".ini", "CLASS", "x")
+		Y = GetVar("Classes\Class" & ClassID & ".ini", "CLASS", "y")
+
+		Call PlayerWarp(Index, MapNum, X, Y)
+	End If
+End Sub
+
+' Executes whenever a scripted item is used or double clicked.
+Sub ScriptedItem(Index, Script)
+	Select Case Script
+		Case 0
+			Call PlayerMsg(Index, "This scripted item has no apparent use.", WHITE)
+			Exit Sub
+
+		Case Else
+			Call PlayerMsg(Index, "No item script found. Please contact an admin to solve this problem.", WHITE)
+			Exit Sub
+	End Select
+End Sub
+
+
+' Map Attributes
+
+Sub SetBlank(Map, X, Y)
+	Call SetAttribute(Map, X, Y, 0, 0, 0, 0, "", "", "")
+End Sub
+
+Sub SetBlock(Map, X, Y)
+	Call SetAttribute(Map, X, Y, 1, 0, 0, 0, "", "", "")
+End Sub
+
+Sub SetWarp(Map, X, Y, WarpMap, WarpX, WarpY)
+	Call SetAttribute(Map, X, Y, 2, WarpMap, WarpX, WarpY, "", "", "")
+End Sub
+
+Sub SetItem(Map, X, Y, ItemID, ItemValue)
+	Call SetAttribute(Map, X, Y, 3, ItemID, ItemValue, 0, "", "", "")
+End Sub
+
+Sub SetNPCAvoid(Map, X, Y)
+	Call SetAttribute(Map, X, Y, 4, 0, 0, 0, "", "", "")
+End Sub
+
+Sub SetKeY(Map, X, Y, KeyID, KeyTake)
+	Call SetAttribute(Map, X, Y, 5, KeyID, KeyTake, 0, "", "", "")
+End Sub
+
+Sub SetKeYOpen(Map, X, Y, KeyX, KeyY, Message)
+	Call SetAttribute(Map, X, Y, 6, KeyX, KeyY, 0, Message, "", "")
+End Sub
+
+Sub SetHeal(Map, X, Y)
+	Call SetAttribute(Map, X, Y, 7, 0, 0, 0, "", "", "")
+End Sub
+
+Sub SetKill(Map, X, Y)
+	Call SetAttribute(Map, X, Y, 8, 0, 0, 0, "", "", "")
+End Sub
+
+Sub SetShop(Map, X, Y, ShopID)
+	Call SetAttribute(Map, X, Y, 9, ShopID, 0, 0, "", "", "")
+End Sub
+
+Sub SetClassBlock(Map, X, Y, Allow1, Allow2, Allow3)
+	Call SetAttribute(Map, X, Y, 10, Allow, Allow2, Allow3, "", "", "")
+End Sub
+
+Sub SetArena(Map, X, Y, MapID, NewX, NewY)
+	Call SetAttribute(Map, X, Y, 11, MapID, NewX, NewY, "", "", "")
+End Sub
+
+Sub SetSound(Map, X, Y, FileName)
+	Call SetAttribute(Map, X, Y, 12, 0, 0, 0, FileName, "", "")
+End Sub
+
+Sub SetSpriteChange(Map, X, Y, SpriteID, ItemID, Cost)
+	Call SetAttribute(Map, X, Y, 13, SpriteID, ItemID, Cost, "", "", "")
+End Sub
+
+Sub SetSign(Map, X, Y, Line1, Line2, Line3)
+	Call SetAttribute(Map, X, Y, 14, 0, 0, 0, Line1, Line2, Line3)
+End Sub
+
+Sub SetDoor(Map, X, Y)
+	Call SetAttribute(Map, X, Y, 15, 0, 0, 0, "", "", "")
+End Sub
+
+Sub SetNotice(Map, X, Y, Title, Text, FileName)
+	Call SetAttribute(Map, X, Y, 16, 0, 0, 0, Title, Text, FileName)
+End Sub
+
+Sub SetScripted(Map, X, Y, Script)
+	Call SetAttribute(Map, X, Y, 18, Script, 0, 0, "", "", "")
+End Sub
+
+Sub SetBank(Map, X, Y)
+	Call SetAttribute(Map, X, Y, 23, 0, 0, 0, "", "", "")
+End Sub
+
+' Tests scripts up to the location of Sub TestMain(Index).
+' Leave this sub at the bottom to test the entire script file.
+Sub TestMain(Index)
+	Call PlayerMsg(Index, "Scripts are working properly.", BRIGHTGREEN)
+End Sub

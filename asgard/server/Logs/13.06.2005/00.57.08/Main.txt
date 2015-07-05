@@ -1,0 +1,19 @@
+
+Received connection from 127.0.0.1.
+Account test2 has been created.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+Account test3 has been created.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+test3 has logged in from 127.0.0.1.
+test3/Blabla has began playing .
+Blabla has disconnected from .
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+Account test4 has been created.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+test4 has logged in from 127.0.0.1.
+Connection from 127.0.0.1 has been terminated.
+Chat Logs Have Been Saved!

@@ -1,0 +1,13 @@
+The controls of the game are as follows:
+
+Arrow Keys - Depending on which one you hit is the way your character moves.
+Enter - Used to pick up items on the map or to chat.
+Shift - Holding down shift and using the arrow keys makes you run.
+Ctrl - Using this key will let you attack.
+Insert - When you double click on a spell it will memorize it, you use Insert to cast it when you select an enemy!
+F1 - Brings up the Admin Panel with many commands on it.
+F4 - This will open the Guild Create form.
+F5 - Brings up the Guild Panel, this is where you can add players to you guild.
+F11 - This will take a screenshot of the game client.
+F12 - This will take a screenshot of the game screen only!
+End - This will turn your character in place! (clockwise)

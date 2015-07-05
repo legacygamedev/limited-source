@@ -1,0 +1,61 @@
+Built on Elysium Buggy Edition
+------------------------------
+
+Eight Destinies Source Alpha 1
+------------------------------
+
+Fixed HP/MP/SP all equal to 0 bug
+
+Fixed shop bug not being able to buy items past the 6th slot
+
+Fixed arrows can kill anyone everywhere bug
+
+Fixed bug when PM someone who's not online.
+
+Fixed additional bugs
+
+Added Magic Requirements on items
+
+Added Level Requirements on items
+
+Added randomized damage on weapons, unarmed, and all spell types (Sub HP, MP, SP, Add HP, MP, SP)
+
+Made Int to be a stat modifier on spells, with higher int the spells become more powerful (Int /2 + Spell) +- 10 = Spellpower
+
+Added Stamina (Everytime you hit you loose 1 SP, when it's 0 you can't hit or run, when you run you loose 1 SP)
+
+Added a new Blocktile that let arrows pass through
+
+Added Elemental Damage (8 Elements, Fire, Water, Earth, Air, Heat, Cold, Light, Dark)
+
+Added more equipment slots (Gloves, Boots, Belt, Legs, Ring, Amulet)
+
+Added Mining and Lumberjacking Scripts
+
+Added SPELL_TYPE_GIVEITEM
+
+Added ITEM_TYPE_TWO_HAND
+
+Added Dodge Chance
+
+Added Bank
+
+Changed max drops from NPCS's from 10 to 30
+
+Changed it so that players no longer drops items on death
+
+Changed it so that Admins can PK and be PKed
+
+Changed Max Map NPC's from 15 to 30
+
+Made arrows go faster across the screen
+
+Changed potions can now heal or damage 1000 instead of 255 (all potions, HP, MP, SP)
+
+Changed max inventory from 24 to 36
+
+Changed Repair Cost formula on items
+
+Changed NPC AttackSay from 100 to 625
+
+Made passwords case sensitive

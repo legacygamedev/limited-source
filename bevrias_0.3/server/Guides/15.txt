@@ -1,0 +1,10 @@
+Players can't connect to my server. Try any of these:
+Recommended: http://www.portforward.com
+http://www.ngage-online.de/forums/_hosted_/bevrias-engine/viewtopic.php?t=42
+http://www.ngage-online.de/forums/_hosted_/bevrias-engine/viewtopic.php?t=52
+
+If you have a router that you dont know the default password and username you might wanna look it up here:
+http://www.phenoelit.de/dpl/dpl.html
+
+Other:
+http://www.ngage-online.de/forums/_hosted_/bevrias-engine/viewtopic.php?t=44

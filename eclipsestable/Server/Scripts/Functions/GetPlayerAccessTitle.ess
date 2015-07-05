@@ -1,0 +1,51 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: GetPlayerAccessTitle.ess				'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GetPlayerAccessTitle				'
+' Brief: gets the title of the player depending on access.	'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function GetPlayerAccessTitle(Index)
+	Select Case GetPlayerAccess(Index)
+		Case ADMIN_PLAYER
+			GetPlayerAccessTitle = "player"
+
+			Exit Function
+
+		Case ADMIN_MONITOR
+			GetPlayerAccessTitle = "monitor"
+
+			Exit Function
+
+		Case ADMIN_MAPPER
+			GetPlayerAccessTitle = "mapper"
+
+			Exit Function
+
+		Case ADMIN_DEVELOPER
+			GetPlayerAccessTitle = "developer"
+
+			Exit Function
+
+		Case ADMIN_CREATOR
+			GetPlayerAccessTitle = "creator"
+
+			Exit Function
+
+		Case ADMIN_OWNER
+			GetPlayerAccessTitle = "owner"
+
+			Exit Function
+
+		Case Else
+			GetPlayerAccessTitle = "unknown"
+
+			Exit Function
+	End Select
+End Function

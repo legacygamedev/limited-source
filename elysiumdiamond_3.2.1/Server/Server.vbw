@@ -1,0 +1,14 @@
+modDatabase = 20, 1, 743, 577, 
+modTypes = 9, 50, 670, 581, 
+modGameLogic = 23, 17, 746, 555, 
+modGeneral = 5, -4, 728, 570, 
+modText = 21, 38, 833, 569, 
+modServerTCP = 55, 17, 708, 550, Z
+modSysTray = 57, 118, 560, 694, 
+modScripting = 88, 116, 862, 703, 
+clsCommands = 47, 19, 724, 606, 
+clsRC4 = 176, 232, 950, 819, 
+clsSadScript = -14, 7, 760, 594, 
+modCodeEdit = -21, 25, 764, 630, 
+clsCRijndael = 66, 87, 665, 517, 
+frmServer = 66, 87, 824, 712, , 44, 58, 802, 683, C

@@ -1,0 +1,63 @@
+- Need to fix QuestMsg
+- Need to fix CanTurnIn
+
+Client
+- Need to fix the complete button
+
+Update 0.03
+	SERVER
+	- Rewrote HandleSetBound
+	- Instead of loading all 3 characters at once. The server will only load the character you select. 
+	- Fixed PlayerMapDropItem error with stacked items. Thanks Bret.
+	- Added OnlinePlayers(). This is the same as HIGH_INDEX for MS4.
+	- Added MapData().MapOnlinePlayers(). This is the same as onlineplayers, but for specific maps. Makes loops much much smaller.
+	- Changed Revive spell. You can now specify how much HP/MP the player will be revived with.
+	- Fixed "FindPlayer" error. Thanks Giaken.
+	- Fixed set admin from server console. Thanks Jack and Giaken. 
+	- Cleaned up a little bit of code. Commented some more code.
+	- QUEST SYSTEM!
+	- Added Target_PlayerParty - Can only be cast on party members - Will override other flags except selfonly
+	- Added a check before casting spells if the player is alive
+	- Edited NPC AI a little bit. The npc will now try to target more of the targets in the threat list.
+	- If the NPC was fighting, after 10 seconds the npc will regain all it's HP 
+
+	CLIENT
+	- Rewrote ConvertMapX and ConvertMapY
+	- Updated all calls to ConvertMapX and ConvertMapY
+	- Added Half_PIC_X and Half_PIC_Y - Tiny tiny tiny optimization in rendering
+	- MAX_INTEGER is the biggest for 1 stack.
+	- Can now hit 'Enter' for frmDrop.
+	- Added a scrlbar for frmDrop.
+	- Added MapOnlinePlayers. Increases FPS. 
+	- Changed Revive spell. You can now specify how much HP/MP the player will be revived with.
+	- The spell editor is now like the item editor. It dynamically changes depending on what your stat/vital enums are.
+	- Added frmAlert (Thanks Robin!). This is a generic type of yes/no/okay box that can be used and allow the game to still process, unlike a regular alrtbox.
+	- Cleaned up ActionMsgs a tiny bit (Thanks Giaken.)
+	- QUEST SYSTEM!
+	- Updated the CanCastSpell sub. Still need to finish for Target_PlayerParty.
+
+Update 0.02
+	SERVER
+	- Fixed error with equiping/unequiping shields.
+	- Added Clamp() for setting the exp mod.
+	- Fixed NPC dropping error.
+	
+	CLIENT
+	- The player will actually be centered if using correct numbers for the MAX_MAPX and MAX_MAPY.
+	- Fixed the Fill button in the mapeditor.
+	- Fixed item dragging.
+	- Added TILE_WIDTH. This is automatically detected per your tilesheet.
+	- Added Multi Tile Select for mapping.  
+
+Update 0.01
+	SERVER
+	- Added ClearStatusEffects, uses Zeromemory
+	- ClearStatusEffects will also update modded stats and vitals now
+	- Added optional msg for OnDeath. You can speficify a message to send to the newly dead player.
+
+	CLIENT
+	- NpcLevel function in frmNpcEditor - Fixed small issue if you used high numbers for stats
+
+	BOTH
+	- Removed CMsgPlayerHP, CMsgPlayerMP, CMsgPlayerSP - Replaced with CMsgPlayerVital
+	- A little bit of code cleanup

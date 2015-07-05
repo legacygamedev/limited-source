@@ -1,0 +1,33 @@
+D. Player Access Overview
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Intro ::
+This guide and the following guides explain the access situation. Elysium has access to prevent unauthorized editing of the game by normal members and to have a step ladder of power for the creators. There are many commands you need to learn to successfully create a game. This is the overview.
+
+
+:: Access levels ::
+Here are the access levels.
+
+0  - Normal user
+1  - Monitor
+2  - Mapper
+3  - Developer
+4+ - Creator
+
+
+:: Basic descriptions ::
+Normal users are exactly as they sound. They are normal players with no special powers and no way of editing the game.
+
+Monitors are VIP users with more responsibility. They are the police of every game. Things that monitors can do include kicking and changing the weather.
+
+Mappers are the first real position as game makers. They are the ones responsible for creating maps only! However, you get some extra bonuses like being able to ban users and warp.
+
+Developers are the big boys. The list of things available for devs to do is incredibly large, and they are a lot more powerful than the mapper. Powers include editing everything game related.
+
+Creators are the owners of the game. The only extra feature for a creator is the ability to change people's access and clear the ban list.
+
+
+:: Extra ::
+You can see all of the admin's commands by typing "/admincommands" in game.

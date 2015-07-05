@@ -1,0 +1,14 @@
+Paperdolling works like this: 
+You have sprites.bmp lined up with the items.bmp perfectly to make a good paperdolling effect. 
+This is two different item set for paperdoll:
+http://tusla-online.com/Pictures/items.bmp 
+Pretend you want to wear the suit. instead of using the (orange outlined) sprite you use the (red outlined) sprite:
+http://tusla-online.com/Pictures/items2.bmp 
+So in your inventory it shows the (red outlined) sprite but on your character it shows (orange outlined) sprite.
+And that is the same with the third item you want to use, then you use the one right of the red outlined sprite but on your character it will show the third row.
+
+Example of items.bmp: 
+http://i3.photobucket.com/albums/y81/Konfuze/items.bmp 
+
+If you still don't understand, ask here:
+www.ramzaengine.com.ar -> Forum

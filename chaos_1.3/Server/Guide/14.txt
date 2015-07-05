@@ -1,0 +1,19 @@
+- d. Emoticon Editor
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Requirements ::
+The emoticon editor is reached by typing "/editemoticon" or "/emoticoneditor" by a person with developer access or higher.
+
+
+:: The basics ::
+You can use an emoticon by typing in the set command. So, you need to define that command when you make it. Keep it simple like "/lol" or something the average user will remember. You can do two things with an emoticon:
+
+
+Make it display an image - By clicking on the right tab and checking the check box, you tell the emoticon to display an animation when used. These animations can be found in the "Emoticons.bmp" and work in a rather simple way.
+
+Make it play a sound - By clicking on the sound tab and checking the box, you can make the emoticon play a sound when used. Click on a sound to hear the sample.
+
+
+You can do one or both of the above.

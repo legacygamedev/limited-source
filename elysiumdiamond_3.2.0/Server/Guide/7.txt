@@ -1,0 +1,33 @@
+- c. Mappers
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: The basics ::
+Without mappers, there would be no reason to play the game. They organize the tiles into attractive maps. That is not such an easy task, so the number of mappers needs to be greater than any other access. You MUST visit the "Map Editor" part of this guide to understand how to map.
+
+
+:: The commands ::
+There are many commands for mappers, but these are really basic admin commands and don’t make the mapper very special. 
+
+/loc - Returns the map, x position, and y position of where you are standing. The map editor has a much better system (just hover over the tile and it displays the coordinates) but you can still use this.
+
+/warp (map number OR player name) - Warps your character to the specified map or the specified player.
+
+/warptome (player name) - warps the specified player to your location.
+
+/mapeditor - Starts up the map editor enabling you to edit the current map. Please check out the "Map Editor" part of this guide.
+
+/mapreport - A very useful tool! This opens up a window that lists all of the maps with their name. You can find blank maps and used maps with this tool.
+
+/setsprite (sprite number) - Changes your sprite. The number matches the number of rows (starting at 0 for the first one) until the wanted character is reached.
+
+/setplayersprite (player name) (sprite number) - Sets somebody else's sprite.
+
+/respawn - Reloads all the NPCs and map items. Use if a NPC is stuck or something.
+
+/motd (new motd text) - The motd is the message displayed (unless you choose not to) when a player logs in. all admins (excluding Monitors) can change the motd to suit their purpose. It is usually a welcome note or a short explanation of new events.
+
+/banlist - Displays the list of the users that are banned.
+
+/ban (player name) - Prevents the specified player from logging into your game. This is done based on IP and player name.

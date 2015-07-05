@@ -1,0 +1,8 @@
+The chatting channels and how to use them!
+
+Map Chat - Simply type into the textbox and hit enter!
+Broadcast - Type ' before your text.
+Emote - Type - before your text.
+Private Message - Type ! and the players name before your text. Example: !Coke Hello!
+Global - Type " before your text. Note: This is only for players with access above 0.
+Admin - Type = before your text. Note: This is only for players with access above 0.

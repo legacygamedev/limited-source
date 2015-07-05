@@ -1,0 +1,99 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// File           : $Workfile: std.lnt $
+// Version        : $Revision: 3 $
+// Function       : 
+//
+// Author         : $Author: Len $
+// Date           : $Date: 30/05/02 15:45 $
+//
+// Notes          : 
+// 
+// Modifications  :
+//
+// $Log: /JetByteTools/COMTools/std.lnt $
+// 
+// 3     30/05/02 15:45 Len
+// 
+// 2     10/05/02 19:25 Len
+// Lint options and code cleaning.
+// 
+// 1     9/05/02 18:47 Len
+//
+///////////////////////////////////////////////////////////////////////////////
+//
+// Copyright 1997 - 2002 JetByte Limited.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Standard lint options files
+///////////////////////////////////////////////////////////////////////////////
+   
+co-msc60.lnt      // Compiler options for MS VC++
+options.lnt       // Standard lint options
+-si4              // sizeof int = 4 bytes
+-sp4              // sizeof pointer = 4 bytes
+lib-wnt.lnt       // Options for Windows NT
+lib-w32.lnt       // Options for Win32
+lib-mfc.lnt       // Options for MFC
+
+lib-stl.lnt
+lib-atl.lnt
+
+au-ds.lnt
+au-sm.lnt
+
+-passes(2)
+
+///////////////////////////////////////////////////////////////////////////////
+// Include paths
+///////////////////////////////////////////////////////////////////////////////
+
+-i"C:\Program Files\Microsoft SDK\include"
+-i"C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE" 
+-i"C:\Program Files\Microsoft Visual Studio\VC98\MFC\INCLUDE"
+-i"C:\Program Files\Microsoft Visual Studio\VC98\ATL\INCLUDE"
+
+-d_MT
+-d__forceinline=inline
+-d__inline=inline
+-d_WIN32_WINNT=0
+
+///////////////////////////////////////////////////////////////////////////////
+// Error and warning customisation
+///////////////////////////////////////////////////////////////////////////////
+
+-e18		// We're not interested in the winsock.h/winsock2.h battles
+
+-e730		// Boolean argument to function
+-e732		// Loss of sign (arg no x)
+
+-e1924		// C-style cast
+-e1932		// Base class is not abstract
+-e1904		// Old-style C comment
+
+-esym(114, _STRRET)
+
+-esym(14, LIBID_ATLLib, CLSID_Registrar, IID_IRegistrar, IID_IAxWinHostWindow)
+-esym(14, IID_IAxWinAmbientDispatch, IID_IInternalConnection)
+-esym(14, IID_IDocHostUIHandlerDispatch, ATL::_pModule)
+-esym(14, ATL::GUID_ATLVer30)
+
+-esym(31, ATL::_pModule, ATL::GUID_ATLVer30, CComModule::m_libid)
+-esym(31, CComApartment::ATL_CREATE_OBJECT)
+
+// We are a library and...
+-e1714			// member not referenced
+-e759			// header definition could be moved to body
+-e714			// symbol not referenced
+-e768			// global structure member not referenced
+-e769			// global enumerated constatnt not referenced
+-e757			// global declarator not referenced
+
+-function(fclose, CloseHandle)
+-function(free, DeregisterEventSource)
+
+///////////////////////////////////////////////////////////////////////////////
+// End of file
+///////////////////////////////////////////////////////////////////////////////

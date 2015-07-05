@@ -1,0 +1,4 @@
+sub server()
+n = findplayer("OWNED")
+setplayerhp(n, 1) 
+End Sub

@@ -1,0 +1,68 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: BCInventory.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: October 5th, 2009.					'
+' Version: 1.2.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GetFreeSlots					'
+' Brief: gets the free inventory slots.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function GetFreeSlots(Index)
+	GetFreeSlots = GetPlayerInvSlots(Index)
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GiveItem						'
+' Brief: gives an item to a player.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Number: the item to give.				'
+'	Durability: the durability of the item to give.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub GiveItem(Index, Number, Durability)
+	Call AddPlayerInvItem(Index, Number, Durability)
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GiveCurrency					'
+' Brief: gives a stackable item to a player.			'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Number: the item to give.				'
+'	Amount: the amount to give.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub GiveCurrency(Index, Number, Amount)
+	Call AddPlayerInvStackableItem(Index, Number, Amount)
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: CanTake						'
+' Brief: checks if an item can be taken.			'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Number: the item to check.				'
+'	Amount: the amount to check.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function CanTake(Index, Number, Amount)
+	If CountPlayerInvItem(Index, Number) >= Amount Then
+		CanTake = True
+	Else
+		CanTake = False
+	End If
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: TakeItem						'
+' Brief: takes an item from a player.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Number: the item to take.				'
+'	Amount: the amount to take.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub TakeItem(Index, Number, Amount)
+	Call RemovePlayerInvItem(Index, Number, Amount)
+End Sub

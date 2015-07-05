@@ -1,0 +1,33 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: ScriptedSpell.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: ScriptedSpell					'
+' Brief: executes when somebody casts a spell.			'
+' Parameters:							'
+'	Index: the index of the player.				'
+'	Script: the script to execute.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub ScriptedSpell(Index, Script)
+	Select Case Script
+		Case 0
+			Call PlayerMsg(Index, "This scripted spell has no apparent use.", WHITE)
+
+			Exit Sub
+			
+		Case 1
+			Call PlayerMsg(Index, "This scripted spell works.", WHITE)
+
+			Exit Sub
+
+		Case Else
+			Call PlayerMsg(Index, "No spell script found. Please contact an admin to solve this problem.", WHITE)
+
+			Exit Sub
+	End Select
+End Sub
+

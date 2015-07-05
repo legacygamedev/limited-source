@@ -1,0 +1,562 @@
+3:25:47 PM: (global) Saramon: is everyone over lvl 10 in my precence
+3:26:39 PM: Saramon has warped Slappy to self, map #776.
+3:27:09 PM: Saramon has warped Spoonman to self, map #776.
+3:32:28 PM: (global) Saramon: the winner of the duel is rocco siffredi
+3:32:37 PM: Saramon warped to map #1.
+3:33:04 PM: Saramon has warped Rocco Siffredi to self, map #1.
+3:33:33 PM: Saramon has warped Rocco Siffredi to self, map #1.
+3:34:01 PM: Saramon warped to map #997.
+3:34:09 PM: Saramon warped to map #998.
+3:34:20 PM: Saramon warped to map #999.
+3:34:35 PM: Saramon has warped Rocco Siffredi to self, map #999.
+3:35:42 PM: Saramon warped to map #1.
+3:36:53 PM: Saramon has warped Rocco Siffredi to self, map #1.
+3:39:17 PM: (global) Saramon: i might run a contest for debug later on today
+3:39:43 PM: (global) Saramon: and noone that has won debug before can win it again
+3:41:45 PM: Saramon editing npc #83.
+3:42:38 PM: Saramon saved npc #83.
+3:42:54 PM: Saramon has respawned map #1
+3:43:55 PM: Saramon warped to map #50.
+3:45:29 PM: Saramon editing npc #84.
+3:46:13 PM: Saramon saved npc #84.
+3:47:22 PM: Saramon editing npc #85.
+3:48:42 PM: Saramon saved npc #85.
+3:49:01 PM: Saramon editing npc #86.
+3:50:47 PM: Saramon saved npc #86.
+3:53:34 PM: (global) Saramon: ive been told bye kettucis that my debug room can no longer be used, in exchange there is a room with a person that can only be killed once, all people that have been in the debug room may enter it, and it can be entered in more then once, by everyone, this will prolong my contest, and money rewards will still be done, the official debug room has been closed
+3:53:39 PM: (global) Saramon: sorry
+3:54:58 PM: Saramon editing npc #87.
+3:55:52 PM: Saramon saved npc #87.
+3:56:39 PM: Saramon warped to map #1.
+3:57:41 PM: (global) Saramon: everyone that fells that they got jipped please come to creation, and i will give 200k
+3:58:10 PM: (global) Saramon: you have to come to me
+4:01:24 PM: Saramon warped to map #992.
+4:01:32 PM: Saramon warped to map #922.
+4:02:26 PM: Saramon editing npc #88.
+4:03:53 PM: Saramon saved npc #88.
+4:03:57 PM: Saramon warped to map #1.
+4:04:38 PM: Saramon warped to map #47.
+4:04:52 PM: Saramon warped to map #40.
+4:08:16 PM: Saramon warped to map #1.
+4:11:05 PM: Saramon warped to map #1.
+4:11:27 PM: (global) Saramon: attention the scavenger begins at the creation temple in 5 minutes
+4:12:27 PM: (global) Saramon: the prize of the hunt is 500k and 3 lvls
+4:13:03 PM: (global) Saramon: four minutes until scavnger start
+4:13:48 PM: (global) Saramon: three minutes
+4:14:50 PM: (global) Saramon: two minutes
+4:15:48 PM: (global) Saramon: one minute 
+4:16:50 PM: (global) Saramon: now let me explain the rules, you have one half hour to complete the puzzle, start by talking to the npc by the book case
+4:17:01 PM: (global) Saramon: begin now
+4:17:14 PM: Saramon warped to map #40.
+4:17:20 PM: Saramon warped to map #50.
+4:18:11 PM: (global) Saramon:  i will not give hints
+4:18:38 PM: Saramon warped to map #55.
+4:19:35 PM: Saramon warped to map #10.
+4:20:09 PM: (global) Saramon: lakyden wins
+4:20:19 PM: Saramon warped to map #922.
+4:20:27 PM: Saramon has warped Lakyden to self, map #922.
+4:21:25 PM: Saramon warped to map #1.
+4:21:32 PM: Saramon has warped Lakyden to self, map #1.
+4:21:57 PM: (global) Saramon: only one winner
+4:22:29 PM: Saramon warped to map #777.
+4:22:58 PM: Saramon warped to map #922.
+4:24:36 PM: (global) Saramon: next 2 winners get 2 lvls and 250k in gold
+4:24:42 PM: (global) Saramon: then no more winners
+4:25:07 PM: Saramon warped to map #999.
+4:25:47 PM: Saramon warped to map #922.
+4:26:20 PM: (global) Saramon: is anyone still on the hunt
+4:26:53 PM: (global) Saramon: like i said the next 2 get 2 lvls and 250k
+4:29:16 PM: Saramon has warped to Rodet Fello, map #42.
+4:29:26 PM: Saramon warped to map #922.
+4:29:41 PM: Saramon has warped Rodet Fello to self, map #922.
+4:30:56 PM: Saramon warped to map #1.
+4:31:02 PM: Saramon has warped Rodet Fello to self, map #1.
+4:31:23 PM: (global) Saramon: one more winner
+4:32:14 PM: Saramon has warped pure_speed to self, map #1.
+4:32:25 PM: Saramon warped to map #922.
+4:32:32 PM: Saramon has warped pure_speed to self, map #922.
+4:33:38 PM: Saramon warped to map #1.
+4:33:48 PM: Saramon has warped pure_speed to self, map #1.
+4:34:10 PM: (global) Saramon: the last person was at gellitine
+4:34:19 PM: (global) Saramon: the square before it
+4:34:41 PM: (global) Saramon: the one before that was at the boat by the shops
+4:34:57 PM: (global) Saramon: the one before that was at ash
+4:35:05 PM: (global) Saramon: then the bank in alcusion
+4:35:12 PM: (global) Saramon: then at creation temple
+4:35:53 PM: Saramon warped to map #922.
+4:36:04 PM: Saramon has warped Midguardian to self, map #922.
+4:37:14 PM: Saramon warped to map #1.
+4:37:19 PM: Saramon warped to map #50.
+4:37:29 PM: Saramon has warped Midguardian to self, map #50.
+4:40:03 PM: Saramon warped to map #100.
+4:40:28 PM: Saramon warped to map #200.
+4:40:50 PM: Saramon warped to map #150.
+4:41:02 PM: Saramon warped to map #125.
+4:41:10 PM: Saramon warped to map #175.
+4:41:44 PM: Kettucis has warped to Ryan, map #51.
+4:41:47 PM: Saramon warped to map #922.
+4:42:33 PM: Kettucis warped to map #1.
+4:46:49 PM: Saramon warped to map #1.
+4:54:21 PM: Saramon has warped to Rocco Siffredi, map #133.
+4:55:03 PM: Saramon has warped to Spoonman, map #305.
+4:55:22 PM: Saramon has warped to Kettucis, map #9.
+4:56:41 PM: Saramon has warped to Rocco Siffredi, map #162.
+4:57:09 PM: Saramon warped to map #50.
+4:57:37 PM: Saramon has warped Rocco Siffredi to self, map #79.
+4:59:26 PM: Saramon warped to map #922.
+5:00:30 PM: Saramon warped to map #777.
+5:01:04 PM: Saramon warped to map #922.
+5:02:57 PM: Saramon has respawned map #922
+5:06:53 PM: Saramon has warped Lakyden to self, map #922.
+5:09:53 PM: Saramon has respawned map #922
+11:52:09 PM: Kettucis has warped to Slappy, map #49.
+12:13:43 AM: Kettucis has warped to Cyranuce, map #9.
+12:21:26 AM: Kettucis warped to map #48.
+12:22:36 AM: Kettucis has warped Cyranuce to self, map #173.
+12:23:27 AM: Kettucis has warped Cyranuce to self, map #305.
+12:25:23 AM: Kettucis has respawned map #305
+12:26:12 AM: Kettucis warped to map #1.
+12:26:18 AM: Kettucis has warped Cyranuce to self, map #1.
+1:40:42 AM: Kettucis warped to map #1.
+9:57:13 AM: Kettucis changed MOTD to: Purchasing houses must be post poned for the next week. Sorry for the inconvinience
+9:58:04 AM: Kettucis warped to map #922.
+9:58:24 AM: Kettucis has warped Rodet Fello to self, map #922.
+10:03:20 AM: Kettucis warped to map #1.
+10:03:23 AM: Kettucis has warped Rodet Fello to self, map #1.
+10:04:42 AM: Kettucis warped to map #200.
+10:04:48 AM: Kettucis warped to map #201.
+10:25:06 AM: Kettucis has warped to Rocco Siffredi, map #119.
+10:25:35 AM: Kettucis warped to map #200.
+10:26:07 AM: Kettucis editing npc #70.
+10:26:40 AM: Kettucis editing npc #47.
+10:28:17 AM: Kettucis editing npc #89.
+10:30:25 AM: Kettucis saved npc #89.
+10:34:37 AM: Kettucis editing npc #89.
+10:36:26 AM: Kettucis saved npc #89.
+4:01:19 PM: Kettucis has warped to Cyranuce, map #990.
+4:01:32 PM: Kettucis warped to map #1.
+4:01:39 PM: Kettucis has warped Cyranuce to self, map #1.
+4:02:00 PM: Kettucis warped to map #127.
+4:02:03 PM: Kettucis has warped Cyranuce to self, map #127.
+4:03:59 PM: Kettucis warped to map #922.
+4:04:03 PM: Kettucis has warped Cyranuce to self, map #922.
+4:05:15 PM: Kettucis has warped Cyranuce to self, map #922.
+4:05:32 PM: Kettucis warped to map #1.
+4:05:37 PM: Kettucis has warped Cyranuce to self, map #1.
+4:06:00 PM: Kettucis warped to map #200.
+4:24:16 PM: Lokkmaru editing item #239.
+4:27:54 PM: Lokkmaru editing item #239.
+4:28:14 PM: Lokkmaru saved item #239.
+4:28:26 PM: Lokkmaru editing item #240.
+4:28:54 PM: Lokkmaru saved item #240.
+4:34:40 PM: Lokkmaru warped to map #152.
+4:43:36 PM: Lokkmaru has kicked Tao.
+5:00:25 PM: (global) Lokkmaru: Match one has begun. Unfortunately, neither of the combatants are here. Therefore, we will begin match 2 in 3 minutes.
+5:01:08 PM: (admin Kettucis) How strong is that dragon?
+5:01:19 PM: (admin Lokkmaru) Around level 46-ish.
+5:01:28 PM: (admin Kettucis) lol Is it in Enega?
+5:01:34 PM: (admin Lokkmaru) Nope.
+5:01:41 PM: Lokkmaru has warped Tribrontis to self, map #146.
+5:01:46 PM: Lokkmaru has warped Rodet Fello to self, map #146.
+5:02:05 PM: (global) Lokkmaru: This is frustrating. Only the last two people in the tournament are here. -_-
+5:04:53 PM: (global) Lokkmaru: Match one: Rodet Fello versus Tribrontis.
+5:06:15 PM: (admin Kettucis) beat you
+5:06:29 PM: Lokkmaru has warped stormmaker to self, map #148.
+5:08:42 PM: (global) Lokkmaru: Match two: Rodet Fello versus Stormmaker. FIGHT!
+5:10:01 PM: Lokkmaru warped to map #922.
+5:10:14 PM: Lokkmaru editing shop #22.
+5:10:29 PM: Lokkmaru saving shop #22.
+5:11:02 PM: Lokkmaru has warped to stormmaker, map #148.
+5:11:14 PM: Kettucis editing item #300.
+5:12:19 PM: Kettucis saved item #300.
+5:12:37 PM: Kettucis editing item #301.
+5:12:49 PM: Lokkmaru warped to map #152.
+5:14:28 PM: Lokkmaru has warped SycoGhost to self, map #167.
+5:14:30 PM: Kettucis saved item #301.
+5:14:43 PM: Kettucis editing item #300.
+5:14:49 PM: Lokkmaru has warped luke to self, map #167.
+5:14:57 PM: Lokkmaru has warped Rodet Fello to self, map #167.
+5:15:01 PM: Lokkmaru has warped stormmaker to self, map #167.
+5:15:03 PM: Kettucis saved item #300.
+5:15:07 PM: Lokkmaru has warped stormmaker to self, map #167.
+5:15:21 PM: Kettucis editing item #302.
+5:16:10 PM: Kettucis saved item #302.
+5:16:19 PM: Kettucis editing item #301.
+5:16:25 PM: Kettucis saved item #301.
+5:16:33 PM: Lokkmaru warped to map #668.
+5:16:37 PM: Kettucis editing item #303.
+5:16:38 PM: Lokkmaru has warped Rodet Fello to self, map #668.
+5:17:25 PM: Kettucis saved item #303.
+5:17:35 PM: Lokkmaru warped to map #1.
+5:17:39 PM: Lokkmaru has warped Rodet Fello to self, map #1.
+5:17:39 PM: Kettucis editing item #303.
+5:17:43 PM: Kettucis saved item #303.
+5:17:43 PM: Lokkmaru has warped luke to self, map #1.
+5:17:49 PM: Lokkmaru has warped stormmaker to self, map #1.
+5:17:58 PM: Kettucis editing item #304.
+5:19:01 PM: Kettucis saved item #304.
+5:19:12 PM: Kettucis editing item #305.
+5:20:03 PM: Kettucis saved item #305.
+5:20:31 PM: Kettucis editing item #306.
+5:21:06 PM: Kettucis saved item #306.
+5:21:41 PM: Kettucis editing item #307.
+5:22:37 PM: Kettucis saved item #307.
+5:26:10 PM: Kettucis editing item #308.
+5:27:19 PM: Kettucis saved item #308.
+5:27:30 PM: Kettucis editing item #309.
+5:28:28 PM: Kettucis saved item #309.
+5:28:39 PM: Kettucis editing item #310.
+5:29:18 PM: Kettucis saved item #310.
+5:29:37 PM: Kettucis editing item #311.
+5:30:16 PM: Kettucis saved item #311.
+5:30:45 PM: Kettucis editing item #312.
+5:35:18 PM: Saramon has warped to luke, map #1.
+5:35:26 PM: Saramon has warped luke to self, map #1.
+5:36:28 PM: Kettucis editing spell #47.
+5:37:32 PM: Kettucis saving spell #47.
+5:37:52 PM: Kettucis editing item #312.
+5:38:34 PM: Kettucis saved item #312.
+5:38:47 PM: Kettucis editing shop #51.
+5:39:17 PM: Kettucis saving shop #51.
+5:42:23 PM: Kettucis editing item #227.
+5:42:36 PM: Kettucis saved item #227.
+5:42:53 PM: Kettucis editing shop #51.
+5:43:29 PM: Kettucis editing shop #51.
+5:44:06 PM: Kettucis saving shop #51.
+5:44:30 PM: Kettucis editing spell #47.
+5:44:37 PM: Kettucis saving spell #47.
+5:45:17 PM: Saramon warped to map #161.
+5:46:06 PM: Kettucis has warped to SycoGhost, map #129.
+5:47:11 PM: (global) Saramon: okay all another contest, and sone you love them, first to find me gets 10k
+5:47:29 PM: Kettucis warped to map #200.
+5:47:35 PM: (global) Saramon: dont not sone
+5:48:03 PM: Kettucis editing shop #52.
+5:49:31 PM: Kettucis editing shop #52.
+5:50:14 PM: Kettucis saving shop #52.
+5:50:40 PM: Saramon has respawned map #161
+5:52:44 PM: Saramon has respawned map #161
+5:54:46 PM: Saramon has warped to luke, map #28.
+5:55:04 PM: Kettucis editing item #227.
+5:55:15 PM: Kettucis saved item #227.
+5:55:25 PM: Kettucis editing item #241.
+5:55:30 PM: Kettucis saved item #241.
+5:55:42 PM: Kettucis editing item #242.
+5:55:49 PM: Kettucis saved item #242.
+5:55:52 PM: Kettucis editing item #1.
+5:56:09 PM: Kettucis editing item #243.
+5:56:15 PM: Kettucis saved item #243.
+5:56:30 PM: Kettucis editing item #244.
+5:56:36 PM: Kettucis saved item #244.
+5:56:47 PM: Saramon warped to map #197.
+5:58:47 PM: (admin Saramon) are you mapping?
+5:59:14 PM: Kettucis editing item #245.
+6:00:06 PM: Kettucis editing item #245.
+6:00:11 PM: Kettucis saved item #245.
+6:00:35 PM: (admin Saramon) okay ill leave ya alone
+6:00:39 PM: (admin Kettucis) Okay
+6:00:59 PM: Kettucis editing item #246.
+6:01:07 PM: Saramon warped to map #219.
+6:01:16 PM: Kettucis saved item #246.
+6:01:50 PM: Saramon warped to map #977.
+6:02:00 PM: Saramon warped to map #219.
+6:02:40 PM: Saramon warped to map #218.
+6:02:47 PM: Kettucis editing item #247.
+6:02:52 PM: Kettucis saved item #247.
+6:02:55 PM: Saramon warped to map #977.
+6:03:06 PM: Saramon warped to map #218.
+6:03:19 PM: Kettucis editing item #248.
+6:03:27 PM: Kettucis saved item #248.
+6:03:28 PM: Saramon warped to map #218.
+6:05:24 PM: Saramon warped to map #217.
+6:05:33 PM: Saramon warped to map #216.
+6:05:39 PM: Saramon warped to map #220.
+6:06:08 PM: Saramon warped to map #1.
+6:06:51 PM: (global) Saramon: there are 3 rings of vitality if you bring me three i will give you 50k
+6:07:38 PM: (global) Saramon: well 4 then
+6:07:56 PM: (global) Saramon: you have to have 4 and find me
+6:08:23 PM: Saramon warped to map #47.
+6:08:45 PM: (global) Saramon: i didnt hide yet
+6:08:55 PM: (global) Saramon:  i am hid now
+6:09:08 PM: (global) Saramon: and i need to go to the bathroom
+6:09:32 PM: (global) Saramon: no not a clue
+6:15:25 PM: Saramon warped to map #22.
+6:15:59 PM: Saramon has warped to luke, map #1.
+6:16:13 PM: Saramon has warped luke to self, map #1.
+6:16:18 PM: Saramon warped to map #22.
+6:17:17 PM: Kettucis editing item #249.
+6:17:23 PM: Kettucis saved item #249.
+6:17:33 PM: Kettucis editing item #250.
+6:17:38 PM: Kettucis saved item #250.
+6:17:51 PM: Kettucis editing item #251.
+6:17:56 PM: Kettucis saved item #251.
+6:18:47 PM: (admin Saramon) kettucis am i in charge of gaming and events?
+6:19:02 PM: (admin Kettucis) Lokk is
+6:19:28 PM: Kettucis editing item #252.
+6:19:30 PM: (admin Saramon) okay, ive just been doing alot of it
+6:19:33 PM: Kettucis saved item #252.
+6:19:49 PM: (admin Saramon) but thats okay
+6:19:49 PM: Kettucis editing item #253.
+6:19:56 PM: Kettucis saved item #253.
+6:20:20 PM: Kettucis editing item #254.
+6:20:24 PM: Kettucis saved item #254.
+6:21:29 PM: (admin Saramon) so what do i do?
+6:24:37 PM: Kettucis editing item #255.
+6:24:41 PM: Kettucis saved item #255.
+6:24:56 PM: Kettucis editing item #256.
+6:25:00 PM: Kettucis saved item #256.
+6:25:13 PM: Kettucis editing item #257.
+6:25:17 PM: Kettucis saved item #257.
+6:25:32 PM: Kettucis editing item #258.
+6:25:35 PM: Kettucis saved item #258.
+6:25:48 PM: Kettucis editing item #259.
+6:25:54 PM: Kettucis saved item #259.
+6:26:07 PM: Kettucis editing item #260.
+6:26:11 PM: Kettucis saved item #260.
+6:26:23 PM: Kettucis editing item #261.
+6:26:27 PM: Kettucis saved item #261.
+6:26:41 PM: Kettucis editing item #262.
+6:26:45 PM: Kettucis saved item #262.
+6:26:46 PM: Saramon editing spell #21.
+6:26:53 PM: Saramon saving spell #21.
+6:27:23 PM: Kettucis editing item #263.
+6:27:28 PM: Kettucis saved item #263.
+6:27:39 PM: Kettucis editing item #264.
+6:27:43 PM: Kettucis saved item #264.
+6:28:58 PM: Saramon editing npc #1.
+6:29:52 PM: Saramon saved npc #1.
+6:30:22 PM: Saramon editing npc #1.
+6:30:38 PM: Saramon saved npc #1.
+6:31:54 PM: (global) Saramon: the stakes are higher im raising this contest to 250k in Blue Rubies and 2 event trophies! You only have 1/2 hour to find me
+6:32:37 PM: Saramon editing shop #53.
+6:33:51 PM: (global) Saramon: and i want 6 rings now
+6:34:30 PM: Saramon editing item #265.
+6:35:30 PM: Saramon saved item #265.
+6:36:00 PM: Saramon editing shop #53.
+6:36:26 PM: Saramon saving shop #53.
+6:37:09 PM: Saramon editing shop #53.
+6:39:22 PM: Saramon has respawned map #22
+6:40:59 PM: Saramon has respawned map #22
+6:41:26 PM: Saramon has warped luke to self, map #22.
+6:41:58 PM: Saramon warped to map #777.
+6:42:04 PM: Saramon has warped luke to self, map #777.
+6:43:55 PM: Saramon warped to map #1.
+6:44:02 PM: Saramon has warped luke to self, map #1.
+6:44:08 PM: Saramon warped to map #22.
+6:44:22 PM: Saramon editing shop #53.
+6:45:00 PM: Saramon saving shop #53.
+6:46:11 PM: Saramon warped to map #922.
+6:47:04 PM: Saramon has warped pure_speed to self, map #922.
+6:47:56 PM: Saramon warped to map #1.
+6:48:03 PM: Saramon has warped pure_speed to self, map #1.
+6:49:54 PM: Saramon warped to map #22.
+6:51:14 PM: Saramon has warped to Kettucis, map #200.
+6:56:26 PM: (global) Saramon: as an announcement kettucis and i are working on a new town called Shalorian
+6:56:42 PM: (global) Saramon: no idea when it will be done though
+6:58:01 PM: Saramon warped to map #922.
+7:03:29 PM: Kettucis warped to map #48.
+7:04:56 PM: (admin Kettucis) Who made the snow in Alcusion?
+7:19:05 PM: Lokkmaru has warped to luke, map #185.
+7:19:29 PM: Lokkmaru warped to map #152.
+7:20:46 PM: Lokkmaru has banned Tao.
+7:30:13 PM: Lokkmaru warped to map #101.
+7:30:28 PM: Lokkmaru warped to map #679.
+7:31:26 PM: Lokkmaru warped to map #198.
+7:31:32 PM: Lokkmaru warped to map #192.
+7:31:37 PM: Lokkmaru warped to map #201.
+7:31:43 PM: Lokkmaru warped to map #205.
+7:31:48 PM: Lokkmaru warped to map #223.
+7:38:01 PM: Lokkmaru editing npc #82.
+7:40:39 PM: Lokkmaru saved npc #82.
+7:40:42 PM: Lokkmaru warped to map #222.
+7:40:46 PM: Lokkmaru warped to map #64.
+7:41:23 PM: Lokkmaru has respawned map #217
+7:43:23 PM: Lokkmaru editing item #241.
+7:44:35 PM: Lokkmaru saved item #241.
+7:44:40 PM: Lokkmaru has respawned map #218
+7:44:52 PM: Lokkmaru has respawned map #218
+7:44:58 PM: Lokkmaru warped to map #64.
+7:46:50 PM: (global) Lokkmaru: A monster event is about to take place. All who wish to participate, please inform me so that I can warp you to the entrance to the Alcusion dungeon. This is where the warp to the monster's lair is. There will be four copies of a new item, plus an event trophy, behind the monster. Once you get the trophy, please tell me so I can post your name on the boards as the victor of this event.
+7:47:08 PM: Lokkmaru has warped pure_speed to self, map #64.
+7:47:15 PM: Lokkmaru has warped SycoGhost to self, map #64.
+7:47:28 PM: Lokkmaru has warped HunterX to self, map #64.
+7:47:35 PM: Lokkmaru has warped luke to self, map #64.
+7:47:55 PM: Lokkmaru has warped luke to self, map #64.
+7:48:02 PM: Lokkmaru has warped Gilgramelk to self, map #64.
+7:48:58 PM: Lokkmaru has warped SycoGhost to self, map #217.
+7:49:01 PM: Lokkmaru has warped pure_speed to self, map #217.
+7:49:41 PM: Lokkmaru has warped Gilgramelk to self, map #217.
+7:49:44 PM: Lokkmaru has warped pure_speed to self, map #217.
+7:50:24 PM: Lokkmaru has warped SycoGhost to self, map #217.
+7:50:49 PM: Lokkmaru warped to map #5.
+7:50:56 PM: Lokkmaru has warped to SycoGhost, map #217.
+7:51:19 PM: Lokkmaru has warped Gilgramelk to self, map #217.
+7:53:03 PM: Lokkmaru has warped pure_speed to self, map #217.
+7:53:44 PM: Lokkmaru has warped pure_speed to self, map #217.
+7:54:34 PM: Lokkmaru has warped pure_speed to self, map #217.
+7:58:18 PM: Lokkmaru has warped Rodet Fello to self, map #217.
+8:05:08 PM: Lokkmaru has warped SycoGhost to self, map #217.
+8:13:17 PM: Lokkmaru has warped SycoGhost to self, map #217.
+8:14:42 PM: Lokkmaru has warped Gilgramelk to self, map #217.
+8:16:18 PM: Lokkmaru has warped Rodet Fello to self, map #217.
+8:17:36 PM: Lokkmaru has warped Rodet Fello to self, map #217.
+8:21:23 PM: Lokkmaru warped to map #64.
+8:22:14 PM: Lokkmaru has warped to Spoonman, map #305.
+8:24:24 PM: Lokkmaru editing item #241.
+8:24:57 PM: Lokkmaru saved item #241.
+8:25:06 PM: Lokkmaru editing shop #22.
+8:25:27 PM: Lokkmaru saving shop #22.
+8:25:43 PM: Lokkmaru warped to map #922.
+8:27:03 PM: Lokkmaru has warped to Spoonman, map #153.
+8:28:15 PM: Lokkmaru has warped to SycoGhost, map #48.
+8:29:04 PM: Lokkmaru has warped to Spoonman, map #153.
+8:29:51 PM: Lokkmaru editing item #241.
+8:29:58 PM: Lokkmaru saved item #241.
+8:30:09 PM: Lokkmaru warped to map #922.
+8:30:18 PM: Lokkmaru has warped to Spoonman, map #403.
+8:31:17 PM: Lokkmaru warped to map #3.
+8:31:20 PM: Lokkmaru has warped Spoonman to self, map #3.
+8:36:58 PM: Lokkmaru has warped to SycoGhost, map #127.
+8:37:36 PM: Lokkmaru editing item #241.
+8:38:27 PM: Lokkmaru saved item #241.
+8:40:23 PM: Lokkmaru warped to map #3.
+8:40:40 PM: Lokkmaru has warped to SycoGhost, map #127.
+8:46:09 PM: Lokkmaru editing item #242.
+8:46:34 PM: Lokkmaru saved item #242.
+8:47:39 PM: Lokkmaru warped to map #922.
+8:47:48 PM: Lokkmaru editing shop #22.
+8:48:06 PM: Lokkmaru saving shop #22.
+8:50:01 PM: Lokkmaru has warped to SycoGhost, map #127.
+8:50:52 PM: Lokkmaru editing item #242.
+8:51:13 PM: Lokkmaru saved item #242.
+1:56:35 AM: Spoonman editing item #294.
+1:57:27 AM: Spoonman saved item #294.
+1:57:55 AM: gameplayer warped to map #14.
+1:57:56 AM: Spoonman warped to map #201.
+1:58:09 AM: Spoonman editing shop #67.
+1:58:25 AM: gameplayer has warped to ChuZzz, map #264.
+1:58:29 AM: Spoonman saving shop #67.
+1:59:55 AM: gameplayer has respawned map #264
+2:01:04 AM: gameplayer has warped to ChuZzz, map #265.
+2:01:15 AM: gameplayer has respawned map #265
+2:01:29 AM: gameplayer has respawned map #265
+2:01:37 AM: Spoonman editing npc #131.
+2:01:55 AM: gameplayer has respawned map #265
+2:02:17 AM: gameplayer has respawned map #265
+2:02:53 AM: gameplayer has respawned map #265
+2:03:22 AM: gameplayer has respawned map #265
+2:03:43 AM: gameplayer has respawned map #265
+2:04:04 AM: gameplayer has respawned map #265
+2:04:23 AM: gameplayer has respawned map #265
+2:04:50 AM: gameplayer has respawned map #265
+2:05:08 AM: gameplayer has respawned map #265
+2:05:51 AM: Spoonman saved npc #131.
+2:07:51 AM: gameplayer has warped to ChuZzz, map #262.
+2:07:58 AM: gameplayer has respawned map #262
+2:08:23 AM: gameplayer has respawned map #262
+2:09:06 AM: gameplayer has respawned map #262
+2:10:30 AM: gameplayer has respawned map #262
+2:11:27 AM: gameplayer has respawned map #262
+2:11:57 AM: gameplayer warped to map #150.
+2:12:04 AM: gameplayer has warped ChuZzz to self, map #150.
+2:12:25 AM: gameplayer has respawned map #150
+2:12:52 AM: gameplayer has respawned map #150
+2:13:09 AM: gameplayer has respawned map #150
+2:13:15 AM: gameplayer has respawned map #150
+2:13:19 AM: gameplayer has respawned map #150
+2:13:27 AM: gameplayer has respawned map #150
+2:13:34 AM: gameplayer has respawned map #150
+2:13:38 AM: gameplayer has respawned map #150
+2:13:45 AM: gameplayer has respawned map #150
+2:14:05 AM: gameplayer warped to map #234.
+2:14:22 AM: gameplayer has warped ChuZzz to self, map #223.
+2:16:14 AM: gameplayer warped to map #370.
+2:16:27 AM: gameplayer has warped ChuZzz to self, map #228.
+2:17:25 AM: gameplayer warped to map #444.
+2:18:16 AM: gameplayer has warped to ChuZzz, map #264.
+2:18:52 AM: Spoonman warped to map #199.
+2:19:22 AM: gameplayer has respawned map #264
+2:20:26 AM: gameplayer has respawned map #264
+2:20:45 AM: gameplayer has respawned map #264
+2:21:18 AM: gameplayer has respawned map #264
+2:23:07 AM: gameplayer has respawned map #264
+2:23:26 AM: gameplayer has respawned map #264
+2:23:37 AM: gameplayer has respawned map #264
+2:24:34 AM: gameplayer has respawned map #264
+2:25:40 AM: gameplayer has respawned map #264
+2:26:36 AM: gameplayer has respawned map #264
+2:26:56 AM: gameplayer has respawned map #264
+2:27:43 AM: gameplayer has respawned map #264
+2:28:48 AM: gameplayer has respawned map #264
+2:29:12 AM: gameplayer has respawned map #264
+2:30:40 AM: gameplayer has respawned map #264
+8:11:16 PM: Sonire has warped to Rootvij, map #227.
+8:11:27 PM: Sonire has respawned map #227
+8:17:51 PM: Sonire warped to map #1.
+8:30:44 PM: Sonire has warped to Tick, map #299.
+8:33:41 PM: (global) Sonire: Please stop requesting sprite changes everyone. We're out of item space, it's hard to explain, just trust me, it isn't easy to do anymore.
+8:36:02 PM: Sonire editing npc #134.
+8:37:16 PM: Sonire saved npc #134.
+8:40:17 PM: Sonire has kicked gridlock.
+8:45:15 PM: Sonire has warped to gridlock, map #7.
+8:45:30 PM: Sonire has warped to gridlock, map #7.
+8:47:09 PM: Sonire has warped to Hiroki, map #250.
+8:48:29 PM: Sonire warped to map #1.
+8:49:47 PM: Sonire has banned gridlock.
+8:58:40 PM: Sonire has modified gameplayer's access.
+8:58:51 PM: Sonire has modified Kaze's access.
+8:59:33 PM: gameplayer has warped to Kaze, map #228.
+8:59:43 PM: gameplayer has warped to shackled, map #228.
+9:01:14 PM: gameplayer warped to map #243.
+9:01:19 PM: gameplayer warped to map #1.
+9:01:30 PM: gameplayer has warped Kaze to self, map #1.
+9:02:02 PM: Kaze has warped to gameplayer, map #1.
+9:02:02 PM: gameplayer has warped to Serfius Avlaire, map #210.
+9:06:25 PM: gameplayer has warped to shackled, map #262.
+9:06:34 PM: Kaze has warped to gameplayer, map #228.
+9:06:35 PM: gameplayer has warped Serfius Avlaire to self, map #228.
+9:11:56 PM: gameplayer has warped Rootvij to self, map #232.
+9:12:40 PM: gameplayer has warped to Sonire, map #45.
+9:14:04 PM: gameplayer warped to map #1.
+9:14:39 PM: gameplayer has warped to shackled, map #53.
+9:14:50 PM: gameplayer has warped to shackled, map #53.
+9:14:59 PM: gameplayer warped to map #654.
+9:15:05 PM: gameplayer warped to map #150.
+9:15:08 PM: gameplayer warped to map #1.
+9:15:11 PM: gameplayer warped to map #1.
+9:15:15 PM: gameplayer warped to map #150.
+9:15:24 PM: gameplayer has respawned map #150
+9:15:39 PM: gameplayer warped to map #777.
+9:18:21 PM: gameplayer has warped to shackled, map #77.
+9:18:29 PM: gameplayer has warped Serfius Avlaire to self, map #48.
+9:18:47 PM: gameplayer has warped Serfius Avlaire to self, map #49.
+9:19:15 PM: gameplayer has warped to Rootvij, map #53.
+9:19:34 PM: gameplayer warped to map #543.
+9:19:42 PM: gameplayer warped to map #3.
+9:19:48 PM: gameplayer warped to map #370.
+9:19:56 PM: gameplayer has warped Rootvij to self, map #229.
+9:20:33 PM: gameplayer has warped to shackled, map #448.
+9:20:43 PM: gameplayer has warped to shackled, map #228.
+9:20:48 PM: gameplayer has warped Serfius Avlaire to self, map #232.
+9:21:25 PM: gameplayer has warped Serfius Avlaire to self, map #232.
+9:21:53 PM: gameplayer has warped shackled to self, map #232.
+9:22:44 PM: gameplayer has warped shackled to self, map #232.
+10:01:58 PM: gameplayer has warped to Jet Li, map #74.
+10:02:34 PM: gameplayer has warped to Bahamut, map #315.
+10:03:13 PM: gameplayer has warped to shoso, map #132.
+10:04:04 PM: gameplayer warped to map #777.
+10:14:20 PM: gameplayer warped to map #4.
+10:17:20 PM: gameplayer has warped to shackled, map #184.
+10:18:32 PM: gameplayer has warped to shoso, map #132.
+11:49:58 PM: Kaze has warped to supakilla2, map #2.
+11:50:42 PM: Kaze warped to map #1.
+11:50:57 PM: Kaze has warped to Vernon, map #2.
+11:51:54 PM: Kaze warped to map #400.
+11:52:29 PM: Kaze warped to map #497.
+11:52:34 PM: Kaze warped to map #1.
+11:52:40 PM: Kaze warped to map #497.
+11:52:46 PM: Kaze warped to map #1.
+11:53:43 PM: Kaze warped to map #497.
+11:53:56 PM: Kaze warped to map #1.
+11:57:50 PM: Kaze warped to map #497.
+11:58:25 PM: Kaze warped to map #400.
+12:06:34 AM: Kaze warped to map #1.

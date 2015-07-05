@@ -1,0 +1,12 @@
+Los canales de chat y como usarlos!
+
+Charla en el Mapa - Simple, escribe en la casilla de texto 
+y apreta Enter!
+Transmitir - Escribe ' antes del texto.
+Emote - Escribe - Antes del texto.
+Mensaje Privado - Escribe ! y el nombre del jugado antes 
+del texto. Example: !Ramza Hola
+Global - Escribe " Antes del texto. Nota: Esto es para 
+jugadores con rango mayor que 1.
+Admin - Escribe = Antes del texto. Nota: Esto es para 
+jugadores con rango mayor que 1.

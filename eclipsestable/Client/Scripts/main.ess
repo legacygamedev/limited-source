@@ -1,0 +1,1492 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: Main.txt						'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0	
+'test			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' Constants & Globals
+' Color Constants
+Public Const BLACK = 0
+Public Const BLUE = 1
+Public Const GREEN = 2
+Public Const CYAN = 3
+Public Const RED = 4
+Public Const MAGENTA = 5
+Public Const BROWN = 6
+Public Const GREY = 7
+Public Const DARKGREY = 8
+Public Const BRIGHTBLUE = 9
+Public Const BRIGHTGREEN = 10
+Public Const BRIGHTCYAN = 11
+Public Const BRIGHTRED = 12
+Public Const PINK = 13
+Public Const YELLOW = 14
+Public Const WHITE = 15
+
+' Admin Constants
+Public Const ADMIN_PLAYER = 0
+Public Const ADMIN_MONITOR = 1
+Public Const ADMIN_MAPPER = 2
+Public Const ADMIN_DEVELOPER = 3
+Public Const ADMIN_CREATOR = 4
+Public Const ADMIN_OWNER = 5
+
+' Alignment constants
+Public Const LEFT = 0
+Public Const RIGHT = 1
+Public Const CENTER = 2
+
+' Stat constants
+Public Const STAT_STRENGHT = 0
+Public Const STAT_DEFENCE = 1
+Public Const STAT_MAGIC = 2
+Public Const STAT_SPEED = 3
+
+' Key constants
+Public Const KEY_PAGEUP = 1
+Public Const KEY_PAGEDOWN = 4
+Public Const KEY_DELETE = 2
+Public Const KEY_END = 3
+
+' Element type constants
+Public Const ELEMENT_PICTURE = 1
+Public Const ELEMENT_FIELD = 2
+Public Const ELEMENT_LABEL = 3
+
+' Tile type constants
+Public Const TILE_TYPE_WALKABLE = 0
+Public Const TILE_TYPE_BLOCKED = 1
+Public Const TILE_TYPE_WARP = 2
+Public Const TILE_TYPE_ITEM = 3
+Public Const TILE_TYPE_NPCAVOID = 4
+Public Const TILE_TYPE_KEY = 5
+Public Const TILE_TYPE_KEYOPEN = 6
+Public Const TILE_TYPE_HEAL = 7
+Public Const TILE_TYPE_KILL = 8
+Public Const TILE_TYPE_SHOP = 9
+Public Const TILE_TYPE_CBLOCK = 10
+Public Const TILE_TYPE_ARENA = 11
+Public Const TILE_TYPE_SOUND = 12
+Public Const TILE_TYPE_SPRITE_CHANGE = 13
+Public Const TILE_TYPE_SIGN = 14
+Public Const TILE_TYPE_DOOR = 15
+Public Const TILE_TYPE_NOTICE = 16
+Public Const TILE_TYPE_CHEST = 17
+Public Const TILE_TYPE_CLASS_CHANGE = 18
+Public Const TILE_TYPE_SCRIPTED = 19
+'Public Const TILE_TYPE_NPC_SPAWN = 20
+Public Const TILE_TYPE_HOUSE = 21
+'Public Const TILE_TYPE_CANON = 22
+Public Const TILE_TYPE_BANK = 23
+'Public Const TILE_TYPE_SKILL = 24
+Public Const TILE_TYPE_GUILDBLOCK = 25
+Public Const TILE_TYPE_HOOKSHOT = 26
+Public Const TILE_TYPE_WALKTHRU = 27
+Public Const TILE_TYPE_ROOF = 28
+Public Const TILE_TYPE_ROOFBLOCK = 29
+Public Const TILE_TYPE_ONCLICK = 30
+Public Const TILE_TYPE_LOWER_STAT = 31
+
+' Data.ini (config) settings.
+Public GameName
+Public WebSite
+Public Port
+Public HPRegen
+Public HPTimer
+Public MPRegen
+Public MPTimer
+Public SPRegen
+Public SPTimer
+Public NPCRegen
+Public Scrolling
+Public ScrollX
+Public ScrollY
+Public Scripting
+Public ScriptErrors
+Public PaperDoll
+Public SaveTime
+Public SpriteSize
+Public Custom
+Public PKMinLvl
+Public Level
+Public Email
+Public VerifyAcc
+Public Classes
+Public Stat1
+Public Stat2
+Public Stat3
+Public Stat4
+Public SPAttack
+Public SPRunning
+
+' Data.ini (max) settings.
+Public MAX_PLAYERS
+Public MAX_ITEMS
+Public MAX_NPCS
+Public MAX_SHOPS
+Public MAX_SPELLS
+Public MAX_MAPS
+Public MAX_MAP_ITEMS
+Public MAX_GUILDS
+Public MAX_GUILD_MEMBERS
+Public MAX_EMOTICONS
+Public MAX_ELEMENTS
+Public MAX_LEVEL
+Public MAX_PARTY_MEMBERS
+Public MAX_SCRIPTSPELLS
+Public MAX_MAP_X
+Public MAX_MAP_Y
+Public MAX_STAT
+
+' MOTD
+Public MOTD
+
+' Events
+' Initialisation & Reloading
+#include <Events\OnServerLoad.ess>
+#include <Events\OnScriptReload.ess>
+#include <Events\ChangeMOTD.ess>
+
+' Interactivity
+#include <Events\Commands.ess>
+#include <Events\HotScript.txt>
+#include <Events\MenuScripts.ess>
+#include <Events\OnClick.ess>
+#include <Events\PlayerPrompt.ess>
+#include <Events\QueryBox.ess>
+
+' Joining & Leaving
+#include <Events\OnNewChar.ess>
+#include <Events\JoinGame.ess>
+#include <Events\LeftGame.ess>
+
+' Death
+#include <Events\OnArenaDeath.ess>
+#include <Events\OnPVPDeath.ess>
+#include <Events\OnNPCDeath.ess>
+#include <Events\OnDeath.ess>
+#include <Events\DropItems.ess>
+
+' Attacks
+#include <Events\OnAttack.ess>
+#include <Events\OnArrowHit.ess>
+#include <Events\PlayerHit.ess>
+
+' Scripted
+#include <Events\ScriptedItem.ess>
+#include <Events\ScriptedSpell.ess>
+#include <Events\ScriptedTile.ess>
+#include <Events\ScriptedNPC.ess>
+
+' Leveling
+#include <Events\PlayerLevelUp.ess>
+#include <Events\UsingStatPoints.ess>
+
+' Misc
+#include <Events\TimedEvent.ess>
+#include <Events\OnItemDrop.ess>
+#include <Events\OnMapLoad.ess>
+
+' Modules
+#include <Modules\AccountVar.ess>
+#include <Modules\Attributes.ess>
+#include <Modules\Profile.ess>
+
+' Functions
+' General
+#include <Functions\GetPlayerAccessTitle.ess>
+#include <Functions\LoadSettings.ess>
+
+'********************************
+Function F_Freeslots(index)      
+'********************************
+
+Dim slot
+Dim count
+
+slot=1
+count=0
+   Do While slot < 25   
+      If getplayerinvitemnum(index, slot) = 0 Then
+      count = Int(count) + 1
+      End If
+   slot=Int(slot) + 1
+   Loop
+F_Freeslots=Int(count)
+End Function
+
+'********************************
+Sub Give_Item(index, number, durability)
+'********************************
+
+Dim slot
+
+slot = 1
+   Do While slot < 25
+      If Getplayerinvitemnum( index, Int( slot ) ) = 0 Then
+         Call SetPlayerInvItemNum(index, Int( slot ), Int( number ) )
+         Call SetPlayerInvItemDur(index, Int( slot ), Int( durability ) )
+         Call SetPlayerInvItemValue(index, Int( slot ), Int(0) )
+         Call SendInventoryUpdate(index, Int(slot) )
+         slot = 25
+      End If
+   slot = slot + 1
+   Loop
+End Sub
+
+'********************************
+Sub Give_Currency(index, number, quantity)
+'********************************
+
+Dim slot
+Dim initial
+Dim final
+Dim given
+
+slot=1
+given=0
+
+   Do While slot < 25
+      If Getplayerinvitemnum(index,Int(slot))=Int(number) Then
+         initial = Getplayerinvitemvalue( index, Int( slot ) )
+         final = Int( initial ) + Int( quantity )
+         Call setplayerinvitemvalue( index, Int( slot ), Int( final ) )
+         Call SendInventoryUpdate(index, Int(slot) )
+         slot = 25
+         given = 1
+      End If
+   slot = slot + 1
+   Loop
+      
+   If given=1 Then
+      slot=25
+   Else
+      slot=1
+   End If
+
+   Do While slot < 25
+      If Getplayerinvitemnum(index,Int(slot)) = 0 Then
+         Call SetPlayerInvItemNum(index, Int( slot ), Int( number ) )
+         Call SetPlayerInvItemValue(index, Int( slot ), Int( quantity ) )
+         Call SetPlayerInvItemDur(index, Int( slot ), 0 )
+         Call SendInventoryUpdate(index, Int(slot) )
+         slot = 25
+      End If
+   slot = slot + 1
+   Loop
+   
+End Sub
+
+'********************************
+Function F_Check_Take(index, number, value)
+'********************************
+
+Dim slot
+dim epic
+
+slot = 1
+epic =0
+   Do While slot < 25   
+      If Getplayerinvitemnum( index, Int( slot ) ) = Int( number ) Then
+         If GetPlayerInvItemValue(index, Int( slot ) ) >= Int(value) Then         
+         epic=1            
+         End If
+      End If
+   slot = slot + 1
+   Loop 
+   F_Check_Take = epic
+End Function
+
+'********************************
+Sub Take_Item(index, number, value)
+'********************************
+
+Dim slot
+Dim taken
+Dim initial
+Dim final
+
+slot=1
+taken=0
+   Do While Int(slot) < 25      
+      If Int(taken)=0 Then      
+         If Getplayerinvitemnum(index,Int(slot)) = Int(number) Then
+            If Int(getplayerinvitemvalue(index, Int(slot))) >= Int(value) Then
+            initial = Int(getplayerinvitemvalue(index, Int(slot) ) )
+            final = Int(initial) - Int(value)            
+               If Int(final) <= 0 Then               
+               Call setplayerinvitemnum(index, Int(slot), Int(0) )
+               Call setplayerinvitemvalue(index, Int(slot), Int(0) )
+               Call setplayerinvitemdur(index, Int(slot), Int(0) )
+               Call SendInventoryUpdate(index, Int(slot))
+               taken=1               
+               Else            
+               Call setplayerinvitemvalue(index, Int(slot), Int(final) )
+               Call SendInventoryUpdate(index, Int(slot) )
+               taken=1            
+               End If
+            End If         
+         End If
+      End If      
+   slot = slot + 1
+   Loop
+End Sub        
+
+Sub Name_Guild(index)          
+Call CustomMenuShow(index, "GuildName", "\GUI\CUSTOM\small.gif", 1)
+Call CustomMenuLabel(index, 1, "What would you like to name your guild?", 5, 5, 10, 15, 2, 148, 40)
+Call CustomMenuLabel(index, 2, "Cancel", 5, 115, 10, 15, 2, 148, 20) 
+Call CustomMenuTextBox(index, 1, 147, 5, 65, "Enter a name!")
+End Sub               
+
+Sub sendmailupdate(index)
+
+dim intCount
+dim newcount
+intcount = 1
+newcount = 0
+Do While intCount <= 7 
+If GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & intCount, "Read") = 0 and GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & intCount, "Used") = 1 then
+newcount = newcount + 1
+end if
+intCount = intCount + 1
+Loop  
+if newcount = 1 then
+Call PlaySound(plnum, "Mail03.wav") 
+Call PlayerMsg(index, "You have " & newcount & " new message! Press 'PGUP' to view your inbox.", 14)
+elseif newcount > 1 then 
+Call PlaySound(plnum, "Mail03.wav")
+Call PlayerMsg(index, "You have " & newcount & " new messages! Press 'PGUP' to view your inbox.", 14)
+
+end if
+
+end sub 
+
+
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+' Shows the Mail window.
+Sub Mailbox(index)                                        
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If GetVar("Mail\" & GetPlayerName(index) & ".ini", "General", "Exists") = "" Then
+	Call MailMakeIni(index)
+End If    
+
+Call CustomMenuClose(index)
+
+
+' Call CustomMenuLabel(index, 0, "Mailbox", 0, 50, 10, 0, 2, 1000, 1000)
+
+
+Dim intCount
+intCount = 1
+Do While intCount <= 7
+	If GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & intCount, "Used") = 0 Then
+		Call CustomMenuPicture(index, intCount, "\GUI\CUSTOM\itembg.JPG", 1000, 1000)
+		Call CustomMenuLabel(index, intCount, "", 85, (intCount * 40) + 70, 10, 0, 0, 200, 36)
+	Else
+		If GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & intCount, "Read") = 0 Then
+			Call CustomMenuPicture(index, intCount, "\GUI\CUSTOM\NewMail.jpg", 44, (intCount * 40) + 62)
+			Call CustomMenuLabel(index, intCount, "*NEW* FROM: " & GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & intCount, "From"), 85, (intCount * 40) + 70, 10, 14, 2, 240, 36)
+		Else
+			Call CustomMenuPicture(index, intCount, "\GUI\CUSTOM\OldMail.jpg", 44, (intCount * 40) + 62)
+			Call CustomMenuLabel(index, intCount, "FROM: " & GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & intCount, "From"), 85, (intCount * 40) + 70, 10, 0, 2, 240, 36)
+		End If
+	End If
+	intCount = intCount + 1
+Loop
+
+Call CustomMenuPicture(index, 8, "\GUI\CUSTOM\newmessage.gif", 35, 390)
+Call CustomMenuPicture(index, 9, "\GUI\CUSTOM\close.gif", 205, 390) 
+
+Call CustomMenuShow(index, "Mailbox", "\GUI\CUSTOM\mail.bmp", 1)
+
+End Sub
+
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+' Shows the 'Compose a Messsage' Mail window.
+' Meant to be used directly after the mailbox window, but doesn't need to be.
+Sub MakeMail(index)                                        
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Call CustomMenuClose(index)
+
+Call CustomMenuLabel(index, 0, "Compose a Message", 37, 35, 20, 15, 2, 300, 40)
+Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Compose", "Body", "")
+'Call CustomMenuPicture(index, 8, "\GFX\Compose.gif", 1000, 390)
+
+Call CustomMenuTextBox(index, 1, 295, 40, 90, "Type message here. Click OK to preview.")
+Call CustomMenuLabel(index, 8, "Please type your messege in the above textbox and press OK to preview it." & vbnewline & vbnewline & vbnewline & vbnewline & vbnewline& vbnewline & vbnewline & vbnewline & vbnewline & vbnewline & vbnewline & "Then enter the recipients name in the below textbox and click OK to send it.", 45, 130, 10, 15, 2, 290, 230)
+Call CustomMenuTextBox(index, 2, 295, 40, 360, "Type recipient name here. Click OK to send.")
+
+Call CustomMenuPicture(index, 1, "\GUI\CUSTOM\close.gif", 115, 420)
+    
+Call CustomMenuShow(index, "Compose", "\GUI\CUSTOM\reading.bmp", 1)
+
+End Sub
+
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+' Shows the 'Reading Message' Mail window.
+' Meant to be used directly after the mailbox window, but doesn't need to be.
+Sub ReadMail(index,mailID)                                        
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Call CustomMenuClose(index)  
+  
+  
+Call CustomMenuLabel(index, 0, "Message From: " & GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "From"), 40, 45, 10, 15, 2, 300, 20)
+' Call CustomMenuPicture(index, 8, "\GFX\Compose.gif", 1000, 390)
+'Set the current mail ID so the events know which mail to delete/reply to.
+Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID", "" & mailID & "")
+Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "Read", 1)
+
+'Move the Mailbox items to make room for the Reading items
+
+Call CustomMenuLabel(index, 8, GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "Body"), 45, 100, 10, 15, 2, 290, 180)
+ 
+Call CustomMenuPicture(index, 1, "\GUI\CUSTOM\reply.gif", 38, 390)
+Call CustomMenuPicture(index, 2, "\GUI\CUSTOM\delete.gif", 195, 390) 
+ 
+Call CustomMenuPicture(index, 3, "\GUI\CUSTOM\close.gif", 115, 440)
+Call CustomMenuShow(index, "Read Mail", "\GUI\Custom\reading.bmp", 1)
+
+End Sub
+
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+' Events to make a mail ini file for a new player.
+' This is here to make the code easier to read and install.
+Sub MailMakeIni(index)                                      
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "General", "Exists", 1)
+Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID", 0)
+
+Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Compose", "Body", "")
+
+Dim Count
+Count = 1
+Do While Count <= 7
+	Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & Count, "Used", 0)
+	Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & Count, "Read", 0)
+	Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & Count, "From", "")
+	Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & Count, "Body", "")
+	Count = Count + 1
+Loop
+
+End Sub
+
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+' Events for field actions.
+' This is here to make the code easier to read and install.
+Sub MailFieldEvent(index, clicked_index, field_message)                                      
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If clicked_index = 1 Then
+	Call CustomMenuLabel(index, 8, field_message, 45, 130, 10, 15, 2, 290, 180)
+	Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Compose", "Body", "" & field_message & "")
+End If
+
+If clicked_index = 2 Then
+	If Int(GetVar("Mail\" & field_message & ".ini", "General", "Exists") + 0) = 0 Then
+		Call playermsg(index, "" & field_message & " does not have an address. Perhaps you typed the name in wrong?", 14)
+	ElseIf GetVar("Mail\" & GetPlayerName(index) & ".ini", "Compose", "Body") = "" Then
+		Call playermsg(index, "You need to type your message in the upper box and click the OK next to it to prieview before sending!", 14)
+	Else
+		Dim intCount
+		intCount = 1
+		Do While intCount <= 7
+			If GetVar("Mail\" & field_message & ".ini", "Mail" & intCount, "Used") = 0 Then
+				Call PutVar("Mail\" & field_message & ".ini", "Mail" & intCount, "Body", GetVar("Mail\" & GetPlayerName(index) & ".ini", "Compose", "Body"))
+				Call PutVar("Mail\" & field_message & ".ini", "Mail" & intCount, "From", GetPlayerName(index))
+				Call PutVar("Mail\" & field_message & ".ini", "Mail" & intCount, "Read", 0)
+				Call PutVar("Mail\" & field_message & ".ini", "Mail" & intCount, "Used", 1)
+				Call Mailbox(index)
+				Call playermsg(index, "Message has been successfully sent to " & field_message & ".", 14)
+				Dim plnum
+				plnum = FindPlayer(Trim(field_message))
+				if plnum > 0 then    
+				Call PlaySound(plnum, "Mail03.wav")
+				Call playermsg(plnum, "You have recieved a new message from " & getplayername(index) & "! Press 'PGUP' to view your inbox.", 14)
+				end if
+				intCount = 999
+			Else
+				intCount = intCount + 1
+			End If
+		Loop
+		If intCount < 999 Then
+			Call playermsg(index, "" & field_message & "'s mailbox is full and cannot hold another message.", 14)
+		End If
+	End If
+End If
+
+End Sub
+
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+' Events for label actions.
+' This is here to make the code easier to read and install.
+Sub MailLabelEvent(index, menu_title, clicked_index)                                    
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If clicked_index = 8 Then
+	If menu_title = "Mailbox" Then
+		Call MakeMail(index)
+	End If
+End If
+If clicked_index = 9 Then
+	If menu_title = "Mailbox" Then
+		Call CustomMEnuClose(index)
+	End If
+End If
+ If clicked_index = 7 Then
+	If menu_title = "Compose" OR menu_title = "Read Mail" Then
+		Call Mailbox(index)
+		Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID", 0)
+	End If 
+	end if
+
+
+If menu_title = "Mailbox" Then
+
+		If GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & clicked_index, "Used") = 1 Then
+			Call ReadMail(index,clicked_index)
+		End If
+End If
+
+
+If menu_title = "Read Mail" Then
+	Dim mailID
+	If clicked_index = 9 Then
+		mailID = GetVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID")
+		Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "From", " ")
+		Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "Body", " ")
+		Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "Read", 0)
+		Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "Used", 0)
+		Call PlaySound(plnum, "Recyc02.wav")
+		Call Mailbox(index)
+	End If
+
+	If clicked_index = 10 Then
+		mailID = GetVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID")
+		Call MakeMail(index)
+		Call CustomMenuTextBox(index, 2, 295, 40, 360, GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "From"))
+	End If
+End If
+
+End Sub    
+
+Sub MailPicEvent(index, menu_title, clicked_index)
+If menu_title = "Read Mail" Then
+	Dim mailID
+	If clicked_index = 2 Then
+		mailID = GetVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID")
+		Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "From", " ")
+		Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "Body", " ")
+		Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "Read", 0)
+		Call PutVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "Used", 0)
+		Call PlaySound(plnum, "Recyc02.wav")
+		Call Mailbox(index)
+	End If
+
+	If clicked_index = 1 Then
+		mailID = GetVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID")
+		Call MakeMail(index)
+		Call CustomMenuTextBox(index, 2, 295, 40, 360, GetVar("Mail\" & GetPlayerName(index) & ".ini", "Mail" & mailID, "From"))
+	End If 
+	If clicked_index = 3 Then
+		Call MailBox(index)
+	End If
+End If
+If menu_title = "Compose" then
+Call MailBox(index)
+end if    
+If menu_title = "Mailbox" then
+if clicked_index = 9 then
+Call CustomMEnuClose(index)
+end if   
+end if
+End Sub
+
+Sub MakeFriendsIni(index)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F1", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F2", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F3", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F4", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F5", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F6", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F7", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F8", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F9", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F10", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F11", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F12", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F13", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F14", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F15", 0)
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "init", 1)
+End Sub  
+
+Sub FriendsList(index) 
+dim Friend
+
+if getvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "init") = "" then
+Call MakeFriendsIni(index)
+end if
+  
+call custommenuclose(index)
+Call CustomMenuLabel(index, 0, "Friends", 37, 35, 20, 15, 2, 300, 40)
+
+Friend = 1
+
+Do While Friend < 16
+
+If GetVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & Friend) <> "0" then
+if FindPlayer(GetVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & Friend)) > 0 then
+Call CustomMenuPicture(index, Friend, "\GUI\Custom\friends_online.bmp", 80, 120 + ((int(Friend) - 1) * 15))
+else  
+Call CustomMenuPicture(index, Friend, "\GUI\Custom\friends_offline.bmp", 80, 120 + ((int(Friend) - 1) * 15))
+end if 
+Call CustomMenuLabel(index, Friend, GetVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & Friend), 95, 118 + ((int(Friend) - 1) * 15), 9, 15, 0, 150, 23) 
+end if
+Friend = Friend + 1
+Loop
+Call CustomMenuTextBox(index, 1, 295, 42, 362, "Add or Remove A Friend")
+Call CustomMenuPicture(index, 16, "\GUI\CUSTOM\close.gif", 115, 440)
+Call CustomMenuShow(index, "FList", "\GUI\Custom\reading.bmp", 1)
+End Sub   
+
+Sub FriendEvent(index, clicked_type, clicked_index, clicked_value)
+
+Dim n
+select case int(clicked_type)
+case 1
+if int(clicked_index) < 16 then
+n = FindPlayer(GetVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & clicked_index))
+if n = 0 then
+mailID = GetVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID")
+Call MakeMail(index)
+Call CustomMenuTextBox(index, 2, 295, 40, 360, GetVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & clicked_index))
+else
+Call FriendInfo(index, clicked_index)
+end if
+else
+call custommenuclose(index)
+end if 
+
+case 2
+n = FindPlayer(GetVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & clicked_index))
+if n = 0 then 
+mailID = GetVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID")
+Call MakeMail(index)
+Call CustomMenuTextBox(index, 2, 295, 40, 360, GetVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & clicked_index)) 
+else  
+Call FriendInfo(index, clicked_index)
+end if
+case 3 
+
+if isfriend(index, clicked_value) = FALSE then                  
+if GetVar("Mail\" & clicked_value & ".ini", "General", "Exists") <> "" then
+n = getvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "init")
+Call PutVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & n, "" & clicked_value)
+call putvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "init", int(n) + 1)
+Call Friendslist(index)
+exit sub 
+
+else
+Call PlayerMsg(index, "That player does not exist!", 4)
+exit sub
+end if  
+
+else
+n = isfriend(index, clicked_value)
+call putvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & n, "0")
+if (int(n) + 1) < int(getvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "init")) then  
+do while (int(n) + 1) < int(getvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "init"))
+call putvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & n, getvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & (int(n) + 1)))
+n = n + 1
+loop
+call putvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & n, "0")
+end if 
+call putvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "init", (int(n))) 
+end if
+Call Friendslist(index)
+end select
+End Sub  
+
+Sub FriendInfo(index, FID)
+dim n
+
+call custommenuclose(index)
+Call CustomMenuLabel(index, 0, "Friends", 37, 35, 20, 15, 2, 300, 40)
+
+n = FindPlayer(getvar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & FID)) 
+
+if n = 0 then
+mailID = GetVar("Mail\" & GetPlayerName(index) & ".ini", "General", "MailID")
+Call MakeMail(index)
+Call CustomMenuTextBox(index, 2, 295, 40, 360, GetVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & FID))
+exit sub
+end if
+
+Call CustomMenuPicture(index, 1, "\GUI\Custom\friends_online.bmp", 150, 130)
+
+Call CustomMenuLabel(index, FID, "Send a Message", 37, 355, 10, 15, 2, 300, 40)
+
+Call CustomMenuLabel(index, 16, GetPlayerName(n), 37, 100, 15, 15, 2, 300, 40)
+
+Call CustomMenuLabel(index, 17, "Location: " & trim(GetMapName(GetPlayerMap(n))), 37, 155, 10, 15, 2, 300, 40)
+Call CustomMenuLabel(index, 18, "Current Stats:", 37, 185, 10, 15, 2, 100, 40)
+Call CustomMenuLabel(index, 19, "Level " & GetPlayerLevel(n) & " " & GetPlayerClassName(n), 37, 205, 10, 15, 2, 300, 40)
+
+Call CustomMenuLabel(index, 20, "Strength: " & GetPlayerSTR(n), 75, 240, 10, 15, 0, 400, 40)
+Call CustomMenuLabel(index, 21, "Defense: " & GetPlayerDEF(n), 205, 240, 10, 15, 0, 400, 40)
+Call CustomMenuLabel(index, 22, "Speed: " & GetPlayerSPEED(n), 75, 255, 10, 15, 0, 400, 40)
+Call CustomMenuLabel(index, 23, "Magic: " & GetPlayerMAGI(n), 205, 255, 10, 15, 0, 400, 40)
+
+Call CustomMenuLabel(index, 24, "Online", 165, 128, 10, 10, 0, 300, 40) 
+
+Call CustomMenuPicture(index, 16, "\GUI\CUSTOM\close.gif", 115, 440)
+
+Call CustomMenuShow(index, "FInfo", "\GUI\Custom\reading.bmp", 1)
+
+End Sub
+
+Function IsFriend(index, Name)
+dim status
+dim friend
+
+status = FALSE
+friend = 1
+
+do while friend < 16
+If lcase(GetVar("Friends\" & GetPlayerName(index) & ".ini", "Friends", "F" & Friend)) = lcase(Name) then
+status = friend 
+exit do
+end if 
+friend = friend + 1
+loop
+
+IsFriend = status
+
+End Function
+
+Sub HighScores(index)                              
+call UpdateHS(Index)
+totalChars = GetVar("accounts\chars.ini", "Chars", "total") 
+
+
+if totalchars = "" then
+totalchars = 1
+end if
+Dim Char(100)
+Dim Charlvl(100) 
+Dim Ca
+Dim Cb   
+Dim tempnamea
+Dim tempnameb
+Dim templvla
+Dim templvlb
+i = 1
+j = 1
+C = 0
+Cnum = 0 
+Call PutVar("accounts\chars.ini " , "Levels", GetPlayerName(index), GetPlayerLevel(Index))
+      j = 1    
+      Do While int(j) < int(totalchars) + 1
+      		Cnum = j
+            Char(Cnum) = GetVar("accounts\chars.ini", "Chars", "Char" & j)
+            Charlvl(Cnum) = INT(GetVar("accounts\chars.ini", "Levels", "" & Char(Cnum)))
+         j = int(j) + 1  
+      Loop 
+      C = 1             
+      Max = (int(totalchars) - 1)   
+Ca = 1     
+Cb = 2                      
+Do While Ca < Cnum  
+   Do While Cb <= Cnum 
+      If Charlvl(Ca) < Charlvl(Cb) Then 
+         templvla = Charlvl(Ca)
+         templvlb = Charlvl(Cb)
+         tempnamea = Char(Ca)
+         tempnameb = Char(Cb)
+         Charlvl(Ca) = templvlb
+         Charlvl(Cb) = templvla
+         Char(Ca) = tempnameb
+         Char(Cb) = tempnamea
+      End If
+      Cb=(int(Cb) + 1)
+   Loop
+   Ca=(int(Ca) + 1)
+   Cb=(int(Ca) + 1)
+Loop
+Call battleMsg(index, "Top 10 Players by Level", 15, 0)
+Ca=1
+Do While Ca <= 5
+   Call battleMsg(index, "" & Ca & ". " & Char(Ca) & " = Level " & Charlvl(Ca), 12, 0)
+   Ca=Ca+1
+Loop 
+Do While Ca <= 10
+   Call battleMsg(index, "" & Ca & ". " & Char(Ca) & " = Level " & Charlvl(Ca), 12, 1)
+   Ca=Ca+1
+Loop
+Call PlayerMsg(index, "Current Top Player: " & Char(1) & " at level " & charlvl(1), 15)
+End Sub
+
+Sub UpdateHS(Index)  
+
+if GetVar("accounts\chars.ini", "Levels", "" & GetPlayerName(index)) = "" then
+totalChars = GetVar("accounts\chars.ini", "Chars", "total")
+
+if totalchars = "" then
+totalchars = 0
+end if
+
+totalchars = totalchars + 1 
+
+
+
+Call PutVar("accounts\chars.ini", "Accounts", "" & GetPlayerName(index), "" & GetPlayerLogin(index))
+
+Call PutVar("accounts\chars.ini", "CharNo", "" & GetPlayerName(index), "" & getplayercharNum(index))
+Call PutVar("accounts\chars.ini", "Chars", "total", "" & totalchars)
+Call PutVar("accounts\chars.ini", "Chars", "char" & totalchars, "" & getplayername(index))
+end if 
+Call PutVar("accounts\chars.ini", "Levels", "" & GetPlayerName(index), "" & getplayerlevel(index))
+end sub    
+
+
+'********************************
+Function F_Freeslots(index)      
+'********************************
+
+Dim slot
+Dim count
+
+slot=1
+count=0
+   Do While slot < 25   
+      If getplayerinvitemnum(index, slot) = 0 Then
+      count = Int(count) + 1
+      End If
+   slot=Int(slot) + 1
+   Loop
+F_Freeslots=Int(count)
+End Function
+
+'********************************
+Sub Give_Item(index, number, durability)
+'********************************
+
+Dim slot
+
+slot = 1
+   Do While slot < 25
+      If Getplayerinvitemnum( index, Int( slot ) ) = 0 Then
+         Call SetPlayerInvItemNum(index, Int( slot ), Int( number ) )
+         Call SetPlayerInvItemDur(index, Int( slot ), Int( durability ) )
+         Call SetPlayerInvItemValue(index, Int( slot ), Int(0) )
+         Call SendInventoryUpdate(index, Int(slot) )
+         slot = 25
+      End If
+   slot = slot + 1
+   Loop
+End Sub
+
+'********************************
+Sub Give_Currency(index, number, quantity)
+'********************************
+
+Dim slot
+Dim initial
+Dim final
+Dim given
+
+slot=1
+given=0 
+
+   Do While slot < 25
+      If Getplayerinvitemnum(index,Int(slot))=Int(number) Then
+         initial = Getplayerinvitemvalue( index, Int( slot ) )
+         final = Int( initial ) + Int( quantity )
+         Call setplayerinvitemvalue( index, Int( slot ), Int( final ) )
+         Call SendInventoryUpdate(index, Int(slot) )
+         slot = 25
+         given = 1
+      End If
+   slot = slot + 1
+   Loop
+      
+   If given=1 Then
+      slot=25
+   Else
+      slot=1
+   End If 
+
+   Do While slot < 25
+      If Getplayerinvitemnum(index,Int(slot)) = 0 Then 
+         Call SetPlayerInvItemNum(index, Int( slot ), Int( number ) )
+         Call SetPlayerInvItemValue(index, Int( slot ), Int( quantity ) )
+         Call SetPlayerInvItemDur(index, Int( slot ), 0 )
+         Call SendInventoryUpdate(index, Int(slot) )
+         slot = 25
+      End If
+   slot = slot + 1
+   Loop
+   
+End Sub
+
+'********************************
+Function F_Check_Take(index, number, value)
+'********************************
+
+Dim slot
+
+slot = 1
+F_Check_Take =0
+   Do While slot < 25   
+      If Getplayerinvitemnum( index, Int( slot ) ) = Int( number ) Then
+         If GetPlayerInvItemValue(index, Int( slot ) ) >= Int(value) Then         
+         F_Check_Take=1            
+         End If
+      End If
+   slot = slot + 1
+   Loop
+End Function
+
+'********************************
+Sub Take_Item(index, number, value)
+'********************************
+
+Dim slot
+Dim taken
+Dim initial
+Dim final
+
+slot=1
+taken=0
+   Do While Int(slot) < 25      
+      If Int(taken)=0 Then      
+         If Getplayerinvitemnum(index,Int(slot)) = Int(number) Then 
+            If Int(getplayerinvitemvalue(index, Int(slot))) >= Int(value) Then
+            initial = Int(getplayerinvitemvalue(index, Int(slot) ) )
+            final = Int(initial) - Int(value)            
+               If Int(final) <= 0 Then               
+               Call setplayerinvitemnum(index, Int(slot), Int(0) )
+               Call setplayerinvitemvalue(index, Int(slot), Int(0) )
+               Call setplayerinvitemdur(index, Int(slot), Int(0) )
+               Call SendInventoryUpdate(index, Int(slot))
+               taken=1               
+               Else            
+               Call setplayerinvitemvalue(index, Int(slot), Int(final) )
+               Call SendInventoryUpdate(index, Int(slot) )
+               taken=1            
+               End If
+            End If         
+         End If
+      End If      
+   slot = slot + 1
+   Loop
+End Sub
+
+'********************************
+Sub Baron_Stam_regain(index)
+'********************************
+
+Dim skill_type
+Dim skill_action
+Dim stam_total
+Dim player_lvl
+
+skill_type=Trim( GetVar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "SKILL","type") )
+
+   If Int(Getvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type), "has_data") ) < 1 Then
+   Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "Exp", Int(0) )
+   Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "level", Int(0))
+   Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "stamina", Int(10))
+   Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "has_data", Int(1))
+   Call battlemsg(index, "You should return here if you wish to rest", 14, 1)
+   End If
+      
+player_lvl=Getvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "level")
+skill_action=Trim(GetVar("scripts\skills\" & skill_type & ".ini", "INDEX","action"))
+stam_total=5 + Int(player_lvl)
+Call PutVar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "stamina", Int(stam_total))
+Call battlemsg(index, "You feel refreshed and ready to " & skill_action & " again.", 14, 1)
+End Sub
+
+'********************************
+Sub Baron_Uber_skills(index)
+'********************************
+'Do not modify this script in any way.
+'It is provided as is in all goodwill.
+'There is CONSIDERABLE time spent here.
+On Error Resume next
+Dim skill_type
+Dim skill_number
+Dim take_total
+Dim give_total
+Dim count
+Dim take_count
+Dim take_num
+Dim take_val
+Dim take_msg
+Dim empty_space
+Dim take_check
+Dim needed_item
+Dim player_weapon
+Dim skill_action
+Dim currency_check
+Dim recipe_count
+Dim recipe_total
+Dim min_lvl
+Dim player_lvl
+Dim player_stam
+Dim recipe_stam
+Dim give_val
+Dim give_num
+Dim give_dur
+Dim give_msg
+Dim high_randomiser
+Dim success_chance
+Dim low_chance
+Dim high_chance
+Dim give_exp
+Dim new_exp
+Dim lvl_exp
+Dim next_lvl
+
+If Int(GetVar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "SKILL","has_data")) < 0 Then
+Call Putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "SKILL","type", "")
+Call Putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "SKILL","number", 0)
+Call Putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "SKILL","has_data", 1)
+End If
+
+RECIPE_COUNT = Int(1)
+skill_type=Trim( GetVar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "SKILL","type") )
+recipe_total=Int(GetVar("scripts\skills\" & skill_type & ".ini","INDEX" ,"total_recipes"))
+
+'RECIPES ALWAYS HAVE SKILL 1 SELECTED IN MAPEXTRAS AND TOTAL RECIPES IN SKILLS SET TO HIGHEST
+'NON RECIPES HAVE ANY SKILL SELECTED IN MAPEXTRAS AND TOTAL RECIPES IN SKILLS SET TO 1
+
+Do While Int(RECIPE_COUNT) <= Int(recipe_total)
+
+   If trim(skill_type) <> "" Then
+
+   skill_number = Int(GetVar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "SKILL","number"))
+
+   If Int(recipe_count) > 1 Then
+   skill_number = Int(recipe_count)
+   End If
+
+   needed_item=Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number),"item_num_needed"))
+   player_weapon=Int( Getplayerinvitemnum(index, Int(getplayerweaponslot(index)) ) )
+   skill_action=Trim(GetVar("scripts\skills\" & skill_type & ".ini", "INDEX","action"))
+
+      If Int(needed_item) = Int(player_weapon) Then
+
+      min_lvl = Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number),"min_level"))
+
+      If Int(Getvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type), "has_data") ) < 1 Then
+      Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "Exp", Int(0) )
+      Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "level", Int(0))
+      Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "stamina", Int(10))
+      Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "has_data", Int(1))
+      Call playermsg(index, "You attempt to " & skill_action & " for the first time!", 14)
+      End If
+
+      player_lvl = Int(Getvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "level")) 
+
+         If Int(min_lvl) <= Int(player_lvl) Then
+         
+         player_stam=Int(getvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "stamina"))
+         recipe_stam=Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number),"stam_taken"))
+         
+         If Int(player_stam) >= Int(recipe_stam) Then
+
+         take_total = Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number),"take_total"))
+         give_total = Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number),"give_total"))   
+          count = Int ( 1 )
+          take_count = Int ( 0 )
+          empty_space=F_Freeslots(index)
+    
+               If Int(give_total) <= Int(empty_space) Then 
+    
+            Do While count <= Int(take_total)
+            take_num=Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_take_num"))
+            take_val=Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_take_val"))   
+
+            take_check=F_Check_Take(index,take_num,take_val)
+            take_count=take_count + Int(take_check)   
+            count=count+1
+            Loop
+
+               If Int(take_count) = Int(take_total) Then         
+            
+               count = Int ( 1 )      
+            
+                  Do While Int(count) <= Int(take_total)
+                  take_num=Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_take_num"))
+                  take_val=Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_take_val"))   
+                    take_msg=Trim(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_take_Msg"))            
+                  Call battlemsg(index, trim(take_msg), 15, 1)   
+                  Call Take_Item(index, Int(take_num), Int(take_val) )         
+                  count=count+1
+                  Loop
+         
+                  count = Int ( 1 )
+                  new_exp = 0
+                  
+                  Do While Int(count) <= Int(give_total)
+                  give_val = Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_give_val"))
+                  give_msg = Trim(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_give_msg"))
+                  
+                  success_chance = Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_base_chance"))
+                  low_chance= Int(player_lvl) - Int(min_lvl) + 1
+                  high_chance = Int(player_lvl) - Int(min_lvl) + Int(success_chance)
+                  high_randomiser = Int((high_chance + 1) * Rnd)
+                                 
+                  If Int(high_randomiser) <= Int(low_chance) Then                  
+                     
+                     If Int(give_val) > 0 Then
+                     give_num = Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_give_num"))
+                     Call Give_Currency(index, Int(give_num), Int(give_val) )
+                     Call battlemsg(index, Trim(give_msg),10, 1)
+                     'TO HAVE THE SCRIPT AUTO CREATE ALL ITEMS IT CAN ONCE EACH, REMOVE LINE BELOW
+                     RECIPE_COUNT= Int(recipe_total)
+                     Else
+                     give_num = Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_give_num"))
+                     give_dur = Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_give_dur"))
+                     Call Give_Item(index, give_num, give_dur)
+                     Call battlemsg(index, Trim(give_msg),10, 1)
+                     'TO HAVE THE SCRIPT AUTO CREATE ALL ITEMS IT CAN ONCE EACH, REMOVE LINE BELOW
+                     RECIPE_COUNT= Int(recipe_total) 
+                     End If
+                     
+                     give_exp = 0 + Int(GetVar("scripts\skills\" & skill_type & ".ini", Int(skill_number), Int(count) & "_EXP"))
+                     new_exp = 0 + Int(getvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "exp")) + Int(give_exp)
+                      Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "exp", Int(new_exp))
+                  End If
+                  
+                  If new_exp=0 Then
+                  new_exp=Int(getvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "exp"))
+                  End If
+                     
+                  count=count+1
+                  Loop
+                  
+                  next_level = Int(player_lvl) + Int(1)
+                  lvl_exp = Int(Getvar("experience.ini", "EXPERIENCE", "Exp" & Int(next_level) ) ) 
+                  Call battlemsg(index,new_exp & " / " & lvl_exp & " Exp left until Level " & next_level & " " & trim(skill_type), 6, 0) 
+                                                      
+                  If Int(new_exp) >= Int(lvl_exp) and Int(player_lvl) < 100 Then
+                  new_exp= 0 + Int(new_exp) - Int(lvl_exp)                  
+                  Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "exp", Int(new_exp))
+                  Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "level", Int(next_level))
+                  Call battlemsg(index, "Congratulations, you are now level " & Int(next_level) & " in " & trim(skill_type) & "!", 13, 1)
+                  End If
+                  
+                  player_stam = Int(player_stam) - Int(recipe_stam)
+                  Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", Trim(Skill_type) , "stamina", Int(player_stam))
+                  
+                  If Int(recipe_total) = 1 Then
+                  RECIPE_COUNT= Int(recipe_total)
+                  End If                           
+                 
+                 Else                 
+                    If Int(recipe_count) + 1 > Int(recipe_total) and Int(recipe_total) > Int(1) Then
+                  Call battlemsg(index, "You have no components to " & skill_action, 12, 1)
+                  End If    
+               End If         
+      
+            Else      
+            Call battlemsg(index, "You need more inventory room to continue " & skill_type & ".", 15, 1)            
+             End If
+           
+           Else
+           Call battlemsg(index, "You are too tired to " & skill_action & ".", 12, 1)
+           End If
+           
+           Else
+           Call battlemsg(index, "You need to be more skilled to " & skill_action & " here.", 12, 1)          
+           End If 
+           
+      End If
+        'This continues off end of item script. Used when empty slot. Elseif errors usually.
+      If Int(needed_item) <> Int(player_weapon) and Int(recipe_count) = 1 Then
+      Call battlemsg(index, "You need to get the right tool to " & skill_action & " here.", 15, 1)       
+      End If
+    
+    Else
+    'Not working. Cant figure out why. Is non essential for the script to work.
+    Call Playermsg(index, "You still need to define a skill for this map", 14)
+   End If
+
+
+
+
+RECIPE_COUNT = Int(recipe_count)+1
+
+Loop
+
+End Sub
+
+
+'----------------------------------
+'Inventory Script
+'----------------------------------
+Function GetFreeSlots(Index)      
+   Dim Slot
+   Dim Slots
+
+   Slot = 1
+   Slots = 0
+   
+   Index = Int(Index)
+
+   Do While Slot < 25   
+      If GetPlayerInvItemNum(Index, Slot) = 0 Then
+         Slots = Slots + 1
+      End If
+
+      Slot = Slot + 1
+   Loop
+
+   GetFreeSlots = Slots
+End Function
+
+Sub GiveItem(Index, Number, Durability)
+   Dim Slot
+   
+   Slot = 1
+   
+   Index = Int(Index)
+   Number = Int(Number)
+   Durability = Int(Durability)
+   
+   Do While Slot < 25
+      If GetPlayerInvItemNum(Index, Slot) = 0 Then
+         Call SetPlayerInvItemNum(Index, Slot, Number)
+         Call SetPlayerInvItemDur(Index, Slot, Durability)
+         Call SendInventoryUpdate(Index, Slot)
+         Exit Sub
+      End If
+      
+      Slot = Slot + 1
+   Loop
+End Sub
+
+Sub GiveCurrency(Index, Number, Amount)
+   Dim Slot
+   Dim CurrentAmount
+   
+   Slot = 1
+   
+   Index = Int(Index)
+   Number = Int(Number)
+   Amount = Int(Amount)
+   
+   Do While Slot < 25
+       If GetPlayerInvItemNum(Index, Slot) = Number Then
+          CurrentAmount = GetPlayerInvItemValue(Index, Slot)
+          Call SetPlayerInvItemValue(Index, Slot, CurrentAmount + Amount)
+          Call SendInventoryUpdate(Index, Slot)
+          Exit Sub
+       End If
+       
+       Slot = Slot + 1
+   Loop
+   
+        Slot = 1
+
+   Do While Slot < 25
+       If GetPlayerInvItemNum(Index, Slot) = 0 Then
+          Call SetPlayerInvItemNum(Index, Slot, Number)
+          Call SetPlayerInvItemValue(Index, Slot, Amount)
+          Call SendInventoryUpdate(Index, Slot)
+          Exit Sub
+       End If
+       
+       Slot = Slot + 1
+   Loop
+End Sub
+
+Function CanTake(Index, Number, Amount)
+   Dim Slot
+   
+   Slot = 1
+   
+   Index = Int(Index)
+   Number = Int(Number)
+   Amount = Int(Amount)
+   
+   Do While Slot < 25
+      If GetPlayerInvItemNum(Index, Slot) = Number Then
+         If GetPlayerInvItemValue(Index, Slot) >= Amount Then
+            CanTake = True
+            Exit Function
+         End If
+      End If
+      
+      Slot = Slot + 1
+   Loop
+   
+   CanTake = False
+End Function
+
+Sub TakeItem(Index, Number, Amount)
+   Dim Slot
+   Dim CurrentAmount
+
+   Index = Int(Index)
+   Number = Int(Number)
+   Amount = Int(Amount)
+   
+   Slot = 1
+   
+   Do While Slot < 25
+       If GetPlayerInvItemNum(Index, Slot) = Number Then
+          If GetPlayerInvItemValue(Index, Slot) >= Amount Then
+             CurrentAmount = GetPlayerInvItemValue(Index, Slot)
+             
+             If CurrentAmount <= Amount Then
+                Call SetPlayerInvItemNum(Index, Slot, 0)
+                Call SetPlayerInvItemValue(Index, Slot, 0)
+                Call SetPlayerInvItemDur(Index, Slot, 0)
+                Call SendInventoryUpdate(Index, Slot)
+             Else
+                Call SetPlayerInvItemValue(Index, Slot, CurrentAmount - Amount)
+                Call SendInventoryUpdate(Index, Slot)
+             End If
+             
+             Exit Sub
+          End If
+       End If
+       
+       Slot = Slot + 1
+   Loop
+End Sub
+
+
+'=============================================
+Sub Dot(index, ticks, frequency, damage)
+'=============================================
+  Call PutVar("Dot.ini", GetPlayerName(index), "Ticks", ticks)
+  Call PutVar("Dot.ini", GetPlayerName(index), "Count", 0)
+  Call PutVar("Dot.ini", GetPlayerName(index), "Damage", damage)
+  Call PutVar("Dot.ini", GetPlayerName(index), "Frequency", frequency)
+  Call SetTimer("Dots " & index & "," & damage, frequency)
+End Sub
+
+'============================================
+Sub Dots(index, damage)
+'============================================
+  Call SetPlayerHP(index, GetPlayerHP(index) - damage)
+  Call SendHP(index)
+  If GetPlayerHP(index) <= 0 Then
+    Call OnDeath(index)
+    Call SetPlayerHP(index, GetPlayerMaxHP(index))
+    Call SetPlayerMP(index, GetPlayerMaxMP(index))
+    Call SendHP(index)
+    Call SendMP(index)
+    Call RemoveTimer("Dots " & index & "," & damage)
+    Call PutVar("Dot.ini", GetPlayerName(index), "Count", 0)
+    Call PutVar("Dot.ini", GetPlayerName(index), "Ticks", 0)
+    Exit Sub 
+  End If
+  If IsPlaying(Index) = 0 Then
+  RemoveTimer("Dots " & index & "," & damage)
+  Else
+  End If
+  Call PutVar("Dot.ini", GetPlayerName(index), "Count", GetVar("Dot.ini", GetPlayerName(index), "Count") + 1)
+  If GetVar("Dot.ini", GetPlayerName(index), "Count") = GetVar("Dot.ini", GetPlayerName(index), "Ticks") Then
+    Call RemoveTimer("Dots " & index & "," & damage) 
+  End If
+End Sub
+
+
+'****************************************
+' Tests scripts up to the location of Sub TestMain(Index).
+' Leave this sub at the bottom to test the entire script file.
+Sub TestMain(Index)
+'*************************************
+	Call PlayerMsg(Index, "Scripts are working properly.", BRIGHTGREEN)
+End Sub
+
+
+'==================ULTIMATE BOSS SCRIPT by Greendude120=========
+
+Sub A120(index)
+Dim PlayerLocM, PlayerLocX, PlayerLocY
+Dim BossLocX, BossLocY
+Dim BossNum
+Dim T, K
+Dim BossHP
+Dim BossDmg
+
+PlayerLocM = GetPlayerMap(Index)
+PlayerLocX = GetPlayerX(Index)
+PlayerLocY = GetPlayerY(Index)
+BossNum = 1
+BossLocX = GetNPCX(PlayerLocM, BossNum)
+BossLocY = GetNPCY(PlayerLocM, BossNum)
+BossHP = GetMapNpcHP(PlayerLocM, BossNum)
+K=Rand (1, 5)
+BossDmg = GetNpcStrength(GetMapNpcNumber(PlayerLocM, BossNum)) + K 'Damage + K
+
+If BossHP < 1 Then Exit Sub
+
+Call RemoveTimer("A120 " & Index)
+T = Rand (1,2)
+
+If T = 1 Then
+Call SpellAnim(1, PlayerLocM, BossLocX, BossLocY)
+Call SetMapNpcHP(PlayerLocM, BossNum, BossHP + 20)
+End If
+
+If T = 2 Then
+Call SpellAnim(2, PlayerLocM, PlayerLocX, PlayerLocY)
+Call NPCAttack(BossNum, Index, BossDmg)
+End If
+End Sub
+
+'=====================BOSS SCRIPT END===========================
+
+
+
+
+'********************************
+Sub Maze106(index)
+'********************************
+Dim NextLvl
+Dim PlayerXP
+PlayerXP = GetPlayerExp(Index)
+NextLvl = GetPlayerNextLevel(Index)
+If PlayerXP > NextLvl Then
+Call PlayerLevelUp(Index)
+Call SendStats(Index)
+Else
+Call SendStats(Index)
+End If
+End Sub
+
+')))))))))))))))))))))))))
+Sub MapFix(Index)
+'((((((((((((((((((((((((
+Dim PlayerX
+Dim PlayerY
+DIm PlayerMap
+PlayerMap = GetPlayerMap(Index)
+PlayerX = GetPlayerX(Index)
+PlayerY = GetPlayerY(Index)
+	Call PlayerWarp(Index, PlayerMap, PlayerX, PlayerY)
+End Sub
+
+' For testing the script.
+#include <Functions\TestScripts.ess>
+
+
+
+
+

@@ -1,0 +1,204 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: Main.ess						'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' Constants & Globals
+' Color Constants
+Public Const BLACK = 0
+Public Const BLUE = 1
+Public Const GREEN = 2
+Public Const CYAN = 3
+Public Const RED = 4
+Public Const MAGENTA = 5
+Public Const BROWN = 6
+Public Const GREY = 7
+Public Const DARKGREY = 8
+Public Const BRIGHTBLUE = 9
+Public Const BRIGHTGREEN = 10
+Public Const BRIGHTCYAN = 11
+Public Const BRIGHTRED = 12
+Public Const PINK = 13
+Public Const YELLOW = 14
+Public Const WHITE = 15
+
+' Admin Constants
+Public Const ADMIN_PLAYER = 0
+Public Const ADMIN_MONITOR = 1
+Public Const ADMIN_MAPPER = 2
+Public Const ADMIN_DEVELOPER = 3
+Public Const ADMIN_CREATOR = 4
+Public Const ADMIN_OWNER = 5
+
+' Alignment constants
+Public Const LEFT = 0
+Public Const RIGHT = 1
+Public Const CENTER = 2
+
+' Stat constants
+Public Const STAT_STRENGHT = 0
+Public Const STAT_DEFENCE = 1
+Public Const STAT_MAGIC = 2
+Public Const STAT_SPEED = 3
+
+' Key constants
+Public Const KEY_PAGEUP = 1
+Public Const KEY_PAGEDOWN = 4
+Public Const KEY_DELETE = 2
+Public Const KEY_END = 3
+
+' Element type constants
+Public Const ELEMENT_PICTURE = 1
+Public Const ELEMENT_FIELD = 2
+Public Const ELEMENT_LABEL = 3
+
+' Tile type constants
+Public Const TILE_TYPE_WALKABLE = 0
+Public Const TILE_TYPE_BLOCKED = 1
+Public Const TILE_TYPE_WARP = 2
+Public Const TILE_TYPE_ITEM = 3
+Public Const TILE_TYPE_NPCAVOID = 4
+Public Const TILE_TYPE_KEY = 5
+Public Const TILE_TYPE_KEYOPEN = 6
+Public Const TILE_TYPE_HEAL = 7
+Public Const TILE_TYPE_KILL = 8
+Public Const TILE_TYPE_SHOP = 9
+Public Const TILE_TYPE_CBLOCK = 10
+Public Const TILE_TYPE_ARENA = 11
+Public Const TILE_TYPE_SOUND = 12
+Public Const TILE_TYPE_SPRITE_CHANGE = 13
+Public Const TILE_TYPE_SIGN = 14
+Public Const TILE_TYPE_DOOR = 15
+Public Const TILE_TYPE_NOTICE = 16
+Public Const TILE_TYPE_CHEST = 17
+Public Const TILE_TYPE_CLASS_CHANGE = 18
+Public Const TILE_TYPE_SCRIPTED = 19
+'Public Const TILE_TYPE_NPC_SPAWN = 20
+Public Const TILE_TYPE_HOUSE = 21
+'Public Const TILE_TYPE_CANON = 22
+Public Const TILE_TYPE_BANK = 23
+'Public Const TILE_TYPE_SKILL = 24
+Public Const TILE_TYPE_GUILDBLOCK = 25
+Public Const TILE_TYPE_HOOKSHOT = 26
+Public Const TILE_TYPE_WALKTHRU = 27
+Public Const TILE_TYPE_ROOF = 28
+Public Const TILE_TYPE_ROOFBLOCK = 29
+Public Const TILE_TYPE_ONCLICK = 30
+Public Const TILE_TYPE_LOWER_STAT = 31
+
+' Data.ini (config) settings.
+Public GameName
+Public WebSite
+Public Port
+Public HPRegen
+Public HPTimer
+Public MPRegen
+Public MPTimer
+Public SPRegen
+Public SPTimer
+Public NPCRegen
+Public Scrolling
+Public ScrollX
+Public ScrollY
+Public Scripting
+Public ScriptErrors
+Public PaperDoll
+Public SaveTime
+Public SpriteSize
+Public Custom
+Public PKMinLvl
+Public Level
+Public Email
+Public VerifyAcc
+Public Classes
+Public Stat1
+Public Stat2
+Public Stat3
+Public Stat4
+Public SPAttack
+Public SPRunning
+
+' Data.ini (max) settings.
+Public MAX_PLAYERS
+Public MAX_ITEMS
+Public MAX_NPCS
+Public MAX_SHOPS
+Public MAX_SPELLS
+Public MAX_MAPS
+Public MAX_MAP_ITEMS
+Public MAX_GUILDS
+Public MAX_GUILD_MEMBERS
+Public MAX_EMOTICONS
+Public MAX_ELEMENTS
+Public MAX_LEVEL
+Public MAX_PARTY_MEMBERS
+Public MAX_SCRIPTSPELLS
+Public MAX_MAP_X
+Public MAX_MAP_Y
+Public MAX_STAT
+
+' MOTD
+Public MOTD
+
+' Events
+' Initialisation & Reloading
+#include <Events\OnServerLoad.ess>
+#include <Events\OnScriptReload.ess>
+#include <Events\ChangeMOTD.ess>
+
+' Interactivity
+#include <Events\Commands.ess>
+#include <Events\HotScript.ess>
+#include <Events\MenuScripts.ess>
+#include <Events\OnClick.ess>
+#include <Events\PlayerPrompt.ess>
+#include <Events\QueryBox.ess>
+
+' Joining & Leaving
+#include <Events\OnNewChar.ess>
+#include <Events\JoinGame.ess>
+#include <Events\LeftGame.ess>
+
+' Death
+#include <Events\OnArenaDeath.ess>
+#include <Events\OnPVPDeath.ess>
+#include <Events\OnNPCDeath.ess>
+#include <Events\OnDeath.ess>
+#include <Events\DropItems.ess>
+
+' Attacks
+#include <Events\OnAttack.ess>
+#include <Events\OnArrowHit.ess>
+#include <Events\PlayerHit.ess>
+
+' Scripted
+#include <Events\ScriptedItem.ess>
+#include <Events\ScriptedSpell.ess>
+#include <Events\ScriptedTile.ess>
+#include <Events\ScriptedNPC.ess>
+
+' Leveling
+#include <Events\PlayerLevelUp.ess>
+#include <Events\UsingStatPoints.ess>
+
+' Misc
+#include <Events\TimedEvent.ess>
+#include <Events\OnItemDrop.ess>
+#include <Events\OnMapLoad.ess>
+
+' Modules
+#include <Modules\AccountVar.ess>
+#include <Modules\Attributes.ess>
+#include <Modules\Profile.ess>
+
+' Functions
+' General
+#include <Functions\GetPlayerAccessTitle.ess>
+#include <Functions\LoadSettings.ess>
+
+' For testing the script.
+#include <Functions\TestScripts.ess>
+
+

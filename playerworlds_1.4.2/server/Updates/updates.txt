@@ -1,0 +1,4 @@
+[GENERAL]
+Date=6/23/2004
+Time=5:29:39 PM
+TotalFiles= 0

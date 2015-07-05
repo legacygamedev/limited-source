@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Win32Tools.dsp]
+SCC_Aux_Path = "I:\SourceSafe\JetByte"
+SCC_Project_Name = "$/Web Articles/SocketServers/COMSocketServer2/JetByteTools/Win32Tools", PCBAAAAA

@@ -1,0 +1,40 @@
+// AtlSample.idl : IDL source for AtlSample.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AtlSample.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(E3FF7F96-8669-43AF-A583-878D4ED8E77C),
+		dual,
+		helpstring("Iplugin Interface"),
+		pointer_default(unique)
+	]
+	interface Iplugin : IDispatch
+	{
+		[id(1), helpstring("method SetHost")] HRESULT SetHost([in,out] IDispatch** newref);
+		[id(2), helpstring("method StartUp")] HRESULT StartUp([in,out] int* myArg);
+	};
+
+[
+	uuid(08652EE3-D033-4CC1-90C3-40581DCB1E1C),
+	version(1.0),
+	helpstring("AtlSample 1.0 Type Library")
+]
+library ATLSAMPLELib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(07782213-552D-4FA7-8664-BE687A3F90BC),
+		helpstring("plugin Class")
+	]
+	coclass plugin
+	{
+		[default] interface Iplugin;
+	};
+};

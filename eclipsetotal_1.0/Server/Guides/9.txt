@@ -1,0 +1,18 @@
+
+
+1. Open server foler
+2. Open maps folder
+3. Cut all maps
+4. Paste all maps into the old map folder (in map converter folder)
+5. Run the convertor
+6. Click convert.
+7. Open map folder (in map converter folder)
+8. Copy them all
+9. Paste them into the server map folder
+10. That should be it!
+
+If you get errors with the Map Convertor make sure your doing the following:
+1: Convert the Server maps ONLY,
+2: Make sure the maps are in the Oldmaps folder.
+3: Make sure the maps folder is empty.
+4: And when you convert DONT place the maps in the client maps folder.

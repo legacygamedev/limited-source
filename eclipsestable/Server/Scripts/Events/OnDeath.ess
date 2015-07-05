@@ -1,0 +1,29 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: OnDeath.ess						'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: OnDeath						'
+' Brief: executes when a player dies outside of an arena.	'
+' Parameters:							'
+'	Index: the index number of the player who died.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub OnDeath(Index)
+	If GetMapBootMap(Index) > 0 Then
+		Call PlayerWarp(Index, GetMapBootMap(Index), GetMapBootX(Index), GetMapBootY(Index))
+	Else
+		Map = CInt(GetVar("Classes\Class" & GetPlayerClass(Index) & ".ini", "CLASS", "Map"))
+		X = CInt(GetVar("Classes\Class" & GetPlayerClass(Index) & ".ini", "CLASS", "x"))
+		Y = CInt(GetVar("Classes\Class" & GetPlayerClass(Index) & ".ini", "CLASS", "y"))
+
+		Call PlayerWarp(Index, Map, X, Y)
+	End If
+
+	Call SetPlayerHP(Index, GetPlayerMaxHP(Index))
+	Call SetPlayerMP(Index, GetPlayerMaxMP(Index))
+	Call SetPlayerSP(Index, GetPlayerMaxSP(Index))
+	Call SendPlayerData(Index)
+End Sub

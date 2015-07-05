@@ -1,0 +1,3 @@
+This application requires the following exta components besides Visual Basic 6 runtime files:
+*MSINET.OCX
+*MSCOMCTL.OCX

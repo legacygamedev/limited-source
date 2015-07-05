@@ -1,0 +1,3 @@
+Welcome to the Kaelian Software Auto-Updater.
+The last client version was 1.4.1, Updated on 5/31/2004.
+Please wait while we check for available updates.

@@ -1,0 +1,56 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: AccountVar.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.1.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GetAccountVar					'
+' Brief: gets an account variable.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Section: the section where the variable is stored.	'
+'	Variable: the name of the variable.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function GetAccountVar(Index, Section, Variable)
+	GetAccountVar = GetVar("Accounts\" & GetPlayerLogin(Index) & "\Account.ini", CStr(Section), CStr(Variable))
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: PutAccountVar					'
+' Brief: sets an account variable.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Section: the section where the variable will be stored.	'
+'	Variable: the name of the variable to store.		'
+'	Value: the value to store.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub PutAccountVar(Index, Section, Variable, Value)
+	Call PutVar("Accounts\" & GetPlayerLogin(Index) & "\Account.ini", CStr(Section), CStr(Variable), CStr(Value))
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GetCharVar						'
+' Brief: gets a character variable.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Section: the section where the variable is stored.	'
+'	Variable: the name of the variable.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function GetCharVar(Index, Section, Variable)
+	GetCharVar = GetVar("Accounts\" & GetPlayerLogin(Index) & "\Char" & GetPlayerCharNum(Index) & ".ini", CStr(Section), CStr(Variable))
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: PutCharVar						'
+' Brief: sets a character variable.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Section: the section where the variable will be stored.	'
+'	Variable: the name of the variable to store.		'
+'	Value: the value to store.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub PutCharVar(Index, Section, Variable, Value)
+	Call PutVar("Accounts\" & GetPlayerLogin(Index) & "\Char" & GetPlayerCharNum(Index) & ".ini", CStr(Section), CStr(Variable), CStr(Value))
+End Sub

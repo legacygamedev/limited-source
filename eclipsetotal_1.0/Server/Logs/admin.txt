@@ -1,0 +1,1648 @@
+00:55:20: Mero editing item #1.
+00:55:32: Mero saved item #1.
+5:35:35 PM: Mero editing spell #1.
+5:35:47 PM: Mero saving spell #1.
+5:35:52 PM: Mero editing item #1.
+5:36:04 PM: Mero saved item #1.
+6:46:25 PM: Mero editing shop #1.
+6:46:33 PM: Mero saving shop #1.
+4:58:16 PM: Mero editing item #1.
+4:58:33 PM: Mero saved item #1.
+5:02:56 PM: Mero editing item #1.
+5:03:13 PM: Mero saved item #1.
+5:03:21 PM: Mero editing spell #1.
+5:03:45 PM: Mero saving spell #1.
+5:04:10 PM: Mero editing item #1.
+5:04:50 PM: Mero editing npc #2.
+5:06:12 PM: Mero editing spell #1.
+5:14:50 PM: Mero editing npc #2.
+5:16:22 PM: Mero editing npc #2.
+5:16:37 PM: Mero saved npc #2.
+5:18:50 PM: Mero editing npc #2.
+5:18:54 PM: Mero saved npc #2.
+5:18:58 PM: Mero editing npc #2.
+5:19:03 PM: Mero saved npc #2.
+5:22:24 PM: Mero editing item #1.
+5:22:40 PM: Mero saved item #1.
+5:44:50 PM: Mero editing item #1.
+5:44:55 PM: Mero editing spell #1.
+5:44:57 PM: Mero saving spell #1.
+5:45:01 PM: Mero editing npc #2.
+11:18:54 PM: Mero editing item #2.
+11:19:34 PM: Mero saved item #2.
+11:20:14 PM: Mero editing item #2.
+11:20:17 PM: Mero saved item #2.
+11:20:30 PM: Mero editing item #3.
+11:20:40 PM: Mero saved item #3.
+4:34:58 PM: Mero editing npc #1.
+4:53:58 PM: Mero editing spell #2.
+4:55:34 PM: Mero editing spell #1.
+4:55:55 PM: Mero saving spell #1.
+4:58:51 PM: Mero editing spell #1.
+4:59:53 PM: Mero editing spell #1.
+5:03:35 PM: Mero editing spell #1.
+5:03:59 PM: Mero saving spell #1.
+5:07:37 PM: Mero editing spell #1.
+5:09:50 PM: Mero editing spell #1.
+5:12:20 PM: Mero editing spell #1.
+5:16:43 PM: Mero editing spell #1.
+5:18:15 PM: Mero editing spell #1.
+5:19:54 PM: Mero editing spell #1.
+5:20:24 PM: Mero editing spell #1.
+5:21:21 PM: Mero editing spell #1.
+5:22:01 PM: Mero saving spell #1.
+5:27:31 PM: Mero editing spell #1.
+5:29:17 PM: Mero editing spell #1.
+5:30:18 PM: Mero editing spell #1.
+5:31:20 PM: Mero editing spell #1.
+5:32:07 PM: Mero editing spell #1.
+5:33:44 PM: Mero editing spell #1.
+5:36:00 PM: Mero editing spell #1.
+5:39:01 PM: Mero editing spell #1.
+5:40:21 PM: Mero editing spell #1.
+5:41:51 PM: Mero editing spell #1.
+5:45:04 PM: Mero editing spell #1.
+5:46:08 PM: Mero editing spell #1.
+5:47:10 PM: Mero editing spell #1.
+5:47:40 PM: Mero editing spell #1.
+5:48:05 PM: Mero editing spell #1.
+5:48:49 PM: Mero editing spell #1.
+5:51:33 PM: Mero editing spell #1.
+6:02:02 PM: Mero editing spell #1.
+6:02:07 PM: Mero saving spell #1.
+6:46:24 PM: Mero editing spell #1.
+6:46:34 PM: Mero saving spell #1.
+6:54:54 PM: Mero editing spell #1.
+6:57:44 PM: Mero editing spell #1.
+6:57:46 PM: Mero saving spell #1.
+6:58:37 PM: Mero editing spell #1.
+6:58:56 PM: Mero saving spell #1.
+6:59:10 PM: Mero editing spell #1.
+6:59:13 PM: Mero saving spell #1.
+7:00:57 PM: Mero editing spell #1.
+7:01:01 PM: Mero saving spell #1.
+7:02:18 PM: Mero editing spell #1.
+7:02:19 PM: Mero saving spell #1.
+7:03:29 PM: Mero editing spell #1.
+7:03:30 PM: Mero saving spell #1.
+7:07:20 PM: Mero editing spell #1.
+7:07:22 PM: Mero saving spell #1.
+7:08:18 PM: Mero editing spell #1.
+7:09:46 PM: Mero editing spell #1.
+7:09:48 PM: Mero saving spell #1.
+7:11:35 PM: Mero editing spell #1.
+7:11:36 PM: Mero saving spell #1.
+3:50:08 PM: Mero editing spell #1.
+3:50:11 PM: Mero saving spell #1.
+3:51:17 PM: Mero editing spell #1.
+3:51:18 PM: Mero saving spell #1.
+3:51:49 PM: Mero editing spell #1.
+3:51:50 PM: Mero saving spell #1.
+3:52:23 PM: Mero editing spell #1.
+3:52:24 PM: Mero saving spell #1.
+3:56:05 PM: Mero editing spell #1.
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:15 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:16 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:17 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:19 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:21 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+3:58:22 PM: (global) Mero: 0
+4:08:03 PM: Mero editing spell #1.
+4:08:04 PM: Mero saving spell #1.
+4:12:24 PM: Mero editing spell #1.
+5:23:24 PM: Mero editing spell #1.
+5:25:33 PM: Mero editing spell #1.
+5:26:00 PM: Mero saving spell #1.
+5:27:04 PM: Mero editing spell #1.
+5:27:10 PM: Mero saving spell #1.
+5:27:21 PM: Mero editing spell #1.
+5:27:26 PM: Mero saving spell #1.
+5:27:33 PM: Mero editing spell #1.
+5:27:36 PM: Mero saving spell #1.
+5:27:42 PM: Mero editing spell #1.
+5:27:43 PM: Mero saving spell #1.
+5:27:52 PM: Mero editing spell #1.
+5:27:57 PM: Mero saving spell #1.
+5:29:16 PM: Mero editing spell #1.
+5:29:20 PM: Mero saving spell #1.
+5:29:31 PM: Mero editing spell #1.
+5:29:33 PM: Mero saving spell #1.
+5:31:52 PM: Mero editing spell #1.
+5:31:55 PM: Mero saving spell #1.
+5:55:22 PM: Mero editing spell #1.
+5:55:52 PM: Mero saving spell #1.
+5:56:39 PM: Mero editing spell #1.
+5:56:44 PM: Mero saving spell #1.
+5:56:58 PM: Mero editing spell #1.
+5:57:01 PM: Mero saving spell #1.
+5:57:09 PM: Mero editing spell #1.
+5:57:11 PM: Mero saving spell #1.
+5:57:18 PM: Mero editing spell #1.
+5:57:20 PM: Mero saving spell #1.
+5:57:47 PM: Mero editing spell #1.
+5:57:50 PM: Mero saving spell #1.
+5:57:57 PM: Mero editing spell #1.
+5:58:04 PM: Mero saving spell #1.
+6:08:49 PM: Mero editing spell #1.
+6:09:08 PM: Mero saving spell #1.
+6:18:32 PM: Mero editing spell #1.
+6:18:34 PM: Mero saving spell #1.
+6:19:05 PM: Mero editing spell #1.
+6:19:21 PM: Mero editing spell #1.
+6:19:24 PM: Mero saving spell #1.
+6:19:39 PM: Mero editing spell #1.
+6:19:43 PM: Mero saving spell #1.
+6:19:52 PM: Mero editing spell #1.
+6:19:58 PM: Mero editing spell #1.
+6:20:00 PM: Mero saving spell #1.
+6:20:11 PM: Mero editing spell #1.
+6:20:13 PM: Mero saving spell #1.
+6:20:20 PM: Mero editing spell #1.
+6:20:21 PM: Mero saving spell #1.
+6:20:28 PM: Mero editing spell #1.
+6:20:30 PM: Mero saving spell #1.
+6:20:49 PM: Mero editing spell #1.
+6:20:50 PM: Mero saving spell #1.
+6:20:58 PM: Mero editing spell #1.
+6:21:00 PM: Mero saving spell #1.
+6:21:17 PM: Mero editing spell #1.
+6:21:18 PM: Mero saving spell #1.
+6:22:03 PM: Mero editing spell #1.
+6:22:05 PM: Mero saving spell #1.
+6:22:20 PM: Mero editing spell #1.
+6:22:24 PM: Mero saving spell #1.
+9:22:23 PM: Mero editing spell #1.
+9:22:59 PM: Mero saving spell #1.
+9:23:22 PM: Mero editing spell #1.
+9:23:28 PM: Mero saving spell #1.
+9:23:40 PM: Mero editing spell #1.
+9:23:43 PM: Mero saving spell #1.
+9:23:56 PM: Mero editing spell #1.
+9:23:58 PM: Mero saving spell #1.
+9:24:27 PM: Mero editing spell #1.
+9:24:30 PM: Mero saving spell #1.
+9:24:37 PM: Mero editing spell #1.
+9:24:39 PM: Mero saving spell #1.
+9:24:48 PM: Mero editing spell #1.
+9:24:50 PM: Mero saving spell #1.
+9:25:03 PM: Mero editing spell #1.
+9:25:05 PM: Mero saving spell #1.
+9:25:22 PM: Mero editing spell #1.
+9:25:24 PM: Mero saving spell #1.
+9:25:31 PM: Mero editing spell #1.
+9:25:33 PM: Mero saving spell #1.
+9:26:02 PM: Mero editing spell #1.
+9:27:39 PM: Mero editing spell #1.
+9:27:47 PM: Mero saving spell #1.
+9:28:06 PM: Mero editing spell #1.
+9:28:11 PM: Mero saving spell #1.
+9:28:23 PM: Mero editing spell #1.
+9:28:26 PM: Mero saving spell #1.
+9:46:26 PM: Mero editing spell #1.
+9:46:30 PM: Mero saving spell #1.
+11:53:14 PM: (global) Mero: yo
+12:28:33 AM: TheYellowMole editing spell #1.
+12:28:38 AM: TheYellowMole saving spell #1.
+12:29:41 AM: TheYellowMole editing spell #1.
+12:29:55 AM: TheYellowMole saving spell #1.
+1:12:02 AM: TheYellowMole editing item #3.
+1:12:04 AM: TheYellowMole saved item #3.
+1:14:20 AM: TheYellowMole editing item #3.
+1:14:25 AM: TheYellowMole saved item #3.
+1:14:32 AM: TheYellowMole editing item #1.
+1:14:38 AM: TheYellowMole saved item #1.
+2:46:40 PM: TheYellowMole editing spell #1.
+2:46:42 PM: TheYellowMole saving spell #1.
+2:46:53 PM: TheYellowMole editing spell #1.
+2:46:56 PM: TheYellowMole saving spell #1.
+2:47:24 PM: TheYellowMole editing npc #2.
+2:47:28 PM: TheYellowMole saved npc #2.
+2:47:38 PM: TheYellowMole editing spell #1.
+2:47:44 PM: TheYellowMole saving spell #1.
+2:48:54 PM: TheYellowMole editing spell #1.
+2:48:58 PM: TheYellowMole saving spell #1.
+2:50:41 PM: TheYellowMole editing npc #3.
+2:50:48 PM: TheYellowMole editing spell #1.
+2:50:55 PM: TheYellowMole saving spell #1.
+2:51:02 PM: TheYellowMole editing npc #2.
+2:51:09 PM: TheYellowMole saved npc #2.
+2:51:20 PM: TheYellowMole editing spell #1.
+2:51:30 PM: TheYellowMole editing npc #2.
+2:51:35 PM: TheYellowMole saved npc #2.
+2:56:36 PM: TheYellowMole editing spell #1.
+2:56:41 PM: TheYellowMole saving spell #1.
+2:56:57 PM: TheYellowMole editing spell #1.
+2:56:59 PM: TheYellowMole saving spell #1.
+2:57:11 PM: TheYellowMole editing spell #1.
+2:57:17 PM: TheYellowMole saving spell #1.
+2:57:29 PM: TheYellowMole editing spell #1.
+2:57:32 PM: TheYellowMole saving spell #1.
+2:57:41 PM: TheYellowMole editing spell #1.
+9:19:29 PM: TheYellowMole editing spell #1.
+9:19:34 PM: TheYellowMole saving spell #1.
+9:19:50 PM: TheYellowMole editing spell #1.
+9:19:56 PM: TheYellowMole saving spell #1.
+9:20:18 PM: TheYellowMole has respawned map #1
+8:24:31 AM: TheYellowMole editing item #1.
+8:24:35 AM: TheYellowMole saved item #1.
+8:24:43 AM: TheYellowMole editing item #1.
+8:24:53 AM: TheYellowMole saved item #1.
+8:24:58 AM: TheYellowMole editing item #2.
+8:25:02 AM: TheYellowMole saved item #2.
+8:25:13 AM: TheYellowMole editing item #3.
+8:25:19 AM: TheYellowMole saved item #3.
+8:25:24 AM: TheYellowMole editing item #3.
+8:25:27 AM: TheYellowMole saved item #3.
+11:44:07 AM: TheYellowMole editing emoticon #1.
+11:45:46 AM: TheYellowMole editing element #1.
+11:47:00 AM: TheYellowMole editing element #2.
+11:47:57 AM: TheYellowMole editing element #1.
+11:48:20 AM: TheYellowMole editing element #1.
+11:49:05 AM: TheYellowMole editing element #1.
+11:51:39 AM: TheYellowMole editing element #1.
+11:52:06 AM: TheYellowMole editing element #1.
+11:53:05 AM: TheYellowMole editing element #7.
+11:53:20 AM: TheYellowMole saved element #6.
+11:53:30 AM: TheYellowMole editing element #7.
+11:53:42 AM: TheYellowMole editing element #3.
+11:53:55 AM: TheYellowMole editing element #7.
+11:53:59 AM: TheYellowMole saved element #6.
+11:54:05 AM: TheYellowMole editing element #7.
+11:59:21 AM: TheYellowMole editing element #1.
+11:59:24 AM: TheYellowMole saved element #0.
+12:05:00 PM: TheYellowMole editing element #1.
+12:05:08 PM: TheYellowMole saved element #1.
+12:05:14 PM: TheYellowMole editing element #2.
+12:05:24 PM: TheYellowMole editing element #1.
+12:09:28 PM: TheYellowMole editing element #4.
+12:09:31 PM: TheYellowMole saved element #4.
+12:09:39 PM: TheYellowMole editing element #5.
+12:09:45 PM: TheYellowMole saved element #5.
+5:12:55 PM: TheYellowMole editing element #3.
+5:13:08 PM: TheYellowMole editing element #1.
+5:13:19 PM: TheYellowMole editing element #6.
+5:18:05 PM: TheYellowMole editing element #2.
+5:20:47 PM: TheYellowMole editing element #1.
+5:20:54 PM: TheYellowMole editing element #2.
+5:20:59 PM: TheYellowMole editing element #1.
+5:21:04 PM: TheYellowMole saved element #0.
+5:21:13 PM: TheYellowMole editing element #2.
+5:22:55 PM: TheYellowMole editing element #1.
+5:23:02 PM: TheYellowMole saved element #0.
+5:23:06 PM: TheYellowMole editing element #2.
+5:23:14 PM: TheYellowMole saved element #1.
+5:23:20 PM: TheYellowMole editing element #5.
+5:23:23 PM: TheYellowMole saved element #4.
+5:23:29 PM: TheYellowMole editing element #6.
+5:23:33 PM: TheYellowMole saved element #5.
+5:23:40 PM: TheYellowMole editing element #3.
+5:23:43 PM: TheYellowMole saved element #2.
+5:23:48 PM: TheYellowMole editing element #4.
+5:23:52 PM: TheYellowMole saved element #3.
+5:24:01 PM: TheYellowMole editing element #5.
+5:24:50 PM: TheYellowMole saved element #4.
+5:24:56 PM: TheYellowMole editing element #2.
+5:25:04 PM: TheYellowMole saved element #1.
+5:25:11 PM: TheYellowMole editing element #3.
+5:25:18 PM: TheYellowMole saved element #2.
+5:25:24 PM: TheYellowMole editing element #4.
+5:25:39 PM: TheYellowMole saved element #3.
+5:31:47 PM: TheYellowMole editing element #2.
+5:52:22 PM: TheYellowMole editing spell #1.
+5:53:39 PM: TheYellowMole editing spell #1.
+5:57:19 PM: TheYellowMole editing spell #1.
+5:58:28 PM: TheYellowMole editing spell #1.
+6:00:07 PM: TheYellowMole editing spell #1.
+6:01:12 PM: TheYellowMole editing spell #1.
+6:15:52 PM: TheYellowMole editing npc #2.
+6:17:33 PM: TheYellowMole editing npc #1.
+6:18:43 PM: TheYellowMole editing npc #1.
+6:19:20 PM: TheYellowMole editing npc #1.
+6:22:06 PM: TheYellowMole editing npc #2.
+6:22:20 PM: TheYellowMole editing emoticon #1.
+6:41:21 PM: TheYellowMole editing spell #2.
+6:41:30 PM: TheYellowMole saving spell #2.
+6:41:42 PM: TheYellowMole editing item #3.
+6:42:17 PM: TheYellowMole editing item #3.
+6:42:35 PM: TheYellowMole saved item #3.
+6:43:08 PM: TheYellowMole editing spell #2.
+6:43:12 PM: TheYellowMole saving spell #2.
+6:43:28 PM: TheYellowMole editing spell #2.
+6:43:41 PM: TheYellowMole saving spell #2.
+6:44:01 PM: TheYellowMole editing npc #2.
+6:44:08 PM: TheYellowMole saved npc #2.
+6:44:20 PM: TheYellowMole editing spell #2.
+6:44:21 PM: TheYellowMole saving spell #2.
+6:44:32 PM: TheYellowMole editing npc #2.
+6:44:44 PM: TheYellowMole saved npc #2.
+6:44:53 PM: TheYellowMole editing npc #2.
+6:45:49 PM: TheYellowMole editing npc #2.
+6:45:53 PM: TheYellowMole saved npc #2.
+6:45:57 PM: TheYellowMole editing npc #2.
+6:46:03 PM: TheYellowMole editing npc #2.
+6:46:08 PM: TheYellowMole saved npc #2.
+6:47:04 PM: TheYellowMole editing npc #2.
+6:47:08 PM: TheYellowMole saved npc #2.
+6:47:26 PM: TheYellowMole editing npc #2.
+6:52:08 PM: TheYellowMole editing npc #2.
+6:52:08 PM: (global) TheYellowMole: 4
+6:52:13 PM: TheYellowMole saved npc #2.
+6:52:17 PM: TheYellowMole editing npc #2.
+6:52:17 PM: (global) TheYellowMole: 4
+6:52:21 PM: TheYellowMole saved npc #2.
+6:52:32 PM: TheYellowMole editing npc #2.
+6:52:32 PM: (global) TheYellowMole: 4
+6:52:35 PM: TheYellowMole saved npc #2.
+6:52:40 PM: TheYellowMole editing npc #2.
+6:52:40 PM: (global) TheYellowMole: 4
+6:55:14 PM: TheYellowMole editing npc #2.
+6:55:14 PM: (global) TheYellowMole: At editnpc...4
+6:55:19 PM: (global) TheYellowMole: At npceditorok...1
+6:55:19 PM: TheYellowMole saved npc #2.
+6:55:26 PM: TheYellowMole editing npc #2.
+6:55:26 PM: (global) TheYellowMole: At editnpc...4
+6:55:32 PM: TheYellowMole editing npc #1.
+6:55:32 PM: (global) TheYellowMole: At editnpc...0
+6:55:35 PM: (global) TheYellowMole: At npceditorok...3
+6:55:35 PM: TheYellowMole saved npc #1.
+6:55:39 PM: TheYellowMole editing npc #1.
+6:55:39 PM: (global) TheYellowMole: At editnpc...1
+6:55:57 PM: (global) TheYellowMole: At npceditorok...4
+6:55:57 PM: TheYellowMole saved npc #1.
+6:56:41 PM: TheYellowMole editing npc #2.
+6:56:41 PM: (global) TheYellowMole: At editnpc...4
+6:56:53 PM: TheYellowMole editing npc #1.
+6:56:53 PM: (global) TheYellowMole: At editnpc...1
+6:59:11 PM: TheYellowMole editing npc #1.
+6:59:11 PM: (global) TheYellowMole: At editnpc...1
+6:59:14 PM: (global) TheYellowMole: At npceditorok...3
+6:59:14 PM: (global) TheYellowMole: At sendsavenpc...3
+6:59:14 PM: TheYellowMole saved npc #1.
+7:00:16 PM: TheYellowMole editing npc #1.
+7:00:16 PM: (global) TheYellowMole: At editnpc...1
+7:00:19 PM: (global) TheYellowMole: At npceditorok...4
+7:00:19 PM: TheYellowMole saved npc #1.
+7:01:18 PM: TheYellowMole editing npc #1.
+7:01:18 PM: (global) TheYellowMole: At editnpc...1
+7:01:22 PM: (global) TheYellowMole: At npceditorok...3
+7:01:22 PM: (global) TheYellowMole: At sendsavenpc...3
+7:01:22 PM: TheYellowMole saved npc #1.
+10:52:32 PM: TheYellowMole editing spell #2.
+10:52:40 PM: TheYellowMole editing npc #2.
+10:52:40 PM: (global) TheYellowMole: At editnpc...4
+10:53:18 PM: (global) TheYellowMole: At npceditorok...2
+10:53:18 PM: (global) TheYellowMole: At sendsavenpc...2
+10:53:19 PM: TheYellowMole saved npc #2.
+10:53:53 PM: TheYellowMole editing spell #2.
+10:53:56 PM: TheYellowMole saving spell #2.
+10:54:19 PM: TheYellowMole editing npc #2.
+10:54:19 PM: (global) TheYellowMole: At editnpc...4
+10:54:39 PM: TheYellowMole editing npc #1.
+10:54:39 PM: (global) TheYellowMole: At editnpc...1
+10:54:43 PM: (global) TheYellowMole: At npceditorok...0
+10:54:43 PM: (global) TheYellowMole: At sendsavenpc...0
+10:54:43 PM: TheYellowMole saved npc #1.
+10:54:51 PM: TheYellowMole editing npc #2.
+10:54:51 PM: (global) TheYellowMole: At editnpc...4
+10:54:54 PM: (global) TheYellowMole: At npceditorok...4
+10:54:54 PM: (global) TheYellowMole: At sendsavenpc...4
+10:54:54 PM: TheYellowMole saved npc #2.
+10:54:59 PM: TheYellowMole editing npc #1.
+10:54:59 PM: (global) TheYellowMole: At editnpc...1
+10:55:03 PM: (global) TheYellowMole: At npceditorok...3
+10:55:03 PM: (global) TheYellowMole: At sendsavenpc...3
+10:55:03 PM: TheYellowMole saved npc #1.
+10:57:05 PM: TheYellowMole editing spell #2.
+10:57:09 PM: TheYellowMole saving spell #2.
+10:57:14 PM: TheYellowMole editing spell #2.
+10:57:18 PM: TheYellowMole saving spell #2.
+10:59:42 PM: TheYellowMole editing npc #1.
+10:59:42 PM: (global) TheYellowMole: At editnpc...1
+10:59:49 PM: (global) TheYellowMole: At npceditorok...1
+10:59:49 PM: (global) TheYellowMole: At sendsavenpc...1
+10:59:49 PM: TheYellowMole saved npc #1.
+10:59:54 PM: TheYellowMole editing npc #1.
+10:59:54 PM: (global) TheYellowMole: At editnpc...1
+11:00:04 PM: TheYellowMole editing npc #2.
+11:00:04 PM: (global) TheYellowMole: At editnpc...4
+11:00:28 PM: (global) TheYellowMole: At npceditorok...1
+11:00:28 PM: (global) TheYellowMole: At sendsavenpc...1
+11:00:28 PM: TheYellowMole saved npc #2.
+11:00:54 PM: TheYellowMole editing npc #2.
+11:00:54 PM: (global) TheYellowMole: At editnpc...0
+11:00:57 PM: (global) TheYellowMole: At npceditorok...1
+11:00:57 PM: (global) TheYellowMole: At sendsavenpc...1
+11:00:57 PM: TheYellowMole saved npc #2.
+11:05:44 PM: TheYellowMole editing npc #1.
+11:05:44 PM: (global) TheYellowMole: At editnpc...1
+11:05:46 PM: (global) TheYellowMole: At npceditorok...1
+11:05:46 PM: (global) TheYellowMole: At sendsavenpc...1
+11:05:46 PM: TheYellowMole saved npc #1.
+11:05:51 PM: TheYellowMole editing npc #1.
+11:05:51 PM: (global) TheYellowMole: At editnpc...1
+11:05:53 PM: (global) TheYellowMole: At npceditorok...2
+11:05:53 PM: (global) TheYellowMole: At sendsavenpc...2
+11:05:53 PM: TheYellowMole saved npc #1.
+11:08:18 PM: TheYellowMole editing npc #1.
+11:08:18 PM: (global) TheYellowMole: At editnpc...1
+11:08:28 PM: (global) TheYellowMole: At npceditorok...1
+11:08:28 PM: (global) TheYellowMole: At sendsavenpc...1
+11:08:28 PM: TheYellowMole saved npc #1.
+11:08:32 PM: TheYellowMole editing npc #1.
+11:08:32 PM: (global) TheYellowMole: At editnpc...1
+11:08:53 PM: (global) TheYellowMole: At npceditorok...1
+11:08:53 PM: (global) TheYellowMole: At sendsavenpc...1
+11:08:53 PM: TheYellowMole saved npc #1.
+11:08:56 PM: TheYellowMole editing npc #1.
+11:08:56 PM: (global) TheYellowMole: At editnpc...1
+11:09:06 PM: (global) TheYellowMole: At npceditorok...1
+11:09:06 PM: (global) TheYellowMole: At sendsavenpc...1
+11:09:06 PM: TheYellowMole saved npc #1.
+11:14:07 PM: TheYellowMole editing npc #1.
+11:14:07 PM: (global) TheYellowMole: At editnpc...1
+11:14:16 PM: TheYellowMole editing npc #2.
+11:14:16 PM: (global) TheYellowMole: At editnpc...5
+11:14:21 PM: (global) TheYellowMole: At npceditorok...5
+11:14:21 PM: (global) TheYellowMole: At sendsavenpc...5
+11:14:21 PM: TheYellowMole saved npc #2.
+11:14:31 PM: TheYellowMole editing npc #2.
+11:14:31 PM: (global) TheYellowMole: At editnpc...5
+11:14:35 PM: (global) TheYellowMole: At npceditorok...3
+11:14:35 PM: (global) TheYellowMole: At sendsavenpc...3
+11:14:35 PM: TheYellowMole saved npc #2.
+11:14:42 PM: TheYellowMole editing npc #1.
+11:14:42 PM: (global) TheYellowMole: At editnpc...1
+11:14:45 PM: (global) TheYellowMole: At npceditorok...0
+11:14:45 PM: (global) TheYellowMole: At sendsavenpc...0
+11:14:45 PM: TheYellowMole saved npc #1.
+11:15:00 PM: TheYellowMole editing npc #2.
+11:15:00 PM: (global) TheYellowMole: At editnpc...3
+11:15:11 PM: (global) TheYellowMole: At npceditorok...4
+11:15:11 PM: (global) TheYellowMole: At sendsavenpc...4
+11:15:11 PM: TheYellowMole saved npc #2.
+11:15:41 PM: TheYellowMole editing spell #2.
+11:15:48 PM: TheYellowMole saving spell #2.
+11:16:02 PM: TheYellowMole editing spell #2.
+11:16:11 PM: TheYellowMole saving spell #2.
+11:19:36 PM: TheYellowMole editing npc #2.
+11:19:36 PM: (global) TheYellowMole: At editnpc...4
+11:19:41 PM: (global) TheYellowMole: At npceditorok...0
+11:19:41 PM: (global) TheYellowMole: At sendsavenpc...0
+11:19:41 PM: TheYellowMole saved npc #2.
+11:19:49 PM: TheYellowMole editing npc #2.
+11:19:49 PM: (global) TheYellowMole: At editnpc...0
+11:19:57 PM: (global) TheYellowMole: At npceditorok...1
+11:19:57 PM: (global) TheYellowMole: At sendsavenpc...1
+11:19:58 PM: TheYellowMole saved npc #2.
+11:20:17 PM: TheYellowMole editing element #5.
+11:20:30 PM: TheYellowMole editing element #3.
+11:26:15 PM: TheYellowMole editing element #2.
+11:26:29 PM: TheYellowMole editing element #2.
+11:26:31 PM: TheYellowMole saved element #1.
+11:26:48 PM: TheYellowMole editing element #5.
+11:29:17 PM: TheYellowMole editing element #1.
+11:29:23 PM: TheYellowMole saved element #0.
+11:29:30 PM: TheYellowMole editing element #2.
+11:29:41 PM: TheYellowMole saved element #1.
+11:29:48 PM: TheYellowMole editing element #14.
+11:29:57 PM: TheYellowMole editing element #3.
+11:30:04 PM: TheYellowMole saved element #2.
+11:30:14 PM: TheYellowMole editing element #4.
+11:30:20 PM: TheYellowMole saved element #3.
+11:30:31 PM: TheYellowMole editing element #5.
+11:30:46 PM: TheYellowMole saved element #4.
+11:30:53 PM: TheYellowMole editing element #2.
+11:31:06 PM: TheYellowMole saved element #1.
+11:31:17 PM: TheYellowMole editing element #3.
+11:31:24 PM: TheYellowMole saved element #2.
+11:31:33 PM: TheYellowMole editing element #4.
+11:31:46 PM: TheYellowMole saved element #3.
+11:35:30 PM: TheYellowMole editing spell #2.
+11:35:35 PM: TheYellowMole saving spell #2.
+11:35:41 PM: TheYellowMole editing npc #2.
+11:35:41 PM: (global) TheYellowMole: At editnpc...1
+11:35:49 PM: (global) TheYellowMole: At npceditorok...4
+11:35:49 PM: (global) TheYellowMole: At sendsavenpc...4
+11:35:49 PM: TheYellowMole saved npc #2.
+11:36:46 PM: TheYellowMole editing spell #2.
+11:36:48 PM: TheYellowMole saving spell #2.
+11:36:53 PM: TheYellowMole editing spell #2.
+11:37:00 PM: TheYellowMole editing npc #2.
+11:37:00 PM: (global) TheYellowMole: At editnpc...4
+11:37:03 PM: (global) TheYellowMole: At npceditorok...0
+11:37:03 PM: (global) TheYellowMole: At sendsavenpc...0
+11:37:03 PM: TheYellowMole saved npc #2.
+11:41:17 PM: TheYellowMole editing spell #2.
+11:41:25 PM: TheYellowMole saving spell #2.
+11:41:38 PM: TheYellowMole editing spell #2.
+11:45:03 PM: TheYellowMole editing spell #2.
+11:46:40 PM: TheYellowMole editing spell #2.
+11:46:44 PM: TheYellowMole saving spell #2.
+11:49:34 PM: TheYellowMole editing spell #2.
+11:49:35 PM: TheYellowMole saving spell #2.
+1:15:51 AM: TheYellowMole editing item #1.
+1:15:58 AM: TheYellowMole editing item #3.
+12:26:41 PM: TheYellowMole has respawned map #1
+12:30:03 PM: TheYellowMole has respawned map #1
+12:32:57 PM: TheYellowMole has respawned map #1
+12:34:22 PM: TheYellowMole has respawned map #1
+12:36:39 PM: TheYellowMole has respawned map #1
+12:37:04 PM: TheYellowMole has respawned map #1
+12:38:11 PM: TheYellowMole has respawned map #1
+12:40:25 PM: TheYellowMole has respawned map #1
+12:41:33 PM: TheYellowMole has respawned map #1
+5:16:58 PM: TheYellowMole editing item #1.
+5:25:27 PM: TheYellowMole editing npc #1.
+5:25:27 PM: (global) TheYellowMole: At editnpc...0
+5:25:30 PM: (global) TheYellowMole: At npceditorok...1
+5:25:30 PM: (global) TheYellowMole: At sendsavenpc...1
+5:25:30 PM: TheYellowMole saved npc #1.
+7:01:50 PM: TheYellowMole editing item #2.
+7:01:54 PM: TheYellowMole saved item #2.
+7:02:46 PM: TheYellowMole has respawned map #1
+7:08:31 PM: TheYellowMole editing item #2.
+7:08:36 PM: TheYellowMole saved item #2.
+7:08:46 PM: TheYellowMole editing item #2.
+7:09:09 PM: TheYellowMole editing item #2.
+7:09:12 PM: TheYellowMole saved item #2.
+7:15:07 PM: TheYellowMole editing item #2.
+7:15:28 PM: TheYellowMole editing item #2.
+7:15:31 PM: TheYellowMole saved item #2.
+7:16:06 PM: TheYellowMole has respawned map #1
+6:15:15 PM: TheYellowMole editing item #1.
+6:17:50 PM: TheYellowMole editing item #1.
+6:04:12 PM: TheYellowMole editing item #4.
+6:04:32 PM: TheYellowMole saved item #4.
+6:04:43 PM: TheYellowMole editing item #5.
+6:04:53 PM: TheYellowMole saved item #5.
+6:04:58 PM: TheYellowMole editing item #6.
+6:05:15 PM: TheYellowMole saved item #6.
+6:05:20 PM: TheYellowMole editing shop #1.
+6:18:32 PM: TheYellowMole editing shop #1.
+6:20:28 PM: TheYellowMole editing shop #1.
+6:32:27 PM: TheYellowMole editing shop #1.
+6:34:55 PM: TheYellowMole editing shop #1.
+6:37:49 PM: TheYellowMole editing shop #1.
+6:38:36 PM: TheYellowMole editing shop #1.
+6:38:52 PM: TheYellowMole editing item #3.
+6:38:56 PM: TheYellowMole saved item #3.
+6:39:00 PM: TheYellowMole editing shop #1.
+6:40:24 PM: TheYellowMole editing shop #1.
+6:44:01 PM: TheYellowMole editing shop #1.
+6:44:16 PM: TheYellowMole editing item #3.
+6:44:21 PM: TheYellowMole saved item #3.
+6:44:27 PM: TheYellowMole editing item #5.
+6:44:34 PM: TheYellowMole editing shop #1.
+6:44:46 PM: TheYellowMole saving shop #1.
+6:45:17 PM: TheYellowMole editing shop #1.
+6:46:03 PM: TheYellowMole editing shop #1.
+6:53:35 PM: TheYellowMole editing shop #1.
+6:54:41 PM: TheYellowMole saving shop #1.
+6:55:24 PM: TheYellowMole editing shop #1.
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:44 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:45 PM: (global) TheYellowMole: 4
+8:06:46 PM: (global) TheYellowMole: 4
+8:06:46 PM: (global) TheYellowMole: 4
+8:06:46 PM: (global) TheYellowMole: 4
+8:06:46 PM: (global) TheYellowMole: 4
+8:06:46 PM: (global) TheYellowMole: 4
+8:06:46 PM: (global) TheYellowMole: 4
+8:06:46 PM: (global) TheYellowMole: 4
+8:06:46 PM: (global) TheYellowMole: 4
+8:06:46 PM: (global) TheYellowMole: 4
+8:06:48 PM: (global) TheYellowMole: 4
+8:06:48 PM: (global) TheYellowMole: 4
+8:06:48 PM: (global) TheYellowMole: 4
+8:06:48 PM: (global) TheYellowMole: 4
+8:06:48 PM: (global) TheYellowMole: 4
+8:06:48 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:49 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:50 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:51 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:52 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:53 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:54 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:55 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:56 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:57 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:58 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:06:59 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:00 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:01 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:02 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:03 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:04 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:05 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:06 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:07 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:08 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:09 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:10 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:11 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:12 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:07:13 PM: (global) TheYellowMole: 4
+8:08:14 PM: (global) TheYellowMole: 0
+8:08:14 PM: (global) TheYellowMole: 0
+8:08:24 PM: (global) TheYellowMole: 7
+8:08:27 PM: (global) TheYellowMole: 0
+8:08:32 PM: (global) TheYellowMole: 7
+8:08:38 PM: (global) TheYellowMole: 0
+8:08:42 PM: (global) TheYellowMole: 0
+8:08:43 PM: (global) TheYellowMole: 0
+5:08:43 PM: (global) TheYellowMole: 0
+5:08:44 PM: (global) TheYellowMole: 0
+5:09:42 PM: (global) TheYellowMole: 0
+5:09:43 PM: (global) TheYellowMole: 0
+5:13:10 PM: (global) TheYellowMole: 0
+5:13:10 PM: (global) TheYellowMole: 0
+5:14:22 PM: (global) TheYellowMole: 0
+5:14:22 PM: (global) TheYellowMole: 0
+5:14:27 PM: (global) TheYellowMole: 0
+5:14:29 PM: (global) TheYellowMole: 0
+5:16:08 PM: (global) TheYellowMole: 0
+5:16:08 PM: (global) TheYellowMole: 0
+5:16:18 PM: (global) TheYellowMole: 0
+5:16:20 PM: (global) TheYellowMole: 0
+5:16:20 PM: (global) TheYellowMole: 0
+5:16:26 PM: (global) TheYellowMole: 0
+5:16:35 PM: TheYellowMole editing shop #1.
+5:16:47 PM: TheYellowMole saving shop #1.
+5:17:00 PM: (global) TheYellowMole: 3
+5:17:01 PM: (global) TheYellowMole: 0
+5:17:01 PM: (global) TheYellowMole: 0
+5:17:10 PM: (global) TheYellowMole: 3
+5:17:12 PM: (global) TheYellowMole: 0
+5:17:14 PM: (global) TheYellowMole: 3
+5:17:14 PM: (global) TheYellowMole: 0
+5:17:15 PM: (global) TheYellowMole: 0
+5:19:49 PM: (global) TheYellowMole: 0
+5:19:49 PM: (global) TheYellowMole: 0
+5:19:49 PM: (global) TheYellowMole: 0
+5:19:50 PM: (global) TheYellowMole: 0
+5:19:57 PM: (global) TheYellowMole: 3
+5:19:57 PM: (global) TheYellowMole: 0
+5:19:57 PM: (global) TheYellowMole: 3
+5:20:06 PM: (global) TheYellowMole: 0
+5:20:06 PM: (global) TheYellowMole: 3
+5:20:06 PM: (global) TheYellowMole: 0
+5:20:08 PM: (global) TheYellowMole: 3
+5:20:08 PM: (global) TheYellowMole: 0
+5:20:08 PM: (global) TheYellowMole: 3
+5:20:08 PM: (global) TheYellowMole: 0
+5:20:08 PM: (global) TheYellowMole: 3
+5:20:08 PM: (global) TheYellowMole: 0
+5:20:08 PM: (global) TheYellowMole: 0
+5:20:08 PM: (global) TheYellowMole: 0
+5:20:08 PM: (global) TheYellowMole: 0
+5:20:13 PM: (global) TheYellowMole: 3
+5:20:13 PM: (global) TheYellowMole: 0
+5:20:13 PM: (global) TheYellowMole: 3
+5:20:18 PM: (global) TheYellowMole: 0
+5:20:18 PM: (global) TheYellowMole: 3
+5:20:18 PM: (global) TheYellowMole: 0
+5:20:20 PM: (global) TheYellowMole: 3
+5:20:20 PM: (global) TheYellowMole: 0
+5:20:20 PM: (global) TheYellowMole: 3
+5:20:20 PM: (global) TheYellowMole: 0
+5:20:20 PM: (global) TheYellowMole: 3
+5:20:20 PM: (global) TheYellowMole: 0
+5:20:20 PM: (global) TheYellowMole: 0
+5:20:20 PM: (global) TheYellowMole: 0
+5:20:20 PM: (global) TheYellowMole: 0
+5:20:32 PM: (global) TheYellowMole: 3
+5:20:32 PM: (global) TheYellowMole: 0
+5:20:32 PM: (global) TheYellowMole: 3
+5:20:33 PM: (global) TheYellowMole: 0
+5:20:33 PM: (global) TheYellowMole: 3
+5:20:33 PM: (global) TheYellowMole: 0
+5:20:33 PM: (global) TheYellowMole: 0
+5:20:33 PM: (global) TheYellowMole: 0
+5:20:33 PM: (global) TheYellowMole: 0
+5:20:48 PM: (global) TheYellowMole: 3
+5:20:48 PM: (global) TheYellowMole: 0
+5:20:48 PM: (global) TheYellowMole: 3
+5:20:55 PM: (global) TheYellowMole: 0
+5:20:55 PM: (global) TheYellowMole: 3
+5:20:55 PM: (global) TheYellowMole: 0
+5:21:02 PM: (global) TheYellowMole: 3
+5:21:02 PM: (global) TheYellowMole: 0
+5:21:02 PM: (global) TheYellowMole: 3
+5:21:03 PM: (global) TheYellowMole: 0
+5:21:03 PM: (global) TheYellowMole: 3
+5:21:03 PM: (global) TheYellowMole: 0
+5:21:03 PM: (global) TheYellowMole: 0
+5:21:03 PM: (global) TheYellowMole: 0
+5:21:03 PM: (global) TheYellowMole: 0
+5:21:13 PM: (global) TheYellowMole: 3
+5:21:13 PM: (global) TheYellowMole: 0
+5:21:13 PM: (global) TheYellowMole: 3
+5:21:22 PM: (global) TheYellowMole: 0
+5:21:22 PM: (global) TheYellowMole: 3
+5:21:22 PM: (global) TheYellowMole: 0
+5:21:22 PM: (global) TheYellowMole: 0
+5:21:22 PM: (global) TheYellowMole: 0
+5:21:22 PM: (global) TheYellowMole: 0
+5:21:49 PM: (global) TheYellowMole: 0
+5:21:49 PM: (global) TheYellowMole: 0
+5:21:49 PM: (global) TheYellowMole: 0
+5:21:49 PM: (global) TheYellowMole: 0
+5:21:58 PM: (global) TheYellowMole: 3
+5:21:58 PM: (global) TheYellowMole: 0
+5:21:58 PM: (global) TheYellowMole: 3
+5:21:58 PM: (global) TheYellowMole: 0
+5:21:58 PM: (global) TheYellowMole: 3
+5:21:58 PM: (global) TheYellowMole: 0
+5:22:00 PM: (global) TheYellowMole: 3
+5:22:00 PM: (global) TheYellowMole: 0
+5:22:00 PM: (global) TheYellowMole: 3
+5:22:00 PM: (global) TheYellowMole: 0
+5:22:00 PM: (global) TheYellowMole: 3
+5:22:00 PM: (global) TheYellowMole: 0
+5:22:01 PM: (global) TheYellowMole: 3
+5:22:01 PM: (global) TheYellowMole: 0
+5:22:01 PM: (global) TheYellowMole: 3
+5:22:02 PM: (global) TheYellowMole: 0
+5:22:02 PM: (global) TheYellowMole: 3
+5:22:02 PM: (global) TheYellowMole: 0
+5:22:03 PM: (global) TheYellowMole: 3
+5:22:03 PM: (global) TheYellowMole: 0
+5:22:03 PM: (global) TheYellowMole: 3
+5:22:03 PM: (global) TheYellowMole: 0
+5:22:03 PM: (global) TheYellowMole: 3
+5:22:03 PM: (global) TheYellowMole: 0
+5:22:05 PM: (global) TheYellowMole: 3
+5:22:05 PM: (global) TheYellowMole: 0
+5:22:05 PM: (global) TheYellowMole: 3
+5:22:05 PM: (global) TheYellowMole: 0
+5:22:05 PM: (global) TheYellowMole: 3
+5:22:05 PM: (global) TheYellowMole: 0
+5:22:07 PM: (global) TheYellowMole: 3
+5:22:07 PM: (global) TheYellowMole: 0
+5:22:07 PM: (global) TheYellowMole: 3
+5:22:08 PM: (global) TheYellowMole: 0
+5:22:08 PM: (global) TheYellowMole: 3
+5:22:08 PM: (global) TheYellowMole: 0
+5:22:08 PM: (global) TheYellowMole: 0
+5:22:08 PM: (global) TheYellowMole: 0
+5:22:08 PM: (global) TheYellowMole: 0
+5:22:27 PM: (global) TheYellowMole: 3
+5:22:27 PM: (global) TheYellowMole: 0
+5:22:27 PM: (global) TheYellowMole: 3
+5:22:28 PM: (global) TheYellowMole: 0
+5:22:28 PM: (global) TheYellowMole: 3
+5:22:28 PM: (global) TheYellowMole: 0
+5:22:28 PM: (global) TheYellowMole: 0
+5:22:28 PM: (global) TheYellowMole: 0
+5:22:28 PM: (global) TheYellowMole: 0
+5:37:44 PM: TheYellowMole editing shop #1.
+5:37:55 PM: TheYellowMole saving shop #1.
+5:41:15 PM: TheYellowMole editing shop #1.
+5:43:00 PM: TheYellowMole editing shop #1.
+5:43:04 PM: (global) TheYellowMole: Index=1 i=7
+5:43:08 PM: (global) TheYellowMole: Index=1 i=7
+5:43:13 PM: (global) TheYellowMole: Index=1 i=7
+5:43:18 PM: (global) TheYellowMole: Index=1 i=7
+5:43:25 PM: (global) TheYellowMole: Index=1 i=7
+5:43:27 PM: TheYellowMole saving shop #1.
+6:19:59 PM: TheYellowMole editing item #6.
+6:20:14 PM: TheYellowMole saved item #6.
+6:24:01 PM: TheYellowMole editing element #1.
+6:24:08 PM: TheYellowMole saved element #0.
+6:24:10 PM: TheYellowMole editing element #2.
+6:24:19 PM: TheYellowMole saved element #1.
+6:24:23 PM: TheYellowMole editing element #3.
+6:24:37 PM: TheYellowMole saved element #2.
+6:24:39 PM: TheYellowMole editing element #4.
+6:24:48 PM: TheYellowMole saved element #3.
+6:24:51 PM: TheYellowMole editing element #5.
+6:24:59 PM: TheYellowMole saved element #4.
+6:25:02 PM: TheYellowMole editing element #2.
+6:25:07 PM: TheYellowMole saved element #1.
+6:25:11 PM: TheYellowMole editing element #3.
+6:25:18 PM: TheYellowMole saved element #2.
+7:27:57 PM: marsh editing item #2.
+7:29:28 PM: marsh editing item #1.
+7:31:44 PM: marsh editing item #5.
+7:31:56 PM: marsh editing item #4.
+7:32:12 PM: marsh editing item #1.
+7:33:17 PM: marsh editing item #1.
+7:33:27 PM: marsh saved item #1.
+7:33:32 PM: marsh editing item #2.
+7:33:55 PM: marsh saved item #2.
+7:35:01 PM: marsh editing item #2.
+7:35:07 PM: marsh editing item #3.
+7:35:20 PM: marsh saved item #3.
+7:35:35 PM: marsh editing item #2.
+7:35:40 PM: marsh editing item #3.
+7:35:57 PM: marsh editing item #4.
+7:36:15 PM: marsh saved item #4.
+7:36:22 PM: marsh has respawned map #1
+7:36:43 PM: marsh editing item #4.
+7:36:47 PM: marsh saved item #4.
+7:37:16 PM: marsh editing item #4.
+7:41:11 PM: marsh editing item #2.
+7:41:21 PM: marsh editing item #5.
+7:41:48 PM: marsh saved item #5.
+7:41:54 PM: marsh editing item #5.
+7:42:28 PM: marsh editing item #6.
+7:42:39 PM: marsh saved item #6.
+7:42:44 PM: marsh editing item #7.
+7:42:50 PM: marsh saved item #7.
+7:42:54 PM: marsh editing item #8.
+7:43:04 PM: marsh saved item #8.
+7:43:08 PM: marsh editing item #9.
+7:43:16 PM: marsh saved item #9.
+7:44:12 PM: marsh editing item #9.
+7:44:22 PM: marsh saved item #9.
+8:13:09 PM: marsh editing npc #2.
+8:13:12 PM: marsh saved npc #2.
+7:46:45 PM: marsh editing shop #1.
+7:47:47 PM: marsh saving shop #1.
+7:56:18 PM: marsh editing item #6.
+7:56:26 PM: marsh editing item #4.
+5:06:41 PM: marsh editing npc #1.
+5:09:23 PM: marsh editing npc #2.
+5:09:26 PM: marsh saved npc #2.
+5:09:33 PM: marsh editing npc #2.
+8:01:09 PM: marsh editing npc #1.
+8:01:24 PM: marsh editing npc #2.
+8:01:51 PM: marsh saved npc #2.
+8:01:59 PM: marsh editing npc #2.
+8:07:36 PM: marsh editing npc #2.
+8:15:49 PM: marsh editing npc #2.
+8:15:55 PM: marsh saved npc #2.
+8:16:03 PM: marsh editing npc #2.
+8:16:06 PM: marsh saved npc #2.
+8:16:11 PM: marsh editing npc #2.
+8:16:18 PM: marsh saved npc #2.
+8:17:11 PM: marsh editing npc #1.
+8:17:16 PM: marsh editing npc #2.
+8:17:18 PM: marsh saved npc #2.
+8:18:55 PM: marsh editing npc #2.
+8:18:57 PM: marsh saved npc #2.
+8:19:27 PM: marsh editing npc #2.
+8:19:29 PM: marsh saved npc #2.
+8:21:27 PM: marsh editing npc #1.
+8:21:35 PM: marsh editing npc #2.
+8:21:39 PM: marsh saved npc #2.
+7:28:01 PM: marsh editing npc #2.
+7:28:04 PM: marsh saved npc #2.
+7:42:19 PM: (admin marsh) HINEY
+9:09:24 AM: Demo editing npc #1.
+9:09:27 AM: Demo saved npc #1.
+5:55:56 PM: Demo editing item #1.
+5:56:02 PM: Demo editing item #5.
+5:56:04 PM: Demo saved item #5.
+5:56:20 PM: Demo editing item #26.
+5:56:23 PM: Demo saved item #26.
+5:56:52 PM: Demo editing item #2.
+5:59:35 PM: Demo editing item #4.
+5:59:40 PM: Demo editing item #2.
+6:03:00 PM: Demo editing item #2.
+12:43:50 PM: Demo editing npc #2.
+12:44:14 PM: Demo editing npc #2.
+12:44:17 PM: Demo saved npc #2.
+12:44:27 PM: Demo editing npc #2.
+12:44:34 PM: Demo saved npc #2.
+12:44:41 PM: Demo editing npc #2.
+12:51:36 PM: Demo editing npc #2.
+12:51:38 PM: Demo saved npc #2.
+12:51:45 PM: Demo editing npc #2.
+12:55:52 PM: Demo editing npc #2.
+12:55:55 PM: Demo saved npc #2.
+1:13:07 PM: Demo editing npc #2.
+1:13:13 PM: Demo editing npc #1.
+1:13:16 PM: Demo saved npc #1.
+3:22:46 AM: (global) Demo: 1
+3:22:46 AM: (global) Demo: 2
+3:22:48 AM: (global) Demo: 3
+3:22:48 AM: (global) Demo: 4
+3:22:49 AM: (global) Demo: 5
+3:25:16 AM: (global) Demo: 1
+3:35:53 AM: (global) Demo: 1
+3:35:54 AM: (global) Demo: 2
+3:35:54 AM: (global) Demo: Mole
+3:35:55 AM: (global) Demo: 4
+3:39:00 AM: (global) Demo: 0
+3:39:00 AM: (global) Demo: 1
+3:39:01 AM: (global) Demo: 2
+3:39:01 AM: (global) Demo: Mole
+6:21:53 PM: Demo editing spell #1.
+6:21:58 PM: Demo saving spell #1.
+2:02:44 AM: Demo editing spell #1.
+2:02:48 AM: Demo saving spell #1.
+2:02:53 AM: Demo editing spell #2.
+2:02:58 AM: Demo saving spell #2.
+12:20:39 AM: (global) Demo: yo
+12:21:21 AM: (global) Demo: yo
+12:22:38 AM: (global) Demo: hey
+12:23:31 AM: (global) Demo: hey
+12:25:50 AM: (global) Demo: ho
+12:25:54 AM: (global) Demo: yo
+12:26:10 AM: (global) Demo: 2
+12:29:25 AM: (global) Demo: hi
+12:54:05 PM: Demo editing item #1.
+12:54:45 PM: Demo editing item #1.
+12:56:21 PM: Demo editing item #1.
+12:57:06 PM: Demo editing item #1.
+12:57:11 PM: Demo saved item #1.
+1:17:29 PM: Demo editing item #1.
+1:17:48 PM: Demo editing item #6.
+1:18:04 PM: Demo editing item #1.
+1:18:25 PM: Demo editing item #5.
+1:19:06 PM: Demo editing item #1.
+1:19:11 PM: Demo saved item #1.
+4:45:58 PM: Demo editing item #1.
+4:59:51 PM: (global) Demo: likeomfg!
+4:59:51 PM: (global) Demo: likeomfg!
+4:59:56 PM: (global) Demo: likeomfg!
+5:00:02 PM: (global) Demo: likeomfg!
+5:00:06 PM: (global) Demo: likeomfg!
+5:01:18 PM: (global) Demo: likeomfg!
+5:01:18 PM: (global) Demo: likeomfg!
+5:01:21 PM: (global) Demo: likeomfg!
+5:02:14 PM: (global) Demo: likeomfg!
+5:02:17 PM: (global) Demo: likeomfg!
+5:02:22 PM: (global) Demo: likeomfg!
+5:03:55 PM: (global) Demo: likeomfg!
+5:03:55 PM: (global) Demo: likeomfg!
+5:04:03 PM: (global) Demo: likeomfg!
+5:04:16 PM: (global) Demo: likeomfg!
+7:40:47 PM: (global) Demo: likeomfg!
+7:40:47 PM: (global) Demo: likeomfg!
+7:41:01 PM: (global) Demo: likeomfg!
+7:41:03 PM: (global) Demo: likeomfg!
+7:41:04 PM: (global) Demo: likeomfg!
+7:41:05 PM: (global) Demo: likeomfg!
+7:42:48 PM: (global) Demo: likeomfg!
+7:42:48 PM: (global) Demo: likeomfg!
+7:42:53 PM: (global) Demo: likeomfg!
+7:42:54 PM: (global) Demo: likeomfg!
+7:42:55 PM: (global) Demo: likeomfg!
+7:42:56 PM: (global) Demo: likeomfg!
+7:42:59 PM: (global) Demo: likeomfg!
+7:43:02 PM: (global) Demo: likeomfg!
+7:43:05 PM: (global) Demo: likeomfg!
+10:50:32 PM: (global) Demo: likeomfg!
+10:50:32 PM: (global) Demo: likeomfg!
+10:50:42 PM: (global) Demo: likeomfg!
+10:50:44 PM: (global) Demo: likeomfg!
+10:50:48 PM: (global) Demo: likeomfg!
+10:51:15 PM: (global) Demo: likeomfg!
+2:29:57 PM: Lord Uber editing npc #1.
+2:30:04 PM: Lord Uber saved npc #1.
+2:32:46 PM: Lord Uber editing npc #2.
+2:32:52 PM: Lord Uber saved npc #2.
+2:33:19 PM: Lord Uber has respawned map #2
+3:20:51 PM: Lord Uber editing npc #1.
+3:20:57 PM: Lord Uber saved npc #1.
+3:21:00 PM: Lord Uber editing npc #2.
+3:21:04 PM: Lord Uber saved npc #2.
+5:42:12 PM: Lord Uber editing spell #1.
+5:42:28 PM: Lord Uber saving spell #1.
+6:08:38 PM: Lord Uber editing spell #1.
+6:09:01 PM: Lord Uber saving spell #1.
+6:15:16 PM: Lord Uber editing spell #1.
+6:15:29 PM: Lord Uber saving spell #1.
+6:19:35 PM: Lord Uber editing spell #1.
+6:19:39 PM: Lord Uber saving spell #1.
+6:23:13 PM: Lord Uber editing spell #1.
+6:23:31 PM: Lord Uber saving spell #1.
+6:30:47 PM: Lord Uber editing spell #1.
+6:30:54 PM: Lord Uber saving spell #1.
+6:34:56 PM: Lord Uber editing spell #1.
+6:35:14 PM: Lord Uber saving spell #1.
+11:28:43 PM: Lord Uber editing spell #1.
+7:59:32 PM: Lord Uber has respawned map #1
+7:59:35 PM: Lord Uber has respawned map #1
+8:18:27 PM: Lord Uber has respawned map #1
+8:18:30 PM: Lord Uber has respawned map #1
+9:03:39 PM: Lord Uber editing npc #1.
+9:03:43 PM: Lord Uber editing npc #2.
+9:03:57 PM: Lord Uber saved npc #2.
+9:06:39 PM: Demo editing item #1.
+9:06:42 PM: Demo saved item #1.
+9:06:46 PM: Demo has respawned map #5

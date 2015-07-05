@@ -1,0 +1,178 @@
+':: Text Color Code ::
+'Black = 0
+'Blue = 1
+'Green = 2
+'Cyan = 3
+'Red = 4
+'Magenta = 5
+'Brown = 6
+'Grey = 7
+'DarkGrey = 8
+'BrightBlue = 9
+'BrightGreen = 10
+'BrightCyan = 11
+'BrightRed = 12
+'Pink = 13
+'Yellow = 14
+'White = 15
+
+Sub JoinGame(index)
+Dim GameName
+Dim MOTD
+
+GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+MOTD = GetVar("motd.ini", "MOTD", "Msg")
+
+    ' Send a global message that he/she joined
+    If GetPlayerAccess(Index) <= ADMIN_MONITER Then
+        Call GlobalMsg(GetPlayerName(Index) & " has joined " & GameName & "!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(Index) & " has joined " & GameName & "!", 15)
+    End If
+
+    ' Send them welcome
+    Call PlayerMsg(Index, "Welcome to " & GameName & "!", 15)
+    
+    ' Send motd
+    If Trim(MOTD) <> "" Then
+        Call PlayerMsg(Index, "MOTD: " & MOTD, 11)
+    End If
+    'Call Flash(index, "http://thefucksociety.com/animation/unclefuck2.swf")
+End Sub
+
+Sub LeftGame(index)
+Dim GameName
+Dim n
+
+GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+
+    ' Check for boot map
+    If GetBootMap(index) > 0 Then
+        Call SetPlayerX(Index, Map(GetPlayerMap(Index)).BootX)
+        Call SetPlayerY(Index, Map(GetPlayerMap(Index)).BootY)
+        Call SetPlayerMap(Index, Map(GetPlayerMap(Index)).BootMap)
+    End If
+          
+    ' Send a global message that he/she left
+    If GetPlayerAccess(Index) <= 1 Then
+        Call GlobalMsg(GetPlayerName(Index) & " has left " & GameName & "!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(Index) & " has left " & GameName & "!", 15)
+    End If
+End Sub
+
+Sub PlayerLevelUp(index)
+Dim i
+
+    ' Check if attacker got a level up
+    If GetPlayerExp(Index) >= GetPlayerNextLevel(Index) Then
+        Call SetPlayerLevel(Index, GetPlayerLevel(Index) + 1)
+                    
+        ' Get the ammount of skill points to add
+        i = Int(GetPlayerSPEED(Index) / 10)
+        If i < 1 Then i = 1
+        If i > 3 Then i = 3
+            
+        Call SetPlayerPOINTS(Index, GetPlayerPOINTS(Index) + i)
+        Call SetPlayerExp(Index, 0)
+        Call GlobalMsg(GetPlayerName(Index) & " has gained a level!", 6)
+        Call PlayerMsg(Index, "You have gained a level!  You now have " & GetPlayerPOINTS(Index) & " stat points to distribute.", 9)
+    End If
+End Sub
+
+Sub UsingStatPoints(index, PointType)
+Select Case PointType
+    Case 0
+	'Gives you a set max
+        If GetPlayerSTR(index) + 1 > 1000 Then
+           Call PlayerMsg(index, "You have maxed your strength!", 12)
+           Exit Sub
+        End If
+        Call SetPlayerSTR(index, GetPlayerSTR(index) + 1)
+        Call PlayerMsg(index, "You have gained more strength!", 15)
+    Case 1
+	'Gives you a set max
+        If GetPlayerDEF(index) + 1 > 1000 Then
+           Call PlayerMsg(index, "You have maxed your defence!", 12)
+           Exit Sub
+        End If
+        Call SetPlayerDEF(index, GetPlayerDEF(index) + 1)
+        Call PlayerMsg(index, "You have gained more defense!", 15)
+    Case 2
+	'Gives you a set max
+        If GetPlayerMAGI(index) + 1 > 1000 Then
+           Call PlayerMsg(index, "You have maxed your magic!", 12)
+           Exit Sub
+        End If
+        Call SetPlayerMAGI(index, GetPlayerMAGI(index) + 1)
+        Call PlayerMsg(index, "You have gained more magic abilities!", 15)
+    Case 3
+	'Gives you a set max
+        If GetPlayerSPEED(index) + 1 > 1000 Then
+           Call PlayerMsg(index, "You have maxed your speed!", 12)
+           Exit Sub
+        End If
+        Call SetPlayerSPEED(index, GetPlayerSPEED(index) + 1)
+        Call PlayerMsg(index, "You have gained more speed!", 15)
+End Select
+End Sub
+
+Sub DropItems(index)
+    If GetPlayerWeaponSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerWeaponSlot(index), 0)
+    End If
+
+    If GetPlayerArmorSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerArmorSlot(index), 0)
+    End If
+	
+    If GetPlayerHelmetSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerHelmetSlot(index), 0)
+    End If
+
+    If GetPlayerShieldSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerShieldSlot(index), 0)
+    End If
+End Sub
+
+Sub ScriptedTile(index, Script)
+Select Case Script
+    Case 0
+        Call Flash(index, "Intro.swf")
+    Case 1
+        Call Prompt(index, "Should it be Yes or No?", 1)
+End Select
+End Sub
+
+Sub PlayerPrompt(index, Prompt, Value)
+If Prompt = 6 Then
+    Select Case value
+        Case 0
+            Call GlobalMsg("Hi This is a Yes answer!", 3)
+        Case 1
+            Call GlobalMsg("This is case 1?", 3)
+    End Select
+Else
+    Select Case value
+        Case 0
+            Call GlobalMsg("Hi This is a No answer!", 4)
+        Case 1
+            Call GlobalMsg("This is no case 1?", 4)
+    End Select
+End If
+End Sub
+
+Sub Commands(index)
+Dim TextSay
+TextSay = GetVar("Scripts\Command.ini", "TEMP", "Text" & index)
+
+Select Case LCase(Trim(TextSay))
+    Case "/testing"
+        Call PlayerMsg(index, "Hey this is a test!", 7)
+        Exit Sub
+    Case "/testing2"
+        Call PlayerMsg(index, "Hey this is a test2!", 7)
+        Exit Sub
+End Select
+Call PlayerMsg(index, "Thats not a valid command!", 12)
+End Sub

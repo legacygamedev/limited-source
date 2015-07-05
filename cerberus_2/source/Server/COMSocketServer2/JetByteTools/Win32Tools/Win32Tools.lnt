@@ -1,0 +1,23 @@
+
+/* Generated from file: win32tools.dsp */
+-i..\..\\
+-d_DEBUG
+-dUNICODE
+-d_UNICODE
+-d_LIB
+-dWIN32
+-d_MBCS
+-d_WIN32_WINNT=0x0400
+CriticalSection.cpp
+Event.cpp
+Exception.cpp
+IOBuffer.cpp
+IOCompletionPort.cpp
+ManualResetEvent.cpp
+NodeList.cpp
+Socket.cpp
+SocketServer.cpp
+Thread.cpp
+UsesWinsock.cpp
+Utils.cpp
+Win32Exception.cpp

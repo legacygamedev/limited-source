@@ -1,0 +1,34 @@
+This list is for a newer version of LibraryFiles.exe, so all files below may not be contained in the one that comes with the engine.
+# ascbalon.dll
+# ccrpprg6.ocx
+# ciplImageList.ocx
+# ciplListBar.ocx
+# COMCAT.DLL
+# COMCTL32.DLL
+# COMCTL32.OCX
+# COMDLG32.OCX
+# iphlpapi.dll
+# IPHLPAPI.DLL
+# MSCOMCTL32.OCX
+# Msflxgrd.ocx
+# MSSTDFMT.DLL (error 713)
+# MSVBVM60.DLL
+# MSWINSCK.OCX
+# OLEAUT32.DLL
+# olepro32.dll
+# MFC42.DLL
+# MSCOMCT2.OCX
+# MSCOMCTL.OCX
+# Msstkprp.dll
+# msvcrt.dll
+# MSVCRTD.DLL
+# RICHED32.DLL
+# RICHTX32.DEP
+# RICHTX32.oca
+# RICHTX32.OCX
+# shdocvw.dll
+# shlwapi.dll
+# STDOLE2.TLB
+# TABCTL32.OCX
+# ws2_32.dll
+

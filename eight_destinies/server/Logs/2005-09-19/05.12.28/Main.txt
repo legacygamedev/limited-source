@@ -1,0 +1,69 @@
+
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gilei has began playing Belat.
+Gilei has disconnected from Belat.
+Connection from 127.0.0.1 has been terminated.
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!

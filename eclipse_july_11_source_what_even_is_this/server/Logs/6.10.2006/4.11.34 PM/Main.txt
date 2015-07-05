@@ -1,0 +1,97 @@
+
+Received connection from 127.0.0.1.
+marsh has logged in from 127.0.0.1.
+marsh has logged in from 127.0.0.1.
+marsh/marsh has began playing Eclipse.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Server: pie
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+marsh has disconnected from Eclipse.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+Server: /reload
+marsh has logged in from 127.0.0.1.
+marsh has logged in from 127.0.0.1.
+marsh/marsh has began playing Eclipse.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Chat Logs Have Been Saved!
+marsh has disconnected from Eclipse.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+marsh has logged in from 127.0.0.1.
+marsh/marsh has began playing Eclipse.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Chat Logs Have Been Saved!
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Scripts reloaded.
+Server: pie
+Scripts reloaded.
+Scripts reloaded.
+Chat Logs Have Been Saved!

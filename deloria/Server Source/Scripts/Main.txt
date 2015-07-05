@@ -1,0 +1,500 @@
+    ':: Text Color Code ::
+    'Black = 0
+    'Blue = 1
+    'Green = 2
+    'Cyan = 3
+    'Red = 4
+    'Magenta = 5
+    'Brown = 6
+    'Grey = 7
+    'DarkGrey = 8
+    'BrightBlue = 9
+    'BrightGreen = 10
+    'BrightCyan = 11
+    'BrightRed = 12
+    'Pink = 13
+    'Yellow = 14
+    'White = 15
+
+Sub JoinGame(index)
+    Dim GameName
+    Dim MOTD
+
+    GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+    MOTD = GetVar("motd.ini", "MOTD", "Msg")
+
+    ' Send a Global message that he/she joined
+    If GetPlayerAccess(index) <= ADMIN_MONITER Then
+    Call GlobalMsg(GetPlayerName(index) & " has joined " & GameName & "!", 7)
+    Else
+    Call GlobalMsg(GetPlayerName(index) & " has joined " & GameName & "!", 15)
+    End If
+
+    ' Send them welcome
+    Call PlayerMsg(index, "Welcome To " & GameName & ".", 15)
+
+    ' Send motd
+    If Trim(MOTD) <> "" Then
+    Call PlayerMsg(index, "MOTD: " & MOTD, 11)
+    End If
+If GetPlayerExp(index) = 0 Then
+                Dim NUM
+       NUM = 1
+       Do While NUM <= 30       
+          Call PutVar("PLAYERS.ini", GetPlayerName(index), "Fuse1", 0)
+  Call PutVar("PLAYERS.ini", GetPlayerName(index), "Fuse1val", 0)
+  Call PutVar("PLAYERS.ini", GetPlayerName(index), "Type1", 0)
+  Call PutVar("PLAYERS.ini", GetPlayerName(index), "Fuse2", 0)
+  Call PutVar("PLAYERS.ini", GetPlayerName(index), "Fuse2val", 0)
+  Call PutVar("PLAYERS.ini", GetPlayerName(index), "Type2", 0)
+          NUM = NUM+1
+       Loop
+       Call SetPlayerExp(index, 1)
+    End If 
+    'Call GlobalMsg("TheLostSoul: *Welcome " & GetPlayerName(index) & "*", RGB(20, 175, 255))
+End Sub
+
+    Sub LeftGame(index)
+    On Error Resume Next
+    Dim GameName
+    Dim n
+
+    GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+             
+        ' Send a Global message that he/she Left
+        If GetPlayerAccess(index) <= 1 Then
+            Call GlobalMsg(GetPlayerName(index) & " has departed " & GameName & "!", 7)
+        Else
+            Call GlobalMsg(GetPlayerName(index) & " has departed " & GameName & "!", 15)
+        End If
+    Call SetPlayerSprite(index, GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempCast"))
+    Call SendPlayerData(index)
+    Call PlaySound(index, "magic34.wav")
+    End Sub
+
+    Sub UsingStatPoints(index, PointType)
+    Select Case PointType
+        Case 0
+            Call SetPlayerSTR(index, GetPlayerBaseSTR(index) + 1)
+            Call PlayerMsg(index, "You have gained more strength!", 15)
+        Case 1
+            Call SetPlayerDEF(index, GetPlayerBaseDEF(index) + 1)
+            Call PlayerMsg(index, "You have gained more defense!", 15)
+        Case 2
+            Call SetPlayerMAGI(index, GetPlayerBaseMAGI(index) + 1)
+            Call PlayerMsg(index, "You have gained more magic abilities!", 15)
+        Case 3
+            Call SetPlayerSPEED(index, GetPlayerBaseSPEED(index) + 1)
+            Call PlayerMsg(index, "You have gained more speed!", 15)
+       Case 4
+            Call SetPlayerVIT(index, GetPlayerBaseVIT(index) +1)
+            Call PlayerMsg(index, "You have gained more health!", 15)
+    End Select
+    End Sub
+
+    Sub DropItems(index)     
+Dim i
+Dim HighChance
+Dim LowChance
+
+HighChance = 4
+LowChance = 1
+
+If GetPlayerAccess(index) < 0 Then
+    If GetPlayerLevel(index) > 10 Then       
+        i = Rand(HighChance, LowChance)
+        If i = 2 Then
+            If GetPlayerWeaponSlot(index) > 0 Then
+                Call PlayerMapDropItem(index, GetPlayerWeaponSlot(index), 0)
+            End If
+        End If
+       
+        i = Rand(HighChance, LowChance)
+        If i = 2 Then
+            If GetPlayerArmorSlot(index) > 0 Then
+                Call PlayerMapDropItem(index, GetPlayerArmorSlot(index), 0)
+            End If
+        End If
+       
+        i = Rand(HighChance, LowChance)
+        If i = 2 Then
+            If GetPlayerHelmetSlot(index) > 0 Then
+                Call PlayerMapDropItem(index, GetPlayerHelmetSlot(index), 0)
+            End If
+        End If
+       
+        i = Rand(HighChance, LowChance)
+        If i = 2 Then   
+            If GetPlayerShieldSlot(index) > 0 Then
+                Call PlayerMapDropItem(index, GetPlayerShieldSlot(index), 0)
+            End If
+        End If
+    End If
+End If
+End Sub
+
+    Sub ScriptedTile(index, Script)
+    Select Case Script
+        Case 0
+    End Select
+    End Sub
+
+    Sub PlayerPrompt(index, Prompt, Value)
+    If Prompt = 6 Then
+        Select Case Value
+            Case 0
+        End Select
+    Else
+        Select Case Value
+            Case 0
+        End Select
+    End If
+    End Sub
+
+Sub Commands(index)
+On Error Resume Next
+    Dim x
+    Dim y
+    Dim i
+    Dim c
+    Dim TextSay
+    TextSay = GetVar("Scripts\Command.ini", "TEMP", "Text" & index)
+
+if GetPlayerAccess(index) >= 3 then
+If LCase(Mid(TextSay, 1, 5)) = "/kill" Then
+	If Len(TextSay) > 6 Then
+		TextSay = Mid(TextSay, 7, Len(TextSay) - 6)
+		i = FindPlayer(TextSay)
+		If i > 0 then
+			Call GlobalMsg(GetPlayerName(index) & " killed " & Trim(GetPlayerName(i)) & "!", 12)
+			c = GetPlayerClass(index)
+
+    mapnum = GetVar("Classes.ini", "CLASS" & c, "Map")
+    y = GetVar("Classes.ini", "CLASS" & c, "y")
+    x = GetVar("Classes.ini", "CLASS" & c, "x")
+
+    Call PlaySound(i, "magic22.wav")
+
+    Call PlayerWarp(i, mapnum, x, y)
+		End If
+	End If
+	Exit Sub
+End If
+end if
+If LCase(Mid(TextSay, 1, 4)) = "/ban" Then
+	If Len(TextSay) > 5 Then
+		TextSay = Mid(TextSay, 6, Len(TextSay) - 5)
+	If GetPlayerAccess(index) > 0 Then
+        c = FindPlayer(Parse(1))
+        
+        If c <> index Then
+            If c > 0 Then
+                If GetPlayerAccess(c) <= GetPlayerAccess(index) Then
+Dim FileName 
+Dim IP
+Dim f
+
+    FileName = App.Path & "\banlist.txt"
+        
+    ' Cut off last portion of ip
+    IP = GetPlayerIP(c)
+            
+    For i = Len(IP) To 1 Step -1
+        If Mid(IP, i, 1) = "." Then
+            Exit For
+        End If
+    Next i
+    IP = Mid(IP, 1, i)
+            
+    f = FreeFile
+    Open FileName For Append As #f
+        Print #f, IP & "," & GetPlayerName(index) & "," & GetPlayerName(c)
+    Close #f
+    
+    Call GlobalMsg(GetPlayerName(c) & " has been banned from " & GAME_NAME & " by " & GetPlayerName(index) & "!", White)
+    Call AddLog(GetPlayerName(index) & " has banned " & GetPlayerName(c) & ".", ADMIN_LOG)
+    Call AlertMsg(c, "You have been banned by " & GetPlayerName(index) & "!")
+End Sub
+                Else
+                    Call PlayerMsg(index, "That is a higher access admin then you!", White)
+                End If
+            Else
+                Call PlayerMsg(index, "Player is not online.", White)
+            End If
+        Else
+            Call PlayerMsg(index, "You cannot ban yourself!", White)
+        End If
+                
+        Exit Sub
+	End if
+	end if
+end if
+
+Select Case LCase(Trim(TextSay))
+    Case "/emoticons"
+        i = 0
+        x = ""
+        Do While i < 16
+            If x = "" Then
+                x = "Emoticon Commands: " & GetVar("emoticons.ini", "EMOTICONS", "EmoticonC" & i)
+            Else
+                x = x & ", " & GetVar("emoticons.ini", "EMOTICONS", "EmoticonC" & i)
+            End If
+            i = i + 1
+        Loop
+        Call PlayerMsg(index, x, 14)
+        Exit Sub
+
+    Case "/problem"
+        Call PlayerMsg(index, "Help Is On the way!", 14)
+        Call AdminMsg(GetPlayerName(index) & " Is In need of assistance", 10)
+        Call PlaySound(index, "magic26.wav")
+        Exit Sub   
+       
+    Case "/away"
+        If GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status") = 0 Then
+            Call GlobalMsg(GetPlayerName(index) & " Is Now away", 14)
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status", 1)
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempPlayerName", GetPlayerName(index))
+            Call SetPlayerName(index, GetPlayerName(index) & " - Away")
+            Call SendPlayerData(index)
+        ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status") = 1 Then
+            Call SetPlayerName(index, GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempPlayerName"))
+            Call GlobalMsg(GetPlayerName(index) & " Is Now back", 14)
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status", 0)
+            Call SendPlayerData(index)
+        End If
+        Exit Sub
+       
+    Case "/boo"
+        Call PlaySound(index, "christmas.wav")
+        Exit Sub         
+
+    Case "/save"
+        Call PlayerMsg(index, "You Have Been Saved", 10)
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "EXP", GetPlayerExp(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Class", GetPlayerClass(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Sprite", GetPlayerSprite(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "ArmorSlot", GetPlayerArmorSlot(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "WeaponSlot", GetPlayerWeaponSlot(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "HelmetSlot", GetPlayerHelmetSlot(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "ShieldSlot", GetPlayerShieldSlot(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Level", GetPlayerLevel(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "HP", GetPlayerHP(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "MP", GetPlayerMP(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "SP", GetPlayerSP(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "STR", GetPlayerBaseSTR(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "DEF", GetPlayerBaseDEF(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "SPEED", GetPlayerBaseSPEED(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "MAGI", GetPlayerBaseMAGI(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini" , "CHAR" & GetPlayerCharNum(index), "VIT",GetPlayerBaseVIT(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "POINTS", GetPlayerPOINTS(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Map", GetPlayerMap(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "X", GetPlayerX(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Y", GetPlayerY(index))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 1, GetPlayerInvItemNum(index, 1))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 1, GetPlayerInvItemValue(index, 1))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 1, GetPlayerInvItemDur(index, 1))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 2, GetPlayerInvItemNum(index, 2))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 2, GetPlayerInvItemValue(index, 2))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 2, GetPlayerInvItemDur(index, 2))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 3, GetPlayerInvItemNum(index, 3))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 3, GetPlayerInvItemValue(index, 3))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 3, GetPlayerInvItemDur(index, 3))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 4, GetPlayerInvItemNum(index, 4))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 4, GetPlayerInvItemValue(index, 4))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 4, GetPlayerInvItemDur(index, 4))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 5, GetPlayerInvItemNum(index, 5))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 5, GetPlayerInvItemValue(index, 5))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 5, GetPlayerInvItemDur(index, 5))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 6, GetPlayerInvItemNum(index, 6))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 6, GetPlayerInvItemValue(index, 6))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 6, GetPlayerInvItemDur(index, 6))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 7, GetPlayerInvItemNum(index, 7))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 7, GetPlayerInvItemValue(index, 7))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 7, GetPlayerInvItemDur(index, 7))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 8, GetPlayerInvItemNum(index, 8))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 8, GetPlayerInvItemValue(index, 8))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 8, GetPlayerInvItemDur(index, 8))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 9, GetPlayerInvItemNum(index, 9))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 9, GetPlayerInvItemValue(index, 9))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 9, GetPlayerInvItemDur(index, 9))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 10, GetPlayerInvItemNum(index, 10))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 10, GetPlayerInvItemValue(index, 10))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 10, GetPlayerInvItemDur(index, 10))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 11, GetPlayerInvItemNum(index, 11))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 11, GetPlayerInvItemValue(index, 11))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 11, GetPlayerInvItemDur(index, 11))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 12, GetPlayerInvItemNum(index, 12))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 12, GetPlayerInvItemValue(index, 12))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 12, GetPlayerInvItemDur(index, 12))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 13, GetPlayerInvItemNum(index, 13))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 13, GetPlayerInvItemValue(index, 13))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 13, GetPlayerInvItemDur(index, 13))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 14, GetPlayerInvItemNum(index, 14))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 14, GetPlayerInvItemValue(index, 14))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 14, GetPlayerInvItemDur(index, 14))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 15, GetPlayerInvItemNum(index, 15))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 15, GetPlayerInvItemValue(index, 15))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 15, GetPlayerInvItemDur(index, 15))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 16, GetPlayerInvItemNum(index, 16))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 16, GetPlayerInvItemValue(index, 16))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 16, GetPlayerInvItemDur(index, 16))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 17, GetPlayerInvItemNum(index, 17))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 17, GetPlayerInvItemValue(index, 17))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 17, GetPlayerInvItemDur(index, 17))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 18, GetPlayerInvItemNum(index, 18))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 18, GetPlayerInvItemValue(index, 18))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 18, GetPlayerInvItemDur(index, 18))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 19, GetPlayerInvItemNum(index, 19))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 19, GetPlayerInvItemValue(index, 19))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 19, GetPlayerInvItemDur(index, 19))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 20, GetPlayerInvItemNum(index, 20))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 20, GetPlayerInvItemValue(index, 20))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 20, GetPlayerInvItemDur(index, 20))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 21, GetPlayerInvItemNum(index, 21))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 21, GetPlayerInvItemValue(index, 21))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 21, GetPlayerInvItemDur(index, 21))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 22, GetPlayerInvItemNum(index, 22))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 22, GetPlayerInvItemValue(index, 22))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 22, GetPlayerInvItemDur(index, 22))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 23, GetPlayerInvItemNum(index, 23))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 23, GetPlayerInvItemValue(index, 23))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 23, GetPlayerInvItemDur(index, 23))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemNum" & 24, GetPlayerInvItemNum(index, 24))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemVal" & 24, GetPlayerInvItemValue(index, 24))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "InvItemDur" & 24, GetPlayerInvItemDur(index, 24))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 1, GetPlayerSpell(index, 1))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 2, GetPlayerSpell(index, 2))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 3, GetPlayerSpell(index, 3))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 4, GetPlayerSpell(index, 4))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 5, GetPlayerSpell(index, 5))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 6, GetPlayerSpell(index, 6))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 7, GetPlayerSpell(index, 7))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 8, GetPlayerSpell(index, 8))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 9, GetPlayerSpell(index, 9))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 10, GetPlayerSpell(index, 10))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 11, GetPlayerSpell(index, 11))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 12, GetPlayerSpell(index, 12))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 13, GetPlayerSpell(index, 13))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 14, GetPlayerSpell(index, 14))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 15, GetPlayerSpell(index, 15))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 16, GetPlayerSpell(index, 16))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 17, GetPlayerSpell(index, 17))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 18, GetPlayerSpell(index, 18))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 19, GetPlayerSpell(index, 19))
+        Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini ", "CHAR" & GetPlayerCharNum(index), "Spell" & 20, GetPlayerSpell(index, 20))
+        Call PlaySound(index, "magic29.wav")
+        Exit Sub
+       
+    Case "/change"
+        If GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Spirit") = 0 Then
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Spirit", 1)
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempSpirit", GetPlayerSprite(index))
+            Call SpriteChangeByItem(index, 5, 332)   
+            Call SendPlayerData(index)
+        ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Spirit") = 1 Then
+            Call SetPlayerSprite(index, GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempSpirit"))
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Spirit", 0)
+            Call SendPlayerData(index)
+        End If
+        Exit Sub
+Case "/fuse"
+Call FuseItem(index, 149, 1, 152, 50, 134, 1)
+Exit Sub
+Case "/additem"
+Call DepositInFuseContainer(index, slot, 1)
+Exit Sub
+Call RetrieveItem(index, 1, 1) 
+Exit Sub
+Case "/makeitem1"
+Call RetrieveItem(index, 1, 1) 
+Exit Sub
+Case "/makeitem2"
+Call RetrieveItem(index, 2, 50) 
+Exit Sub
+    Case "/cast"
+        If GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast") = 0 Then
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast", 1)
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempCast", GetPlayerSprite(index))
+            Call SpriteChange(index, 36, 333)
+            Call SendPlayerData(index)
+        ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast") = 1 Then
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast", 2)
+            Call SpriteChange(index, 36, 337)
+            Call SendPlayerData(index)
+        ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast") = 2 Then
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast", 3)
+            Call SpriteChange(index, 36, 341)
+            Call SendPlayerData(index)
+        ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast") = 3 Then
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast", 4)
+            Call SpriteChange(index, 36, 348)
+            Call SendPlayerData(index)
+        ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast") = 4 Then
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast", 5)
+            Call SpriteChange(index, 36, 350)
+            Call SendPlayerData(index)
+        ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast") = 5 Then
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast", 6)
+            Call SpriteChange(index, 36, 351)
+            Call SendPlayerData(index)
+        ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast") = 6 Then
+            Call SetPlayerSprite(index, GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempCast"))
+            Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "cast", 0)
+            Call SendPlayerData(index)
+        End If
+        Exit Sub
+    End Select
+    Call PlayerMsg(index, "Thats Not a valid command!", 12)
+    End Sub
+
+    Sub SpriteChangeByItem(index, item, sprite)
+    Dim WEPSLOT
+    Dim WEP
+        WEPSLOT = Int(GetPlayerArmorSlot(index))
+        If WEPSLOT >= 1 Then
+            WEP = Int(GetPlayerInvItemNum(index, WEPSLOT))
+        Else
+            WEP = 0
+        End If
+       
+        ' If they have wep equipped
+        If WEP = Item Then
+            Call SetPlayerSprite(index, sprite)
+            Call SendPlayerData(index)   
+        End If
+    End Sub
+
+    Sub SpriteChange(index, item, sprite)
+    Dim WEPSLOT
+    Dim WEP
+        WEPSLOT = Int(GetPlayerWeaponSlot(index))
+        If WEPSLOT >= 1 Then
+            WEP = Int(GetPlayerInvItemNum(index, WEPSLOT))
+        Else
+            WEP = 0
+        End If
+       
+        ' If they have wep equipped
+        If WEP = Item Then
+            Call SetPlayerSprite(index, sprite)
+            Call SendPlayerData(index)   
+        End If
+    End Sub
+
+    Sub OnDeath(index)
+    Dim mapnum
+    Dim x
+    Dim y
+    Dim i
+    i = GetPlayerClass(index)
+
+    mapnum = GetVar("Classes.ini", "CLASS" & i, "Map")
+    y = GetVar("Classes.ini", "CLASS" & i, "y")
+    x = GetVar("Classes.ini", "CLASS" & i, "x")
+
+    Call PlaySound(index, "magic22.wav")
+
+    Call PlayerWarp(index, mapnum, x, y)
+    End Sub 

@@ -1,0 +1,7 @@
+
+Received connection from 127.0.0.1.
+bah has logged in from 127.0.0.1.
+bah/Bah has began playing Aria Engine Game.
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!

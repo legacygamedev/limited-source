@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Project1.vbp]
+SCC_Aux_Path =I:\SourceSafe\JetByte
+SCC_Project_Name =this project is not under source code control

@@ -1,0 +1,5 @@
+username=
+password=
+ip=
+port=
+version=0.0.1

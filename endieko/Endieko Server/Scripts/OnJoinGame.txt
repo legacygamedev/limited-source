@@ -1,0 +1,21 @@
+Sub JoinGame(index)
+Dim GameName
+Dim MOTD
+
+MOTD = GetVar("motd.ini", "MOTD", "Msg")
+
+    ' Send a global message that he/she joined
+    If GetPlayerAccess(Index) <= ADMIN_MONITER Then
+        Call GlobalMsg(GetPlayerName(Index) & " has joined Endieko!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(Index) & " has joined Endieko!", 15)
+    End If
+
+    ' Send them welcome
+    Call PlayerMsg(Index, "Welcome to Endieko!", 15)
+    
+    ' Send motd
+    If Trim(MOTD) <> "" Then
+        Call PlayerMsg(Index, "Message of the Day: " & MOTD, 11)
+    End If
+End Sub

@@ -1,0 +1,3 @@
+Eclipse_Evolution_SM is compiled for small code, Eclipse_Evolution_FS is compiled for fast code.
+The small one may work better if you have low memory, but the fast one may be faster otherwise.
+Try each and see if there's much of a difference, and which is faster for you and your players.

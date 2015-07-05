@@ -1,0 +1,30 @@
+1. Head Bug Fix (Thanks: DimX)
+2. Npc Head Bug Fix(-Morphesus-)
+3. Pets Map Change Bug (-Morpheus-)
+4. Screenshots Fix (-Morpheus-)
+5. RTE 9 when warping (Thanks:Ed The Hobo)
+6. Sound Bug Fix (Thanks: TehGrunt)
+7. Phantom Block Bug Fix (Thanks:JSVentor)
+8. Female Characters Bug Fix (Thanks:JSVEntor)
+9. Server Loop (Morpheus)
+10. SafeMode Removed (Morpheus)
+11. NPC Spawn Direction Added (Morpheus)
+12. MOVEMENT_TIREDNESS Toggle Added ServerSide (Data.ini) (Morpheus)
+13. Max_Mapx & y adjusted for Full Screen (Morpheus)
+14. Points Per Level Added to Data.ini (Morpheus)
+15. Language Filter Toggle Added Server Side Data.ini (Morpheus)
+16. Kick Idle Players Feature & Toggle Added Server Side
+17. Proper Movement for Players (Morpheus)
+18. Hunger Does not effect Admins (Morpheus)
+19. Hunger Timer Removed Client Side - Moved Server Side (Morpheus)
+20. Tradeskill Timer removed as a timer server side and made into individual tradeskill timers.
+21. Auto Tiles Added by (Ed The Hobo)
+22. Moved All Server Folders Inside Main Folder
+23. TRADESKILL_TIMER now can be set from the Data.ini for the amount of time the players are restricted before attempting to gain more skill exp.
+24. Quest Menu Spamming *fix*
+25. Map Editor Targeting Fix
+26. Npc Spells Added
+27. Party System Redone
+28. Visual Party Menu Added
+29. Visual Drop Editor Added to frmNpcEditor
+30. Poison & Disease Icons added for Visual Notification of an Ailment.

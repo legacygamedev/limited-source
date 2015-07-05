@@ -1,0 +1,17 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: OnPVPDeath.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: OnPVPDeath						'
+' Brief: executes when a player gets killed by another player.	'
+' Parameters:							'
+'	Attacker: the index number of the player who attacked.	'
+'	Victim: the index number of the player who died.	'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub OnPVPDeath(Attacker, Victim)
+	Call GlobalMsg(GetPlayerName(Victim) & " has been killed by " & GetPlayerName(Attacker), BRIGHTRED)
+End Sub

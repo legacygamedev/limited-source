@@ -1,0 +1,7 @@
+
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/Owned has began playing Elysium Diamond.
+Owned has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Chat Logs Have Been Saved!

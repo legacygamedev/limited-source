@@ -1,0 +1,18 @@
+Sub PlayerLevelUp(index)
+Dim i
+
+    ' Check if attacker got a level up
+    If GetPlayerExp(Index) >= GetPlayerNextLevel(Index) Then
+        Call SetPlayerLevel(Index, GetPlayerLevel(Index) + 1)
+                    
+        ' Get the ammount of skill points to add
+        i = Int(GetPlayerSPEED(Index) / 10)
+        If i < 1 Then i = 1
+        If i > 3 Then i = 3
+            
+        Call SetPlayerPOINTS(Index, GetPlayerPOINTS(Index) + i)
+        Call SetPlayerExp(Index, 0)
+        Call GlobalMsg(GetPlayerName(Index) & " has gained a level!", 6)
+        Call PlayerMsg(Index, "You have gained a level!  You now have " & GetPlayerPOINTS(Index) & " stat points to distribute.", 9)
+    End If
+End Sub

@@ -1,0 +1,10 @@
+G. SadScript
+Elysium Guide v 1.0
+Written by Cruzn
+
+
+:: SadScript ::
+	SadScript is the bulwark of an Elysium game. It is a simple yet powerful feature that can control just about every aspect of your game. Yes, it is better to HARDCODE your game, but softcoding your features makes it easier to edit and not to mention that not everyone has Visual Basic.
+	First of all, I would like to state that SadScript is infact VBScript. It has all of the capabilties of VBScripting and with it comes a list of basic commands for editing your player's characters. I will list the commands for you soon.
+	Even though SadScript is a simple tool, people have been known to create some powerful things. Some example scripts are those such as an Away and Back system for those users who always need to leave the room. And then there are your more advanced scripts; some such as a tradeskill system for your tedious workers or even a quest system for the adventurous travelers.
+	Learning SadScript is very easy. You can view tutorials posted by the experienced users at < http://www.splamm.com/elysium/forums/index.php >.

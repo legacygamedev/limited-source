@@ -1,0 +1,26 @@
+HKCR
+{
+	AtlSample.plugin.1 = s 'plugin Class'
+	{
+		CLSID = s '{07782213-552D-4FA7-8664-BE687A3F90BC}'
+	}
+	AtlSample.plugin = s 'plugin Class'
+	{
+		CLSID = s '{07782213-552D-4FA7-8664-BE687A3F90BC}'
+		CurVer = s 'AtlSample.plugin.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {07782213-552D-4FA7-8664-BE687A3F90BC} = s 'plugin Class'
+		{
+			ProgID = s 'AtlSample.plugin.1'
+			VersionIndependentProgID = s 'AtlSample.plugin'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{08652EE3-D033-4CC1-90C3-40581DCB1E1C}'
+		}
+	}
+}

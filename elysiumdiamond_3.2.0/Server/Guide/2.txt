@@ -1,0 +1,83 @@
+B. Definitions
+Elysium Guide v 1.0
+Written by pingu
+Few extras added by Cruzn
+
+
+:: Definitions ::
+Elysium has some unique, and some not so unique, definitions for features. Some are made up, and some are globally used in game creation. You won't know everything I'm talking about until I define everything. A long ass list!
+
+
+Access - The power level of a given character. See the "Player Access" part of this guide for the different levels.
+
+Animation Layer - This is not really a layer, but a state of being. Tiles on this layer turn on and off giving the illusion of change when used perfectly. This is done for things like clocks.
+
+Banish - Same as banning. This prevents the user from logging into your game with the same account and IP.
+
+Blit - The term for showing an image on the game screen. "Bliting players" means actually displaying the player's sprite at their location.
+
+Boot Map - The map (and normally coordinates) that the player is warped to if they die on the map/tile/game.
+
+Buggy, Elysium - The first version of Elysium. It was released by GSD and is the successor of Milestone.
+
+Christmas Edition - The first version of Konfuze and is called that because it was released on Christmas. Based off of Mirage Source.
+
+Client - The program used to connect to the server. This handles all the graphics and some of the logic.
+
+Client Side - This term means you will be working in the CLIENT folder.
+
+Coke - Not the soda either! (See "Sprite" for the other soda) The creator of Konfuze.
+
+DeBugged/D-Bugged - The debugged versions of Buggy made by pingu (obviously, DeBugged wasn't completely fixed). These are two different versions but are very alike. Successors of Buggy.
+
+Diamond, Elysium - A big leap from Buggy and released as open source. Made by pingu. This version was released after D-Bugged but is the successor of Buggy because D-Bugged was not used in this version.
+
+Elysium - Princeton defines Elysium as "a place or condition of ideal happiness". This software is called Elysium and there are currently many different versions. Elysium is the open source version of Konfuze.
+
+Emoticon - Originally, these were just like smileys. However, thanks to Diamond, they can now play sounds too.
+
+Fox - See "Coke".
+
+Fringe - This layer is displayed above the player and NPCs. The transparent color is not shown too.
+
+Ground - A type of layer. This layer is on the bottom of the deck and is not transparent in any way.
+
+GSD - GodSentDeath. A user on Konfuze that was the main coder of Elysium and responsible for Elysium Buggy.
+
+GUI - Graphical User Interface. The only part of Elysium that is hard coded in is the map screen. The GUI is an image that surrounds it and acts as the background for almost every screen. You can find the image files in the "GUI" folder in the client.
+
+Layer - The order the tile is displayed in. The basic layers are "Ground", "Mask", "Fringe", and "Animation".
+
+Liam - See "Coke".
+
+Konfuze - This is a Mirage edit that Elysium is based off of. It is closed source and compiled. The name change from "Konfuze" to "Elysium" occurred when GSD released the source code. Created by Coke.
+
+Mask - The next step up from ground. The transparent color is not displayed on this layer.
+
+Milestone - The latest version of Konfuze and one of the biggest success stories. Successor to Christmas Edition.
+
+MS - Mirage Source. This is the original software for the engines referred to as "Mirage Edits". Mirage Source used to be Mirage Online until the source was stolen and was forced to be released. 
+
+NPC - Non Player Character. These are the enemies of the game that you have no control over. The server updates them and sends out new locations to the clients. You edit them through the npc editor and you place them on the map with the map properties page. Try to remember "NPC" right now as I remember having trouble remembering it when I started with PW.
+
+Pingu - Me. The guy who created (to date) Elysium DeBugged, Elysium D-Bugged, Elysium Reborn (failure), and right now Elysium Diamond. Likes to think he is a penguin.
+
+PK - Player Kill(er). A person that has recently killed a fellow player. They have red names. 
+
+PW - Player Worlds. One of the most basic Mirage edits. However, the lack of features hasn't stopped it from being popular. It's almost dead now, but it still remains the best way to learn to use Mirage edits.
+
+PvP - Player Versus Player. Simply, it's just fighting another player.
+
+SadScript - A very useful way of customizing your game. This uses VBScript coding, but is sometimes call soft coding. It is found in the "Scripts" folder in the server. You edit "main.txt". See the "SadScript" section.
+
+Server - The program that receives all incoming data, handles it, and sends back to the client.
+
+Server Side - This term means you will be working in the SERVER folder.
+
+Sprite - Not the soda! This is the image of the player/NPC and is defined as the number of rows that you have to go through in the sprites.bmp. The character on the second row is sprite number 1 (it starts at 0).
+
+Tile - A 32x32 square placed with others to create a map. Edit the tile sets in the "GFX" folder to add your own.
+
+Transparent Color - The color in the top left pixel of the tile set is the transparent color. The transparent color is NEVER shown except for ground tiles.
+
+VB6 - Visual Basic 6. The program used to edit the program's source code. Microsoft has stopped production of it, so you will have to buy an old copy or aquire it illegally.

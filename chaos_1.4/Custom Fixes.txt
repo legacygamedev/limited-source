@@ -1,0 +1,163 @@
+Updated: May 24th, 2007
+
+________________________________________________________
+1. GUI Redone for Chaos Engine                                   *Client Side*
+2. GUI Folder Removed/Can be changed in Source       *Client Side*
+3. Base Account Editor for Binary                                *Server Side*
+4. Change Info Button Now Active                             *Server Side*
+5. Save Map Instant Update-Refreshes Npcs-             *Server Side*
+6. Advanced Player Save                                            *Server Side*
+7. Binary Account System                                         *Server Side*
+8. Editor 32*64 Display Fix's                                       *Client Side*
+9. 32*64 Npcs & Players                                           *Client Side*
+10. RTE 91 Upon Creation *Fixed*                               *Client Side*
+11. Forget Spell Now Works                                  *Client & Server Side*
+12. Advanced Visual PK Status                                    *Client Side*
+13. List Status                                                       *Client& Server Side*
+14. Scripted Npc's                                                  *Client & Server Side*
+15. Scripted Items                                                *Client & Server Side*
+16. Scripted Spells                                                *Client & Server Side*
+17. HP Bars Visible to Everyone Fix                       *Client & Server Side*
+18. Paperdolling V5                                              *Client & Server Side*
+19. Spell Icons                                                     *Client & Server Side*
+20. Player Housing                                               *Client & Server Side*
+21. IOCP Connection System                               *Client & Server Side*
+22. MiniMap Feature                                                     *Client Side*    
+23. MP3 FMOD Support                                              *Client Side*
+24. Command Added: /setmyname <name>              *Server Side*
+25. Screenshot Bug Fix                                              *Client Side*
+26. Encrypted Graphics                                              *Client Side*
+27. Password Sensitivity                                           *Server Side*
+28. Diaganol Movement                                            *Client Side*
+29. Windowed or Full Screen Feature                       * Client Side*
+30. Customizable Screen Size Feature                      * Client Side*
+31. Mapping Selection Preview                                *Client Side*
+32. Speed Server Load                                               *Server Side*
+33. Proper Doors                                                     *Client Side*
+34. Stroke Effect on Text                                       *Client Side*
+35. Speech Fix                                                          *Client Side*
+36. Stop Name Raping Fix                                       *Client Side*
+37. Self Targetting Fix                                            *Server Side*
+38. Chat Log Save Bug                                           *Server Side*
+39. Player Bank Feature                                    *Client & Server Side*
+40. Guild Access Bug                                              *Server Side*
+41. Quick MapNpc Fix                                             *Client Side*
+42. Guild Admin Access Fix                                      *Client Side*
+43. Helmet Break Bug Fix                                       *Server Side*
+44. Shield Break Bug Fix                                         *Server Side*
+45. Map Properties Fix                                            *Client Side*
+46. 1.0 to 2.0 Code Changes Fix                             *Client & Server Side*
+47. Stopping !!!!!! Fix                                              *Client Side*
+48. Stamina Bar Features Added                              *Client & Server Side*
+49. Spawn Gate System Added                                     *Server Side*
+50. Guild Members Member List !                                 *Client Side*
+51. Alignment System !                                      *Client & Server Side*
+52. Inventory Bug Fixed !                                     *Client Side*
+53. Help Guide Moved                                           *Server Side*
+54. GameTime System Added                                    *Client & Server Side*
+55. Disable Time Feature                                       *Client & Server Side*
+56. Game Speed Feature                                        *Client & Server Side*
+57. Randomize Game Time                                       *Server Side*
+58. Set Alignment Added to Change info Menu-                   *Server Side*
+59. Sex Change Button Added Under Players                       *Server Side*
+60. Criminalize Button Added Under Players                      *Server Side*
+61. Decriminalize Button Added Under Players                    *Server Side*
+62. Level Punishment Button Added Under Players                 *Server Side*
+63. Mass Save Button Added Under Adv Options                     *Server Side*
+64. Mass Stamina Button Added Under Adv Options                 *Server Side*
+65. Mass Mana Button Added Under Adv Options                     *Server Side*
+66. Experience Table Button Added Under Adv Options             *Server Side*
+67. Accounts Editor For Main.dat Added Under Adv Options         *Server Side*
+68. Class Editor Added Under Adv Options                         *Server Side*
+69. Arrow Settings Button Added Under Adv Options                *Server Side*
+70. Portal Settings Button Added Under Adv Options               *Server Side*
+71. Name Now Changes Color According to Alignment            *Client Side & Server Side*
+72. Elements Editor & Elements Added For Spells & Npc's        *Client & Server Side*
+73. Player Corpses                                          *Client Side & Server Side*
+74. Visual Selling Shop                                       *Client Side*
+75. Word Filter - Eliminates Cussing in main Chat -           *Server Side*
+76. Increased the maximum damage and stats of monsters         *Client Side*
+77. Chat Channels Accessible Via Game Screen                     *Client Side*
+78. Visual Character Selection Screen !                       *Client & Server Side*
+79. Game now Exits Via Menu -Escape Key-                         *Client Side*
+80. Elements Button Added                                         *Server Side*
+81. Legs Slot Added & Made Active !                           *Client & Server Side*
+82. Boots Slot Added & Made Active !                          *Client & Server Side*
+83. Gloves Slot Added & Made Active !                         *Client & Server Side*
+84. Ring 1 Slot Added & Made Active !                         *Client & Server Side*
+85. Ring 2 Slot Added & Made Active !                         *Client & Server Side*
+86. Amulet Slot Added & Made Active !                         *Client & Server Side*
+87. Visual Banking Added                                         *Client Side*                         
+88. Guild Deed Item Type Added                                *Client & Server Side*
+89. Visual Guild Deed System Added                                  *Client & Server Side*
+90. Stackable Potions & Items Added                           *Client & Server Side*
+91. Bound(No Drop) Items Added                                *Client & Server Side*
+92. Public Const GFX_PASSWORD = "test" Added in Modtypes          *Client Side*
+93. Level Panel Updated Including more info about the Character   *Client Side*
+94. User Panel Added - Access by tab or F2                        *Client Side*
+95. Leave Guild Label Added on Level Panel                        *Client Side*
+96. GuildAccess Crash if access if below 4 Fixed                  *Client Side*
+97. Bug Reporting System Added !                              *Client & Server Side*
+98. Suggestions System Added !                                *Client & Server Side*
+99. Word Filter Editor Button Added                               *Server Side*
+100. Stats Editor Button Added                                    *Server Side*
+101. MoTD Editor Button Added                                     *Server Side*
+102. Bug Reports Button Added                                     *Server Side*
+103. Suggestion Reports Button Added                              *Server Side*
+104. Weather can be Toggled off via Options                       *Client Side*
+105. Emoticons can be Toggled Off Via Options                     *Client Side*
+106. Night Graphics can be Toggled Off Via Options                *Client Side*
+107. Click To Move Mouse Movement Added                           *Client Side*
+108. Mouse Movement Can Be Toggled Off Via Options                *Client Side*
+109. Tradeable Currency Credits -Tyler-                        *Client & Server Side*
+110. News System Added To Main Menu                            *Client & Server Side*
+111. News Editor Button Added                                     *Server Side*
+112. NPC Banker Added
+113. Alignment Feature Added To Npc Editor                          
+114. Poison Status Added To Npc Editor
+115. Disease Status Added To Npc Editor
+116. ITEM_TYPE_FOOD Added
+117. Hunger Bar Added
+118. Vault Code Added To Accounts for Accesing your Bank
+119. Email Added To Accounts
+120. Delete Account Menu removed for Security
+121. Mining Skill Added
+122. Fishing Skill Added
+123. Lumber Jacking Skill Added
+124. Large Blades Skill Added
+125. Small Blades Skill Added
+126. Blunt Weapons Skill Added
+127. Polearms Skill Added
+128. Axes Skill Added
+129. Thrown Weapons Skill Added
+130. Xbows Skill Added
+132. Bows Skill Added
+133. Player Housing Rewritten
+134. Housing Sell System Added
+135. Roof Block Tile Added
+136. Roofing Tile Added
+137. Spawn Gate Tile Added
+138. Sub Levelup removed from Main.txt, hard coded now
+139. Sub OnDeath Hard Coded, Resolved paperdoll sink issues on death.
+140. Currency is tradeable via Player Trade
+141. ITEM_TYPE ARROWS Added
+142. Arrows Required for Ranged Weapon Usage
+143. Quest Editor Added
+144. Quest NPC Added
+145. Race System Added
+146.  Stamina Drain Added to Items
+147. Items now have Level Req
+148. Item Rarity Added
+149. Player House Keys Added Into The Housing System !
+150.  Custom Quest Prompt Menu/Multi Use Prompting
+151. Pic Screen Made to Width of frmMirage
+152. item price and attack speed now shows on itemdesc
+153. Removed 247 dead lines of code
+154. FPS Added to Pic Screen
+155. Menu popups fixed
+156.
+________________________________________________________ 
+
+All Coding Done by Yours Truly,
+Frozengod A.K.A Xaden.
+________________________________________________________

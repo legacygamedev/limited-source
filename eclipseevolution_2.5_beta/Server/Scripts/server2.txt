@@ -1,0 +1,4 @@
+sub server()
+call goshopping(0, 1)
+ 
+End Sub

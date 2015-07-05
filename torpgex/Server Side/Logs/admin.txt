@@ -1,0 +1,57 @@
+4:57:20 PM: Balmung has accessed the Admin Panel!
+4:57:23 PM: Balmung editing item #1.
+4:57:45 PM: Balmung saved item #1.
+4:58:11 PM: Balmung has accessed the Admin Panel!
+4:58:14 PM: Balmung editing item #2.
+4:58:27 PM: Balmung saved item #2.
+5:14:35 PM: Balmung has accessed the Admin Panel!
+5:14:38 PM: Balmung editing item #1.
+5:14:40 PM: Balmung saved item #1.
+5:47:19 PM: Balmung has accessed the Admin Panel!
+5:47:23 PM: Balmung editing item #2.
+5:47:28 PM: Balmung saved item #2.
+10:48:58 PM: Balmung has accessed the Admin Panel!
+10:49:08 PM: Balmung has accessed the Admin Panel!
+10:49:11 PM: Balmung editing item #1.
+10:49:16 PM: Balmung saved item #1.
+10:51:39 PM: Balmung has accessed the Admin Panel!
+11:10:10 PM: Balmung has accessed the Admin Panel!
+11:28:24 PM: Balmung has respawned map #1
+11:28:27 PM: Balmung has accessed the Admin Panel!
+11:29:16 PM: Balmung has accessed the Admin Panel!
+11:29:19 PM: Balmung editing item #1.
+11:44:20 PM: Balmung has accessed the Admin Panel!
+11:44:22 PM: Balmung editing item #1.
+11:44:54 PM: Balmung has accessed the Admin Panel!
+11:44:56 PM: Balmung editing item #1.
+11:45:03 PM: Balmung saved item #1.
+11:46:06 PM: Balmung has accessed the Admin Panel!
+11:46:08 PM: Balmung editing item #1.
+11:46:10 PM: Balmung saved item #1.
+11:46:14 PM: Balmung editing item #1.
+11:46:17 PM: Balmung saved item #1.
+12:38:27 AM: Balmung has accessed the Admin Panel!
+12:40:33 AM: Balmung has accessed the Admin Panel!
+2:13:07 AM: Balmung has accessed the Admin Panel!
+2:13:10 AM: Balmung editing item #1.
+2:13:20 AM: Balmung saved item #1.
+5:33:25 PM: Balmung has attempted entering the Admin Panel in a illegal way!
+5:33:25 PM: Balmung has attempted entering the Admin Panel in a illegal way!
+5:33:25 PM: Balmung has attempted entering the Admin Panel in a illegal way!
+5:33:26 PM: Balmung has attempted entering the Admin Panel in a illegal way!
+5:33:26 PM: Balmung has attempted entering the Admin Panel in a illegal way!
+5:33:26 PM: Balmung has attempted entering the Admin Panel in a illegal way!
+5:34:26 PM: Balmung has accessed the Admin Panel!
+5:34:29 PM: Balmung editing shop #1.
+5:35:00 PM: Balmung has accessed the Admin Panel!
+5:35:06 PM: Balmung editing shop #1.
+5:35:11 PM: Balmung saving shop #1.
+5:35:24 PM: Balmung has accessed the Admin Panel!
+5:35:30 PM: Balmung editing shop #1.
+5:35:42 PM: Balmung saving shop #1.
+10:34:56 PM: Balmung has accessed the Admin Panel!
+10:35:14 PM: Balmung has accessed the Admin Panel!
+11:03:33 PM: Balmung has accessed the Admin Panel!
+4:50:40 PM: Balmung has accessed the Admin Panel!
+4:57:22 PM: Balmung has accessed the Admin Panel!
+4:57:39 PM: Balmung has accessed the Admin Panel!

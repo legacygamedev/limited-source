@@ -1,0 +1,23 @@
+.: Additions by Emblem :.
+ · Added a color for Access Level 5 people.
+ · Added OnDay/OnNight
+ · Added Script Error Tab
+ · Modified SadScript a little for improved preformance.
+ · Added a fiew scripting subs.
+ · Rewrote entire main!!! (Wow.. that was hard!)
+ · Added GetPlayerColor() And SetPlayerColor()
+    Changes players name color
+ · Added GetPlayerGhost() And SetPlayerGhost()
+    Makes players invisible! (Admins can still see them)
+ · Did a fiew accessability changes...
+ · Added Custom Menus... OWNED (Working, but not all features done)
+ · Added Runescape Style Player Mouse Over Text
+ · Added the ability that a bow uses items as ammo.
+
+.: Additions by Topher :.
+ · None?
+ · DirectX 8... Well not yet at least..
+
+.: ToDo :: Ordered by importance :.
+ · Convert packet names to byte system.
+ · Add "Sex" option to items, making them only equipable by one or both sexes.

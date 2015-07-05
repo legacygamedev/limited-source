@@ -1,0 +1,41 @@
+- a. Normal Users
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: The basics ::
+Normal users are the only reason we have these games. They are for people to play, that's the main thing. So, naturally, there will be a bunch of normal users. It's important to know what a user can do and what they can't do.
+
+
+:: The commands ::
+Although normal users don't have any commands to edit the game, they still have many commands needed to play the game properly.
+
+/info (player name) - Gets and displays the information on the person you specified.
+
+/who - Updates the "Who is online" list.
+
+/fps - Calculates the frame-per-second rate. This is basically the speed the game is running at (higher = good)
+
+/inv - Displays your inventory. This is not needed any longer, because you can just click on the button on the menu.
+
+/stats - Updates and displays your stats. Definitely not needed, but kept in just to be safe.
+
+/chat - Accept the chat request. You can request a chat by clicking on the requested player and then clicking on the "Chat" button.
+
+/chatdecline - Decline the chat invitation.
+
+/trade (player name) - Asks the player if they want to trade with you. You need to be next to the player to do so.
+
+/accept - Accept the trade request.
+
+/decline - Decline the trade request.
+
+/party (player name) - Create a party (if not already created) and invite the player to join you. People in parties split the exp gained.
+
+/join - Join the party you have been invited to.
+
+/leave - Leave the party you are in.
+
+/killpet - Get rid of your pet.
+
+/refresh - Reload the map. Use this if you are stuck or the map is messed up.

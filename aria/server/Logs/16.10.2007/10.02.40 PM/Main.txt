@@ -1,0 +1,13 @@
+
+Received connection from 127.0.0.1.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+bah has logged in from 127.0.0.1.
+bah/Bah has began playing Aria Engine Game.
+Bah has disconnected from Aria Engine Game.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+bah has logged in from 127.0.0.1.
+bah/Bah has began playing Aria Engine Game.
+Bah has disconnected from Aria Engine Game.
+Connection from 127.0.0.1 has been terminated.

@@ -1,0 +1,17 @@
+' Executed whenever a player rightclicks another player.
+
+Sub Profile(Index)
+     On Error Resume Next
+     Call CustomMenuShow(index, "Player Profile", "\GUI\CUSTOM\box0.gif", 1)
+     Call CustomMenuLabel(index, 1, "Player : " & GetTargetName(index), 150, 50, 10, 0, 0, 400, 20)
+     Call CustomMenuLabel(index, 2, "Level : " & GetTargetLevel(index), 20, 100, 10, 0, 0, 400, 20)
+     Call CustomMenuLabel(index, 3, "Job : " & GetTargetJob(index), 20, 120, 10, 0, 0, 400, 20)
+     Call CustomMenuLabel(index, 4, "Guild : " & GetTargetGuild(index), 20, 140, 10, 0, 0, 400, 20)
+     Call CustomMenuLabel(index, 5, "STR : " & GetTargetStr(index), 20, 160, 10, 0, 0, 400, 20)
+     Call CustomMenuLabel(index, 6, "DEF : " & GetTargetDef(index), 20, 180, 10, 0, 0, 400, 20)
+     Call CustomMenuLabel(index, 7, "MAGI : " & GetTargetMagi(index), 20, 200, 10, 0, 0, 400, 20)
+     Call CustomMenuLabel(index, 8, "SPEED : " & GetTargetSpeed(index), 20, 220, 10, 0, 0, 400, 20)
+End Sub
+
+
+

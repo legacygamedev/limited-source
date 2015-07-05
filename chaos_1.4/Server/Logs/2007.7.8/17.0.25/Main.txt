@@ -1,0 +1,5 @@
+
+Received connection from 127.0.0.1.
+777 has logged in from 127.0.0.1.
+777/Xaden has began playing Chaos Engine.
+Chat Logs Have Been Saved!

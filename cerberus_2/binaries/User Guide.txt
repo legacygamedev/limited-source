@@ -1,0 +1,463 @@
+Cerberus engine (ver2 - 0.3.2) User Guide.  - (Layout 1024x768 Fullscreen - Wordwrap On)
+
+**** IT IS HIGHLY RECOMMENDED THAT YOU PRINT OUT A COPY OF THIS GUIDE AND REFER TO IT WHEN SETTING UP YOUR SERVER AND CREATING YOUR ORPG WORLD. ****
+
+WARNING: The server element of this version of the C-engine contains features that are only compatible with Windows XP and above.
+
+The C-engine comes with a set of Library Files needed to run the programs, you will only need to install these the first time you run the engine. Just Double click the icon and follow instructions to install.
+You may also find that you need to install the Visual Basic 6 runtime files. Double click the vbrun60sp5.exe file to install them on your system.
+
+The server element of the C-engine employs a method of communication known as IOCP, for this to operate correctly you will need to register the COMSocketServer.dll that is provided in the Server folder;
+
+ 1. Copy the COMSocketServer.dll file into C:\Windows\System32
+ 2. Open the windows start menu and click on 'Run'
+ 3. type: 'regsvr32 COMSocketServer.dll' (without the quotes) into the box and click OK
+ 4. Windows will notify you if the registration was successful, if not, follow the above steps again
+ 5. If the registration fails again, try re-downloading the package and follow the registration process with a fresh .dll
+
+
+::::::::::
+: Server :
+::::::::::
+
+Server operation is fairly simple. Navigate to the Server folder and double click the CerberusServer.exe file to begin the program.
+
+****************************************************************************************************************************
+The first time you run the server you will be presented with the server configuration utility, this will define your games name, website, IP address, port and some of the Maximum amounts of objects (e.g. Npc's or Items) in your game.
+There are two pre-defined buttons available;
+* Default - This gives fairly low Maximum settings, meant as a quick option for evaluating the engine.
+* Max - Recommended maximum settings, for now! (Shops are set at 50 due to file size restrictions, will push to 70 MAX)
+PLEASE NOTE: The values that you enter here are FINAL, as of version 0.3.0 once set, these values CANNOT be changed.
+ALSO: With settings at MAX the server will take 5 to 10 mins to create and configure all the required files.
+	Don't worry though, it will take less than 1 minute to startup after that!
+
+When your happy with the servers settings, click the OK button and we'll move on.
+If you didn't check the 'Always use this IP' box, you'll now see the IP configuration utility. This will appear every time you start the server from now on. (Useful for a home server)
+NOTE: Make sure you have an active connection to the internet, if the engine cannot detect an open gateway, or isn't set to IP 127.0.0.1, it will crash.
+
+With your server setup, you'll need some way of identifying yourself to it as the owner.
+Firstly, connect to your server with the Dev client or the Game client and create an account, login and create a character in the first character slot, then exit the client.
+Navigate to '\Server\Accounts' and open the file with your account name in a plain text editor like notepad.
+Under [CHAR1] change the value of  ACCESS=0  to  ACCESS=6.
+All tools in the Dev client will now be available to you for editing your game when using your first character.
+****************************************************************************************************************************
+
+There are very few options available server side, a short overview of each option is below.
+
+ FILE
+ ----
+  SHUTDOWN - A 30 second timed shutdown (No client side warning as yet!)
+  EXIT - An instant way of closing the server.
+
+ DATABASE
+ --------
+  RELOAD CLASSES - Changes made to the ingame classes can be reloaded without having to stop and restart the server.
+
+ LOG
+ ---
+  SERVER LOG - Check this option to log all connections to the game server. (Output: /logs/player.log)
+
+ ADD/REMOVE CLASSES
+ ------------------
+  To adjust the classes available on character creation, navigate to the classes.ini file in the Data folder and
+   right click.
+  Select Open With.. and choose notepad to open the file. (make sure you don't check the always use this application box, 
+   it may cause problems with server operation)
+  To add classes simply follow the pattern of the classes already there;
+
+  [CLASS#]        - Where # equals the next consecutive class number
+  Name=ClassName  - where ClassName is your new name for the class
+  Sprite= #       - # is the sprite number reference
+  STR= #          - distribute stats as noted at the top of the file.
+  DEF= #
+  SPEED= #
+  MAGI= #
+
+  To remove a class, just delete it from the file, make sure the remaining files are numbered consecutively.
+  After adding/removing a class make sure to adjust the MaxClasses = # to reflect the changes.
+
+
+::::::::::::::::::::::
+: Development Client :
+::::::::::::::::::::::
+
+The Dev client is a complete set of tools to create your ORPG with. To start the client, navigate to the 'DevClient' 
+ folder and double click the CerberusDev.exe file to begin. Make sure you have the Server running already!
+The first time you run the client you will see the IP configuration utility, set the IP address and Port to match that of   the server. If the server IP is unlikely to change, click the 'Always use this IP' box and the utility will not appear the   next time you open the client.
+
+ ----------------
+ MENU DESIGN TOOL
+ ----------------
+ The menu design tool is quick and simple way of customising the startup menu of your game, giving it a unique look from        other games made with this development suite. 
+ Each of the menus backgrounds can be set from a choice of pre-made pictures, or you may wish to add your own.
+ If this is the case, you'll need to add your backgrounds to the numbered folders in the 'Design' folder in the following       order:
+
+  1: Main Menu Background
+  2: Login Background
+  3: New Account Background
+  4: Delete Account Background
+  5: Credits Background
+  6: Player Character Background
+  7: New Character Background
+
+ Make sure you add the new background pictures with the next consecutive number from the set of files already in the     respective folders.
+
+ The actual editor application is available through the right click menu in the developement client.
+ Select a Menu profile to edit; 1, 2 or 3 and click OK.
+ Select which part of the menu you want to edit by selecting an option from the design editor on the right of the screen.
+ They are organized in the same order as the list above.
+ Now either select the background of that section or one of the components;
+
+  Backgrounds
+  -----------
+  Selecting a background will activate the 'Next' and 'Previous' buttons on the design editor and two text boxes will appear    labelled 'Height' and 'Width'. Clicking the 'Next and 'Previous' buttons will cycle through the available pictures for the    selected background.
+  Changing the values in the 'Height' and 'Width' boxes will activate the 'Preview' button, once you've entered the new          dimensions for the selected background, either click this button or hit the enter key to adjust the background onscreen.
+  Backgrounds 2 to 7 can be repositioned by dragging them across the Main Menu background.
+  When your happy with the changes click the 'Apply' button, until then changes can be reset by right clicking anywhere on    the editors window area or the Main Menu background.
+
+  Components
+  ----------
+  Most of the components represent capture areas for mouse clicks, each one is labelled for easy identification.
+  All components can be positioned around their relevant backgrounds by dragging and dropping and their size altered in          the same manner as with backgrounds. 
+  Any components from the New Character background labelled up with a '0 -' at the beginning represent where a certain value     will be, eg. HP or Strength etc.
+  
+
+ ------------------
+ CHARACTER CREATION
+ ------------------
+  Below is a quick rundown of all the features contained in the client. It isn't set in stone that you should create your        ORPG in the order the features appear in the list, however should you forget to create an item or shop that is linked to      one of your Npc's your game may not work correctly.
+  Right click anywhere on the gamescreen to access the creation tools;
+
+
+ ----------
+ MAP EDITOR
+ ----------
+  The map editor is made up of four main parts; Layers, Attributes, Directional Blocking and Properties.
+
+
+ LAYERS
+ ------
+  Maps in this engine are made from 10 seperate layers;
+
+  GROUND LAYER      - Good for basic ground tiles. eg Water, Grass or Sand
+  MASK LAYER I      - First overlay layer, true black (RGB 0,0,0) backgrounds on tiles will be transparent.
+  MASK LAYER II     - Second overlay layer, Players and npc's travel over the top of ground and mask layers.
+  MASK ANIMATION    - Used to animate the maps mask layers.
+  FRINGE LAYER I    - First top layer, as with Mask tiles true black backgrounds are transparent.
+  FRINGE LAYER II   - Second top layer, Players and npc's travel beneath fringe and light layers.
+  FRINGE ANIMATION  - Used to animate the fringe layers
+  LIGHT LAYER       - Use translucent tiles of varying degrees to denote night time/light etc.
+
+  First select the layer you wish to place your tiles on, then select a tile to place from the tileset shown in the map
+   editor, your selection is shown in the box directly below the tileset just for quick reference.
+  A 'fill' button is available to completely fill the gamescreen with the current tile, good for the Ground Layer.
+  The selected tile can be placed on the map with a single left click, to remove them, hold down the SHIFT key and left click    the tile you wish to remove from the map. A 'clear' button is provided to clear an entire layer of tiles.
+  If the area of the map you want to edit is underneath the map editor, you can either, move the map editor by clicking and      dragging it to a new position, or right clicking the map editor tileset or the map itself and the editor will be
+   temporarily hidden from view. Simply right click the map to return it to view.
+  To remove a tile placed by mistake, hold down the SHIFT key and click the tile that needs removing.
+
+
+ ATTRIBUTES
+ ----------
+  Attributes allow certain tiles to trigger events in the game.
+
+  BLOCKED    - Players or npc's cannot move onto this type of tile.
+  WARP       - Players moving on to this type of tile can be warped to a new map/location
+  ITEM       - An item can be placed directly on to a map. Will respawn in approx 2 minutes if no players are on the map.
+  NPC AVOID  - Npc's cannot move or spawn onto a tile with this attribute.
+  KEY        - Select the item a player must have in their inventory to operate the doorway and place on the map.
+                The tile on MASK LAYER I at this location is the door.
+                Until activated the KEY attribute acts like the BLOCKED attribute.
+  KEY OPEN   - This attribute is the trigger to open a doorway set in the KEY attribute. Select the location of the KEY from                  your map on the slider bars and place on the map where you want a door to be opened from. Rolling over a KEY                  attribute on the map will show its location.
+                When a player moves onto the KEY OPEN tile the MASK LAYER I tile is removed at the KEY location, the item
+                required to operate the KEY is then removed from the players inventory if neccesary.
+  PUSHBLOCK  - This attribute is linked to MASK LAYER I, any tile placed on this layer will be pushable, one square in any 			direction. A block is pushable in, up to, 3 different directions and will slide back to its original 		position, providing of course no character is standing there, after about 5 secs.
+
+  A 'clear' button is available, BEWARE this button removes ALL attributes from the map. Future versions may allow specific
+   types of attribute to be removed seperately.
+  To remove an attribute from a single map square, hold down the SHIFT key and click the attribute you wish to remove.
+
+
+ DIRECTIONAL BLOCKING
+ --------------------
+  Directional blocking saves the need for a complete tile to be used just to stop a player from moving into a different
+   area of your map.
+  Selecting this option showns a grid on the map with a cross at the centre of each tile and a dot along every side of each
+   tile. Clicking the cross on a tile activates the block in all four directions and changes the cross to a dot, a player
+   can now walk onto this tile but not walk off of it again.
+  Clicking the dot along any side of a tile will activate blocking in that direction only, an arrow will appear in place of
+   the dot and the cross at the centre of the tile will also change to a dot. A player cannot move off this tile in the
+   direction displayed by the arrow.
+  Holding down the SHIFT key and clicking the dot in the middle of a tile will remove all blocking from that tile.
+  There is also a 'flush blocking' button that appears when DIRECTIONAL BLOCKING is selected, this will clear the entire map
+   of any blocking.
+  Please note: Directional blocking will NOT stop arrows from passing over a map square, only the BLOCKED attribute can.
+
+
+ PROPERTIES
+ ----------
+  The properties section holds all the information data about a map.
+
+  NAME        - This name appears at the top of a map, in white if the map is a SAFE ZONE, in red if not.
+  UP          - If a player moves off this map in a given direction they will appear on the map number you put here.
+  DOWN
+  LEFT
+  RIGHT
+  MAP MORAL   - If SAFE ZONE is selected players cannot attack one another on this map.
+  MUSIC       - Feature not yet available.
+  BOOTMAP     - When a character dies they are taken back to where they first joined the game by default.
+                Adding a map and location to these boxes makes a player appear there when they die. (Not working)
+  NPC'S       - Choose an Npc from each of the dropdown menus to populate your map.
+  RESOURCE'S  - Add Npc based resources by selecting them from the dropdown menus.
+  
+  After setting all the properties you need click OK to change the data or CANCEL to return to the editor changing nothing.
+
+Once your happy with the way your map is, click the 'send' button at the bottom of the editor, the Mapping Client then sends
+ the new map to the server and changes the old map for the new one in the Client. 
+Clicking the 'cancel' button will not apply any changes to the map and closes the map editor.
+
+
+-----------
+ITEM EDITOR
+-----------
+ Select the item number you want to edit from the index panel.
+
+  NAME - The name if the item!
+  PIC  - Use the scrollbar to select an icon for your item.
+ 
+ Next, select the item type from the dropdown list and add the details required in the frame that appears;
+
+  EQUIPMENT DATA
+  --------------
+    SUBTYPE     - Weapon subtypes are used for directing skills experience. Dagger/Sword/Axe/Bow etc
+    DURABILITY  - Durability reduces when an item is used, set the items maximum amount here.
+    STAT MOD    - The amount an item adjusts a players stats when worn.
+		  The STAT MOD value also doubles up as the required amount of a stat a player needs to use an item;
+		  Weapons - STRENGTH  /  Armour - DEFENCE  /  Helmet - DEFENCE  /  Shield - DEFENCE  /  Tool - STRENGTH
+
+  VITALS DATA
+  -----------
+    VITAL MOD   - The amount a potion adjusts a players stats by when used.
+
+  SPELL
+  -----
+    Use the slider bar to select the spell, from those made in the Spell Editor, to link with this item.
+
+  SKILL
+  -----
+    Use the slider bar to select the skill, from those made in the Skill Editor, to link with this item.
+
+  CHARM
+  -----
+    TYPE  - A ring or amulet will modify a certain characters stats or chance modifiers. Strength/HP/Drop rate etc
+    MOD   - Amount to alter a players stats/modifiers by.
+
+  ARROW
+  -----
+    QUANTITY - The number of arrows held in this item, based on item durability, so item disappears when all arrows are used.
+    RANGE - The number of map squares an arrow will travel before disappearing.
+    ANIMATION - Select an arrow animation using the scroll bar.
+
+ When your happy with the item click the OK button to save an item to the Server, you will lose changes you've made if you   click Cancel.
+
+
+------------
+SPELL EDITOR
+------------
+ Select the spell number you want to edit from the index panel.
+
+  NAME   - The name of the spell.
+   Use the dropdown list underneath to select class restrictions if required.
+  PIC    - Select the spells icon using the scrollbar.
+  LEVEL  - Select a minimum level for the spell, level check is against character level.
+
+ Spells are arranged under particular types, each type selected causes the relevant frame to appear in the editor.
+ Select the spell type from the dropdown menu, the default type is STATS.
+
+  STATS
+  -----
+    Select the stat you want the spell to modify from the dropdown list.
+    Spells gain in strength as a player levels them up with use, add the amount (per level) you want the selected stat to be      modified by in the box provided. Numerical Only.
+
+  GIVE ITEM
+  ---------
+    ITEM   - The item selected is shown in the title of the frame, eg Give Gold.
+    VALUE  - The amount of item to give to the player.
+
+ 
+------------
+SKILL EDITOR
+------------
+ Select the skill number you want to edit from the index panel.
+
+  NAME   - The name of the skill.
+   Use the dropdown list underneath to select class restrictions if required.
+  PIC    - Select the skills icon using the scrollbar.
+  LEVEL  - Select a minimum level for the spell, level check is against character level.
+
+ Most skills earn experience at point of use, some at a set amount and others vary inline with player level/stats.
+ Skills are arranged by type, select the type from the dropdown menu and follow the relevant instructions below.
+ There are a few different ways to use player skills so I've added a few suggestions in the explanations below.
+
+  ATTRIBUTE
+  ---------
+    STRENGH   - Linking a skill with the strength attribute enables the list of weapons types to the right of it.
+		The server checks if a player has a weapon equipped at the point attack damage is calculated, if a player 		 	 has this skill, they earn 1 experience point for each successful attack if their weapon type matches the 		 	 type selected here.
+    DEFENCE   - Skills linked to the defence attribute gain 1 experience point on each successful use of either, a players 		 	 armour, or helmet when equipped.
+    MAGIC     - For players to gain experience in skills of this type, link the skill to an Npc/Resource with the ExpType 			 dropdown list in the Npc editor.
+    SPEED     - For players to gain experience in skills of this type, link the skill to an Npc/Resource with the ExpType 			 dropdown list in the Npc editor.
+    DEXTERITY - For players to gain experience in skills of this type, link the skill to an Npc/Resource with the ExpType 			 dropdown list in the Npc editor.
+
+    The amount an attribute increases for every skill level must be set aswell. Low values suggested (1, 2, 3).
+
+  CHANCE
+  ------
+    CRITICAL  - If a player has a skill of this type they gain skill experience when they perform a critical hit on an 		 		 opponent, experience is equivalent to half the players strength plus half the players level.
+    DROP      - If a player has a skill of this type they gain skill experience when an opponenet is defeated and drops 		 	 items, the amount of experience gained is the items drop chance. eg, a 1 in 18 chance = 18 exp
+    BLOCK     - Players can attempt to block attacks when they have a shield equipped. This skill gains experience at a rate 		 	 equal to half of the players defence plus half a players level.
+    ACCURACY  - Players gain experience in this skill type on a successful hit with any projectile weapon, at a rate of 1 	 	         point per successful hit.
+
+    The increase in percentage chance, per level, of an event happening should also be set.
+ 
+ ** It is recommended that you play through the short demo game to get a better idea of how player skills work.
+
+	
+-----------
+SHOP EDITOR
+-----------
+ Shops are linked to Shopkeeper type Npcs in the Npc Editor. Up to 8 buying and selling trades can be set up, a shop can       also be set to fix players equipable items or in a barter style item-for-item type trade.
+
+  1. Chose a NAME for your shop.
+  2. Check the 'fix items' box if you want the shop to have this capability.
+  3. If you are creating a new trade, select 'Empty Trade Slot' from the list at the bottom of the editor.
+      Selecting a trade already in the shop will set the giveitem/getitem sections to the relevant values.
+  4. The 'GiveItem' scrollbar allows you to add a combination of items the trade requires to a maximum of 5.
+     For each 'GiveItem' you should select an item from the 'Item Give' dropdown list and add the quantity to the box below.
+  5. The 'Get Item' scrollbar works in a similar way although the maximum combination of items is set to 2.
+  6. When your happy with the trade click on the 'update' button and the trade will appear in the list.
+ 
+ Repeat the above steps as many times as required.
+
+
+------------
+QUEST EDITOR
+------------
+ Quests are linked to Friendly type Npcs in the Npc Editor. Each quest is logged to a player by map number and by which npc   on a map gave them that quest, plus quest completion is dealt with on the npc's own quest board. This means the same npc   can be used on different maps, or even on the same map, without affecting which npc the player must return to to complete   their quests.
+
+  NAME - Select a name for the quest, this will be used to identify the quest to a player in their quest log.
+  TYPE - Select the quest type from the dropdown menu, this menu is linked to the frame in the centre of the quest editor;
+
+    KILL QUEST
+    ----------
+      KILL NPC - Select the Npc to kill with the scrollbar, the Npc's name will appear in the title of the frame.
+      QUANTITY - The amount of an Npc the player must kill to complete the quest.
+
+      ** A player will gain one quest kill for each npc of the quests npc type, registered on their quest log.
+	 There are no items connected to this quest type.
+
+    FETCH QUEST
+    -----------
+      ITEM     - Select The Item a player must collect with the scrollbar, its name will appear in the title of the frame.
+      QUANTITY - The amount of an item a player must collect to complete the quest.
+
+      ** A Quest type item may be introduced at a later date, these items would be no drop/no trade.
+
+  CLASS REQUIRED - Select any class restrictions for the quest from the dropdown menu.
+  LEVEL MINIMUM  - Set the minimum level a character can be to accept this quest.
+  LEVEL MAXIMUM  - Set the maximum level a character can be to accept this quest.
+
+  REWARD       - Select the Item to reward a player with upon completion of the quest.
+  REWARD VALUE - If an item is a 'Currency' type item, type the amount a player receives here.
+  DESCRIPTION  - This is the description a player will see on the npc's quest board, it also carries over to the players 		  quest log.
+
+
+----------
+NPC EDITOR
+----------
+
+ The Npc Editor doubles up as a Resource creator, for this reason the first thing you should set, apart from maybe the name,   is the Npc's 'Behavior' type:
+
+   ATTACK ON SIGHT       - Linked to an Npc's Range, if a player walks into an Npc's Range, it will persue and attack.
+   ATTACK WHEN ATTACKED  - Self explanatory really, attack the Npc, it attacks back, presto.
+   FRIENDLY              - Is a cut down Npc type, link a quest board to them, on player attack, the board will open.
+   SHOPKEEPER            - Is a cut down Npc type, link a shop to them, when a player attacks them the shop will open.
+   GUARD                 - After an Npc dies, a check is made for GUARD Npc behavior, if true this Npc targets the player.
+   RESOURCE              - Resources are non-moving Npc's with defence, HP and ExpType options available.
+
+ These types can be broken down into three areas; character npc's, link npc's and resources. Creating an Npc in each of the     three areas is explained below:
+
+   CHARACTER NPC'S - Attack On Sight, Attack When Attacked, Guard
+   --------------- 
+
+    STRENGTH     - An Npc's strength affects its attack damage.
+    DEFENCE      - Defence is used to determine if an Npc can block an attack on it.
+    MAGIC        - This attribute has no defined function for Npc's at present.
+    SPEED        - This attribute has no defined function for Npc's at present.
+    RANGE        - Range is linked to the ATTACK ON SIGHT behavior, the higher the range, the further an Npc can 'see'.
+    STARTHP      - The amount of HP an Npc has at spawn.
+    EXPTYPE      - A player gets this type of experience on beating the Npc. 'Standard' adds to players character experience
+    EXPGIVEN     - Determines the amount of experience a player gets on defeating the Npc.
+    SPAWN RATE   - Set how many seconds it will be before the Npc returns to the map, 3 seconds or more is recommended.
+    DROPITEM     - On death, Npc's can drop any number of, up to 5 different items, each with it's own drop chance.
+		   The 'Number' scrollbar selects the item type, then add the value on the next scrollbar and finally the 		     	    chance of the item dropping. eg 1 in 100
+    SPRITE       - The sprite number selected on the scrollbar is shown in the window below.
+		   Check the BigNpc box doubles the size of the sprite from 32 x 32 pixels to 664 x 64 pixels.
+		   !The BigNpc feature is not complete ingame, large npc's will not show onscreen!
+    RESPAWN      - The respawn feature is incomplete.
+    HITONLYWITH  - This function stops the Npc from being hit by any weapon other than the one selected from the list.
+		   Please Note: Using an item that is 'Not Weapon Type' may cause the game to crash.
+    
+   LINK NPC'S - Friendly, Shopkeeper
+   ----------
+
+    Friendly type Npc's are linked with the Quest Editor and can hold up to five quests each. Select a quest slot with the      Quests Scrollbar, try to fill up the quest slots in order, leaving gaps may cause the server problems proccessing them.
+     Select which quest to link with an Npc's quest slot with the Number Scrollbar, the quests name is shown in the space      above. When a player attacks this Npc they will be presented with this Npc's quest board.
+
+    Shopkeepers are as they say, link them with one of the shops you have created in the Shop Editor, when a player attacks        them they will be presented with the shop interface.
+
+    BOTH types of Npc require that you set their StartHP, Exp Given and Spawn Seconds settings. This stops some potential          errors happening server side when actions are processed.
+
+   RESOURCES
+   ---------
+    
+    Resource Type Npc's are useful for player skills like the 'mining' and 'woodsman' skills in the game demo.
+    They do not move around and will not attack back when attacked.
+
+     DEFENCE     - The higher a resources defence, the higher a players attack strength must be to hit it.
+     STARTHP     - The more HP's a resource has, the longer it will take a player to process it. This will reduce as a player 		    gains in level and STRENGTH.
+     EXPTYPE     - It's usually best to link a resource to a skill made especially for it, the skill type can then benefit a 		  	    player in a certain way as they gain levels from processing this type of resource.
+     EXPGIVEN    - The amount of EXPTYPE experience a player gains from processing the resource.
+     SPAWN RATE  - Set how many seconds it will be before the Resource returns to the map, 3 seconds or more is recommended.
+     DROPITEM    - Once processed, resources will drop items like regular Npc's. 
+       NB: Linking the resource with a skill of DROP% type will increase the chances an item will drop the more they process              resources of this type. This will of course rub off on a players chances of other Npc types dropping items!
+     SPRITE      - The sprite number selected on the scrollbar is shown in the window below.
+		   Check the BigNpc box doubles the size of the sprite from 32 x 32 pixels to 64 x 64 pixels.
+		   !The BigNpc feature is not complete ingame, large npc's will not show onscreen!
+     RESPAWN     - The respawn feature is incomplete.
+     HITONLYWITH - This function stops the Resource from being hit by any weapon other than the one selected from the list.
+		   Please Note: Using an item that is 'Not Tool Type' may cause the game to crash.
+
+
+:::::::::::::::
+: Game Client :
+:::::::::::::::
+
+This is the client that anyone who wants to play your game will need.
+The first time you run the client you will see the IP configuration utility, set the IP address and Port to match that of  the server. If the server IP is unlikely to change, click the 'Always use this IP' box and the utility will not appear the  next time you open the client.
+
+The Main Menu is setup the same way as the Mapping Client.
+Once logged in a player can access their inventory/stats/spells/skills by right clicking and selecting the relevant option.
+Popup boxes will disappear again automatically, after 10 seconds, unless the 'pin' box is checked.
+Popup boxes and menus will eventually be designable through a Dev Client design tool.
+Don't forget to put any new graphics (tilesets/sprites/items) that you use into the 'gfx' folder before you release it.
+
+ KEYS
+ ----
+  DIRECTION KEYS - Used to move your character around the map.
+  SHIFT KEYS     - Hold down to make your character run.
+  CTRL KEYS      - Press to attack npc/player in front of you.
+  ENTER KEY      - Pick up object from map when standing on top of them.
+  LEFT CLICK     - Used to target npc's/players on map or select items from inventory/spells etc.
+  RIGHT CLICK    - Brings up player selection menu or drops items from inventory.
+  DOUBLE CLICK   - Double Click items in the inventory to use/equip them.
+

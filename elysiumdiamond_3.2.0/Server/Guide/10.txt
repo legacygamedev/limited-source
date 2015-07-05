@@ -1,0 +1,15 @@
+E. Editing Your Game
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Intro ::
+You need to be able to edit your game to make it playable, and to do so, you also need access. Read the "Player Access Overview" before reading any further in this section.
+
+
+:: Section contents ::
+Mapper editors - Map.
+
+Developer editors - Item, Arrow, Emoticon, NPC, Shop, Spell, Speech.
+
+Creator editors - Main.

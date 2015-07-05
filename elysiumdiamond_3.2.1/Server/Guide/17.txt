@@ -1,0 +1,13 @@
+- g. Spell Editor
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Requirements ::
+The spell editor is reached by typing "/editspell" or "/spelleditor" by a person with developer access or higher.
+
+
+:: The basics ::
+Nothing special here. "Vital Mod" is just another way of saying "How much do you want it to hurt/heal?"
+
+If I let you down by not covering this editor and you are unable to decipher the complex writing, email me at pingu@splamm.com telling me how much help you need.

@@ -1,0 +1,9 @@
+
+Received connection from 127.0.0.1.
+Account admin has been created.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+admin has logged in from 127.0.0.1.
+admin has logged in from 127.0.0.1.
+admin/Emblem has began playing Aria Engine Game.
+Chat Logs Have Been Saved!

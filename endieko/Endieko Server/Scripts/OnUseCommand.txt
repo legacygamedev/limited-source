@@ -1,0 +1,14 @@
+Sub Commands(index)
+Dim TextSay
+TextSay = GetVar("Scripts\Command.ini", "TEMP", "Text" & index)
+
+Select Case LCase(Trim(TextSay))
+    Case "/testing"
+        Call PlayerMsg(index, "Hey this is a test!", 7)
+        Exit Sub
+    Case "/testing2"
+        Call PlayerMsg(index, "Hey this is a test2!", 7)
+        Exit Sub
+End Select
+Call PlayerMsg(index, "Thats not a valid command!", 12)
+End Sub

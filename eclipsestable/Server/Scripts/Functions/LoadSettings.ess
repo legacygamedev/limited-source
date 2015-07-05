@@ -1,0 +1,302 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: LoadSettings.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' Constants & Globals
+#include <Constants.ess>
+#include <Global.ess>
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: LoadSettings					'
+' Brief: loads the server settings.				'
+' Parameters:							'
+'	None							'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub LoadSettings()
+	If GetVar("Data.ini", "CONFIG", "GameName") <> vbNullString Then
+		GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+	Else
+		GameName = "The Game"
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "WebSite") <> vbNUllString Then
+		WebSite = Trim(GetVar("Data.ini", "CONFIG", "WebSite"))
+	Else
+		WebSite = ""
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Port") <> vbNUllString Then
+		Port = CInt(GetVar("Data.ini", "CONFIG", "Port"))
+	Else
+		Port = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "HPRegen") <> vbNullString Then
+		HPRegen = CInt(GetVar("Data.ini", "CONFIG", "HPRegen"))
+	Else
+		HPRegen = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "HPTimer") <> vbNullString Then
+		HPTimer = CInt(GetVar("Data.ini", "CONFIG", "HPTimer"))
+	Else
+		HPTimer = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "MPRegen") <> vbNullString Then
+		MPRegen = CInt(GetVar("Data.ini", "CONFIG", "MPRegen"))
+	Else
+		MPRegen = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "MPTimer") <> vbNullString Then
+		MPTimer = CInt(GetVar("Data.ini", "CONFIG", "MPTimer"))
+	Else
+		MPTimer = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "SPRegen") <> vbNullString Then
+		SPRegen = CInt(GetVar("Data.ini", "CONFIG", "SPRegen"))
+	Else
+		SPRegen = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "SPTimer") <> vbNullString Then
+		SPTimer = CInt(GetVar("Data.ini", "CONFIG", "SPTimer"))
+	Else
+		SPTimer = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "NPCRegen") <> vbNullString Then
+		NPCRegen = CInt(GetVar("Data.ini", "CONFIG", "NPCRegen"))
+	Else
+		NPCRegen = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Scrolling") <> vbNullString Then
+		Scrolling = CInt(GetVar("Data.ini", "CONFIG", "Scrolling"))
+	Else
+		Scrolling = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "ScrollX") <> vbNullString Then
+		ScrollX = CInt(GetVar("Data.ini", "CONFIG", "ScrollX"))
+	Else
+		ScrollX = 30
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "ScrollY") <> vbNullString Then
+		ScrollY = CInt(GetVar("Data.ini", "CONFIG", "ScrollY"))
+	Else
+		ScrollY = 30
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Scripting") <> vbNullString Then
+		Scripting = CInt(GetVar("Data.ini", "CONFIG", "Scripting"))
+	Else
+		Scripting = 1
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "ScriptErrors") <> vbNullString Then
+		ScriptErrors = CInt(GetVar("Data.ini", "CONFIG", "ScriptErrors"))
+	Else
+		ScriptErrors = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Paperdoll") <> vbNullString Then
+		Paperdoll = CInt(GetVar("Data.ini", "CONFIG", "Paperdoll"))
+	Else
+		Paperdoll = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "SaveTime") <> vbNullString Then
+		SaveTime = CInt(GetVar("Data.ini", "CONFIG", "SaveTime"))
+	Else
+		SaveTime = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "SpriteSize") <> vbNullString Then
+		SpriteSize = CInt(GetVar("Data.ini", "CONFIG", "SpriteSize"))
+	Else
+		SpriteSize = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Custom") <> vbNullString Then
+		Custom = CInt(GetVar("Data.ini", "CONFIG", "Custom"))
+	Else
+		Custom = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "PKMinLev") <> vbNullString Then
+		PKMinLev = CInt(GetVar("Data.ini", "CONFIG", "PKMinLev"))
+	Else
+		PKMinLev = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Level") <> vbNullString Then
+		Level = CInt(GetVar("Data.ini", "CONFIG", "Level"))
+	Else
+		Level = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Email") <> vbNullString Then
+		Email = CInt(GetVar("Data.ini", "CONFIG", "Email"))
+	Else
+		Email = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "VerifyAcc") <> vbNullString Then
+		VerifyAcc = CInt(GetVar("Data.ini", "CONFIG", "VerifyAcc"))
+	Else
+		VerifyAcc = 0
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Classes") <> vbNullString Then
+		Classes = CInt(GetVar("Data.ini", "CONFIG", "Classes"))
+	Else
+		Classes = 1
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Stat1") <> vbNullString Then
+		Stat1 = Trim(GetVar("Data.ini", "CONFIG", "Stat1"))
+	Else
+		Stat1 = "Strenght"
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Stat2") <> vbNullString Then
+		Stat2 = Trim(GetVar("Data.ini", "CONFIG", "Stat2"))
+	Else
+		Stat2 = "Defence"
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Stat3") <> vbNullString Then
+		Stat3 = Trim(GetVar("Data.ini", "CONFIG", "Stat3"))
+	Else
+		Stat3 = "Magic"
+	End If
+
+	If GetVar("Data.ini", "CONFIG", "Stat4") <> vbNullString Then
+		Stat4 = Trim(GetVar("Data.ini", "CONFIG", "Stat4"))
+	Else
+		Stat4 = "Speed"
+	End If
+
+	If GetVar("Data.ini", "MAX", "SPAttack") <> vbNullString Then
+		SPAttack = CInt(GetVar("Data.ini", "MAX", "SPAttack"))
+	Else
+		SPAttack = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "SPRunning") <> vbNullString Then
+		SPRunning = CInt(GetVar("Data.ini", "MAX", "SPRunning"))
+	Else
+		SPRunning = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_PLAYERS") <> vbNullString Then
+		MAX_PLAYERS = CInt(GetVar("Data.ini", "MAX", "MAX_PLAYERS"))
+	Else
+		MAX_PLAYERS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_ITEMS") <> vbNullString Then
+		MAX_ITEMS = CInt(GetVar("Data.ini", "MAX", "MAX_ITEMS"))
+	Else
+		MAX_ITEMS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_NPCS") <> vbNullString Then
+		MAX_NPCS = CInt(GetVar("Data.ini", "MAX", "MAX_NPCS"))
+	Else
+		MAX_NPCS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_SHOPS") <> vbNullString Then
+		MAX_SHOPS = CInt(GetVar("Data.ini", "MAX", "MAX_SHOPS"))
+	Else
+		MAX_SHOPS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_SPELLS") <> vbNullString Then
+		MAX_SPELLS = CInt(GetVar("Data.ini", "MAX", "MAX_SPELLS"))
+	Else
+		MAX_SPELLS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_MAPS") <> vbNullString Then
+		MAX_MAPS = CInt(GetVar("Data.ini", "MAX", "MAX_MAPS"))
+	Else
+		MAX_MAPS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_MAP_ITEMS") <> vbNullString Then
+		MAX_MAP_ITEMS = CInt(GetVar("Data.ini", "MAX", "MAX_MAP_ITEMS"))
+	Else
+		MAX_MAP_ITEMS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_GUILDS") <> vbNullString Then
+		MAX_GUILDS = CInt(GetVar("Data.ini", "MAX", "MAX_GUILDS"))
+	Else
+		MAX_GUILDS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_GUILD_MEMBERS") <> vbNullString Then
+		MAX_GUILD_MEMBERS = CInt(GetVar("Data.ini", "MAX", "MAX_GUILD_MEMBERS"))
+	Else
+		MAX_GUILD_MEMBERS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_EMOTICONS") <> vbNullString Then
+		MAX_EMOTICONS = CInt(GetVar("Data.ini", "MAX", "MAX_EMOTICONS"))
+	Else
+		MAX_EMOTICONS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_ELEMENTS") <> vbNullString Then
+		MAX_ELEMENTS = CInt(GetVar("Data.ini", "MAX", "MAX_ELEMENTS"))
+	Else
+		MAX_ELEMENTS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_LEVEL") <> vbNullString Then
+		MAX_LEVEL = CInt(GetVar("Data.ini", "MAX", "MAX_LEVEL"))
+	Else
+		MAX_LEVEL = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_PARTY_MEMBERS") <> vbNullString Then
+		MAX_PARTY_MEMBERS = CInt(GetVar("Data.ini", "MAX", "MAX_PARTY_MEMBERS"))
+	Else
+		MAX_PARTY_MEMBERS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_SCRIPTSPELLS") <> vbNullString Then
+		MAX_SCRIPTSPELLS = CInt(GetVar("Data.ini", "MAX", "MAX_SCRIPTSPELLS"))
+	Else
+		MAX_SCRIPTSPELLS = 0
+	End If
+
+	If GetVar("Data.ini", "MAX", "MAX_STAT") <> vbNullString Then
+		MAX_STAT = CInt(GetVar("Data.ini", "MAX", "MAX_STAT"))
+	Else
+		MAX_STAT = 1000
+	End If
+
+	If GetVar("Data.ini", "MOTD", "Msg") <> vbNullString Then
+		MOTD = Trim(GetVar("MOTD.ini", "MOTD", "Msg"))
+	Else
+		MOTD = ""
+	End If
+
+	If Scrolling = 1 Then
+		MAX_MAP_X = ScrollX
+		MAX_MAP_Y = ScrollY
+	Else
+		MAX_MAP_X = 19
+		MAX_MAP_Y = 14
+	End If
+End Sub

@@ -1,0 +1,142 @@
+021106 - Main Menu up and running, Can:
+	 Create and delete new account.
+	 create and delete new chars.
+	 use char brings up Tclient form, has cancel option and HP,MP,SP labels.
+	 Server has logs for Player.log
+051106 - Added map recognition, can now:
+	 join game to point of map retrieval and blit to game screen.
+	 full log of client dis/connection.
+081106 - Added player character blit and movement response.
+
+	 Client is now at split point, work will continue on editor client.
+
+
+121106 - Added right click menu from gamescreen.
+Mapper   Added basic map editor, four layers and save mechanism.
+	 Moved Quit button to right click menu.
+171106 - Added extra map layers - mask2 + anim, fringe anim and fringe2 + anim.
+Mapper   Added light layer to map.
+	 Added Properties pic with Name, moral, N/S/E/W exits and boot map function.
+181106 - **
+Mapper   Added Directional blocking to map editor.
+	 **
+191106 - Added Item Editor.
+Mapper   Added Npc Editor.
+	 **
+231106 - Added Map Editor fill button.
+Mapper   Added Map Items.
+	 Added Key and KeyOpen code to activate map editor attributes of same name.
+	 Added popup x,y co-ordinates box on certain attributes and player(client user) rollover.
+241106 - Added Npc spawning to maps.
+Mapper   Activated npc movement and attack on sight code.
+	 Activated Npc re-spawn code.
+
+	 Started to update Game client from splitpoint to bring up to date with server.
+
+291106 - Added right Click menu to game client.
+Game     Updated Game client for directional blocking.
+	 Added Npc and Item spawning to game client.
+	 Added Player Stats Popup Panel to Game client, with auto disappear(10secs) and pinning option.
+041206 - Added player inventory panel and weapon slots to game client. **Bug - Focus settings need tweaking!
+Game     Added player attack npc function with rising blitted damage.
+         Added npc attack player function with rising blitted damage.
+         (PK code for player attack player in place, player exp code in place + player level and some party code.)
+051206 - Removed movement block when clicking PlayerStats controls/pics.
+Game     Added drag and drop for PlayerStats.
+         Added player message with rising blitted text.
+101206 - Reworked Npc Type rec to add RESOURCE behavior, Hit Only With, Respawn and ShopLink.
+All      Modify code to allow for different RESOURCE Npc abilities. eg, not walking, not attacking back etc.
+	 Bug still needs to be worked out of attacking RESOURCE npc's.
+131206 - Fixed Bug in attacking RESOURCE npc's.
+Game     Added checks for HitOnlyWith weapon/tool.
+	 Added Npc Message with rising blitted text.
+191206 - **
+All      Added Player Spells to server and both clients.
+	 **
+231206 - Add Shops to server and both clients.
+All      Added Item Fixing to shops. (Needs currency modifications to work) (ref:sub hasitem)
+	 **
+301206 - Added Player Attack player code to finish feature.
+All      Added Guild code to server side, type creation.
+	 Removed commented code that's no longer required.
+
+** Creation of version 0.1.0  Most of Mirage coding has been ported to CServer, MapClient and GameClient.
+
+030107 - Spells interface is now movable.(GAMECLIENT)
+	 Inventory interface is now movable.(GAMECLIENT)
+040107 - Fixed resource Npc bug. Now shows correct 'resource proccessed' message every time.(SERVER)
+	 Fixed Shop trade bug. Reworked "trade" packet, now checks for correct trade list index.(GAMECLIENT)
+	 Fixed Shop trade bug. Added check for no trade available.(GAMECLIENT)
+070107 - Fixed PlayerInventory bug. Tools now stay equipped after logging out then back in again.
+	 Fixed Helmet/Armor equipment slot bug. Helmets/Armor show in correct equipment slots.
+	 Stopped Npc's from being able to attack MapClient users. (ADMIN_MAPPER and above)
+	 Map Editor is now movable.(DEVCLIENT)
+	 Fixed map editor bug. Moving offscreen in map editor with mouse button down no longer gives errors.
+
+Cerberus v2 - 0.1.1 Patch released.
+
+080107 - Added HighIndex player loop optimisation from tutorial
+	 Added smoother player movement from tutorial, just for Pando!
+090107 - Added SpellSprite into SpellRec and updated Mapper/Game clients as required.
+	 Added Visual spells, removed cast button - double click to cast.
+160107 - Brought Focus settings up to date on game client.
+	 Added Framework for Inventory item rollover description.
+	 Made item durability update instantly on item rollover.
+
+Cerberus v2 - 0.1.2 Patch released.
+Begun Server overhaul, adding new features and rearranging type recs.
+
+210107 - Modified modTypes:
+	 Added PlayerSpells Rec and PlayerSkills Rec.
+	 Added AmuletSlot, RingSlot.
+	 Re-worked Tile Rec to reduce amount of layers. Added Resource array to Map Rec.
+	 Modified TradeItem Rec to arrays.
+	 Modified Guild Rec ready to accept new features.
+
+--0307 - Return to coding after break and audition of apache webserver and utils.
+	 Complete text based multi-item-trade shops, still needs visual interface gameclient side.
+070407 - Completed Amulet and Ring type items with ADD HP/MP/SP/STR/DEF/MAGI/SPEED/CRIT/DROP Charm types.
+	 Added Amulet and Ring type items to the rollover description.
+	 Fixed inventory item rollover description not updating after fixing items.
+100407 - Completed framework for player skills. (Next level calculated from base attribs, not modified ones)
+	 Implemented 'Attribute' type skills - Add STR/DEF/MAGI/SPEED per level.
+	 Implemented 'Chance' type skills - Add Chance of Critical and Chance of item drop per level.
+	 Added player skills rollover description.
+130407 - Item search on gamescreen click now server side to allow for item targeting.
+	 Fixed bug - player critical hit damage not registering.
+200407 - Added new player spells framework to MapClient.
+	 Added new player spells framework to GameClient and modified spell rollover description.
+220407 - Completed framework for player spells. (Next level calculated from spell level/mod and player MAGIC)
+	 Modified inventory rollover descriptions to include skill/spell types.
+270407 - Added BLOCK type to Amulets/Rings And Skills. (Increases chance of Blocking by %)
+	 Modified npc/resource exp to give standard exp if player doesn't have relevant skill.
+060507 - Completed basic demonstration maps for warrior and wizard character types.
+	 Added Player message on use of potion type items.
+	 Added Start location for character classes, in classes.ini
+070507 - Fixed spells so they respond to player spell level and modified player/npc/resource messages to suit.
+	 Fixed Npc/Resource messages for player spells.
+080507 - Added Player Skills experience checkpoints for CHANCE type skills - CRIT/BLOCK/DROP
+	 Added Player Skills experience checkpoints for ATTRIBUTE type skills - STR/DEF/MAGI/SPEED
+180507 - Completed updates to User guide inline with engine changes.
+	 Adjusted code where neccesary to fix certain features shown up by the guide update.
+
+Version2 - 0.3.0 release complete.
+	 
+Version2 - 0.3.1 Changes;
+
+	* Added server configuration app on server startup
+	* Added Dev/Game client IP configuration on startup
+	* Centralized all Dev client editors
+	* Added Main menu GUI
+
+	From postponed graphics update
+	* Added 32 x 64 sprites for Npc's and players
+	* Added pushblock system for mazes etc
+	* Added resource Tree type, 96 x 128 sprite, bottom middle tile blocked/attackable
+
+
+Version2 -  0.3.2 Changes;
+
+	* Picture selection scrollbars are now linked to MAX values in DevClient.
+	* Added Dev client Main Menu design application.
+	* Added basic chat facility.

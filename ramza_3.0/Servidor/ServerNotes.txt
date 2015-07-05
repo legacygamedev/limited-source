@@ -1,0 +1,5 @@
+[SERVERNOTES]
+PLAYERNOTES=Keep notes on players here: Who scammed who. Who killed who. Did anybody recieve a Warning or did you need to remember to unblock a person after some days.
+MAPNOTES=Do you need to remove items from a map. Did you add a event to a map and you will change it after a certain time, write all about it here.
+MAINNOTES=Write anything you just want to remember here.
+OTHERNOTES=Just keep some general notes you don't wanna forget here.

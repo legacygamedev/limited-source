@@ -1,0 +1,34 @@
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Table of contents for this guide ::
+
+ 1.  Starting Up 
+ 2.  Definitions
+ 3.  Game Controls
+ 4.  Player Access Overview
+ 5.    Normal Users
+ 6.    Monitor Powers
+ 7.    Mapper Powers
+ 8.    Developer Powers
+ 9.    Creator Powers
+ 10. Editing Your Game
+ 11.   Map Editor
+ 12.   Item Editor
+ 13.   Arrow Editor
+ 14.   Emoticon Editor
+ 15.   NPC Editor
+ 16.   Shop Editor
+ 17.   Spell Editor
+ 18.   Speech Editor
+ 19.   Main Editor
+ 20. Customizing Your Game
+ 21.   Server Side
+ 22.   Client Side
+ 23. SadScript
+ 24.   The Commands
+ 25.   Usable Subs
+ 26.   Example Script
+ 27. Bugs and Errors!
+ 28. Suggestions

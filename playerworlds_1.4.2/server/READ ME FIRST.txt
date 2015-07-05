@@ -1,0 +1,17 @@
+You can import all of your .ini files (except for MOTD.ini) into this folder.
+All of the other files (accoun .ini files, Main.as, and map files) should go in their respective folders.
+
+Please be sure to edit your website and other information in MOTD.ini before starting v1.3 server.
+Your server information should show up on the server list, but if your MOTD.ini is not correct
+then there will be no link to your website, You will not be listed as the server owner, and the
+other various features from the list will not be supported correctly until the file is edited and the server is 
+restarted.
+
+To view the current serverlist (servers that are running v1.3 will show up) visit :
+http://www.playerworlds.com/servers/list
+
+Thank You, and have fun with 1.3.
+~Kael~
+
+P.S.
+   For those of you that are testing v1.3 server for me, please report all bugs to kael@playerworlds.com.

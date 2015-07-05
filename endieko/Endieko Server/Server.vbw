@@ -1,0 +1,16 @@
+frmLoad = 220, 260, 978, 890, , 175, 189, 933, 819, C
+frmServer = -25, 390, 733, 1020, , 64, 220, 822, 850, C
+modDatabase = 154, 182, 912, 812, 
+modGameLogic = 110, 130, 959, 700, 
+modGeneral = 0, 0, 758, 630, 
+modScripting = 22, 26, 780, 656, 
+modServerTCP = 128, 248, 896, 883, Z
+modSysTray = 66, 78, 824, 708, 
+modText = 132, 156, 890, 786, 
+modTypes = 32, -3, 804, 634, 
+clsCommands = 0, 0, 851, 571, C
+clsRC4 = 110, 130, 954, 699, C
+clsSadScript = 220, 260, 978, 890, 
+clsServer = 0, 0, 0, 0, C
+colSockets = 198, 234, 953, 864, 
+clsSocket = 44, 52, 888, 621, 

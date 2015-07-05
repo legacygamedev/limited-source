@@ -1,0 +1,15 @@
+Starting recording
+	Date: 09/04/05
+	Time: 23:47:52
+	Language: 0
+	Locale: 1033
+	Execution #: 1
+	Check frequency: 1
+Checking for updates...
+	Contact XML server: http://www.steelw.com/update/UpdateConfig.xml
+	Security code checking required
+	Security code detected and derived correctly
+	Current version: 6.2.13.10
+	Remote version: 6.2.13.10
+Update will not be undertaken
+	End of recording

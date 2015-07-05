@@ -1,0 +1,1 @@
+Call globalmsg("working", 10)

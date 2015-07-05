@@ -1,0 +1,64 @@
+- c. Example Script
+Elysium Guide v 1.0
+Written by Cruzn
+
+
+:: Example Script ::
+        Now I will go through a script not found in the default main.txt and show you what makes it tick.
+
+       LINE
+        01     Sub Werewolf(index)
+        02        Dim S
+        03        Dim D
+        04        Dim E
+        05        Dim P
+        06        Dim G
+        07        S=Int(GetPlayerSTR(Index) * 2)
+        08        D=Int(GetPlayerDEF(Index) * 2)
+        09        E=Int(GetPlayerSP(Index) * 2)
+        10        P=Int(GetPlayerPK(Index) + 300)
+        11        G=1
+        12        If GetPlayerClass(Index) = 2 Then
+        13                  Call PutVar("Werewolf.ini", GetPlayerName(index), "MP", Int(GetPlayerMAGI(Index)))
+        14                  Call PutVar("SPRT.ini", GetPlayerName(Index),"SP", Int(GetPlayerSprite(Index)))
+        15                  Call SetPlayerSprite(index, 13)
+        16                  Call PlayerMsg(index, "You Feel your bones crunch as fur begins to grow along your skin. A dark madness begins to fill your head.", 0)
+        17                  Call SetPlayerMAGI(Index, G)
+        18                  Call SetPlayerClass(Index, 3)
+        19                  Call SetPlayerSTR(Index, S)
+        20                  Call SetPlayerDEF(Index, D)
+        21                  Call SetPlayerSP(Index, E)
+        22                  Call SetPlayerPK(Index, P)
+        23                  Call SendPlayerData(Index)
+        24        Else
+        25                  Call PlayerMsg(Index, "You are not a Shapechanger.", 0)
+        26        End If
+        27     End Sub
+
+        Line 1: Defines the new sub.
+
+        Line 2 - 6: Dims the variables through the sub.
+
+        Line 7 - 11: Defines the value of each variable.
+
+        Line 12: Checks if the player's class is equal to 2.
+
+        Line 13 - 14: The check was successful, so it is now storing the data with putvar.
+
+        Line 15: We are now changing the sprite to give the player a new look.
+
+        Line 16: Now we are displaying a message to the player.
+
+        Line 17: We are going to change the player's MAGI to variable G, which is equal to 1.
+
+        Line 18 - 22: During these lines we are changing the players class, strength, defense, speed and player kills to values 3, variable S, variable D, variable E and variable P; respectively. This is the same as line 17 but with different variables.
+
+        Line 23: This line makes sure the player recieves the new changes to his or her character.
+
+        Line 24: If the class check failed then do Line 25.
+
+        Line 25: We display a message to the player letting them know the attempt failed.
+
+        Line 26: We close our IF statement declared in line 12.
+
+        Line 27: We end our sub declared in line 1.

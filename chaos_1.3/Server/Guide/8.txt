@@ -1,0 +1,25 @@
+- d. Developers
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: The basics ::
+Developers are in charge of creating the game play part of the game. Mappers do the graphics, developers do the content. As I said in the overall description, these guys are REALLY powerful and there is not much difference between a creator. More than any other times, make sure you pick a person you know as a developer. You could find yourself with nothing left if you don't.
+
+
+:: The commands ::
+Note, in all of the below commands, you can switch "/editthing" to "/thingeditor" and it will work just as well. Almost all of the things below have extra explaining in another part of this guide.
+
+/edititem - Opens up the item editor for creating/editing items that can be used by players.
+
+/editarrow - Opens up the arrow editor for creating arrows for bows.
+
+/editemoticon - Opens up the emoticon editor.
+
+/editnpc - Opens up the NPC editor so you can create computer controlled "players". 
+
+/editshop - Opens up the shop editor for creation of a shop.
+
+/editspell - Opens up the spell editor for creating spells that players can use.
+
+/editspeech - Opens up the speech editor for creating NPC speech.

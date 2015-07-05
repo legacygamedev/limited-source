@@ -1,0 +1,461 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: QueryBox.ess						'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: QueryBox						'
+' Brief: executes query box respones.				'
+' Parameters:							'
+'	Index: the index of the player.				'
+'	Prompt: the prompt.					'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub QueryBox(Index, Prompt)
+	Dim Value
+	Dim Target
+
+	Value = GetVar("responses.ini", "Responses", CStr(Index))
+	CustomMenu = GetCharVar(Index, "Menu", "Title")
+
+	Select Case CustomMenu
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Plug (Profile.ess)						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+		Case "Player Profile"
+			Select Case Prompt
+				Case 1
+					If Value = vbNullString Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Call SetPlayerName(Target, Value)
+					Call SendPlayerData(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 2
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					ElseIf Value > 5 Then
+						Value = 5
+					End If
+
+					If Value > GetPlayerAccess(Index) Then
+						Value = GetPlayerAccess(Index)
+					End If
+
+					Call SetPlayerAccess(Target, Value)
+					Call SendPlayerData(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 3
+					If Value = vbNullString Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Call SetPlayerGuild(Target, Value)
+					Call SendPlayerData(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 4
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					ElseIf Value >= Classes Then
+						Value = Classes - 1
+					End If
+
+					Call SetPlayerClass(Target, Value)
+					Call SendPlayerData(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 5
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					End If
+
+					Call SetPlayerSprite(Target, Value)
+					Call SendPlayerData(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 6
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 1 Then
+						Value = 1
+					ElseIf Value > MAX_LEVEL Then
+						Value = MAX_LEVEL
+					End If
+
+					Call SetPlayerLevel(Target, Value)
+					Call SetPlayerHP(Target, GetPlayerMaxHP(Target))
+					Call SetPlayerMP(Target, GetPlayerMaxMP(Target))
+					Call SetPlayerSP(Target, GetPlayerMaxSP(Target))
+					Call SendPlayerData(Target)
+					Call SendStats(Target)
+					Call SendHP(Target)
+					Call SendMP(Target)
+					Call SendSP(Target)
+					Call SendPTS(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 7
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					End If
+
+					Call SetPlayerEXP(Target, Value)
+					Call SendStats(Target)
+					Call PlayerLevelUp(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 8
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					End If
+
+					Call SetPlayerPK(Target, Value)
+					Call SendPlayerData(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 9
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					ElseIf Value > GetPlayerMaxHP(Target) Then
+						Value = GetPlayerMaxHP(Target)
+					End If
+
+					Call SetPlayerHP(Target, Value)
+					Call SendHP(Target)
+
+					If Value = 0 Then
+						Call OnDeath(Target)
+					End If
+
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 10
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					ElseIf Value > GetPlayerMaxMP(Target) Then
+						Value = GetPlayerMaxMP(Target)
+					End If
+
+					Call SetPlayerMP(Target, Value)
+					Call SendMP(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 11
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					ElseIf Value > GetPlayerMaxSP(Target) Then
+						Value = GetPlayerMaxSP(Target)
+					End If
+
+					Call SetPlayerSP(Target, Value)
+					Call SendSP(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 12
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					ElseIf Value > MAX_STAT Then
+						Value = MAX_STAT
+					End If
+
+					Call SetPlayerSTR(Target, Value)
+					Call SendStats(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 13
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					ElseIf Value > MAX_STAT Then
+						Value = MAX_STAT
+					End If
+
+					Call SetPlayerDEF(Target, Value)
+					Call SendStats(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 14
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+		
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					ElseIf Value > MAX_STAT Then
+						Value = MAX_STAT
+					End If
+
+					Call SetPlayerMAGI(Target, Value)
+					Call SendStats(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 15
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					ElseIf Value > MAX_STAT Then
+						Value = MAX_STAT
+					End If
+
+					Call SetPlayerSPEED(Target, Value)
+					Call SendStats(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+
+				Case 16
+					If Value = vbNullString Or IsNumeric(Value) = False Then
+						Call ShowProfile(Index, 0)
+
+						Exit Sub
+					End If
+
+					If GetCharVar(Index, "Profile", "Target") = vbNullString Then
+						Exit Sub
+					End If
+
+					Target = CInt(GetCharVar(Index, "Profile", "Target"))
+
+					Value = CInt(Value)
+
+					If Value < 0 Then
+						Value = 0
+					End If
+
+					Call SetPlayerPOINTS(Target, Value)
+					Call SendPTS(Target)
+					Call ShowProfile(Index, 0)
+
+					Exit Sub
+			End Select
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' End Plug (Profile.ess)					'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+		Case Else
+			Call PlayerMsg(Index, "Unknown menu!", BRIGHTRED)
+	End Select
+End Sub

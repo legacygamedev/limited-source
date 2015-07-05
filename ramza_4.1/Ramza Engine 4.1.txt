@@ -1,0 +1,63 @@
+Hecho a base de Mirage Source
+------------------------------
+
+En esta version se agregaron nuevas cosas y se le sacaron otras para hacer al engine lo mas estable posible pero con la mayor cantidad de caracteristicas. Estamos desarrollando la version Zero del engine con muchas mas cosas y la version PRO con bases de datos
+
+Ramza Engine 4.1
+------------------------------
+
+Arreglados Bugs de HP/MP/SP
+
+Arreglados Bugs de Tiendas
+
+Arreglados Bugs de Flechas
+
+Arreglados Bugs de MP
+
+Otros bugs menores arreglados
+
+Agregado requerimiento de magias en los items
+
+Agregado requerimiento de nivel en los items
+
+Agregado daño aleatorio en armas, mano limpia, y todos los tipos de hechizos (Sub HP, MP, SP, Add HP, MP, SP)
+
+Hecho que la Mag modifique el daño que hacen los hechizos, con mas Mag el hechizo sacara mas (Mag /2 + Hechizo) +- 10 = Poder del Hechizo
+
+Agregado Estamina (Cada vez que golpeas perdes 1 SP, cuando sea 0 no puedes golpear o correr, cuando corres perdes 1 SP)
+
+Agregado un nuevo atributo de bloqueo que deja pasar a las flechas pero no a los jugadores
+
+Añadido daño de elementos (8 Elementos, Fuego, Agua, Tierra, Aire, Rayo, Hielo, Luz, Oscuro)
+
+Mas casillas de equipamiento (Guantes, Botas, Cinturon, Piernas, Anillo, Amuleto)
+
+Agregados scripts de Mineria y Talar
+
+Agregada magia de crear items
+
+Agregados items de dos manos
+
+Agregado chance de esquivar
+
+Bancos Agregados
+
+Los Npcs ahora puden soltar 30 items en vez de 10
+
+Cambiado para que los jugadores no pierdan los items cuando mueran (Opcional)
+
+Cambiado para que los Admin puedan atacar jugadores y ser atacados
+
+Cambiado maximo de Npcs por mapa 30 en vez de 15
+
+Las flechas van mas rapido por la pantalla
+
+Las pociones ahora pueden curar o dañar 1000 en vez de 255 (todas las pociones, HP, MP, SP)
+
+Agregado para que con F2 se usen las pociones de vida y F3 las de mana
+
+Cambiado el tamaño del inventario de 24 a 36
+
+Mejorada la formula de reparacion de items
+
+Mejorada la seguridad del servidor

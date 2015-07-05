@@ -1,0 +1,11 @@
+Mapping:
+Mapping in Eclipse is fairly simple. Once your character has level 4 access to the server, login to the game and in the chatbox, type /mapeditor. Doing this will open the map editor in a new window, this contains many things. Most important are all of them is the long box that contains the tiles. Click on one of these, will allow you to place it on the map. O
+
+Creating Items, NPCS, Spells, shops and emoticons
+
+Commands:
+/editshops
+/editnpcs
+/edititems
+/editspells
+/editemoticon

@@ -1,0 +1,26 @@
+HKCR
+{
+	COMSocketServer.Address.1 = s 'Address Class'
+	{
+		CLSID = s '{C361B25D-8257-4876-90E5-0FF753206D5F}'
+	}
+	COMSocketServer.Address = s 'Address Class'
+	{
+		CLSID = s '{C361B25D-8257-4876-90E5-0FF753206D5F}'
+		CurVer = s 'COMSocketServer.Address.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C361B25D-8257-4876-90E5-0FF753206D5F} = s 'Address Class'
+		{
+			ProgID = s 'COMSocketServer.Address.1'
+			VersionIndependentProgID = s 'COMSocketServer.Address'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A266F5D8-8C2D-46D9-A369-81AE1271F31E}'
+		}
+	}
+}

@@ -1,0 +1,28 @@
+Icons made by pingu.
+
+
+
+
+-- Suggested use for frmMainMenu and frmLoad --
+
+
+             icon_large
+                 or
+             icon_huge
+
+
+  (this icon is the one for the exe)
+
+
+
+
+
+-- Suggested use for frmMirage and frmServer --
+
+
+            icon_small
+                or
+            icon_medium
+
+
+(this icon is for the logo in the title at the top)

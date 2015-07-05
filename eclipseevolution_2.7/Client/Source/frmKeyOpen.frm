@@ -1,0 +1,271 @@
+VERSION 5.00
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "tabctl32.ocx"
+Begin VB.Form frmKeyOpen 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Key Open"
+   ClientHeight    =   2535
+   ClientLeft      =   60
+   ClientTop       =   420
+   ClientWidth     =   5055
+   ControlBox      =   0   'False
+   BeginProperty Font 
+      Name            =   "Arial"
+      Size            =   12
+      Charset         =   0
+      Weight          =   400
+      Underline       =   0   'False
+      Italic          =   0   'False
+      Strikethrough   =   0   'False
+   EndProperty
+   Icon            =   "frmKeyOpen.frx":0000
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   ScaleHeight     =   2535
+   ScaleWidth      =   5055
+   ShowInTaskbar   =   0   'False
+   StartUpPosition =   2  'CenterScreen
+   Begin TabDlg.SSTab SSTab1 
+      Height          =   2295
+      Left            =   120
+      TabIndex        =   0
+      Top             =   120
+      Width           =   4815
+      _ExtentX        =   8493
+      _ExtentY        =   4048
+      _Version        =   393216
+      Tabs            =   1
+      TabsPerRow      =   1
+      TabHeight       =   353
+      TabMaxWidth     =   1764
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      TabCaption(0)   =   "Set X/Y"
+      TabPicture(0)   =   "frmKeyOpen.frx":0FC2
+      Tab(0).ControlEnabled=   -1  'True
+      Tab(0).Control(0)=   "lblY"
+      Tab(0).Control(0).Enabled=   0   'False
+      Tab(0).Control(1)=   "lblX"
+      Tab(0).Control(1).Enabled=   0   'False
+      Tab(0).Control(2)=   "Label2"
+      Tab(0).Control(2).Enabled=   0   'False
+      Tab(0).Control(3)=   "Label1"
+      Tab(0).Control(3).Enabled=   0   'False
+      Tab(0).Control(4)=   "Label3"
+      Tab(0).Control(4).Enabled=   0   'False
+      Tab(0).Control(5)=   "cmdCancel"
+      Tab(0).Control(5).Enabled=   0   'False
+      Tab(0).Control(6)=   "cmdOk"
+      Tab(0).Control(6).Enabled=   0   'False
+      Tab(0).Control(7)=   "scrlY"
+      Tab(0).Control(7).Enabled=   0   'False
+      Tab(0).Control(8)=   "scrlX"
+      Tab(0).Control(8).Enabled=   0   'False
+      Tab(0).Control(9)=   "txtMsg"
+      Tab(0).Control(9).Enabled=   0   'False
+      Tab(0).ControlCount=   10
+      Begin VB.TextBox txtMsg 
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   285
+         Left            =   480
+         MaxLength       =   100
+         TabIndex        =   9
+         Top             =   1560
+         Width           =   3735
+      End
+      Begin VB.HScrollBar scrlX 
+         Height          =   255
+         Left            =   480
+         Max             =   30
+         TabIndex        =   4
+         Top             =   480
+         Width           =   3735
+      End
+      Begin VB.HScrollBar scrlY 
+         Height          =   255
+         Left            =   480
+         Max             =   30
+         TabIndex        =   3
+         Top             =   960
+         Width           =   3735
+      End
+      Begin VB.CommandButton cmdOk 
+         Caption         =   "Ok"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   120
+         TabIndex        =   2
+         Top             =   1920
+         Width           =   1935
+      End
+      Begin VB.CommandButton cmdCancel 
+         Caption         =   "Cancel"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   2760
+         TabIndex        =   1
+         Top             =   1920
+         Width           =   1935
+      End
+      Begin VB.Label Label3 
+         AutoSize        =   -1  'True
+         BackStyle       =   0  'Transparent
+         Caption         =   "Key Message (Leave blank to say default)"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   165
+         Left            =   480
+         TabIndex        =   10
+         Top             =   1320
+         Width           =   2625
+      End
+      Begin VB.Label Label1 
+         Alignment       =   1  'Right Justify
+         Caption         =   "X"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   120
+         TabIndex        =   8
+         Top             =   480
+         Width           =   255
+      End
+      Begin VB.Label Label2 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Y"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   120
+         TabIndex        =   7
+         Top             =   960
+         Width           =   255
+      End
+      Begin VB.Label lblX 
+         Caption         =   "0"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   4320
+         TabIndex        =   6
+         Top             =   480
+         Width           =   375
+      End
+      Begin VB.Label lblY 
+         Caption         =   "0"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   4320
+         TabIndex        =   5
+         Top             =   960
+         Width           =   375
+      End
+   End
+End
+Attribute VB_Name = "frmKeyOpen"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+
+Private Sub cmdOk_Click()
+    KeyOpenEditorX = scrlX.Value
+    KeyOpenEditorY = scrlY.Value
+    KeyOpenEditorMsg = txtMsg.Text
+    Unload Me
+End Sub
+
+Private Sub cmdCancel_Click()
+    Unload Me
+End Sub
+
+Private Sub Form_Load()
+    scrlX.Max = MAX_MAPX
+    scrlY.Max = MAX_MAPY
+
+    If KeyOpenEditorX < scrlX.Min Then
+        KeyOpenEditorX = scrlX.Min
+    End If
+    scrlX.Value = KeyOpenEditorX
+    If KeyOpenEditorY < scrlY.Min Then
+        KeyOpenEditorY = scrlY.Min
+    End If
+    scrlY.Value = KeyOpenEditorY
+    txtMsg.Text = KeyOpenEditorMsg
+End Sub
+
+Private Sub scrlX_Change()
+    lblX.Caption = STR(scrlX.Value)
+End Sub
+
+Private Sub scrlY_Change()
+    lblY.Caption = STR(scrlY.Value)
+End Sub

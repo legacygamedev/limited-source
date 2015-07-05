@@ -1,0 +1,1 @@
+Bootstrap is a program that will automatically reboot your game server when an admin of level 4 or higher types /reboot.  In order for this to work, the server executable must be named server.exe. Bootstrap,exe must be in the same folder as your server.exe

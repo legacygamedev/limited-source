@@ -1,0 +1,9 @@
+This application first popped into my head while I was downloading a file.
+My thoughts were, "Why not have a program that makes it much easier to organize downloads?"
+So, I then began to think how it would work.
+Sure, I could make the program look at a single directory and show all of the files in that directory, but what about people who don't host their files all in one place?
+So, I thought about using a text file to point at various other files for download.
+Of course, I then got creative and made some useful and not so useful addons.
+Anyway, because of that labor, you now have a product browser that you can customize to fit your own needs!
+
+Author: smchronos

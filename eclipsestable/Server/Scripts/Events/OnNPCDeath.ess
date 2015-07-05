@@ -1,0 +1,19 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: OnNPCDeath.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: OnNPCDeath						'
+' Brief: executes when an NPC dies.				'
+' Parameters:							'
+'	Index: the index of the player who killed the NPC.	'
+'	Map: the map the NPC died on.				'
+'	NPC: the NPC number.					'
+'	MapNPC: the MapNPC number.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub OnNPCDeath(Index, Map, NPC, MapNPC)
+	Call BattleMsg(Index, "You killed a " & GetNPCName(NPC) & ".", BRIGHTRED, LEFT)
+End Sub

@@ -1,0 +1,181 @@
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	typedef enum ShutdownMethod
+	{
+		ShutdownRead,
+		ShutdownWrite,
+		ShutdownBoth	
+	} ShutdownMethod;
+
+	[
+		object,
+		uuid(FE3E6924-53EC-4E49-BB4B-226B4F3FF36D),
+		dual,
+		helpstring("IAddress Interface"),
+		pointer_default(unique)
+	]
+	interface IAddress : IDispatch
+	{
+		[
+			propget, 
+			id(1), 
+			helpstring("property Address")
+		]
+		HRESULT Address(
+			[out, retval] BSTR *pVal);
+		
+		[
+			propget, 
+			id(2), 
+			helpstring("property Port")
+		]
+		HRESULT Port(
+			[out, retval] long *pVal);
+	};
+
+	[
+		object,
+		uuid(BA0080EA-9B07-4315-AC64-6FE62F3069B2),
+		dual,
+		helpstring("ISocket Interface"),
+		pointer_default(unique)
+	]
+	interface ISocket : IDispatch
+	{
+		[
+			id(1), 
+			helpstring("method WriteString")
+		] 
+		HRESULT WriteString(
+			[in] BSTR data,
+			[in, optional] VARIANT sendAsUNICODE,
+			[in, optional] VARIANT thenShutdown);
+
+		[
+			id(2), 
+			helpstring("method Write")
+		]
+		HRESULT Write(
+			[in] VARIANT arrayOfBytes,
+			[in, optional] VARIANT thenShutdown);
+
+		[
+			id(3), 
+			helpstring("method RequestRead")
+		]
+		HRESULT RequestRead();
+
+		[
+			propget, 
+			id(4), 
+			helpstring("property RemoteAddress")
+		]
+		HRESULT RemoteAddress(
+			[out, retval] IAddress **ppVal);
+		
+		[
+			id(5), 
+			helpstring("method Shutdown")
+		]
+		HRESULT Shutdown(
+			[in] ShutdownMethod how);
+
+		[
+			id(6), 
+			helpstring("method Close")
+		]
+		HRESULT Close();
+		
+		[
+			propget, 
+			id(7), 
+			helpstring("property UserData")
+		] 
+		HRESULT UserData(
+			[out, retval] VARIANT *pVal);
+		
+		[
+			propput, 
+			id(7), 
+			helpstring("property UserData")
+		]
+		HRESULT UserData(
+			[in] VARIANT newVal);
+	};
+
+
+	[
+		object,
+		uuid(F064AF8E-20F7-4700-9916-30AD633D607C),
+		dual,
+		helpstring("IData Interface"),
+		pointer_default(unique)
+	]
+	interface IData : IDispatch
+	{
+		[
+			id(1), 
+			helpstring("method ReadString")
+		] 
+		HRESULT ReadString(
+			[out, retval] BSTR *pResults);
+		
+		[
+			id(2), 
+			helpstring("method Read")
+		] 
+		HRESULT Read(
+			[out, retval] VARIANT *ppResults);
+	};
+
+	[
+		object,
+		uuid(8169BB59-E83F-4417-809B-FE7027F2C96D),
+		dual,
+		helpstring("IServer Interface"),
+		pointer_default(unique)
+	]
+	interface IServer : IDispatch
+	{
+		[
+			propget, 
+			id(1), 
+			helpstring("property LocalAddress")
+		] 
+		HRESULT LocalAddress(
+			[out, retval] IAddress **ppVal);
+		
+		[
+			id(2), 
+			helpstring("method StartListening")
+		] 
+		HRESULT StartListening();
+
+		[
+			id(3), 
+			helpstring("method StopListening")
+		] 
+		HRESULT StopListening();
+
+	};
+
+	[
+		object,
+		uuid(76F99A6B-1BF0-4851-949A-2DD19961554A),
+		dual,
+		helpstring("ISocketServerFactory Interface"),
+		pointer_default(unique)
+	]
+	interface ISocketServerFactory : IDispatch
+	{
+		[
+			id(1), 
+			helpstring("method CreateSocketServer")
+		]
+		HRESULT CreateSocketServer(
+			[in] long port, 
+			[in, optional] VARIANT address,
+			[out, retval] IServer **ppServer);
+	};

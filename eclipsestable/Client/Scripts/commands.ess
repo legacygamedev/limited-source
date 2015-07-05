@@ -1,0 +1,272 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: Commands.ess						'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0	
+'test test					'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: Commands						'
+' Brief: executes when the player types a commands.		'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub Commands(Index)
+	Dim TextSay
+	Dim Target
+	Dim Map
+	Dim X
+	Dim Y
+	Dim Hours
+	Dim Minutes
+	Dim Seconds
+
+	' Get the command and its arguments from the cache.
+	TextSay = Trim(GetVar("Scripts\Command.ini", "TEMP", "Text" & Index))
+
+	' Split the command and its arguments into an array.
+	TextSay = Split(TextSay)
+
+	Select Case TextSay(0)
+		Case "/test"
+			Call TestScripts(Index)
+
+			Exit Sub
+
+		Case "/help"
+			Call PlayerMsg(Index, "Social Commands:", WHITE)
+			Call PlayerMsg(Index, "'msghere = Broadcast Message", WHITE)
+			Call PlayerMsg(Index, "-msghere = Emote Message", WHITE)
+			Call PlayerMsg(Index, "!namehere msghere = Player Message", WHITE)
+			Call PlayerMsg(Index, "Available Commands: /help, /info, /who, /fps, /inv, /stats, /train, /party, /join, /leave, /refresh", WHITE)
+
+			Exit Sub	
+
+		Case "/calladmins"
+			If GetPlayerAccess(Index) > ADMIN_PLAYER Then
+				Call PlayerMsg(Index, "You are already an administrator! You cannot call for help!", BRIGHTGREEN)
+
+				Exit Sub
+			End If
+			
+		Case "/sell"
+			Call SellHouse(index)
+			Exit Sub
+
+			Call AdminMsg(GetPlayerName(Index) & " requests for your help!", BRIGHTGREEN)
+
+			Exit Sub
+
+		Case "/admin"
+			If GetPlayerAccess(Index) < ADMIN_MONITOR Then
+				Call PlayerMsg(Index, "You don't have the appropriate access level to use this command.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			Call PlayerMsg(Index, "Social Commands:", WHITE)
+			Call PlayerMsg(Index, """msghere = Global Admin Message", WHITE)
+			Call PlayerMsg(Index, "=msghere = Private Admin Message", WHITE)
+			Call PlayerMsg(Index, "Available Commands: /admin, /loc, /mapeditor, /warpmeto, /warptome, /warpto, /setsprite, /mapreport, /kick, /ban, /edititem, /respawn, /editnpc, /motd, /editshop, /ban, /editspell", WHITE)
+
+			Exit Sub
+
+		Case "/warpmeto"
+			If GetPlayerAccess(Index) < ADMIN_MONITOR Then
+				Call PlayerMsg(Index, "You don't have the appropriate access level to use this command.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			If UBound(TextSay) < 1 Then
+				Call PlayerMsg(Index, "The command is: " & TextSay(0) & " player", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			If GetPlayerName(Index) = TextSay(1) Then
+				Call PlayerMsg(Index, "You can't warp yourself to yourself.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			Target = FindPlayer(TextSay(1))
+
+			If Target < 1 Then
+				Call PlayerMsg(Index, "The player is offline or doesn't exist.", WHITE)
+
+				Exit Sub
+			End If
+
+			Call PlayerWarp(Index, GetPlayerMap(Target), GetPlayerX(Target), GetPlayerY(Target))
+			Call PlayerMsg(Index, "You have been warped to " & GetPlayerName(Target) & ".", BROWN)
+
+			Exit Sub
+
+		Case "/warptome"
+			If GetPlayerAccess(Index) < ADMIN_MONITOR Then
+				Call PlayerMsg(Index, "You don't have the appropriate access level to use this command.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			If UBound(TextSay) < 1 Then
+				Call PlayerMsg(Index, "The command is: " & TextSay(0) & " player", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			If GetPlayerName(Index) = TextSay(1) Then
+				Call PlayerMsg(Index, "You can't warp yourself to yourself.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			Target = FindPlayer(TextSay(1))
+
+			If Target < 1 Then
+				Call PlayerMsg(Index, "The player is offline or doesn't exist.", WHITE)
+
+				Exit Sub
+			End If
+
+			Call PlayerWarp(Target, GetPlayerMap(Index), GetPlayerX(Index), GetPlayerY(Index))
+			Call PlayerMsg(Target, "You have been warped to " & GetPlayerName(Index) & ".", BROWN)
+
+			Exit Sub
+
+		Case "/warpto"
+			If GetPlayerAccess(Index) < ADMIN_MONITOR Then
+				Call PlayerMsg(Index, "You don't have the appropriate access level to use this command.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			If UBound(TextSay) < 1 Then
+				Call PlayerMsg(Index, "The command is: " & TextSay(0) & " map [x] [y]", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			Map = CInt(TextSay(1))
+
+			If Map < 1 Or Map > MAX_MAPS Then
+				Call PlayerMsg(Index, "The map specified isn't valid.", BRIGHTRED)
+
+				Exit Sub
+			End If
+			
+			If UBound(TextSay) > 1 Then
+				X = CInt(TextSay(2))
+			Else
+				X = GetPlayerX(Index)
+			End If
+
+			If UBound(TextSay) > 2 Then
+				Y = CInt(TextSay(3))
+			Else
+				Y = GetPlayerX(Index)
+			End If
+
+			If X < 1 Or X >= MAX_MAP_X Then
+				Call PlayerMsg(Index, "The X specified isn't valid.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			If Y < 1 Or Y >= MAX_MAP_Y Then
+				Call PlayerMsg(Index, "The Y specified isn't valid.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			Call PlayerWarp(Index, Map, X, Y)
+			Call PlayerMsg(Index, "You have been warped to map #" & Map & " (" & X & ", " & Y & ").", BRIGHTBLUE)
+
+			Exit Sub
+
+		Case "/settime"
+			If GetPlayerAccess(Index) < ADMIN_MONITOR Then
+				Call PlayerMsg(Index, "You don't have the appropriate access level to use this command.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			If UBound(TextSay) < 3 Then
+				Call PlayerMsg(Index, "The command is: " & TextSay(0) & " hours minutes seconds", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			Hours = CInt(TextSay(1))
+			Minutes = CInt(TextSay(2))
+			Seconds = CInt(TextSay(3))
+
+			If Hours < 0 Or Hours > 23 Then
+				Call PlayerMsg(Index, "The hours specified isn't valid.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+			If Minutes < 0 Or Minutes > 59 Then
+				Call PlayerMsg(Index, "The minutes specified isn't valid.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+
+			If Seconds < 0 Or Seconds > 59 Then
+				Call PlayerMsg(Index, "The seconds specified isn't valid.", BRIGHTRED)
+
+				Exit Sub
+			End If
+
+
+			Call SetServerTime(Hours, Minutes, Seconds)
+
+			Exit Sub			
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Plug (Profile.ess)						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+		Case "/profile"
+			If UBound(TextSay) > 0 Then
+				Target = FindPlayer(TextSay(1))
+
+				If Target < 1 Then
+					Call PlayerMsg(Index, "The player is offline or doesn't exist.", WHITE)
+
+					Exit Sub
+				End If
+			Else
+				If GetPlayerTarget(Index) < 1 Then
+					Call PlayerMsg(Index, "No target specified or selected.", BRIGHTRED)
+
+					Exit Sub
+				End If
+
+				Target = GetPlayerTarget(Index)
+			End If
+
+			Call ShowProfile(Index, Target)
+
+			Exit Sub
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' End Plug (Profile.ess)					'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	End Select
+
+	Call PlayerMsg(Index, TextSay(0) & " isn't a valid command.", BRIGHTRED)
+End Sub
+
+
+
+
+
+
+
+
+
+
+

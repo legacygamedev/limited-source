@@ -1,0 +1,7 @@
+Los accesos son una de las cosas mas importantes en el servidor, ten cuidado a quien le das privilejios
+
+0 - Este es el acceso normal de todos los jugadores. Obtienes este acceso cuando creas tu personaje!
+1 - Los moderadores son las personas que controlar el juego. Pueden hechar gente, callarla, etc.
+2 - Mapeadores, son las personas que modificaran los mapas del juego.
+3 - Desarrolladores son las personas que pueden crear items, npcs, hechizos, etc.
+4 - Administrador! Puede hacer todo lo que quiera, basicamente el dueño del juego!

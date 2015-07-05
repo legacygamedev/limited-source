@@ -1,0 +1,17 @@
+frmServer = 88, 116, 876, 589, , 66, 87, 854, 560, C
+modDatabase = 66, 87, 876, 559, 
+modEncryption = 0, 0, 810, 472, 
+modGameLogic = 110, 145, 898, 618, 
+modGeneral = 132, 174, 920, 647, 
+clsBuffer = 88, 116, 876, 589, C
+modHandleData = 22, 29, 832, 501, 
+modNpc = 22, 29, 984, 612, 
+modPlayer = 0, 0, 810, 472, 
+modServerTCP = 88, 116, 898, 588, 
+modSysTray = 66, 87, 876, 559, 
+modText = 154, 203, 964, 675, 
+modTypes = 154, 203, 964, 675, 
+modVariables = 44, 58, 832, 531, Z
+modParty = 22, 29, 832, 501, 
+modLoot = 44, 58, 854, 530, 
+modQuest = 0, 0, 810, 472, 

@@ -1,0 +1,14 @@
+Basics Of Map Editing
+
+First off make sure you have a character with access of 2 or higher. Login with that character. In the chat type /mapeditor and hit enter. A new form should appear.
+
+Starting off you will want to play around with the many features the map editor includes. Try laying some tiles down by selecting the tile and clicking on the blank map. You will notice the frame called Layers. Depending on which one you click changes how the tile is placed on the map. Im not convering this topic though, you just need to play with it.
+
+When you click the Attributes radio button you will notice the frame called Attributes. Depending on the attribute you choose they do a variety of things. The basics ones are:
+Blocked - This will block anyone from walking on that tile.
+Warp - Warps player to selected spot.
+Item - Adds an item to the ground.
+NPC Avoid - NPCs cant walk on that tile, only players can.
+Those are just the main ones. There are many more to choose from.
+
+Now click the properties button. There are two tabs, General and NPCs. The General tab is pretty straight forward, nothing too special there. Click the NPCs tab. This is where you can choose which NPCs will spawn on the map. The copy buttons will copy the NPC's field above them.

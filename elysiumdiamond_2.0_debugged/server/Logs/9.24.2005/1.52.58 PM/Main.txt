@@ -1,0 +1,14 @@
+
+Received connection from 127.0.0.1.
+Account HunterXI has been created.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+HunterXI has logged in from 127.0.0.1.
+HunterXI/dsdsds has began playing D-Bugged.
+dsdsds has disconnected from D-Bugged.
+Connection from 127.0.0.1 has been terminated.
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!

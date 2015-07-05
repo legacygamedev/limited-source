@@ -1,0 +1,32 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: OnArenaDeath.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: OnArenaDeath					'
+' Brief: executes when a player dies in an arena.		'
+' Parameters:							'
+'	Attacker: the index number of the player who attacked.	'
+'	Victim: the index number of the player who died.	'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub OnArenaDeath(Attacker, Victim)
+	Dim Map
+	Dim X
+	Dim Y
+
+	Call GlobalMsg(GetPlayerName(Victim) & " has been defeated in the arena by " & GetPlayerName(Attacker), BRIGHTRED)
+
+	Call SetPlayerHP(Victim, GetPlayerMaXHP(Victim))
+	Call SetPlayerMP(Victim, GetPlayerMaXMP(Victim))
+	Call SendHP(Victim)
+	Call SendMP(Victim)
+
+	Map = GetTileData1(GetPlayerMap(Victim), GetPlayerX(Victim), GetPlayerY(Victim))
+	X = GetTileData2(GetPlayerMap(Victim), GetPlayerX(Victim), GetPlayerY(Victim))
+	Y = GetTileData3(GetPlayerMap(Victim), GetPlayerX(Victim), GetPlayerY(Victim))
+
+	Call PlayerWarp(Victim, Map, X, Y)
+End Sub

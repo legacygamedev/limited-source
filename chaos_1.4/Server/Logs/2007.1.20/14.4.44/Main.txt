@@ -1,0 +1,53 @@
+
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/demo has began playing Elysium Diamond.
+demo has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/demo has began playing Elysium Diamond.
+demo has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/demo has began playing Elysium Diamond.
+demo has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/demo has began playing Elysium Diamond.
+demo has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/demo has began playing Elysium Diamond.
+demo has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Received connection from 68.118.88.112.
+Connection from 68.118.88.112 has been terminated.
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/demo has began playing Elysium Diamond.
+demo has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/demo has began playing Elysium Diamond.
+demo has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/demo has began playing Elysium Diamond.
+demo has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Received connection from 69.156.36.71.
+Connection from 69.156.36.71 has been terminated.
+Received connection from 69.156.36.71.
+Connection from 69.156.36.71 has been terminated.
+Received connection from 68.118.88.112.
+demo has logged in from 68.118.88.112.
+demo/demo has began playing Elysium Diamond.
+demo has disconnected from Elysium Diamond.
+Connection from 68.118.88.112 has been terminated.
+Chat Logs Have Been Saved!

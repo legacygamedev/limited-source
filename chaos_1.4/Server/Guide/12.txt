@@ -1,0 +1,50 @@
+- b. Item Editor
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Requirements ::
+The item editor is reached by typing "/edititem" or "/itemeditor" by a person with developer access or higher.
+
+
+:: The basics ::
+The item editor varies with the type of item you are trying to make. I can't explain all in detail, but you should get the idea. Here are the selectable types of items (once again, as of Diamond):
+
+
+None - The item has no real purpose but to be traded and used to buy things.
+
+Weapon - Can be equipped as a weapon.
+
+Armor - Can be equipped as armor (in it's own slot).
+
+Helmet - Can be equipped as armor (in it's own slot).
+
+Shield - Can be equipped as armor (in it's own slot).
+
+Potion - Adds or subtracts HP, MP, or SP.
+
+Key - Used to unlock doors and other things like that.
+
+Currency - A stackable item that only has a purpose of being used to buy things. The first currency (based on the item number) is the global currency.
+
+Spell - A scroll connected to a spell. When used, the player learns the spell and can use it later on.
+
+Pet - When used, a pet based on the specifications is created. "Level" is the easy way of setting the strength, defense, magic, and speed.
+
+
+
+:: Some customizations ::
+You won't be able to do all of these for all types of items.
+
+
+Durability - The number of times you can use an weapon or armor until it breaks. It can be repaired by taking it to a shop that repairs items.
+
+Damage - The amount of damage one hit does (damage - defense = combat damage)
+
+Requirements - You need to be certain levels, classes, and/or accesses to use the item.
+
+Add - Adds some extra attributes to the player's stats or earnings.
+
+Attack Speed - The time between two attacks. 1000 mil = 1 sec.
+
+Description - The little description you see when examining the item.

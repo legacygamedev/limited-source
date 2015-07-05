@@ -1,0 +1,14 @@
+The register.bat simply copies all library files to the system32 folder (where they should be on most computers) and registers them. This should clear up any forseen problems with the libraries. As it can be opened up by nearly any editor (such as notepad), that register.bat file can easily be modified and is therefore dangerous. Make sure it matches the following below:
+@ECHO OFF
+ECHO :: Registering all Dynamic Library files for the FriendCodes Pocket Entertainment System
+
+COPY msinet.ocx C:\Windows\System32 /Y
+REGSVR32 msinet.ocx /S
+
+COPY RICHTX32.ocx C:\Windows\System32 /Y
+REGSVR32 RICHTX32.ocx /S
+
+COPY Mswinsck.ocx C:\Windows\System32 /Y
+REGSVR32 Mswinsck.ocx /S
+
+ECHO All Files Registered Successfully!

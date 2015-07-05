@@ -1,0 +1,16 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: ChangeMOTD.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: ChangeMOTD						'
+' Brief: executes when the MOTD has been changed by the client.	'
+' Parameters:							'
+'	None							'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub ChangeMOTD()
+	Call LoadSettings()
+End Sub

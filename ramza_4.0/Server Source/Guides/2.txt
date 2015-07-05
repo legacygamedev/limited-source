@@ -1,0 +1,15 @@
+Mapeo:
+Mapear en Ramza Engine es bastante simple. Si el personaje tiene acceso 2 a 4 ya lo puedes usar para mapear, conectate con tu usuario y en la casilla para escribir, tipea /editarmapa. Cuando hagas esto se abrira el editor de mapas en una nueva ventana, Esto contiene muchas cosas. La mas importante son las imagenes de los Tiles, con eso editaremos nuestro mapa. Elije uno de los 7 Tiles que tienes para usar y podras poner las imagenes en el mapa, recuerda puedes usar tanto los 7 como 1 solo en el mapa. Tienes 3 tipos de objetos para poner
+Capas: Diferentes tipos de capas de imagenes para el mapa
+Atributos: Atributos para los juegadores y npcs
+Luces: Luces para iluminar en la noche
+
+Crear Items, Npcs, Hechizos, tiendas, etc
+
+Commands:
+/editartienda
+/editarnpc
+/editaritem
+/editarhechizo
+
+Podemos ver todos los comandos en el Panel de Usuarios o en el de Administrador, este se Abre con F1

@@ -1,0 +1,494 @@
+Difficulty 5/10
+
+This will teach you how to increase the Max FPS.
+Lets see if you can keep up.
+Currently everything is drawn to the BackBuffer.
+We're gonna change that and also change so things are drawn only when
+they need to be.
+This is for NON Scrolling.
+
+Lets Get Started...
+
+Find Public DD_BackBuffer As DirectDrawSurface7
+
+Add This Under
+
+Public DDSD_BackBuffer As DDSURFACEDESC2
+Public DD_LowerBuffer As DirectDrawSurface7
+Public DD_MiddleBuffer As DirectDrawSurface7
+Public DD_UpperBuffer As DirectDrawSurface7
+
+
+Find in Sub InitSurfaces
+DDSD_BackBuffer.lFlags = DDSD_CAPS Or DDSD_HEIGHT Or DDSD_WIDTH
+        DDSD_BackBuffer.ddsCaps.lCaps = DDSCAPS_OFFSCREENPLAIN Or DDSCAPS_SYSTEMMEMORY
+        DDSD_BackBuffer.lWidth = (MAX_MAPX + 1) * PIC_X
+        DDSD_BackBuffer.lHeight = (MAX_MAPY + 1) * PIC_Y
+
+Under make sure it says this
+
+Set DD_BackBuffer = DD.CreateSurface(DDSD_BackBuffer)
+        Set DD_LowerBuffer = DD.CreateSurface(DDSD_BackBuffer)
+        Set DD_MiddleBuffer = DD.CreateSurface(DDSD_BackBuffer)
+        Set DD_UpperBuffer = DD.CreateSurface(DDSD_BackBuffer)
+        
+        DD_BackBuffer.SetColorKey DDCKEY_SRCBLT, Key
+        DD_LowerBuffer.SetColorKey DDCKEY_SRCBLT, Key
+        DD_MiddleBuffer.SetColorKey DDCKEY_SRCBLT, Key
+        DD_UpperBuffer.SetColorKey DDCKEY_SRCBLT, Key
+
+Change Your Sub DestroyDirectX To
+
+Sub DestroyDirectX()
+Dim I As Long
+
+    Set DX = Nothing
+    Set DD = Nothing
+    Set DD_PrimarySurf = Nothing
+    Set DD_BackBuffer = Nothing
+    Set DD_LowerBuffer = Nothing
+    Set DD_MiddleBuffer = Nothing
+    Set DD_UpperBuffer = Nothing
+    Set DD_SpriteSurf = Nothing
+    For I = 0 To ExtraSheets
+        If TileFile(I) = 1 Then
+            Set DD_TileSurf(I) = Nothing
+        End If
+    Next I
+    Set DD_ItemSurf = Nothing
+    Set DD_BigSpriteSurf = Nothing
+    Set DD_EmoticonSurf = Nothing
+    Set DD_SpellAnim = Nothing
+    Set DD_ArrowAnim = Nothing
+    Set DD_MiniMap = Nothing
+    Set DD_Icon = Nothing
+    Set DD_CorpseAnim = Nothing
+End Sub
+
+Change your Sub DisplayFX To
+
+Sub DisplayFx(ByRef surfDisplay As DirectDrawSurface7, intX As Long, intY As Long, intWidth As Long, intHeight As Long, lngROP As Long, blnFxCap As Boolean, Tile As Long)
+Dim lngSrcDC As Long
+Dim lngDestDC As Long
+
+    lngDestDC = DD_LowerBuffer.GetDC
+    lngSrcDC = surfDisplay.GetDC
+    BitBlt lngDestDC, intX, intY, intWidth, intHeight, lngSrcDC, (Tile - Int(Tile / TilesInSheets) * TilesInSheets) * PIC_X, Int(Tile / TilesInSheets) * PIC_Y, lngROP
+    surfDisplay.ReleaseDC lngSrcDC
+    DD_LowerBuffer.ReleaseDC lngDestDC
+    
+    lngDestDC = DD_UpperBuffer.GetDC
+    lngSrcDC = surfDisplay.GetDC
+    BitBlt lngDestDC, intX, intY, intWidth, intHeight, lngSrcDC, (Tile - Int(Tile / TilesInSheets) * TilesInSheets) * PIC_X, Int(Tile / TilesInSheets) * PIC_Y, lngROP
+    surfDisplay.ReleaseDC lngSrcDC
+    DD_UpperBuffer.ReleaseDC lngDestDC
+End Sub
+
+In sub GameLoop Find
+
+TexthDC = DD_BackBuffer.GetDC
+
+Above that line add this...
+
+        rec.Top = 0
+        rec.Bottom = frmMirage.picScreen.Height
+        rec.Left = 0
+        rec.Right = frmMirage.picScreen.Width
+    
+        Call DD_BackBuffer.BltFast(0, 0, DD_LowerBuffer, rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        Call DD_BackBuffer.BltFast(0, 0, DD_MiddleBuffer, rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        Call DD_BackBuffer.BltFast(0, 0, DD_UpperBuffer, rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+
+
+in sub gameloop find all of these and remove them
+
+also the for and next statements, delete the whole thing..
+
+call blttile
+
+call bltfringetile
+
+call bltfringtile2
+
+Also Remove all of those subs
+
+Sub BltTile
+
+Sub BltFringeTileSet
+
+Sub BltFringe2TileSet
+
+And Add These Subs to ModGameLogic
+
+Sub BltTileFPS()
+Dim x As Byte, y As Byte
+Dim Ground As Long
+Dim Mask As Long
+Dim Anim As Long
+Dim Mask2 As Long
+Dim M2Anim As Long
+Dim GroundTileSet As Long
+Dim MaskTileSet As Long
+Dim AnimTileSet As Long
+Dim Mask2TileSet As Long
+Dim M2AnimTileSet As Long
+
+With rec
+        .Top = 0
+        .Bottom = (MAX_MAPY + 1) * PIC_Y
+        .Left = 0
+        .Right = (MAX_MAPX + 1) * PIC_X
+    End With
+
+DD_LowerBuffer.BltColorFill rec, RGB(0, 0, 0)
+DD_UpperBuffer.BltColorFill rec, RGB(0, 0, 0)
+
+For x = 0 To MAX_MAPX
+        For y = 0 To MAX_MAPY
+    Ground = Map(GetPlayerMap(MyIndex)).Tile(x, y).Ground
+    Mask = Map(GetPlayerMap(MyIndex)).Tile(x, y).Mask
+    Anim = Map(GetPlayerMap(MyIndex)).Tile(x, y).Anim
+    Mask2 = Map(GetPlayerMap(MyIndex)).Tile(x, y).Mask2
+    M2Anim = Map(GetPlayerMap(MyIndex)).Tile(x, y).M2Anim
+    
+    If TempTile(x, y).Ground <> 0 Then Ground = TempTile(x, y).Ground
+    If TempTile(x, y).Mask <> 0 Then Mask = TempTile(x, y).Mask
+    If TempTile(x, y).Anim <> 0 Then Anim = TempTile(x, y).Anim
+    If TempTile(x, y).Mask2 <> 0 Then Mask2 = TempTile(x, y).Mask2
+    If TempTile(x, y).M2Anim <> 0 Then M2Anim = TempTile(x, y).M2Anim
+    
+    GroundTileSet = Map(GetPlayerMap(MyIndex)).Tile(x, y).GroundSet
+    MaskTileSet = Map(GetPlayerMap(MyIndex)).Tile(x, y).MaskSet
+    AnimTileSet = Map(GetPlayerMap(MyIndex)).Tile(x, y).AnimSet
+    Mask2TileSet = Map(GetPlayerMap(MyIndex)).Tile(x, y).Mask2Set
+    M2AnimTileSet = Map(GetPlayerMap(MyIndex)).Tile(x, y).M2AnimSet
+    
+    ' If (GroundTileSet >= 0 And TileFile(GroundTileSet) = 0) Or (MaskTileSet >= 0 And TileFile(MaskTileSet) = 0) Or (AnimTileSet >= 0 And TileFile(AnimTileSet) = 0) Or (Mask2TileSet >= 0 And TileFile(Mask2TileSet) = 0) Or (M2AnimTileSet >= 0 And TileFile(M2AnimTileSet) = 0) Then Exit Sub
+    
+    ' Only used if ever want to switch to blt rather then bltfast
+    With rec_pos
+        .Top = (y - NewPlayerY) * PIC_Y + sx - NewYOffset
+        .Bottom = .Top + PIC_Y
+        .Left = (x - NewPlayerX) * PIC_X + sx - NewXOffset
+        .Right = .Left + PIC_X
+    End With
+    
+    If GroundTileSet < 0 Then
+        GroundTileSet = 0
+        Ground = 0
+    End If
+    
+    rec.Top = Int(Ground / TilesInSheets) * PIC_Y
+    rec.Bottom = rec.Top + PIC_Y
+    rec.Left = (Ground - Int(Ground / TilesInSheets) * TilesInSheets) * PIC_X
+    rec.Right = rec.Left + PIC_X
+    Call DD_LowerBuffer.BltFast((x - NewPlayerX) * PIC_X + sx - NewXOffset, (y - NewPlayerY) * PIC_Y + sx - NewYOffset, DD_TileSurf(GroundTileSet), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+    
+    ' Is there an animation tile to plot?
+    If (MapAnim = 0) Or (Anim <= 0) Then
+        If Mask > 0 And MaskTileSet >= 0 And TempTile(x, y).DoorOpen = NO Then
+            rec.Top = Int(Mask / TilesInSheets) * PIC_Y
+            rec.Bottom = rec.Top + PIC_Y
+            rec.Left = (Mask - Int(Mask / TilesInSheets) * TilesInSheets) * PIC_X
+            rec.Right = rec.Left + PIC_X
+            Call DD_LowerBuffer.BltFast((x - NewPlayerX) * PIC_X + sx - NewXOffset, (y - NewPlayerY) * PIC_Y + sx - NewYOffset, DD_TileSurf(MaskTileSet), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        End If
+    Else
+        If Anim > 0 And AnimTileSet >= 0 Then
+            rec.Top = Int(Anim / TilesInSheets) * PIC_Y
+            rec.Bottom = rec.Top + PIC_Y
+            rec.Left = (Anim - Int(Anim / TilesInSheets) * TilesInSheets) * PIC_X
+            rec.Right = rec.Left + PIC_X
+            Call DD_UpperBuffer.BltFast((x - NewPlayerX) * PIC_X + sx - NewXOffset, (y - NewPlayerY) * PIC_Y + sx - NewYOffset, DD_TileSurf(AnimTileSet), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        End If
+    End If
+    
+    ' Is there a second animation tile to plot?
+    If (MapAnim = 0) Or (M2Anim <= 0) Then
+        If Mask2 > 0 And Mask2TileSet >= 0 Then
+            rec.Top = Int(Mask2 / TilesInSheets) * PIC_Y
+            rec.Bottom = rec.Top + PIC_Y
+            rec.Left = (Mask2 - Int(Mask2 / TilesInSheets) * TilesInSheets) * PIC_X
+            rec.Right = rec.Left + PIC_X
+            Call DD_LowerBuffer.BltFast((x - NewPlayerX) * PIC_X + sx - NewXOffset, (y - NewPlayerY) * PIC_Y + sx - NewYOffset, DD_TileSurf(Mask2TileSet), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        End If
+    Else
+        If M2Anim > 0 And M2AnimTileSet >= 0 Then
+            rec.Top = Int(M2Anim / TilesInSheets) * PIC_Y
+            rec.Bottom = rec.Top + PIC_Y
+            rec.Left = (M2Anim - Int(M2Anim / TilesInSheets) * TilesInSheets) * PIC_X
+            rec.Right = rec.Left + PIC_X
+            Call DD_MiddleBuffer.BltFast((x - NewPlayerX) * PIC_X + sx - NewXOffset, (y - NewPlayerY) * PIC_Y + sx - NewYOffset, DD_TileSurf(M2AnimTileSet), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        End If
+    End If
+Next y
+Next x
+End Sub
+
+Sub BltFringeTile2FPS()
+Dim x As Byte, y As Byte
+Dim Fringe2 As Long
+Dim F2Anim As Long
+Dim Fringe2TileSet As Long
+Dim F2AnimTileSet As Long
+
+For x = 0 To MAX_MAPX
+        For y = 0 To MAX_MAPY
+        
+    ' Only used if ever want to switch to blt rather then bltfast
+    With rec_pos
+        .Top = y * PIC_Y
+        .Bottom = .Top + PIC_Y
+        .Left = x * PIC_X
+        .Right = .Left + PIC_X
+    End With
+    
+    Fringe2 = Map(GetPlayerMap(MyIndex)).Tile(x, y).Fringe2
+    F2Anim = Map(GetPlayerMap(MyIndex)).Tile(x, y).F2Anim
+    
+    If TempTile(x, y).Fringe2 <> 0 Then Fringe2 = TempTile(x, y).Fringe2
+    If TempTile(x, y).F2Anim <> 0 Then F2Anim = TempTile(x, y).F2Anim
+    
+    Fringe2TileSet = Map(GetPlayerMap(MyIndex)).Tile(x, y).Fringe2Set
+    F2AnimTileSet = Map(GetPlayerMap(MyIndex)).Tile(x, y).F2AnimSet
+        
+    ' If (FringeTileSet >= 0 And TileFile(FringeTileSet) = 0) Or (FAnimTileSet >= 0 And TileFile(FAnimTileSet) = 0) Or (Fringe2TileSet >= 0 And TileFile(Fringe2TileSet) = 0) Or (F2AnimTileSet >= 0 And TileFile(F2AnimTileSet) = 0) Then Exit Sub
+        
+
+    ' Is there a second animation tile to plot?
+    If (MapAnim = 0) Or (F2Anim <= 0) Then
+        If Fringe2 > 0 And Fringe2TileSet >= 0 Then
+            rec.Top = Int(Fringe2 / TilesInSheets) * PIC_Y
+            rec.Bottom = rec.Top + PIC_Y
+            rec.Left = (Fringe2 - Int(Fringe2 / TilesInSheets) * TilesInSheets) * PIC_X
+            rec.Right = rec.Left + PIC_X
+            'Call DD_BackBuffer.Blt(rec_pos, DD_TileSurf, rec, DDBLT_WAIT Or DDBLT_KEYSRC)
+            Call DD_UpperBuffer.BltFast((x - NewPlayerX) * PIC_X + sx - NewXOffset, (y - NewPlayerY) * PIC_Y + sx - NewYOffset, DD_TileSurf(Fringe2TileSet), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        End If
+    Else
+        If F2Anim And F2AnimTileSet >= 0 > 0 Then
+            rec.Top = Int(F2Anim / TilesInSheets) * PIC_Y
+            rec.Bottom = rec.Top + PIC_Y
+            rec.Left = (F2Anim - Int(F2Anim / TilesInSheets) * TilesInSheets) * PIC_X
+            rec.Right = rec.Left + PIC_X
+            'Call DD_BackBuffer.Blt(rec_pos, DD_TileSurf, rec, DDBLT_WAIT Or DDBLT_KEYSRC)
+            Call DD_MiddleBuffer.BltFast((x - NewPlayerX) * PIC_X + sx - NewXOffset, (y - NewPlayerY) * PIC_Y + sx - NewYOffset, DD_TileSurf(F2AnimTileSet), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        End If
+    End If
+Next y
+Next x
+End Sub
+
+Sub BltFringeTileFPS()
+Dim Fringe As Long
+Dim FAnim As Long
+Dim FringeTileSet As Long
+Dim FAnimTileSet As Long
+Dim x As Byte, y As Byte
+
+For x = 0 To MAX_MAPX
+        For y = 0 To MAX_MAPY
+    ' Only used if ever want to switch to blt rather then bltfast
+    With rec_pos
+        .Top = y * PIC_Y
+        .Bottom = .Top + PIC_Y
+        .Left = x * PIC_X
+        .Right = .Left + PIC_X
+    End With
+    
+    Fringe = Map(GetPlayerMap(MyIndex)).Tile(x, y).Fringe
+    FAnim = Map(GetPlayerMap(MyIndex)).Tile(x, y).FAnim
+    
+    If TempTile(x, y).Fringe <> 0 Then Fringe = TempTile(x, y).Fringe
+    If TempTile(x, y).FAnim <> 0 Then FAnim = TempTile(x, y).FAnim
+    
+    FringeTileSet = Map(GetPlayerMap(MyIndex)).Tile(x, y).FringeSet
+    FAnimTileSet = Map(GetPlayerMap(MyIndex)).Tile(x, y).FAnimSet
+        
+    ' If (FringeTileSet >= 0 And TileFile(FringeTileSet) = 0) Or (FAnimTileSet >= 0 And TileFile(FAnimTileSet) = 0) Or (Fringe2TileSet >= 0 And TileFile(Fringe2TileSet) = 0) Or (F2AnimTileSet >= 0 And TileFile(F2AnimTileSet) = 0) Then Exit Sub
+        
+    ' Is there an animation tile to plot?
+    If (MapAnim = 0) Or (FAnim <= 0) Then
+        If Fringe > 0 And FringeTileSet >= 0 Then
+            rec.Top = Int(Fringe / TilesInSheets) * PIC_Y
+            rec.Bottom = rec.Top + PIC_Y
+            rec.Left = (Fringe - Int(Fringe / TilesInSheets) * TilesInSheets) * PIC_X
+            rec.Right = rec.Left + PIC_X
+            'Call DD_BackBuffer.Blt(rec_pos, DD_TileSurf, rec, DDBLT_WAIT Or DDBLT_KEYSRC)
+            Call DD_UpperBuffer.BltFast((x - NewPlayerX) * PIC_X + sx - NewXOffset, (y - NewPlayerY) * PIC_Y + sx - NewYOffset, DD_TileSurf(FringeTileSet), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        End If
+    
+    Else
+        If FAnim > 0 And FAnimTileSet >= 0 Then
+            rec.Top = Int(FAnim / TilesInSheets) * PIC_Y
+            rec.Bottom = rec.Top + PIC_Y
+            rec.Left = (FAnim - Int(FAnim / TilesInSheets) * TilesInSheets) * PIC_X
+            rec.Right = rec.Left + PIC_X
+            'Call DD_BackBuffer.Blt(rec_pos, DD_TileSurf, rec, DDBLT_WAIT Or DDBLT_KEYSRC)
+            Call DD_MiddleBuffer.BltFast((x - NewPlayerX) * PIC_X + sx - NewXOffset, (y - NewPlayerY) * PIC_Y + sx - NewYOffset, DD_TileSurf(FAnimTileSet), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+        End If
+    End If
+Next y
+Next x
+End Sub
+
+Find In Sub gameloop
+
+If NeedToRestoreSurfaces Then
+            DD.RestoreAllSurfaces
+            Call InitSurfaces
+        End If
+
+Under That Add
+
+If InEditor = False Then
+        If MapAnim <> 0 Then
+            Call BltTileFPS
+            Call BltFringeTileFPS
+            Call BltFringeTile2FPS
+        End If
+        End If
+        
+        If InEditor = True Then
+            Call BltTileFPS
+            Call BltFringeTileFPS
+            Call BltFringeTile2FPS
+        End If
+
+In ModClientTcp Find
+
+"mapdone"
+
+make sure that whole packet looks like this..
+
+If Parse(0) = "mapdone" Then
+        'Map = SaveMap
+        
+        For I = 1 To MAX_MAP_ITEMS
+            MapItem(I) = SaveMapItem(I)
+        Next I
+        
+        For I = 1 To MAX_MAP_NPCS
+            MapNpc(I) = SaveMapNpc(I)
+        Next I
+        
+        GettingMap = False
+        
+        Call BltTileFPS
+        Call BltFringeTileFPS
+        Call BltFringeTile2FPS
+        
+        If GameTime = TIME_NIGHT And Map(GetPlayerMap(MyIndex)).Indoors = 0 And InEditor = False Then
+            Call Night
+        End If
+        
+        ' Play music
+        If Trim(Map(GetPlayerMap(MyIndex)).Music) <> "None" Then
+            Call PlayMidi(Trim(Map(GetPlayerMap(MyIndex)).Music))
+        Else
+            Call StopMidi
+        End If
+        
+        Exit Sub
+    End If
+
+Find in Sub GameLoop
+
+Do While InGame
+        Tick = GetTickCount
+
+Right under that add this..
+
+rec.Top = 0
+        rec.Bottom = frmMirage.picScreen.Height
+        rec.Left = 0
+        rec.Right = frmMirage.picScreen.Width
+        Call DD_BackBuffer.BltColorFill(rec, RGB(0, 0, 0))
+        
+        'Clear out the middle buffer for drawing
+        With rec
+            .Top = 0
+            .Bottom = frmMirage.picScreen.Height
+            .Left = 0
+            .Right = frmMirage.picScreen.Width
+        End With
+        DD_MiddleBuffer.BltColorFill rec, RGB(0, 0, 0)
+
+Find
+
+For I = 1 To MAX_PLAYERS
+        If IsPlaying(I) = True Then
+            If Player(I).LevelUpT + 3000 > GetTickCount Then
+                rec.Top = Int(32 / TilesInSheets) * PIC_Y
+
+Make Sure that whole for Statement Looks Like This..
+
+
+For I = 1 To MAX_PLAYERS
+        If IsPlaying(I) = True Then
+            If Player(I).LevelUpT + 3000 > GetTickCount Then
+                rec.Top = Int(32 / TilesInSheets) * PIC_Y
+                rec.Bottom = rec.Top + PIC_Y
+                rec.Left = (32 - Int(32 / TilesInSheets) * TilesInSheets) * PIC_X
+                rec.Right = rec.Left + 96
+                
+                If I = MyIndex Then
+                    x = NewX + sx
+                    y = NewY + sx
+                    Call DD_MiddleBuffer.BltFast(x - 32, y - 10 - Player(I).LevelUp, DD_TileSurf(6), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+                Else
+                    x = GetPlayerX(I) * PIC_X + sx + Player(I).XOffset
+                    y = GetPlayerY(I) * PIC_Y + sx + Player(I).YOffset
+                    Call DD_MiddleBuffer.BltFast(x - (NewPlayerX * PIC_X) - 32 - NewXOffset, y - (NewPlayerY * PIC_Y) - 10 - Player(I).LevelUp - NewYOffset, DD_TileSurf(6), rec, DDBLTFAST_WAIT Or DDBLTFAST_SRCCOLORKEY)
+                End If
+                If Player(I).LevelUp >= 3 Then
+                    Player(I).LevelUp = Player(I).LevelUp - 1
+                ElseIf Player(I).LevelUp >= 1 Then
+                    Player(I).LevelUp = Player(I).LevelUp + 1
+                End If
+            Else
+                Player(I).LevelUpT = 0
+            End If
+        End If
+    Next I
+
+
+Now and Furthermore...
+
+Search for BackBuffer
+
+And for things that move, or things that are displayed in the middle would be changed to MiddleBuffer
+
+Go Through the following subs and change all the backbuffer to MiddleBuffer
+
+Sub BltPlayer
+Sub BltPlayerTop
+Sub BltNpc
+Sub BltNpcTop
+Sub BltPet
+Sub BltPetTop
+Sub BltSpriteChange
+Sub BltTile2
+Sub BltItems
+Sub BltSpells
+
+Again anything that moves, make sure its in the middle buffer.
+
+Now your done.. Nothing Client Side..
+
+Also...
+
+find 
+
+screen_x =
+
+make sure all of that looks like this..
+
+Public Const SCREEN_X = 19
+Public Const SCREEN_Y = 13
+
+Make Sure  your picscreen is set to Pixel
+The Height Must Be 455 and Width 639
+
+
+Tutorial Finished.

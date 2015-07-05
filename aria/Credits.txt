@@ -1,0 +1,4 @@
+Baron - Various Ideas
+Elysium Source Community - Various Ideas
+Emblem - Most Additions
+Topher - Additions, DirectX 8 Conversion (Both not in this version)

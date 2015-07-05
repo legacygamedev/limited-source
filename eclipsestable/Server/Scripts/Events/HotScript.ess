@@ -1,0 +1,32 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: HotScript.ess						'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: HotScript						'
+' Brief: executes when a hotkey is pressed client-side.		'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Key: the pressed key.					'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub HotScript(Index, Key)
+	Select Case Key
+		Case KEY_PAGEUP
+			Call PlayerMsg(Index, "You pressed the PageUp key.", BRIGHTRED)
+
+		Case KEY_DELETE
+			Call PlayerMsg(Index, "You pressed the Delete key.", BRIGHTRED)
+
+		Case KEY_END
+			Call PlayerMsg(Index, "You pressed the End key.", BRIGHTRED)
+
+		Case KEY_PAGEDOWN
+			Call PlayerMsg(Index, "You pressed the PageDown key.", BRIGHTRED)
+
+		Case Else
+			Call PlayerMsg(Index, "An unknown key has been pressed.", BRIGHTRED)
+	End Select
+End Sub

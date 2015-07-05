@@ -1,0 +1,10 @@
+
+Received connection from 127.0.0.1.
+mero has logged in from 127.0.0.1.
+mero/TheYellowMole has began playing D-Bugged.
+TheYellowMole has disconnected from D-Bugged.
+Connection from 127.0.0.1 has been terminated.
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!

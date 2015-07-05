@@ -1,0 +1,11 @@
+
+Received connection from 127.0.0.1.
+Admin has logged in from 127.0.0.1.
+Admin/Admin has began playing GameName.
+Admin has disconnected from GameName.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+Admin has logged in from 127.0.0.1.
+Admin/Admin has began playing GameName.
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!

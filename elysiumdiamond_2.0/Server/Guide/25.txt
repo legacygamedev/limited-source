@@ -1,0 +1,25 @@
+- b. Usable Subs
+Elysium Guide v 1.0
+Written by Cruzn
+
+
+:: Usable Subs ::
+          Sub JoinGame(index) - This sub executes once someone enters the game. Generally contains the welcome message and MOTD. This sub can be used to run a command for newbies, like giving them weapons, or for setting other variables for special events.
+
+          Sub LeftGame(index) - This sub executes once someone leaves the game. This sub is most useful for checking a character when it exits so there are no problems when they return.
+
+          Sub PlayerLevelUp(index) - This sub runs through the level up process. It displays a message and awards the points for levels.
+
+          Sub UsingStatPoints(index, PointType) - This sub runs through the point distribution.
+
+          Sub ScriptedTile(index, Script) - This sub is for your scripted tiles. The tiles are executed when someone steps onto a tile holding the scripted attribute. You place the attribute down through the map editor. Each script in here is given a case number for identification, be sure to match it up correctly!
+
+          Sub PlayerPrompt(index, Prompt, Value) - This sub is for your message box prompts, the yes or no questions. =)
+
+          Sub Commands(index) - In this sub you will find all your commands. These are the commands you use in game and they are the "Slash commands."
+
+          Sub DropItems(index) - This sub is for dropping items onto your map. It executes ondeath.
+
+          Sub OnDeath(index) - This sub holds the information when you die. It restores the player to their respawn point and executes when they die.
+
+    With the source code it is possible to add more subs. There is currently a tutorial, written by yours truely, that explains this. < http://www.splamm.com/elysium/forums/ >

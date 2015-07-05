@@ -1,0 +1,563 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+  Persistable = 0  'NotPersistable
+  DataBindingBehavior = 0  'vbNone
+  DataSourceBehavior  = 0  'vbNone
+  MTSTransactionMode  = 0  'NotAnMTSObject
+END
+Attribute VB_Name = "clsMap"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+Option Explicit
+
+''
+' This class represents a map account. It provides methods
+' to handle data manipulation along with its own saving
+' and loading methods.
+'
+' @version 1.0.0
+' @author smchronos
+'
+
+''
+' The structure representing the data stored in the Map Class.
+'
+Private Type MapRec
+    name As String * 20
+    Revision As Long
+    Moral As Byte
+    Up As Integer
+    Down As Integer
+    Left As Integer
+    Right As Integer
+    Music As Integer
+    BootMap As Integer
+    BootX As Byte
+    BootY As Byte
+    Shop As Integer
+    Indoors As Byte
+    Tile(0 To 15, 0 To 11) As clsTile
+    NPC(1 To 14) As Long
+    Server As Boolean
+    Respawn As Byte
+    Weather As Byte
+End Type
+
+Private mapData As MapRec
+Private tilesInitialized As Boolean '// Whether or not the tiles have been initialized
+
+''
+' This subroutine is called when the class instance is initialized.
+' This merely sets all of the data to default values.
+' No parameters are allowed by VB6, unfortunately.
+'
+Private Sub Class_Initialize()
+    reset
+    initTiles
+End Sub
+
+''
+' This subroutine is called when the class instance is deleted.
+' This merely sets all of the data to empty values as a safety precaution.
+' No parameters are allowed by VB6, unfortunately.
+'
+Private Sub Class_Terminate()
+    reset
+End Sub
+
+''
+' This subroutine clears all of the fields in this class's data structure.
+'
+Public Sub reset()
+    Dim x As Byte, y As Byte
+    mapData.name = ""
+    mapData.Revision = 0
+    mapData.Moral = 0
+    mapData.Up = 0
+    mapData.Down = 0
+    mapData.Left = 0
+    mapData.Right = 0
+    mapData.Music = 0
+    mapData.BootMap = 0
+    mapData.BootX = 0
+    mapData.BootY = 0
+    mapData.Shop = 0
+    mapData.Indoors = 0
+    
+    '// Set all tiles to nothing
+    For y = 0 To 11
+        For x = 0 To 15
+            Set mapData.Tile(x, y) = Nothing
+        Next x
+    Next y
+    
+    '// Loop through and clear all NPC numbers
+    For x = 1 To 14
+        mapData.NPC(x) = 0
+    Next x
+    mapData.Server = 0
+    mapData.Respawn = 0
+    mapData.Weather = 0
+    
+    '// Tiles are no longer initialized
+    tilesInitialized = False
+End Sub
+
+''
+' This subroutine clears the memory associated with this Map.
+'
+Public Sub wipeMemory()
+    zeroMemory mapData, Len(mapData)
+End Sub
+
+''
+' This subroutine creates a new instance of each tile in the Map's data.
+'
+Public Sub initTiles()
+    Dim y As Long, x As Long
+    '// Create a new instance of each tile
+    For y = 0 To 11
+        For x = 0 To 15
+            Set mapData.Tile(x, y) = New clsTile
+        Next x
+    Next y
+    
+    '// Tiles are now initialized
+    tilesInitialized = True
+End Sub
+
+''
+' This subroutine loads the Map's data from a file.
+'
+' @param fileName The string containing the path to the Map file.
+'
+Public Sub loadMapFromFile(ByVal fileName As String)
+    Dim f As Integer
+    f = FreeFile '// Grab an open slot to use for file IO
+    
+    '// Reset the data first to make sure nothing is left over
+    reset
+    
+    '// Open and store the data
+    Open fileName For Binary As #f
+        loadMapFromOpenFile f
+    Close #f
+End Sub
+
+''
+' This subroutine saves the Map's data to a file.
+'
+' @param fileName The string containing the path to the Map file
+'           (creates one if it does not exist).
+'
+Public Sub saveMapToFile(ByVal fileName As String)
+    Dim f As Integer
+    f = FreeFile '// Grab an open slot to use for file IO
+    
+    '// Open the file and write the data from the Map structure object
+    Open fileName For Binary As #f
+        saveMapToOpenFile f
+    Close #f
+End Sub
+
+''
+' This subroutine loads the Map's data from an already open file.
+'
+' @param fileSlot The integer pointing to the open file.
+'
+Public Sub loadMapFromOpenFile(ByVal fileSlot As Integer)
+    Dim y As Long, x As Long
+    
+    '// Initialize the tile data if necessary
+    If Not tilesInitialized Then initTiles
+    
+    Get #fileSlot, , mapData.name
+    Get #fileSlot, , mapData.Revision
+    Get #fileSlot, , mapData.Moral
+    Get #fileSlot, , mapData.Up
+    Get #fileSlot, , mapData.Down
+    Get #fileSlot, , mapData.Left
+    Get #fileSlot, , mapData.Right
+    Get #fileSlot, , mapData.Music
+    Get #fileSlot, , mapData.BootMap
+    Get #fileSlot, , mapData.BootX
+    Get #fileSlot, , mapData.BootY
+    Get #fileSlot, , mapData.Shop
+    Get #fileSlot, , mapData.Indoors
+    For y = 0 To 11
+        For x = 0 To 15
+            mapData.Tile(x, y).loadTileFromOpenFile fileSlot
+        Next x
+    Next y
+    Get #fileSlot, , mapData.NPC
+    Get #fileSlot, , mapData.Server
+    Get #fileSlot, , mapData.Respawn
+    Get #fileSlot, , mapData.Weather
+End Sub
+
+''
+' This subroutine saves the Map's data to an already open file.
+'
+' @param fileSlot The integer pointing to the open file.
+'
+Public Sub saveMapToOpenFile(ByVal fileSlot As Integer)
+    Dim y As Long, x As Long
+    Put #fileSlot, , mapData.name
+    Put #fileSlot, , mapData.Revision
+    Put #fileSlot, , mapData.Moral
+    Put #fileSlot, , mapData.Up
+    Put #fileSlot, , mapData.Down
+    Put #fileSlot, , mapData.Left
+    Put #fileSlot, , mapData.Right
+    Put #fileSlot, , mapData.Music
+    Put #fileSlot, , mapData.BootMap
+    Put #fileSlot, , mapData.BootX
+    Put #fileSlot, , mapData.BootY
+    Put #fileSlot, , mapData.Shop
+    Put #fileSlot, , mapData.Indoors
+    For y = 0 To 11
+        For x = 0 To 15
+            mapData.Tile(x, y).saveTileToOpenFile fileSlot
+        Next x
+    Next y
+    Put #fileSlot, , mapData.NPC
+    Put #fileSlot, , mapData.Server
+    Put #fileSlot, , mapData.Respawn
+    Put #fileSlot, , mapData.Weather
+End Sub
+
+''
+' Sets the Name of the Map class.
+'
+' @param Name The new Name of the Map class
+'
+Public Sub setName(ByVal name As String)
+    mapData.name = name
+End Sub
+
+''
+' Returns the Name of the Map class.
+'
+' @return The String Name of the Map class
+'
+Public Function getName() As String
+    getName = mapData.name
+End Function
+
+''
+' Sets the Revision of the Map class.
+'
+' @param Revision The new Revision of the Map class
+'
+Public Sub setRevision(ByVal Revision As Long)
+    mapData.Revision = Revision
+End Sub
+
+''
+' Returns the Revision of the Map class.
+'
+' @return The Long Revision of the Map class
+'
+Public Function getRevision() As Long
+    getRevision = mapData.Revision
+End Function
+
+''
+' Sets the Moral of the Map class.
+'
+' @param Moral The new Moral of the Map class
+'
+Public Sub setMoral(ByVal Moral As Byte)
+    mapData.Moral = Moral
+End Sub
+
+''
+' Returns the Moral of the Map class.
+'
+' @return The Byte Moral of the Map class
+'
+Public Function getMoral() As Byte
+    getMoral = mapData.Moral
+End Function
+
+''
+' Sets the Up of the Map class.
+'
+' @param Up The new Up of the Map class
+'
+Public Sub setUp(ByVal Up As Integer)
+    mapData.Up = Up
+End Sub
+
+''
+' Returns the Up of the Map class.
+'
+' @return The Integer Up of the Map class
+'
+Public Function getUp() As Integer
+    getUp = mapData.Up
+End Function
+
+''
+' Sets the Down of the Map class.
+'
+' @param Down The new Down of the Map class
+'
+Public Sub setDown(ByVal Down As Integer)
+    mapData.Down = Down
+End Sub
+
+''
+' Returns the Down of the Map class.
+'
+' @return The Integer Down of the Map class
+'
+Public Function getDown() As Integer
+    getDown = mapData.Down
+End Function
+
+''
+' Sets the Left of the Map class.
+'
+' @param Left The new Left of the Map class
+'
+Public Sub setLeft(ByVal Left As Integer)
+    mapData.Left = Left
+End Sub
+
+''
+' Returns the Left of the Map class.
+'
+' @return The Integer Left of the Map class
+'
+Public Function getLeft() As Integer
+    getLeft = mapData.Left
+End Function
+
+''
+' Sets the Right of the Map class.
+'
+' @param Right The new Right of the Map class
+'
+Public Sub setRight(ByVal Right As Integer)
+    mapData.Right = Right
+End Sub
+
+''
+' Returns the Right of the Map class.
+'
+' @return The Integer Right of the Map class
+'
+Public Function getRight() As Integer
+    getRight = mapData.Right
+End Function
+
+''
+' Sets the Music of the Map class.
+'
+' @param Music The new Music of the Map class
+'
+Public Sub setMusic(ByVal Music As Integer)
+    mapData.Music = Music
+End Sub
+
+''
+' Returns the Music of the Map class.
+'
+' @return The Integer Music of the Map class
+'
+Public Function getMusic() As Integer
+    getMusic = mapData.Music
+End Function
+
+''
+' Sets the BootMap of the Map class.
+'
+' @param BootMap The new BootMap of the Map class
+'
+Public Sub setBootMap(ByVal BootMap As Integer)
+    mapData.BootMap = BootMap
+End Sub
+
+''
+' Returns the BootMap of the Map class.
+'
+' @return The Integer BootMap of the Map class
+'
+Public Function getBootMap() As Integer
+    getBootMap = mapData.BootMap
+End Function
+
+''
+' Sets the BootX of the Map class.
+'
+' @param BootX The new BootX of the Map class
+'
+Public Sub setBootX(ByVal BootX As Byte)
+    mapData.BootX = BootX
+End Sub
+
+''
+' Returns the BootX of the Map class.
+'
+' @return The Byte BootX of the Map class
+'
+Public Function getBootX() As Byte
+    getBootX = mapData.BootX
+End Function
+
+''
+' Sets the BootY of the Map class.
+'
+' @param BootY The new BootY of the Map class
+'
+Public Sub setBootY(ByVal BootY As Byte)
+    mapData.BootY = BootY
+End Sub
+
+''
+' Returns the BootY of the Map class.
+'
+' @return The Byte BootY of the Map class
+'
+Public Function getBootY() As Byte
+    getBootY = mapData.BootY
+End Function
+
+''
+' Sets the Shop of the Map class.
+'
+' @param Shop The new Shop of the Map class
+'
+Public Sub setShop(ByVal Shop As Integer)
+    mapData.Shop = Shop
+End Sub
+
+''
+' Returns the Shop of the Map class.
+'
+' @return The Integer Shop of the Map class
+'
+Public Function getShop() As Integer
+    getShop = mapData.Shop
+End Function
+
+''
+' Sets the Indoors of the Map class.
+'
+' @param Indoors The new Indoors of the Map class
+'
+Public Sub setIndoors(ByVal Indoors As Byte)
+    mapData.Indoors = Indoors
+End Sub
+
+''
+' Returns the Indoors of the Map class.
+'
+' @return The Byte Indoors of the Map class
+'
+Public Function getIndoors() As Byte
+    getIndoors = mapData.Indoors
+End Function
+
+''
+' Sets the Tile of the Map class at the given location.
+'
+' @param X The x location on the map
+' @param Y The y location on the map
+' @param Tile The new Tile of the Map class
+'
+Public Sub setTile(ByVal x As Byte, ByVal y As Byte, ByVal Tile As clsTile)
+    Set mapData.Tile(x, y) = Tile
+End Sub
+
+''
+' Returns the Tile of the Map class at the given location.
+'
+' @param X The x location on the map
+' @param Y The y location on the map
+'
+' @return The clsTile Tile of the Map class
+'
+Public Function getTile(ByVal x As Byte, ByVal y As Byte) As clsTile
+    Set getTile = mapData.Tile(x, y)
+End Function
+
+''
+' Sets the NPC of the Map class with the specified index.
+'
+' @param Index The location of the NPC to set
+'
+' @param NPC The new NPC of the Map class
+'
+Public Sub setNPC(ByVal index As Byte, ByVal NPC As Long)
+    mapData.NPC(index) = NPC
+End Sub
+
+''
+' Returns the NPC of the Map class with the specified index.
+'
+' @param Index The location of the NPC to return
+'
+' @return The Long NPC of the Map class
+'
+Public Function getNPC(ByVal index As Byte) As Long
+    getNPC = mapData.NPC(index)
+End Function
+
+''
+' Sets the Server of the Map class.
+'
+' @param Server The new Server of the Map class
+'
+Public Sub setServer(ByVal Server As Boolean)
+    mapData.Server = Server
+End Sub
+
+''
+' Returns the Server of the Map class.
+'
+' @return The Boolean Server of the Map class
+'
+Public Function getServer() As Boolean
+    getServer = mapData.Server
+End Function
+
+''
+' Sets the Respawn of the Map class.
+'
+' @param Respawn The new Respawn of the Map class
+'
+Public Sub setRespawn(ByVal Respawn As Byte)
+    mapData.Respawn = Respawn
+End Sub
+
+''
+' Returns the Respawn of the Map class.
+'
+' @return The Byte Respawn of the Map class
+'
+Public Function getRespawn() As Byte
+    getRespawn = mapData.Respawn
+End Function
+
+''
+' Sets the Weather of the Map class.
+'
+' @param Weather The new Weather of the Map class
+'
+Public Sub setWeather(ByVal Weather As Byte)
+    mapData.Weather = Weather
+End Sub
+
+''
+' Returns the Weather of the Map class.
+'
+' @return The Byte Weather of the Map class
+'
+Public Function getWeather() As Byte
+    getWeather = mapData.Weather
+End Function

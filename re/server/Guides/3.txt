@@ -1,0 +1,7 @@
+The access is the most important piece to your server. You only set regular players to higher access if you trust them not to screw up your server.
+
+0 - This is the regular player access. You get this access when you first create your character!
+1 - The moniter is a person that will moderate the game. Like kick people, etc.
+2 - Mapper, they are the people that will map in the game.
+3 - Developpers are the people that create the items, spells, npcs, etc.
+4 - The god! Can do anything they want! Basically the owner of the game!

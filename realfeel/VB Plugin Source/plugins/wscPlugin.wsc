@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<component>
+
+<?component error="true" debug="false"?>
+
+<registration
+	description="wscPlugin"
+	progid="wscPlugin.plugin"
+	version="1.00"
+	classid="{5971c629-6ce1-4470-82a5-59ccf262f460}"
+>
+</registration>
+
+<public>
+	<method name="SetHost">
+		<PARAMETER name="newRef"/>
+	</method>
+	<method name="StartUp">
+		<PARAMETER name="myArg"/>
+	</method>
+</public>
+
+<script language="VBScript">
+<![CDATA[
+
+Dim frmMain 'as object
+
+function SetHost(newRef)
+	set frmMain = newRef
+        
+	'Function RegisterPlugin(intMenu As Integer, strMenuName As String, intStartupArgument As Integer)	
+
+	frmMain.RegisterPlugin 0, "Sample Windows Script Plugin",0
+
+end function
+
+function StartUp(myArg)
+	select case myArg
+	    case 0: MsgBox "Windows Script Plugin Started with Arg=0"
+	end select
+end function
+
+]]>
+</script>
+
+</component>

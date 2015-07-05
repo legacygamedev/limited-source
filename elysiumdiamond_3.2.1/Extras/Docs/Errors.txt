@@ -1,0 +1,84 @@
+You can get the whole guide in the server folder under the "Guide" folder.
+
+
+H. Bugs and Errors!
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Intro ::
+If none of these work, you can get extra help and support at http://www.splamm.com/elysium on the forums.
+
+
+:: The First Steps ::
+Okay, there are a few required files that you need. If you did not use an installer to install this software, it is even more likely that you need to do the following.
+
+- READ THIS!!! I have included all the files needed in the 3 things in the "Registry" folder. New members and old members alike will need to register all the files and run the exe.
+
+First off, download the Visual Basic 6 runtime files. They are also refered to as the "library" files. It is free to download and can be found all over the internet and there is a download on the website.
+
+Secondly, register all the .ocx and .dll files found in the client and server folders. To register a file, copy the file and paste it into the "System32" folder in the "WINDOWS" folder. Then, get the "Run" thingy going and type in "regsvr32 C:\Windows\System32\[name of file].[extension of file]". That will register them. You can also just open the file (when it is in the System32 folder) with "regsvr32.exe" (you'll have to manually find it in the "System32" folder).
+
+Thirdly, download the latest version of DirectX and install it.
+
+
+:: If that didn't work... ::
+Match your error.
+
+
+Run-Time Error 5
+This is a nuisance bug. Sometimes it occurs but is not consistently repeatable. Usually, it goes away if you just re-open the client and try to connect again. Sometimes it takes several tries. It seems to happen periodically and then it disappears. For me, it happened the ifrst time I tried to login everytime for a month or so, then it stopped. The cause of this is unknown.
+
+
+Run-Time Error 7: Out of Memory
+First be sure to have all DLL's and OCX's registered. That should work. But other than that there is only one other fix, which i do not reccomend.
+
+This has NOTHING to do with too many applications running or not enough RAM on your PC. It is a Windows XP only problem. From what was said before, Miscrosoft does not always fully explain the differences between all the OS. This seems to be fall out from that. Warning: Do not do this unless you are knowledgeable about installing an OS. If you do it wrong, you will erase all your files. ALso, this bug works the majority of the time. It worked for me 3 out of 3 times, but it does not work for everyone. If it does not work for you, then there is no known fix for you. This is most often easily fixed it easily by re-running the Windows XP setup disk in upgrade mode. It does not erase any files in repair mode. DO NOT RUN IT IN NEW INSTALLATION MODE OR YOU WILL ERASE ALL YOUR FILES. How to do this: Place the Windows XP setup diosk in the drive while the PC is already running Windows XP. A welcome screen appears. Click Install Windows XP. Choose "Upgrade (Recommended)" This will not damage any files. Continue to follow the on screen instructions. Each PC is different so I can not give you anymore details from here on out, but it is straight forward.
+
+
+Run-Time Error 9: Script Out of Range
+This bug normally occurs because you changed a setting and didn't delete the old files. It happens when you try to access a slot of an array that doesn't exist. You can also turn "Safe Mode" on if you have the source to limit the number of these errors that exist. Instructions to do so are at the top of "HandleData" server-side.
+
+
+Run-Time Error 13: no data.ini
+This is goof on your part. It is not a real bug. It happens most often when a client update is downloaded and not placed in the same folder as the file data.ini. Just place the .exe file in the same folder as your data.ini file and you are ready to go.
+
+
+Run-Time Error 16
+This error is caused by your screen settings for color being set to high. This may be related to your graphics card's limitations. To fix it, right click on your desktop, choose properties, and then settings. Next, set the color setting to a lower one such as High Color-16 bit.
+
+
+Run-Time Error 53: Can not find Tiles.Bmp
+This happens on Windows 98 computers only as far as I know. The fix is quick and easy. Open tiles.bmp in the GFX folder, which is located in your client folder. Make sure it opens in Paint. If it does not open in Paint automatically, right click on tiles.bmp and click Edit. If that doesnt work, then right click tiles.bmp and go into the Open With... submenu, and if paint is in there, click it, if it isnt, click Choose Program... and click browse, then go to "C:WINDOWSsystem32" and double click on the "mspaint" icon. Then click ok. Once in Paint, click Image (ALT+I), Then click Attributes. OR you can just hold control and hit E when you open paint. Once in the Attributes menu, edit it to look like the following: Width: 224, Height: 9728, Units: Pixels, Colors: Colors. Then click OK. Then click File, Then click Save. OR hold control and hit S.
+
+
+Run-Time Error 76: Path Not Found
+I do not believe that this is a common bug. This seems to reference the GUI.bmp most often. Make sure that the file is in the appropriate folder. IF it is then proceed to the next step. All you have to do is re-unzip your game file. It is best if you rename your old folder where the client is. This will give you a fresh slate. After the re-installation is complete and it works, you can simply delete the old client folder that you renamed
+
+
+Run-Time Error 339
+Richtx32.ocx is a file that is necessary for Visual Basic applications. It is a file that must be on your PC and must registered. The fix for this is simple just download the library file and install it then restart your computer and it should be fixed!
+
+
+Run-Time error 372
+MSComm32.ocx is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered. Below is a very easy way to register this file.
+
+
+Run-Time Error 429: ActiveX Cannot Create Component
+You may also see an error that mentions DX7VB.DLL. You do not have the version of DirectX that is needed. The most recent version of DirectX can be downloaded from Microsoft. This file is a setup files that downloads the appropriate files for your PC. This can be a lengthy download but will give you the most recent verion of DirectX. Other wise the other way to fix it is to fix that runtime error you must place all dll's and ocx's into "C:\Windows\System32\" then you must register them. To do that follow this: "Start>Run> Type: regsvr32 C:\Windows\System32\[name of dll or ocx].dll or .ocx"
+
+
+Run-Time Error 480
+This happends when using a system that is not Windows XP or Windows 2000 and in colour depth 32 bit. When trying to map, the run-time 480 error tells you it is having a problem redrawing. To fix this simply go to your display properties and in the colour depth reduce it to anything lower than 32 bit. 
+
+Run-Time Error 713
+MSSTDFMT.DLL is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered.
+
+
+
+:: Still nothing? ::
+Error messages really help. If the error mentions a specific file, get on google and search for that file. Download it and register the file.
+
+Also, if you have VB6, you can pinpoint the location of the error in the source code when you get it. That normally helps.
+
+If it still doesn't work, make a new topic on the forums in the right section. http://www.elysiumsource.net/community

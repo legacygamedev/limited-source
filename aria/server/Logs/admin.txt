@@ -1,0 +1,29 @@
+5:53:59 PM: Emblem editing npc #1.
+5:54:17 PM: Emblem saved npc #1.
+5:57:46 PM: Emblem editing item #1.
+5:57:56 PM: Emblem saved item #1.
+5:57:59 PM: Emblem has respawned map #1
+5:15:38 PM: Emblem editing item #1.
+5:16:40 PM: Emblem saved item #1.
+8:19:38 PM: Emblem changed MOTD to: Welcome to Aria Engine, a new revolution in ORPG Creation!
+5:29:30 PM: Emblem editing item #2.
+5:30:05 PM: Emblem saved item #2.
+5:30:09 PM: Emblem editing item #3.
+5:30:51 PM: Emblem saved item #3.
+5:31:03 PM: Emblem editing arrow #1.
+5:31:11 PM: Emblem saved arrow #1.
+9:41:33 PM: (admin Bah) adminzor!!!
+10:44:44 PM: Bah editing npc #2.
+10:45:31 PM: Bah saved npc #2.
+3:48:47 PM: (Admin) Bah: ...........
+3:49:46 PM: (Global) Bah: GLOBAL BITCH
+3:49:56 PM: (Global) Bah: ILL GLOBAL YOU!!
+3:50:14 PM: (Admin) Bah: IM A ADMIN!!
+3:56:48 PM: (Admin) Bah: Lawl!! PWNED YOU
+3:24:01 PM: Bah has respawned map #4
+10:47:10 PM: Bah editing item #1.
+10:47:39 PM: Bah saved item #1.
+10:50:44 PM: (Global) Bah: BLAH
+10:50:48 PM: (Admin) Bah: BLAH
+10:51:56 PM: Bah editing npc #2.
+10:52:15 PM: Bah saved npc #2.

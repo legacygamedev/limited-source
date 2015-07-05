@@ -1,0 +1,242 @@
+22:07:32: Admin changed MOTD to: Welcome to my game made with Bevrias Engine, www.Bevrias-Engine.tk.
+22:07:33: Admin changed MOTD to:  
+22:07:34: Admin changed MOTD to: Welcome to my game made with Bevrias Engine, www.Bevrias-Engine.tk.
+18:42:35: William editing npc #1.
+18:43:04: William saved npc #1.
+18:41:17: Admin editing npc #1.
+18:41:28: Admin saved npc #1.
+18:41:35: Admin editing npc #1.
+18:41:42: Admin saved npc #1.
+18:41:53: Admin has respawned map #1
+18:42:32: Admin editing npc #1.
+18:42:39: Admin saved npc #1.
+18:44:10: Admin editing npc #1.
+18:44:16: Admin saved npc #1.
+18:44:39: Admin editing npc #1.
+18:44:47: Admin saved npc #1.
+18:24:12: Admin editing spell #1.
+18:24:46: Admin editing item #1.
+21:14:27: Admin editing item #1.
+21:14:40: Admin saved item #1.
+21:14:43: Admin editing npc #1.
+21:14:51: Admin saved npc #1.
+21:21:31: Admin editing item #1.
+21:21:44: Admin saved item #1.
+21:23:56: Admin editing item #1.
+21:24:03: Admin saved item #1.
+21:24:20: Admin editing item #1.
+21:24:24: Admin saved item #1.
+22:02:44: Admin editing item #1.
+22:02:49: Admin saved item #1.
+22:04:29: Admin editing npc #1.
+22:04:46: Admin saved npc #1.
+22:05:40: Admin editing npc #1.
+22:06:04: Admin saved npc #1.
+22:06:10: Admin has respawned map #1
+22:17:42: Admin editing item #1.
+22:17:48: Admin saved item #1.
+22:18:10: Admin editing item #1.
+22:18:27: Admin saved item #1.
+22:18:39: Admin editing item #1.
+22:18:57: Admin saved item #1.
+22:19:56: Admin editing item #1.
+22:20:04: Admin saved item #1.
+22:22:40: Admin editing item #1.
+22:22:46: Admin saved item #1.
+22:23:26: Admin editing item #1.
+22:23:36: Admin saved item #1.
+22:23:51: Admin editing item #1.
+22:23:56: Admin saved item #1.
+22:31:57: Admin editing item #1.
+22:32:14: Admin saved item #1.
+23:17:47: Admin editing item #1.
+23:17:56: Admin editing item #1.
+23:18:20: Admin editing item #1.
+23:18:24: Admin saved item #1.
+23:21:50: Admin editing item #1.
+23:21:53: Admin saved item #1.
+23:25:30: Admin editing item #1.
+23:27:10: Admin editing item #1.
+23:50:52: Admin editing item #1.
+23:51:15: Admin editing item #1.
+23:52:35: Admin editing item #1.
+23:52:44: Admin editing item #1.
+23:54:03: Admin editing item #1.
+23:54:59: Admin editing item #1.
+23:55:17: Admin editing item #1.
+23:55:24: Admin editing item #1.
+23:55:34: Admin editing item #1.
+23:55:43: Admin editing item #1.
+23:55:53: Admin editing item #1.
+23:56:30: Admin editing item #1.
+23:56:41: Admin editing item #1.
+23:56:49: Admin editing item #1.
+23:57:19: Admin editing item #1.
+23:57:30: Admin editing item #1.
+23:57:39: Admin editing item #1.
+23:57:47: Admin editing item #1.
+23:57:54: Admin editing item #1.
+23:57:59: Admin saved item #1.
+23:58:17: Admin editing item #1.
+23:58:24: Admin saved item #1.
+23:58:32: Admin editing item #1.
+23:58:40: Admin saved item #1.
+23:58:48: Admin editing item #1.
+23:59:00: Admin editing item #1.
+23:59:18: Admin saved item #1.
+23:59:45: Admin editing item #1.
+23:59:49: Admin saved item #1.
+23:59:54: Admin editing item #1.
+13:53:32: Admin editing item #1.
+13:53:41: Admin saved item #1.
+13:53:47: Admin editing item #1.
+13:53:59: Admin saved item #1.
+14:16:08: Admin editing item #1.
+14:16:27: Admin saved item #1.
+14:16:38: Admin editing item #1.
+14:16:43: Admin saved item #1.
+14:22:14: Admin editing npc #1.
+14:22:18: Admin saved npc #1.
+20:16:30: Admin editing npc #1.
+20:16:38: Admin saved npc #1.
+20:17:57: Admin editing npc #1.
+20:18:03: Admin saved npc #1.
+12:59:50: Admin editing npc #1.
+13:00:00: Admin saved npc #1.
+13:23:04: Admin has respawned map #1
+13:23:09: Admin editing npc #1.
+13:23:16: Admin saved npc #1.
+13:26:41: Admin has respawned map #1
+12:15:39: Admin editing npc #1.
+12:15:46: Admin saved npc #1.
+12:15:59: Admin editing npc #1.
+12:16:01: Admin saved npc #1.
+23:40:16: Admin editing item #1.
+23:40:24: Admin saved item #1.
+23:40:44: Admin editing item #1.
+23:40:58: Admin editing item #1.
+23:41:05: Admin saved item #1.
+23:41:07: Admin editing item #1.
+23:41:14: Admin editing item #2.
+23:41:21: Admin saved item #2.
+23:41:24: Admin editing npc #1.
+23:41:34: Admin saved npc #1.
+23:41:56: Admin editing item #2.
+23:42:03: Admin saved item #2.
+23:43:09: Admin editing item #1.
+23:43:15: Admin saved item #1.
+23:43:34: Admin editing item #1.
+23:44:00: Admin editing item #1.
+23:44:05: Admin saved item #1.
+10:46:27: Admin editing item #2.
+10:46:49: Admin saved item #2.
+10:47:13: Admin editing item #2.
+10:47:36: Admin saved item #2.
+10:47:47: Admin editing item #1.
+10:47:51: Admin saved item #1.
+13:10:21: Admin has respawned map #1
+12:50:53: Admin editing npc #1.
+12:51:12: Admin saved npc #1.
+12:51:25: Admin editing npc #1.
+12:51:36: Admin saved npc #1.
+12:52:13: Admin has respawned map #1
+12:52:35: Admin editing npc #1.
+12:52:40: Admin saved npc #1.
+12:52:54: Admin editing item #1.
+12:53:04: Admin saved item #1.
+12:53:06: Admin editing npc #1.
+12:53:10: Admin saved npc #1.
+09:03:47: Admin editing item #1.
+09:04:04: Admin editing item #2.
+09:04:18: Admin saved item #2.
+09:04:26: Admin editing item #1.
+09:04:37: Admin saved item #1.
+09:04:43: Admin editing npc #1.
+09:04:51: Admin saved npc #1.
+10:58:42: Admin editing item #3.
+10:58:58: Admin saved item #3.
+10:59:00: Admin editing npc #1.
+10:59:12: Admin saved npc #1.
+12:30:11: Admin editing npc #1.
+12:30:14: Admin saved npc #1.
+12:30:30: Admin editing npc #1.
+12:30:34: Admin saved npc #1.
+12:30:42: Admin editing npc #1.
+12:30:44: Admin saved npc #1.
+13:45:04: Admin editing item #1.
+13:45:14: Admin editing item #2.
+13:45:30: Admin editing item #2.
+13:45:34: Admin saved item #2.
+13:45:38: Admin editing item #2.
+13:45:44: Admin saved item #2.
+15:37:14: Admin editing npc #1.
+15:37:22: Admin saved npc #1.
+16:01:56: Admin editing item #1.
+16:02:02: Admin saved item #1.
+16:02:03: Admin editing item #3.
+16:02:08: Admin saved item #3.
+16:02:11: Admin editing item #2.
+16:02:16: Admin saved item #2.
+16:02:19: Admin editing npc #1.
+16:02:24: Admin saved npc #1.
+16:52:19: Admin editing npc #1.
+16:52:49: Admin saved npc #1.
+12:05:13: William Robhe editing spell #1.
+12:05:46: William Robhe saving spell #1.
+12:05:51: William Robhe editing item #1.
+12:06:09: William Robhe saved item #1.
+12:06:15: William Robhe editing npc #1.
+12:06:38: William Robhe saved npc #1.
+12:38:59: William Robhe editing item #2.
+12:39:18: William Robhe editing item #1.
+12:39:23: William Robhe saved item #1.
+23:21:46: William Robhe editing npc #1.
+23:21:53: William Robhe saved npc #1.
+23:22:28: William Robhe editing npc #1.
+23:22:35: William Robhe saved npc #1.
+23:23:24: William Robhe editing npc #1.
+23:23:44: William Robhe saved npc #1.
+13:14:29: William Robhe editing npc #1.
+13:16:42: William Robhe editing npc #1.
+13:17:13: William Robhe saved npc #1.
+15:57:41: William Robhe has respawned map #1
+19:50:27: William Robhe editing spell #1.
+19:52:41: William Robhe editing spell #1.
+19:54:47: William Robhe editing spell #1.
+19:59:45: William Robhe editing spell #1.
+20:06:48: William Robhe editing spell #1.
+20:07:17: William Robhe saving spell #1.
+20:08:19: William Robhe editing spell #1.
+20:09:15: William Robhe saving spell #1.
+22:01:26: William Robhe editing shop #1.
+22:01:36: William Robhe saving shop #1.
+14:41:40: William Robhe editing item #1.
+14:41:57: William Robhe saved item #1.
+14:44:55: William Robhe editing item #1.
+14:45:17: William Robhe saved item #1.
+14:46:34: William Robhe editing item #1.
+14:46:40: William Robhe saved item #1.
+14:46:46: William Robhe editing item #1.
+14:46:58: William Robhe saved item #1.
+15:23:20: William Robhe editing npc #1.
+15:23:32: William Robhe saved npc #1.
+15:49:13: William Robhe editing npc #1.
+15:49:22: William Robhe saved npc #1.
+17:22:53: William Robhe has respawned map #1
+13:07:50: William Robhe has respawned map #1
+15:07:41: William Robhe editing arrow #1.
+15:09:56: William Robhe editing arrow #1.
+16:40:54: William Robhe editing item #1.
+16:41:04: William Robhe saved item #1.
+16:41:21: William Robhe editing spell #1.
+16:41:34: William Robhe saving spell #1.
+16:41:51: William Robhe editing spell #1.
+16:41:54: William Robhe saving spell #1.
+16:43:11: William Robhe editing npc #1.
+16:43:30: William Robhe saved npc #1.
+16:43:32: William Robhe editing npc #1.
+16:43:36: William Robhe saved npc #1.
+16:44:09: William Robhe editing npc #1.
+16:44:13: William Robhe saved npc #1.
+15:37:55: William Robhe editing arrow #10.
+15:38:00: William Robhe saved arrow #10.

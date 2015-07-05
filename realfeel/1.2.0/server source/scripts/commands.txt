@@ -1,0 +1,193 @@
+-----------------------
+-- List of commands: --
+-----------------------
+
+Function GetPlayerLogin(ByVal Index As Long) As String
+
+Sub SetPlayerLogin(ByVal Index As Long, ByVal Login As String)
+
+Function GetPlayerPassword(ByVal Index As Long) As String
+
+Sub SetPlayerPassword(ByVal Index As Long, ByVal Password As String)
+
+Function GetPlayerName(ByVal Index As Long) As String
+
+Sub SetPlayerName(ByVal Index As Long, ByVal Name As String)
+
+Function GetPlayerClass(ByVal Index As Long) As Long
+
+Sub SetPlayerClass(ByVal Index As Long, ByVal ClassNum As Long)
+
+Function GetPlayerSprite(ByVal Index As Long) As Long
+
+Sub SetPlayerSprite(ByVal Index As Long, ByVal Sprite As Long)
+
+Function GetPlayerLevel(ByVal Index As Long) As Long
+
+Sub SetPlayerLevel(ByVal Index As Long, ByVal Level As Long)
+
+Function GetPlayerNextLevel(ByVal Index As Long) As Long
+
+Function GetPlayerExp(ByVal Index As Long) As Long
+
+Sub SetPlayerExp(ByVal Index As Long, ByVal EXP As Long)
+
+Function GetPlayerAccess(ByVal Index As Long) As Long
+
+Sub SetPlayerAccess(ByVal Index As Long, ByVal Access As Long)
+
+Function GetPlayerPK(ByVal Index As Long) As Long
+
+Sub SetPlayerPK(ByVal Index As Long, ByVal PK As Long)
+
+Function GetPlayerHP(ByVal Index As Long) As Long
+
+Sub SetPlayerHP(ByVal Index As Long, ByVal HP As Long)
+
+Function GetPlayerMP(ByVal Index As Long) As Long
+
+Sub SetPlayerMP(ByVal Index As Long, ByVal MP As Long)
+
+Function GetPlayerSP(ByVal Index As Long) As Long
+
+Sub SetPlayerSP(ByVal Index As Long, ByVal SP As Long)
+
+Function GetPlayerMaxHP(ByVal Index As Long) As Long
+
+Function GetPlayerMaxMP(ByVal Index As Long) As Long
+
+Function GetPlayerMaxSP(ByVal Index As Long) As Long
+
+Function GetClassName(ByVal ClassNum As Long) As String
+
+Function GetClassMaxHP(ByVal ClassNum As Long) As Long
+
+Function GetClassMaxMP(ByVal ClassNum As Long) As Long
+
+Function GetClassMaxSP(ByVal ClassNum As Long) As Long
+
+Function GetClassSTR(ByVal ClassNum As Long) As Long
+
+Function GetClassDEF(ByVal ClassNum As Long) As Long
+
+Function GetClassSPEED(ByVal ClassNum As Long) As Long
+
+Function GetClassMAGI(ByVal ClassNum As Long) As Long
+
+Function GetPlayerSTR(ByVal Index As Long) As Long
+
+Sub SetPlayerSTR(ByVal Index As Long, ByVal STR As Long)
+
+Function GetPlayerDEF(ByVal Index As Long) As Long
+
+Sub SetPlayerDEF(ByVal Index As Long, ByVal DEF As Long)
+
+Function GetPlayerSPEED(ByVal Index As Long) As Long
+
+Sub SetPlayerSPEED(ByVal Index As Long, ByVal SPEED As Long)
+
+Function GetPlayerMAGI(ByVal Index As Long) As Long
+
+Sub SetPlayerMAGI(ByVal Index As Long, ByVal MAGI As Long)
+
+Function GetPlayerPOINTS(ByVal Index As Long) As Long
+
+Sub SetPlayerPOINTS(ByVal Index As Long, ByVal POINTS As Long)
+
+Function GetPlayerMap(ByVal Index As Long) As Long
+
+Sub SetPlayerMap(ByVal Index As Long, ByVal MapNum As Long)
+
+Function GetPlayerX(ByVal Index As Long) As Long
+
+Sub SetPlayerX(ByVal Index As Long, ByVal x As Long)
+
+Function GetPlayerY(ByVal Index As Long) As Long
+
+Sub SetPlayerY(ByVal Index As Long, ByVal y As Long)
+
+Function GetPlayerDir(ByVal Index As Long) As Long
+
+Sub SetPlayerDir(ByVal Index As Long, ByVal Dir As Long)
+
+Function GetPlayerIP(ByVal Index As Long) As String
+
+Function GetPlayerInvItemNum(ByVal Index As Long, ByVal InvSlot As Long) As Long
+
+Sub SetPlayerInvItemNum(ByVal Index As Long, ByVal InvSlot As Long, ByVal ItemNum As Long)
+
+Function GetPlayerInvItemValue(ByVal Index As Long, ByVal InvSlot As Long) As Long
+
+Sub SetPlayerInvItemValue(ByVal Index As Long, ByVal InvSlot As Long, ByVal ItemValue As Long)
+
+Function GetPlayerInvItemDur(ByVal Index As Long, ByVal InvSlot As Long) As Long
+
+Sub SetPlayerInvItemDur(ByVal Index As Long, ByVal InvSlot As Long, ByVal ItemDur As Long)
+
+Function GetPlayerSpell(ByVal Index As Long, ByVal SpellSlot As Long) As Long
+
+Sub SetPlayerSpell(ByVal Index As Long, ByVal SpellSlot As Long, ByVal SpellNum As Long)
+
+Function GetPlayerArmorSlot(ByVal Index As Long) As Long
+
+Sub SetPlayerArmorSlot(ByVal Index As Long, InvNum As Long)
+
+Function GetPlayerWeaponSlot(ByVal Index As Long) As Long
+
+Sub SetPlayerWeaponSlot(ByVal Index As Long, InvNum As Long)
+
+Function GetPlayerHelmetSlot(ByVal Index As Long) As Long
+
+Sub SetPlayerHelmetSlot(ByVal Index As Long, InvNum As Long)
+
+Function GetPlayerShieldSlot(ByVal Index As Long) As Long
+
+Sub SetPlayerShieldSlot(ByVal Index As Long, InvNum As Long)
+
+Public Function GetVar(File As String, Header As String, Var As String) As String
+
+Public Sub PutVar(File As String, Header As String, Var As String, Value As String)
+
+Sub SendPlayerList(ByVal Index As Long)
+
+Public Function CurPath() As String
+
+Sub GlobalMsg(ByVal Msg As String, ByVal Color As Byte)
+
+Sub AdminMsg(ByVal Msg As String, ByVal Color As Byte)
+
+Sub PlayerMsg(ByVal Index As Long, ByVal Msg As String, ByVal Color As Byte)
+
+Sub MapMsg(ByVal MapNum As Long, ByVal Msg As String, ByVal Color As Byte)
+
+Sub AlertMsg(ByVal Index As Long, ByVal Msg As String)
+
+Sub RunMOTD(ByVal Index As Long)
+
+Sub PlayerWarp(ByVal Index As Long, ByVal MapNum As Long, ByVal x As Long, ByVal y As Long)
+
+Function FolderExists(ByVal Path As String, ByVal Folder As String) As Boolean
+
+Sub CreateFolder(ByVal Path As String, ByVal Folder As String)
+
+Function FileExists(ByVal Path As String, ByVal File As String) As Boolean
+
+Sub CreateFile(ByVal Path As String, ByVal File As String)
+
+Function GetPlayerTNL(ByVal Index As Long) As Long
+
+Sub SpawnItem(ByVal ItemNum As Long, ByVal ItemVal As Long, ByVal MapNum As Long, ByVal x As Long, ByVal y As Long)
+
+Sub TakeItem(ByVal Index As Long, ByVal ItemNum As Long, ByVal ItemVal As Long)
+
+Sub GiveItem(ByVal Index As Long, ByVal ItemNum As Long, ByVal ItemVal As Long)
+
+Function FindPlayer(ByVal Name As String) As Long
+
+Function HasItem(ByVal Index As Long, ByVal ItemNum As Long) As Boolean
+
+Function GetMapNpcHP(ByVal MapNum As Integer, ByVal MapNpcNum As Integer) As Long
+
+Sub AddLog(ByVal Text As String, ByVal FileName As String)
+
+Function GetPlayerText(ByVal Index As Long) As String

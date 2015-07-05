@@ -1,0 +1,22 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: PlayerHit.ess						'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: PlayerHit						'
+' Brief: executes when the player gets hit by a NPC.		'
+' Parameters:							'
+'	Index: the index of the player.				'
+'	NPCNum: the NPC number.					'
+'	Damage: the damage given.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub PlayerHit(Index, NPCNum, Damage)
+	If Damage < 1 Then
+		Exit Sub
+	End If
+
+	Call NPCAttack(NPCNum, Index, Damage)
+End Sub

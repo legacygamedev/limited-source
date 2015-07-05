@@ -1,0 +1,7 @@
+The following are errors that I or a tester have encountered. This is followed by my hypothesis for why the error happened and, if fixed, the solution.
+
+Error Type [FREEZING]
+
+[FIXED] 1. In article editor, if no closing tag is present, the client freezes when trying to display the proper BBCode appearance. Possibly from a continuous loop from the nonexistant closing tag.
+[FIXED] 2. In the news display, if no closing tag is present, the client freezes when trying to display the proper BBCode appearance. Possibly from a continuous loop from the nonexistant closing tag.
+Solution: My hypothesis on both of these was correct. The loop continued since it could not find a closing tag. I simply added a check to see if the variable length was less than the actual length, if not, ending the loop.

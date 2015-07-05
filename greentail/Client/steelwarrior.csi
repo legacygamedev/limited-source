@@ -1,0 +1,16 @@
+[History]
+B0=SteelWarrior/SurfUtil/LoadImage
+B1=SteelWarrior/modClientTCP/TcpInit
+B2=SteelWarrior/modClientTCP
+B3=SteelWarrior/modDirectX/InitSurfaces
+B4=SteelWarrior/modDirectX
+B5=SteelWarrior/modGameLogic/Main
+B6=SteelWarrior/frmSellItem/CloseSell_Click
+B7=SteelWarrior/frmSellItem/lblSellItem_Click
+B8=SteelWarrior/frmSellItem
+B9=SteelWarrior/frmSellItem/Form_Load
+B10=SteelWarrior/frmSellItem/tmrClear_Timer
+B11=SteelWarrior/frmMirage/Checkwindow_Timer
+B12=SteelWarrior/frmMirage/CheatCheck_Timer
+B13=SteelWarrior/modGameLogic/CheckAttack
+B14=SteelWarrior/frmMainMenu/Form_Load

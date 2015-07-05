@@ -1,0 +1,30 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: ScriptedItem.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: ScriptedItem					'
+' Brief: executes when somebody uses an item.			'
+' Parameters:							'
+'	Index: the index of the player.				'
+'	Script: the script to execute.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub ScriptedItem(Index, Script, Slot)
+	Select Case Script
+		Case 0
+			Call PlayerMsg(Index, "This scripted item has no apparent use.", WHITE)
+
+			Exit Sub
+
+		Case Else
+			Call PlayerMsg(Index, "No item script found. Please contact an admin to solve this problem.", WHITE)
+
+			Exit Sub
+	End Select
+End Sub
+
+
+

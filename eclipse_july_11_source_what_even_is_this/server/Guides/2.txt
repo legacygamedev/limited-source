@@ -1,0 +1,11 @@
+Mapping:
+Mapping in Konfuze is fairly simple. Once your character has level 4 access to the server, login to the game and in the chatbox, type /mapeditor. Doing this will open the map editor in a new window, this contains many things. Most important are all of them is the long box that contains the tiles. Click on one of these, will allow you to place it on the map. Others are the layers, which are better explained at http://www.konfuze.com/interactive/page.php?id=40 and animation guide is posted at http://www.konfuze.com/interactive/page.php?id=42 .
+
+Creating Items, NPCS, Spells, shops and emoticons
+
+Commands:
+/editshops
+/editnpcs
+/edititems
+/editspells
+/editemoticon

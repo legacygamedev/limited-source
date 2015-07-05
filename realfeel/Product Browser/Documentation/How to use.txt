@@ -1,0 +1,86 @@
+When you start this program, it may be a little confusing as to how it works, so I'll explain:
+When this application starts, it reads a config.ini file that should be located in the same area where the application is found.
+If the config.ini doesn't exist, the application will offer to make a new copy; it can even write information for the Dual Solace Downloads Directory.
+Once the config.ini file is set up, it will then attempt to download a new copy of the directory (to make sure it is up-to-date).
+If it can't, it will still offer the ability to use an older directory file (with the same name of course).
+
+Now to explain how each INI file works.
+
+The configuration file below is an example of what one may look like:
+---------------------------------------------------------
+-Configuration file for Dual Solace Product Browser-
+-Created by smchronos-
+
+-Size Limit for downloads-
+Size_Limit:51200
+
+-Root website for directory file-
+Directory_Root:www.dualsolace.com/Downloads/
+
+-Name of directory file-
+Directory_Extension:Dual_Solace_Downloads_Directory.ini
+---------------------------------------------------------
+
+The <Size_Limit> is a setting that determines how large of a file you want to be able to download.
+*It isn't the most useful setting, but it can prevent you from starting a download that you do not plan to finish.
+*This setting is measured in kilobytes, so 51200 KB is 50 MB.
+*This can be adjusted not only in the text file, but also in the program itself by going to Options --> Download Limit
+The <Directory_Root> defines the folder of a website where the directory file will be found. Make sure to include a / at the end of the folder name.
+The <Directory_Extension> defines the name of the directory file to download and what will be used in case a new copy can't be downloaded.
+
+
+The directory file below is an example of what one may look like:
+---------------------------------------------------------
+File_Name:RealFeel 1.1.1
+File_Description:A nice, friendly file.
+File_Address:www.dualsolace.com/Downloads/RealFeel111.zip
+file_description:Another nice file.
+File_name:RealFeel 1.1.2
+File_address:www.dualsolace.com/Downloads/RealFeel112.zip
+---------------------------------------------------------
+
+As you can see, the directory file only needs to contain three pieces of information to function:
+A <File_Name> key, which specifies what the application will call the file.
+A <File_Description> key, which specifies the description that the application will display about the file.
+A <File_Address> key, which points to the actual file to download.
+
+The order of the keys is only sensitive in that the keys are read in order. The first <File_Name> pairs with the first <File_Description> and <File_Address>.
+So, make sure your keys are in a similar pattern.
+
+For example:
+---------------------------------------------------------
+File_Name:RealFeel 1.1.1
+File_Description:A nice, friendly file.
+File_Address:www.dualsolace.com/Downloads/RealFeel111.zip
+
+File_Name:RealFeel 1.1.2
+File_Description:Another nice file.
+File_Address:www.dualsolace.com/Downloads/RealFeel112.zip
+---------------------------------------------------------
+
+OR:
+---------------------------------------------------------
+File_Address:www.dualsolace.com/Downloads/RealFeel111.zip
+File_Name:RealFeel 1.1.1
+File_Description:A nice, friendly file.
+
+File_Address:www.dualsolace.com/Downloads/RealFeel112.zip
+File_Name:RealFeel 1.1.2
+File_Description:Another nice file.
+---------------------------------------------------------
+
+OR:
+---------------------------------------------------------
+File_Name:RealFeel 1.1.1
+File_Name:RealFeel 1.1.2
+
+File_Description:A nice, friendly file.
+File_Description:Another nice file.
+
+File_Address:www.dualsolace.com/Downloads/RealFeel111.zip
+File_Address:www.dualsolace.com/Downloads/RealFeel112.zip
+---------------------------------------------------------
+
+I hope all of you find this program to be quite useful!
+
+Author: smchronos

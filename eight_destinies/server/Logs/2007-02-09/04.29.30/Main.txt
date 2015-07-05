@@ -1,0 +1,22 @@
+
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gil has began playing Eight Destinies.
+Gil has disconnected from Eight Destinies.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gileijah has began playing Eight Destinies.
+Gileijah has disconnected from Eight Destinies.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gil has began playing Eight Destinies.
+Chat Logs Have Been Saved!
+Gil has disconnected from Eight Destinies.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gileijah has began playing Eight Destinies.
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!

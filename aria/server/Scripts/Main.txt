@@ -1,0 +1,425 @@
+'::::::::::::::::::::::::::::::::
+'::  Aria Engine Default Main  ::
+'::      Created by Emblem     ::
+'::::::::::::::::::::::::::::::::
+
+'::::::::::::::::::::::::::::::::
+'::::::: Text Color Codes :::::::
+'::::::::::::::::::::::::::::::::
+':: Black: 0                   ::
+':: Blue: 1                    ::
+':: Green: 2                   ::
+':: Cyan: 3                    ::
+':: Red: 4                     ::
+':: Magenta: 5                 ::
+':: Brown: 6                   ::
+':: Grey: 7                    ::
+':: DarkGrey: 8                ::
+':: BrightBlue: 9              ::
+':: BrightGreen: 10            ::
+':: BrightCyan = 11            ::
+':: BrightRed = 12             ::
+':: Pink = 13                  ::
+':: Yellow = 14                ::
+':: White = 15                 ::
+'::::::::::::::::::::::::::::::::
+
+'::::::::::::::::::::::::::::::::
+':: Runs when a player joins the game
+Sub JoinGame(Index)
+'::::::::::::::::::::::::::::::::
+Dim GameName
+Dim MOTD
+
+    'Get the Game Name and MOTD
+    GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+    MOTD = GetVar("motd.ini", "MOTD", "Msg")
+
+    'Send a message saying they joined, change color if they are staff
+    If GetPlayerAccess(Index) <= 1 Then
+        Call GlobalMsg(GetPlayerName(Index) & " has joined " & GameName & "!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(Index) & " has joined " & GameName & "!", 15)
+    End If
+
+    'Send them welcome
+    Call PlayerMsg(Index, "Welcome to " & GameName & "!", 15)
+    
+    'Send motd
+    If Trim(MOTD) <> "" Then
+        Call PlayerMsg(Index, "MOTD ~ " & MOTD, 11)
+    End If
+
+    'First player to join?
+    If Int(GetVar("Admin.ini", "Scripts", "FirstJoin")) <> 1 Then
+        Call PlayerMsg(index, "Welcome to your new Aria Engine game! You have been given access to the administrator commands! Have fun!", 14)
+        Call SetPlayerAccess(Index, 5)
+        Call PutVar("Admin.ini", "Scripts", "FirstJoin", 1)
+        Call SendPlayerData(Index)
+    End If
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: Runs when a player exits the game
+Sub LeftGame(Index)
+'::::::::::::::::::::::::::::::::
+Dim GameName
+Dim n
+
+    GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+
+    'Check for boot map
+    If GetBootMap(GetPlayerMap(Index)) > 0 Then
+        Call SetPlayerX(Index, GetBootMapX(GetPlayerMap(Index)))
+        Call SetPlayerY(Index, GetBootMapY(GetPlayerMap(Index)))
+        Call SetPlayerMap(Index, GetBootMap(GetPlayerMap(Index)))
+    End If
+          
+    'Send a global message that he/she left
+    If GetPlayerAccess(Index) <= 1 Then
+        Call GlobalMsg(GetPlayerName(Index) & " has left " & GameName & "!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(Index) & " has left " & GameName & "!", 15)
+    End If
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: Runs when a players EXP Surpasses the requirement
+Sub PlayerLevelUp(Index)
+'::::::::::::::::::::::::::::::::
+Dim I    
+Dim D
+Dim C
+    
+    C = 0
+    Do While GetPlayerExp(Index) => GetPlayerNextLevel(Index)    
+        D = GetPlayerExp(Index) - GetPlayerNextLevel(Index)
+        Call SetPlayerLevel(Index, GetPlayerLevel(Index) + 1)
+        I = Int(GetPlayerSPEED(Index) / 10)
+        If I < 1 Then I = 1
+        If I > 3 Then I = 3
+            
+        Call SetPlayerPOINTS(Index, GetPlayerPOINTS(Index) + I)
+        Call SetPlayerExp(Index, D)      
+        C = C + 1
+    Loop
+    If C > 1 Then 
+        'Call GlobalMsg(GetPlayerName(Index) & " has gained " & C & " levels!", 6)
+    Else
+        'Call GlobalMsg(GetPlayerName(Index) & " has gained a level!", 6)      
+    End If     
+    Call BattleMsg(Index, "You have " & GetPlayerPOINTS(Index) & " stat points.", 9, 0)   
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: This sub is called when ever a user tries to increase one of there stats
+Sub UsingStatPoints(Index, PointType)
+'::::::::::::::::::::::::::::::::
+    Select Case PointType
+        Case 0 ' Strength
+        ' Gives you a set max
+            If GetPlayerSTR(Index) + 1 > 1000 Then
+                Call BattleMsg(Index, "You have maxed your strength!", 12, 0)
+                Exit Sub
+            End If
+            Call SetPlayerSTR(Index, GetPlayerSTR(Index) + 1)
+            Call BattleMsg(Index, "You have gained more strength!", 15, 0)
+        Case 1 ' Defence
+        ' Gives you a set max
+            If GetPlayerDEF(Index) + 1 > 1000 Then
+                Call BattleMsg(Index, "You have maxed your defence!", 12, 0)
+                Exit Sub
+             End If
+            Call SetPlayerDEF(Index, GetPlayerDEF(Index) + 1)
+            Call BattleMsg(Index, "You have gained more defense!", 15, 0)
+        Case 2 ' Magic
+        ' Gives you a set max
+            If GetPlayerMAGI(Index) + 1 > 1000 Then
+                Call BattleMsg(Index, "You have maxed your magic!", 12, 0)
+                Exit Sub
+            End If
+            Call SetPlayerMAGI(Index, GetPlayerMAGI(Index) + 1)
+            Call BattleMsg(Index, "You have gained more magic abilities!", 15, 0)
+        Case 3 ' Speed
+        ' Gives you a set max
+            If GetPlayerSPEED(Index) + 1 > 1000 Then
+                Call BattleMsg(Index, "You have maxed your speed!", 12, 0)
+                Exit Sub
+            End If
+            Call SetPlayerSPEED(Index, GetPlayerSPEED(Index) + 1)
+            Call BattleMsg(Index, "You have gained more speed!", 15, 0)
+        End Select
+        Call SetPlayerPOINTS(Index, GetPlayerPOINTS(Index) - 1)
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: Runs when a player attacks.
+Sub OnAttack(Index, Script)
+'::::::::::::::::::::::::::::::::
+
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: Runs when a player steps on a scripted tile.
+Sub ScriptedTile(Index, Script)
+'::::::::::::::::::::::::::::::::
+    Select Case Script
+        Case 0
+            Call PlayerMsg(Index, "It appears as if something should have happened here.", 15)
+        Case Else
+            Call AdminMsg(Index, "A error has occured! Scripted tile number " & Script & " doesn't exist!")
+            Call AdminMsg(Index, "The broken tile is on map " & GetPlayerMap(Index) & ", tile " & GetPlayerX(Index) & "," & GetPlayerY(Index) & "!")
+    End Select
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: Runs when a player uses a scripted spell.
+Sub ScriptedSpell(Index, Script)
+'::::::::::::::::::::::::::::::::
+    Select Case Script
+        Case 0
+            Call MapMsg(GetPlayerMap(Index), GetPlayerName(Index) & "'s Spell fizzles.", 13)
+        Case Else
+            Call AdminMsg(Index, "A error has occured! Scripted spell number " & Script & " doesn't exist!")
+    End Select
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: This sub is called when a player clicks yes/no on a prompt
+Sub PlayerPrompt(Index, Prompt, Value)
+'::::::::::::::::::::::::::::::::
+    If Prompt Then
+        Select Case Value
+            Case 0
+                Call PlayerMsg("Hi, this is a yes answer!", 3)
+            Case Else
+                Call AdminMsg("A error has occured! Prompt case " & value & " doesn't exist for yes!")
+        End Select
+    Else
+        Select Case Value
+            Case 0
+                Call GlobalMsg("Hi, this is a no answer!", 4)
+            Case Else
+                Call AdminMsg("A error has occured! Prompt case " & value & " doesn't exist for no!")
+       End Select
+    End If
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: Runs when ever a command is entered, you can't override built in commands.
+Sub Commands(Index)
+'::::::::::::::::::::::::::::::::
+Dim C
+Dim Lawl
+
+    TextSay = GetVar("Scripts\Command.ini", "TEMP", "Text" & Index)  
+    
+    '/summon command, brings a player to the command user
+    If LCase(Mid(TextSay, 1, 7)) = "/summon" Then
+        If Len(TextSay) > 8 Then
+            TextSay = FindPlayer(Trim(Mid(TextSay, 8)))
+            If GetPlayerAccess(Index) < 2 Then
+                Call PlayerMessage(Index, "You're not allowed to use that command!", 12)
+                Exit Sub
+            End If
+            If TextSay < 1 Then
+                Call PlayerMessage(Index, "Player is offline!", 12)
+                Exit Sub
+            End If
+            Call WarpPlayer(TextSay, GetPlayerMap(Index), GetPlayerX(Index), GetPlayerY(Index))
+            Call PlayerMsg(Index, "You have summoned" & GetPlayerName(TextSay) & "!", 7)
+            Call PlayerMsg(TextSay, GetPlayerName(Index) & " has summoned you.", 7)
+        Else
+            Call PlayerMsg(Index, "Usage: /summon PlayerName", 15)
+        End If
+        Exit Sub
+    End If
+
+    '/warpto command, brings the command user to the specified player
+    If LCase(Mid(TextSay, 1, 7)) = "/warpto" Then
+        If Len(TextSay) > 8 Then
+            TextSay = FindPlayer(Trim(Mid(TextSay, 8)))
+            If GetPlayerAccess(Index) < 2 Then
+                Call PlayerMessage(Index, "You're not allowed to use that command!", 12)
+                Exit Sub
+            End If
+            If TextSay < 1 Then
+                Call PlayerMessage(Index, "Player is offline!", 12)
+                Exit Sub
+            End If
+            Call WarpPlayer(Index, GetPlayerMap(TextSay), GetPlayerX(TextSay), GetPlayerY(TextSay))
+            Call PlayerMsg(Index, "You have been warped to " & GetPlayerName(TextSay) & "!", 7)
+            Call PlayerMsg(TextSay, GetPlayerName(Index) & " has warped to you.", 7)
+        Else
+            Call PlayerMsg(Index, "Usage: /warpto PlayerName", 15)
+        End If
+        Exit Sub
+    End If
+
+    '/warp command, brings the command user to the specified map
+    If LCase(Mid(TextSay, 1, 5)) = "/warp" Then
+        If Len(TextSay) > 6 Then
+            TextSay = Int(Mid(TextSay, 6))
+            If GetPlayerAccess(Index) < 2 Then
+                Call PlayerMessage(Index, "You're not allowed to use that command!", 12)
+                Exit Sub
+            End If
+            If TextSay < 0 Or TextSay > GetMaxMaps() Then
+                Call PlayerMessage(Index, "Invalid map number!", 12)
+                Exit Sub
+            End If
+            Call SetPlayerMap(Index, TextSay)
+            Call SendPlayerData(Index)
+            Call PlayerMsg(Index, "You have been warped to map # " & TextSay & "!", 7)
+        Else
+            Call PlayerMsg(Index, "Usage: /warp MapNumber", 15)
+        End If
+        Exit Sub
+    End If
+
+    Select Case LCase(TextSay)
+        Case "/help"
+            Call PlayerMsg(Index, "Social Commands:", 15)
+            Call PlayerMsg(Index, "'message = Broadcast Message", 15)
+            Call PlayerMsg(Index, "-message = Emote Message", 15)
+            Call PlayerMsg(Index, "!name message = Player Message", 15)
+            Call PlayerMsg(Index, "Available Commands: /help, /info, /who, /fps, /inv, /stats, /train, /party, /join, /leave, /refresh", 15)
+            Exit Sub
+    
+        Case "/admin"
+            If GetPlayerAccess(Index) > 0 Then
+                Call PlayerMsg(Index, "Social Commands:", 15)
+                Call PlayerMsg(Index, """message = Global Admin Message", 15)
+                Call PlayerMsg(Index, "=message = Private Admin Message", 15)
+                Call PlayerMsg(Index, "Available Commands: /admin, /loc, /mapeditor, /warpmeto, /warptome, /warpto, /setsprite, /mapreport, /kick, /ban, /edititem, /respawn, /editnpc, /motd, /editshop, /ban, /editspell", 15)
+                Exit Sub
+            End If
+
+        Case "/time"
+            If GetPlayerAccess(Index) < 4 Then
+                Call PlayerMsg(index, "You're not allowed to do that!", 12)
+                Exit Sub
+            End If
+            Call FormShow(Index, 1)
+            Call FormResize(Index, 1, 100, 50)
+            Call FormSetTitle(Index, 1, "Question")
+
+            Call FormButtonShow(Index, 1, 1, 5, 32, 41, 17)
+            Call FormButtonText(Index, 1, 1, "Day")
+            Call FormButtonShow(Index, 1, 2, 56, 32, 41, 17)
+            Call FormButtonText(Index, 1, 2, "Night")
+
+            Call FormTextShow(Index, 1, 1, 8, 8, 75, 17)
+            Call FormTextSet(Index, 1, 1, "Game time:")
+            Exit Sub
+
+	Case "/ghost"
+            If GetPlayerAccess(Index) < 4 Then
+                Call PlayerMsg(index, "You're not allowed to do that!", 12)
+                Exit Sub
+            End If
+            Call SetPlayerInvisible(Index, Not GetPlayerInvisible(Index))
+            Call SendPlayerData(Index)
+            If GetPlayerInvisible(Index) Then
+                Call PlayerMsg(Index, "You are now a ghost to the praying eyes of other players!", 7)
+            Else
+                Call PlayerMsg(Index, "You are once again visible to the naked eye!", 8)
+            End If
+            Exit Sub
+    End Select
+
+    Call PlayerMsg(Index, "The command you entered was not recognized! Type /help for more info on the commands you can use!", 12)
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: This is called when a button on a custom form is pressed
+Sub FormButtonClick(Index, FrmIndex, BtnIndex)
+'::::::::::::::::::::::::::::::::
+    Select Case BtnIndex
+        Case 1
+            Call SetTime(10)
+        Case 2
+            Call SetTime(21)
+    End Select
+    Call FormReset(Index, 1)
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: This is called when a text on a custom form is clicked
+Sub FormTextClick(Index, FrmIndex, TxtIndex)
+'::::::::::::::::::::::::::::::::
+    'Nothing needed here for default main!
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: This sub runs every game second
+Sub TimedEvent(Hours, Minutes, Seconds)
+'::::::::::::::::::::::::::::::::
+    If Minutes = 0 And Seconds = 0 Then
+        Call GlobalMsg("A hour has passed in the realm of nothing!", 15)
+    End If
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: This sub is called when day has dawned.
+Sub OnDay()
+'::::::::::::::::::::::::::::::::
+    Call GlobalMsg("Day has dawned in this realm", 15)
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: This sub is called when night has fallen.
+Sub OnNight()
+'::::::::::::::::::::::::::::::::
+    Call GlobalMsg("Night has fallen upon the weary eyed nightowls.", 1)
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: This sub is called when you die, it is for penalties.
+Sub DropItems(Index)
+'::::::::::::::::::::::::::::::::
+Dim Luck
+    Luck = Rnd * 99 + 1
+    
+    '60% Chance of dropping there helmet.
+    If GetPlayerHelmetSlot(Index) > 0 And Luck < 60 Then
+        Call PlayerMapDropItem(Index, GetPlayerHelmetSlot(Index), 0)
+        '50% Chance of dropping there sheild.
+        If GetPlayerShieldSlot(Index) > 0 And Luck < 50 Then
+            Call PlayerMapDropItem(Index, GetPlayerShieldSlot(Index), 0)
+            '40% Chance of dropping there weapon.
+            If GetPlayerWeaponSlot(Index) > 0 And Luck < 40 Then
+                Call PlayerMapDropItem(Index, GetPlayerWeaponSlot(Index), 0)
+                '30% Chance of dropping there armor.
+                If GetPlayerArmorSlot(Index) > 0 And Luck < 30 Then
+                    Call PlayerMapDropItem(Index, GetPlayerArmorSlot(Index), 0)
+                    Call PlayerMsg(index, "It apears as though all of your equipment was lost.", 12)
+                    Exit Sub
+                End If
+            End If
+        End If
+        Call PlayerMsg(index, "It apears as though some of your equipment was lost.", 14)
+    Else
+        Call PlayerMsg(index, "You were lucky, it apears as though you haven't lost any equipment.", 10)
+    End If
+
+
+    '40% chance of dropping nothing.
+End Sub
+
+'::::::::::::::::::::::::::::::::
+':: This sub is called when you die, it is for warps and stuff
+Sub OnDeath(Index)
+'::::::::::::::::::::::::::::::::
+Dim MapNum
+Dim X
+Dim Y
+Dim ClassNum
+
+    ClassNum= GetPlayerClass(Index)
+    MapNum = GetVar("Classes\Class" & ClassNum& ".ini", "CLASS", "Map")
+    X = GetVar("Classes\Class" & ClassNum& ".ini", "CLASS", "x")
+    Y = GetVar("Classes\Class" & ClassNum& ".ini", "CLASS", "y")
+
+    Call PlayerWarp(Index, MapNum, X, Y)
+End Sub

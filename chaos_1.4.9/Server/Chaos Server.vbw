@@ -1,0 +1,15 @@
+frmServer = -101, 83, 636, 669, , -197, 51, 540, 639, C
+modTypes = 15, 22, 674, 553, 
+modGameLogic = -15, 75, 707, 600, 
+modServerTCP = 13, 131, 666, 543, 
+frmLoad = -11, 104, 708, 671, C, 191, 55, 910, 629, C
+modSysTray = 57, 118, 560, 694, 
+clsCommands = 28, 18, 705, 605, 
+clsRC4 = -224, 150, 550, 737, C
+clsSadScript = -28, 52, 746, 639, C
+frmEditor = 176, 32, 863, 637, , 19, 11, 937, 763, C
+clsCRijndael = 66, 87, 961, 788, C
+ModServerLoop = 184, 184, 699, 570, 
+ModServerSettings = 0, 0, 0, 0, C
+frmSettings = 0, 0, 515, 383, , 138, 138, 653, 524, C
+modParty = 46, 46, 494, 429, 

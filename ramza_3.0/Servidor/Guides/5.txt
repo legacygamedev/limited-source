@@ -1,0 +1,16 @@
+Los controles son los siguientes:
+
+Atacar: CTRL
+Correr: Mantener SHIFT
+ENTER: Agarrar Items
+INSERT: Lanzar Hechizo ( Cuando le haces doble click a un hechizo lo memorizas y con "Lanzar" o INSERT lo tiras)
+Flechas: Movimientos
+F1 - Abre el Panel de Usuarios
+F2 - Usar pocion de vida
+F3 - Usar pocion de mana
+F4 - Abre el panel para crear tu Clan
+F5 - Abre el Panel del Clan donde puedes agregar 
+jugadores
+F11 - Saca un Screenshot de la pantalla de juego.
+F12 - Saca un Screenshot de todo el Cliente 
+End - Da vuelta a tu personaje

@@ -1,0 +1,15 @@
+[DATA]
+Enabled=True
+Author=Rezeyu
+Description=Gives starting items to new players when they first log in.
+
+Sub JoinGame(Index)
+    If GetPlayerLevel(Index) = 1 Then
+        If GetPlayerExp(Index) = 0 Then
+            Call GiveItem(Index, 1, 1)
+            Call GiveItem(Index, 2, 1)
+            Call SetPlayerExp(Index, 1)
+        End If
+    End If
+End Sub
+

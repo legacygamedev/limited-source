@@ -1,0 +1,20 @@
+
+Received connection from 127.0.0.1.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+Demo has logged in from 127.0.0.1.
+Demo/Demo has began playing Eclipse.
+(global) Demo: 0
+(global) Demo: 1
+(global) Demo: 2
+(global) Demo: Mole
+Demo has disconnected from Eclipse.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+Received connection from 127.0.0.1.
+Connection from 127.0.0.1 has been terminated.
+Demo has logged in from 127.0.0.1.
+Demo/Demo has began playing Eclipse.
+Demo has disconnected from Eclipse.
+Connection from 127.0.0.1 has been terminated.
+Chat Logs Have Been Saved!

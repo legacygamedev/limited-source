@@ -1,0 +1,9 @@
+
+Received connection from 127.0.0.1.
+aaa has logged in from 127.0.0.1.
+aaa/Gileijah has began playing Eight Destinies.
+Chat Logs Have Been Saved!
+Quick Msg: [Server going down, please log off ASAP.]
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!

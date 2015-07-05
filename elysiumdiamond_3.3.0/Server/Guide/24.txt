@@ -1,0 +1,162 @@
+- a. The Commands
+Elysium Guide v 1.0
+Written by Cruzn
+
+
+:: Scripting Commands ::
+          :: Variable Commands ::
+             GetVar("FILENAME.ini", "HEADER", "VARIABLE") - Retrieves a specified variable.
+             PutVar("FILENAME.ini", "HEADER", "VARIABLE", "VALUE TO PUT IN VARIABLE") - Saves a variable to a file.
+
+          :: Message Commands ::
+             AdminMsg("MESSAGE", COLOR NUMBER) - Displays a message to all admins.
+             AlertMsg(INDEX, "MESSAGE") - Displays a message and kicks the player off.
+             GlobalMsg("MESSAGE", COLOR NUMBER) - Sends a message to everyone on the server.
+             MapMsg(MAP NUMBER, "MESSAGE", COLOR NUMBER) - Sends a message to everyone on a map.
+             PlayerMsg(INDEX, "MESSAGE", COLOR NUMBER) - Sends a message to a player.
+
+          :: Account Commands ::
+             GetPlayerLogin(INDEX) - Retrieves the player's username.
+             GetPlayerIP(INDEX) - Retrieves the player's IP.
+
+          :: Character Commands ::
+             GetPlayerName(INDEX) - Retrieves the player's name.
+             SetPlayerName(INDEX, "NAME") - Sets the player's name.
+
+             GetPlayerCharNum(INDEX) - Retrieves the player's number.
+
+             GetPlayerGuild(INDEX) - Retrieves the player's guild.
+             SetPlayerGuild(INDeX) - Sets the player's guild.
+
+             GetPlayerGuildAccess(INDEX) - Retrieves the player's guild access.
+             SetPlayerGuildAccess(INDEX, ACCESS) - Sets the player's guild access
+
+             GetPlayerClass(INDEX) - Retrieves the player's class number.
+             SetPlayerClass(INDEX, CLASS) - Sets the player's class.
+
+             GetPlayerClassName(INDEX) - Retrieves the player's class name.
+
+             GetPlayerSprite(INDEX) - Retrieves the player's sprite number.
+             SetPlayerSprite(INDEX, SPRITE) - Sets the player's sprite.
+
+             GetPlayerLevel(INDEX) - Retrieves the player's level.
+             SetPlayerLevel(INDEX, LEVEL) - Sets the player's level.
+
+             GetPlayerNextLevel(INDEX) - Retrieves the player's"EXP Until Next Level".
+
+             GetPlayerExp(INDEX) - Retrieves the player's current experience.
+             SetPlayerExp(INDEX, EXPERIENCE) - Sets the player's experience.
+
+             GetPlayerAccess(INDEX) - Retrieves the player's access.
+             SetPlayerAccess(INDEX, ACCESS) - Sets the player's access.
+
+             GetPlayerPK(INDEX) - Retrieves the player's PK count.
+             SetPlayerPK(INDEX, AMMOUNT) - Sets the player's PK count.
+
+             GetPlayerHP(INDEX) - Retrieves the player's current HP.
+             SetPlayerHP(INDEX, HP) - Sets the player's HP.
+             GetPlayerMaxHP(INDEX) - Retrieves the player's max HP.
+
+             GetPlayerMP(INDEX) - Retrieves the player's current MP.
+             SetPlayerMP(INDEX, MP) - Sets the player's MP.
+             GetPlayerMaxMP(INDEX) - Retrieves the player's max MP.
+
+             GetPlayerSP(INDEX) - Retrieves the player's current SP.
+             SetPlayerSP(INDEX, SP) - Sets the player's SP.
+             GetPlayerMaxSP(INDEX) - Retrieves the player's max SP.
+
+             GetPlayerSTR(INDEX) - Retrieves the player's STR.
+             SetPlayerSTR(INDEX, STR) - Sets the player's STR.
+
+             GetPlayerDEF(INDEX) - Retrieves the player's DEF.
+             SetPlayerDEF(INDEX, DEF) - Sets the player's DEF.
+
+             GetPlayerSPEED(INDEX) - Retrieves the player's SPEED.
+             SetPlayerSPEED(INDEX, SPEED) - Sets the player's SPEED.
+
+             GetPlayerMAGI(INDEX) - Retrieves the player's MAGI.
+             SetPlayerMAGI(INDEX, MAGI) - Sets the player's MAGI.
+
+             GetPlayerPOINTS(INDEX) - Retrieves the player's skill points.
+             SetPlayerPOINTS(INDEX, POINTS) - Sets the player's skill points.
+
+             :: Character Item Commands ::
+                    GetPlayerInvItemNum(INDEX, SLOT) - Retrieves the specified item's number.
+                    SetPlayerInvItemNum(INDEX, SLOT, ITEM) - Sets the item in the specified slot.
+
+                    GetPlayerInvItemValue(INDEX, SLOT) - Retrieves the specified item's value.
+                    SetPlayerInvItemValue(INDEX, SLOT, VALUE) - Sets the specified item's value.
+
+                    GetPlayerInvItemDur(INDEX, SLOT) - Retrieves the specified item's durability.
+                    SetPlayerInvItemDur(INDEX, SLOT, DURABILITY) - Sets the specified item's durability.
+
+                    GetPlayerSpell(INDEX, SLOT) - Retrieves the player's spell number.
+                    SetPlayerSpell(INDEX, SLOT, SPELL) - Sets the player's spell in the specified slot.
+
+                    GetPlayerArmorSlot(INDEX) - Retrieves the player's armor slot item number.
+                    SetPlayerArmorSlot(INDEX, SLOT) - Sets the player's armor slot item number.
+
+                    GetPlayerWeaponSlot(INDEX) - Retrieves the player's weapon slot item number.
+                    SetPlayerWeaponSlot(INDEX, SLOT) - Sets the player's weapon slot item number.
+
+                    GetPlayerHelmetSlot(INDEX) - Retrieves the player's helmet slot item number.
+                    SetPlayerHelmetSlot(INDEX, SLOT) - Sets the player's helmet slot item number.
+
+                    GetPlayerShieldSlot(INDEX) - Retrieves the player's shield slot item number.
+                    SetPlayerShieldSlot(INDEX, SLOT) - Sets the player's shield slot item number.
+
+                    PlayerMapDropItem(INDEX, SLOT, AMOUNT) - Drops the specified item slot onto the map.
+
+             :: Character Map Commands ::
+                    GetPlayerMap(INDEX)
+                    SetPlayerMap(INDEX, MAP)
+
+                    GetPlayerX(INDEX)
+                    SetPlayerX(INDEX, X)
+
+                    GetPlayerY(INDEX)
+                    SetPlayerY(INDEX, Y)
+
+                    GetPlayerDir(INDEX)
+                    SetPlayerDir(INDEX, DIRECTION)
+
+                    GetBootMap(INDEX) - Retrieves the player's boot map.
+
+          :: Class Commands ::
+             GetClassMaxHP(CLASS) - Retrieves the classes' max HP.
+
+             GetClassMaxMP(CLASS) - Retrieves the classes' max MP.
+
+             GetClassMaxSP(CLASS) - Retrieves the classes' max SP.
+
+             GetClassSTR(CLASS) - Retrieves the classes' STR.
+
+             GetClassDEF(CLASS) - Retrieves the classes' DEF.
+
+             GetClassSPEED(CLASS) - Retrieves the classes' SPEED.
+
+             GetClassMAGI(CLASS) - Retrieves the classes' MAGI.
+
+          :: Miscellaneous Commands ::
+             IsConnected(INDEX) - Determines whether or not a player is connected.
+             IsPlaying(INDEX) - Determines whethere or not a player is playing.
+             Flash(INDEX, "FLASH FILE") - Plays a flash file for a player. You can use a website address for this.
+             Prompt(INDEX, "QUESTION", SCRIPT NUMBER) - Opens up a prompt box.
+             PlaySound(INDEX, "SOUND FILE") - Plays a sound for a player.
+
+The following commands can be used to send client updates for various items.
+          :: Updating Commands ::
+                    SendInventoryUpdate(INDEX, SLOT) - Sends an update for the specified slot.
+                    SendWornEquipment(INDEX) - Sends an update for all equipment.
+                    SendHP(INDEX) - Sends an update for HP.
+                    SendMP(INDEX) - Sends an update for MP.
+                    SendSP(INDEX) - Sends an update for SP.
+                    SendStats(INDEX) - Sends an update for all stats.
+                    SendPlayerData(INDEX) - Sends an update for all objects.
+
+                    :: Raw Data Update Commands ::
+                           SendDataTo(INDEX, "DATA")
+                           SendDataToAll("DATA")
+                           SendDataToAllBut(INDEX, "DATA")
+                           SendDataToMap(MAP, "DATA")
+                           SendDataToMapBut(INDEX, MAP, "DATA")

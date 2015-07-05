@@ -1,0 +1,40 @@
+caracteristicas:
+
+-Panel de Administrador
+-Panel de Usuarios
+-Arenas
+-Nuevo Editor de Mapas
+-Armas de rango con municiones
+-Historia del juego y diario de jugadores
+-Emoticones
+-Uso de Videos Flash
+-Sistema de Partys y Clanes
+-Editor de items
+-Comandos en castellano
+-Teletransporte por nivel
+-Sistema de Banco
+-Nuevo Menu en el Juego
+-Noticias con sonido
+-Editor de Npcs
+-Puntos fijos para aparicion de Npcs en el mapa
+-Editor de opciones
+-Sistema de Chateo y Comercio entre usuarios
+-Nuevo y detallado sistema de quests
+-Nuevo editor y sistema de Tiendas
+-Nuevo editor de hechizos con animaciones
+-Clima con lluvia, nieve y truenos
+-Sistema de Cofres y de Trampas
+-Servidor completamente nuevo
+-Panel de ayuda en el servidor con una guia de como usar el engine
+-Tamaño de personajes intercambiable desde 32*32 gasta 96*96
+-Sistema de paperdoll ( Los items que se equipan se ven sobre los personajes )
+-Editor de Datos
+-Editor de Scripts
+-Editor de Daño
+-Editor de regeneracion de HP, MP y SP
+-Rango de nivel de partys, pk y clanes modificables
+-Editor de mensajes rapidos
+-Decenas de bugs arreglados
+-Servidor y clientes mucho mas rapidos para transmitir informacion
+-Mensajes en burbujas
+-Daño sobre los personajes

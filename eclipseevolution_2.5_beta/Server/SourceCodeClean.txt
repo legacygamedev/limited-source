@@ -1,0 +1,186 @@
+Server
+   Forms
+      frmEditor (frmEditor.frm)
+         Private Sub mnuBClearALL_Click()
+            The procedure 'mnuBClearALL_Click' is not used
+         Private Sub mnuBGoPrev_Click()
+            The procedure 'mnuBGoPrev_Click' is not used
+         Private Sub mnuBJumpFirst_Click()
+            The procedure 'mnuBJumpFirst_Click' is not used
+         Private Sub mnuBJumpLast_Click()
+            The procedure 'mnuBJumpLast_Click' is not used
+         Private Sub mnuBNext_Click()
+            The procedure 'mnuBNext_Click' is not used
+         Private Sub mnuBToggle_Click()
+            The procedure 'mnuBToggle_Click' is not used
+      frmServer (frmServer.frm)
+         Private Sub Command25_Click()
+            The variable 'I' is not used
+            The variable 'f' is not used
+            The variable 'Script' is not used
+         Private Sub PlayerTimer_Timer()
+            The variable 'I' is not used
+         Private Sub mnuRestore_Click()
+            The procedure 'mnuRestore_Click' is not used
+   Modules
+      modDatabase (modDatabase.bas)
+         Sub SavePlayer(ByVal index As Long)
+            The variable 'j' is not used
+            The variable 'n' is not used
+         Sub DelChar(ByVal index As Long, ByVal CharNum As Long)
+            The variable 'f1' is not used
+            The variable 'f2' is not used
+            The variable 's' is not used
+         Sub LoadNpcs()
+            The variable 'z' is not used
+         Sub LoadMaps()
+            The variable 'x' is not used
+            The variable 'y' is not used
+            The variable 'tick' is not used
+         Sub CheckMaps()
+            The variable 'x' is not used
+            The variable 'y' is not used
+            The variable 'n' is not used
+         Sub SaveLogs()
+            The variable 'd' is not used
+            The variable 'b' is not used
+      modGameLogic (modGameLogic.bas)
+         Sub SpawnMapItems(ByVal MapNum As Long)
+            The variable 'I' is not used
+         Sub AttackPlayer(ByVal Attacker As Long, ByVal Victim As Long, ByVal Damage As Long)
+            The variable 'I' is not used
+         Sub AttackNpc(ByVal Attacker As Long, ByVal MapNpcNum As Long, ByVal Damage As Long)
+            The variable 'STR' is not used
+            The variable 'DEF' is not used
+         Sub PlayerMove(ByVal index As Long, ByVal Dir As Long, ByVal Movement As Long)
+            The variable 'j' is not used
+         Function CanNpcMove(ByVal MapNum As Long, ByVal MapNpcNum As Long, ByVal Dir) As Boolean
+            The variable 'BX' is not used
+            The variable 'BY' is not used
+         Sub NpcMove(ByVal MapNum As Long, ByVal MapNpcNum As Long, ByVal Dir As Long, ByVal Movement As Long)
+            The variable 'x' is not used
+            The variable 'y' is not used
+            The variable 'I' is not used
+         Function GetSpellReqLevel(ByVal index As Long, ByVal SpellNum As Long)
+            The parameter 'index' is not used (it is used only inside commented block)
+         Sub ScriptSpawnNpc(ByVal MapNpcNum As Long, ByVal MapNum As Long, ByVal spawn_x As Long, ByVal spawn_y As Long, ByVal NpcNum As Long)
+            The variable 'Spawned' is not used
+      modGeneral (modGeneral.bas)
+         Sub InitServer()
+            The variable 'IPMask' is not used
+            The variable 'Script' is not used
+         Sub CheckGiveHP()
+            The variable 'n' is not used
+         Sub ScriptSpawnNpc(ByVal MapNpcNum As Long, ByVal MapNum As Long, ByVal spawn_x As Long, ByVal spawn_y As Long, ByVal NpcNum As Long)
+            The variable 'Spawned' is not used
+      modNPCSpawn (modNPCSpawn.bas)
+         Sub AttributeNPCGameAI(ByVal MapNum As Long)
+            The variable 'x1' is not used
+            The variable 'y1' is not used
+         Function CanAttackAttributeNpc(ByVal Attacker As Long, ByVal index As Long, ByVal x As Long, ByVal y As Long) As Boolean
+            The variable 'n' is not used
+         Function CanAttributeNpcAttackNpc(ByVal MapNum, ByVal MapNpcNum As Long, ByVal x As Long, ByVal y As Long) As Boolean
+            The variable 'NpcNum' is not used
+         Function CanAttributeNPCMove(ByVal index As Long, ByVal x As Long, ByVal y As Long, ByVal MapNum As Long, ByVal Dir) As Boolean
+            The variable 'I' is not used
+            The variable 'BX2' is not used
+            The variable 'BY2' is not used
+         Sub AttributeNpcMove(ByVal index As Long, ByVal x As Long, ByVal y As Long, ByVal MapNum As Long, ByVal Dir As Long, ByVal Movement As Long)
+            The variable 'I' is not used
+         Sub AttackAttributeNpc(ByVal MapNpcNum As Long, ByVal x As Long, ByVal y As Long, ByVal Attacker As Long, ByVal Damage As Long)
+            The variable 'STR' is not used
+            The variable 'DEF' is not used
+         Function CanNPCMoveAttributeNPC(ByVal MapNum As Long, ByVal index As Long, ByVal Dir As Long) As Boolean
+            The variable 'x' is not used
+            The variable 'y' is not used
+         Sub ScriptSpawnNpc(ByVal MapNpcNum As Long, ByVal MapNum As Long, ByVal spawn_x As Long, ByVal spawn_y As Long, ByVal NpcNum As Long)
+            The variable 'Spawned' is not used
+      modServerTCP (modServerTCP.bas)
+         Sub SendDataTo(ByVal index As Long, ByVal Data As String)
+            The variable 'I' is not used
+            The variable 'n' is not used
+            The variable 'startc' is not used
+            The variable 'sendData' is not used
+         Sub SendDataToMap(ByVal MapNum As Long, ByVal Data As String, Optional ByVal Compressed As Boolean = False)
+            The parameter 'Compressed' is not used
+         Sub MapMsg(ByVal MapNum As Long, ByVal Msg As String, ByVal Color As Byte)
+            The variable 'text' is not used
+         Sub IncomingData(ByVal index As Long, ByVal DataLength As Long)
+            The variable 'unCData' is not used
+         Sub HandleData(ByVal index As Long, ByVal Data As String)
+            The variable 'unCData' is not used
+            The variable 'IPMask' is not used
+            The variable 'BanSlot' is not used
+            The variable 'BanPlayer' is not used
+            The variable 'tMapStart' is not used
+            The variable 'tMapEnd' is not used
+            The variable 'Packet' is not used (it is used only inside commented block)
+            The variable 'TempNum' is not used
+            The variable 'customtext1' is not used
+            The variable 'customtext2' is not used
+            The variable 'customtext3' is not used
+            The variable 'customtext4' is not used
+         Sub SendMap(ByVal index As Long, ByVal MapNum As Long)
+            The variable 'I' is not used
+         Sub SendItems(ByVal index As Long)
+            The variable 'Packet' is not used
+         Sub SendSkills(ByVal index As Long)
+            The variable 'Packet' is not used
+         Sub SendQuests(ByVal index As Long)
+            The variable 'Packet' is not used
+         Sub SendElements(ByVal index As Long)
+            The variable 'Packet' is not used
+         Sub SendEmoticons(ByVal index As Long)
+            The variable 'Packet' is not used
+         Sub SendArrows(ByVal index As Long)
+            The variable 'Packet' is not used
+         Sub SendNpcs(ByVal index As Long)
+            The variable 'Packet' is not used
+         Sub SendEditShopTo(ByVal index As Long, ByVal ShopNum As Long)
+            The variable 'I' is not used
+         Sub SendTrade(ByVal index As Long, ByVal ShopNum As Long)
+            The variable 'I' is not used
+            The variable 'x' is not used
+            The variable 'y' is not used
+            The variable 'XX' is not used
+      modTypes (modTypes.bas)
+         Function GetPlayerMaxHP(ByVal index As Long) As Long
+            The variable 'I' is not used
+   Class Modules
+      clsCommands (clsCommands.cls)
+         (General)-(Declarations)
+            The declaration Declare 'ShellExecute' is not used
+         Public Sub MapMsg(ByVal MapNum As Long, ByVal Msg As String, ByVal Color As Byte)
+            The variable 'text' is not used
+         Function GetPlayerMaxHP(ByVal index As Long) As Long
+            The variable 'I' is not used
+         Sub SendDataTo(ByVal index As Long, ByVal Data As String)
+            The variable 'I' is not used
+            The variable 'n' is not used
+            The variable 'startc' is not used
+         Sub AddLog(ByVal text As String, ByVal FN As String)
+            The parameter 'text' is not used (it is used only inside commented block)
+         Sub ScriptSpawnNpc(ByVal MapNpcNum As Long, ByVal MapNum As Long, ByVal spawn_x As Long, ByVal spawn_y As Long, ByVal NpcNum As Long)
+            The variable 'Spawned' is not used
+      clsRC4 (clsRC4.cls)
+         Public Function EncryptFile(ByVal strSource As String, ByVal strTarget As String, Optional strPassword As String) As Boolean
+            The variable 'inbyte' is not used
+         Private Function EnDeCryptSingle(bytePlain As Byte, Optional blnContinue As Boolean) As Byte 'Use this routine For really huge files
+            The procedure 'EnDeCryptSingle' is not used
+      clsSadScript (clsSadScript.CLS)
+         (General)-(Declarations)
+            The variable 'sSubs' is not used
+            The variable 'sFunctions' is not used
+         Public Function ReadInCode(sfile As String, sModTitle As String, msc As ScriptControl, Optional bEncrypted As Boolean = False)
+            The variable 'sTempCode' is not used
+         Private Function AddSubsToCode(mscControl As ScriptControl, sModName As String)
+            The variable 'sError' is not used (it is used only inside commented block)
+            The variable 'aTemp' is not used (it is used only inside commented block)
+         Private Function AddFuncsToCode(mscControl As ScriptControl, sModName As String)
+            The variable 'sError' is not used (it is used only inside commented block)
+            The variable 'aTemp' is not used (it is used only inside commented block)
+         Public Function RunCodeReturn(sModule As String, sCode As String, ParamArray abc() As Variant) As Variant
+            The variable 'sError' is not used
+            The variable 'aTemp' is not used
+         Private Sub SControl_Error()
+            The variable 'sError' is not used (it is used only inside commented block)

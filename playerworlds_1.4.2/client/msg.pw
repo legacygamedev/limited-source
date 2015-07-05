@@ -1,0 +1,53 @@
+*The following is a list of colors that you can use.
+Black = 0
+Blue = 1
+Green = 2
+Cyan = 3
+Red = 4
+Magenta = 5
+Brown = 6
+Grey = 7
+Dark Grey = 8
+Bright Blue = 9
+Bright Green = 10
+Bright Cyan = 11
+Bright Red = 12
+Pink = 13
+Yellow = 14
+White = 15
+
+
+[SERVERDOWN]
+Message = Sorry, The server seems to be down. Please try again in a few minutes, or visit http://www.playerworlds.com .
+
+[WAITTOPICKUPITEM]
+Message = You Bend over to pick something up, but it slips out of your hand again.
+Color=2
+
+[LOSTCONNECTION]
+Message = You have lost your connection. Please login again.
+
+[WALKANDCAST]
+Message = You cannot cast while walking.
+Color = 12
+
+[NOSPELL]
+Message = There is no spell here.
+Color=12
+
+[MUSTSELECTSPELL]
+Message = You must first select a spell before you can cast it.
+Color=12
+
+[MUSTSELECTITEM]
+Message = You must first select an item before you can use it.
+Color = 12
+
+[DELETECHARACTERCONFIRM]
+Message = Are you sure you want to delete this character? This can NOT be undone!!!
+
+
+
+
+
+

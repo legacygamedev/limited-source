@@ -1,0 +1,390 @@
+GetVar("FILENAME.ini", "HEADER", "VARIABLE")
+-Gets a value from an .ini file
+Example: MyVar = GetVar("Data.ini", "CONFIG", "GameName")
+
+PutVar("FILENAME.ini", "HEADER", "VARIABLE", "VALUE TO PUT IN VARIABLE")
+-Puts a value into an .ini file
+Example: Call PutVar("Data.ini", "CUSTOM", "GameData1", 1)
+
+GlobalMsg("MESSAGE", COLOR NUMBER)
+-Sends a message to everyone on the server
+Example: Call GlobalMsg("Hello everyone!", 7)
+
+AdminMsg("MESSAGE", COLOR NUMBER)
+-Sends a message to all online admins
+Example: Call AdminMsg("MESSAGE", COLOR NUMBER)
+
+PlayerMsg(INDEX NUMBER, "MESSAGE", COLOR NUMBER)
+-Sends a message to a specific player
+Example: Call PlayerMsg(index, "Welcome to the server.", 15)
+
+MapMsg(MAP NUMBER, "MESSAGE", COLOR NUMBER)
+-Sends a message to everyone on a particular map
+Example: Call MapMsg(1, "You all are on the first map!", 15)
+
+AlertMsg(INDEX NUMBER, "MESSAGE")
+-Sends the player an alert message box and kicks them off of the server
+Example: Call AlertMsg(index, "You have been disconnected, you fool.")
+
+GetPlayerLogin(INDEX NUMBER)
+-Gets the player's server username
+Example: MyVar = GetPlayerLogin(index)
+
+GetPlayerName(INDEX NUMBER)
+-Gets the player's character name
+Example: MyVar = GetPlayerName(index)
+
+SetPlayerName(INDEX NUMBER, "NAME")
+-Sets the player's character name
+Example: Call SetPlayerName(index, "Goofy")
+
+GetPlayerCharNum(INDEX NUMBER)
+-Gets the player's Character number
+Example: MyVar = GetPlayerCharNum(index)
+
+GetPlayerGuild(INDEX NUMBER)
+-Gets the name of the guild the player is a member of
+Example: MyVar = GetPlayerGuild(index)
+
+GetPlayerGuildAccess(INDEX NUMBER)
+-Gets the player's guild access level
+Example: MyVar = GetPlayerGuildAccess(index)
+
+SetPlayerGuildAccess(INDEX NUMBER, ACCESS LEVEL)
+-Sets the player's guild access level
+Example: Call SetPlayerGuildAccess(index, 4)
+
+GetPlayerClass(INDEX NUMBER)
+-Gets the player's Class number
+Example: MyVar = GetPlayerClass(index)
+
+SetPlayerClass(INDEX NUMBER, CLASS NUMBER)
+-Sets the player's Class by number
+Example: Call SetPlayerClass(index, 2)
+
+GetPlayerClassName(INDEX NUMBER)
+-Gets the player's Class name
+Example: MyVar = GetPlayerClassName(index)
+
+GetPlayerSprite(INDEX NUMBER)
+-Gets the player's Sprite number
+Example: MyVar = GetPlayerSprite(index)
+
+SetPlayerSprite(INDEX NUMBER, SPRITE NUMBER)
+-Sets the player's Sprite number
+Example: Call SetPlayerSprite(index, 79)
+
+GetPlayerLevel(INDEX NUMBER)
+-Gets the player's level
+Example: MyVar = GetPlayerLevel(index)
+
+SetPlayerLevel(INDEX NUMBER, LEVEL)
+-Sets the player's level
+Example: Call SetPlayerLevel(index, 10)
+
+GetPlayerNextLevel(INDEX NUMBER)
+-Gets the amount of experience at which the player will gain another level
+Example: MyVar = Get PlayerNextLevel(index)
+
+GetPlayerExp(INDEX NUMBER)
+-Gets the player's experience
+Example: MyVar = GetPlayerExp(index)
+
+SetPlayerExp(INDEX NUMBER, EXPERIENCE)
+-Sets the player's experience
+Example: Call SetPlayerExp(index, 1500)
+
+GetPlayerAccess(INDEX NUMBER)
+-Gets the player's server access level
+Example: MyVar = GetPlayerAccess(index)
+
+SetPlayerAccess(INDEX NUMBER, ACCESS)
+-Sets the player's server access level
+Example: Call SetPlayerAccess(index, 4)
+
+GetPlayerPK(INDEX NUMBER)
+-Gets the player's number of playerkills
+Example: MyVar = GetPlayerPK(index)
+
+SetPlayerPK(INDEX NUMBER, PK NUMBER)
+-Sets the player's number of playerkills
+Example: Call SetPlayerPK(index, 0)
+
+GetPlayerHP(INDEX NUMBER)
+-Gets the player's HP
+Example: MyVar = GetPlayerHP(index)
+
+SetPlayerHP(INDEX NUMBER, HP)
+-Sets the player's HP
+Example: Call SetPlayerHP(index, 50)
+
+GetPlayerMP(INDEX NUMBER)
+-Gets the player's MP
+Example: MyVar = GetPlayerMP(index)
+
+SetPlayerMP(INDEX NUMBER, MP)
+-Sets the player's MP
+Example: Call SetPlayerMP(index, 30)
+
+GetPlayerSP(INDEX NUMBER)
+-Gets the player's SP
+Example: MyVar = GetPlayerSP(index)
+
+SetPlayerSP(INDEX NUMBER, SP)
+-Sets the player's SP
+Example: Call SetPlayerSP(index, 15)
+
+GetPlayerMaxHP(INDEX NUMBER)
+-Gets the player's max HP ( full HP )
+Example: MyVar = GetPlayerMaxHP(index)
+
+GetPlayerMaxMP(INDEX NUMBER)
+-Gets the player's max MP ( full MP )
+Example: MyVar = GetPlayerMaxMP(index)
+
+GetPlayerMaxSP(INDEX NUMBER)
+-Gets the player's max SP ( full SP )
+Example: MyVar = GetPlayerMaxSP(index)
+
+GetClassMaxHP(CLASS NUMBER)
+-Gets the class' max HP
+Example: MyVar = GetClassMaxHP(2)
+
+GetClassMaxMP(CLASS NUMBER)
+-Gets the class' max MP
+Example: MyVar = GetClassMaxMP(1)
+
+GetClassMaxSP(CLASS NUMBER)
+-Gets the class' max SP
+Example: MyVar = GetClassMaxSP(3)
+
+GetClassSTR(CLASS NUMBER)
+-Gets the class' default STR
+Example: MyVar = GetClassSTR(1)
+
+GetClassDEF(CLASS NUMBER)
+-Gets the class' default DEF
+Example: MyVar = GetClassDEF(3)
+
+GetClassSPEED(CLASS NUMBER)
+-Gets the class' default SPEED
+Example: MyVar = GetClassSPEED(2)
+
+GetClassMAGI(CLASS NUMBER)
+-Gets the class' default MAGI
+Example: MyVar = GetClassMAGI(1)
+
+GetPlayerSTR(INDEX NUMBER)
+-Gets the player's STR
+Example: MyVar = GetPlayerSTR(index)
+
+SetPlayerSTR(INDEX NUMBER, STR)
+-Sets the player's STR
+Example: Call SetPlayerSTR(index, 40)
+
+GetPlayerDEF(INDEX NUMBER)
+-Gets the player's DEF
+Example: MyVar = GetPlayerDEF(index)
+
+SetPlayerDEF(INDEX NUMBER, DEF)
+-Sets the player's DEF
+Example: Call SetPlayerDEF(index, 25)
+
+GetPlayerSPEED(INDEX NUMBER)
+-Gets the player's SPEED
+Example: MyVar = GetPlayerSPEED(index)
+
+SetPlayerSPEED(INDEX NUMBER, SPEED)
+-Sets the player's SPEED
+Example: Call SetPlayerSPEED(index, 31)
+
+GetPlayerMAGI(INDEX NUMBER)
+-Gets the player's Magic/Special
+Example: MyVar = GetPlayerMAGI(index)
+
+SetPlayerMAGI(INDEX NUMBER, MAGI)
+-Sets the player's Magic/Special
+Example: Call SetPlayerMAGI(index, 27)
+
+GetPlayerPOINTS(INDEX NUMBER)
+-Gets the player's stat points
+Example: MyVar = GetPlayerPOINTS(index)
+
+SetPlayerPOINTS(INDEX NUMBER, POINTS)
+-Sets the player's stat points
+Example: Call SetPlayerPOINTS(index, 7)
+
+GetPlayerMap(INDEX NUMBER)
+-Gets the map the player is on
+Example: MyVar = GetPlayerMap(index)
+
+SetPlayerMap(INDEX NUMBER, MAP NUMBER)
+-Sets the map the player is on
+Example: Call SetPlayerMap(index, 5)
+
+GetPlayerX(INDEX NUMBER)
+-Gets the X coordinate of the player
+Example: MyVar = GetPlayerX(index)
+
+SetPlayerX(INDEX NUMBER, X COORDINATE)
+-Sets the X coordinate of the player
+Example: Call SetPlayerX(index, 17)
+
+GetPlayerY(INDEX NUMBER)
+-Gets the Y coordinate of the player
+Example: MyVar = GetPlayerY(index)
+
+SetPlayerY(INDEX NUMBER, Y COORDINATE)
+-Sets the Y coordinate of the player
+Example: Call SetPlayerY(index, 22)
+
+GetPlayerDir(INDEX NUMBER)
+-Gets the direction the player is facing
+Example: MyVar = GetPlayerDir(index)
+
+SetPlayerDir(INDEX NUMBER, DIRECTION NUMBER)
+-Sets the direction the player is facing
+Example: Call SetPlayerDir(index, 3)
+
+GetPlayerIP(INDEX NUMBER)
+-Gets the player's IP address
+Example: MyVar = GetPlayerIP(index)
+
+GetPlayerInvItemNum(INDEX NUMBER, INVENTORY SLOT)
+-Gets the Item number for the item in an inventory slot
+Example: MyVar = GetPlayerInvItemNum(index, 4)
+
+SetPlayerInvItemNum(INDEX NUMBER, INVENTORY SLOT, ITEM NUMBER)
+-Sets the item number for the item in an inventory slot
+Example: Call SetPlayerInvItemNum(index, 6, 3)
+
+GetPlayerInvItemValue(INDEX NUMBER, INVENTORY SLOT)
+-Gets the value for the item in an inventory slot
+Example: MyVar = GetPlayerInvItemValue(index, 7)
+
+SetPlayerInvItemValue(INDEX NUMBER, INVENTORY SLOT, ITEM VALUE)
+-Sets the value for the item in an inventory slot
+Example: Call SetPlayerInvItemValue(index, 5, 400)
+
+GetPlayerInvItemDur(INDEX NUMBER, INVENTORY SLOT)
+-Gets the durability for the item in an inventory slot
+Example: MyVar = GetPlayerInvItemDur(index, 9)
+
+SetPlayerInvItemDur(INDEX NUMBER, INVENTORY SLOT, ITEM DURABILITY)
+-Sets the durability for the item in an inventory slot
+Example: Call SetPlayerInvItemDur(index, 2, 255)
+
+GetPlayerSpell(INDEX NUMBER, SPELL SLOT)
+-Gets the spell number for the spell in a spell slot
+Example: MyVar = GetPlayerSpell(index, 2)
+
+SetPlayerSpell(INDEX NUMBER, SPELL SLOT, SPELL NUMBER)
+-Sets the spell number for the spell in a spell slot
+Example: Call SetPlayerSpell(index, 3, 7)
+
+GetPlayerArmorSlot(INDEX NUMBER)
+-Gets the slot number for the armor which the player is wearing
+Example: MyVar = GetPlayerArmorSlot(index)
+
+SetPlayerArmorSlot(INDEX NUMBER, INVENTORY SLOT)
+-Sets the armor the player is wearing to the armor in an inventory slot
+Example: Call SetPlayerArmorSlot(index, 3)
+
+GetPlayerWeaponSlot(INDEX NUMBER)
+-Gets the slot number for the weapon which the player is weilding
+Example: MyVar = GetPlayerWeapon Slot(index)
+
+SetPlayerWeaponSlot(INDEX NUMBER, INVENTORY SLOT)
+-Sets the weapon the player is weilding to the weapon in an inventory slot
+Example: Call SetPlayerWeaponSlot(index, 9)
+
+GetPlayerHelmetSlot(INDEX NUMBER)
+-Gets the slot number for the helmet which the player is wearing
+Example: MyVar = GetPlayerHelmetSlot(index)
+
+SetPlayerHelmetSlot(INDEX NUMBER, INVENTORY SLOT)
+-Sets the helmet the player is wearing to the helmet in an inventory slot
+Example: Call SetPlayerHelmetSlot(index, 10)
+
+GetPlayerShieldSlot(INDEX NUMBER)
+-Gets the slot number for the sheild the player is weilding
+Example: MyVar = GetPlayerShieldSlot(index)
+
+SetPlayerShieldSlot(INDEX NUMBER, INVENTORY SLOT)
+-Sets the shield the player is weilding to the shield in an inventory slot
+Example: Call SetPlayerShieldSlot(index, 14)
+
+GetBootMap(INDEX NUMBER)
+-Gets the boot map for the player
+Example: MyVar = GetBootMap(index)
+
+PlayerMapDropItem(INDEX NUMBER, INVENTORY SLOT, AMOUNT)
+-Causes a player to drop "AMOUNT" of the item in an inventory slot
+Example: Call PlayerMapDropItem(index, 5, 60)
+
+SpawnItemSlot()
+-Unsure of exact use
+Example:
+
+IsConnected(INDEX NUMBER)
+-Returns "True" if the player is connected and "False" if they are not
+Example: MyVar = IsConnected(index)
+
+IsPlaying(INDEX NUMBER)
+-Returns "True" if the player is playing and "False" if they are not
+Example: MyVar = IsPlaying(index)
+
+SendInventoryUpdate(INDEX NUMBER, INVENTORY SLOT)
+-Sends an update to the player's client for an inventory slot
+Example: Call SendInventoryUpdate(index, 12)
+
+SendWornEquipment(INDEX NUMBER)
+-Sends an update to the player's client for the equiptment the player is wearing
+Example: Call SendWornEquipment(index)
+
+SendHP(INDEX NUMBER)
+-Sends an update to the player's client for the player's HP
+Example: Call SendHP(index)
+
+SendMP(INDEX NUMBER)
+-Sends an update to the player's client for the player's MP
+Example: Call SendMP(index)
+
+SendSP(INDEX NUMBER)
+-Sends an update to the player's client for the player's SP
+Example: Call SendSP(index)
+
+SendStats(INDEX NUMBER)
+-Sends an update to the player's client for the player's Stats
+Example: Call SendStats(index)
+
+Flash(INDEX NUMBER, "FLASH FILE")
+-Plays a Flash movie for a player, can be a local file or a web address.
+Example: Call Flash(index, "http://www.yoursite.com/intro.swf")
+
+Prompt(INDEX NUMBER, "QUESTION", SCRIPT NUMBER TO RUN)
+-Displays a "Yes/No" prompt for a player
+Example: Call Prompt(index, "Do you want a cookie?", 9)
+
+PlaySound(INDEX NUMBER, "SOUND FILE")
+-Plays a sound for a player
+Example: Call PlaySound(index, "Shriek.wav")
+
+SendPlayerData(INDEX NUMBER)
+-Sends an update of player data to all players on a map for a specific player
+Example: Call SendPlayerData(index)
+
+SendDataTo(INDEX NUMBER, "DATA")
+-Sends raw data to a player's client
+
+SendDataToAll("DATA")
+-Sends raw data to all players' clients
+
+SendDataToAllBut(INDEX NUMBER, "DATA")
+-Sends raw data to all players' clients except for the specified player
+
+SendDataToMap(MAP NUMBER, "DATA")
+-Sends raw data to all players' clients on a specific map
+
+SendDataToMapBut(INDEX NUMBER, MAP NUMBER, "DATA")
+-Sends raw data to all players' clients on a specific map except for the specified player

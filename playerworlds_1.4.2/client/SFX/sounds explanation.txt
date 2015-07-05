@@ -1,0 +1,15 @@
+The following text is an explanation of the useage for the hard-coded sound files currently in use.
+Keep in mind that ANY sound file can be used for these events (except for the magic(#) files, but in order to work they MUST be named the correct filename.
+You can use an almost unlimited # of SFX files for spellcasting, but they must be named magic(#) (such as magic1, magic2, magic3 etc...)
+
+magic(#) - these are the files for your spell SFX
+SABER3 - this is for Critical Hits
+sword2   - normal attacks 
+sword8   -  missed attacks
+pain         - used for when player steps on a damage tile
+heal         -  used for when player steps on a healing tile
+warp        - used when player steps on a warp
+key           - used when player steps on a "key open" tile (opening doors) or when a key is used
+gulp         - used for when player uses a 'potion' item type
+chant1     - used when player uses item that teaches a spell
+blocked   - for blocked attacks

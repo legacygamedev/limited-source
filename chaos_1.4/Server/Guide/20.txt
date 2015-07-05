@@ -1,0 +1,11 @@
+F. Customizing Your Game
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Intro ::
+You'll need to customize your server at one point or another. The default values just won't work for your game.
+
+To start off, almost all of the server based customizations can be edited in "Data.ini". Almost all the client based customizations can be made in the "config.ini" file. There are definetely exceptions to this, but they are the main things.
+
+The sub sections of the area of the guide deal with the two types of customizations.

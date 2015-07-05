@@ -1,0 +1,251 @@
+11:26:56 AM: demo editing npc #1.
+11:27:25 AM: demo saved npc #1.
+1:04:47 PM: demo editing spell #1.
+1:04:57 PM: demo editing item #1.
+1:05:13 PM: demo saved item #1.
+1:05:16 PM: demo editing arrow #1.
+1:05:30 PM: demo editing npc #1.
+1:15:28 PM: demo editing item #1.
+1:15:51 PM: demo editing npc #1.
+1:16:33 PM: demo editing npc #1.
+1:17:10 PM: demo editing arrow #1.
+1:17:19 PM: demo saved arrow #1.
+1:17:23 PM: demo editing spell #1.
+1:17:35 PM: demo editing item #1.
+1:17:58 PM: demo editing npc #1.
+1:23:58 PM: demo editing npc #1.
+1:24:12 PM: demo editing item #1.
+1:27:53 PM: demo editing npc #10.
+1:28:11 PM: demo editing item #10.
+1:36:34 PM: demo editing npc #1.
+1:36:48 PM: demo editing item #1.
+1:40:24 PM: demo editing npc #1.
+1:40:41 PM: demo editing arrow #18.
+1:40:52 PM: demo editing item #10.
+1:41:12 PM: demo saved item #10.
+1:41:13 PM: demo editing item #1.
+1:47:40 PM: demo editing item #1.
+1:48:05 PM: demo editing npc #1.
+1:48:15 PM: demo saved npc #1.
+1:49:02 PM: demo editing npc #1.
+1:49:14 PM: demo saved npc #1.
+1:49:18 PM: demo editing npc #1.
+1:49:50 PM: demo editing item #1.
+2:01:22 PM: demo editing item #1.
+2:01:34 PM: demo editing npc #1.
+3:35:23 PM: Owned editing item #1.
+3:36:13 PM: Owned saved item #1.
+3:36:15 PM: Owned editing item #2.
+3:36:40 PM: Owned saved item #2.
+3:37:14 PM: Owned editing shop #1.
+3:37:40 PM: Owned saving shop #1.
+9:58:54 PM: Owned editing item #4.
+6:46:48 PM: Owned has respawned map #1
+7:30:42 PM: Owned editing spell #1.
+7:32:31 PM: Owned editing spell #1.
+7:40:03 PM: Owned editing spell #1.
+7:40:33 PM: Owned saving spell #1.
+7:42:18 PM: Owned editing spell #1.
+7:42:29 PM: Owned saving spell #1.
+7:42:30 PM: Owned editing spell #1.
+7:42:46 PM: Owned saving spell #1.
+7:42:55 PM: Owned editing spell #1.
+7:43:06 PM: Owned saving spell #1.
+7:45:49 PM: Owned editing spell #1.
+7:45:52 PM: Owned saving spell #1.
+7:45:53 PM: Owned editing spell #1.
+7:46:04 PM: Owned saving spell #1.
+7:46:09 PM: Owned editing spell #1.
+7:46:30 PM: Owned saving spell #1.
+7:46:32 PM: Owned editing spell #1.
+7:46:47 PM: Owned editing item #3.
+7:47:00 PM: Owned saved item #3.
+7:47:46 PM: Owned editing spell #1.
+7:47:49 PM: Owned saving spell #1.
+7:56:39 PM: Owned editing spell #1.
+7:57:12 PM: Owned editing spell #2.
+7:57:21 PM: Owned saving spell #2.
+7:57:24 PM: Owned editing item #3.
+7:57:31 PM: Owned saved item #3.
+11:39:19 AM: The server has modified jhjk's access.
+1:06:50 PM: jhjk editing npc #2.
+1:07:00 PM: jhjk saved npc #2.
+1:29:04 PM: jhjk editing npc #1.
+1:29:11 PM: jhjk saved npc #1.
+1:29:21 PM: jhjk editing item #4.
+1:32:25 PM: jhjk editing item #6.
+1:47:36 PM: jhjk editing item #2.
+1:47:59 PM: jhjk saved item #2.
+1:48:10 PM: jhjk editing item #2.
+1:48:29 PM: jhjk saved item #2.
+1:48:32 PM: jhjk editing item #4.
+1:49:07 PM: jhjk saved item #4.
+1:49:10 PM: jhjk editing item #5.
+1:49:32 PM: jhjk saved item #5.
+1:50:56 PM: jhjk editing item #6.
+1:51:16 PM: jhjk saved item #6.
+1:52:02 PM: jhjk editing npc #1.
+1:52:14 PM: jhjk saved npc #1.
+1:52:44 PM: jhjk editing npc #2.
+1:52:49 PM: jhjk saved npc #2.
+1:52:53 PM: jhjk has respawned map #1
+1:52:59 PM: jhjk editing npc #2.
+1:53:02 PM: jhjk saved npc #2.
+1:53:04 PM: jhjk has respawned map #1
+4:41:53 PM: The server has modified Death's access.
+4:42:29 PM: Death editing item #7.
+4:43:27 PM: Death saved item #7.
+3:50:01 PM: Death editing item #8.
+3:50:25 PM: Death editing spell #3.
+3:50:30 PM: Death editing npc #6.
+3:50:48 PM: Death saved npc #6.
+3:50:50 PM: Death editing npc #6.
+3:50:50 PM: Death has respawned map #1
+4:14:07 PM: Death editing item #8.
+9:32:18 PM: Death editing item #3.
+9:32:27 PM: Death saved item #3.
+9:32:30 PM: Death editing item #2.
+9:33:46 PM: Death saved item #2.
+9:37:58 PM: Death editing item #8.
+9:38:42 PM: Death editing spell #1.
+9:40:31 PM: Death editing spell #2.
+9:40:42 PM: Death saving spell #2.
+9:41:02 PM: Death editing spell #2.
+9:41:22 PM: Death saving spell #2.
+10:40:51 PM: Death editing item #1.
+10:41:11 PM: Death saved item #1.
+10:57:57 PM: Death editing item #10.
+5:26:22 PM: Death editing item #8.
+5:32:15 PM: Death editing item #10.
+5:32:29 PM: Death editing item #8.
+5:34:11 PM: Death editing item #8.
+5:34:33 PM: Death saved item #8.
+5:36:20 PM: Death editing item #8.
+5:36:31 PM: Death saved item #8.
+5:36:39 PM: Death editing item #8.
+5:36:47 PM: Death saved item #8.
+5:48:56 PM: Death editing item #8.
+5:57:12 PM: Death editing item #8.
+5:57:17 PM: Death saved item #8.
+6:00:36 PM: Death editing item #8.
+12:00:28 PM: Death editing item #10.
+12:02:50 PM: Death editing item #10.
+12:03:08 PM: Death saved item #10.
+12:05:12 PM: Death editing item #8.
+12:05:26 PM: Death saved item #8.
+12:36:07 PM: Death editing spell #2.
+12:36:12 PM: Death saving spell #2.
+12:47:13 PM: Death editing item #7.
+12:47:16 PM: Death saved item #7.
+12:48:45 PM: Death editing spell #1.
+12:48:51 PM: Death saving spell #1.
+12:48:57 PM: Death editing spell #1.
+12:49:03 PM: Death saving spell #1.
+12:49:09 PM: Death editing spell #1.
+12:49:15 PM: Death saving spell #1.
+12:41:18 AM: Death editing spell #3.
+12:41:25 AM: Death editing spell #1.
+12:41:48 AM: Death saving spell #1.
+12:57:25 AM: Death editing spell #1.
+12:57:34 AM: Death saving spell #1.
+8:50:57 PM: Death editing item #2.
+8:51:38 PM: Death saved item #2.
+8:51:46 PM: Death editing item #2.
+8:51:52 PM: Death saved item #2.
+8:52:10 PM: Death editing item #2.
+8:52:18 PM: Death saved item #2.
+8:53:12 PM: Death editing item #2.
+8:53:34 PM: Death saved item #2.
+11:34:33 PM: Death editing npc #1.
+11:35:21 PM: Death saved npc #1.
+11:35:32 PM: Death editing npc #1.
+12:21:16 AM: Death editing npc #1.
+3:59:50 PM: Death editing element #18.
+4:00:09 PM: Death editing element #3.
+4:00:19 PM: Death editing npc #1.
+4:00:34 PM: Death saved npc #1.
+4:00:52 PM: Death editing spell #2.
+4:00:58 PM: Death saving spell #2.
+4:01:30 PM: Death editing spell #2.
+4:01:56 PM: Death editing element #3.
+4:02:18 PM: Death editing spell #2.
+4:02:25 PM: Death saving spell #2.
+4:02:45 PM: Death editing spell #2.
+4:02:49 PM: Death saving spell #2.
+4:03:34 PM: Death editing npc #1.
+4:03:49 PM: Death saved npc #1.
+4:51:29 PM: Death editing npc #1.
+4:51:38 PM: Death saved npc #1.
+7:58:18 PM: Death editing item #2.
+7:58:39 PM: Death saved item #2.
+8:00:05 PM: Death editing shop #1.
+8:00:37 PM: Death editing npc #1.
+8:00:45 PM: Death saved npc #1.
+8:03:18 PM: Death editing item #5.
+8:03:33 PM: Death saved item #5.
+8:05:09 PM: Death editing shop #1.
+8:05:37 PM: Death saving shop #1.
+8:05:59 PM: Death editing shop #1.
+8:06:24 PM: Death saving shop #1.
+11:40:54 PM: Death editing element #11.
+11:41:17 PM: Death editing element #1.
+11:41:20 PM: Death editing speech #1.
+11:41:31 PM: Death editing speech #1.
+1:51:21 AM: (global) Death: hey
+1:51:33 AM: (global) Death: ,hey
+1:51:56 AM: (global) Death: ,hey
+1:52:00 AM: (global) Death: :hey
+1:53:56 AM: (admin Death) hey
+11:37:59 AM: Death editing npc #3.
+2:43:39 PM: Bug Tester editing item #20.
+2:44:51 PM: Bug Tester saved item #20.
+2:45:44 PM: Bug Tester editing item #20.
+2:45:58 PM: Bug Tester saved item #20.
+2:46:44 PM: Bug Tester editing item #20.
+2:47:00 PM: Bug Tester saved item #20.
+2:47:33 PM: Bug Tester editing item #20.
+2:47:56 PM: Bug Tester saved item #20.
+2:48:18 PM: Bug Tester editing item #20.
+2:48:22 PM: Bug Tester saved item #20.
+2:48:35 PM: Bug Tester editing item #20.
+2:48:38 PM: Bug Tester saved item #20.
+2:48:50 PM: Bug Tester editing item #20.
+2:48:54 PM: Bug Tester saved item #20.
+2:50:45 PM: Bug Tester editing item #20.
+2:50:55 PM: Bug Tester saved item #20.
+3:06:51 PM: Bug Tester editing item #20.
+3:07:13 PM: Bug Tester saved item #20.
+3:07:28 PM: Bug Tester editing item #20.
+3:07:39 PM: Bug Tester saved item #20.
+3:08:52 PM: Bug Tester editing item #21.
+12:55:17 PM: Xaden editing item #11.
+12:56:04 PM: Xaden saved item #11.
+1:06:45 PM: Xaden editing item #15.
+1:07:28 PM: Xaden saved item #15.
+1:08:41 PM: Xaden has respawned map #1
+1:09:00 PM: Xaden editing item #15.
+1:09:22 PM: Xaden saved item #15.
+1:09:31 PM: Xaden has respawned map #1
+1:09:44 PM: Xaden has respawned map #1
+1:09:45 PM: Xaden has respawned map #1
+1:10:10 PM: Xaden editing item #15.
+1:10:32 PM: Xaden saved item #15.
+1:10:49 PM: Xaden editing item #15.
+1:11:01 PM: Xaden saved item #15.
+1:13:22 PM: Xaden editing item #15.
+1:13:43 PM: Xaden saved item #15.
+1:13:47 PM: Xaden has respawned map #1
+1:20:15 PM: Xaden has respawned map #1
+1:20:22 PM: Xaden editing item #15.
+1:20:42 PM: Xaden saved item #15.
+1:20:50 PM: Xaden has respawned map #1
+1:25:04 PM: Xaden editing item #15.
+1:25:41 PM: Xaden saved item #15.
+1:25:42 PM: Xaden has respawned map #1
+1:26:06 PM: Xaden has respawned map #1
+1:26:31 PM: Xaden has respawned map #1
+1:29:41 PM: Xaden editing item #15.
+1:30:25 PM: Xaden saved item #15.
+1:30:25 PM: Xaden has respawned map #1
+1:46:23 PM: Xaden editing item #15.
+1:46:45 PM: Xaden saved item #15.

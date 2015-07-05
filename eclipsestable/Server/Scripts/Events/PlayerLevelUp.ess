@@ -1,0 +1,39 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: PlayerLevelUp.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: PlayerLevelUp					'
+' Brief: executes when a player levels up.			'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub PlayerLevelUp(Index)
+	Dim PlayerExp
+
+	If GetPlayerExp(Index) < GetPlayerNextLevel(Index) Then
+		Exit Sub
+	End If
+
+	Do While GetPlayerExp(Index) >= GetPlayerNextLevel(Index)
+		PlayerExp = GetPlayerNextLevel(Index)
+
+		Call SetPlayerLevel(Index, GetPlayerLevel(Index) + 1)
+		Call SetPlayerPOINTS(Index, GetPlayerPOINTS(Index) + 1)
+		Call SetPlayerExp(Index, GetPlayerExp(Index) - PlayerExp)
+		Call SetPlayerHP(Index, GetPlayerMaxHP(Index))
+		Call SetPlayerMP(Index, GetPlayerMaxMP(Index))
+		Call SetPlayerSP(Index, GetPlayerMaxSP(Index))
+		Call SendPlayerData(Index)
+		Call SendStats(Index)
+		Call SendHP(Index)
+		Call SendMP(Index)
+		Call SendSP(Index)
+		Call SendPTS(Index)
+	Loop
+
+	Call BattleMsg(Index, "You have " & GetPlayerPOINTS(Index) & " stat points.", BRIGHTBLUE, LEFT)
+End Sub

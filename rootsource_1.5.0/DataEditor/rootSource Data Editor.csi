@@ -1,0 +1,4 @@
+[History]
+1=#P0#=mb	#P1#=cmdSave_Click	#P2#=DataEditor/frmDataEditor/cmdSave_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20090620230936	#P7#=0	#P8#=14	.
+2=#P0#=mb	#P1#=Form_Load	#P2#=DataEditor/frmDataEditor/Form_Load	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20090620230815	#P7#=0	#P8#=7	.
+3=#P0#=mb	#P1#=cmdCancel_Click	#P2#=DataEditor/frmDataEditor/cmdCancel_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20090620230224	#P7#=0	#P8#=1	.

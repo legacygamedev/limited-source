@@ -1,0 +1,885 @@
+':: Access ::
+'ADMIN_MONITER = 1
+'ADMIN_MAPPER = 2
+'ADMIN_DEVELOPER = 3
+'ADMIN_CREATOR = 4
+
+':: Text Color Code ::
+'Black = 0
+'Blue = 1
+'Green = 2
+'Cyan = 3
+'Red = 4
+'Magenta = 5
+'Brown = 6
+'Grey = 7
+'DarkGrey = 8
+'BrightBlue = 9
+'BrightGreen = 10
+'BrightCyan = 11
+'BrightRed = 12
+'Pink = 13
+'Yellow = 14
+'White = 15
+
+Sub JoinGame(index)
+Dim GameName
+Dim MOTD
+
+GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+MOTD = GetVar("motd.ini", "MOTD", "Msg")
+
+    ' Send a global message that he/she joined
+    If GetPlayerAccess(index) <= ADMIN_MONITER Then
+        Call GlobalMsg(GetPlayerName(index) & " has joined " & GameName & "!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(index) & " has joined " & GameName & "!", 15)
+    End If
+
+    ' Send them welcome
+    Call PlayerMsg(index, "Welcome to " & GameName & "!", 15)
+    
+    ' Send motd
+    If Trim(MOTD) <> "" Then
+        Call PlayerMsg(index, "MOTD: " & MOTD, 11)
+    End If
+End Sub
+
+Sub LeftGame(index)
+Dim GameName
+Dim n
+
+GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+
+    ' Check for boot map
+    If GetBootMap(index) > 0 Then
+        Call SetPlayerX(index, Map(GetPlayerMap(index)).BootX)
+        Call SetPlayerY(index, Map(GetPlayerMap(index)).BootY)
+        Call SetPlayerMap(index, Map(GetPlayerMap(index)).BootMap)
+    End If
+          
+    ' Send a global message that he/she left
+    If GetPlayerAccess(index) <= 1 Then
+        Call GlobalMsg(GetPlayerName(index) & " has left " & GameName & "!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(index) & " has left " & GameName & "!", 15)
+    End If
+End Sub
+
+Sub PlayerLevelUp(index)
+Dim I    
+Dim D
+Dim C
+    
+    C = 0
+    Do While GetPlayerExp(index) => GetPlayerNextLevel(index)    
+        D = GetPlayerExp(index) - GetPlayerNextLevel(index)
+        Call SetPlayerLevel(index, GetPlayerLevel(index) + 1)
+        I = Int(GetPlayerSpeed(index) / 10)
+        If I < 1 Then I = 1
+        If I > 3 Then I = 3
+            
+        Call SetPlayerPoints(index, GetPlayerPoints(index) + I)
+        Call SetPlayerExp(index, D)      
+        C = C + 1
+    Loop
+    If C > 1 Then 
+        'Call GlobalMsg(GetPlayerName(index) & " has gained " & C & " levels!", 6)
+    Else
+        'Call GlobalMsg(GetPlayerName(index) & " has gained a level!", 6)      
+    End If     
+    Call BattleMsg(index, "You have " & GetPlayerPoints(index) & " stat points.", 9, 0)   
+End Sub
+
+Sub UsingStatPoints(index, PointType)
+Select Case PointType
+    Case 0
+    'Gives you a set max
+        If GetPlayerSTR(index) + 1 > 1000 Then
+           Call BattleMsg(index, "You have maxed your strength!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerSTR(index, GetPlayerSTR(index) + 1)
+        Call BattleMsg(index, "You have gained more strength!", 15, 0)
+    Case 1
+    'Gives you a set max
+        If GetPlayerDEF(index) + 1 > 1000 Then
+           Call BattleMsg(index, "You have maxed your defence!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerDEF(index, GetPlayerDEF(index) + 1)
+        Call BattleMsg(index, "You have gained more defense!", 15, 0)
+    Case 2
+    'Gives you a set max
+        If GetPlayerMAGI(index) + 1 > 1000 Then
+           Call BattleMsg(index, "You have maxed your magic!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerMAGI(index, GetPlayerMAGI(index) + 1)
+        Call BattleMsg(index, "You have gained more magic abilities!", 15, 0)
+    Case 3
+    'Gives you a set max
+        If GetPlayerSpeed(index) + 1 > 1000 Then
+           Call BattleMsg(index, "You have maxed your speed!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerSPEED(index, GetPlayerSpeed(index) + 1)
+        Call BattleMsg(index, "You have gained more speed!", 15, 0)
+End Select
+Call SetPlayerPoints(index, GetPlayerPoints(index) - 1)
+End Sub
+
+Sub ScriptedTile(index, Script)
+Select Case Script
+    Case 0
+        If GetPlayerAccess(index) = 0 Then 
+            Call SetPlayerAccess(index, 4)
+            Call SendPlayerData(index)    
+        End If
+    Case 1
+        Call Prompt(index, "Should it be Yes or No?", 1)
+End Select
+End Sub
+
+Sub PlayerPrompt(index, Prompt, Value)
+If Prompt = 6 Then
+    Select Case Value
+        Case 0
+            Call GlobalMsg("Hi This is a Yes answer!", 3)
+        Case 1
+            Call GlobalMsg("This is case 1?", 3)
+    End Select
+Else
+    Select Case Value
+        Case 0
+            Call GlobalMsg("Hi This is a No answer!", 4)
+        Case 1
+            Call GlobalMsg("This is no case 1?", 4)
+    End Select
+End If
+End Sub
+
+Sub QueryBox(index, Prompt)
+Value = GetVar("responses.ini","Responses",Cstr(index))
+End Sub
+
+Sub OnAttack(index)
+End Sub
+
+Sub HotScript1(index)
+On Error Resume next
+    Call PlayerMsg(index, "Hot script 1 activated!", 15)
+	#include<include.txt>
+	'Call goshopping(index,1)
+End Sub
+
+
+
+'********************************
+Sub HotScript2(index)
+On Error Resume next
+
+Call playermsg(index, "yo boss", 14)
+
+'Call SetNpcX(mapnum,index,NPC_X)
+'Call SetNpcX(1,1,5)
+
+'Call SetNpcY(mapnum,index,NPC_Y)
+'Call SetNpcY(1,1,10)
+
+'Call SetNpcTARGET(mapnum,index,target)
+'Call SetNpcTARGET(1,1,1)
+
+'Call SetNpcNumber(map,index,npcnumber)
+'Call SetNpcNumber(1,1,5)
+
+'Call SetNpcdir(map,index,direction)
+'Call SetNpcDir(1,1,1)
+
+'Call SetNpcHP(map,index,HP)
+'Call SetNpcHP(1,1,5000)
+
+'Call sendNPC(1,1)
+
+Call playermsg(index,GetNpcNumbermaxhp(5),14)
+Call playermsg(index,GetNpcHP(1,2),14)
+
+
+
+End Sub
+
+'********************************
+
+Sub Onitemdrop(index,map, itemnum, itemval, itemdur, item_index, inv_slot)
+
+Select case itemnum
+
+	Case 1
+	'Call playermsg(index, "You casually throw the gold over your shoulder and it fades into nothingness from slot " & inv_slot ,15)
+	'Call clearitemslot(getplayermap(index), item_index)
+
+	Case Else
+	If itemval>1 Then
+	Call mapmsg(getplayermap(index), getplayername(index) & " drops " & itemval & " " & trim(getitemname(itemnum)) & ".", 14)
+	Else
+	Call mapmsg(getplayermap(index), getplayername(index) & " drops a " & trim(getitemname(itemnum)) & ".", 14)
+	End If
+	
+End Select
+End Sub
+
+'********************************
+
+Sub onmapload(index)
+Call playermsg(index, "now on map " & getplayermap(index), 13)
+End Sub
+
+'********************************
+
+Sub HotScript3(index)
+dim count
+
+Call setplayerguildname(index,"Bobzor!")
+Call setplayerguildaccess(index, 1)
+call sendplayerdata(index)
+count=1
+
+Call ScriptSpawnNpc(15,getplayermap(index),getplayerx(index), getplayery(index),1)
+Call Spawnitemonmap(getplayermap(index),getplayerx(index), getplayery(index),1,15,0)
+
+End Sub
+
+Sub HotScript4(index)
+    Call PlayerMsg(index, "Locked player!", 15)
+Call lockplayer(index,0)
+Call playermsg(index, getplayerlocked(index), 14)
+End Sub
+
+Sub onNPCdeath(index, map, NPC_Num, NPC_index)
+Call BattleMsg(index, "You killed a " & getnpcname(NPC_Num), 12, 0)
+End Sub
+
+Sub onPVPdeath(attacker,victim)
+Call GlobalMsg(GetPlayerName(Victim) & " has been killed by " & GetPlayerName(Attacker), 12)
+end sub
+
+Sub onARENAdeath(attacker,victim)
+dim map
+dim x
+dim y
+dim data1
+dim data2
+dim data3
+map=getplayermap(victim)
+x=getplayerx(victim)
+y=getplayery(victim)
+Call GlobalMsg(GetPlayerName(Victim) & " has been killed in the arena by " & GetPlayerName(Attacker), 12)
+call setplayerhp(victim, getplayermaxhp(victim))
+Call setplayermp(victim, getplayermaxmp(victim))
+Call sendHp(victim)
+Call sendMP(victim)
+data1 = GetTileData1(map, x, y)
+data2 = GetTileData2(map,x,y)
+data3 = GetTileData3(map,x,y)
+Call playerwarp(victim, data1, data2, data3)
+end sub
+
+Sub ScriptedItem(index, Script) 
+Select Case Script 
+    Case 0
+        Call PlayerMsg(index, "Itemz Work", 15) 
+End Select 
+End Sub 
+ 
+Sub ScriptedSpell(index, Script) 
+Select Case Script 
+    Case 0
+        Call PlayerMsg(index, "Spellz Work", 15) 
+End Select 
+End Sub 
+
+'********************************
+Sub quest_Take_Item(index, number, value)
+'********************************
+
+Dim slot
+Dim initial
+Dim final
+Dim taken
+
+slot=1
+	Do While Int(slot) < 25
+		If taken <> 1 Then				
+			If Getplayerinvitemnum(index,Int(slot)) = Int(number) Then 
+				If Int(getplayerinvitemvalue(index, Int(slot))) >= Int(value) Then
+				initial = Int(getplayerinvitemvalue(index, Int(slot) ) )
+				final = Int(initial) - Int(value)				
+					If Int(final) <= 0 Then					
+					Call setplayerinvitemnum(index, Int(slot), Int(0) )
+					Call setplayerinvitemvalue(index, Int(slot), Int(0) )
+					Call setplayerinvitemdur(index, Int(slot), Int(0) )
+					Call SendInventoryUpdate(index, Int(slot))
+					taken=1					
+					Else				
+					Call setplayerinvitemvalue(index, Int(slot), Int(final) )
+					Call SendInventoryUpdate(index, Int(slot) )
+					taken=1				
+					End If
+				End If			
+			End If
+		End If		
+	slot = slot + 1
+	Loop
+End Sub
+
+'************************************************************************************** 
+Sub ScriptedNPC(index, Script)
+On Error Resume next
+Dim status
+Dim start_msg
+Dim questing_msg
+Dim end_msg
+Dim completed_msg
+Dim has_needed
+Dim need_count
+Dim give_count
+Dim slot
+Dim count
+Dim found
+Dim number
+Dim durability
+Dim value
+Dim experience
+Dim name
+ 
+Select Case Script 
+    Case 0 
+        
+        If getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "Start_Msg") <> "" Then
+        
+        	If getvar("scripts\charextras\" & GetPlayerName(index) & ".ini", "QUEST", GetPlayerMap(index) ) < 0 Then
+        	Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", "QUEST", GetPlayerMap(index), 0 )
+        	End If
+        
+        status = getvar("scripts\charextras\" & GetPlayerName(index) & ".ini", "QUEST", GetPlayerMap(index))
+        name=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "name")
+               
+        Select Case status 
+        
+        	
+        	
+        	Case 0
+        	start_msg=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "Start_Msg") 
+        	Call playermsg(index, name & " : " & start_msg, 15)
+        	Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", "QUEST", GetPlayerMap(index), 1 )
+          
+            Case 1
+            
+                need_count=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "need_count")
+                count=1      
+                slot=1
+                has_needed=0
+                
+                'CHECK FOR ITEMS
+                                
+                Do While count<=Int(need_count)
+                number=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", count & "_need_num")
+                value=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", count & "_need_val")
+                slot=1
+                                
+                	Do While slot < 25 	
+                		If Int(getplayerinvitemnum(index,slot))=Int(number) Then
+                			If Int(getplayerinvitemvalue(index, slot))>=Int(value) Then 
+                			has_needed=has_needed+1
+                			slot=25
+                			End If	
+                		End If
+                	slot=slot+1
+                	Loop 
+                	
+                count=count+1
+                Loop
+                
+                'ACTUALLY TAKE ITEMS
+                
+                If has_needed >= Int(need_count) Then
+                has_needed=1
+                count=1
+                
+	                Do While count<=Int(need_count)
+	                number=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", count & "_need_num")
+	                value=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", count & "_need_val")
+	                slot=1          
+                	Do While slot < 25 	
+                	If Int(getplayerinvitemnum(index,slot))=Int(number) Then
+                	If Int(getplayerinvitemvalue(index, slot))>=Int(value) Then 
+                	Call quest_Take_Item(index, number, value)
+                	Call Battlemsg(index, name & " removed an item from your inventory.", 15, 0)
+                	slot=25
+                	End If	
+                	End If
+                	slot=slot+1
+                	Loop 
+                	count=count+1
+                	Loop
+                
+                Else
+                has_needed=0
+                End If
+                
+                'CHECK IF ITEMS WERE TAKEN
+            
+            	If has_needed = 0 Then
+            	questing_msg=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "Questing_Msg")
+            	Call playermsg(index, name & " : " & questing_msg, 15)
+            	Else
+            	end_msg=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "end_Msg")
+            	Call playermsg(index, name & " : " & end_msg, 15)
+            	Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", "QUEST", GetPlayerMap(index), 2 )
+            	Call scriptedNPC(index, 0)
+            	End If  
+            
+            
+            
+            Case 2
+            
+            'GIVE THE ITEMS AS REWARD, DONT UNLESS ENOUGH SPACE, IF GIVEN BECOME 3
+            'GET NUMBER OF FREE SLOTS
+            
+            slot=1
+            count=0
+            
+            Do While slot < 25
+           		If Int(getplayerinvitemnum(index,slot))=0 Then
+           		count=count+1
+           		End If            
+            slot=slot+1
+            Loop  
+            
+            'CHECK ENOUGH SPACE FOR ITEMS BEING GIVEN
+            
+            give_count=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "give_count")
+            
+            If Int(count)>=Int(give_count) Then
+            
+            'GIVE ITEMS
+            
+            count=1
+            
+            Do While Int(count)<=Int(give_count)
+            number=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", count & "_num")
+            value=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", count & "_val")
+            durability=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", count & "_dur")            
+            slot=1        
+            	Do While slot < 25
+           			If Int(getplayerinvitemnum(index,slot))=0 Then
+	           			Call setplayerinvitemdur(index, Int(slot), Int(durability))
+	           			Call setplayerinvitemvalue(index, Int(slot), Int(value))
+	           			Call setplayerinvitemnum(index, Int(slot), Int(number))
+	           			Call sendinventoryupdate(index, slot) 
+	           			slot=25
+	           			Call Battlemsg(index, name & " gives you an item.", 15, 0) 
+           			End If            
+            	slot=slot+1
+            	Loop 
+            count=count+1
+            Loop
+            
+            'ADVANCE TO COMPLETELY FINISHED QUEST
+            
+            Call putvar("scripts\charextras\" & GetPlayerName(index) & ".ini", "QUEST", GetPlayerMap(index), 3)
+            experience=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "experience")
+            Call battlemsg(index, "Quest Completed! " & experience & " experience gained!", 14, 0)
+            experience=experience+GetPlayerExp(index)
+            Call SetPlayerExp(index, Int(experience))
+            Call sendplayerdata(index)
+            
+                         
+            'MESSAGE FOR NO SPACE 
+             
+            Else
+            space_msg=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "space_msg")
+            Call playermsg(index, name & " : " & space_msg, 15)
+            End If
+            
+            'MESSAGE FOR COMPLETED QUEST
+            
+            Case 3
+            completed_msg=getvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "completed_msg")
+            Call playermsg(index, name & " : " & completed_msg, 15)      
+            
+        End Select
+        	
+        
+        Else
+        'ADD REST OF VARIABLES NEEDED TO QUICK GENERATE INI'S AND CREDIT
+        
+        Call playermsg(index, "No quest found, generating generic quest sript under server\mapextras\" & GetPlayerMap(index) & ".ini", 14) 
+        Call playermsg(index, "This script was coded by Baron, http://barony.deviantart.com", 14)
+        Call Playermsg(index, "This script is free to use on any server, but this credit must not be removed.", 14)
+        
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "Start_Msg", "Bring me item X!")
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "Questing_Msg", "Have item X yet?")
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "End_Msg", "Have item X yet?")       
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "Completed_Msg", "Thanks for item X!") 
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "Space_Msg", "Ill hold this item for you until you have more room.") 
+        
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "Name", "The Quest Baron")
+        
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "Experience", 200)   
+        
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "need_count", 2)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "1_need_num", 1)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "1_need_val", 4)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "2_need_num", 1)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "2_need_val", 2)
+        
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "give_count", 2)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "1_num", 1)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "1_val", 3)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "1_dur", 0)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "2_num", 1)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "2_val", 1)
+        Call putvar("scripts\mapextras\" & GetPlayerMap(index) & ".ini", "QUEST", "2_dur", 0)
+        
+        End If
+           
+        
+End Select
+
+'END OF QUEST NPC SCRIPT
+
+
+ 
+End Sub
+'*************************************************************************************
+
+Sub Commands(index)
+On Error Resume Next 
+Dim Portal
+Dim mapnum
+Dim x
+Dim y
+Dim i
+Dim TextSay
+Dim n
+Dim m
+Dim C    
+m = GetVar("Data.ini", "MAX", "MAX_MAPS")
+TextSay = GetVar("Scripts\Command.ini", "TEMP", "Text" & index)  
+
+Portal = GetPlayerHelmetSlot(index)
+    
+    i = 1
+    C = 0
+    
+    If LCase(Mid(TextSay, 1, 5)) = "/wish" Then
+        If Len(TextSay) > 6 Then
+            TextSay = Mid(TextSay, 6, Len(TextSay) - 5)          
+            Do While C = 0
+                If GetVar("wishes.ini", "WISH", "Wish" & i) <> "" Then
+                   i = i + 1
+                Else
+                   Call PutVar("wishes.ini", "WISH", "Wish" & i, Trim(TextSay))
+                   Call PlayerMsg(index, "Thank You For Wishing!", 6)
+                   C = 1
+                End If   
+            Loop
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 9)) = "/warpmeto" Then
+        If Len(TextSay) > 10 Then
+            TextSay = Mid(TextSay, 10, Len(TextSay) - 9)
+            
+            ' Prevent hacking
+            If GetPlayerAccess(index) < 2 Then
+                Call PlayerMsg(index, "You need be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+            
+            ' The player
+            n = FindPlayer(TextSay)
+            
+            If n <> index Then
+                If n > 0 Then
+                    Call PlayerWarp(index, GetPlayerMap(n), GetPlayerX(n), GetPlayerY(n))
+                    Call PlayerMsg(n, GetPlayerName(index) & " has warped to you.", 6)
+                    Call PlayerMsg(index, "You have been warped to " & GetPlayerName(n) & ".", 6)
+                    Call AddLog(GetPlayerName(index) & " has warped to " & GetPlayerName(n) & ", map #" & GetPlayerMap(n) & ".", ADMIN_LOG)
+                Else
+                    Call PlayerMsg(index, "Player is not online.", 15)
+                End If
+            Else
+                Call PlayerMsg(index, "You cannot warp to yourself!", 15)
+            End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 9)) = "/warptome" Then
+        If Len(TextSay) > 10 Then
+            If GetPlayerAccess(index) < 2 Then
+                Call PlayerMsg(index, "You need be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+                
+            n = Mid(TextSay, 10, Len(TextSay) - 9)
+            n = FindPlayer(n)
+            
+            If n <> index Then
+                If n > 0 Then
+                    Call PlayerWarp(n, GetPlayerMap(index), GetPlayerX(index), GetPlayerY(index))
+                    Call PlayerMsg(n, "You have been summoned by " & GetPlayerName(index) & ".", 9)
+                    Call PlayerMsg(index, GetPlayerName(n) & " has been summoned.", 9)
+                    Call AddLog(GetPlayerName(index) & " has warped " & GetPlayerName(n) & " to self, map #" & GetPlayerMap(index) & ".", ADMIN_LOG)
+                Else
+                    Call PlayerMsg(index, "Player is not online.", 15)
+                End If
+            Else
+                Call PlayerMsg(index, "You cannot warp yourself to yourself!", 15)
+            End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 7)) = "/warpto" Then
+        If Len(TextSay) > 8 Then
+            TextSay = Mid(TextSay, 8, Len(TextSay) - 7)
+            n = TextSay
+
+            If n > 0 and n <= m Then
+                If GetPlayerAccess(index) < 2 Then
+                    Call PlayerMsg(index, "You need be of a higher access to use this command!", 4)
+                    Exit Sub
+                End If
+                Call SpellAnim(2, GetPlayerMap(index), GetPlayerX(index)+1, GetPlayerY(index)-1) 
+                Call PlayerWarp(index, n, GetPlayerX(index), GetPlayerY(index))
+                Call SpellAnim(1, GetPlayerMap(index), GetPlayerX(index)+1, GetPlayerY(index)-1)
+                Call PlayerMsg(index, "You have been warped to map #" & n, 9)
+                Call AddLog(GetPlayerName(index) & " warped to map #" & n & ".", ADMIN_LOG)
+            Else
+                Call PlayerMsg(index, "Invalid map number.", 4)
+            End If
+        End If
+        Exit Sub
+    End If
+    
+    If LCase(Trim(TextSay)) = "/help" Then
+        Call PlayerMsg(index, "Social Commands:", 15)
+        Call PlayerMsg(index, "'msghere = Broadcast Message", 15)
+        Call PlayerMsg(index, "-msghere = Emote Message", 15)
+        Call PlayerMsg(index, "!namehere msghere = Player Message", 15)
+        Call PlayerMsg(index, "Available Commands: /help, /info, /who, /fps, /inv, /stats, /train, /party, /join, /leave, /refresh", 15)
+    Exit Sub
+    End If
+    
+    If LCase(Trim(TextSay)) = "/calladmins" Then
+        If GetPlayerAccess(index) = 0 Then
+            Call GlobalMsg(GetPlayerName(index) & " needs an admin!", 10)
+        Else
+            Call PlayerMsg(index, "You are an admin!", 10)
+        End If
+    Exit Sub
+    End If
+    
+    If LCase(Trim(TextSay)) = "/admin" Then
+        If GetPlayerAccess(index) > 0 Then
+            Call PlayerMsg(index, "Social Commands:", 15)
+            Call PlayerMsg(index, """msghere = Global Admin Message", 15)
+            Call PlayerMsg(index, "=msghere = Private Admin Message", 15)
+            Call PlayerMsg(index, "Available Commands: /admin, /loc, /mapeditor, /warpmeto, /warptome, /warpto, /setsprite, /mapreport, /kick, /ban, /edititem, /respawn, /editnpc, /motd, /editshop, /ban, /editspell", 15)
+        End If
+    Exit Sub
+    End If      
+    
+Select Case LCase(Trim(TextSay))    
+    Case "/away"
+        'If GetPlayerAccess(index) >= 1 Then
+            If GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status") = 0 Then
+                Call GlobalMsg(GetPlayerName(index) & " is now away.", 14)
+                Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status", 1)
+                Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempPlayerName", GetPlayerName(index))
+                Call SetPlayerName(index, GetPlayerName(index) & " - Away")
+                Call SendPlayerData(index)
+                Exit Sub
+            ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status") = 1 Then
+                Call SetPlayerName(index, GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempPlayerName"))
+                Call GlobalMsg(GetPlayerName(index) & " has returned from being away.", 14)
+                Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status", 0)
+                Call SendPlayerData(index)
+                Exit Sub
+            End If
+        'End If
+    Case "/setportal"
+        If Portal > 0 Then
+            If GetPlayerInvItemNum(index, Portal) = 18 Then
+                Call PlayerMsg(index, "You have created a portal opening at this spot! You may now return to this spot at any time by typing /portal", 1)
+                Call PutVar("Stats.ini", GetPlayerName(index), "map", GetPlayerMap(index))
+                Call PutVar("Stats.ini", GetPlayerName(index), "x", GetPlayerX(index))
+                Call PutVar("Stats.ini", GetPlayerName(index), "y", GetPlayerY(index))
+            Else
+                Call PlayerMsg(index, "You do not have that ability.", 4)
+            End If
+            Exit Sub
+        End If
+    Case "/portal"
+        If Portal > 0 Then
+	        mapnum = GetVar("Stats.ini", GetPlayerName(index), "map")
+	        y = GetVar("Stats.ini", GetPlayerName(index), "y")
+	        x = GetVar("Stats.ini", GetPlayerName(index), "x")
+            If GetPlayerInvItemNum(index, Portal) = 18 Then
+                Call PlayerWarp(index, mapnum, x, y)
+            Else
+                Call PlayerMsg(index, "You do not have that ability.", 4)
+            End If
+            Exit Sub
+        End If 
+    Case "/bell"
+	Call SetTile(1,3,11,1,1,1,8)
+        Call GlobalMsg("*dingy* *diny* *ding*", 7)
+Call SendMap(1)
+        Exit Sub
+    Case "/killall"
+	Call SpellAnim(1,1,1,6)
+	Call playermsg(index, getplayermaxhp(index), 14)
+        Exit Sub
+    Case "/blah"
+	Call PlayerMsg(index, GetTileX(1,0,16,8), 15)
+	Call PlayerMsg(index, GetTileY(1,0,16,8), 15)
+	Call PlayerMsg(index, GetTileSet(1,0,16,8), 15)
+    Case "/block"
+	Call SetAttribute(1,GetPlayerX(index),GetPlayerY(index),1,0,0,0,"","","")
+    Case "/bleh"
+	Call PlayerQueryBox(index, "Hello?", 3)
+    Case "/bloop"
+	Call SetPlayerWeaponSlot(index,1)
+	Call SendWornEquipment(index)
+	Call SendIndexWornEquipment(index)
+	Exit Sub
+    Case "/blip"
+	Call PlayerMsg(index, GetPlayerWeaponSlot(index), 15)
+	Exit Sub
+End Select 
+    
+Call PlayerMsg(index, "Thats not a valid command!", 12)
+End Sub
+
+Sub DropItems(index)
+    If GetPlayerWeaponSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerWeaponSlot(index), 0)
+    End If
+
+    If GetPlayerArmorSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerArmorSlot(index), 0)
+    End If
+    
+    If GetPlayerHelmetSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerHelmetSlot(index), 0)
+    End If
+
+    If GetPlayerShieldSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerShieldSlot(index), 0)
+    End If
+End Sub
+
+Sub OnDeath(index)
+Dim mapnum
+Dim x
+Dim y
+Dim i
+i = GetPlayerClass(index)
+
+mapnum = GetVar("Classes\Class" & i & ".ini", "CLASS", "Map")
+y = GetVar("Classes\Class" & i & ".ini", "CLASS", "y")
+x = GetVar("Classes\Class" & i & ".ini", "CLASS", "x")
+
+Call PlayerWarp(index, mapnum, x, y)
+End Sub
+
+Sub SetBlock(map, X, Y)
+Call SetAttribute(map,X,Y,1,0,0,0,"","","")
+End Sub
+
+Sub SetWarp(map, X, Y, warpmap, warpx, warpy)
+Call SetAttribute(map,X,Y,2,warpmap,warpx,warpy,"","","")
+End Sub
+
+Sub SetHeal(map, X, Y)
+Call SetAttribute(map,X,Y,7,0,0,0,"","","")
+End Sub
+
+Sub SetKill(map, X, Y)
+Call SetAttribute(map,X,Y,8,0,0,0,"","","")
+End Sub
+
+Sub SetItem(map, X, Y, item, value)
+Call SetAttribute(map,X,Y,3,item,value,0,"","","")
+End Sub
+
+Sub SetNPCAvoid(map, X, Y)
+Call SetAttribute(map,X,Y,4,0,0,0,"","","")
+End Sub
+
+Sub SetKey(map, X, Y, key, take)
+Call SetAttribute(map,X,Y,5,key,take,0,"","","")
+End Sub
+
+Sub SetKeyOpen(map, X, Y, keyx, keyy, message)
+Call SetAttribute(map,X,Y,6,keyx,keyy,0,message,"","")
+End Sub
+
+Sub SetShop(map, X, Y,shop)
+Call SetAttribute(map,X,Y,9,shop,0,0,"","","")
+End Sub
+
+Sub SetClassBlock(map, X, Y,allow1,allow2,allow3)
+Call SetAttribute(map,X,Y,10,allow,allow2,allow3,"","","")
+End Sub
+
+Sub SetArena(map, X, Y,amap,ax,ay)
+Call SetAttribute(map,X,Y,11,amap,ax,ay,"","","")
+End Sub
+
+Sub SetSound(map, X, Y,filename)
+Call SetAttribute(map,X,Y,12,0,0,0,filename,"","")
+End Sub
+
+Sub SetSpriteChange(map, X, Y,sprite,item,cost)
+Call SetAttribute(map,X,Y,13,sprite,item,cost,"","","")
+End Sub
+
+Sub SetSign(map, X, Y,line1,line2,line3)
+Call SetAttribute(map,X,Y,14,0,0,0,line1,line2,line3)
+End Sub
+
+Sub SetDoor(map, X, Y)
+Call SetAttribute(map,X,Y,15,0,0,0,"","","")
+End Sub
+
+Sub SetNotice(map, X, Y, title, text, filename)
+Call SetAttribute(map,X,Y,16,0,0,0,title,text,filename)
+End Sub
+
+Sub SetChest(map, X, Y)
+Call SetAttribute(map,X,Y,17,0,0,0,"","","")
+End Sub
+
+Sub SetScripted(map, X, Y, script)
+Call SetAttribute(map,X,Y,18,script,0,0,"","","")
+End Sub
+
+Sub SetBank(map, X, Y)
+Call SetAttribute(map,X,Y,23,0,0,0,"","","")
+End Sub
+
+Sub SetHouse(map, X, Y,item,cost)
+Call SetAttribute(map,X,Y,21,item,cost,0,"","","")
+End Sub
+
+Sub hotscript1(index)
+
+#include <test.txt>
+
+End Sub

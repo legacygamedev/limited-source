@@ -1,0 +1,488 @@
+':: Acceso ::
+'Moderadores = 1
+'Mapeadores = 2
+'Desarrolladores = 3
+'Administradores = 4
+
+':: Text Color Code ::
+'Negro = 0
+'Azul = 1
+'Verde = 2
+'Cyan = 3
+'Rojo = 4
+'Magenta = 5
+'Marron = 6
+'Gris = 7
+'VerdeOscuro = 8
+'AzulClaro = 9
+'VerdeClaro = 10
+'CyanClaro = 11
+'RojoClaro = 12
+'Rosa = 13
+'Amarillo = 14
+'Blanco = 15
+
+Sub JoinGame(index)
+Dim GameName
+Dim MOTD
+
+GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+MOTD = GetVar("motd.ini", "MOTD", "Msg")
+
+    ' Send a global message that he/she joined
+    If GetPlayerAccess(index) <= ADMIN_MONITER Then
+        Call GlobalMsg(GetPlayerName(index) & " se ha unido a " & GameName & "!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(index) & " se ha unido a " & GameName & "!", 15)
+    End If
+
+    ' Send them welcome
+    Call PlayerMsg(index, "Bienvenido a " & GameName & "!", 15)
+    
+    ' Send motd
+    If Trim(MOTD) <> "" Then
+        Call PlayerMsg(index, "MOTD: " & MOTD, 11)
+    End If
+End Sub
+
+Sub LeftGame(index)
+Dim GameName
+Dim n
+
+GameName = Trim(GetVar("Data.ini", "CONFIG", "GameName"))
+
+    ' Check for boot map
+    If GetBootMap(index) > 0 Then
+        Call SetPlayerX(index, Map(GetPlayerMap(index)).BootX)
+        Call SetPlayerY(index, Map(GetPlayerMap(index)).BootY)
+        Call SetPlayerMap(index, Map(GetPlayerMap(index)).BootMap)
+    End If
+          
+    ' Send a global message that he/she left
+    If GetPlayerAccess(index) <= 1 Then
+        Call GlobalMsg(GetPlayerName(index) & " ha dejado " & GameName & "!", 7)
+    Else
+        Call GlobalMsg(GetPlayerName(index) & " ha dejado " & GameName & "!", 15)
+    End If
+End Sub
+
+Sub PlayerLevelUp(index)
+Dim I    
+Dim D
+Dim C
+    
+    C = 0
+    Do While GetPlayerExp(index) => GetPlayerNextLevel(index)    
+        D = GetPlayerExp(index) - GetPlayerNextLevel(index)
+        Call SetPlayerLevel(index, GetPlayerLevel(index) + 1)
+       
+        Call SetPlayerPOINTS(index, GetPlayerPOINTS(index) + 2)
+        Call SetPlayerExp(index, D)      
+        C = C + 1
+    Loop
+    If C > 1 Then 
+        'Call GlobalMsg(GetPlayerName(index) & " ha ganado " & C & " niveles!", 6)
+    Else
+        'Call GlobalMsg(GetPlayerName(index) & " ha ganado un nivel!", 6)      
+    End If     
+    Call BattleMsg(index, "Ahora tienes " & GetPlayerPOINTS(index) & " puntos de habilidad.", 9, 0)   
+End Sub
+
+Sub UsingStatPoints(index, PointType)
+Select Case PointType
+    Case 0
+    'Gives you a set max
+        If GetPlayerSTR(index) + 1 > 100 Then
+           Call BattleMsg(index, "Maximisaste tu fuerza!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerSTR(index, GetPlayerSTR(index) + 1)
+        Call BattleMsg(index, "Ganaste mas fuerza!", 15, 0)
+    Case 1
+    'Gives you a set max
+        If GetPlayerDEF(index) + 1 > 100 Then
+           Call BattleMsg(index, "Maximisaste tu defensa!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerDEF(index, GetPlayerDEF(index) + 1)
+        Call BattleMsg(index, "Ganaste mas defensa!", 15, 0)
+    Case 2
+    'Gives you a set max
+        If GetPlayerMAGI(index) + 1 > 100 Then
+           Call BattleMsg(index, "Maximisaste tus habiliades magicas!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerMAGI(index, GetPlayerMAGI(index) + 1)
+        Call BattleMsg(index, "Ganaste mas habiliades magicas!", 15, 0)
+    Case 3
+    'Gives you a set max
+        If GetPlayerSPEED(index) + 1 > 100 Then
+           Call BattleMsg(index, "Maximisaste tu velocidad!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerSPEED(index, GetPlayerSPEED(index) + 1)
+        Call BattleMsg(index, "Ganaste mas velocidad!", 15, 0)
+End Select
+Call SetPlayerPOINTS(index, GetPlayerPOINTS(index) - 1)
+End Sub
+
+Sub ReplaceOneInvItem(index, olditem, newitem) 
+Dim n 
+n = 1 
+Do 
+   If GetPlayerInvItemNum(index, n) = olditem Then 
+      Call SetPlayerInvItemNum(index, n, newitem) 
+       Call SetPlayerInvItemValue(index, n, GetPlayerInvItemValue(index, n)+1) 
+      Call SendInventoryUpdate(index, n) 
+      Exit Do 
+   End If 
+   n = n + 1 
+Loop Until n > 36 
+If n > 36 then 
+      Call PlayerMsg(index, GetPlayerName(index) & " tiene su inventario lleno, no puede llevar mas cosas!", 12) 
+End If
+End Sub 
+
+Sub GoMining(index, item, maxlevel, name) 
+   Dim m 
+   Dim level 
+   level = maxlevel + 1 
+      If GetPlayerSTR(index) < maxlevel Then 
+         m = Int(Rnd * Int(level - GetPlayerSTR(index))) 
+         If m < 10 Then 
+            
+	    Call PlayerMsg(index, GetPlayerName(index) & " encontro " & name & " entre las rocas!", 2) 
+            Call ReplaceOneInvItem(index, 0, item)
+          Else 
+            Call PlayerMsg(index, GetPlayerName(index) & " no encontro nada interesante.", 12) 
+         End If 
+      Else 
+         Call PlayerMsg(index, GetPlayerName(index) & " encontro " & name & " entre las rocas!", 2) 
+         Call ReplaceOneInvItem(index, 0, item) 
+      End If 
+End Sub 
+
+Sub GoWood(index, item, maxlevel, name) 
+   Dim m 
+   Dim level 
+   level = maxlevel + 1 
+      If GetPlayerSPEED(index) < maxlevel Then 
+         m = Int(Rnd * Int(level - GetPlayerSPEED(index))) 
+         If m = 1 Then 
+            Call PlayerMsg(index, GetPlayerName(index) & " encontro un/a " & name & "!", 2) 
+            Call ReplaceOneInvItem(index, 0, item)
+          Else 
+            Call PlayerMsg(index, GetPlayerName(index) & " no encontro nada interesante.", 12) 
+         End If 
+      Else 
+         Call PlayerMsg(index, GetPlayerName(index) & " encontro un/a " & name & "!", 2) 
+         Call ReplaceOneInvItem(index, 0, item) 
+      End If 
+End Sub 
+
+Sub ScriptedTile(index, Script)
+Select Case Script
+    Case 0
+        If GetPlayerAccess(index) = 0 Then 
+            Call SetPlayerAccess(index, 4)
+            Call SendPlayerData(index)    
+        End If
+    Case 1
+        Call Prompt(index, "Debe ser Si o No?", 1)
+Case 2 
+   dim weapon 
+   weapon = GetPlayerWeaponSlot(index) 
+   If weapon = 0 Then 
+      Call PlayerMsg(index, "", 15) 
+      ElseIf GetPlayerInvItemNum(index, weapon) = 2 Then 
+      Call GoMining(index, 4, 111, "Iron Ore")
+      Else 
+      Call PlayerMsg(index, "", 15) 
+   End If 
+
+Case 3 
+' Carpentry
+' (index, item, maxlevel, name)
+   dim weaponb 
+   weaponb = GetPlayerWeaponSlot(index) 
+  If weaponb = 0 Then 
+'      Call PlayerMsg(index, "Bla", 15) 
+      ElseIf GetPlayerInvItemNum(index, weaponb) = 191 Then 
+      Call GoWood(index, 195, 21, "Log")
+      Else 
+'      Call PlayerMsg(index, "Bla", 15) 
+   End If 
+
+Case 4 
+   dim weaponc 
+   weaponc = GetPlayerWeaponSlot(index) 
+   If weaponc = 0 Then 
+'      Call PlayerMsg(index, "", 15) 
+      ElseIf GetPlayerInvItemNum(index, weaponc) = 118 Then 
+      Call GoWood(index, 119, 90, "Log")
+      Else 
+'      Call PlayerMsg(index, "", 15) 
+   End If 
+
+Case 5
+ '  dim orb 
+ ' portalorb = GetPlayerWeaponSlot(index) 
+ '     If GetPlayerInvItemNum(index, portalorb) = 136 Then
+  
+      Call PlayerMsg(index, "Marcaste tu destino.", 1)
+      Call PutVar("Portal.ini", GetPlayerName(index), "map", GetPlayerMap(index))
+      Call PutVar("Portal.ini", GetPlayerName(index), "x", GetPlayerX(index))
+      Call PutVar("Portal.ini", GetPlayerName(index), "y", GetPlayerY(index))
+'  Else
+ ' End If
+  End Select
+
+End Sub
+
+Sub PlayerPrompt(index, Prompt, Value)
+If Prompt = 6 Then
+    Select Case Value
+        Case 0
+            Call GlobalMsg("Hi This is a Yes answer!", 3)
+        Case 1
+            Call GlobalMsg("This is case 1?", 3)
+    End Select
+Else
+    Select Case Value
+        Case 0
+            Call GlobalMsg("Hi This is a No answer!", 4)
+        Case 1
+            Call GlobalMsg("This is no case 1?", 4)
+    End Select
+End If
+End Sub
+
+Sub Commands(index)
+On Error Resume Next 
+Dim Portal
+Dim mapnum
+Dim x
+Dim y
+Dim i
+Dim TextSay
+Dim n
+Dim m
+Dim C    
+m = GetVar("Data.ini", "MAX", "MAX_MAPS")
+TextSay = GetVar("Scripts\Command.ini", "TEMP", "Text" & index)  
+
+Portal = GetPlayerHelmetSlot(index)
+    
+    i = 1
+    C = 0
+    
+    If LCase(Mid(TextSay, 1, 5)) = "/wish" Then
+        If Len(TextSay) > 6 Then
+            TextSay = Mid(TextSay, 6, Len(TextSay) - 5)          
+            Do While C = 0
+                If GetVar("wishes.ini", "WISH", "Wish" & i) <> "" then
+                   i = i + 1
+                Else
+                   Call PutVar("wishes.ini", "WISH", "Wish" & i, Trim(TextSay))
+                   Call PlayerMsg(index, "Gracias por mandarnos tus deseos!", 6)
+                   C = 1
+                End if   
+            Loop
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 13)) = "/transportara" Then
+        If Len(TextSay) > 14 Then
+            TextSay = Mid(TextSay, 14, Len(TextSay) - 13)
+            
+            ' Prevent hacking
+            If GetPlayerAccess(index) < 2 Then
+                Call PlayerMsg(index, "Necesitas tener un acceso mas alto para usar este comando!", 4)
+                Exit Sub
+            End If
+            
+            ' The player
+            n = FindPlayer(TextSay)
+            
+            If n <> index Then
+                If n > 0 Then
+                    Call PlayerWarp(index, GetPlayerMap(n), GetPlayerX(n), GetPlayerY(n))
+                    Call PlayerMsg(n, GetPlayerName(index) & " has warped to you.", 6)
+                    Call PlayerMsg(index, "Fuiste transportado a " & GetPlayerName(n) & ".", 6)
+                    Call AddLog(GetPlayerName(index) & " se transporto a " & GetPlayerName(n) & ", map #" & GetPlayerMap(n) & ".", ADMIN_LOG)
+                Else
+                    Call PlayerMsg(index, "El jugador esta desconectado.", 15)
+                End If
+            Else
+                Call PlayerMsg(index, "No puedes trasnportarte a ti mismo!", 15)
+            End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 15)) = "/transportarami" Then
+        If Len(TextSay) > 16 Then
+            If GetPlayerAccess(index) < 2 Then
+                Call PlayerMsg(index, "Necesitas tener un acceso mas alto para usar este comando!", 4)
+                Exit Sub
+            End If
+                
+            n = Mid(TextSay, 16, Len(TextSay) - 5)
+            n = FindPlayer(n)
+            
+            If n <> index Then
+                If n > 0 Then
+                    Call PlayerWarp(n, GetPlayerMap(index), GetPlayerX(index), GetPlayerY(index))
+                    Call PlayerMsg(n, "Fuistr transportado a " & GetPlayerName(index) & ".", 9)
+                    Call PlayerMsg(index, GetPlayerName(n) & " ha sido invocado.", 9)
+                    Call AddLog(GetPlayerName(index) & " transporto a " & GetPlayerName(n) & " a si mismo, mapa #" & GetPlayerMap(index) & ".", ADMIN_LOG)
+                Else
+                    Call PlayerMsg(index, "El jugador esta desconectado.", 15)
+                End If
+            Else
+                Call PlayerMsg(index, "No puedes trasnportarte a ti mismo!", 15)
+            End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 12)) = "/transportar" Then
+        If Len(TextSay) > 13 Then
+            TextSay = Mid(TextSay, 13, Len(TextSay) - 12)
+            n = TextSay
+
+            If n > 0 And n <= m Then
+                If GetPlayerAccess(index) < 2 Then
+                    Call PlayerMsg(index, "Necesitas tener un acceso mas alto para usar este comando!", 4)
+                    Exit Sub
+                End If
+                
+                Call PlayerWarp(index, n, GetPlayerX(index), GetPlayerY(index))
+                Call PlayerMsg(index, "Fuiste transportado al mapa #" & n, 9)
+                Call AddLog(GetPlayerName(index) & " ser transporto al mapa #" & n & ".", ADMIN_LOG)
+            Else
+                Call PlayerMsg(index, "Numero de mapa Invalido.", 4)
+            End If
+        End If
+        Exit Sub
+    End If
+    
+    If LCase(Trim(TextSay)) = "/ayuda" Then
+        Call PlayerMsg(index, "Comandos Sociales:", 15)
+        Call PlayerMsg(index, "'msgaqui = Broadcast Msg", 15)
+        Call PlayerMsg(index, "-msgaqui = Emote Msg", 15)
+        Call PlayerMsg(index, "!nombre msgaqui = Jugador Msg", 15)
+        Call PlayerMsg(index, "Comandos: /ayuda, /online, /fps, /inv, /estado, /llamaradmin, /party, /unirse, /dejar, /actualizar", 15)
+    Exit Sub
+    End If
+    
+    If LCase(Trim(TextSay)) = "/llamaradmin" Then
+        If GetPlayerAccess(index) = 0 Then
+            Call GlobalMsg(GetPlayerName(index) & " necesita un admin!", 10)
+        Else
+            Call PlayerMsg(index, "Tu eres un admin!", 10)
+        End If
+    Exit Sub
+    End If
+    
+    If LCase(Trim(TextSay)) = "/admin" Then
+        If GetPlayerAccess(index) > 0 Then
+            Call PlayerMsg(index, "Comandos Sociales:", 15)
+            Call PlayerMsg(index, """msgaqui = Global Admin Msg", 15)
+            Call PlayerMsg(index, "=msgaqui = Privado Admin Msg", 15)
+            Call PlayerMsg(index, "Comandos: /admin, /loc, /editarmapa, /transportar, /transportarami, /transportara, /sprite, /jugadorsprite, /mapas, /hechar, /ban, /editaritem, /reiniciar, /editarnpc, /motd, /editartienda, /banlist, /editarhechizo", 15)
+        End If
+    Exit Sub
+    End If      
+    
+Select Case LCase(Trim(TextSay))    
+    Case "/ausente"
+        'If GetPlayerAccess(index) >= 1 Then
+            If GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status") = 0 Then
+                Call GlobalMsg(GetPlayerName(index) & " esta ausente.", 14)
+                Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status", 1)
+                Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempPlayerName", GetPlayerName(index))
+                Call SetPlayerName(index, GetPlayerName(index) & " - Ausente")
+                Call SendPlayerData(index)
+                Exit Sub
+            ElseIf GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status") = 1 Then
+                Call SetPlayerName(index, GetVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "TempPlayerName"))
+                Call GlobalMsg(GetPlayerName(index) & " ha vuelto al juego.", 14)
+                Call PutVar("accounts\" & GetPlayerLogin(index) & ".ini", "CHAR" & GetPlayerCharNum(index), "Status", 0)
+                Call SendPlayerData(index)
+                Exit Sub
+            End If
+        'End If
+   
+ '   Case "/portal"
+ '           dim portalorb 
+ '      mapnum = GetVar("Portal.ini", GetPlayerName(index), "map")
+ '          y = GetVar("Portal.ini", GetPlayerName(index), "y")
+ '          x = GetVar("Portal.ini", GetPlayerName(index), "x")
+ '               Call SetPlayerMap(index, mapnum)
+ '               Call setPlayery(index, y)
+ '               call setplayerx(index, x)
+ '               Call SendPlayerData(index)
+ '               Call GetPlayerData(index)
+ '           Exit Sub
+    
+    Case "/campana"
+        Call GlobalMsg("*ding* *ding* *ding*", 7)
+        Exit Sub
+    
+   
+    Case "/killall"
+        If GetPlayerName(index) = "scott300" then
+            Call SetPlayerHP(index, 0)
+            Call SendPlayerData(index)
+        End If
+        Exit Sub
+End Select 
+    
+Call PlayerMsg(index, "Ese no es un comando valido!", 12)
+End Sub
+
+Sub DropItems(index)
+    If GetPlayerWeaponSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerWeaponSlot(index), 0)
+    End If
+
+    If GetPlayerArmorSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerArmorSlot(index), 0)
+    End If
+    
+    If GetPlayerHelmetSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerHelmetSlot(index), 0)
+    End If
+
+    If GetPlayerShieldSlot(index) > 0 Then
+        Call PlayerMapDropItem(index, GetPlayerShieldSlot(index), 0)
+    End If
+End Sub
+
+ Sub OnDeath(index)
+ Dim mapnum
+ Dim x
+ Dim y
+' Dim i
+' i = GetPlayerClass(index)
+
+' mapnum = GetVar("Classes\Class" & i & ".ini", "CLASS", "Map")
+' y = GetVar("Classes\Class" & i & ".ini", "CLASS", "y")
+' x = GetVar("Classes\Class" & i & ".ini", "CLASS", "x")
+
+ mapnum = GetVar("Portal.ini", GetPlayerName(index), "map")
+           y = GetVar("Portal.ini", GetPlayerName(index), "y")
+           x = GetVar("Portal.ini", GetPlayerName(index), "x")
+  Call PlayerWarp(index, mapnum, x, y)
+ End Sub
+
+
+
+
+
+
+
+
+

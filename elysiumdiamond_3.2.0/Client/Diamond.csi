@@ -1,0 +1,9 @@
+[History]
+B0=Diamond/frmadmin/btnEditArrows_Click
+B1=Diamond/frmEditor/AddIntellWord
+B2=Diamond/modClientTCP/TcpInit
+B3=Diamond/modGameLogic/EditorCancel
+B4=Diamond/modGameLogic/HandleKeypresses
+B5=Diamond/modGameLogic/PetMove
+B6=Diamond/frmMirage/picScreen_MouseDown
+B7=Diamond/frmEditor/EditorSetVals

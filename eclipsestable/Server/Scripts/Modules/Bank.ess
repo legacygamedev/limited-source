@@ -1,0 +1,278 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: Bank.ess						'
+' Author: Stephan J.R. van Schaik (stephan_van_schaik@msn.com)	'
+' Date: September 6th, 2009.					'
+' Version: 1.2.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GetPlayerBnkItemNum					'
+' Brief: gets a bank item number.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Slot: the slot.						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function GetPlayerBnkItemNum(Index, Slot)
+	If Slot < 1 Or Slot > MAX_BANKSLOTS Then
+		GetPlayerBnkItemNum = 0
+
+		Exit Function
+	End If
+
+	If GetCharVar(Index, "Bank", "Num" & Slot) = vbNullString Then
+		GetPlayerBnkItemNum = 0
+
+		Exit Function
+	End If
+
+	GetPlayerBnkItemNum = CInt(GetCharVar(Index, "Bank", "Num" & Slot))
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GetPlayerBnkItemValue				'
+' Brief: gets a bank item value.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Slot: the slot.						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function GetPlayerBnkItemValue(Index, Slot)
+	If Slot < 1 Or Slot > MAX_BANKSLOTS Then
+		GetPlayerBnkItemValue = 0
+
+		Exit Function
+	End If
+
+	If GetCharVar(Index, "Bank", "Value" & Slot) = vbNullString Then
+		GetPlayerBnkItemValue = 0
+
+		Exit Function
+	End If
+
+	GetPlayerBnkItemValue = CInt(GetCharVar(Index, "Bank", "Value" & Slot))
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GetPlayerBnkItemDur					'
+' Brief: gets a bank item durability.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Slot: the slot.						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function GetPlayerBnkItemDur(Index, Slot)
+	If Slot < 1 Or Slot > MAX_BANKSLOTS Then
+		GetPlayerBnkItemDur = 0
+
+		Exit Function
+	End If
+
+	If GetCharVar(Index, "Bank", "Dur" & Slot) = vbNullString Then
+		GetPlayerBnkItemDur = 0
+
+		Exit Function
+	End If
+
+	GetPlayerBnkItemDur = CInt(GetCharVar(Index, "Bank", "Dur" & Slot))
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetPlayerBnkItemNum					'
+' Brief: sets a bank item number.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Slot: the slot.						'
+'	Num: the item number to set.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetPlayerBnkItemNum(Index, Slot, Num)
+	If Slot < 1 Or Slot > MAX_BANKSLOTS Then
+		Exit Sub
+	End If
+
+	Call PutCharVar(Index, "Bank", "Num" & Slot, CStr(Num))
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetPlayerBnkItemValue				'
+' Brief: sets a bank item value.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Slot: the slot.						'
+'	Value: the item value to set.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetPlayerBnkItemValue(Index, Slot, Value)
+	If Slot < 1 Or Slot > MAX_BANKSLOTS Then
+		Exit Sub
+	End If
+
+	Call PutCharVar(Index, "Bank", "Value" & Slot, CStr(Value))
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetPlayerBnkItemDur					'
+' Brief: sets a bank item durability.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Slot: the slot.						'
+'	Dur: the item durability to set.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetPlayerBnkItemDur(Index, Slot, Dur)
+	If Slot < 1 Or Slot > MAX_BANKSLOTS Then
+		Exit Sub
+	End If
+
+	Call PutCharVar(Index, "Bank", "Dur" & Slot, CStr(Dur))
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: AddPlayerBankItem					'
+' Brief: adds an item to the bank.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Item: the item to add.					'
+'	Durability: the durability of the item to add.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function AddPlayerBankItem(Index, Item, Durability)
+	For Slot = 1 To MAX_BANKSLOTS
+		If GetPlayerBnkItemNum(Index, Slot) = 0 Then
+			Call SetPlayerBnkItemNum(Index, Slot, Item)
+			Call SetPlayerBnkItemValue(Index, Slot, 0)
+			Call SetPlayerBnkItemDur(Index, Slot, Durability)
+
+			AddPlayerBankItem = True
+
+			Exit Function
+		End If
+	Next
+
+	AddPlayerBankItem = False
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: AddPlayerBankStackableItem				'
+' Brief: adds a stackable item to the bank.			'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Item: the item to add.					'
+'	Amount: the amount to add.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function AddPlayerBankStackableItem(Index, Item, Amount)
+	For Slot = 1 To MAX_BANKSLOTS
+		If GetPlayerBnkItemNum(Index, Slot) = Item Then
+			Call SetPlayerBnkItemNum(Index, Slot, Item)
+			Call SetPlayerBnkItemValue(Index, Slot, Amount)
+			Call SetPlayerBnkItemDur(Index, Slot, 0)
+
+			AddPlayerBankStackableItem = True
+
+			Exit Function
+		End If
+	Next
+
+	For Slot = 1 To MAX_BANKSLOTS
+		If GetPlayerBnkItemNum(Index, Slot) = 0 Then
+			Call SetPlayerBnkItemNum(Index, Slot, Item)
+			Call SetPlayerBnkItemValue(Index, Slot, Amount)
+			Call SetPlayerBnkItemDur(Index, Slot, 0)
+
+			AddPlayerBankStackableItem = True
+
+			Exit Function
+		End If
+	Next
+
+	AddPlayerBankStackableItem = False
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: CountPlayerBankItem					'
+' Brief: counts an item in the bank.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Item: the item to count.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function CountPlayerBankItem(Index, Item)
+	Dim Amount
+
+	Amount = 0
+
+	For Slot = 1 To MAX_BANKSLOTS
+		If GetPlayerBnkItemNum(Index, Slot) = Item Then
+			If GetPlayerBnkItemValue(Index, Slot) = 0 Then
+				Amount = Amount + 1
+			Else
+				Amount = Amount + GetPlayerBnkItemValue(Index, Slot)
+			End If
+		End If
+	Next
+
+	CountPlayerBankItem = Amount
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: RemovePlayerBankItem				'
+' Brief: removes an item from the bank.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Item: the item to remove.				'
+'	Amount: the amount to remove.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub RemovePlayerBankItem(Index, Item, Amount)
+	For Slot = 1 To MAX_BANKSLOTS
+		If GetPlayerBnkItemNum(Index, Slot) = Item Then
+			If GetPlayerBnkItemValue(Index, Slot) = 0 Then
+				Amount = Amount - 1
+
+				Call SetPlayerBnkItemNum(Index, Slot, 0)
+				Call SetPlayerBnkItemValue(Index, Slot, 0)
+				Call SetPlayerBnkItemDur(Index, Slot, 0)
+			ElseIf Amount >= GetPlayerBnkItemValue(Index, Slot) Then
+				Amount = Amount - GetPlayerBnkItemValue(Index, Slot)
+
+				Call SetPlayerBnkItemNum(Index, Slot, 0)
+				Call SetPlayerBnkItemValue(Index, Slot, 0)
+				Call SetPlayerBnkItemDur(Index, Slot, 0)
+			Else
+				Call SetPlayerBnkItemValue(Index, Slot, GetPlayerBnkItemValue(Index, Slot) - Amount)
+
+				Amount = 0
+			End If
+
+			If Amount <= 0 Then
+				Exit Sub
+			End If
+		End If
+	Next
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GetPlayerBankSlots					'
+' Brief: gets the free bank slots.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function GetPlayerBankSlots(Index)
+	Dim Amount
+
+	Amount = 0
+
+	For Slot = 1 To MAX_BANKSLOTS
+		If GetPlayerBnkItemNum(Index, Slot) = 0 Then
+			Amount = Amount + 1
+		End If
+	Next
+
+	GetPlayerBnkSlots = Amount
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: ClearPlayerBank					'
+' Brief: clears the bank of a player.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub ClearPlayerBank(Index)
+	For Slot = 1 To MAX_BANKSLOTS
+		Call SetPlayerBnkItemNum(Index, Slot, 0)
+		Call SetPlayerBnkItemValue(Index, Slot, 0)
+		Call SetPlayerBnkItemDur(Index, Slot, 0)
+	Next
+End Sub

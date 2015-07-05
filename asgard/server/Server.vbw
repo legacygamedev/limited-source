@@ -1,0 +1,16 @@
+frmServer = 55, 32, 792, 618, , 18, 81, 806, 684, C
+modDatabase = 16, 12, 739, 586, C
+modTypes = 64, 47, 876, 578, 
+modGameLogic = -4, 56, 719, 629, 
+modGeneral = 16, 74, 739, 648, C
+modText = 22, 22, 834, 553, C
+modServerTCP = 45, 66, 857, 611, 
+frmLoad = 130, 185, 849, 759, C, 29, 97, 748, 671, C
+modSysTray = 250, 250, 753, 826, C
+modScripting = 88, 116, 862, 703, C
+clsCommands = -18, 18, 756, 605, C
+clsRC4 = 176, 232, 950, 819, C
+clsSadScript = -41, 173, 733, 760, C
+frmEditor = 66, 87, 851, 692, C, 88, 116, 875, 721, C
+modCodeEdit = -88, 54, 697, 659, C
+modNPCSpawn = -4, 61, 769, 664, C

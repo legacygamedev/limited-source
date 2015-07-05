@@ -1,0 +1,54 @@
+REGEDIT4
+
+; ActiveX DLLs
+
+[HKEY_CLASSES_ROOT\.dll]
+@="dllfile"
+
+[HKEY_CLASSES_ROOT\dllfile\shell\regdll]
+@="Register ActiveX DLL"
+
+[HKEY_CLASSES_ROOT\dllfile\shell\regdll\command]
+@="regsvr32.exe \"%L\""
+
+[HKEY_CLASSES_ROOT\dllfile\shell\unregdll]
+@="Unregister ActiveX DLL"
+
+[HKEY_CLASSES_ROOT\dllfile\shell\unregdll\command]
+@="regsvr32.exe /u \"%L\""
+
+; ActiveX Controls
+
+[HKEY_CLASSES_ROOT\.ocx]
+@="ocxfile"
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\regocx]
+@="Register OCX Control"
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\regocx\command]
+@="regsvr32.exe \"%L\""
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\unregocx]
+@="Unregister OCX Control"
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\unregocx\command]
+@="regsvr32.exe /u \"%L\""
+
+; ActiveX EXEs
+
+[HKEY_CLASSES_ROOT\.exe]
+@="exefile"
+
+[HKEY_CLASSES_ROOT\exefile\shell\regexe]
+@="Register ActiveX EXE"
+
+[HKEY_CLASSES_ROOT\exefile\shell\regexe\command]
+@="\"%L\" /regserver"
+
+[HKEY_CLASSES_ROOT\exefile\shell\unregexe]
+@="Unregister Active EXE"
+
+[HKEY_CLASSES_ROOT\exefile\shell\unregexe\command]
+@="\"%L\" /unregserver"
+
+

@@ -1,0 +1,53 @@
+- e. NPC Editor
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Requirements ::
+The npc editor is reached by typing "/editnpc" or "/npceditor" by a person with developer access or higher.
+
+
+:: The basics ::
+NPCs are made here and are used on a map in the map properties page. An NPC has a few basic traits that go with it.
+
+
+Name - The name of the NPC that is displayed above it's head.
+
+Speak - What the NPC says if a player tries to attack/talk to them. It is displayed in the text box.
+
+Sprite - The picture of the NPC. Just like any other sprite selections.
+
+Behavior - To be explained further. It gets another section.
+
+
+There are a bunch of other values, but most of the time you won't have to deal with them too severly.
+
+
+:: Behaviors ::
+NPCs come in a variety of different behaviors. That is because the NPC actions all depend on what type of NPC you want them to be. Here are the behaviors:
+
+
+Attack on sight - Exactly as it sounds. The NPC will attack any player that gets in it's range (also set in the NPC editor). HOWEVER, NPCs do not attack admins on sight and NPCs do not talk to you (speech) when set on this mode. There are always questions like this, so remember that carefully.
+
+Attack when attacked - Another no brainer. When you attack the NPC, the NPC attacks you back. NPCs in this mode do not have speech built in.
+
+Friendly - This NPC is impossible to attack and won't attack you back. He is a nice, friendly NPC. This is the only behavior mode that will work with speech.
+
+Guard - A very smart behavior type. When a guard NPC on a map is attacked, ALL the other guard NPCs on that map will attack the player too.
+
+Shopkeeper - A friendly NPC that doesn't move at all.
+
+
+:: The other values ::
+As you can see, there are more than 4 values that you can set for a NPC. Many of them are common sense, so I'm going to just explain the ones that might be a bit confusing.
+
+
+Big NPC - By checking this, you turn the NPC into a big NPC at is 64 x 64 tiles large. The sprite set for big NPCs is "bigsprites.bmp"
+
+Range - The range of the NPC is the number of tiles you have to be away for the NPC to attack you on sight.
+
+Spawn Rate - It's pretty simple. It's the number of seconds that will pass after the NPC is killed until a new NPC is put on the map.
+
+Spawn Time - You can set the NPC to spawn at night only or day only.
+
+Speech - The number of the speech you want the NPC to start. The NPC's sprite will be used in the speech too. NOTE: Only friendly NPCs can call speeches.

@@ -1,0 +1,4 @@
+7:52:50 PM: Test has logged in from 127.0.0.1.
+7:52:52 PM: Test/Tester has began playing Elysium Diamond.
+7:54:16 PM: Test has logged in from 127.0.0.1.
+7:54:18 PM: Test/Tester has began playing Elysium Diamond.

@@ -1,0 +1,205 @@
+ __________________________________________________
+|::::::::::::::::::::::::::::::::::::::::::::::::::|
+|:::::::::::::::Konfuze Feature List:::::::::::::::|
+|::::::::::::::::::::::::::::::::::::::::::::::::::|
+ --------------------------------------------------
+This feature list is updated with everything that is
+ever added to konfuze. This includes every tiney thing
+added since the blank MS was taken. Newest addition
+is shown first.
+
+
+
+ __________________________________________________
+|::::::::::::::::::::::::::::::::::::::::::::::::::|
+|:::::::::::::::::::::Version 1::::::::::::::::::::|
+|::::::::::::::::::::::::::::::::::::::::::::::::::|
+ --------------------------------------------------
+This is the very first version of Konfuze Classic,
+remember there are many things to come but remember
+even the original Konfuze had to start somewhere :)
+
+----------------------------------------------------
+Bugs fixed this version:
+----------------------------------------------------
+- Early beta tests with cronius showed some vital flaws
+  in the character creation, after some wrestling with
+  the code these are now re-written and work properly :)
+
+- Again thanks to dragoons master, it now picks up the
+  top item on the ground, as before it would pick up
+  the bottom one. Annoying, but was an incredibly easy
+  fix ^_^
+
+- During the course of me adding things i somehow
+  managed to break the chat system.. after a few hours
+  of work its fixed, pffft friggin thing lol!
+
+- The bandestroy command is now fixed, it now actually
+  wipes the banlist instead of doing.. well not much
+  really :)
+
+- Players now save individually and only if they are
+  online, previously everything saved reguardless and
+  it lagged a wee bit. Thanks to Dragoons_Master for
+  showing me how to update my code ^_^
+
+- Shield strength requirement now works :)
+
+- Fixed the 'spell cast' bug, pretty annoying thing as
+  when you cast a spell if you had an item equipped it
+  would say "you hit blah for 10 with dagger" or w/e.
+  Now thats fixed, and it simply says "you cast on blah
+  for 10 hitpoints." or something along those lines ^_^
+
+- Fixed the 'npc targeting' bug. Previously if an npc
+  or player was on top of an item you couldnt target
+  them, now you can :)
+
+- Fixed the most annoying MS thing ever, the 'position
+  modification' bug. Basically its where you go to move
+  and the server says you tried to hack and kicks you.
+  doesent anymore :>
+
+- Fixed the 'NPC's dont move' bug.
+
+- Fixed 'item req x2' bug.
+
+-----------------------------------------------------
+Features added this version:
+-----------------------------------------------------
+- Took me over an hour but all the forms are now
+  neat and pretty, sound stupid but it made a huge
+  difference to the feel of the engine from an admin's
+  point of view.
+
+- 'whos online' added client side. Press F3 to bring
+  it up. And of course, it has custom GUI.
+
+- You can now test the music in the map properties.
+
+- Music now loops and if you go to a map that is using
+  the same music it does not reset.
+
+- Max_Map_Npc's is now 10
+
+- Music loops and if you move to a map with the same
+  music it does not reset. yey.
+
+- NPC's names are now above their heads :)
+
+- Have removed the whole 'run' thing, and simply made
+  the walking faster and smoother. NPC's are still the
+  old speed however.
+
+- The npceditor was cleaned up, all the useless stuff
+  has been removed. Also the npc health and experience
+  is now customisable :)
+
+- While trying something new i realised the friendly
+  npc's didnt say anything to you if you hit them, they
+  do now ^_^
+
+- Ok, -puts on ear muffs-, you can all cheer now; i have
+  completely removed item durability! -eardrums explode
+  from everyones cheering-. I was unsure about a few
+  things and i had some bugs but once again thanks to
+  dragoons master who helped me out its working. xd
+
+- Removed the fix item system, its the first stage in
+  removing item durability completely.
+
+- Spells is now also in its own window, however use F2
+  to bring it up :), and yes it does have a custom GUI
+  ^_^
+
+- Inventory is now in its own window, you can bring it
+  up by pressing F1 - as usual it has a custom GUI.
+
+- Ingame font made neat, now has a 1px border around it
+  rather than the ewwy shadow :)
+
+- Changed the chat box format from "says 'blah' to you"
+  to ": blah".
+
+- If the interface files cannot be found it will now
+  just give a blank white interface.
+
+- The ingame screen has no gui as such, however the
+  small GUI underneath the screen now has a template
+  and is customisable. I cannot stress enough how the
+  GUI templates are not meant to be used, they are
+  just guidelines!
+
+- In the new character window where you choose your
+  class, dont you think it would be a bit stupid if
+  you wanted people to be able to select different
+  races but above the race menu it had "class:". Well
+  i dont want to leave any details out however minor
+  so you can edit the label above the drop down menu
+  via the configuration.ini to whatever you want. :)
+
+- Completely integrated the male/female system, and
+  also added 'show sprite at character create' which
+  to my suprise i managed to get to work perfectly
+  along side the male/female system. Yey for my
+  education ^_^
+
+- male/female system added using the traditional
+  config.ini malesprite/femalesprite options.
+
+- Added customisable interface. You can use either
+  .gif, .jpg or .png files for your games unique
+  user interface. The client will come with a
+  template for each different window to get you
+  started!
+
+- You must now specify the game name and website
+  server side also, as the game name is used to give
+  your server a more personal feel and it looks alot
+  more proffessional handing a server with your games
+  name on it over to a hoster.
+
+- The game name and game website is now able to be
+  set via the client side configuration.ini. The
+  advantage of this is the gamename will appear as
+  the caption for the main window, and also if the
+  server is offline it will prompt you that the
+  'gamename' server is offline and to visit whatever
+  website is specified.
+  -------
+  UPDATE: Game name now = ingame window header.
+  -------
+
+- The message of the day is also now specified via
+  the server side Configuration.ini.
+
+- IP and port is now specified via the client config
+  file located in the core files folder. Remember if
+  you change the port you must also change the server
+  port! Do this via the server configuration.ini file
+  located in the server core files folder.
+
+- The credits page is now customisable by you, simply
+  edit the Configuration.ini in the core files folder
+  and add your own credits! Special thanks to Steve for
+  teaching me how to read/write from .ini files. Its super
+  easy but one of those things i never really learnt. ty!
+
+- Added client side /shutdown command for admins.
+  Very usefull, if somethings going wrong and you dont
+  (for some reason) have access to the server, you
+  can now shut it down by yourself!
+
+- Improved the server shutdown, now counts down in
+  seconds and you can cancel the shutdown by going
+  "File > Cancel Shutdown" in the server.
+
+- Optimised server system tray, now when minimised
+  it uses less memory than before - also now you
+  must left click on the system tray icon to be
+  prompted with several options. Much cleaner and
+  more stable.
+
+- Transparent color set for Tiles items and sprites
+  via the color of the first row in that .bmp file.

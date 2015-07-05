@@ -1,0 +1,169 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: Inventory.ess						'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: September 6th, 2009.					'
+' Version: 1.2.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: AddPlayerInvItem					'
+' Brief: adds an item to the inventory.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Item: the item to add.					'
+'	Durability: the durability of the item to add.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function AddPlayerInvItem(Index, Item, Durability)
+	For Slot = 1 To MAX_INVSLOTS
+		If GetPlayerInvItemNum(Index, Slot) = 0 Then
+			Call SetPlayerInvItemNum(Index, Slot, Item)
+			Call SetPlayerInvItemValue(Index, Slot, 0)
+			Call SetPlayerInvItemDur(Index, Slot, Durability)
+			Call SendInventoryUpdate(Index, Slot)
+
+			AddPlayerInvItem = True
+
+			Exit Function
+		End If
+	Next
+
+	AddPlayerInvItem = False
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: AddPlayerInvStackableItem				'
+' Brief: adds a stackable item to the inventory.		'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Item: the item to add.					'
+'	Amount: the amount to add.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function AddPlayerInvStackableItem(Index, Item, Amount)
+	For Slot = 1 To MAX_INVSLOTS
+		If GetPlayerInvItemNum(Index, Slot) = Item Then
+			Call SetPlayerInvItemNum(Index, Slot, Item)
+			Call SetPlayerInvItemValue(Index, Slot, Amount)
+			Call SetPlayerInvItemDur(Index, Slot, 0)
+			Call SendInventoryUpdate(Index, Slot)
+
+			AddPlayerInvStackableItem = True
+
+			Exit Function
+		End If
+	Next
+
+	For Slot = 1 To MAX_INVSLOTS
+		If GetPlayerInvItemNum(Index, Slot) = 0 Then
+			Call SetPlayerInvItemNum(Index, Slot, Item)
+			Call SetPlayerInvItemValue(Index, Slot, Amount)
+			Call SetPlayerInvItemDur(Index, Slot, 0)
+			Call SendInventoryUpdate(Index, Slot)
+
+			AddPlayerInvStackableItem = True
+
+			Exit Function
+		End If
+	Next
+
+	AddPlayerInvStackableItem = False
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: CountPlayerInvItem					'
+' Brief: counts an item in the inventory.			'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Item: the item to count.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function CountPlayerInvItem(Index, Item)
+	Dim Amount
+
+	Amount = 0
+
+	For Slot = 1 To MAX_INVSLOTS
+		If GetPlayerInvItemNum(Index, Slot) = Item Then
+			If GetPlayerInvItemValue(Index, Slot) = 0 Then
+				Amount = Amount + 1
+			Else
+				Amount = Amount + GetPlayerInvItemValue(Index, Slot)
+			End If
+		End If
+	Next
+
+	CountPlayerInvItem = Amount
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: RemovePlayerInvItem					'
+' Brief: removes an item from the inventory.			'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'	Item: the item to remove.				'
+'	Amount: the amount to remove.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub RemovePlayerInvItem(Index, Item, Amount)
+	For Slot = 1 To MAX_INVSLOTS
+		If GetPlayerInvItemNum(Index, Slot) = Item Then
+			If GetPlayerInvItemValue(Index, Slot) = 0 Then
+				Amount = Amount - 1
+
+				Call SetPlayerInvItemNum(Index, Slot, 0)
+				Call SetPlayerInvItemValue(Index, Slot, 0)
+				Call SetPlayerInvItemDur(Index, Slot, 0)
+				Call SendInventoryUpdate(Index, Slot)
+			ElseIf Amount >= GetPlayerInvItemValue(Index, Slot) Then
+				Amount = Amount - GetPlayerInvItemValue(Index, Slot)
+
+				Call SetPlayerInvItemNum(Index, Slot, 0)
+				Call SetPlayerInvItemValue(Index, Slot, 0)
+				Call SetPlayerInvItemDur(Index, Slot, 0)
+				Call SendInventoryUpdate(Index, Slot)
+			Else
+				Call SetPlayerInvItemValue(Index, Slot, GetPlayerInvItemValue(Index, Slot) - Amount)
+				Call SendInventoryUpdate(Index, Slot)
+
+				Amount = 0
+			End If
+
+			If Amount <= 0 Then
+				Exit Sub
+			End If
+		End If
+	Next
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: GetPlayerInvSlots					'
+' Brief: gets the free inventory slots.				'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function GetPlayerInvSlots(Index)
+	Dim Amount
+
+	Amount = 0
+
+	For Slot = 1 To MAX_INVSLOTS
+		If GetPlayerInvItemNum(Index, Slot) = 0 Then
+			Amount = Amount + 1
+		End If
+	Next
+
+	GetPlayerInvSlots = Amount
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: ClearPlayerInv					'
+' Brief: clears the inventory of a player.			'
+' Parameters:							'
+'	Index: the index number of the player.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub ClearPlayerInv(Index)
+	For Slot = 1 To MAX_INVSLOTS
+		Call SetPlayerInvItemNum(Index, Slot, 0)
+		Call SetPlayerInvItemValue(Index, Slot, 0)
+		Call SetPlayerInvItemDur(Index, Slot, 0)
+	Next
+
+	Call SendInventory(Index)
+End Sub

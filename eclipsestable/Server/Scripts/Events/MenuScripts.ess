@@ -1,0 +1,174 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: MenuScripts.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: MenuScripts						'
+' Brief: executes when a player clicks on a custom menu.	'
+' Parameters:							'
+'	Index: the index number of the player who clicked.	'
+'	ElementIndex: the index number of the clicked element.	'
+'	ElementType: the type of the clicked element.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub MenuScripts(Index, ElementIndex, ElementType)
+	Dim MenuTitle
+	Dim FieldMessage
+
+	MenuTitle = GetPlayerMenuClickTitle(Index)
+	FieldMessage = GetPlayerMenuClickMsg(Index)
+
+	Call PutCharVar(Index, "Menu", "Title", MenuTitle)
+
+	Select Case MenuTitle
+		Case "hello"
+			Select Case ElementType
+				Case ELEMENT_PICTURE
+					Call PlayerMsg(Index, "You clicked on picture number " & ElementIndex & "!", YELLOW)
+
+				Case ELEMENT_FIELD
+					Call PlayerMsg(Index, "You clicked on field number " & ElementIndex & "!", YELLOW)
+
+				Case ELEMENT_LABEL
+					Call PlayerMsg(Index, "You clicked on label number " & ElementIndex & "!", YELLOW)
+
+				Case Else
+					Call PlayerMsg(Index, "Unknown element type!", BRIGHTRED)
+			End Select
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Plug (Profile.ess)						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+		Case "Player Profile"
+			If GetPlayerAccess(Index) < ADMIN_MONITOR Then
+				Exit Sub
+			End If
+
+			Select Case ElementIndex
+				Case 1
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new player name.", 1)
+
+					Exit Sub
+
+				Case 2
+					Exit Sub
+
+				Case 3
+					Exit Sub
+
+				Case 4
+					Exit Sub
+
+				Case 5
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new player name.", 1)
+
+					Exit Sub
+
+				Case 6
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new access level.", 2)
+
+					Exit Sub
+
+				Case 7
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new guild name.", 3)
+
+					Exit Sub
+
+				Case 8
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new class number.", 4)
+
+					Exit Sub
+
+				Case 9
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new sprite number.", 5)
+
+					Exit Sub
+
+				Case 10
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new level.", 6)
+
+					Exit Sub
+
+				Case 11
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of experience.", 7)
+
+					Exit Sub
+
+				Case 12
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of PK.", 8)
+
+					Exit Sub
+
+				Case 13
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of HP.", 9)
+
+					Exit Sub
+
+				Case 14
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of MP.", 10)
+
+					Exit Sub
+
+				Case 15
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of SP.", 11)
+
+					Exit Sub
+
+				Case 16
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of strenght.", 12)
+
+					Exit Sub
+
+
+				Case 17
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of defence.", 13)
+
+					Exit Sub
+
+
+				Case 18
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of magic.", 14)
+
+					Exit Sub
+
+
+				Case 19
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of speed.", 15)
+
+					Exit Sub
+
+
+				Case 20
+					Call CustomMenuClose(Index)
+					Call PlayerQueryBox(Index, "Please enter the new amount of points.", 16)
+
+					Exit Sub
+			End Select
+
+			Exit Sub
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' End Plug (Profile.ess)					'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+		Case Else
+			Call PlayerMsg(Index, "Unknown menu!", BRIGHTRED)
+	End Select
+End Sub

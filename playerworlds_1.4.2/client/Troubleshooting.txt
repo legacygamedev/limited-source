@@ -1,0 +1,256 @@
+The best place to start for any bug is to get the follwoing file that Kael placed on Playerworlds.com. It is ~6 Mb. It contains may support_files. http://playerworlds.com/downloads/Support.zip 
+
+
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+
+
+----Run-Time Errors---- 
+
+=Run-Time Error 5 
+
+This is a nuisance bug. Sometimes it occurs but is not consistently repeatable. Usually, it goes away if you just re-open the client and try to connect again. Sometimes it takes several tries. It seems to happen periodically and then it disappears. For me, it happened the ifrst time I tried to login everytime for a month or so, then it stopped. The cause of this is unknown. 
+
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 7- Out of Memory 
+
+This has NOTHING to do with too many applications running or not enough RAM on your PC. It is a Windows XP only problem. From what was said before, Miscrosoft does not always fully explain the differences between all the OS. This seems to be fall out from that. 
+
+
+**Warning: Do not do this unless you are knowledgeable about installing an OS. If you do it wrong, you will erase all your files. ALso, this bug works the majority of the time. It worked for me 3 out of 3 times, but it does not work for everyone. If it does not work for you, then there is no known fix for you** 
+
+This is most often easily fixed it easily by re-running the Windows XP setup disk in upgrade mode. It does not erase any files in repair mode. DO NOT RUN IT IN NEW INSTALLATION MODE OR YOU WILL ERASE ALL YOUR FILES. 
+
+How to do this. 
+
+1) Place the Windows XP setup diosk in the drive while the PC is already running Windows XP. A welcome screen appears. 
+2) Click Install Windows XP 
+3) Choose "Upgrade (Recommended)" This will not damage any files 
+4) Continue to follow the on screen instructions. Each PC is different so I can not give you anymore details from here on out, but it is straight forward. 
+
+
+If this fails to work, then your only option is to install another Operating System. Otherwise, you will not be able to play on any Playerworlds 
+
+Update: A player on Jerrath has noticed that if you register every dll file in the folder, that it fixes the error.  Three other players that he had try it reported success.
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 9- Script Out of Range 
+
+This is a nuisance bug. Sometimes it occurs but is not consistently repeatable. Usually, it goes away if you just re-open the client and try to connect again. Sometimes it takes several tries. The cause of this is unknown. 
+
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 13- no data.ini 
+
+This is goof on your part. It is not a real bug. It happens most often when a client update is downloaded and not placed in the same folder as the file data.ini. By default, it should go into "C:\Program Files\Kaelian Software\client\" Just place the .exe file in the same folder as your data.ini file and you are ready to go. 
+
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 16: 
+
+This error is caused by your screen settings for color being set to high. This may be related to your graphics card's limitations. To fix it, right click on your desktop, choose properties, and then settings. Next, set the color setting to a lower one such as High Color-16 bit. 
+
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 53- Can not find Tiles.Bmp 
+
+This error is caused by your server owner not taking into account the graphics limit for Windows 98.  The graphics they distribute are too large to work with Windows 98.  This happens on Windows 98 computers only as far as I know. They fix is quick and easy. 
+
+
+~ Open tiles.bmp in the GFX folder, which is located in your main Jerrath folder. 
+
+~ Make sure it opens in Paint. If it does not open in Paint automatically, right click on tiles.bmp and click Edit. If that doesnt work, then right click tiles.bmp and go into the Open With... submenu, and if paint is in there, click it, if it isnt, click Choose Program... and click browse, then go to "C:\WINDOWS\system32" and double click on the "mspaint" icon. Then click ok. 
+
+~ Once in Paint, click Image (ALT+I), Then click Attributes. OR you can just hold control and hit E when you open paint. 
+
+~ Once in the Attributes menu, edit it to look like the following: 
+
+Width- 224 
+Height- 9728 
+Units- Pixels 
+Colors- Colors 
+
+~ Then click OK 
+
+~ Then click File, Then click Save. OR hold control and hit S. 
+
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 76- Path Not Found 
+
+I do not believe that this is a common bug. The bug and fix were sent to me when 1.3.0 came out. 
+
+This seems to reference the GUI.bmp most often. Make sure that the file is in your GFX (graphics) folder. By default, the path is C:\Program Files\Kaelian Software\client\GFX. IF it is then proceed to the next step. All you have to do is re-unzip your Player Worlds file. It is best if you rename your old folder where the client is. This will give you a fresh slate. After the re-installation is complete and it works, you can simply delete the old client folder that you renamed 
+
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 339 
+
+Richtx32.ocx is a file that is necessary for Visual Basic applications. It is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered. Below is a very easy way to register this file. Once you get the aut-registering program, you can use it anytime you need to register a file. 
+
+Do this in this order 
+
+Get this file: http://playerworlds.com/downloads/support_files/activex_right_click.zip and unzip it  It is an Auto-registering program 
+
+Run it and type yes when it mentions the registry. This program allows you to quickly register things. 
+
+
+Now get the missig file: http://playerworlds.com/downloads/support_files/richtx32.ocx 
+It is richtx32.ocx 
+
+Now right click richtx32.ocx and choose register. 
+
+----------------------------------------------------------------------------------------------- 
+
+=Runtime error 372 - MSComm32.ocx
+
+MSComm32.ocx is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered. Below is a very easy way to register this file. Once you get the aut-registering program, you can use it anytime you need to register a file. 
+
+
+Do this in this order 
+
+Get this file: http://playerworlds.com/downloads/support_files/activex_right_click.zip and unzip it  It is an Auto-registering program 
+
+Run it and type yes when it mentions the registry. This program allows you to quickly register things. 
+
+
+Now get the missig file: http://playerworlds.com/downloads/support_files/MSComm32.ocx 
+It is MSComm32.ocx 
+
+Now right click MSComm32.ocx and choose register. 
+
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 373 - TABCTL32.ocx
+
+TABCTL32.ocx is a file that is necessary for the two way NPC chat system. It is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered. Below is a very easy way to register this file. Once you get the aut-registering program, you can use it anytime you need to register a file. 
+
+Do this in this order 
+
+Get this file: http://playerworlds.com/downloads/support_files/activex_right_click.zip and unzip it  It is an Auto-registering program 
+
+Run it and type yes when it mentions the registry. This program allows you to quickly register things. 
+
+
+Now get the missig file: http://playerworlds.com/downloads/support_files/TABCTL32.ocx 
+It is TABCTL32.ocx
+
+Now right click TABCTL32.ocx and choose register. 
+
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 429- ActiveX Cannot Create Component 
+
+You may also see an error that mentions DX7VB.DLL. 
+
+You do not have the version of DirectX that is needed. The most recent version of DirectX can be downloaded from Microsoft at: 
+
+http://www.microsoft.com/downloads/details...&displaylang=en 
+
+This file is a setup files that downloads the appropriate files for your PC. This can be a lengthy download but will give you the most recent verion of DirectX 
+
+
+
+**Note: Some people have mentioned that this does NOT fix this bug. At this time, I am unsure of this fix. 
+
+----------------------------------------------------------------------------------------------- 
+
+=Run-Time Error 713 
+
+MSSTDFMT.DLL is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered. Below is a very easy way to register this file. Once you get the aut-registering program, you can use it anytime you need to register a file. 
+
+Do this in this order 
+
+Get this file: http://playerworlds.com/downloads/support_files/activex_right_click.zip and unzip it  It is an Auto-registering program 
+
+Run it and type yes when it mentions the registry. This program allows you to quickly register things. 
+
+
+Now get the missig file: http://playerworlds.com/downloads/support_files/msstdfmt.dll 
+It is msstdfmt.dll 
+
+Now right click msstdfmt.dll and choose register. 
+
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+
+----Chat Bugs--- 
+
+=You can send PMs but you can not read PMs that people send you 
+
+This is a quick and easy fix. Go into your client folder. By default it is "C:\Program Files\Kaelian Software\client\". Delete the file ignore.txt. This is a file that is used to store players that you wish to no longer receive PMs from. Occasionally something goofs this file. The client will remake this file from scratch which will fix your problem. 
+
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+
+----Missing Files---- 
+
+=Missing MSVBVM60.dll 
+
+Microsoft Visual basic requires run time files in order to run Visual Basic applications. These files are required for and Visual Basic program. You may download the most recent version from Microsoft at 
+
+http://www.microsoft.com/downloads/details...&DisplayLang=en 
+
+-----------------------------------------------------------------------------------------------
+=Runtime error -2147024770 (8007007e) 
+
+Regsvr32.exe dx7vb.dll it should stop the error once it's registered
+
+or
+
+Get this file: http://playerworlds.com/downloads/support_files/activex_right_click.zip and unzip it  It is an Auto-registering program 
+
+Run it and type yes when it mentions the registry. This program allows you to quickly register things. 
+
+
+Now right click dx7vb.dll and choose register.
+
+
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+
+----Security Bugs---- 
+
+=You have either entered the wrong password, or are trying to access this account from a computer that is not on this account safe list 
+
+Two possible reasons for this: 
+
+1) You forgot your password. 
+
+Make sure that caps lock is off. Try again. Then contact your server administrator 
+
+2) You are accessing the Player Worlds program from a computer that is not on you safe list. This is caused my being on a computer that is different that the one where you created your account. It may also occur when you install a new operating system. 
+
+In the case of a new operating system, there is nothing you can do to fix this yourself. Contact you server administrator so that he/she may reset your safe list. You are on a computer other than the one you created the account on. Go back to that computer and login. Click the security icon on the main playing window. Turn security off. This will allow you to connect from a different computer. Go to the other computer. Log in. Then click the security icon. Click "add this computer". You may now turn security back on. From this point on, you will be able to connect from both computers. If this does not work, then you will need to contact your server administrator so that he/she may reset you safe list. It is HIGHLY advisable that security be left on. Only turn it off for brief periods when you are installing a new operating system or will be using a different computer that is not on your safe list. 
+
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------- 
+
+----Misc Bugs---- 
+
+=Text is misplaced on the client- Text Size Error 
+
+The simplest way to understand this bug is to look at the website below. Basically, the text is not placed over the buttons correctly. This makes it very difficult if not impossible to use the buttons. 
+
+It turns out that this error is very easy to fix. If the menus look weird and some options are cut off, right-click the desktop, click 'Properties', go to the 'Settings' tab, click 'Advanced', and from the font size dropdown, choose 'Small' 
+
+
+=Client Gets Stuck at "Connected: Sending Login Info 
+
+1) If this happens more than three times in a row, it simply means the server is down or experiencing heavy lag. The message that states that the server si down does not always appear. Try back later. 
+
+2) You are behind a firewall.  Read the help from another user
+
+"I had a user having trouble connecting to my server and receiving the above message (Client/Server 1.4.0.2).  It turns out that the problem was that he was behind a router/firewall at home and had to have the firewall configured to forward port 7234 (the game's port) to his IP on the local network.    We tried creating new accounts, etc., but nothing I did at the server end made any difference, but this solved the problem immediately."- sarax
+
+Here is a list of Run Time Error numbers and causes as reported by Microsoft.  This may be of no help for the majority, but it is a very nice resource.
+
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vbenlr98/html/vamsgtrappableerrors.asp
+
+-Last compiled by Magic Dude on 8/23/04 for version 1.4.2

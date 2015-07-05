@@ -1,0 +1,35 @@
+4:44:03 PM: Twinnie editing item #1.
+4:44:30 PM: Twinnie editing arrow #7.
+5:07:17 PM: Twinnie editing spell #1.
+5:08:34 PM: Twinnie saving spell #1.
+5:08:37 PM: Twinnie editing item #1.
+5:09:08 PM: Twinnie saved item #1.
+5:10:51 PM: Twinnie editing npc #1.
+5:11:14 PM: Twinnie saved npc #1.
+6:46:05 PM: Twinnie editing npc #1.
+11:28:58 PM: Twinnie editing arrow #1.
+11:29:19 PM: Twinnie saved arrow #1.
+11:29:24 PM: Twinnie editing item #1.
+11:30:05 PM: Twinnie saved item #1.
+11:30:25 PM: Twinnie editing item #1.
+11:30:30 PM: Twinnie saved item #1.
+11:30:47 PM: Twinnie editing arrow #1.
+11:31:00 PM: Twinnie saved arrow #1.
+11:48:07 PM: Twinnie has respawned map #1
+11:49:58 PM: Twinnie has respawned map #1
+11:57:17 PM: Twinnie editing shop #1.
+3:44:50 PM: Twinnie editing item #1.
+7:03:47 PM: Twinnie editing shop #1.
+7:04:34 PM: Twinnie saving shop #1.
+7:04:42 PM: Twinnie editing item #2.
+7:05:27 PM: Twinnie saved item #2.
+7:05:30 PM: Twinnie editing shop #1.
+7:05:49 PM: Twinnie saving shop #1.
+7:05:53 PM: Twinnie editing npc #1.
+7:06:28 PM: Twinnie saved npc #1.
+7:08:13 PM: Twinnie has respawned map #1
+06:40:24 a.m.: Twinnie editing item #3.
+06:40:38 a.m.: Twinnie editing npc #1.
+06:41:02 a.m.: Twinnie editing spell #1.
+06:41:10 a.m.: Twinnie editing shop #1.
+06:41:20 a.m.: Twinnie editing arrow #4.

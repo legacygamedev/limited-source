@@ -1,0 +1,415 @@
+Press CTRL + F to search for a Run Time Error.
+Bug List:
+http://www.ngage-online.net/forums/_hosted_/bevrias-engine/viewtopic.php?t=55
+
+-----------------------------------------------------------------------------------
+
+Run-Time Error 2: 
+Unknown. 
+ex) This error occures for me when starting up the server. After the spells load the error appears with no description. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 5: 
+
+This is a nuisance bug. Sometimes it occurs but is not consistently repeatable. Usually, it goes away if you just re-open the client and try to connect again. Sometimes it takes several tries. It seems to happen 
+periodically and then it disappears. For me, it happened the ifrst time I tried to login everytime for a month or so, then it stopped. The cause of this is unknown. 
+
+Call functions with proper parameters that will be valid in the function's body. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 6: 
+When creating a character, make sure you choose a starting location. 
+When creating a character, there is a page where you pick the character name and class. At the bottom of that little screen is a blank light blue drop down menu. You must use it to select a starting location. If you do not, you will get the Run Time Error 6 as soon as you hit ok. 
+Can occur due to large amount of packets sending from the client to the server. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 7 - Out of Memory: 
+
+This has NOTHING to do with too many applications running or not enough RAM on your PC. It is a Windows XP only problem. From what was said before, Miscrosoft does not always fully explain the differences between all the OS. This seems to be fall out from that. 
+
+Warning: Do not do this unless you are knowledgeable about installing an OS. If you do it wrong, you will erase all your files. Also, this bug works the majority of the time. It worked for me 3 out of 3 times, but it does not work for everyone. If it does not work for you, then there is no known fix for you. 
+
+This is most often easily fixed it easily by re-running the Windows XP setup disk in upgrade mode. It does not erase any files in repair mode. DO NOT RUN IT IN NEW INSTALLATION MODE OR YOU WILL ERASE ALL YOUR FILES. 
+
+How to do this. 
+
+1) Place the Windows XP setup diosk in the drive while the PC is already running Windows XP. A welcome screen appears. 
+2) Click Install Windows XP 
+3) Choose "Upgrade (Recommended)" This will not damage any files 
+4) Continue to follow the on screen instructions. Each PC is different so I can not give you anymore details from here on out, but it is straight forward. 
+
+If this fails to work, then your only option is to install another Operating System. Otherwise, you will not be able to play on any Playerworlds 
+
+Update: A player has noticed that if you register every dll file in the folder, that it fixes the error. Three other players that he had try it reported success. 
+
+For the buggy version, this error will come up if you try to transfer maps over from the milestone edition. DO NOT TRANSFER OVER MAPS, gsd is currently working on a converter for the maps. Till then, sit tight. 
+
+Having an extremely long array defined as a UDT that consists of many bytes is extremely memory-hogging. 
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 9 - Script Out of Range: 
+This error is uknown, re-open your client continuous times and it should go away. 
+
+This is a nuisance bug. Sometimes it occurs but is not consistently repeatable. Usually, it goes away if you just re-open the client and try to connect again. Sometimes it takes several tries. The cause of this is unknown. 
+
+Going past the limits of an array's index calls this error. Normally caused by the infamous "Fence-Post" mistake that all programmers are prone to making. Google it up, I've explained it too many times. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 13 - Types Mismatch: 
+This happens often, so I got a lot information for you. 
+Look, if Anyone needs and Support Files that your missing go here: 
+http://drspoon.dyns.be:89/pwbackup/Support.zip 
+
+Try reinstalling some .dll files. The one time I got this error was after I uninstalled a game and I think by uninstalling it some important files I needed for my playerworlds game got removed. Also you can try restarting your computer because sometimes that works. I'm sorry but this is about all I have as advice. 
+
+Some info about type mismatch: 
+
+This error means, that two variables did not have the same type. There are two bis groups of variables: Numbers and strings. 
+
+Numbers contain (yeh, who would have thought that?) numbers! There are some different types of number vars, the most commonly used are integer (whole numbers, no comma) and real (numbers including commas). 
+
+EXAMPLE: 
+Integer: var = 1127367 
+Real: var = 23478.21 
+
+The strings are variables that store letters and words, no numbers. One of the most usual problems with strings is, that people assume if you set a string for example to "42" it is a number. That is wrong. It still is a string, only consisting of letters. A computer does not know this is a number, when it is written in a string. The normal symbol to identify a string within code is the $. 
+
+EXAMPLE: 
+var$ = "TheUberString" 
+var$ = "42, the answer to everything" 
+
+The type mismatch error means, that you are trying to compare two varibales of the wrong type (e.g. real with string) which is not possible. It may also occur when you input a word in an INI or script that would have required a number at this point. 
+
+EXAMPLE: 
+statpoints = lots 
+
+This can mean that the porgram isnt able to download maps and write them into the folder, this could happen if the folder is read only or if its on a disk. 
+
+
+Type mismatch is only caused if you have (for example) declared a long and you type a string. 
+
+example: 
+
+Code: 
+Dim number As Long 
+
+number = text1.text 
+
+
+This will cause a runtime error 13. 
+
+What you need to do is the following: 
+
+Code: 
+Dim number As Long 
+
+number = CLng(text1.text) 
+
+
+Runtime error 13 solved 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 16: 
+
+This error is caused by your screen settings for color being set to high. This may be related to your graphics card's limitations. To fix it, right click on your desktop, choose properties, and then settings. Next, set the color setting to a lower one such as High Color-16 bit. 
+
+Right click on your desktop, choose properties, and then settings. Next, set the color setting to a lower one such as High Color-16 bit. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 52: 
+Mostly coding side: 
+Bad File Name or Number on this line: 
+Code: 
+Open "C:\temp\sprite" & Index & ".bmp" For Binary Access Write As #intFile 
+
+Make intfile = freefile 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 53 - Can not find Tiles.Bmp 
+
+This error is caused by your server owner not taking into account the graphics limit for Windows 98. The graphics they distribute are too large to work with Windows 98. This happens on Windows 98 computers only as far as I know. They fix is quick and easy. 
+
+1.) Open tiles.bmp in the client folder. 
+
+2.) Make sure it opens in Paint. If it does not open in Paint automatically, right click on tiles.bmp and click Edit. If that doesnt work, then right click tiles.bmp and go into the Open With... submenu, and if paint is in there, click it, if it isnt, click Choose Program... and click browse, then go to "C:\WINDOWS\system32\" and double click on the "mspaint" icon. Then click ok. 
+
+3.) Once in Paint, click Image (ALT+I), Then click Attributes. OR you can just hold control and hit E when you open paint. 
+
+4.) Once in the Attributes menu, edit it to look like the following: 
+Width- 224 
+Height- 9728 
+Units- Pixels 
+Colors- Colors 
+
+5.) Then click OK. 
+
+6.) Then click File, Save, or hold control and hit S. 
+
+----------------------------------------------------------------------------------- 
+
+Run Time Error 62: 
+Input past end of file. Could be bugs in the scripting part. 
+Sometimes it happens to the likes of banlist.ini, where it can't get data because there's a blank line. 
+
+FIX: Check for blank lines or empty spaces (between variables) in your files 
+Alternate: Restart your server once a day, at least. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 75: 
+
+This happens when u give someone a disk with the game on it and they attempt to run it from the disk. When the client attempts to download a map, it cant write it to the "maps" folder and generates a error. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 76 - Path Not Found: 
+
+This seems to reference the GUI.bmp most often. Make sure that the file is in your GFX (graphics) folder. IF it is then proceed to the next step. All you have to do is re-unzip your Player Worlds file. It is best if you rename your old folder where the client is. This will give you a fresh slate. After the re-installation is complete and it works, you can simply delete the old client folder that you renamed. 
+
+Make sure you saved your GUI files in the GUI folder, as well as GFX. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 326: 
+Resource with identifier 'VERSION' not found. Could appear for people trying to play your game, most often if they got a outdated version. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Timer Error 336: 
+Unknown. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 339: 
+
+Richtx32.ocx is a file that is necessary for Visual Basic applications. It is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered. Below is a very easy way to register this file. Once you get the aut-registering program, you can use it anytime you need to register a file. 
+
+http://freeware.it-mate.co.uk/downloads/controls/richtx32_8804.zip 
+
+Extract to your client folder, and for future uses, make a copy to system32. 
+
+You may want to register it: Start > Run > Regsvr32 Richtx32.ocx 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 372 - MSComm32.ocx: 
+
+MSComm32.ocx is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered. Below is a very easy way to register this file. Once you get the aut-registering program, you can use it anytime you need to register a file. 
+
+http://freeware.it-mate.co.uk/downloads/controls/mscomm32.zip 
+
+Extract to system32. 
+
+You may want to register it: Start > Run > Regsvr32 MSComm32.ocx 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 373 - TABCTL32.ocx: 
+
+TABCTL32.ocx is a file that is necessary for the two way NPC chat system. It is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered. Below is a very easy way to register this file. Once you get the aut-registering program, you can use it anytime you need to register a file. 
+
+http://freeware.it-mate.co.uk/downloads/controls/tabctl32.zip 
+
+Extract to system32. 
+
+You may want to register it: Start > Run > Regsvr32 TABCTL32.ocx 
+
+----------------------------------------------------------------------------------- 
+
+Runtime Error 380 - Invalid Property Value 
+
+This happens ex) because your character got to much experience at once, which lead to overload of packets, which crashed the game/server. 
+
+The problem is that there is to many packets sending from the client to the server. So it's just a temporary bug. 
+
+FIX: putting msscript.ocx into your windows>system32 folder, then right click on it and Register it 
+Alternate: Unknown 
+
+------------------------------------------------------------------------------------- 
+
+Run-Time Error 401 - With Flash: 
+FIX: Get flash.ocx 
+Alternate: Install Flash? 
+
+------------------------------------------------------------------------------------- 
+
+Run-Time Error 404: File not found 
+Unknown. 
+Most common is that you are missing a file which is needed to run the game/program. 
+
+------------------------------------------------------------------------------------- 
+
+Run-Time Error 429 - ActiveX Cannot Create Component: 
+
+You have to do 3 things: 
+1.) Set your color to 16 bit. 
+2.) Start > Run > Regsvr32.exe Dao350.dll. 
+3.) Start > Run > Regsvr32.exe dx7vb.dll. 
+
+That should fix it, but if not then download latest DirectX. 
+
+If you don't have the required DLL's, then here are links: 
+
+dx7vb: http://www.dlldump.com/cgi-bin/downloadcounts.cgi? 
+Dao350: http://www.dll-files.com/dllindex/download.php?dao350 
+
+If that don't work: 
+Set your color to 16 Bit, and download the following .DLL files - http://www.dlldump.com/cgi-bin/downloadcounts.cgi? - http://www.dll-files.com/dllindex/download.php?dao350 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 480: 
+
+This error is easy to fix. Just try both of these options: 
+1.) Change your color to 16 bit. 
+2.) Try replacing the graphics in your graphics folder with different graphics. 
+
+Error with EXP given by NPCs (slots 1 and 4 error) 
+FIX: For now just use slots 2 and 3 for NPCs, make them go from lowest to highest EXP 
+Alternate: try moving your NPC down a number in the NPC.ini list.(the one that gives you the error 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 713: 
+
+MSSTDFMT.DLL is a file that must be on your PC and must registered. Simply having it on your PC is not enough. It MUST be registered. Below is a very easy way to register this file. Once you get the aut-registering program, you can use it anytime you need to register a file. 
+
+http://www.dll-files.com/dllindex/download.php?msstdfmt 
+
+Extract to system32. 
+
+You may want to register it: Start > Run > Regsvr32 MSSTDFMT.DLL 
+
+Other: 
+You need a required .DLL download it from this URL - http://www.dll-files.com/dllindex/download.php?msstdfmt 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 10048 - Address In Use: 
+
+This error happens when your server is already running. Usually this only happens for the people who exit out of explorer.exe, and then open it again later, and find that the server.exe proccess in the taskbar is gone. 
+
+1.) Press Ctrl + Alt + Delete. 
+
+2.) Goto Processes. 
+
+3.) Find and stop server.exe. 
+
+4.) Restart your server. 
+
+5.) The server icon should now be in your taskbar. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 10022 
+Socket not bound. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 10048 
+You ran more than one server, close all running servers and restart it. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 10049 
+Address is not available from the local machine. No solution yet. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 10061 
+When I try to connect I get error 10061 - Connection forcefully rejected, what does this mean? 
+This error comes up if the machine you are connecting to does not have the Remote-X server running on it, you could have typed the IP address wrongly, or the person running the server does not have the Remote-X server loaded. 
+
+FIX: Disable Windows Firewall 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 40006 
+Wrong protocol or connection state for the requested transaction or request. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error 346000 
+ex) When my server crashes I think its this error I get or something similar. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error -2147024770 (8007007e): 
+
+Regsvr32.exe dx7vb.dll it should stop the error once it\'s registered 
+
+or 
+
+Get this file: http://www.bzcg.gknetworks.net/downloads/dlls.zip and unzip it. 
+
+Find "ActiveX right click". Right Click it and "register" Next 
+Find dx7vb.dll and Register it too. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error -2147467259 
+[microsoft][ODBC DRIVER MANAGER] Data source name not found and no deafault driver specified. 
+
+----------------------------------------------------------------------------------- 
+
+Run-Time Error - 2005532292 (8876017c): 
+I had to redo all my tile sets, so they had a correct size. Which seems strange to me. =/ 
+
+Set DD_TileSurf(i) = DD.CreateSurfaceFromFile(App.Path & "\GFX\tiles" & i & ".bmp", DDSD_Tile(i)) 
+http://hosted.yourimg.com/05/157/15/error.jpg 
+
+The problem to this might be the windows, so try to do this: 
+Start>Run>regsvr32 dx7vb.dll 
+
+----------------------------------------------------------------------------------- 
+
+Not Run Time Error Bugs 
+
+Sprite walks away, Screen doesnt move 
+FIX: /respawn or /refresh 
+Alternate: If your admin set your sprite 
+
+----------------------------------------------------------------------------------- 
+
+Slide out forever 
+(map rescrolls over and over) (randomly happens, mostly when you walk into a blocked tile after mapping) 
+FIX: /respawn 
+Alternate: Admins use warp command (/warto map#) 
+
+----------------------------------------------------------------------------------- 
+
+Bad lag 
+FIX: use the ip form www.ipchicken.com , not your router address 
+Alternate: Upgrade your comp hehe 
+
+----------------------------------------------------------------------------------- 
+
+Stuck on map retrieve 
+FIX: /respawn 
+----------------------------------------------------------------------------------- 
+
+Other Useful Links: 
+
+Needed File: 
+- http://www.ascentive.com/support/new/libraryfiles.exe 
+
+DLL Files: 
+- http://www.dll-files.com/dllindex/index.shtml 
+- http://www.useyourbrain.co.uk/computing-missing-files.htm 
+
+OCX Files: 
+- http://freeware.it-mate.co.uk/?Cat=OCX_Files 
+- http://www.zerohack.it/downloads/ocx.htm (By DarkAngel) 
+
+Note: Always scan all files before opening them. 
+- http://virusscan.jotti.org/ 
+
+
+Thanks for reading, and hope this helps.

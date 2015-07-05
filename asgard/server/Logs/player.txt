@@ -1,0 +1,807 @@
+00:25:37: Account Atlantis has been created.
+00:27:15: Atlantis has logged in from 127.0.0.1.
+00:27:24: Character Atlantis added to Atlantis's account.
+00:29:51: Atlantis has logged in from 127.0.0.1.
+00:30:13: Atlantis/Atlantis has began playing .
+00:32:22: Atlantis has logged in from 127.0.0.1.
+00:32:25: Atlantis/Atlantis has began playing .
+00:37:42: Atlantis has logged in from 127.0.0.1.
+00:37:48: Atlantis/Atlantis has began playing .
+00:40:46: Atlantis has logged in from 127.0.0.1.
+00:40:48: Atlantis/Atlantis has began playing .
+00:42:30: Atlantis has logged in from 127.0.0.1.
+00:42:32: Atlantis/Atlantis has began playing .
+00:45:59: Atlantis has logged in from 127.0.0.1.
+00:46:01: Atlantis/Atlantis has began playing .
+00:48:00: Atlantis has logged in from 127.0.0.1.
+00:48:02: Atlantis/Atlantis has began playing .
+00:52:22: Atlantis has logged in from 127.0.0.1.
+00:52:25: Atlantis/Atlantis has began playing .
+00:57:26: Atlantis has logged in from 127.0.0.1.
+00:57:28: Atlantis/Atlantis has began playing .
+01:01:00: Atlantis has logged in from 127.0.0.1.
+01:01:03: Atlantis/Atlantis has began playing .
+01:03:35: Atlantis has logged in from 127.0.0.1.
+01:03:37: Atlantis/Atlantis has began playing .
+01:10:07: Atlantis has logged in from 127.0.0.1.
+01:10:10: Atlantis/Atlantis has began playing .
+01:10:44: Atlantis has logged in from 127.0.0.1.
+01:10:52: Atlantis/Atlantis has began playing .
+01:11:32: Atlantis has logged in from 127.0.0.1.
+01:11:35: Atlantis/Atlantis has began playing .
+01:14:22: Atlantis has logged in from 127.0.0.1.
+01:14:24: Atlantis/Atlantis has began playing .
+01:14:46: Map #1: Atlantis : oO
+01:15:31: Atlantis has logged in from 127.0.0.1.
+01:15:32: Atlantis/Atlantis has began playing .
+01:17:48: Atlantis has logged in from 127.0.0.1.
+01:17:50: Atlantis/Atlantis has began playing .
+01:18:18: Atlantis has logged in from 127.0.0.1.
+01:18:21: Atlantis/Atlantis has began playing .
+01:52:37: Atlantis has logged in from 127.0.0.1.
+01:52:49: Atlantis/Atlantis has began playing .
+01:54:35: Atlantis has logged in from 127.0.0.1.
+01:54:37: Atlantis/Atlantis has began playing .
+01:57:38: Atlantis has logged in from 127.0.0.1.
+01:57:41: Atlantis/Atlantis has began playing .
+02:02:14: Atlantis has logged in from 127.0.0.1.
+02:02:17: Atlantis/Atlantis has began playing .
+02:05:50: Atlantis has logged in from 127.0.0.1.
+02:05:52: Atlantis/Atlantis has began playing .
+02:07:58: Atlantis has logged in from 127.0.0.1.
+02:08:00: Atlantis/Atlantis has began playing .
+02:18:57: Atlantis has logged in from 127.0.0.1.
+02:19:00: Atlantis/Atlantis has began playing .
+02:20:37: Atlantis has logged in from 127.0.0.1.
+02:20:41: Atlantis/Atlantis has began playing .
+02:23:45: Atlantis has logged in from 127.0.0.1.
+02:23:47: Atlantis/Atlantis has began playing .
+02:25:22: Atlantis has logged in from 127.0.0.1.
+02:25:24: Atlantis/Atlantis has began playing .
+02:31:10: Atlantis has logged in from 127.0.0.1.
+02:31:12: Atlantis/Atlantis has began playing .
+02:36:48: Atlantis has logged in from 127.0.0.1.
+02:36:51: Atlantis/Atlantis has began playing .
+02:52:44: Atlantis has logged in from 127.0.0.1.
+02:53:04: Atlantis/Atlantis has began playing .
+03:00:12: Atlantis has logged in from 127.0.0.1.
+03:00:15: Atlantis/Atlantis has began playing .
+03:10:50: Atlantis has logged in from 127.0.0.1.
+03:10:54: Atlantis/Atlantis has began playing .
+03:18:12: Atlantis has logged in from 127.0.0.1.
+03:18:16: Atlantis/Atlantis has began playing .
+23:56:58: Atlantis has logged in from 127.0.0.1.
+23:57:03: Atlantis/Atlantis has began playing .
+23:59:04: Atlantis has logged in from 127.0.0.1.
+23:59:05: Atlantis/Atlantis has began playing .
+00:00:05: Atlantis has logged in from 127.0.0.1.
+00:00:07: Atlantis/Atlantis has began playing .
+00:05:11: Atlantis has logged in from 127.0.0.1.
+00:05:13: Atlantis/Atlantis has began playing .
+00:06:48: Atlantis has logged in from 127.0.0.1.
+00:06:51: Atlantis/Atlantis has began playing .
+00:09:06: Atlantis has logged in from 127.0.0.1.
+00:09:08: Atlantis/Atlantis has began playing .
+00:10:57: Atlantis has logged in from 127.0.0.1.
+00:11:01: Atlantis/Atlantis has began playing .
+00:15:27: Atlantis has logged in from 127.0.0.1.
+00:15:30: Atlantis/Atlantis has began playing .
+00:16:29: Atlantis has logged in from 127.0.0.1.
+00:16:31: Atlantis/Atlantis has began playing .
+00:18:29: Atlantis has logged in from 127.0.0.1.
+00:18:31: Atlantis/Atlantis has began playing .
+00:20:46: Atlantis has logged in from 127.0.0.1.
+00:20:48: Atlantis/Atlantis has began playing .
+00:36:48: Atlantis has logged in from 127.0.0.1.
+00:36:51: Atlantis/Atlantis has began playing .
+00:45:41: Atlantis has logged in from 127.0.0.1.
+00:46:03: Atlantis/Atlantis has began playing .
+01:02:12: Account storm has been created.
+01:02:22: Atlantis has logged in from 127.0.0.1.
+01:02:27: Atlantis/Atlantis has began playing .
+01:03:51: storm has logged in from 69.35.240.73.
+01:04:09: Character storm added to storm's account.
+01:04:17: storm/storm has began playing .
+01:05:13: Map #1: storm : i hear but i still resiveing map 
+01:05:14: Map #1: storm : test
+01:05:15: Map #1: Atlantis : Heyho.
+01:05:15: Map #1: Atlantis : oO
+01:05:16: Map #1: Atlantis : Meh...
+01:05:16: Map #1: Atlantis : asas
+01:05:20: Map #1: Atlantis : lol
+01:05:25: Map #1: Atlantis : I was lagging, too.
+01:05:30: Map #1: storm : will hi ther
+01:05:36: Map #1: Atlantis : Thought I broke the chat thingie... xD
+01:05:46: Map #1: storm : nop its working 
+01:05:50: Map #1: Atlantis : Well, looks cool so far.
+01:05:55: Map #1: Atlantis : But...
+01:06:10: Map #1: Atlantis : The right and bottom map corners make strange jump effects.
+01:06:24: Map #1: Atlantis : Follow me.
+01:06:51: Map #1: Atlantis : For you everyting looks normal, I guess?
+01:07:06: Map #1: storm : yes nothing has chang 
+01:07:11: Map #1: Atlantis : Okay. ^^
+01:07:34: Map #1: Atlantis : For me, the area that is bigger than the normal Elysium screen makes problems at the corners.
+01:08:08: Map #1: Atlantis : Move around a bit, please, I want to see what exactly it does.
+01:08:22: Map #1: storm : i do not see it other than the minu
+01:08:52: Map #1: Atlantis : Well yes, but my client no longer has a menu, instead it has a game screen enlargement.
+01:09:04: Map #1: Atlantis : I'll send you the EXE so you can see it yourself.
+01:09:14: Map #1: storm : ok 
+01:09:16: Map #1: Atlantis : *logs out and compiles*
+01:18:16: Atlantis has logged in from 127.0.0.1.
+01:18:21: Atlantis/Atlantis has began playing .
+01:39:03: storm has logged in from 69.35.240.73.
+01:39:06: storm/storm has began playing .
+01:40:50: Atlantis has logged in from 127.0.0.1.
+01:40:52: Atlantis/Atlantis has began playing .
+01:41:11: storm has logged in from 69.35.240.73.
+01:41:14: storm/storm has began playing .
+01:43:14: Atlantis has logged in from 127.0.0.1.
+01:43:17: Atlantis/Atlantis has began playing .
+01:44:14: Atlantis has logged in from 127.0.0.1.
+01:44:16: Atlantis/Atlantis has began playing .
+01:48:36: storm has logged in from 69.35.240.73.
+01:48:39: storm/storm has began playing .
+01:51:15: storm has logged in from 69.35.240.73.
+01:51:23: storm/storm has began playing .
+01:57:43: Atlantis has logged in from 127.0.0.1.
+01:57:47: Atlantis/Atlantis has began playing .
+01:58:13: storm has logged in from 69.35.240.73.
+01:58:16: storm/storm has began playing .
+01:58:51: Atlantis has logged in from 127.0.0.1.
+01:58:53: Atlantis/Atlantis has began playing .
+01:59:09: Map #1: storm : nice :)  big    ohhh :)
+01:59:20: Map #1: Atlantis : Hehehe...
+01:59:23: Map #1: Atlantis : Cool, eh?
+01:59:32: Map #1: Atlantis : Lol...
+01:59:47: Map #1: Atlantis : For me you seem to walk to the map corner.
+02:00:16: Map #1: Atlantis : But there is still a bug in the blit player thing, so it doesn't look like it for you.
+02:00:20: Map #1: storm : i cant see you  or get to the coner 
+02:00:38: Map #1: Atlantis : It's a graphics bug.
+02:00:50: Map #1: Atlantis : That's what I am working on right now. ^^
+02:00:55: Map #1: storm : yahh 
+02:01:03: Map #1: Atlantis : But the size is okay, eh?
+02:01:19: Map #1: storm : okyes its perfick :)
+02:01:25: Map #1: Atlantis : Hehehe...
+02:01:31: Map #1: storm : out standing  
+02:01:50: Map #1: Atlantis : Hmm... Okay, more experiments, BRB.
+02:02:20: Atlantis has logged in from 127.0.0.1.
+02:02:22: Atlantis/Atlantis has began playing .
+02:02:50: Map #1: Atlantis : Oh my god! xD
+02:03:06: Map #1: Atlantis : Looks better and worse at the same time...
+02:03:40: Map #1: Atlantis : brb
+02:03:46: Map #1: storm : will the chat bubbel is shot and you keep warping in and out 
+02:04:03: Atlantis has logged in from 127.0.0.1.
+02:04:05: Atlantis/Atlantis has began playing .
+02:04:37: Map #1: Atlantis : Still a slight glitch but it seems I found a way to fix it.
+02:05:06: Atlantis has logged in from 127.0.0.1.
+02:05:08: Atlantis/Atlantis has began playing .
+02:05:36: Map #1: Atlantis : Almost... ^^
+02:05:56: Atlantis has logged in from 127.0.0.1.
+02:05:58: Atlantis/Atlantis has began playing .
+02:06:20: Map #1: storm : boy your one ugly looking dud :)
+02:06:24: Map #1: Atlantis : xD
+02:06:29: Map #1: Atlantis : Same for you... xDD
+02:06:43: Map #1: Atlantis : Okay, got one side fixed, 3 left...
+02:07:09: Map #1: storm : nahh i better looking  i chang my troll socks to day :)
+02:07:23: Atlantis has logged in from 127.0.0.1.
+02:07:25: Atlantis/Atlantis has began playing .
+02:08:17: Map #1: storm : hmm you no what this mite have something to do with the scrolling screen
+02:09:09: Atlantis has logged in from 127.0.0.1.
+02:09:12: Atlantis/Atlantis has began playing .
+02:09:55: Map #1: Atlantis : Meh...
+02:10:01: Map #1: storm : yahh its the scrooling screen that missing you up
+02:10:07: Map #1: Atlantis : Yep.
+02:10:19: Map #1: Atlantis : Did you notice the bars and names work?
+02:10:32: Map #1: Atlantis : I will use their coordinate code for that... xD
+02:10:38: Map #1: Atlantis : brb
+02:10:40: Map #1: storm : yes i did :)
+02:12:37: Atlantis has logged in from 127.0.0.1.
+02:12:39: Atlantis/Atlantis has began playing .
+02:13:15: Map #1: Atlantis : wtf, I still can't walk to the corner...
+02:13:24: Map #1: storm : ther 2 of you now
+02:13:39: Map #1: Atlantis : 2 of me? oO
+02:13:50: Map #1: Atlantis : Do you see me twice or what? xD
+02:14:01: Map #1: storm : okyes 
+02:14:06: Map #1: storm : yes
+02:14:08: Map #1: Atlantis : OH MY GOD xDD
+02:14:33: Map #1: storm : ok ther only one of you now 
+02:14:58: Map #1: Atlantis : Oh, there's something wrong... xD
+02:15:04: Map #1: storm : thing do nut miss up in tell you get to this pont 
+02:15:08: Map #1: Atlantis : brb (again *sigh*)
+02:15:47: Map #1: storm : this is the spot it all gos to hell
+02:17:27: Atlantis has logged in from 127.0.0.1.
+02:17:28: Atlantis/Atlantis has began playing .
+02:18:35: Map #1: storm : good hear
+02:18:42: Map #1: Atlantis : lol
+02:18:43: Map #1: storm : not good hear
+02:18:55: Map #1: Atlantis : I am slowly understanding why... xD
+02:18:56: Map #1: storm : good spot 
+02:19:09: Map #1: storm : bad spot 
+02:22:10: Atlantis has logged in from 127.0.0.1.
+02:22:12: Atlantis/Atlantis has began playing .
+02:22:41: storm has logged in from 69.35.240.73.
+02:22:48: storm/storm has began playing .
+02:24:34: Atlantis has logged in from 127.0.0.1.
+02:24:37: Atlantis/Atlantis has began playing .
+02:25:40: Map #1: Atlantis : Hmm...
+02:27:47: Atlantis has logged in from 127.0.0.1.
+02:27:49: Atlantis/Atlantis has began playing .
+02:31:05: Atlantis has logged in from 127.0.0.1.
+02:31:06: Atlantis/Atlantis has began playing .
+02:32:54: Atlantis has logged in from 127.0.0.1.
+02:32:56: Atlantis/Atlantis has began playing .
+02:34:05: Atlantis has logged in from 127.0.0.1.
+02:34:07: Atlantis/Atlantis has began playing .
+02:35:04: Map #1: Atlantis : Damn you, GSD! xD
+02:35:22: Map #1: Atlantis : He must have hardcoded the Elysium display size in some more places...
+02:35:27: Map #1: storm : he lift you a puzzel did he 
+02:39:32: Atlantis has logged in from 127.0.0.1.
+02:39:51: Atlantis/Atlantis has began playing .
+02:40:22: Map #1: Atlantis : lol
+02:40:43: Map #1: Atlantis : Please don't put in any block attribs, okay?
+02:40:47: Map #1: storm : lettel bit of eye candy 
+02:41:11: Map #1: storm : ok not a problem  this is just a test :)
+02:41:17: Map #1: Atlantis : It helps keeping an orientation. xD
+02:41:23: Map #1: Atlantis : And it looks cool.
+02:43:06: Map #1: storm : yahh it sort of give you a better idea in whats going on 
+02:44:21: Atlantis has logged in from 127.0.0.1.
+02:44:23: Atlantis/Atlantis has began playing .
+02:47:56: Atlantis has logged in from 127.0.0.1.
+02:47:59: Atlantis/Atlantis has began playing .
+02:49:24: Map #1: storm : you no one side of the screen is a difrint rez 
+02:49:25: Atlantis has logged in from 127.0.0.1.
+02:49:43: Atlantis/Atlantis has began playing .
+02:50:10: Atlantis: Oh my god, you're unstoppable... xD
+02:51:44: Map #1: storm : him this side is looking small  and onthe other side it gets realy big :)
+02:51:57: Map #1: Atlantis : Hehe...
+02:53:17: Atlantis has logged in from 127.0.0.1.
+02:53:19: Atlantis/Atlantis has began playing .
+02:55:16: Atlantis has logged in from 127.0.0.1.
+02:55:17: Atlantis/Atlantis has began playing .
+02:56:30: Atlantis has logged in from 127.0.0.1.
+02:56:32: Atlantis/Atlantis has began playing .
+02:57:39: Atlantis has logged in from 127.0.0.1.
+02:57:41: Atlantis/Atlantis has began playing .
+02:58:58: Atlantis has logged in from 127.0.0.1.
+02:59:00: Atlantis/Atlantis has began playing .
+03:00:45: Atlantis has logged in from 127.0.0.1.
+03:00:46: Atlantis/Atlantis has began playing .
+03:03:39: Atlantis has logged in from 127.0.0.1.
+03:03:41: Atlantis/Atlantis has began playing .
+03:06:01: Atlantis has logged in from 127.0.0.1.
+03:06:03: Atlantis/Atlantis has began playing .
+03:06:45: Atlantis has logged in from 127.0.0.1.
+03:06:48: Atlantis/Atlantis has began playing .
+03:08:08: Atlantis has logged in from 127.0.0.1.
+03:08:10: Atlantis/Atlantis has began playing .
+03:08:45: Map #1: Atlantis : lol
+03:08:51: Map #1: Atlantis : Your new house?
+03:09:34: Map #1: storm : yahh just puting in the trees  :)
+03:09:56: Atlantis has logged in from 127.0.0.1.
+03:10:14: Atlantis/Atlantis has began playing .
+03:11:39: Atlantis: warpto storm
+03:12:35: Map #1: storm : push f1
+03:12:35: Map #1: Atlantis : #warpto storm
+18:21:45: Atlantis has logged in from 127.0.0.1.
+18:22:39: Atlantis/Atlantis has began playing .
+18:23:36: Map #1: Atlantis : oO
+18:26:29: Atlantis has logged in from 127.0.0.1.
+18:26:32: Atlantis/Atlantis has began playing .
+18:28:40: Atlantis has logged in from 127.0.0.1.
+18:28:43: Atlantis/Atlantis has began playing .
+18:32:52: Atlantis has logged in from 127.0.0.1.
+18:32:57: Atlantis/Atlantis has began playing .
+18:34:12: Atlantis has logged in from 127.0.0.1.
+18:34:15: Atlantis/Atlantis has began playing .
+18:37:19: Atlantis has logged in from 127.0.0.1.
+18:37:21: Atlantis/Atlantis has began playing .
+18:38:11: Map #1: Atlantis : lL
+18:44:27: Atlantis has logged in from 127.0.0.1.
+18:44:30: Atlantis/Atlantis has began playing .
+19:43:36: Atlantis has logged in from 127.0.0.1.
+19:44:01: Atlantis/Atlantis has began playing .
+19:50:27: Atlantis has logged in from 127.0.0.1.
+19:50:30: Atlantis/Atlantis has began playing .
+19:53:02: Atlantis has logged in from 127.0.0.1.
+19:53:05: Atlantis/Atlantis has began playing .
+19:54:18: Atlantis has logged in from 127.0.0.1.
+19:54:20: Atlantis/Atlantis has began playing .
+19:56:55: Atlantis has logged in from 127.0.0.1.
+19:56:59: Atlantis/Atlantis has began playing .
+20:00:34: Atlantis has logged in from 127.0.0.1.
+20:00:38: Atlantis/Atlantis has began playing .
+20:02:10: Atlantis has logged in from 127.0.0.1.
+20:02:15: Atlantis/Atlantis has began playing .
+20:04:10: Atlantis has logged in from 127.0.0.1.
+20:04:13: Atlantis/Atlantis has began playing .
+20:05:42: Atlantis has logged in from 127.0.0.1.
+20:05:55: Atlantis/Atlantis has began playing .
+20:08:13: Atlantis has logged in from 127.0.0.1.
+20:08:16: Atlantis/Atlantis has began playing .
+20:09:21: Atlantis has logged in from 127.0.0.1.
+20:09:25: Atlantis/Atlantis has began playing .
+20:10:55: Atlantis has logged in from 127.0.0.1.
+20:10:58: Atlantis/Atlantis has began playing .
+20:12:38: Atlantis has logged in from 127.0.0.1.
+20:12:42: Atlantis/Atlantis has began playing .
+20:38:54: Atlantis has logged in from 127.0.0.1.
+20:38:59: Atlantis/Atlantis has began playing .
+20:40:12: Atlantis has logged in from 127.0.0.1.
+20:40:14: Atlantis/Atlantis has began playing .
+20:42:16: Atlantis has logged in from 127.0.0.1.
+20:42:20: Atlantis/Atlantis has began playing .
+20:47:59: Atlantis has logged in from 127.0.0.1.
+20:48:04: Atlantis/Atlantis has began playing .
+20:49:13: Atlantis has logged in from 127.0.0.1.
+20:49:16: Atlantis/Atlantis has began playing .
+20:50:11: Atlantis has logged in from 127.0.0.1.
+20:50:34: Atlantis/Atlantis has began playing .
+20:52:15: Atlantis has logged in from 127.0.0.1.
+20:52:19: Atlantis/Atlantis has began playing .
+20:53:45: Atlantis has logged in from 127.0.0.1.
+20:53:48: Atlantis/Atlantis has began playing .
+20:55:00: Atlantis has logged in from 127.0.0.1.
+20:55:03: Atlantis/Atlantis has began playing .
+20:55:59: Atlantis has logged in from 127.0.0.1.
+20:56:16: Atlantis/Atlantis has began playing .
+20:59:48: Atlantis has logged in from 127.0.0.1.
+20:59:52: Atlantis/Atlantis has began playing .
+21:02:51: Atlantis has logged in from 127.0.0.1.
+21:02:54: Atlantis/Atlantis has began playing .
+21:41:22: Atlantis has logged in from 127.0.0.1.
+21:41:58: Atlantis/Atlantis has began playing .
+21:44:28: Atlantis has logged in from 127.0.0.1.
+21:44:32: Atlantis/Atlantis has began playing .
+21:48:49: Atlantis has logged in from 127.0.0.1.
+21:48:52: Atlantis/Atlantis has began playing .
+21:51:44: Atlantis has logged in from 127.0.0.1.
+21:51:48: Atlantis/Atlantis has began playing .
+21:53:42: Atlantis has logged in from 127.0.0.1.
+21:53:44: Atlantis/Atlantis has began playing .
+21:54:35: Atlantis has logged in from 127.0.0.1.
+21:54:37: Atlantis/Atlantis has began playing .
+21:55:37: Atlantis has logged in from 127.0.0.1.
+21:55:39: Atlantis/Atlantis has began playing .
+21:56:35: Atlantis has logged in from 127.0.0.1.
+21:56:38: Atlantis/Atlantis has began playing .
+21:57:58: Atlantis has logged in from 127.0.0.1.
+21:58:01: Atlantis/Atlantis has began playing .
+22:00:11: Atlantis has logged in from 127.0.0.1.
+22:00:14: Atlantis/Atlantis has began playing .
+22:01:18: Atlantis has logged in from 127.0.0.1.
+22:01:20: Atlantis/Atlantis has began playing .
+22:02:51: Atlantis has logged in from 127.0.0.1.
+22:02:53: Atlantis/Atlantis has began playing .
+22:24:41: Atlantis has logged in from 127.0.0.1.
+22:24:46: Atlantis/Atlantis has began playing .
+23:22:01: Atlantis has logged in from 127.0.0.1.
+23:22:14: Atlantis/Atlantis has began playing .
+23:24:55: Atlantis has logged in from 127.0.0.1.
+23:24:58: Atlantis/Atlantis has began playing .
+23:26:48: Atlantis has logged in from 127.0.0.1.
+23:26:51: Atlantis/Atlantis has began playing .
+00:22:44: Atlantis has logged in from 127.0.0.1.
+00:22:50: Atlantis/Atlantis has began playing .
+00:35:12: Atlantis has logged in from 127.0.0.1.
+00:35:17: Atlantis/Atlantis has began playing .
+00:40:08: Atlantis has logged in from 127.0.0.1.
+00:40:14: Atlantis/Atlantis has began playing .
+00:53:17: Atlantis has logged in from 127.0.0.1.
+00:53:23: Atlantis/Atlantis has began playing .
+01:02:30: Atlantis has logged in from 127.0.0.1.
+01:02:36: Atlantis/Atlantis has began playing .
+01:09:56: Atlantis has logged in from 127.0.0.1.
+01:10:02: Atlantis/Atlantis has began playing .
+01:12:07: Atlantis has logged in from 127.0.0.1.
+01:12:09: Atlantis/Atlantis has began playing .
+01:08:05: Atlantis has logged in from 127.0.0.1.
+01:08:12: Atlantis/Atlantis has began playing .
+01:09:09: Atlantis has logged in from 127.0.0.1.
+01:09:12: Atlantis/Atlantis has began playing .
+01:18:43: Atlantis has logged in from 127.0.0.1.
+01:18:50: Atlantis/Atlantis has began playing .
+01:21:59: Atlantis has logged in from 127.0.0.1.
+01:22:11: Atlantis/Atlantis has began playing .
+01:40:03: Atlantis has logged in from 127.0.0.1.
+01:40:09: Atlantis/Atlantis has began playing .
+01:43:31: Atlantis has logged in from 127.0.0.1.
+01:43:35: Atlantis/Atlantis has began playing .
+02:09:37: Atlantis has logged in from 127.0.0.1.
+02:09:41: Atlantis/Atlantis has began playing .
+02:16:52: Atlantis has logged in from 127.0.0.1.
+02:16:55: Atlantis/Atlantis has began playing .
+02:24:28: Atlantis has logged in from 127.0.0.1.
+02:24:33: Atlantis/Atlantis has began playing .
+02:31:26: Atlantis has logged in from 127.0.0.1.
+02:31:29: Atlantis/Atlantis has began playing .
+02:35:54: Atlantis has logged in from 127.0.0.1.
+02:35:57: Atlantis/Atlantis has began playing .
+02:42:11: Atlantis has logged in from 127.0.0.1.
+02:42:15: Atlantis/Atlantis has began playing .
+15:44:05: Atlantis has logged in from 127.0.0.1.
+15:44:15: Atlantis has logged in from 127.0.0.1.
+15:44:28: Atlantis/Atlantis has began playing .
+15:50:02: Atlantis has logged in from 127.0.0.1.
+15:50:07: Atlantis/Atlantis has began playing .
+15:50:41: Atlantis has logged in from 127.0.0.1.
+15:52:35: Atlantis has logged in from 127.0.0.1.
+15:52:39: Atlantis/Atlantis has began playing .
+16:13:27: Atlantis has logged in from 127.0.0.1.
+16:14:15: Atlantis/Atlantis has began playing .
+16:18:47: Atlantis has logged in from 127.0.0.1.
+16:18:53: Atlantis/Atlantis has began playing .
+16:20:17: Map #1: Atlantis : oO
+16:25:37: Atlantis has logged in from 127.0.0.1.
+16:25:40: Atlantis/Atlantis has began playing .
+16:28:05: Atlantis has logged in from 127.0.0.1.
+16:28:07: Atlantis/Atlantis has began playing .
+16:31:50: Atlantis has logged in from 127.0.0.1.
+16:31:55: Atlantis/Atlantis has began playing .
+18:15:42: Atlantis has logged in from 127.0.0.1.
+19:55:16: Atlantis has logged in from 127.0.0.1.
+19:56:07: Atlantis/Atlantis has began playing .
+19:57:52: Atlantis has logged in from 127.0.0.1.
+19:57:55: Atlantis/Atlantis has began playing .
+20:35:24: Account Ozzy has been created.
+20:35:47: Ozzy has logged in from 82.73.140.167.
+20:35:54: Character Ozzy added to Ozzy's account.
+20:35:59: Ozzy/Ozzy has began playing .
+20:36:10: Map #1: Ozzy : Por
+21:40:57: Atlantis has logged in from 127.0.0.1.
+21:42:24: Atlantis has logged in from 127.0.0.1.
+21:42:34: Atlantis/Atlantis has began playing .
+22:09:26: Atlantis has logged in from 127.0.0.1.
+23:17:15: Atlantis has logged in from 127.0.0.1.
+23:26:47: Atlantis has logged in from 127.0.0.1.
+23:55:33: Atlantis has logged in from 127.0.0.1.
+23:56:00: Atlantis has logged in from 127.0.0.1.
+23:57:19: Atlantis has logged in from 127.0.0.1.
+23:59:42: Atlantis has logged in from 127.0.0.1.
+00:10:22: Atlantis has logged in from 127.0.0.1.
+00:37:00: Atlantis has logged in from 127.0.0.1.
+00:51:56: Atlantis has logged in from 127.0.0.1.
+00:54:08: Atlantis has logged in from 127.0.0.1.
+01:07:26: Atlantis has logged in from 127.0.0.1.
+01:08:09: Atlantis has logged in from 127.0.0.1.
+01:09:16: Atlantis has logged in from 127.0.0.1.
+01:10:46: Atlantis has logged in from 127.0.0.1.
+01:11:35: Atlantis has logged in from 127.0.0.1.
+01:12:10: Atlantis has logged in from 127.0.0.1.
+01:45:44: Atlantis has logged in from 127.0.0.1.
+01:49:30: Atlantis has logged in from 127.0.0.1.
+01:50:57: Atlantis has logged in from 127.0.0.1.
+01:53:03: Atlantis has logged in from 127.0.0.1.
+01:55:43: Atlantis has logged in from 127.0.0.1.
+01:57:18: Atlantis has logged in from 127.0.0.1.
+01:58:42: Atlantis has logged in from 127.0.0.1.
+02:00:03: Atlantis has logged in from 127.0.0.1.
+02:01:01: Atlantis has logged in from 127.0.0.1.
+02:08:44: Atlantis has logged in from 127.0.0.1.
+02:09:53: Atlantis has logged in from 127.0.0.1.
+02:14:23: Atlantis has logged in from 127.0.0.1.
+02:15:59: Atlantis has logged in from 127.0.0.1.
+02:17:05: Atlantis has logged in from 127.0.0.1.
+02:18:50: Atlantis has logged in from 127.0.0.1.
+02:19:01: Atlantis/Atlantis has began playing .
+02:21:34: Atlantis has logged in from 127.0.0.1.
+17:36:40: Atlantis has logged in from 127.0.0.1.
+17:38:57: Atlantis has logged in from 127.0.0.1.
+17:43:03: Atlantis has logged in from 127.0.0.1.
+17:57:34: Atlantis has logged in from 127.0.0.1.
+18:15:19: Atlantis has logged in from 127.0.0.1.
+19:36:22: Atlantis has logged in from 127.0.0.1.
+19:36:50: Atlantis/Atlantis has began playing .
+19:45:39: Atlantis has logged in from 127.0.0.1.
+19:49:29: Atlantis has logged in from 127.0.0.1.
+19:51:30: Atlantis has logged in from 127.0.0.1.
+19:51:43: Atlantis/Atlantis has began playing .
+20:31:30: Atlantis has logged in from 127.0.0.1.
+20:34:47: Atlantis has logged in from 127.0.0.1.
+23:43:15: Account test has been created.
+00:00:25: Account test2 has been created.
+00:18:38: Account test3 has been created.
+00:18:47: test3 has logged in from 127.0.0.1.
+00:19:02: Character Blabla added to test3's account.
+00:19:08: test3/Blabla has began playing .
+00:21:45: Account test4 has been created.
+00:21:53: test4 has logged in from 127.0.0.1.
+00:22:06: Character blabla2 added to test4's account.
+23:29:11: Atlantis has logged in from 127.0.0.1.
+23:29:20: Atlantis/Atlantis has began playing .
+23:36:56: Atlantis has logged in from 127.0.0.1.
+23:37:02: Atlantis/Atlantis has began playing .
+00:42:05: Atlantis has logged in from 127.0.0.1.
+00:42:19: Atlantis/Atlantis has began playing .
+00:50:27: Atlantis has logged in from 127.0.0.1.
+00:50:32: Atlantis/Atlantis has began playing .
+01:05:50: Atlantis has logged in from 127.0.0.1.
+01:05:58: Atlantis/Atlantis has began playing .
+01:09:57: Atlantis has logged in from 127.0.0.1.
+01:10:02: Atlantis/Atlantis has began playing .
+01:21:18: Atlantis has logged in from 127.0.0.1.
+01:21:23: Atlantis/Atlantis has began playing .
+01:28:51: Atlantis has logged in from 127.0.0.1.
+01:29:07: Atlantis/Atlantis has began playing .
+01:34:43: Atlantis has logged in from 127.0.0.1.
+01:34:49: Atlantis/Atlantis has began playing .
+01:38:33: Atlantis has logged in from 127.0.0.1.
+01:38:39: Atlantis/Atlantis has began playing .
+01:51:07: Atlantis has logged in from 127.0.0.1.
+01:51:12: Atlantis/Atlantis has began playing .
+02:12:26: Atlantis has logged in from 127.0.0.1.
+02:12:35: Atlantis/Atlantis has began playing .
+02:15:46: Atlantis has logged in from 127.0.0.1.
+02:15:49: Atlantis/Atlantis has began playing .
+23:07:00: Atlantis has logged in from 127.0.0.1.
+23:07:11: Atlantis/Atlantis has began playing .
+23:11:33: Atlantis has logged in from 127.0.0.1.
+23:11:39: Atlantis/Atlantis has began playing .
+23:12:17: Map #1: Atlantis : oO
+23:13:54: Map #2: Atlantis : oO
+23:52:07: Atlantis has logged in from 127.0.0.1.
+23:54:12: Atlantis has logged in from 127.0.0.1.
+00:03:55: Atlantis has logged in from 127.0.0.1.
+00:04:03: Atlantis/Atlantis has began playing .
+00:25:27: Atlantis has logged in from 127.0.0.1.
+00:25:46: Atlantis/Atlantis has began playing .
+00:36:46: Atlantis has logged in from 127.0.0.1.
+00:36:56: Atlantis/Atlantis has began playing .
+00:41:36: Atlantis has logged in from 127.0.0.1.
+00:41:44: Atlantis/Atlantis has began playing .
+00:43:14: Atlantis has logged in from 127.0.0.1.
+00:43:17: Atlantis/Atlantis has began playing .
+02:16:22: Atlantis has logged in from 127.0.0.1.
+02:16:30: Atlantis/Atlantis has began playing .
+02:42:47: Atlantis has logged in from 127.0.0.1.
+02:42:53: Atlantis/Atlantis has began playing .
+00:27:10: Atlantis has logged in from 127.0.0.1.
+00:27:22: Atlantis/Atlantis has began playing .
+00:33:22: Atlantis has logged in from 127.0.0.1.
+00:33:26: Atlantis/Atlantis has began playing .
+00:37:40: Atlantis has logged in from 127.0.0.1.
+00:37:45: Atlantis/Atlantis has began playing .
+00:40:25: Atlantis has logged in from 127.0.0.1.
+00:40:31: Atlantis/Atlantis has began playing .
+17:09:12: Atlantis has logged in from 127.0.0.1.
+17:09:22: Atlantis/Atlantis has began playing .
+17:13:20: Atlantis has logged in from 127.0.0.1.
+17:13:26: Atlantis/Atlantis has began playing .
+17:18:11: Atlantis has logged in from 127.0.0.1.
+17:18:17: Atlantis/Atlantis has began playing .
+20:43:18: Atlantis has logged in from 127.0.0.1.
+20:43:31: Atlantis/Atlantis has began playing .
+19:48:29: Atlantis has logged in from 127.0.0.1.
+19:48:41: Atlantis/Atlantis has began playing .
+19:49:14: Map #1: Atlantis : *test test*
+19:50:39: Atlantis has logged in from 127.0.0.1.
+19:50:44: Atlantis/Atlantis has began playing .
+19:53:34: Atlantis has logged in from 127.0.0.1.
+19:53:39: Atlantis/Atlantis has began playing .
+19:58:30: Atlantis has logged in from 127.0.0.1.
+19:58:35: Atlantis/Atlantis has began playing .
+20:01:49: Atlantis has logged in from 127.0.0.1.
+20:01:52: Atlantis/Atlantis has began playing .
+20:06:56: Atlantis has logged in from 127.0.0.1.
+20:07:00: Atlantis/Atlantis has began playing .
+20:13:39: Atlantis has logged in from 127.0.0.1.
+20:13:43: Atlantis/Atlantis has began playing .
+20:22:34: Atlantis has logged in from 127.0.0.1.
+20:22:39: Atlantis/Atlantis has began playing .
+20:26:34: Atlantis has logged in from 127.0.0.1.
+20:26:40: Atlantis/Atlantis has began playing .
+20:32:29: Atlantis has logged in from 127.0.0.1.
+20:32:32: Atlantis/Atlantis has began playing .
+20:34:17: Atlantis has logged in from 127.0.0.1.
+20:34:21: Atlantis/Atlantis has began playing .
+20:36:43: Atlantis has logged in from 127.0.0.1.
+20:36:48: Atlantis/Atlantis has began playing .
+20:45:23: Atlantis has logged in from 127.0.0.1.
+20:45:27: Atlantis/Atlantis has began playing .
+20:53:58: Atlantis has logged in from 127.0.0.1.
+20:54:02: Atlantis/Atlantis has began playing .
+00:34:10: Atlantis has logged in from 127.0.0.1.
+00:34:22: Atlantis/Atlantis has began playing .
+00:57:26: Atlantis has logged in from 127.0.0.1.
+00:57:40: Atlantis/Atlantis has began playing .
+01:00:46: Atlantis has logged in from 127.0.0.1.
+01:00:50: Atlantis/Atlantis has began playing .
+01:01:17: Map #1: Atlantis : asdsd
+01:01:38: Map #1: Atlantis : asd nunu
+01:05:48: Atlantis has logged in from 127.0.0.1.
+01:05:53: Atlantis/Atlantis has began playing .
+01:07:20: Atlantis has logged in from 127.0.0.1.
+01:07:23: Atlantis/Atlantis has began playing .
+11:00:14: Atlantis has logged in from 127.0.0.1.
+11:00:22: Atlantis/Atlantis has began playing .
+11:06:41: Atlantis has logged in from 127.0.0.1.
+11:07:08: Atlantis/Atlantis has began playing .
+11:10:13: Atlantis has logged in from 127.0.0.1.
+11:10:30: Atlantis/Atlantis has began playing .
+11:13:01: Atlantis has logged in from 127.0.0.1.
+11:13:05: Atlantis/Atlantis has began playing .
+11:19:04: Atlantis has logged in from 127.0.0.1.
+11:19:20: Atlantis/Atlantis has began playing .
+11:24:22: Atlantis has logged in from 127.0.0.1.
+11:24:27: Atlantis/Atlantis has began playing .
+11:33:39: Atlantis has logged in from 127.0.0.1.
+11:33:44: Atlantis/Atlantis has began playing .
+14:13:54: Atlantis has logged in from 127.0.0.1.
+14:14:02: Atlantis/Atlantis has began playing .
+14:23:19: Atlantis has logged in from 127.0.0.1.
+14:23:27: Atlantis/Atlantis has began playing .
+14:37:10: Atlantis has logged in from 127.0.0.1.
+14:37:15: Atlantis/Atlantis has began playing .
+16:55:35: Atlantis has logged in from 127.0.0.1.
+16:55:43: Atlantis/Atlantis has began playing .
+16:59:47: Atlantis has logged in from 127.0.0.1.
+16:59:51: Atlantis/Atlantis has began playing .
+23:02:49: Atlantis has logged in from 127.0.0.1.
+23:02:59: Atlantis/Atlantis has began playing .
+23:11:45: Atlantis has logged in from 127.0.0.1.
+23:11:53: Atlantis/Atlantis has began playing .
+23:13:27: Map #1: Atlantis : Hehehe..
+23:25:49: Atlantis has logged in from 127.0.0.1.
+23:25:58: Atlantis/Atlantis has began playing .
+23:28:32: Atlantis has logged in from 127.0.0.1.
+23:28:40: Atlantis/Atlantis has began playing .
+23:29:10: Map #1: Atlantis : blabla
+23:30:47: Atlantis has logged in from 127.0.0.1.
+23:31:00: Atlantis/Atlantis has began playing .
+23:31:45: Map #1: Atlantis : bla
+23:33:20: Atlantis has logged in from 127.0.0.1.
+23:33:30: Atlantis/Atlantis has began playing .
+23:33:56: Map #1: Atlantis : oO
+23:34:02: Map #1: Atlantis : >_>
+23:34:03: Map #1: Atlantis : >_<
+00:58:33: Atlantis has logged in from 127.0.0.1.
+00:58:42: Atlantis/Atlantis has began playing .
+01:00:30: Atlantis has logged in from 127.0.0.1.
+01:00:38: Atlantis/Atlantis has began playing .
+01:03:12: Atlantis has logged in from 127.0.0.1.
+01:03:32: Atlantis/Atlantis has began playing .
+01:16:35: Atlantis has logged in from 127.0.0.1.
+01:16:53: Atlantis/Atlantis has began playing .
+01:18:38: Atlantis has logged in from 127.0.0.1.
+01:18:50: Atlantis/Atlantis has began playing .
+01:20:37: Atlantis has logged in from 127.0.0.1.
+01:20:48: Atlantis/Atlantis has began playing .
+01:22:47: Atlantis has logged in from 127.0.0.1.
+01:22:59: Atlantis/Atlantis has began playing .
+01:26:27: Atlantis has logged in from 127.0.0.1.
+01:26:40: Atlantis/Atlantis has began playing .
+01:28:35: Atlantis has logged in from 127.0.0.1.
+01:28:45: Atlantis/Atlantis has began playing .
+01:32:41: Atlantis has logged in from 127.0.0.1.
+01:33:00: Atlantis/Atlantis has began playing .
+01:38:37: Atlantis has logged in from 127.0.0.1.
+01:38:47: Atlantis/Atlantis has began playing .
+01:48:39: Atlantis has logged in from 127.0.0.1.
+01:48:49: Atlantis/Atlantis has began playing .
+01:50:44: Atlantis has logged in from 127.0.0.1.
+01:50:53: Atlantis/Atlantis has began playing .
+01:54:28: Atlantis has logged in from 127.0.0.1.
+01:54:38: Atlantis/Atlantis has began playing .
+01:56:40: Atlantis has logged in from 127.0.0.1.
+01:56:49: Atlantis/Atlantis has began playing .
+01:58:42: Atlantis has logged in from 127.0.0.1.
+01:58:55: Atlantis/Atlantis has began playing .
+02:02:21: Atlantis has logged in from 127.0.0.1.
+02:02:35: Atlantis/Atlantis has began playing .
+02:06:59: Atlantis has logged in from 127.0.0.1.
+02:07:14: Atlantis/Atlantis has began playing .
+02:22:51: Atlantis has logged in from 127.0.0.1.
+02:23:02: Atlantis/Atlantis has began playing .
+02:39:59: Atlantis has logged in from 127.0.0.1.
+02:40:10: Atlantis/Atlantis has began playing .
+02:44:39: Atlantis has logged in from 127.0.0.1.
+02:44:48: Atlantis/Atlantis has began playing .
+02:46:34: Map #1: Atlantis : bla
+03:58:58: Atlantis has logged in from 127.0.0.1.
+03:59:21: Atlantis/Atlantis has began playing .
+04:03:52: Atlantis has logged in from 127.0.0.1.
+04:04:04: Atlantis/Atlantis has began playing .
+04:08:05: Atlantis has logged in from 127.0.0.1.
+04:08:18: Atlantis/Atlantis has began playing .
+04:13:45: Atlantis has logged in from 127.0.0.1.
+04:13:55: Atlantis/Atlantis has began playing .
+04:22:56: Atlantis has logged in from 127.0.0.1.
+04:23:06: Atlantis/Atlantis has began playing .
+04:27:05: Atlantis has logged in from 127.0.0.1.
+04:27:15: Atlantis/Atlantis has began playing .
+04:30:31: Atlantis has logged in from 127.0.0.1.
+04:30:40: Atlantis/Atlantis has began playing .
+04:34:13: Atlantis has logged in from 127.0.0.1.
+04:34:31: Atlantis/Atlantis has began playing .
+04:36:40: Atlantis has logged in from 127.0.0.1.
+04:36:50: Atlantis/Atlantis has began playing .
+04:38:25: Atlantis has logged in from 127.0.0.1.
+04:38:45: Atlantis/Atlantis has began playing .
+04:42:14: Atlantis has logged in from 127.0.0.1.
+04:42:27: Atlantis/Atlantis has began playing .
+04:47:14: Atlantis has logged in from 127.0.0.1.
+04:47:28: Atlantis/Atlantis has began playing .
+23:21:20: Atlantis has logged in from 127.0.0.1.
+23:21:32: Atlantis/Atlantis has began playing .
+23:26:39: Map #1: Atlantis : blabla
+23:26:48: Map #1: Atlantis : bla oo
+23:26:50: Map #1: Atlantis : arsch
+23:26:53: Map #1: Atlantis :  arch
+23:26:57: Map #1: Atlantis : bla bobba
+23:27:25: Map #1: Atlantis : hmm
+23:27:31: Map #1: Atlantis : i want a wordfilter!
+23:27:35: Map #1: Atlantis : oo
+01:03:28: Atlantis has logged in from 127.0.0.1.
+01:03:46: Atlantis/Atlantis has began playing .
+01:04:33: Map #1: Atlantis : blabla
+01:04:40: Map #1: Atlantis : >_>
+01:05:41: Map #1: Atlantis : aaaaaa
+01:08:14: Atlantis has logged in from 127.0.0.1.
+01:08:27: Atlantis/Atlantis has began playing .
+01:09:01: Map #1: Atlantis : oo
+01:09:14: Map #1: Atlantis : >_>
+01:09:26: Map #1: Atlantis : ass
+01:11:59: Map #1: Atlantis : asdasdasdasdasd
+01:12:30: Map #1: Atlantis : ar-sch
+04:27:53: Atlantis has logged in from 127.0.0.1.
+04:29:16: Atlantis has logged in from 127.0.0.1.
+04:29:26: Atlantis/Atlantis has began playing .
+22:28:59: Atlantis has logged in from 192.168.0.2.
+22:29:37: Atlantis/Atlantis has began playing .
+22:30:15: Map #1: Atlantis : >_>
+19:23:49: Atlantis has logged in from 192.168.0.10.
+19:23:59: Atlantis/Atlantis has began playing Untitled Game.
+03:55:49: Atlantis has logged in from 127.0.0.1.
+03:55:51: Atlantis/Atlantis has began playing Untitled Game.
+03:56:13: Map #1: Atlantis : Bla!
+16:30:10: Atlantis has logged in from 127.0.0.1.
+16:30:12: Atlantis/Atlantis has began playing Untitled Game.
+16:50:19: Atlantis has logged in from 127.0.0.1.
+16:50:21: Atlantis/Atlantis has began playing Untitled Game.
+16:51:19: Atlantis has logged in from 127.0.0.1.
+16:51:22: Atlantis/Atlantis has began playing Untitled Game.
+16:53:35: Atlantis has logged in from 127.0.0.1.
+16:53:36: Atlantis/Atlantis has began playing Untitled Game.
+16:59:35: Atlantis has logged in from 127.0.0.1.
+16:59:37: Atlantis/Atlantis has began playing Untitled Game.
+17:01:28: Atlantis has logged in from 127.0.0.1.
+17:01:30: Atlantis/Atlantis has began playing Untitled Game.
+20:21:17: Atlantis has logged in from 127.0.0.1.
+20:21:19: Atlantis/Atlantis has began playing Untitled Game.
+00:51:09: Atlantis has logged in from 127.0.0.1.
+00:51:11: Atlantis/Atlantis has began playing Untitled Game.
+01:14:20: Atlantis has logged in from 127.0.0.1.
+01:14:22: Atlantis/Atlantis has began playing Untitled Game.
+02:40:49: Atlantis has logged in from 127.0.0.1.
+02:40:51: Atlantis/Atlantis has began playing Untitled Game.
+02:47:02: Atlantis has logged in from 127.0.0.1.
+02:47:04: Atlantis/Atlantis has began playing Untitled Game.
+02:49:10: Atlantis has logged in from 127.0.0.1.
+02:49:12: Atlantis/Atlantis has began playing Untitled Game.
+02:51:02: Atlantis has logged in from 127.0.0.1.
+02:51:04: Atlantis/Atlantis has began playing Untitled Game.
+02:55:28: Atlantis has logged in from 127.0.0.1.
+02:55:31: Atlantis/Atlantis has began playing Untitled Game.
+02:59:33: Atlantis has logged in from 127.0.0.1.
+02:59:36: Atlantis/Atlantis has began playing Untitled Game.
+03:00:13: Atlantis has logged in from 127.0.0.1.
+03:00:15: Atlantis/Atlantis has began playing Untitled Game.
+03:04:46: Atlantis has logged in from 127.0.0.1.
+03:04:48: Atlantis/Atlantis has began playing Untitled Game.
+03:06:51: Atlantis has logged in from 127.0.0.1.
+03:06:54: Atlantis/Atlantis has began playing Untitled Game.
+03:07:24: Atlantis has logged in from 127.0.0.1.
+03:07:27: Atlantis/Atlantis has began playing Untitled Game.
+03:10:25: Atlantis has logged in from 127.0.0.1.
+03:10:27: Atlantis/Atlantis has began playing Untitled Game.
+03:14:20: Atlantis has logged in from 127.0.0.1.
+03:14:22: Atlantis/Atlantis has began playing Untitled Game.
+03:15:14: Atlantis has logged in from 127.0.0.1.
+03:15:16: Atlantis/Atlantis has began playing Untitled Game.
+03:18:21: Atlantis has logged in from 127.0.0.1.
+03:18:24: Atlantis/Atlantis has began playing Untitled Game.
+03:20:25: Atlantis has logged in from 127.0.0.1.
+03:20:27: Atlantis/Atlantis has began playing Untitled Game.
+19:58:04: Atlantis has logged in from 127.0.0.1.
+19:58:05: Atlantis/Atlantis has began playing Untitled Game.
+20:00:37: Atlantis has logged in from 127.0.0.1.
+20:00:39: Atlantis/Atlantis has began playing Untitled Game.

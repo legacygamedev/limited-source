@@ -1,0 +1,28 @@
+-a. Client Side
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Config.ini ::
+Just like the server stuff, we will analyze the main files. This is config.ini.
+
+There are only a few options that we need to edit.
+
+
+[UPDATER]
+FileName=The file name of the client (Diamond.exe)
+WebSite=Your game's website url
+[IPCONFIG]
+IP=The server's IP address to connect to
+PORT=The port to connect to (4000)
+
+
+There isn't much to change.
+
+
+:: Credits ::
+It's really simple. Just edit "credits.txt" for your purposes. It isn't hard!
+
+
+:: GUI ::
+Now, in the "GUI" folder there are a bunch of images. If you want to make a new GUI, you can just edit the images with any image editor. Be sure to edit "colors.txt" with the color values you want to use for many features.

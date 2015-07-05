@@ -1,0 +1,17 @@
+
+Received connection from 127.0.0.1.
+1999 has logged in from 127.0.0.1.
+1999/noob has began playing Chaos Engine.
+noob has disconnected from Chaos Engine.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+1999 has logged in from 127.0.0.1.
+1999/noob has began playing Chaos Engine.
+noob has disconnected from Chaos Engine.
+Connection from 127.0.0.1 has been terminated.
+Received connection from 127.0.0.1.
+1999 has logged in from 127.0.0.1.
+1999/noob has began playing Chaos Engine.
+noob has disconnected from Chaos Engine.
+Connection from 127.0.0.1 has been terminated.
+Chat Logs Have Been Saved!

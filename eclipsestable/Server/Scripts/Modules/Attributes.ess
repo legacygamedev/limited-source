@@ -1,0 +1,263 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: Attributes.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.1.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetWalkable						'
+' Brief: sets a walkable attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetWalkable(Map, X, Y)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_WALKABLE, 0, 0, 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetBlocked						'
+' Brief: sets a blocked attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetBlocked(Map, X, Y)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_BLOCKED, 0, 0, 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetWarp						'
+' Brief: sets a warp attribute.					'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	WarpMap: the map to warp the player to.			'
+'	WarpX: the X-coordinate of where to warp the player at.	'
+'	WarpY: the Y-coordinate of where to warp the player at.	'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetWarp(Map, X, Y, WarpMap, WarpX, WarpY)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_WARP, CInt(WarpMap), CInt(WarpX), CInt(WarpY), "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetItem						'
+' Brief: sets an item attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	ItemID: the item to spawn.				'
+'	ItemValue: the amount of items to spawn.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetItem(Map, X, Y, ItemID, ItemValue)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_ITEM, CInt(ItemID), CInt(ItemValue), 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetNPCAvoid						'
+' Brief: sets a NPC avoiding attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetNPCAvoid(Map, X, Y)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_NPCAVOID, 0, 0, 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetKeY						'
+' Brief: sets a key attribute.					'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	KeyID: the key ID.					'
+'	KeyTake: if the key should be taken or not.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetKeY(Map, X, Y, KeyID, KeyTake)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_KEY, CInt(KeyID), CInt(KeyTake), 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetKeyOpen						'
+' Brief: sets a key open attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	KeyX: no idea.						'
+'	KeyY: no idea.						'
+'	Message: the message to display.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetKeYOpen(Map, X, Y, KeyX, KeyY, Message)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_KEYOPEN, CInt(KeyX), CInt(KeyY), 0, CStr(Message), "", "")
+End Sub
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetHeal						'
+' Brief: sets a healing attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetHeal(Map, X, Y)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_HEAL, 0, 0, 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetKill						'
+' Brief: sets a killing attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetKill(Map, X, Y)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_KILL, 0, 0, 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetShop						'
+' Brief: sets a shop attribute.					'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	ShopID: the shop ID.					'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetShop(Map, X, Y, ShopID)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_SHOP, CInt(ShopID), 0, 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetClassBlock					'
+' Brief: sets a class blocking attribute.			'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	Allow1: the class to allow.				'
+'	Allow2: another class to allow.				'
+'	Allow3: yet another class to alow.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetClassBlock(Map, X, Y, Allow1, Allow2, Allow3)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_CBLOCK, CInt(Allow), CInt(Allow2), CInt(Allow3), "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetArena						'
+' Brief: sets an arena attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	MapID: the map to warp the player to.			'
+'	NewX: the X-coordinate of where to warp the player at.	'
+'	NewpY: the Y-coordinate of where to warp the player at.	'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetArena(Map, X, Y, MapID, NewX, NewY)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_ARENA, CInt(MapID), CInt(NewX), CInt(NewY), "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetSound						'
+' Brief: sets a sound attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	FileName: the filename of the file to play.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetSound(Map, X, Y, FileName)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_SOUND, 0, 0, 0, CStr(FileName), "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetSpriteChange					'
+' Brief: sets a sprite changing attribute.			'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	SpriteID: the sprite ID.				'
+'	ItemID: the item ID.					'
+'	Cost: the amount to pay for the change.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetSpriteChange(Map, X, Y, SpriteID, ItemID, Cost)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_SPRITE_CHANGE, SpriteID, ItemID, Cost, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetSign						'
+' Brief: sets a sign attribute.					'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	Line1: the first line to display.			'
+'	Line2: the second line to display.			'
+'	Line3: the third line to display.			'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetSign(Map, X, Y, Line1, Line2, Line3)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_SIGN, 0, 0, 0, CStr(Line1), CStr(Line2), CStr(Line3))
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetDoor						'
+' Brief: sets a door attribute.					'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetDoor(Map, X, Y)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_DOOR, 0, 0, 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetNotice						'
+' Brief: sets a notice attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	Title: the title to display.				'
+'	Text: the text to display.				'
+'	FileName: the filename of the file to open.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetNotice(Map, X, Y, Title, Text, FileName)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_NOTICE, 0, 0, 0, CStr(Title), CStr(Text), CStr(FileName))
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetScripted						'
+' Brief: sets a scripted attribute.				'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'	Script: the script to execute.				'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetScripted(Map, X, Y, Script)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_SCRIPTED, CInt(Script), 0, 0, "", "", "")
+End Sub
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: SetBank						'
+' Brief: sets a bank attribute.					'
+' Parameters:							'
+'	Map: the map to put the attribute on.			'
+'	X: the X-coordinate to put the attribute at.		'
+'	Y: the Y-coordinate to put the attribute at.		'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub SetBank(Map, X, Y)
+	Call SetAttribute(Map, X, Y, TILE_TYPE_BANK, 0, 0, 0, "", "", "")
+End Sub

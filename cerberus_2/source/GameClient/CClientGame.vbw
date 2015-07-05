@@ -1,0 +1,15 @@
+frmSendGetData = 66, 87, 720, 498, , 22, 29, 676, 440, C
+modGameLogic = 3, 5, 791, 594, 
+modClientTCP = 15, 4, 779, 573, 
+frmMainMenu = 20, 28, 772, 546, , -1, 2, 782, 580, C
+frmCClient = 10, 14, 763, 568, , 1, 0, 776, 574, C
+modConstants = 22, 17, 777, 550, 
+modGlobals = 39, 36, 754, 562, 
+modDeclares = 18, 5, 769, 561, 
+modTypes = 4, 6, 777, 569, 
+modHandleData = 6, 9, 784, 576, 
+modText = 13, 7, 790, 579, 
+modDirectX = -1, 5, 775, 578, 
+modDatabase = 4, 20, 776, 597, 
+frmDrop = 16, 10, 682, 429, , 60, 75, 726, 494, C
+frmIPconfig = 22, 29, 687, 448, , 0, 0, 665, 419, C

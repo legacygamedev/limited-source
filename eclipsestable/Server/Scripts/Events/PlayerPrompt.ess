@@ -1,0 +1,32 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Module: PlayerPrompt.ess					'
+' Author: Stephan J.R. van Schaik <stephan_van_schaik@msn.com>	'
+' Date: August 30th, 2009.					'
+' Version: 1.0.0						'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Function: PlayerPrompt					'
+' Brief: executes when somebody presses 'Yes' or 'No'.		'
+' Parameters:							'
+'	Index: the index of the player.				'
+'	Prompt: the prompt.					'
+'	Value: the value.					'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Sub PlayerPrompt(Index, Prompt, Value)
+	If Prompt = 6 Then
+		Select Case Value
+			Case 0
+				Call GlobalMsg("Hi This is a Yes answer!", CYAN)
+			Case 1
+				Call GlobalMsg("This is case 1?", CYAN)
+		End Select
+	Else
+		Select Case Value
+			Case 0
+				Call GlobalMsg("Hi This is a No answer!", RED)
+			Case 1
+				Call GlobalMsg("This is no case 1?", RED)
+		End Select
+	End If
+End Sub

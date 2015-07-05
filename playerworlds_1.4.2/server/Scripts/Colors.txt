@@ -1,0 +1,20 @@
+Colors:
+
+16 - crash client
+
+Black = 0
+Blue = 1
+Green = 2
+Cyan = 3
+Red = 4
+Magenta = 5
+Brown = 6
+Grey = 7
+Dark Grey = 8
+Bright Blue = 9
+Bright Green = 10
+Bright Cyan = 11
+Bright Red = 12
+Pink = 13
+Yellow = 14
+White = 15

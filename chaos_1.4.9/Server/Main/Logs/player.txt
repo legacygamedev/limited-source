@@ -1,0 +1,684 @@
+4:17:24 PM: Account demo has been created.
+4:17:32 PM: demo has logged in from 127.0.0.1.
+4:17:46 PM: Character demo added to demo's account.
+4:18:29 PM: demo has logged in from 127.0.0.1.
+4:18:30 PM: demo/demo has began playing Elysium Diamond.
+4:21:16 PM: demo has logged in from 127.0.0.1.
+4:21:17 PM: demo/demo has began playing Elysium Diamond.
+4:21:55 PM: demo has logged in from 127.0.0.1.
+4:21:56 PM: demo/demo has began playing Elysium Diamond.
+4:24:29 PM: demo has logged in from 127.0.0.1.
+4:24:31 PM: demo/demo has began playing Elysium Diamond.
+3:58:08 PM: demo has logged in from 192.168.1.101.
+3:58:11 PM: demo/demo has began playing Elysium Diamond.
+3:58:40 PM: demo has logged in from 192.168.1.101.
+3:58:45 PM: demo/demo has began playing Elysium Diamond.
+3:39:35 AM: demo has logged in from 68.118.88.112.
+3:39:38 AM: demo/demo has began playing Elysium Diamond.
+11:26:16 AM: demo has logged in from 68.118.88.112.
+11:26:19 AM: demo/demo has began playing Elysium Diamond.
+1:02:48 PM: demo has logged in from 68.118.88.112.
+1:02:49 PM: demo/demo has began playing Elysium Diamond.
+1:04:28 PM: demo has logged in from 68.118.88.112.
+1:04:29 PM: demo/demo has began playing Elysium Diamond.
+1:14:53 PM: demo has logged in from 68.118.88.112.
+1:14:55 PM: demo/demo has began playing Elysium Diamond.
+1:23:39 PM: demo has logged in from 68.118.88.112.
+1:23:41 PM: demo/demo has began playing Elysium Diamond.
+1:27:30 PM: demo has logged in from 68.118.88.112.
+1:27:32 PM: demo/demo has began playing Elysium Diamond.
+1:36:17 PM: demo has logged in from 68.118.88.112.
+1:36:19 PM: demo/demo has began playing Elysium Diamond.
+1:40:02 PM: demo has logged in from 68.118.88.112.
+1:40:05 PM: demo/demo has began playing Elysium Diamond.
+1:47:22 PM: demo has logged in from 68.118.88.112.
+1:47:24 PM: demo/demo has began playing Elysium Diamond.
+1:59:53 PM: demo has logged in from 68.118.88.112.
+2:00:57 PM: demo/demo has began playing Elysium Diamond.
+2:33:38 PM: demo has logged in from 68.118.88.112.
+2:33:50 PM: demo/demo has began playing Elysium Diamond.
+2:49:05 PM: demo has logged in from 68.118.88.112.
+2:49:08 PM: demo/demo has began playing Elysium Diamond.
+3:00:33 PM: demo has logged in from 68.118.88.112.
+3:00:38 PM: demo/demo has began playing Elysium Diamond.
+3:04:55 PM: demo has logged in from 68.118.88.112.
+3:04:58 PM: demo/demo has began playing Elysium Diamond.
+3:34:40 PM: demo has logged in from 68.118.88.112.
+3:34:42 PM: demo/Owned has began playing Elysium Diamond.
+7:18:26 PM: demo has logged in from 68.118.88.112.
+7:18:29 PM: demo/Owned has began playing Elysium Diamond.
+8:39:18 PM: demo has logged in from 84.61.235.200.
+8:39:21 PM: demo/Owned has began playing Elysium Diamond.
+8:41:55 PM: demo has logged in from 68.118.88.112.
+8:41:58 PM: demo/Owned has began playing Elysium Diamond.
+9:57:30 PM: demo has logged in from 68.118.88.112.
+9:57:44 PM: demo/Owned has began playing Elysium Diamond.
+6:00:41 PM: demo has logged in from 68.118.88.112.
+6:01:03 PM: demo/Owned has began playing Elysium Diamond.
+6:43:55 PM: demo has logged in from 68.118.88.112.
+6:43:58 PM: demo/Owned has began playing Elysium Diamond.
+6:22:06 PM: demo has logged in from 192.168.1.101.
+6:22:09 PM: demo/Owned has began playing Elysium Diamond.
+7:28:08 PM: demo has logged in from 192.168.1.101.
+7:28:10 PM: demo/Owned has began playing Elysium Diamond.
+7:32:15 PM: demo has logged in from 192.168.1.101.
+7:32:17 PM: demo/Owned has began playing Elysium Diamond.
+7:34:53 PM: demo has logged in from 192.168.1.101.
+7:34:55 PM: demo/Owned has began playing Elysium Diamond.
+7:36:16 PM: demo has logged in from 192.168.1.101.
+7:36:19 PM: demo/Owned has began playing Elysium Diamond.
+7:39:46 PM: demo has logged in from 192.168.1.101.
+7:39:48 PM: demo/Owned has began playing Elysium Diamond.
+7:41:53 PM: demo has logged in from 192.168.1.101.
+7:42:00 PM: demo has logged in from 192.168.1.101.
+7:42:05 PM: demo/Owned has began playing Elysium Diamond.
+7:45:18 PM: demo has logged in from 192.168.1.101.
+7:45:33 PM: demo/Owned has began playing Elysium Diamond.
+7:56:05 PM: demo has logged in from 192.168.1.101.
+7:56:07 PM: demo/Owned has began playing Elysium Diamond.
+1:51:52 AM: Account diago has been created.
+1:51:59 AM: diago has logged in from 192.168.1.101.
+1:56:29 AM: Account poop3 has been created.
+1:56:38 AM: poop3 has logged in from 192.168.1.101.
+10:46:22 AM: poop3 has logged in from 192.168.1.101.
+10:47:15 AM: demo has logged in from 192.168.1.101.
+10:47:17 AM: demo/Owned has began playing Elysium Diamond.
+10:49:30 AM: demo has logged in from 192.168.1.101.
+10:49:31 AM: demo/Owned has began playing Elysium Diamond.
+11:17:29 AM: Account 12345 has been created.
+11:17:50 AM: 12345 has logged in from 192.168.1.101.
+11:18:24 AM: 12345 has logged in from 192.168.1.101.
+11:19:24 AM: Account 12344 has been created.
+11:19:37 AM: 12344 has logged in from 192.168.1.101.
+11:23:18 AM: Account aaaa has been created.
+11:23:20 AM: aaaa has logged in from 192.168.1.101.
+11:23:43 AM: Character Becoming added to aaaa's account.
+11:23:47 AM: aaaa/Becoming has began playing Elysium Diamond.
+11:28:35 AM: Account bbb has been created.
+11:28:41 AM: bbb has logged in from 192.168.1.101.
+11:29:47 AM: Character ghfghf added to bbb's account.
+11:30:02 AM: bbb/ghfghf has began playing Elysium Diamond.
+11:38:29 AM: Account 888 has been created.
+11:38:31 AM: 888 has logged in from 192.168.1.101.
+11:38:46 AM: Character jhjk added to 888's account.
+11:38:49 AM: 888/jhjk has began playing Elysium Diamond.
+12:53:12 PM: 888 has logged in from 192.168.1.101.
+12:53:17 PM: 888/jhjk has began playing Elysium Diamond.
+1:05:54 PM: 888 has logged in from 192.168.1.101.
+1:05:55 PM: 888/jhjk has began playing Elysium Diamond.
+1:10:07 PM: 888 has logged in from 192.168.1.101.
+1:10:09 PM: 888/jhjk has began playing Elysium Diamond.
+1:18:17 PM: 888 has logged in from 192.168.1.101.
+1:18:19 PM: 888/jhjk has began playing Elysium Diamond.
+1:28:31 PM: 888 has logged in from 192.168.1.101.
+1:28:40 PM: 888/jhjk has began playing Elysium Diamond.
+1:47:09 PM: 888 has logged in from 192.168.1.101.
+1:47:12 PM: 888/jhjk has began playing Elysium Diamond.
+2:22:31 PM: Account kkk has been created.
+2:22:37 PM: kkk has logged in from 192.168.1.101.
+2:23:06 PM: Character Frostbite added to kkk's account.
+2:23:10 PM: kkk/Frostbite has began playing Elysium Diamond.
+2:39:03 PM: Account ddd has been created.
+2:39:24 PM: ddd has logged in from 192.168.1.101.
+2:39:33 PM: Character Death added to ddd's account.
+2:39:35 PM: ddd/Death has began playing Elysium Diamond.
+4:40:27 PM: ddd has logged in from 192.168.1.101.
+4:40:29 PM: ddd/Death has began playing Elysium Diamond.
+3:48:51 PM: ddd has logged in from 192.168.1.101.
+3:48:55 PM: ddd/Death has began playing Elysium Diamond.
+4:13:43 PM: ddd has logged in from 192.168.1.101.
+4:13:47 PM: ddd/Death has began playing Elysium Diamond.
+4:18:04 PM: ddd has logged in from 192.168.1.101.
+4:18:08 PM: ddd/Death has began playing Elysium Diamond.
+4:43:01 PM: ddd has logged in from 192.168.1.101.
+4:43:10 PM: ddd/Death has began playing Elysium Diamond.
+7:57:11 PM: ddd has logged in from 192.168.1.101.
+7:57:15 PM: ddd/Death has began playing Elysium Diamond.
+9:14:39 PM: ddd has logged in from 192.168.1.101.
+9:14:41 PM: ddd/Death has began playing Elysium Diamond.
+9:31:38 PM: ddd has logged in from 192.168.1.101.
+9:31:39 PM: ddd/Death has began playing Chaos Engine.
+9:43:04 PM: ddd has logged in from 192.168.1.101.
+9:43:06 PM: ddd/Death has began playing Chaos Engine.
+9:46:36 PM: ddd has logged in from 192.168.1.101.
+9:46:38 PM: ddd/Death has began playing Chaos Engine.
+9:48:00 PM: ddd has logged in from 192.168.1.101.
+9:48:06 PM: Character booo added to ddd's account.
+9:48:10 PM: ddd/booo has began playing Chaos Engine.
+10:05:34 PM: ddd has logged in from 192.168.1.101.
+10:05:38 PM: ddd/Death has began playing Chaos Engine.
+10:38:29 PM: ddd has logged in from 192.168.1.101.
+10:38:32 PM: ddd/Death has began playing Chaos Engine.
+10:39:40 PM: ddd has logged in from 192.168.1.101.
+10:39:45 PM: ddd/Death has began playing Chaos Engine.
+10:52:49 PM: ddd has logged in from 192.168.1.101.
+10:52:51 PM: ddd/Death has began playing Chaos Engine.
+5:25:44 PM: ddd has logged in from 192.168.1.101.
+5:25:52 PM: ddd/Death has began playing Chaos Engine.
+5:31:56 PM: ddd has logged in from 192.168.1.101.
+5:31:58 PM: ddd/Death has began playing Chaos Engine.
+5:33:55 PM: ddd has logged in from 192.168.1.101.
+5:33:57 PM: ddd/Death has began playing Chaos Engine.
+5:48:07 PM: ddd has logged in from 192.168.1.101.
+5:48:09 PM: ddd/Death has began playing Chaos Engine.
+5:56:43 PM: ddd has logged in from 192.168.1.101.
+5:56:54 PM: ddd/Death has began playing Chaos Engine.
+8:35:51 PM: ddd has logged in from 192.168.1.101.
+8:35:54 PM: ddd/Death has began playing Chaos Engine.
+8:43:15 PM: ddd has logged in from 192.168.1.101.
+8:43:17 PM: ddd/Death has began playing Chaos Engine.
+8:44:37 PM: ddd has logged in from 192.168.1.101.
+8:44:39 PM: ddd/Death has began playing Chaos Engine.
+8:47:54 PM: ddd has logged in from 192.168.1.101.
+8:47:56 PM: ddd/Death has began playing Chaos Engine.
+8:59:11 PM: ddd has logged in from 192.168.1.101.
+8:59:18 PM: ddd/Death has began playing Chaos Engine.
+1:06:45 AM: ddd has logged in from 192.168.1.101.
+1:06:53 AM: Character Snakes Eyes added to ddd's account.
+1:06:57 AM: ddd/Snakes Eyes has began playing Chaos Engine.
+1:37:20 AM: ddd has logged in from 192.168.1.101.
+1:37:22 AM: ddd/Snakes Eyes has began playing Chaos Engine.
+1:40:18 AM: ddd has logged in from 192.168.1.101.
+1:40:20 AM: ddd/Snakes Eyes has began playing Chaos Engine.
+2:03:19 AM: ddd has logged in from 192.168.1.101.
+2:03:22 AM: ddd/Snakes Eyes has began playing Chaos Engine.
+2:09:30 AM: ddd has logged in from 192.168.1.101.
+2:09:35 AM: ddd/Snakes Eyes has began playing Chaos Engine.
+2:13:24 AM: Map #1: Snakes Eyes : .align
+2:17:03 AM: ddd has logged in from 192.168.1.101.
+2:17:05 AM: ddd/Snakes Eyes has began playing Chaos Engine.
+2:20:58 AM: ddd has logged in from 192.168.1.101.
+2:21:00 AM: ddd/Snakes Eyes has began playing Chaos Engine.
+2:27:46 AM: ddd has logged in from 192.168.1.101.
+2:27:48 AM: ddd/Snakes Eyes has began playing Chaos Engine.
+10:40:53 AM: ddd has logged in from 192.168.1.101.
+10:40:58 AM: ddd/Snakes Eyes has began playing Chaos Engine.
+7:34:45 PM: ddd has logged in from 192.168.1.101.
+7:34:47 PM: ddd/Snakes Eyes has began playing Chaos Engine.
+12:00:01 PM: ddd has logged in from 192.168.1.101.
+12:00:06 PM: ddd/Death has began playing Chaos Engine.
+12:02:31 PM: ddd has logged in from 192.168.1.101.
+12:02:34 PM: ddd/Death has began playing Chaos Engine.
+12:34:38 PM: ddd has logged in from 192.168.1.101.
+12:34:40 PM: ddd/Death has began playing Chaos Engine.
+2:17:39 PM: ddd has logged in from 192.168.1.101.
+2:17:45 PM: ddd/Snakes Eyes has began playing Chaos Engine.
+7:59:45 PM: ddd has logged in from 127.0.0.1.
+7:59:58 PM: ddd/Death has began playing Chaos Engine.
+8:57:28 PM: ddd has logged in from 127.0.0.1.
+8:57:43 PM: ddd/Death has began playing Chaos Engine.
+9:13:26 PM: ddd has logged in from 127.0.0.1.
+9:13:53 PM: ddd/Death has began playing Chaos Engine.
+9:22:28 PM: ddd has logged in from 127.0.0.1.
+9:22:43 PM: ddd/Death has began playing Chaos Engine.
+9:32:58 PM: ddd has logged in from 127.0.0.1.
+9:33:34 PM: ddd/Death has began playing Chaos Engine.
+9:45:50 PM: ddd has logged in from 127.0.0.1.
+9:46:16 PM: ddd/Death has began playing Chaos Engine.
+6:58:50 AM: ddd has logged in from 127.0.0.1.
+6:59:03 AM: ddd/Death has began playing Chaos Engine.
+11:38:44 PM: ddd has logged in from 127.0.0.1.
+11:39:13 PM: ddd/Death has began playing Chaos Engine.
+11:55:20 PM: ddd has logged in from 127.0.0.1.
+11:55:28 PM: ddd/Death has began playing Chaos Engine.
+12:13:57 AM: ddd has logged in from 127.0.0.1.
+12:14:08 AM: ddd/Death has began playing Chaos Engine.
+12:39:43 AM: ddd has logged in from 127.0.0.1.
+12:39:55 AM: ddd/Death has began playing Chaos Engine.
+12:54:17 AM: ddd has logged in from 127.0.0.1.
+12:54:33 AM: ddd/Death has began playing Chaos Engine.
+8:48:55 PM: ddd has logged in from 127.0.0.1.
+8:49:10 PM: ddd/Death has began playing Chaos Engine.
+11:32:25 PM: ddd has logged in from 127.0.0.1.
+11:32:28 PM: ddd/Death has began playing Chaos Engine.
+12:19:35 AM: ddd has logged in from 127.0.0.1.
+12:19:49 AM: ddd/Death has began playing Chaos Engine.
+12:24:45 AM: ddd has logged in from 127.0.0.1.
+12:25:00 AM: ddd/Death has began playing Chaos Engine.
+12:58:22 AM: ddd has logged in from 127.0.0.1.
+12:58:34 AM: ddd/Death has began playing Chaos Engine.
+1:56:04 AM: ddd has logged in from 127.0.0.1.
+1:56:14 AM: ddd/Death has began playing Chaos Engine.
+2:13:57 AM: ddd has logged in from 127.0.0.1.
+2:14:14 AM: ddd/Death has began playing Chaos Engine.
+12:23:41 PM: ddd has logged in from 127.0.0.1.
+12:23:51 PM: ddd/Death has began playing Chaos Engine.
+1:00:45 PM: ddd has logged in from 127.0.0.1.
+1:01:01 PM: ddd/Death has began playing Chaos Engine.
+2:59:36 PM: ddd has logged in from 127.0.0.1.
+2:59:44 PM: ddd/Death has began playing Chaos Engine.
+3:05:43 PM: ddd has logged in from 127.0.0.1.
+3:05:58 PM: ddd/Death has began playing Chaos Engine.
+3:09:57 PM: ddd has logged in from 127.0.0.1.
+3:10:02 PM: ddd/Death has began playing Chaos Engine.
+3:24:27 PM: ddd has logged in from 127.0.0.1.
+3:24:45 PM: ddd/Death has began playing Chaos Engine.
+3:52:37 PM: Account 123 has been created.
+3:52:39 PM: 123 has logged in from 127.0.0.1.
+3:52:57 PM: Character Tester added to 123's account.
+3:53:03 PM: 123/Tester has began playing Chaos Engine.
+3:57:47 PM: ddd has logged in from 127.0.0.1.
+3:57:55 PM: ddd/Death has began playing Chaos Engine.
+4:49:58 PM: ddd has logged in from 127.0.0.1.
+4:50:08 PM: ddd/Death has began playing Chaos Engine.
+7:56:24 PM: ddd has logged in from 127.0.0.1.
+7:56:34 PM: ddd/Death has began playing Chaos Engine.
+11:28:57 PM: ddd has logged in from 127.0.0.1.
+11:29:07 PM: ddd/Death has began playing Chaos Engine.
+12:47:52 AM: ddd has logged in from 127.0.0.1.
+12:48:11 AM: ddd/Death has began playing Chaos Engine.
+12:49:36 AM: Map #1: Death : fuck
+12:51:51 AM: Map #1: Death : dammit
+12:51:56 AM: Map #1: Death : nigg
+1:44:51 AM: ddd has logged in from 127.0.0.1.
+1:45:06 AM: ddd/Death has began playing Chaos Engine.
+1:48:49 AM: ddd has logged in from 127.0.0.1.
+1:49:00 AM: ddd/Death has began playing Chaos Engine.
+1:50:12 AM: Map #1: Death : hey
+1:50:24 AM: Map #1: Death : 'hey
+1:51:30 AM: Map #1: Death : 'hey
+1:52:08 AM: Death: hey
+1:53:30 AM: Death: hey
+1:53:37 AM: Map #1: Death : "hooker
+1:55:55 AM: Map #1: Death : \tradedeath
+1:56:20 AM: Map #1: Death : \trade death
+1:56:42 AM: Map #1: Death : \trade ghost
+2:11:22 AM: ddd has logged in from 127.0.0.1.
+2:11:49 AM: ddd/Death has began playing Chaos Engine.
+2:21:06 AM: ddd has logged in from 127.0.0.1.
+2:21:24 AM: ddd/Death has began playing Chaos Engine.
+2:22:38 AM: Map #1: Death : death
+2:22:39 AM: Map #1: Death : hell
+2:22:46 AM: Map #1: Death : death
+2:23:17 AM: Map #1: Death : \chat hooker
+10:19:33 AM: ddd has logged in from 127.0.0.1.
+10:19:46 AM: ddd/Death has began playing Chaos Engine.
+10:21:08 AM: Map #1: Death : hey
+10:21:17 AM: Death: hey
+11:11:02 AM: ddd has logged in from 127.0.0.1.
+11:18:28 AM: ddd has logged in from 127.0.0.1.
+11:21:13 AM: ddd has logged in from 127.0.0.1.
+11:23:49 AM: ddd has logged in from 127.0.0.1.
+11:27:04 AM: ddd has logged in from 127.0.0.1.
+11:27:20 AM: ddd/Death has began playing Chaos Engine.
+11:31:10 AM: ddd has logged in from 127.0.0.1.
+11:35:54 AM: Character deleted on ddd's account.
+11:36:09 AM: ddd/Death has began playing Chaos Engine.
+10:22:04 AM: ddd has logged in from 127.0.0.1.
+10:22:57 AM: ddd/Death has began playing Chaos Engine.
+2:32:08 PM: ddd has logged in from 127.0.0.1.
+2:32:17 PM: ddd/Death has began playing Chaos Engine.
+2:40:50 PM: Account 777 has been created.
+2:41:03 PM: 777 has logged in from 127.0.0.1.
+2:41:35 PM: Character Bug Tester added to 777's account.
+2:41:44 PM: 777/Bug Tester has began playing Chaos Engine.
+3:05:07 PM: 777 has logged in from 127.0.0.1.
+3:05:17 PM: 777/Bug Tester has began playing Chaos Engine.
+12:51:59 PM: 777 has logged in from 127.0.0.1.
+12:52:29 PM: 777/Xaden has began playing Chaos Engine.
+1:44:09 PM: 777 has logged in from 127.0.0.1.
+1:44:16 PM: 777/Xaden has began playing Chaos Engine.
+2:20:58 PM: 777 has logged in from 127.0.0.1.
+2:21:06 PM: 777/Xaden has began playing Chaos Engine.
+2:41:11 PM: 777 has logged in from 127.0.0.1.
+2:41:37 PM: 777/Xaden has began playing Chaos Engine.
+3:29:11 PM: 777 has logged in from 127.0.0.1.
+3:29:18 PM: 777/Xaden has began playing Chaos Engine.
+8:48:09 PM: 777 has logged in from 127.0.0.1.
+8:48:18 PM: 777/Xaden has began playing Chaos Engine.
+9:01:42 PM: 777 has logged in from 127.0.0.1.
+9:02:13 PM: 777/Xaden has began playing Chaos Engine.
+2:11:39 PM: 777 has logged in from 127.0.0.1.
+2:11:45 PM: 777/Xaden has began playing Chaos Engine.
+10:32:20 AM: 777 has logged in from 127.0.0.1.
+10:32:32 AM: 777/Xaden has began playing Chaos Engine.
+12:54:40 AM: 777 has logged in from 127.0.0.1.
+12:54:45 AM: 777/Xaden has began playing Chaos Engine.
+6:31:38 PM: 777 has logged in from 127.0.0.1.
+6:31:41 PM: 777/Xaden has began playing Chaos Engine.
+6:35:21 PM: 777 has logged in from 127.0.0.1.
+6:35:27 PM: 777/Xaden has began playing Chaos Engine.
+6:45:10 PM: 777 has logged in from 127.0.0.1.
+6:45:14 PM: 777/Xaden has began playing Chaos Engine.
+7:04:50 PM: 777 has logged in from 127.0.0.1.
+7:04:53 PM: 777/Xaden has began playing Chaos Engine.
+7:05:17 PM: 777 has logged in from 127.0.0.1.
+7:05:22 PM: 777/Xaden has began playing Chaos Engine.
+7:10:30 PM: 777 has logged in from 127.0.0.1.
+7:10:33 PM: 777/Xaden has began playing Chaos Engine.
+7:14:16 PM: 777 has logged in from 127.0.0.1.
+7:14:19 PM: 777/Xaden has began playing Chaos Engine.
+7:19:16 PM: 777 has logged in from 127.0.0.1.
+7:19:19 PM: 777/Xaden has began playing Chaos Engine.
+7:23:03 PM: 777 has logged in from 127.0.0.1.
+7:23:26 PM: 777/Xaden has began playing Chaos Engine.
+8:16:17 PM: Map #1: Xaden : damn
+8:16:19 PM: Map #1: Xaden : lol
+8:34:28 PM: 777 has logged in from 127.0.0.1.
+8:34:30 PM: 777/Xaden has began playing Chaos Engine.
+9:02:14 PM: 777 has logged in from 127.0.0.1.
+9:02:17 PM: 777/Xaden has began playing Chaos Engine.
+9:07:33 PM: 777 has logged in from 127.0.0.1.
+9:07:37 PM: 777/Xaden has began playing Chaos Engine.
+9:11:04 PM: 777 has logged in from 127.0.0.1.
+9:11:07 PM: 777/Xaden has began playing Chaos Engine.
+11:08:21 PM: 777 has logged in from 127.0.0.1.
+11:08:24 PM: 777/Xaden has began playing Chaos Engine.
+11:32:01 PM: 777 has logged in from 127.0.0.1.
+11:32:04 PM: 777/Xaden has began playing Chaos Engine.
+11:52:24 PM: 777 has logged in from 127.0.0.1.
+11:52:28 PM: 777/Xaden has began playing Chaos Engine.
+12:59:28 AM: 777 has logged in from 127.0.0.1.
+12:59:32 AM: 777/Xaden has began playing Chaos Engine.
+1:04:58 AM: 777 has logged in from 127.0.0.1.
+1:05:02 AM: 777/Xaden has began playing Chaos Engine.
+3:03:08 PM: 777 has logged in from 127.0.0.1.
+3:03:12 PM: 777/Xaden has began playing Chaos Engine.
+3:45:29 PM: 777 has logged in from 127.0.0.1.
+3:45:35 PM: 777/Xaden has began playing Chaos Engine.
+11:09:33 PM: 777 has logged in from 127.0.0.1.
+11:09:35 PM: 777/Xaden has began playing Chaos Engine.
+2:07:24 PM: 777 has logged in from 127.0.0.1.
+2:07:30 PM: 777/Xaden has began playing Chaos Engine.
+2:13:06 PM: 777 has logged in from 127.0.0.1.
+2:13:11 PM: 777/Xaden has began playing Chaos Engine.
+2:19:26 PM: 777 has logged in from 127.0.0.1.
+2:19:29 PM: 777/Xaden has began playing Chaos Engine.
+2:31:09 PM: 777 has logged in from 127.0.0.1.
+2:31:28 PM: 777/Xaden has began playing Chaos Engine.
+2:33:32 PM: 777 has logged in from 127.0.0.1.
+2:33:39 PM: 777/Xaden has began playing Chaos Engine.
+2:46:26 PM: 777 has logged in from 127.0.0.1.
+2:46:29 PM: 777/Xaden has began playing Chaos Engine.
+3:17:35 PM: 777 has logged in from 127.0.0.1.
+3:22:35 PM: 777 has logged in from 127.0.0.1.
+3:23:11 PM: Character LOST added to 777's account.
+3:24:13 PM: Character LOS added to 777's account.
+3:26:22 PM: 777 has logged in from 127.0.0.1.
+3:26:25 PM: 777/LOS has began playing Chaos Engine.
+4:26:17 PM: 777 has logged in from 127.0.0.1.
+4:26:22 PM: 777/LOS has began playing Chaos Engine.
+4:27:17 PM: Map #1: LOS : HI
+4:27:47 PM: Map #1: LOS : ho
+4:32:10 PM: 777 has logged in from 127.0.0.1.
+4:32:20 PM: 777/LOS has began playing Chaos Engine.
+5:23:56 PM: 777 has logged in from 127.0.0.1.
+5:24:00 PM: Character deleted on 777's account.
+5:24:27 PM: Character iuhiehieurw added to 777's account.
+5:24:32 PM: 777/iuhiehieurw has began playing Chaos Engine.
+5:32:57 PM: 777 has logged in from 127.0.0.1.
+5:33:04 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:33:22 PM: 777 has logged in from 127.0.0.1.
+6:33:43 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:34:57 PM: 777 has logged in from 127.0.0.1.
+6:35:00 PM: Character deleted on 777's account.
+6:35:05 PM: Character deleted on 777's account.
+6:35:08 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:39:17 PM: 777 has logged in from 127.0.0.1.
+6:39:20 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:45:49 PM: 777 has logged in from 127.0.0.1.
+6:45:52 PM: 777/iuhiehieurw has began playing Chaos Engine.
+5:42:11 PM: 777 has logged in from 127.0.0.1.
+5:42:18 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:01:54 PM: 777 has logged in from 127.0.0.1.
+6:01:57 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:16:30 PM: 777 has logged in from 127.0.0.1.
+6:16:38 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:36:07 PM: 777 has logged in from 127.0.0.1.
+6:36:12 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:37:49 PM: 777 has logged in from 127.0.0.1.
+6:37:53 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:42:14 PM: 777 has logged in from 127.0.0.1.
+6:42:17 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:49:43 PM: 777 has logged in from 127.0.0.1.
+6:49:46 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:54:11 PM: 777 has logged in from 127.0.0.1.
+6:54:16 PM: 777/iuhiehieurw has began playing Chaos Engine.
+6:57:04 PM: 777 has logged in from 127.0.0.1.
+6:57:07 PM: 777/iuhiehieurw has began playing Chaos Engine.
+7:04:56 PM: 777 has logged in from 127.0.0.1.
+7:04:59 PM: 777/iuhiehieurw has began playing Chaos Engine.
+2:20:38 PM: 777 has logged in from 127.0.0.1.
+3:07:01 PM: 777 has logged in from 127.0.0.1.
+3:07:05 PM: 777/iuhiehieurw has began playing Chaos Engine.
+5:09:31 PM: Account Xaden has been created.
+5:09:42 PM: Xaden has logged in from 127.0.0.1.
+5:10:21 PM: Character DEV Xaden added to Xaden's account.
+5:10:52 PM: Xaden has logged in from 127.0.0.1.
+5:11:13 PM: Character Xaden II added to Xaden's account.
+5:11:17 PM: Xaden/Xaden II has began playing Chaos Engine.
+5:12:44 PM: Xaden has logged in from 127.0.0.1.
+5:13:36 PM: Character iwuhfbgjsdhfg added to Xaden's account.
+5:13:44 PM: Xaden/iwuhfbgjsdhfg has began playing Chaos Engine.
+5:14:40 PM: Xaden has logged in from 127.0.0.1.
+5:21:26 PM: Account 1999 has been created.
+5:21:34 PM: 1999 has logged in from 127.0.0.1.
+5:21:53 PM: Character Twisted added to 1999's account.
+5:22:00 PM: 1999 has logged in from 127.0.0.1.
+5:22:03 PM: 1999/Twisted has began playing Chaos Engine.
+5:27:34 PM: 1999 has logged in from 127.0.0.1.
+5:27:37 PM: 1999/Twisted has began playing Chaos Engine.
+5:31:07 PM: 1999 has logged in from 127.0.0.1.
+5:31:10 PM: 1999/Twisted has began playing Chaos Engine.
+5:33:20 PM: 1999 has logged in from 127.0.0.1.
+5:33:23 PM: 1999/Twisted has began playing Chaos Engine.
+5:39:04 PM: 1999 has logged in from 127.0.0.1.
+5:39:10 PM: 1999/Twisted has began playing Chaos Engine.
+6:09:47 PM: 1999 has logged in from 127.0.0.1.
+6:09:50 PM: 1999/Twisted has began playing Chaos Engine.
+6:53:54 PM: 1999 has logged in from 127.0.0.1.
+6:54:14 PM: Character REIN RAUS added to 1999's account.
+6:54:17 PM: 1999/REIN RAUS has began playing Chaos Engine.
+7:00:39 PM: 1999 has logged in from 127.0.0.1.
+7:00:41 PM: 1999/REIN RAUS has began playing Chaos Engine.
+7:51:16 PM: 1999 has logged in from 127.0.0.1.
+7:51:20 PM: 1999/REIN RAUS has began playing Chaos Engine.
+3:29:42 PM: 1999 has logged in from 127.0.0.1.
+3:31:36 PM: 1999 has logged in from 127.0.0.1.
+3:31:38 PM: 1999/REIN RAUS has began playing Chaos Engine.
+12:46:58 PM: 1999 has logged in from 127.0.0.1.
+12:47:56 PM: 1999 has logged in from 127.0.0.1.
+12:47:59 PM: Character deleted on 1999's account.
+12:48:02 PM: 1999/REIN RAUS has began playing Chaos Engine.
+5:03:16 PM: 1999 has logged in from 127.0.0.1.
+5:03:19 PM: 1999/REIN RAUS has began playing Chaos Engine.
+5:05:20 PM: 1999 has logged in from 127.0.0.1.
+5:05:22 PM: 1999/REIN RAUS has began playing Chaos Engine.
+5:17:53 PM: 1999 has logged in from 127.0.0.1.
+5:17:56 PM: 1999/REIN RAUS has began playing Chaos Engine.
+6:04:50 PM: 1999 has logged in from 127.0.0.1.
+6:04:56 PM: 1999/REIN RAUS has began playing Chaos Engine.
+3:32:04 PM: 1999 has logged in from 127.0.0.1.
+3:32:07 PM: 1999/REIN RAUS has began playing Chaos Engine.
+3:35:33 PM: 1999 has logged in from 127.0.0.1.
+3:35:37 PM: 1999/REIN RAUS has began playing Chaos Engine.
+3:49:21 PM: 1999 has logged in from 127.0.0.1.
+3:49:41 PM: 1999/REIN RAUS has began playing Chaos Engine.
+3:50:50 PM: 1999 has logged in from 127.0.0.1.
+3:50:53 PM: 1999/REIN RAUS has began playing Chaos Engine.
+4:04:23 PM: 1999 has logged in from 127.0.0.1.
+4:04:33 PM: 1999/REIN RAUS has began playing Chaos Engine.
+1:57:46 PM: 1999 has logged in from 127.0.0.1.
+1:57:50 PM: 1999/REIN RAUS has began playing Chaos Engine.
+12:21:36 AM: 1999 has logged in from 127.0.0.1.
+12:21:42 AM: 1999/REIN RAUS has began playing Chaos Engine.
+1:55:13 PM: 1999 has logged in from 127.0.0.1.
+1:55:15 PM: 1999/REIN RAUS has began playing Chaos Engine.
+1:55:50 PM: 1999 has logged in from 127.0.0.1.
+1:55:51 PM: 1999/REIN RAUS has began playing Chaos Engine.
+1:55:57 PM: 1999 has logged in from 127.0.0.1.
+1:56:04 PM: Character 222 added to 1999's account.
+1:56:05 PM: 1999/REIN RAUS has began playing Chaos Engine.
+1:56:40 PM: 1999 has logged in from 127.0.0.1.
+1:56:41 PM: 1999/222 has began playing Chaos Engine.
+1:58:11 PM: 1999 has logged in from 127.0.0.1.
+1:58:12 PM: 1999/222 has began playing Chaos Engine.
+2:01:41 PM: 1999 has logged in from 127.0.0.1.
+2:01:43 PM: 1999/222 has began playing Chaos Engine.
+2:02:10 PM: 1999 has logged in from 127.0.0.1.
+2:02:12 PM: 1999/222 has began playing Chaos Engine.
+2:10:48 PM: 1999 has logged in from 127.0.0.1.
+2:10:53 PM: 1999/222 has began playing Chaos Engine.
+2:31:24 PM: 1999 has logged in from 127.0.0.1.
+2:31:28 PM: Character deleted on 1999's account.
+2:31:30 PM: Character deleted on 1999's account.
+2:31:54 PM: Character Xaden added to 1999's account.
+2:31:59 PM: 1999/Xaden has began playing Chaos Engine.
+2:39:48 PM: 1999 has logged in from 127.0.0.1.
+2:39:51 PM: 1999/Xaden has began playing Chaos Engine.
+2:47:27 PM: 1999 has logged in from 127.0.0.1.
+2:47:30 PM: 1999/Xaden has began playing Chaos Engine.
+2:48:56 PM: 1999 has logged in from 127.0.0.1.
+2:48:58 PM: 1999/Xaden has began playing Chaos Engine.
+2:49:46 PM: 1999 has logged in from 127.0.0.1.
+2:49:48 PM: 1999/Xaden has began playing Chaos Engine.
+2:55:22 PM: 1999 has logged in from 127.0.0.1.
+2:55:25 PM: 1999/Xaden has began playing Chaos Engine.
+3:01:36 PM: 1999 has logged in from 127.0.0.1.
+3:01:39 PM: 1999/Xaden has began playing Chaos Engine.
+3:13:59 PM: 1999 has logged in from 127.0.0.1.
+3:14:02 PM: 1999/Xaden has began playing Chaos Engine.
+3:16:12 PM: 1999 has logged in from 127.0.0.1.
+3:16:15 PM: 1999/Xaden has began playing Chaos Engine.
+3:19:59 PM: 1999 has logged in from 127.0.0.1.
+3:20:02 PM: 1999/Xaden has began playing Chaos Engine.
+3:41:49 PM: 1999 has logged in from 127.0.0.1.
+3:41:51 PM: 1999/Xaden has began playing Chaos Engine.
+3:44:04 PM: 1999 has logged in from 127.0.0.1.
+3:44:06 PM: 1999/Xaden has began playing Chaos Engine.
+3:51:03 PM: 1999 has logged in from 127.0.0.1.
+3:51:05 PM: 1999/Xaden has began playing Chaos Engine.
+3:51:44 PM: 1999 has logged in from 127.0.0.1.
+3:51:46 PM: 1999/Xaden has began playing Chaos Engine.
+4:08:59 PM: 1999 has logged in from 127.0.0.1.
+4:09:05 PM: 1999/Xaden has began playing Chaos Engine.
+4:15:25 PM: 1999 has logged in from 127.0.0.1.
+4:15:28 PM: 1999/Xaden has began playing Chaos Engine.
+4:52:04 PM: 1999 has logged in from 127.0.0.1.
+4:52:07 PM: 1999/Xaden has began playing Chaos Engine.
+5:45:55 PM: 1999 has logged in from 127.0.0.1.
+5:45:58 PM: 1999/Xaden has began playing Chaos Engine.
+5:03:20 PM: 1999 has logged in from 127.0.0.1.
+4:01:01 PM: 1999 has logged in from 127.0.0.1.
+4:01:04 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+4:01:52 PM: 1999 has logged in from 127.0.0.1.
+4:01:53 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+5:17:42 PM: 1999 has logged in from 127.0.0.1.
+5:17:44 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+5:40:46 PM: 1999 has logged in from 127.0.0.1.
+5:40:48 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+5:41:58 PM: 1999 has logged in from 127.0.0.1.
+5:42:00 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+5:44:01 PM: 1999 has logged in from 127.0.0.1.
+5:44:03 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+7:15:23 PM: 1999 has logged in from 127.0.0.1.
+7:15:24 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+7:49:23 PM: 1999 has logged in from 127.0.0.1.
+7:49:25 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:00:01 PM: 1999 has logged in from 127.0.0.1.
+8:00:02 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:02:51 PM: 1999 has logged in from 127.0.0.1.
+8:02:52 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:03:33 PM: 1999 has logged in from 127.0.0.1.
+8:03:53 PM: 1999 has logged in from 127.0.0.1.
+8:03:54 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:03:58 PM: 1999 has logged in from 127.0.0.1.
+8:04:04 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:04:16 PM: 1999 has logged in from 127.0.0.1.
+8:04:17 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:04:22 PM: 1999 has logged in from 127.0.0.1.
+8:04:24 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:36:52 PM: 1999 has logged in from 127.0.0.1.
+8:36:53 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:37:24 PM: 1999 has logged in from 127.0.0.1.
+8:42:27 PM: 1999 has logged in from 127.0.0.1.
+8:42:29 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:49:44 PM: 1999 has logged in from 127.0.0.1.
+8:49:47 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+7:57:59 PM: 1999 has logged in from 127.0.0.1.
+7:58:02 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+1:07:40 AM: 1999 has logged in from 127.0.0.1.
+1:07:42 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+9:31:34 AM: Account lost has been created.
+9:34:41 AM: 1999 has logged in from 127.0.0.1.
+9:34:42 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+9:37:00 AM: 1999 has logged in from 127.0.0.1.
+9:37:01 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+9:38:01 AM: 1999 has logged in from 127.0.0.1.
+9:38:03 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+11:25:52 AM: 1999 has logged in from 127.0.0.1.
+11:25:53 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+11:48:35 AM: 1999 has logged in from 127.0.0.1.
+11:48:36 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+10:02:13 AM: 1999 has logged in from 127.0.0.1.
+                                                               10:05:45 AM: 1999 has logged in from 127.0.0.1.
+10:05:46 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+10:08:55 AM: 1999 has logged in from 127.0.0.1.
+10:08:56 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+10:19:22 AM: 1999 has logged in from 127.0.0.1.
+10:19:23 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+10:39:39 AM: 1999 has logged in from 127.0.0.1.
+10:39:45 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+10:42:22 AM: 1999 has logged in from 127.0.0.1.
+10:42:30 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+10:42:45 AM: 1999 has logged in from 127.0.0.1.
+10:42:49 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+11:00:42 AM: 1999 has logged in from 127.0.0.1.
+11:00:44 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+11:04:49 AM: 1999 has logged in from 127.0.0.1.
+11:04:50 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+11:32:10 AM: 1999 has logged in from 127.0.0.1.
+11:32:11 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:11:55 PM: 1999 has logged in from 127.0.0.1.
+12:11:56 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:13:53 PM: 1999 has logged in from 127.0.0.1.
+12:13:54 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:16:41 PM: 1999 has logged in from 127.0.0.1.
+12:16:42 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:21:03 PM: 1999 has logged in from 127.0.0.1.
+12:29:56 PM: 1999 has logged in from 127.0.0.1.
+12:31:03 PM: 1999 has logged in from 127.0.0.1.
+12:31:09 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:31:44 PM: 1999 has logged in from 127.0.0.1.
+12:31:50 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:36:45 PM: 1999 has logged in from 127.0.0.1.
+12:40:39 PM: 1999 has logged in from 127.0.0.1.
+12:40:46 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:41:31 PM: 1999 has logged in from 127.0.0.1.
+12:41:37 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:42:08 PM: 1999 has logged in from 127.0.0.1.
+12:42:12 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:44:59 PM: 1999 has logged in from 127.0.0.1.
+12:47:28 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:47:44 PM: 1999 has logged in from 127.0.0.1.
+12:50:12 PM: 1999 has logged in from 127.0.0.1.
+12:08:13 PM: 1999 has logged in from 127.0.0.1.
+12:08:15 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:19:39 PM: 1999 has logged in from 127.0.0.1.
+12:31:02 PM: 1999 has logged in from 127.0.0.1.
+12:37:08 PM: 1999 has logged in from 127.0.0.1.
+12:44:14 PM: 1999 has logged in from 127.0.0.1.
+12:44:15 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:46:51 PM: 1999 has logged in from 127.0.0.1.
+12:54:32 PM: 1999 has logged in from 127.0.0.1.
+12:54:33 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:56:52 PM: 1999 has logged in from 127.0.0.1.
+12:56:53 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+12:59:29 PM: 1999 has logged in from 127.0.0.1.
+12:59:31 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+1:02:42 PM: 1999 has logged in from 127.0.0.1.
+1:02:46 PM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+8:56:17 AM: 1999 has logged in from 127.0.0.1.
+8:56:20 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+9:17:12 AM: 1999 has logged in from 127.0.0.1.
+9:17:14 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+9:22:30 AM: 1999 has logged in from 127.0.0.1.
+9:22:32 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+11:26:14 AM: 1999 has logged in from 127.0.0.1.
+11:26:15 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+11:30:43 AM: 1999 has logged in from 127.0.0.1.
+11:30:44 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+11:31:18 AM: 1999 has logged in from 127.0.0.1.
+11:31:19 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.
+11:35:59 AM: 1999 has logged in from 127.0.0.1.
+11:36:00 AM: 1999/Xaden has began playing Chaos Engine 1.4.9.

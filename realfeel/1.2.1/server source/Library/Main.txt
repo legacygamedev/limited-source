@@ -1,0 +1,133 @@
+[DATA]
+Enabled=True
+Author=SMChronos
+Description=Default RealFeel Library.
+
+'########################################
+'###  Dual Solace Code Text Document  ###
+'############  Version 1.0.0  ###########
+'########################################
+
+'##################################
+'########### Color List ###########
+'##################################
+'This is a list of the current colors
+'You can use the number or name when setting the color
+
+'Black = 0
+'Blue = 1
+'Green = 2
+'Cyan = 3
+'Red = 4
+'Magenta = 5
+'Brown = 6
+'Grey = 7
+'DarkGrey = 8
+'BrightBlue = 9
+'BrightGreen = 10
+'BrightCyan = 11
+'BrightRed = 12
+'Pink = 13
+'White = 15
+'##################################
+
+'##################################
+'###########  Join game  ##########
+'##################################
+Sub JoinGame(Index)
+Dim GAME_NAME
+GAME_NAME = "Dual Solace"
+
+    ' Send them welcome
+    Call PlayerMsg(Index, "Welcome to " & GAME_NAME & "!", BrightBlue)
+    Call PlayerMsg(Index, "Type /help for help on commands.  Use arrow keys to move, hold down shift to run, and use ctrl to attack.", Cyan)
+
+    ' Send them the MOTD
+    Call RunMOTD(Index)
+    
+    ' Send the player list
+    Call SendPlayerList(Index)
+End Sub
+'##################################
+
+'##################################
+'##########  Leave game  ##########
+'##################################
+Sub LeaveGame(Index)
+Dim GAME_NAME
+GAME_NAME = "Dual Solace"
+
+       ' Send a global message that he/she left
+       If GetPlayerAccess(Index) <= 1 Then
+           Call GlobalMsg(GetPlayerName(Index) & " has left " & GAME_NAME & "!", JoinLeftColor)
+       Else
+           Call GlobalMsg(GetPlayerName(Index) & " has left " & GAME_NAME & "!", White)
+       End If
+        
+End Sub
+'##################################
+
+'##################################
+'###########  Join map  ###########
+'##################################
+Sub JoinMap(Index)
+'Enter something...
+End Sub
+'##################################
+
+'##################################
+'##########  Leave map  ###########
+'##################################
+Sub LeaveMap(Index)
+'Enter something...
+End Sub
+'##################################
+
+'##################################
+'#########  Player OnTile  ########
+'##################################
+Sub OnTile(Index)
+'Enter something...
+End sub
+'##################################
+
+'##################################
+'########  Player Level Up  #######
+'##################################
+Sub PlayerLevelUp(Index)
+Dim i
+	Call SetPlayerLevel(Index, GetPlayerLevel(Index) + 1)
+                    
+        ' Get the amount of skill points to add
+        i = Int(GetPlayerLevel(Index) / 10)
+        If i < 1 Then i = 1
+        If i > 3 Then i = 3
+            
+        Call SetPlayerPOINTS(Index, GetPlayerPOINTS(Index) + i)
+        Call SetPlayerExp(Index, 0)
+        Call GlobalMsg(GetPlayerName(Index) & " has gained a level!", Brown)
+        Call PlayerMsg(Index, "You have gained a level!  You now have " & GetPlayerPOINTS(Index) & " stat points to distribute.", BrightBlue)
+End Sub
+'##################################
+
+'##################################
+'###########  Npc Death  ##########
+'##################################
+Sub NpcDeath(Attacker, Npc, MapNpc, MapNum, IsHuman)
+'Attacker = The player that killed the NPC
+'Npc = The NPC's number in the Npc Editor List
+'MapNpc = The NPC's number from 1-8 in the map placement list
+'MapNum = The map number
+'IsHuman = a true or false value depending on if the killer was a person playing
+End Sub
+'##################################
+
+'##################################
+'###########  Spell Cast  #########
+'##################################
+Sub SpellCast(Index, Target, SpellNum)
+'Index = Player casting spell
+'Target = Player hit with spell
+'SpellNum = Spell Number
+End Sub
+'##################################

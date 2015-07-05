@@ -1,0 +1,16 @@
+[History]
+B0=Server/modGameLogic/CanPetAttackNpc
+B1=Server/modGameLogic/CastSpell
+B2=Server/modGeneral/InitServer
+B3=Server/modServerTCP/HandleData
+B4=Server/modCodeEdit/GetEditColors
+B5=Server/frmEditor/mnuSave_Click
+B6=Server/frmEditor/RT_KeyUp
+B7=Server/modGameLogic/CanAttackNpcWithArrow
+B8=Server/modTypes/ClearSpeech
+B9=Server/modGameLogic/AddToGrid
+B10=Server/modDatabase/AddChar
+B11=Server/clsRC4/EnDeCryptSingle
+B12=Server/clsRC4/Initialize
+B13=Server/clsRC4/EncryptString
+B14=Server/clsRC4/EncryptFile

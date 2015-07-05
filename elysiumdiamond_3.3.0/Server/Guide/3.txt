@@ -1,0 +1,28 @@
+C. Game Controls
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Keyboard controls ::
+
+Arrow Keys - The basis of moving your character. It's really simple. If you want to move to the right, you hit the right arrow key. Movement in Elysium is limited to tiles and you can only move one tile in one direction at a time.
+
+Enter - Used to pick up items on the ground and to talk (when you have typed text in the speech box). Also used to read signs and notices.
+
+Shift - Holding down shift enables your character to run. As of right now, your stamina is unlimited (you can run forever).
+
+Ctrl - Pressing this key right next to an enemy will cause you to try to attack it. However, if the NPC is friendly, it will open up the speech window if they have something to say.
+
+Insert - You can double click on a spell in the spell casting menu to memorize it. Hitting the insert button will cause you to cast the memorized spell.
+
+F1 - This button brings the admin panel for admins only. This is a great way to list all the commands and you won't need to memorize the commands.
+
+F4 - This will open the Guild Create form.
+
+F5 - F5 brings up the Guild Panel, this is where you can add players to you guild.
+
+F11 - Hitting this button will take a picture of the whole game screen and save the picture in the client folder.
+
+F12 - This button does the same as F11, but instead of the whole game client, it only takes a picture of the map.
+
+End - A fun button to make your character turn around one direction clockwise.

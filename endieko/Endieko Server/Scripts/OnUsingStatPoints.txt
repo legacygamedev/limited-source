@@ -1,0 +1,36 @@
+Sub UsingStatPoints(index, PointType)
+Select Case PointType
+    Case 0
+	'Gives you a set max
+        If GetPlayerSTR(index) + 1 > 1000 Then
+           Call PlayerMsg(index, "You have maxed your strength!", 12)
+           Exit Sub
+        End If
+        Call SetPlayerSTR(index, GetPlayerSTR(index) + 1)
+        Call PlayerMsg(index, "You have gained more strength!", 15)
+    Case 1
+	'Gives you a set max
+        If GetPlayerDEF(index) + 1 > 1000 Then
+           Call PlayerMsg(index, "You have maxed your defence!", 12)
+           Exit Sub
+        End If
+        Call SetPlayerDEF(index, GetPlayerDEF(index) + 1)
+        Call PlayerMsg(index, "You have gained more defense!", 15)
+    Case 2
+	'Gives you a set max
+        If GetPlayerMAGI(index) + 1 > 1000 Then
+           Call PlayerMsg(index, "You have maxed your magic!", 12)
+           Exit Sub
+        End If
+        Call SetPlayerMAGI(index, GetPlayerMAGI(index) + 1)
+        Call PlayerMsg(index, "You have gained more magic abilities!", 15)
+    Case 3
+	'Gives you a set max
+        If GetPlayerSPEED(index) + 1 > 1000 Then
+           Call PlayerMsg(index, "You have maxed your speed!", 12)
+           Exit Sub
+        End If
+        Call SetPlayerSPEED(index, GetPlayerSPEED(index) + 1)
+        Call PlayerMsg(index, "You have gained more speed!", 15)
+End Select
+End Sub

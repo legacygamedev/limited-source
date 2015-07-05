@@ -1,0 +1,14 @@
+frmServer = 265, 108, 995, 694, , 22, 22, 930, 610, C
+modDatabase = 278, 81, 1001, 655, 
+modTypes = 57, 180, 869, 711, 
+modGameLogic = 110, 110, 833, 684, 
+modGeneral = 14, 227, 737, 801, Z
+modText = 22, 22, 834, 553, 
+modServerTCP = 72, 245, 884, 772, 
+frmLoad = 242, 242, 961, 816, C, -78, 99, 641, 673, C
+modSysTray = 250, 250, 753, 826, 
+modConstants = 22, 29, 586, 515, 
+modDeclares = 0, 0, 564, 486, 
+modGlobals = 154, 203, 718, 689, 
+modHandleData = 44, 58, 608, 544, 
+ModINI = 88, 116, 741, 544, 

@@ -1,0 +1,9 @@
+If you want your server to be popular continue reading this.
+
+The first thing you need to make sure of is the server availability! You need a good server host that is dedicated to keeping it up as long as possible, 24/7 if possible! If you lack hosting then you wont make it very far with your game.
+
+Another thing to ensure is the server IP. If you have a host in which there IP Address changes every so often that is not good at all. Try to get a host with an IP that doesnt change! Unless you have an Auto Updater to update the IP to the clients everytime it changes!
+
+Something to consider is making sure people can connect to the server. If your host is using a router ensure that the necessary ports are open for people to connect.
+
+A Good game name. From what I hear, stay away from using 'Online' in your game name. Try choosing something original and out there. By out there I mean like a name that people will want to keep coming back for more!

@@ -1,0 +1,9 @@
+[History]
+1=#P0#=mb	#P1#=mnuSave_Click	#P2#=Editor/frmEditor/mnuSave_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20091212124216	#P7#=0	#P8#=3	.
+2=#P0#=mb	#P1#=EditorSetVals	#P2#=Editor/frmEditor/EditorSetVals	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20091212124052	#P7#=0	#P8#=1	.
+3=#P0#=mb	#P1#=mnuLoad_Click	#P2#=Editor/frmEditor/mnuLoad_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20091212124040	#P7#=0	#P8#=4	.
+4=#P0#=mb	#P1#=Form_Load	#P2#=Editor/frmEditor/Form_Load	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20091212123024	#P7#=0	#P8#=6	.
+5=#P0#=mb	#P1#=mnuPaste_Click	#P2#=Editor/frmEditor/mnuPaste_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20090913194831	#P7#=0	#P8#=2	.
+6=#P0#=mb	#P1#=ResetAllEditVals	#P2#=Editor/modCodeEdit/ResetAllEditVals	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20090831162642	#P7#=0	#P8#=67	.
+7=#P0#=mb	#P1#=FileExists	#P2#=Editor/modGeneral/FileExists	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20090831162403	#P7#=0	#P8#=10	.
+8=#P0#=mb	#P1#=RT_CodeList	#P2#=Editor/frmEditor/RT_CodeList	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20090831161508	#P7#=0	#P8#=1	.

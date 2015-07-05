@@ -1,0 +1,10 @@
+
+Scripts reloaded.
+Received connection from 127.0.0.1.
+Demo has logged in from 127.0.0.1.
+Demo/Demo has began playing Eclipse.
+Scripts reloaded.
+Demo has disconnected from Eclipse.
+Connection from 127.0.0.1 has been terminated.
+Chat Logs Have Been Saved!
+Chat Logs Have Been Saved!

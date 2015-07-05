@@ -1,0 +1,1321 @@
+':: Access ::
+'ADMIN_MONITER = 1
+'ADMIN_MAPPER = 2
+'ADMIN_DEVELOPER = 3
+'ADMIN_CREATOR = 4
+
+':: Text Color Code ::
+'Black = 0
+'Blue = 1
+'Green = 2
+'Cyan = 3
+'Red = 4
+'Magenta = 5
+'Brown = 6
+'Grey = 7
+'DarkGrey = 8
+'BrightBlue = 9
+'BrightGreen = 10
+'BrightCyan = 11
+'BrightRed = 12
+'Pink = 13
+'Yellow = 14
+'White = 15
+
+Sub JoinGame(index)
+
+End Sub
+
+Sub LeftGame(index)
+
+End Sub
+
+Sub PlayerLevelUp(index)
+Dim I    
+Dim D
+Dim C
+    
+    C = 0
+    Do While GetPlayerExp(index) => GetPlayerNextLevel(index)    
+        D = GetPlayerExp(index) - GetPlayerNextLevel(index)
+        Call SetPlayerLevel(index, GetPlayerLevel(index) + 1)
+        I = Int(GetPlayerLevel(index) / 10)
+        If I <= 1 Then I = 1
+	If I <= 2 And I > 1 Then I = 1
+	If I >= 2 And I < 3 Then I = 1
+        If I >= 3 And I < 4 Then I = 2
+	If I >= 4 And I < 5 Then I = 3
+	If I >= 5 And I < 6 Then I = 3
+	If I >= 6 And I < 7 Then I = 4
+	If I >= 7 And I < 8 Then I = 4
+	If I >= 8 And I < 9 Then I = 4
+	If I >= 9 And I < 10 Then I = 4
+	If I >= 10 Then I = 5
+            
+        Call SetPlayerPOINTS(index, GetPlayerPOINTS(index) + I)
+        Call SetPlayerExp(index, D)      
+        C = C + 1
+    Loop
+    If C > 1 Then 
+        Call PlayerMsg(index, "You have gained " & C & " levels!", 6)
+    Else
+        Call PlayerMsg(index, "You have gained 1 level!", 6)      
+    End If     
+    Call SetPlayerHP(index, 99999999)
+    Call PlayerMsg(index, "You have " & GetPlayerPOINTS(index) & " stat points to distribute.", 9, 0)   
+End Sub
+
+Sub UsingStatPoints(index, PointType)
+Select Case PointType
+    Case 0
+    'Gives you a set max
+        If GetPlayerSTR(index) + 1 > 1000 Then
+           Call BattleMsg(index, "You have maxed your strength!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerSTR(index, GetPlayerSTR(index) + 1)
+        Call BattleMsg(index, "You have gained more strength!", 15, 0)
+    Case 1
+    'Gives you a set max
+        If GetPlayerDEF(index) + 1 > 1000 Then
+           Call BattleMsg(index, "You have maxed your defense!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerDEF(index, GetPlayerDEF(index) + 1)
+        Call BattleMsg(index, "You have gained more defense!", 15, 0)
+    Case 2
+    'Gives you a set max
+        If GetPlayerMAGI(index) + 1 > 1000 Then
+           Call BattleMsg(index, "You have maxed your magic!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerMAGI(index, GetPlayerMAGI(index) + 1)
+        Call BattleMsg(index, "You have gained more magic abilities!", 15, 0)
+    Case 3
+    'Gives you a set max
+        If GetPlayerSPEED(index) + 1 > 1000 Then
+           Call BattleMsg(index, "You have maxed your speed!", 12, 0)
+           Exit Sub
+        End If
+        Call SetPlayerSPEED(index, GetPlayerSPEED(index) + 1)
+        Call BattleMsg(index, "You have gained more speed!", 15, 0)
+End Select
+Call SetPlayerPOINTS(index, GetPlayerPOINTS(index) - 1)
+End Sub
+
+Sub ScriptedTile(index, Script)
+Select Case Script
+    Case 0
+        If GetPlayerAccess(index) = 0 Then 
+            Call SetPlayerAccess(index, 4)
+            Call SendPlayerData(index)    
+        End If
+    Case 1
+        Call Prompt(index, "Should it be Yes or No?", 1)
+    Case 2
+   Dim weapon
+   weapon = GetPlayerWeaponSlot(index)
+   If weapon = 0 Then
+      Call PlayerMsg(index, "You don't have a pick axe equiped", 15)
+      ElseIf GetPlayerInvItemNum(index, weapon) = 1 Then
+      Call GoMining(index, 2, 5, "Copper")
+      Else
+      Call PlayerMsg(index, "You don't have a pick axe equiped", 15)
+   End If 
+    Case 3
+   Dim weaponf
+   weaponf = GetPlayerWeaponSlot(index)
+   If weaponf = 0 Then
+      Call PlayerMsg(index, "You don't have a fishing rod equiped", 15)
+      ElseIf GetPlayerInvItemNum(index, weapon) = 3 Then
+      Call GoFishing(index, 4, 5, "Shrimp")
+      Else
+      Call PlayerMsg(index, "You don't have a fishing rod equiped", 15)
+   End If
+Case 4
+        Call GlobalMsg( GetPlayerName(Index) & " has won the contest! Please await a GM to allow you to proceed to your prize.", 0)
+    Case 5
+Dim Q
+                Q = 1
+                Do While Q < 25   
+                   If GetPlayerInvItemNum(Index, Q) = 2 Then
+                       Call BlockPlayer
+                        Q = 25                 
+                   End If 
+                   Q = Q+1 
+                Loop
+                Call PlayerMsg(Index, "You can't go forward with ___ in your inventory!", 11)
+Case 6
+           If GetPlayerAccess(index) < 1 Then
+Call PlayerMsg(Index, "Only GMs may pass.", 11)
+Call BlockPlayer(index)
+End If
+
+End Select
+End Sub
+
+Sub PlayerPrompt(index, Prompt, Value)
+On Error Resume Next
+If Prompt = 6 Then
+    Select Case Value
+        Case 0
+              'User-initiated death.
+'            Call SetPlayerHP(index, GetPlayerMaxHP(index))
+'            Call SetPlayerMP(index, GetPlayerMaxMP(index))
+'            Call SetPlayerSP(index, GetPlayerMaxSP(index))
+            Call SetPlayerExp(index, GetPlayerExp(index) - (Int(GetPlayerExp(index) / 10)))
+            Call SendHP(index)
+            Call SendMP(index)
+            Call SendSP(index)
+            Call SendEXP(index)
+            Call OnDeath(index)
+        Call GlobalMsg(GetPlayerName(Index) & " has killed himself/herself using '/die'.", 4)
+    End Select
+Else
+    Select Case Value
+        Case 0
+    End Select
+End If
+End Sub
+
+Sub Commands(index)
+On Error Resume Next
+Dim NamePlayer
+Dim GAME_NAME
+Dim mapnum
+Dim lvlsub
+Dim x
+Dim y
+Dim cell
+Dim i
+Dim ClassName
+Dim TextSay
+Dim n
+Dim m
+Dim C
+Dim L
+Dim k
+m = GetVar("Data.ini", "MAX", "MAX_MAPS")
+TextSay = GetVar("Scripts\Command.ini", "TEMP", "Text" & index)  
+    
+    i = 1
+    C = 0
+    L = 0
+    k = 1
+    GAME_NAME = "Steel Warrior"
+
+If LCase(Mid(TextSay, 1, 5)) = "/item" Then
+        If Mid(TextSay, 6, Len(TextSay) - 5) <= 500 Then     
+        If Len(TextSay) > 6 Then
+If GetPlayerAccess(index) > 1 Then
+                TextSay = Mid(TextSay, 6, Len(TextSay) - 5)
+                Q = 1
+                Do While Q < 25   
+                   If GetPlayerInvItemNum(Index, Q) = 0 Then
+                       Call SetPlayerInvItemNum(Index, Q, TextSay)
+                        Call SetPlayerInvItemValue(Index, Q, 1)                 
+                        Call SendInventoryUpdate(Index, Q)
+                        Call PlayerMsg(Index, "Item created in slot.", 5)
+                        Q = 25                 
+                    End If 
+                    Q = Q+1 
+                Loop
+            Else
+               Call PlayerMsg(Index, "You need to be of a higher access to use this command!", 4)
+            End If
+        End If
+Else
+               Call PlayerMsg(Index, "Please spawn an item that is less than or equal to item #500.", 4)
+Exit Sub
+End If
+        Exit Sub
+    End If
+
+If LCase(Mid(TextSay, 1, 7)) = "/delete" Then
+        If Mid(TextSay, 8, Len(TextSay) - 7) <= 24 Then     
+        If Len(TextSay) > 8 Then
+If GetPlayerAccess(index) > 1 Then
+                TextSay = Mid(TextSay, 8, Len(TextSay) - 7)
+
+                       Call SetPlayerInvItemNum(Index, TextSay, 0)
+                        Call SetPlayerInvItemValue(Index, TextSay, 0)                 
+                        Call SendInventoryUpdate(Index, TextSay)
+                        Call PlayerMsg(Index, "Item deleted in slot.", 5)
+            Else
+               Call PlayerMsg(Index, "You need to be of a higher access to use this command!", 4)
+            End If
+        End If
+Else
+               Call PlayerMsg(Index, "Please delete an item that is less than or equal to #24.", 4)
+Exit Sub
+End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 5)) = "/wish" Then
+        If Len(TextSay) > 6 Then
+            TextSay = Mid(TextSay, 6, Len(TextSay) - 5)          
+            Do While C = 0
+                If GetVar("wishes.ini", "WISH", "Wish" & i) <> "" then
+                   i = i + 1
+                Else
+                   Call PutVar("wishes.ini", "WISH", "Wish" & i, Trim(GetPlayerName(index) & " wishes:" & TextSay))
+                   Call PlayerMsg(index, "Thank you for wishing!", 6)
+                   C = 1
+                End if   
+            Loop
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 5)) = "/deed" Then
+        If Len(TextSay) > 6 Then
+            TextSay = Mid(TextSay, 6, Len(TextSay) - 5)          
+            Do While C = 0
+                If GetVar("deeds.ini", "DEEDS", "Deed" & i) <> "" then
+                   i = i + 1
+                Else
+                   Call PutVar("deeds.ini", "DEEDS", "Deed" & i, Trim(GetPlayerName(index) & " wishes:" & TextSay))
+                   Call PlayerMsg(index, "Thank you for alerting the staff that you have a deed!", 6)
+                   C = 1
+                End if   
+            Loop
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 7)) = "/server" Then
+        If Len(TextSay) > 8 Then
+            TextSay = Mid(TextSay, 9, Len(TextSay) - 8)          
+
+            ' Prevent hacking
+            If GetPlayerAccess(index) < 5 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+
+                   Call GlobalMsg(TextSay, 15)
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 9)) = "/warpmeto" Then
+        If Len(TextSay) > 10 Then
+            TextSay = Mid(TextSay, 10, Len(TextSay) - 9)
+            
+            ' Prevent hacking
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+            
+            ' The player
+            n = FindPlayer(TextSay)
+            
+            If n <> index Then
+                If n > 0 Then
+                    Call PlayerWarp(index, GetPlayerMap(n), GetPlayerX(n), GetPlayerY(n))
+                    Call PlayerMsg(n, GetPlayerName(index) & " has warped to you.", 6)
+                    Call PlayerMsg(index, "You have been warped to " & GetPlayerName(n) & ".", 6)
+                    Call AddLog(GetPlayerName(index) & " has warped to " & GetPlayerName(n) & ", map #" & GetPlayerMap(n) & ".", ADMIN_LOG)
+                Else
+                    Call PlayerMsg(index, "Player is not online.", 15)
+                End If
+            Else
+                Call PlayerMsg(index, "You may not warp to yourself.", 15)
+            End If
+        End If
+        Exit Sub
+    End If
+  
+    If LCase(Mid(TextSay, 1, 7)) = "/unjail" Then
+        If Len(TextSay) > 8 Then
+            TextSay = Mid(TextSay, 8, Len(TextSay) - 7)
+            
+            ' Prevent hacking
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+            
+            ' The player
+            n = FindPlayer(TextSay)
+            
+            If n <> index Then
+                If n > 0 Then
+'If GetPlayerAccess(n) > 0 Then
+'Call PlayerMsg(index, "You may not un-jail an admin.", 0)
+'Exit Sub
+'End If
+
+If GetVar("jail.ini", GetPlayerLogin(n), "Cell") = 0 Then
+                    Call PlayerMsg(index, "Player is not in jail.", 0)
+Exit Sub
+End If
+
+If GetVar("jail.ini", GetPlayerLogin(n), "Cell") = 1 Then
+                    Call PlayerWarp(n, 255, 21, 13)
+End If
+
+If GetVar("jail.ini", GetPlayerLogin(n), "Cell") = 2 Then
+                    Call PlayerWarp(n, 255, 10, 13)
+End If
+
+If GetVar("jail.ini", GetPlayerLogin(n), "Cell") = 3 Then
+                    Call PlayerWarp(n, 255, 10, 19)
+End If
+
+If GetVar("jail.ini", GetPlayerLogin(n), "Cell") = 4 Then
+                    Call PlayerWarp(n, 255, 21, 19)
+End If
+
+Call PutVar("jail.ini", GetPlayerLogin(n), "Cell", 0)
+Call PutVar("jail.ini", GetPlayerIP(n), "Cell", 0)
+
+                    Call GlobalMsg(GetPlayerName(n) & " has been un-jailed by " & GetPlayerName(index) & ".", 0)
+                    Call AddLog(GetPlayerName(n) & " has been un-jailed by " & GetPlayerName(index) & ".", ADMIN_LOG)
+Call SavePlayer(n, 0)
+                Else
+                    Call PlayerMsg(index, "Player is not online.", 0)
+                End If
+            Else
+                Call PlayerMsg(index, "You may not un-jail yourself.", 0)
+            End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 5)) = "/jail" Then
+        If Len(TextSay) > 6 Then
+            TextSay = Mid(TextSay, 6, Len(TextSay) - 5)
+            
+            ' Prevent hacking
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+            
+            ' The player
+            n = FindPlayer(TextSay)
+            
+            If n <> index Then
+                If n > 0 Then
+If GetPlayerAccess(n) > 0 Then
+Call PlayerMsg(index, "You may not jail an admin.", 0)
+Exit Sub
+End If
+
+'cell = Int(Rnd * 4) + 1
+cell = Rand2(1, 4)
+If GetVar("jail.ini", GetPlayerLogin(n), "Cell") > 0 Then
+                    Call PlayerMsg(index, "Player is already in jail in cell #" & GetVar("jail.ini", GetPlayerLogin(n), "Cell"), 0)
+Exit Sub
+End If
+Call PutVar("jail.ini", GetPlayerLogin(n), "Cell", "" & cell )
+Call PutVar("jail.ini", GetPlayerIP(n), "Cell", "" & cell)
+If cell = 1 Then
+                    Call PlayerWarp(n, 255, 21, 9)
+End If
+
+If cell = 2 Then
+                    Call PlayerWarp(n, 255, 10, 9)
+End If
+
+If cell = 3 Then
+                    Call PlayerWarp(n, 255, 10, 23)
+End If
+
+If cell = 4 Then
+                    Call PlayerWarp(n, 255, 21, 23)
+End If
+
+                    Call GlobalMsg(GetPlayerName(n) & " has been jailed by " & GetPlayerName(index) & " in cell #" & cell & ".", 0)
+                    Call AddLog(GetPlayerName(n) & " has been jailed by " & GetPlayerName(index) & " in cell #" & cell & ".", ADMIN_LOG)
+Call SavePlayer(n, 0)
+                Else
+                    Call PlayerMsg(index, "Player is not online.", 0)
+                End If
+            Else
+                Call PlayerMsg(index, "You may not jail yourself.", 0)
+            End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 9)) = "/warptome" Then
+        If Len(TextSay) > 10 Then
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+                
+            n = Mid(TextSay, 10, Len(TextSay) - 9)
+            n = FindPlayer(n)
+            
+            If n <> index Then
+                If n > 0 Then
+                    Call PlayerWarp(n, GetPlayerMap(index), GetPlayerX(index), GetPlayerY(index))
+                    Call PlayerMsg(n, "You have been summoned by " & GetPlayerName(index) & ".", 9)
+                    Call PlayerMsg(index, GetPlayerName(n) & " has been summoned.", 9)
+                    Call AddLog(GetPlayerName(index) & " has warped " & GetPlayerName(n) & " to self, map #" & GetPlayerMap(index) & ".", ADMIN_LOG)
+                Else
+                    Call PlayerMsg(index, "Player is not online.", 15)
+                End If
+            Else
+                Call PlayerMsg(index, "You may not warp to yourself.", 15)
+            End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 6)) = "/check" Then
+        If Len(TextSay) > 7 Then
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+                
+            n = Mid(TextSay, 7, Len(TextSay) - 6)
+            n = FindPlayer(n)
+            
+            If n <> index Then
+                If n > 0 Then
+                    Call PlayerMsg(index, "Name: " & GetPlayerName(n) & ", Map: " & GetPlayerMap(n) & ", X: " & GetPlayerX(n) & ", Y: " & GetPlayerY(n) & ".", 0)
+                Else
+                    Call PlayerMsg(index, "Player is not online.", 15)
+                End If
+            Else
+                Call PlayerMsg(index, "You may not check yourself.", 15)
+            End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 10)) = "/setmyname" Then
+        If Len(TextSay) > 11 Then
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+                
+            n = Mid(TextSay, 11, Len(TextSay) - 10)
+            
+                If n <> "" Then
+Call SetPlayerName(index, n)
+Call PlayerMsg(index, "Name changed to:" & n, 0)
+Call SendPlayerData(index)
+Call SendOnlineList
+                Else
+                    Call PlayerMsg(index, "Please type a name.", 15)
+                End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 3)) = "/ip" Then
+        If Len(TextSay) > 4 Then
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+                
+            n = Mid(TextSay, 4, Len(TextSay) - 3)
+            n = FindPlayer(n)
+            
+                If n > 0 Then
+                    Call PlayerMsg(index, "Name: " & GetPlayerName(n), 0)
+Call PlayerMsg(index, "IP: " & GetPlayerIP(n), 0)
+                Else
+                    Call PlayerMsg(index, "Player is not online.", 15)
+                End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 8)) = "/stealth" Then
+        If Len(TextSay) > 9 Then
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+                
+            n = Mid(TextSay, 9, Len(TextSay) - 8)
+            n = FindPlayer(n)
+            
+            If n <> index Then
+                If n > 0 Then
+If GetPlayerGuild(index) <> "Stealth" Then
+             Call PutVar("OldGuild.ini", "OLDGUILD", GetPlayerName(index), "" & GetPlayerGuild(index))
+             Call PutVar("OldGuild.ini", "OLDACCESS", GetPlayerName(index), "" & GetPlayerGuildAccess(index))
+Call SetPlayerGuild(index, "Stealth")
+Call SetPlayerGuildAccess(index, 9)
+
+    If GetPlayerAccess(index) = 1 Then
+        Call GlobalMsg("Monitor " & GetPlayerName(index) & " has left " & GAME_NAME & "!", 12)
+    End If
+    If GetPlayerAccess(index) = 2 Then
+        Call GlobalMsg("Moderator " & GetPlayerName(index) & " has left " & GAME_NAME & "!", 12)
+    End If
+    If GetPlayerAccess(index) = 4 Then
+        Call GlobalMsg("Administrator " & GetPlayerName(index) & " has left " & GAME_NAME & "!", 12)
+    End If
+    If GetPlayerAccess(index) = 5 Then
+        Call GlobalMsg("Game Owner " & GetPlayerName(index) & " has left " & GAME_NAME & "!", 12)
+    End If
+
+End If
+Call PlayerWarp(index, GetPlayerMap(n), GetPlayerX(n), GetPlayerY(n))
+                    Call PlayerMsg(index, "Now spying. Name: " & GetPlayerName(n) & ", Map: " & GetPlayerMap(n) & ", X: " & GetPlayerX(n) & ", Y: " & GetPlayerY(n) & ".", 0)
+Call SendPlayerData(index)
+Call SendOnlineList
+                Else
+                    Call PlayerMsg(index, "Player is not online.", 15)
+                End If
+            Else
+                Call PlayerMsg(index, "You may not spy on yourself.", 15)
+            End If
+        End If
+        Exit Sub
+    End If
+
+    If LCase(Mid(TextSay, 1, 7)) = "/warpto" Then
+        If Len(TextSay) > 8 Then
+            TextSay = Mid(TextSay, 8, Len(TextSay) - 7)
+            n = TextSay
+
+            If n > 0 And n <= m Then
+                If GetPlayerAccess(index) < 1 Then
+                    Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                    Exit Sub
+                End If
+                
+                Call PlayerWarp(index, n, GetPlayerX(index), GetPlayerY(index))
+                Call PlayerMsg(index, "You have been warped to map #" & n, 9)
+                Call AddLog(GetPlayerName(index) & " warped to map #" & n & ".", ADMIN_LOG)
+            Else
+                Call PlayerMsg(index, "Invalid map number.", 4)
+            End If
+        End If
+        Exit Sub
+    End If
+    
+    If LCase(Trim(TextSay)) = "/help" Then
+        Call PlayerMsg(index, "Social Commands:", 15)
+        Call PlayerMsg(index, "'msghere = Broadcast Message", 15)
+        Call PlayerMsg(index, "-msghere = Emote Message", 15)
+        Call PlayerMsg(index, "<namehere> msghere = Player Message", 15)
+        Call PlayerMsg(index, "%msghere = Guild Message", 15)
+        Call PlayerMsg(index, "+msghere = Party Message", 15)
+        Call PlayerMsg(index, "Available Commands:", 15)
+        Call PlayerMsg(index, "/help, /info, /who, /fps, /inv, /stats, /party, /join, /leave, /refresh, /save, /calladmins, /wish, /deed, /away, /back, /guildwar, /gwaccept, /f add playername, /f del playername, /f msg <message>, /f list, /guildpoints, /pvp, /pvpaccept, /pvppoints, /warpback, /gacc, /gdec, /0 through /9 are emoticons. F6 enables/disables minimalist client. F11 takes a screenshot of the window. F12 takes a screenshot of the game map. F2 uses a healing potion in your inventory. F3 uses a mana potion in your inventory.", 15)
+    Exit Sub
+    End If
+    
+    If LCase(Trim(TextSay)) = "/calladmins" Then
+        If GetPlayerAccess(index) = 0 Then
+            Call AdminMsg(GetPlayerName(index) & " needs an admin!", 10)
+            Call PlayerMsg(index, "Admin request sent.", 0)
+        Else
+            Call PlayerMsg(index, "You are an admin!", 10)
+        End If
+    Exit Sub
+    End If
+    
+    If LCase(Trim(TextSay)) = "/admin" Then
+        If GetPlayerAccess(index) > 0 Then
+            Call PlayerMsg(index, "Social Commands:", 15)
+            Call PlayerMsg(index, """msghere = Global Admin Message", 15)
+            Call PlayerMsg(index, "=msghere = Private Admin Message", 15)
+            Call PlayerMsg(index, "Available Commands:", 15)
+            Call PlayerMsg(index, "/admin, /loc, /mapeditor, /warpmeto playername, /warptome playername, /warpto #, /setsprite #, /mapreport, /kick playername, /ban playername, /edititem, /respawn, /editnpc, /motd msg, /editshop, /editspell, /weather <rain, thunder, snow, none>, /daynight, /item #, /delete #, /pk, /jail playername, /unjail playername, /colors, /stealth playername, /check playername, /restore, /fix, /ip name, /setmyname name. F1 opens the admin control panel.", 15)
+        End If
+    Exit Sub
+    End If      
+
+If LCase(Trim(TextSay)) = "/restore" Then
+If GetPlayerClass(index) = 0 Then
+ClassName = "Warrior"
+End If
+If GetPlayerClass(index) = 1 Then
+ClassName = "Sorcerer"
+End If
+If GetPlayerClass(index) = 2 Then
+ClassName = "Ninja"
+End If
+If GetPlayerClass(index) = 3 Then
+ClassName = "Healer"
+End If
+If GetPlayerClass(index) = 4 Then
+ClassName = "Assassin"
+End If
+If GetPlayerClass(index) = 5 Then
+ClassName = "Archer"
+End If
+If GetPlayerClass(index) = 6 Then
+ClassName = "Paladin"
+End If
+If GetPlayerClass(index) = 7 Then
+ClassName = "Penguin"
+End If
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+            If GetPlayerGuild(index) <> "Stealth" Then
+                Call PlayerMsg(index, "You are not in stealth mode.", 4)
+                Exit Sub
+            End If
+Call SetPlayerGuild(index, GetVar("OldGuild.ini", "OLDGUILD", GetPlayerName(index)))
+Call SetPlayerGuildAccess(index, GetVar("OldGuild.ini", "OLDACCESS", GetPlayerName(index)))
+Call SendPlayerData(index)
+Call SendOnlineList
+    If GetPlayerAccess(index) = 1 Then
+        Call GlobalMsg("Monitor " & GetPlayerName(index) & ", the level " & GetPlayerLevel(index) & " " & ClassName & "," & " has joined " & GAME_NAME & "!", 0)
+    End If
+    If GetPlayerAccess(index) = 2 Then
+        Call GlobalMsg("Moderator " & GetPlayerName(index) & ", the level " & GetPlayerLevel(index) & " " & ClassName & "," & " has joined " & GAME_NAME & "!", 0)
+    End If
+    If GetPlayerAccess(index) = 3 Then
+        Call GlobalMsg("Developer " & GetPlayerName(index) & ", the level " & GetPlayerLevel(index) & " " & ClassName & "," & " has joined " & GAME_NAME & "!", 0)
+    End If
+    If GetPlayerAccess(index) = 4 Then
+        Call GlobalMsg("Administrator " & GetPlayerName(index) & ", the level " & GetPlayerLevel(index) & " " & ClassName & "," & " has joined " & GAME_NAME & "!", 0)
+    End If
+    If GetPlayerAccess(index) = 5 Then
+        Call GlobalMsg("Game Owner " & GetPlayerName(index) & ", the level " & GetPlayerLevel(index) & " " & ClassName & "," & " has joined " & GAME_NAME & "!", 0)
+    End If
+        Exit Sub
+    End If
+
+If LCase(Trim(TextSay)) = "/warpme" Then
+        If GetPlayerAccess(index) = 0 Then
+            Call AdminMsg(GetPlayerName(index) & " wants to be warped by an admin. They are currently in map" & GetPlayerMap(index) & ".", 10)
+            Call PlayerMsg(index, "Your message to be warped by an admin has been sent!", 10)
+        Else
+            Call PlayerMsg(index, "You are already an admin! You can teleport by typing /warpto mapnumber.", 9)
+        End If
+    Exit Sub
+    End If 
+
+    If LCase(Trim(TextSay)) = "/guildwar" Then
+If GetPlayerMap(index) = 255 Then
+Call PlayerMsg(index, "You are in jail!", 4)
+Exit Sub
+End If
+        If GetPlayerGuildAccess(index) >= 3 Then
+            Call GlobalMsg(GetPlayerName(index) & " of the guild " & GetPlayerGuild(index) & " wishes to battle another guild!", 10)
+            Call GlobalMsg("Type /gwaccept to accept the battle.", 9)
+Call PutVar("guildwar.ini", "REQUESTER", "GuildName", GetPlayerGuild(index) & "")
+Call PutVar("guildwar.ini", "REQUESTER", "Name", GetPlayerName(index) & "")
+Call PutVar("guildwar.ini", "REQUESTER", "Status", "1")
+        Else
+            Call PlayerMsg(index, "You need to be of a higher guild access to use this command!", 13)
+        End If
+    Exit Sub
+    End If
+
+    If LCase(Trim(TextSay)) = "/pvp" Then
+If GetPlayerLevel(index) <= 10 Then
+Call PlayerMsg(index, "You are below level 10!", 4)
+Exit Sub
+End If
+If GetPlayerMap(index) = 255 Then
+Call PlayerMsg(index, "You are in jail!", 4)
+Exit Sub
+End If
+            Call GlobalMsg(GetPlayerName(index) & ", who is level " & GetPlayerLevel(index) & ", wishes to battle another player!", 0)
+            Call GlobalMsg("Type /pvpaccept to accept the battle.", 9)
+Call PutVar("pvp.ini", "REQUESTER", "Name", GetPlayerName(index) & "")
+Call PutVar("pvp.ini", "REQUESTER", "Status", "1")
+    Exit Sub
+    End If
+
+    If LCase(Trim(TextSay)) = "/pvpaccept" Then
+lvlsub = GetPlayerLevel(index) - GetPlayerLevel(FindPlayer(GetVar("pvp.ini", "REQUESTER", "Name")))
+
+If GetPlayerLevel(index) <= 10 Then
+Call PlayerMsg(index, "You are below level 10!", 4)
+Exit Sub
+End If
+
+If lvlsub <= 20 And lvlsub >= -20 Then
+Else
+Call PlayerMsg(index, "You are not within 20 levels of the requesting player!", 4)
+Exit Sub
+End If
+
+If GetPlayerMap(index) = 255 Then
+Call PlayerMsg(index, "You are in jail!", 4)
+Exit Sub
+End If
+If GetVar("pvp.ini", "REQUESTER", "Status") = 1 Then
+If GetPlayerName(index) = GetVar("pvp.ini", "REQUESTER", "Name") Then
+Call GlobalMsg(GetPlayerName(index) & " has voided the request.", 0)
+Call PutVar("pvp.ini", "REQUESTER", "Status", "0")
+Exit Sub
+End If
+
+If GetPlayerIP(index) = GetPlayerIP(FindPlayer(GetVar("pvp.ini", "REQUESTER", "Name"))) Then
+Call PlayerMsg(index, "Administrators have been notified of your activities. Cease attempting to inflate your points.", 4)
+Call PutVar("scammerspvp.ini", GetPlayerLogin(index), GetPlayerName(index), 1)
+Exit Sub
+End If
+
+            Call GlobalMsg(GetPlayerName(index) & ", level " & GetPlayerLevel(index) & ", has accepted the challenge!", 10)
+Call PutVar("pvp.ini", "REQUESTER", "Status", "2")
+
+Call PutVar("pvp.ini", "ACCEPTER", "Name", GetPlayerName(index) & "")
+Call PutVar("pvp.ini", "ACCEPTER", "Status", "1")
+
+Call PutVar("checkpvp.ini", GetVar("pvp.ini", "ACCEPTER", "Name"), "PvP", "1")
+Call PutVar("checkpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "PvP", "1")
+
+Call PutVar("locpvp.ini", GetPlayerName(index), "Map", GetPlayerMap(index))
+Call PutVar("locpvp.ini", GetPlayerName(index), "X", GetPlayerX(index))
+Call PutVar("locpvp.ini", GetPlayerName(index), "Y", GetPlayerY(index))
+
+Call PutVar("locpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "Map", GetPlayerMap(FindPlayer(GetVar("pvp.ini", "REQUESTER", "Name"))))
+Call PutVar("locpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "X", GetPlayerX(FindPlayer(GetVar("pvp.ini", "REQUESTER", "Name"))))
+Call PutVar("locpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "Y", GetPlayerY(FindPlayer(GetVar("pvp.ini", "REQUESTER", "Name"))))
+
+Call PlayerWarp(index, 59, 21, 12)
+Call PlayerWarp(FindPlayer(GetVar("pvp.ini", "REQUESTER", "Name")), 59, 21, 12)
+Else
+Call PlayerMsg(index, "No one has requested to PvP with you.", 4)
+End If
+    Exit Sub
+    End If
+
+    If LCase(Trim(TextSay)) = "/gwaccept" Then
+If GetPlayerMap(index) = 255 Then
+Call PlayerMsg(index, "You are in jail!", 4)
+Exit Sub
+End If
+
+        If GetPlayerGuildAccess(index) >= 3 And GetVar("guildwar.ini", "REQUESTER", "Status") = 1 Then
+If GetPlayerGuild(index) = GetVar("guildwar.ini", "REQUESTER", "GuildName") Then
+Call GlobalMsg(GetPlayerName(index) & " has voided the request.", 0)
+Call PutVar("guildwar.ini", "REQUESTER", "Status", "0")
+Exit Sub
+End If
+
+If GetPlayerIP(index) = GetPlayerIP(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name"))) Then
+Call PlayerMsg(index, "Administrators have been notified of your activities. Cease attempting to inflate your points.", 4)
+Call PutVar("scammersgw.ini", GetPlayerLogin(index), GetPlayerName(index), 1)
+Exit Sub
+End If
+            Call GlobalMsg(GetPlayerName(index) & " of the guild " & GetPlayerGuild(index) & " has accepted the challenge!", 10)
+            Call GlobalMsg("All members of the guild " & GetPlayerGuild(index) & " please report to RioT's House.", 10)
+Call GlobalMsg("All members of the guild " & GetVar("guildwar.ini", "REQUESTER", "GuildName") & " please report to RioT's House.", 10)
+Call PutVar("guildwar.ini", "REQUESTER", "Status", "2")
+
+Call PutVar("guildwar.ini", "ACCEPTER", "GuildName", GetPlayerGuild(index) & "")
+Call PutVar("guildwar.ini", "ACCEPTER", "Name", GetPlayerName(index) & "")
+Call PutVar("guildwar.ini", "ACCEPTER", "Status", "1")
+
+Call PutVar("checkgw.ini", GetVar("guildwar.ini", "ACCEPTER", "Name"), "State", "1")
+Call PutVar("checkgw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "State", "1")
+
+Call PutVar("locguildw.ini", GetPlayerName(index), "Map", GetPlayerMap(index))
+Call PutVar("locguildw.ini", GetPlayerName(index), "X", GetPlayerX(index))
+Call PutVar("locguildw.ini", GetPlayerName(index), "Y", GetPlayerY(index))
+
+Call PutVar("locguildw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "Map", GetPlayerMap(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name"))))
+Call PutVar("locguildw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "X", GetPlayerX(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name"))))
+Call PutVar("locguildw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "Y", GetPlayerY(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name"))))
+
+Call PlayerWarp(index, 59, 21, 12)
+Call PlayerWarp(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name")), 59, 21, 12)
+        Else
+            Call PlayerMsg(index, "You need to be of a higher guild access to use this command! (Or no one has requested a guild battle with you)", 13)
+        End If
+    Exit Sub
+    End If
+
+
+    If LCase(Mid(TextSay, 1, 6)) = "/f add" Then
+       If Len(TextSay) > 6 Then
+         y = 0
+         x = LCase(Mid(TextSay, 8, Len(TextSay) - 6))
+x = GetPlayerName(FindPlayer(x))
+         If LCase(x) = LCase(GetPlayerName(index)) Then
+           Call PlayerMsg(index, "You may not add yourself to your friends list.", 4)
+           Exit Sub
+          End If
+If inStr(x,"|") Then 
+x = Mid(x, 1, inStr(x,"|")-1) 
+End If
+x = LCase(x)
+         If x = LCase(GetPlayerName(index)) Then
+           Call PlayerMsg(index, "You may not add yourself to your friends list.", 4)
+           Exit Sub
+          End If
+          Do While y < 10
+           y = y + 1
+           friend = LCase(GetVar("friends.ini", GetPlayerLogin(index), "Friend"&y))
+          If friend = x Then
+           Call PlayerMsg(index, "Please do not add more than one of the same friend to your friends list.", 4)
+Exit Sub
+End If
+            If friend = "0" Then
+             Call PutVar("Friends.ini", GetPlayerLogin(index), "Friend"&y, "" & x)
+             Call PlayerMsg(index, "You have added "& x &" to your friends list.", 2)
+             Exit Sub
+            End If
+          Loop
+           Call PlayerMsg(index, "You do not have enough space in your friends list to add "&x&". Please remove someone from your friends list and try again.", 4)
+       Else
+          Call PlayerMsg(index, "Please type in a player name to add to your friends list.", 2)
+       End If
+    Exit Sub
+    End If
+   
+    If  LCase(Mid(TextSay, 1, 6)) = "/f del" Then   
+       If Len(TextSay) > 6 Then
+         y = 0
+         x = LCase(Mid(TextSay, 8, Len(TextSay) - 6))
+          Do While y < 10
+          y  = y + 1
+          friend = LCase(GetVar("Friends.ini", GetPlayerLogin(index), "Friend"&y))
+          If friend = x  Then
+           Call PlayerMsg(index, "Deleted "& x &" from your friends list.", 2)
+           Call PutVar("Friends.ini", GetPlayerLogin(index), "Friend"&y, 0)
+           Exit Sub
+          End If
+          Loop
+           Call PlayerMsg(index, "There is no one named "&  x &" is in your friends list.", 4)
+        Else
+           Call PlayerMsg(index, "Please specify a name to delete from your friends list.", 4)
+        End If
+      Exit Sub
+     End If
+ 
+If  LCase(Mid(TextSay, 1, 6)) = "/f msg" Then   
+       If Len(TextSay) > 6 Then
+         y = 0
+         m = GetPlayerName(index)
+         fmsg = Mid(TextSay, 8, Len(TextSay) - 6)
+          Do While y < 10
+            y  = y + 1
+            friend = LCase(GetVar("Friends.ini", GetPlayerLogin(index), "Friend"&y))
+            If friend <> 0 Then
+               Call FriendMsg(index, friend, fmsg)
+            End If
+          Loop
+          Call PlayerMsg(index, m&": "&fmsg, 9)
+         Else
+          Call PlayerMsg(index, "Please type a message to send to your friends.", 4)
+         End If
+Exit Sub
+End If 
+    
+Select Case LCase(Trim(TextSay)) 
+
+   
+Case "/pk"
+If GetPlayerAccess(index) > 0 Then
+If GetPlayerPK(Index) = 0 Then
+Call SetPlayerPK(Index, 1)
+Call PlayerMSG(Index, "You are now a Player Killer", 1)
+Call SendPlayerData(Index)
+Else Call SetPlayerPK(Index, 0)
+Call PlayerMSG(Index, "You are no longer a Player Killer", 1)
+Call SendPlayerData(Index)
+End If
+End If
+Exit Sub 
+
+     Case "/colors"
+            ' Prevent hacking
+            If GetPlayerAccess(index) < 1 Then
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+                Exit Sub
+            End If
+Call PlayerMsg(index, "Black", 0) 
+Call PlayerMsg(index, "Blue", 1) 
+Call PlayerMsg(index, "Green", 2) 
+Call PlayerMsg(index, "Cyan", 3) 
+Call PlayerMsg(index, "Red", 4) 
+Call PlayerMsg(index, "Magenta", 5) 
+Call PlayerMsg(index, "Brown", 6) 
+Call PlayerMsg(index, "Grey", 7) 
+Call PlayerMsg(index, "Dark Grey", 8) 
+Call PlayerMsg(index, "Bright Blue", 9) 
+Call PlayerMsg(index, "Bright Green", 10) 
+Call PlayerMsg(index, "Bright Cyan", 11) 
+Call PlayerMsg(index, "Bright Red", 12) 
+Call PlayerMsg(index, "Pink", 13) 
+Call PlayerMsg(index, "Yellow", 14) 
+Call PlayerMsg(index, "White", 15) 
+    Exit Sub
+
+    Case "/away"
+If inStr(GetPlayerName(index),"|") = 0 Then 
+Call GlobalMsg(GetPlayerName(index) & " is now away.", 0) 
+Call SetPlayerName(index, GetPlayerName(index) & "|Away") 
+Call SendPlayerData(index) 
+Call SavePlayer(index, 0)
+Call SendOnlineList
+        End If
+        Exit Sub
+
+    Case "/back"
+If inStr(GetPlayerName(index),"|") Then 
+NamePlayer = Mid(GetPlayerName(index), 1, inStr(GetPlayerName(index),"|")-1) 
+Call SetPlayerName(index, NamePlayer) 
+Call SendPlayerData(index) 
+Call SavePlayer(index, 0)
+Call SendOnlineList
+Call GlobalMsg(GetPlayerName(index) & " has returned from being away.", 0)
+End If 
+        Exit Sub   
+
+    Case "/setportal"
+        If GetPlayerAccess(index) >= 1 Then
+                Call PlayerMsg(index, "You have created a portal opening at this spot! You may now return to this spot at any time by typing /portal", 1)
+                Call PutVar("Portal.ini", GetPlayerLogin(index), "map", GetPlayerMap(index))
+                Call PutVar("Portal.ini", GetPlayerLogin(index), "x", GetPlayerX(index))
+                Call PutVar("Portal.ini", GetPlayerLogin(index), "y", GetPlayerY(index))
+            Else
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+End If
+            Exit Sub
+
+    Case "/portal"
+        If GetPlayerAccess(index) >= 1 Then
+	        mapnum = GetVar("Portal.ini", GetPlayerLogin(index), "map")
+	        y = GetVar("Portal.ini", GetPlayerLogin(index), "y")
+	        x = GetVar("Portal.ini", GetPlayerLogin(index), "x")
+                Call PlayerWarp(index, mapnum, x, y)
+            Else
+                Call PlayerMsg(index, "You need to be of a higher access to use this command!", 4)
+End If
+            Exit Sub
+
+Case "/die"
+        Call Prompt(index, "Are you sure you wish to kill yourself? You will lose 10% of all of your previously gained experience points starting from level 1.", 0)
+Exit Sub
+
+Case "/fix"
+If GetPlayerAccess(index) = 5 Then
+Call SendPlayerData(index)
+Call PlayerMsg(index, "Fixed.", 0)
+Else
+Call PlayerMsg(index, "You are not of a high enough access!", 4)
+End If
+Exit Sub
+
+Case "/f list"
+       Call Flist(index)
+       Exit Sub
+
+Case "/warpback"
+If GetPlayerMap(index) = 255 Then
+Call PlayerMsg(index, "You are in jail!", 4)
+Exit Sub
+End If
+If GetVar("checkpvp.ini", GetPlayerName(index), "PvP") = "" Then
+Call PutVar("checkpvp.ini", GetPlayerName(index), "PvP", "0")
+End If
+
+If GetVar("checkgw.ini", GetPlayerName(index), "State") = "" Then
+Call PutVar("checkgw.ini", GetPlayerName(index), "State", "0")
+End If
+
+If GetVar("checkpvp.ini", GetPlayerName(index), "PvP") = "0" And GetVar("checkgw.ini", GetPlayerName(index), "State") = 0 Then
+Call PlayerMsg(index, "You are not in a battle!", 4)
+Exit Sub
+End If
+
+If GetPlayerMap(index) = 59 Then
+If GetVar("checkpvp.ini", GetPlayerName(index), "PvP") = "1" Then
+Call PlayerWarp(index, GetVar("locpvp.ini", GetPlayerName(index), "Map"), GetVar("locpvp.ini", GetPlayerName(index), "X"), GetVar("locpvp.ini", GetPlayerName(index), "Y"))
+Call PutVar("pvp.ini", "ACCEPTER", "Status", "0")
+Call PutVar("pvp.ini", "REQUESTER", "Status", "0")
+Call PutVar("checkpvp.ini", GetPlayerName(index), "PvP", "0")
+Call GlobalMsg(GetPlayerName(index) & " has voided the PvP battle!", 0)
+End If
+If GetVar("checkgw.ini", GetPlayerName(index), "State") = "1" Then
+Call PlayerWarp(index, GetVar("locguildw.ini", GetPlayerName(index), "Map"), GetVar("locguildw.ini", GetPlayerName(index), "X"), GetVar("locguildw.ini", GetPlayerName(index), "Y"))
+Call PutVar("guildwar.ini", "ACCEPTER", "Status", "0")
+Call PutVar("guildwar.ini", "REQUESTER", "Status", "0")
+Call PutVar("checkgw.ini", GetPlayerName(index), "State", "0")
+Call GlobalMsg(GetPlayerName(index) & " has voided the guild war!", 0)
+End If
+Else
+Call PlayerMsg(index, "You are not in the battle area! (RioT's House)", 4)
+End If
+Exit Sub
+
+Case "/guildpoints"
+If GetPlayerGuild(index) <> "" Then
+If GetVar("guildpts.ini", "POINTS", GetPlayerGuild(index)) = "" Then
+Call PlayerMsg(index, "Your guild now has 0 points.", 0)
+Exit Sub
+End If
+If GetVar("guildpts.ini", "POINTS", GetPlayerGuild(index)) = "1" Then
+Call PlayerMsg(index, "Your guild now has 1 point.", 0)
+Exit Sub
+Else
+Call PlayerMsg(index, "Your guild now has " & GetVar("guildpts.ini", "POINTS", GetPlayerGuild(index)) & " points.", 0)
+End If
+Else
+Call PlayerMsg(index, "You are not in a guild.", 4)
+End If
+Exit Sub
+
+Case "/pvppoints"
+If GetVar("pvppts.ini", "POINTS", GetPlayerName(index)) = "" Then
+Call PlayerMsg(index, "You now have 0 points.", 0)
+Exit Sub
+End If
+If GetVar("pvppts.ini", "POINTS", GetPlayerName(index)) = "1" Then
+Call PlayerMsg(index, "You now have 1 point.", 0)
+Exit Sub
+Else
+Call PlayerMsg(index, "You now have " & GetVar("pvppts.ini", "POINTS", GetPlayerName(index)) & " points.", 0)
+End If
+Exit Sub
+
+Case "/stuck"
+If GetPlayerMap(index) = 1 and GetPlayerX(index) = 9 and GetPlayerY(index) = 0 Then
+Call PlayerWarp(index, 1, 16, 13)
+End If
+       Exit Sub
+End Select 
+
+Call PlayerMsg(index, "That is not a valid command.", 12)
+End Sub
+
+' ********************
+' * QUEST SYSTEM 1.0 *
+' ********************
+Sub RaiseFlag(index, flagnum, height)   
+   Call PutVar("FLAGS.ini", GetPlayerName(index), "Flag"&flagnum, GetVar("FLAGS.ini", GetPlayerName(index), "Flag"&flagnum)+height) 
+End Sub
+
+Sub LowerFlag(index, flagnum, height)   
+   Call PutVar("FLAGS.ini", GetPlayerName(index), "Flag"&flagnum, GetVar("FLAGS.ini", GetPlayerName(index), "Flag"&flagnum)-height)   
+End Sub
+
+Sub GiveItem(index, item, value)
+SLOT = 1
+Do While SLOT < 24
+   If GetPlayerInvItemNum(index, SLOT) = 0 Then
+       Call SetPlayerInvItemNum(index, SLOT, item)
+       Call SetPlayerInvItemValue(index, SLOT, GetPlayerInvItemValue(index, SLOT)+value)
+       Call SendInventoryUpdate(index, SLOT)
+  SLOT = 24
+   End If
+    SLOT = SLOT+1
+Loop
+End Sub
+
+Sub TakeItem(index, item)
+SLOT = 1
+Do While SLOT < 24
+    If GetPlayerInvItemNum(index, SLOT) = item Then     
+         Call SetPlayerInvItemNum(index, SLOT, 0)
+         Call SetPlayerInvItemValue(index, SLOT, 0)         
+         Call SendInventoryUpdate(index, SLOT)
+         SLOT = 24
+    End If
+    SLOT = SLOT+1
+Loop
+End Sub
+
+Sub TakeCurrency(index, item, value)
+SLOT = 1
+Do While SLOT < 24
+   If GetPlayerInvItemNum(index, SLOT) = item Then
+       AMOUNT = GetPlayerInvItemValue(index, SLOT)
+         TAKE = Int(AMOUNT-value)
+         If TAKE <= 0 Then
+        Call SetPlayerInvItemNum(index, SLOT, 0)
+        Call SetPlayerInvItemValue(index, SLOT, 0)
+        Call SendInventoryUpdate(index, SLOT)
+         End If             
+         If TAKE > 0 Then
+        Call SetPlayerInvItemNum(index, SLOT, 0)
+        Call SetPlayerInvItemValue(index, SLOT, 0)
+        Call SetPlayerInvItemNum(index, SLOT, item)
+        Call SetPlayerInvItemValue(index, SLOT, TAKE)
+        Call SendInventoryUpdate(index, SLOT)
+         End If
+         SLOT = 24
+    End If
+    SLOT = SLOT+1
+Loop
+End Sub
+
+Sub Flist(index)
+Dim x
+Dim y
+Dim status
+      Call PlayerMsg(index, "Friend List:", 9)
+x = 0
+Do While x < 10
+x = x + 1
+y = LCase(GetVar("Friends.ini", GetPlayerLogin(index), "Friend"&x))
+
+ status = GetPlayerName(FindPlayer(y))
+If inStr(status,"|") Then
+ Call PlayerMsg(index, "Friend "& x &"- "& y &" : Away", 14)
+ Else
+If y = "0" Then
+ Call PlayerMsg(index, "Friend " & x & "- " & "Empty", 0)
+Else
+ status = FindPlayer(y)
+   If status > 0 Then
+ Call PlayerMsg(index, "Friend "& x &"- "& y &" : Online", 2)
+Else
+ Call PlayerMsg(index, "Friend "& x &"- "& y &" : Offline", 4)
+End If
+End If
+End If
+Loop
+End Sub
+
+Sub Friendmsg(index,friend, fmsg)
+Dim x
+Dim n
+Dim y
+Dim m
+Dim check
+
+x = 0
+n = FindPlayer(friend)
+If n > 0 Then
+  m = GetPlayerName(index)
+  Do While x < 10
+    x = x + 1
+      Call PlayerMsg(n, m&": "&fmsg, 9)
+      Exit Sub
+  Loop
+End If
+End Sub 
+
+Sub OnDeath(index)
+Dim Pts
+If GetPlayerMap(index) <> 255 Then
+Call PutVar("deathloc.ini", GetPlayerName(index), "Map", GetPlayerMap(index))
+Call PlayerWarp(index, 1, 16, 13)
+Else
+Call PlayerMsg(index, "You are in jail! You cannot die.", 4)
+Exit Sub
+End If
+
+If GetVar("deathloc.ini", GetPlayerName(index), "Map") = 59 Then
+If GetVar("guildwar.ini", "ACCEPTER", "Status") = 1 And GetPlayerGuildAccess(index) >= 3 And GetVar("guildwar.ini", "ACCEPTER", "Name") = GetPlayerName(index) Then
+Call PutVar("guildwar.ini", "ACCEPTER", "Status", "0")
+Call PutVar("guildwar.ini", "REQUESTER", "Status", "0")
+If GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "REQUESTER", "GuildName") & "") = "" Then
+Call PutVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "REQUESTER", "GuildName") & "", 0)
+End If
+If GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "ACCEPTER", "GuildName") & "") = "" Then
+Call PutVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "ACCEPTER", "GuildName") & "", 0)
+End If
+Call PutVar("checkgw.ini", GetVar("guildwar.ini", "ACCEPTER", "Name"), "State", "0")
+Call PutVar("checkgw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "State", "0")
+Pts = GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "ACCEPTER", "GuildName") & "")
+Call PutVar("guildpts.ini", "POINTS", GetPlayerGuild(FindPlayer(GetVar("guildwar.ini", "ACCEPTER", "Name"))), Pts - 1)
+Pts = GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "REQUESTER", "GuildName") & "")
+Call PutVar("guildpts.ini", "POINTS", GetPlayerGuild(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name"))), Pts + 1)
+Call GlobalMsg(GetVar("guildwar.ini", "REQUESTER", "Name") & " of the guild " & GetVar("guildwar.ini", "REQUESTER", "GuildName") & " has won the guild war against " & GetVar("guildwar.ini", "ACCEPTER", "GuildName") & "! " & GetPlayerGuild(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name"))) & " now has " & GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "REQUESTER", "GuildName")) & " points. " & GetVar("guildwar.ini", "ACCEPTER", "GuildName") & " has "& GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "ACCEPTER", "GuildName")) & " points.", 0)
+
+Call PlayerWarp(FindPlayer(GetVar("guildwar.ini", "ACCEPTER", "Name")), GetVar("locguildw.ini", GetVar("guildwar.ini", "ACCEPTER", "Name"), "Map"), GetVar("locguildw.ini", GetVar("guildwar.ini", "ACCEPTER", "Name"), "X"), GetVar("locguildw.ini", GetVar("guildwar.ini", "ACCEPTER", "Name"), "Y"))
+Call PlayerWarp(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name")), GetVar("locguildw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "Map"), GetVar("locguildw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "X"), GetVar("locguildw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "Y"))
+End If
+
+If GetVar("guildwar.ini", "REQUESTER", "Status") = 2 And GetPlayerGuildAccess(index) >= 3 And GetVar("guildwar.ini", "REQUESTER", "Name") = GetPlayerName(index) Then
+Call PutVar("guildwar.ini", "ACCEPTER", "Status", "0")
+Call PutVar("guildwar.ini", "REQUESTER", "Status", "0")
+If GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "REQUESTER", "GuildName") & "") = "" Then
+Call PutVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "REQUESTER", "GuildName") & "", 0)
+End If
+If GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "ACCEPTER", "GuildName") & "") = "" Then
+Call PutVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "ACCEPTER", "GuildName") & "", 0)
+End If
+Call PutVar("checkgw.ini", GetVar("guildwar.ini", "ACCEPTER", "Name"), "State", "0")
+Call PutVar("checkgw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "State", "0")
+Pts = GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "ACCEPTER", "GuildName") & "")
+Call PutVar("guildpts.ini", "POINTS", GetPlayerGuild(FindPlayer(GetVar("guildwar.ini", "ACCEPTER", "Name"))), Pts + 1)
+Pts = GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "REQUESTER", "GuildName") & "")
+Call PutVar("guildpts.ini", "POINTS", GetPlayerGuild(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name"))), Pts - 1)
+Call GlobalMsg(GetVar("guildwar.ini", "ACCEPTER", "Name") & " of the guild " & GetVar("guildwar.ini", "ACCEPTER", "GuildName") & " has won the guild war against " & GetVar("guildwar.ini", "REQUESTER", "GuildName") & "! " & GetPlayerGuild(FindPlayer(GetVar("guildwar.ini", "ACCEPTER", "Name"))) & " now has " & GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "ACCEPTER", "GuildName")) & " points. " & GetVar("guildwar.ini", "REQUESTER", "GuildName") & " has "& GetVar("guildpts.ini", "POINTS", GetVar("guildwar.ini", "REQUESTER", "GuildName")) & " points.", 0)
+
+Call PlayerWarp(FindPlayer(GetVar("guildwar.ini", "ACCEPTER", "Name")), GetVar("locguildw.ini", GetVar("guildwar.ini", "ACCEPTER", "Name"), "Map"), GetVar("locguildw.ini", GetVar("guildwar.ini", "ACCEPTER", "Name"), "X"), GetVar("locguildw.ini", GetVar("guildwar.ini", "ACCEPTER", "Name"), "Y"))
+Call PlayerWarp(FindPlayer(GetVar("guildwar.ini", "REQUESTER", "Name")), GetVar("locguildw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "Map"), GetVar("locguildw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "X"), GetVar("locguildw.ini", GetVar("guildwar.ini", "REQUESTER", "Name"), "Y"))
+
+End If
+
+If GetVar("pvp.ini", "ACCEPTER", "Status") = 1 And GetVar("pvp.ini", "ACCEPTER", "Name") = GetPlayerName(index) Then
+Call PutVar("pvp.ini", "ACCEPTER", "Status", "0")
+Call PutVar("pvp.ini", "REQUESTER", "Status", "0")
+If GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name") & "") = "" Then
+Call PutVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name") & "", 0)
+End If
+If GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name") & "") = "" Then
+Call PutVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name") & "", 0)
+End If
+Call PutVar("checkpvp.ini", GetVar("pvp.ini", "ACCEPTER", "Name"), "PvP", "0")
+Call PutVar("checkpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "PvP", "0")
+Pts = GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name") & "")
+Call PutVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name"), Pts - 1)
+Pts = GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name") & "")
+Call PutVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name"), Pts + 1)
+Call GlobalMsg(GetVar("pvp.ini", "REQUESTER", "Name") & " has won the PvP battle against " & GetVar("pvp.ini", "ACCEPTER", "Name") & "! " & GetVar("pvp.ini", "REQUESTER", "Name") & " now has " & GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name")) & " points. " & GetVar("pvp.ini", "ACCEPTER", "Name") & " has "& GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name")) & " points.", 0)
+
+Call PlayerWarp(FindPlayer(GetVar("pvp.ini", "ACCEPTER", "Name")), GetVar("locpvp.ini", GetVar("pvp.ini", "ACCEPTER", "Name"), "Map"), GetVar("locpvp.ini", GetVar("pvp.ini", "ACCEPTER", "Name"), "X"), GetVar("locpvp.ini", GetVar("pvp.ini", "ACCEPTER", "Name"), "Y"))
+Call PlayerWarp(FindPlayer(GetVar("pvp.ini", "REQUESTER", "Name")), GetVar("locpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "Map"), GetVar("locpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "X"), GetVar("locpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "Y"))
+End If
+
+If GetVar("pvp.ini", "REQUESTER", "Status") = 2 And GetVar("pvp.ini", "REQUESTER", "Name") = GetPlayerName(index) Then
+Call PutVar("pvp.ini", "ACCEPTER", "Status", "0")
+Call PutVar("pvp.ini", "REQUESTER", "Status", "0")
+If GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name") & "") = "" Then
+Call PutVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name") & "", 0)
+End If
+If GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name") & "") = "" Then
+Call PutVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name") & "", 0)
+End If
+Call PutVar("checkpvp.ini", GetVar("pvp.ini", "ACCEPTER", "Name"), "PvP", "0")
+Call PutVar("checkpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "PvP", "0")
+Pts = GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name") & "")
+Call PutVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name"), Pts + 1)
+Pts = GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name") & "")
+Call PutVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name"), Pts - 1)
+Call GlobalMsg(GetVar("pvp.ini", "ACCEPTER", "Name") & " has won the PvP battle against " & GetVar("pvp.ini", "REQUESTER", "Name") & "! " & GetVar("pvp.ini", "ACCEPTER", "Name") & " now has " & GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "ACCEPTER", "Name")) & " points. " & GetVar("pvp.ini", "REQUESTER", "Name") & " has "& GetVar("pvppts.ini", "POINTS", GetVar("pvp.ini", "REQUESTER", "Name")) & " points.", 0)
+Call PlayerWarp(FindPlayer(GetVar("pvp.ini", "ACCEPTER", "Name")), GetVar("locpvp.ini", GetVar("pvp.ini", "ACCEPTER", "Name"), "Map"), GetVar("locpvp.ini", GetVar("pvp.ini", "ACCEPTER", "Name"), "X"), GetVar("locpvp.ini", GetVar("pvp.ini", "ACCEPTER", "Name"), "Y"))
+Call PlayerWarp(FindPlayer(GetVar("pvp.ini", "REQUESTER", "Name")), GetVar("locpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "Map"), GetVar("locpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "X"), GetVar("locpvp.ini", GetVar("pvp.ini", "REQUESTER", "Name"), "Y"))
+
+End If
+End If
+End Sub
+
+Sub DropItems(index)
+
+End Sub
+
+
+' ****************************
+' * By: Grey (Unknown_Raven) *
+' ****************************
+Sub BlockPlayer(index)
+	If GetPlayerDir(index) = 0 Then
+	    Call SetPlayerY(index, GetPlayerY(index)+1)
+	    Call SendPlayerData(index) 
+	End If
+	If GetPlayerDir(index) = 1 Then
+		Call SetPlayerY(index, GetPlayerY(index)-1)
+		Call SendPlayerData(index) 
+	End If
+	If GetPlayerDir(index) = 2 Then
+	    Call SetPlayerX(index, GetPlayerX(index)+1)
+	    Call SendPlayerData(index) 
+	End If
+	If GetPlayerDir(index) = 3 Then
+	    Call SetPlayerX(index, GetPlayerX(index)-1)
+	    Call SendPlayerData(index) 
+	End If
+End Sub 

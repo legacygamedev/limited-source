@@ -1,0 +1,6 @@
+frmRegFiles = 66, 87, 638, 531, , 44, 58, 616, 502, C
+modBatchProcess = 88, 116, 660, 560, Z
+modIO = 110, 145, 682, 589, 
+modStartup = 132, 174, 704, 618, 
+modInformation = 154, 203, 726, 647, 
+frmHelp = 0, 0, 0, 0, C, 88, 116, 660, 560, C

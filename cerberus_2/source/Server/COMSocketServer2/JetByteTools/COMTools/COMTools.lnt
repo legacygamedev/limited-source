@@ -1,0 +1,21 @@
+
+/* Generated from file: COMTools.dsp */
+-i..\..\\
+-d_DEBUG
+-dWIN32
+-d_MBCS
+-d_LIB
+-dSTRICT
+-dUNICODE
+-d_UNICODE
+CatInfo.cpp
+CatInformation.cpp
+CatRegister.cpp
+Exception.cpp
+ExeServer.cpp
+GUID.cpp
+GUIDRegistryList.cpp
+MessageFilter.cpp
+Notify.cpp
+UsesCom.cpp
+UsesSecurity.cpp

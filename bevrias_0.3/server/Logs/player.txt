@@ -1,0 +1,1733 @@
+23:43:34: Account ddd has been created.
+23:44:08: ddd has logged in from 127.0.0.1.
+23:44:23: Character dcdd added to ddd's account.
+23:44:36: ddd/dcdd has began playing GameName.
+23:46:24: ddd has logged in from 127.0.0.1.
+23:46:26: ddd/dcdd has began playing GameName.
+23:58:08: ddd has logged in from 127.0.0.1.
+23:58:09: ddd/dcdd has began playing GameName.
+23:58:38: ddd has logged in from 127.0.0.1.
+23:58:40: ddd/dcdd has began playing GameName.
+00:01:25: ddd has logged in from 127.0.0.1.
+00:01:26: ddd/dcdd has began playing GameName.
+00:02:06: ddd has logged in from 127.0.0.1.
+00:02:07: ddd/dcdd has began playing GameName.
+00:05:04: ddd has logged in from 127.0.0.1.
+00:05:05: ddd/dcdd has began playing GameName.
+00:42:33: ddd has logged in from 127.0.0.1.
+00:42:35: ddd/dcdd has began playing GameName.
+01:21:21: ddd has logged in from 127.0.0.1.
+01:21:23: ddd/dcdd has began playing GameName.
+16:54:11: Account Admin has been created.
+16:56:15: Admin has logged in from 127.0.0.1.
+16:57:21: Character Admin added to Admin's account.
+16:57:27: Admin/Admin has began playing GameName.
+16:59:36: Admin has logged in from 127.0.0.1.
+16:59:37: Admin/Admin has began playing GameName.
+22:06:01: Admin has logged in from 127.0.0.1.
+22:06:03: Admin/Admin has began playing GameName.
+22:07:12: Admin has logged in from 127.0.0.1.
+22:07:13: Admin/Admin has began playing GameName.
+22:44:32: Admin has logged in from 127.0.0.1.
+22:44:34: Admin/Admin has began playing GameName.
+23:25:41: Admin has logged in from 127.0.0.1.
+23:27:23: Admin has logged in from 127.0.0.1.
+23:30:18: Admin has logged in from 127.0.0.1.
+23:31:11: Admin has logged in from 127.0.0.1.
+16:24:52: Admin has logged in from 127.0.0.1.
+16:24:54: Admin/Admin has began playing GameName.
+16:26:09: Admin has logged in from 127.0.0.1.
+16:26:24: Character Will added to Admin's account.
+16:26:27: Admin/Will has began playing GameName.
+16:29:05: Admin has logged in from 127.0.0.1.
+16:29:07: Admin/Admin has began playing GameName.
+16:30:20: Admin has logged in from 127.0.0.1.
+16:30:34: Character 444 added to Admin's account.
+16:30:36: Admin/444 has began playing GameName.
+16:33:50: Admin has logged in from 127.0.0.1.
+16:33:51: Admin/444 has began playing GameName.
+17:15:05: Admin has logged in from 127.0.0.1.
+17:15:10: Admin/Admin has began playing GameName.
+17:15:26: Admin has logged in from 127.0.0.1.
+17:15:34: Character deleted on Admin's account.
+17:15:42: Character deleted on Admin's account.
+17:15:50: Character deleted on Admin's account.
+17:16:27: Character Admin added to Admin's account.
+17:16:30: Admin/Admin has began playing GameName.
+17:17:13: Admin has logged in from 127.0.0.1.
+17:17:15: Admin/Admin has began playing GameName.
+17:50:22: Admin has logged in from 127.0.0.1.
+17:50:24: Admin/Admin has began playing GameName.
+17:51:56: Admin has logged in from 127.0.0.1.
+17:51:57: Admin/Admin has began playing GameName.
+17:52:19: Admin has logged in from 127.0.0.1.
+17:52:20: Admin/Admin has began playing GameName.
+17:52:42: Admin has logged in from 127.0.0.1.
+17:52:43: Admin/Admin has began playing GameName.
+18:29:51: Admin has logged in from 127.0.0.1.
+18:30:14: Character William added to Admin's account.
+18:30:20: Admin/William has began playing GameName.
+18:31:03: Admin has logged in from 127.0.0.1.
+18:31:06: Admin/William has began playing GameName.
+18:32:12: Admin has logged in from 127.0.0.1.
+18:32:13: Admin/William has began playing GameName.
+18:33:08: Admin has logged in from 127.0.0.1.
+18:33:10: Admin/William has began playing GameName.
+18:33:56: Admin has logged in from 127.0.0.1.
+18:33:58: Admin/William has began playing GameName.
+18:41:07: Admin has logged in from 127.0.0.1.
+18:41:09: Admin/William has began playing GameName.
+19:06:46: Admin has logged in from 127.0.0.1.
+19:08:58: Character deleted on 's account.
+19:09:24: Character William1 added to 's account.
+19:09:26: /William1 has began playing GameName.
+19:11:10: Admin has logged in from 127.0.0.1.
+19:11:11: Admin/Admin has began playing GameName.
+19:11:44: Admin has logged in from 127.0.0.1.
+19:11:46: Admin/Admin has began playing GameName.
+19:13:06: Admin has logged in from 127.0.0.1.
+19:13:07: Admin/Admin has began playing GameName.
+00:25:02: Admin has logged in from 127.0.0.1.
+00:25:46: Admin has logged in from 127.0.0.1.
+00:26:13: Admin has logged in from 127.0.0.1.
+00:26:31: Character uuppp added to Admin's account.
+00:26:34: Admin/uuppp has began playing GameName.
+00:28:06: Admin has logged in from 127.0.0.1.
+00:29:22: Admin has logged in from 127.0.0.1.
+00:29:34: Admin/uuppp has began playing GameName.
+00:30:15: Admin has logged in from 127.0.0.1.
+00:30:19: Admin/uuppp has began playing GameName.
+00:30:59: Admin has logged in from 127.0.0.1.
+00:31:01: Admin/uuppp has began playing GameName.
+00:47:23: Admin has logged in from 127.0.0.1.
+00:47:24: Admin/uuppp has began playing GameName.
+00:47:47: Admin has logged in from 127.0.0.1.
+00:47:48: Admin/uuppp has began playing GameName.
+01:03:04: Admin has logged in from 127.0.0.1.
+01:03:31: Character deleted on Admin's account.
+01:05:10: Character oooo added to Admin's account.
+01:05:17: Admin/oooo has began playing GameName.
+01:12:07: Admin has logged in from 127.0.0.1.
+01:12:09: Admin/oooo has began playing GameName.
+01:17:55: Admin has logged in from 127.0.0.1.
+01:17:57: Admin/oooo has began playing GameName.
+01:19:18: Admin has logged in from 127.0.0.1.
+01:19:20: Admin/oooo has began playing GameName.
+01:19:57: Admin has logged in from 127.0.0.1.
+01:20:00: Admin/oooo has began playing GameName.
+01:24:00: Admin has logged in from 127.0.0.1.
+01:24:01: Admin/oooo has began playing GameName.
+01:25:23: Admin has logged in from 127.0.0.1.
+01:25:25: Admin/oooo has began playing GameName.
+01:27:12: Admin has logged in from 127.0.0.1.
+01:27:15: Admin/oooo has began playing GameName.
+01:27:34: Admin has logged in from 127.0.0.1.
+01:27:36: Admin/oooo has began playing GameName.
+01:30:09: Admin has logged in from 127.0.0.1.
+01:30:12: Admin/oooo has began playing GameName.
+01:30:44: Admin has logged in from 127.0.0.1.
+01:30:47: Admin/oooo has began playing GameName.
+01:31:08: Admin has logged in from 127.0.0.1.
+01:31:11: Admin/oooo has began playing GameName.
+01:31:53: Admin has logged in from 127.0.0.1.
+01:31:55: Admin/oooo has began playing GameName.
+01:33:25: Admin has logged in from 127.0.0.1.
+01:33:27: Admin/oooo has began playing GameName.
+01:33:49: Admin has logged in from 127.0.0.1.
+01:33:51: Admin/oooo has began playing GameName.
+01:34:21: Admin has logged in from 127.0.0.1.
+01:34:23: Admin/oooo has began playing GameName.
+01:35:10: Admin has logged in from 127.0.0.1.
+01:35:12: Admin/William has began playing GameName.
+01:35:33: Admin has logged in from 127.0.0.1.
+01:35:34: Admin/Admin has began playing GameName.
+01:35:53: Admin has logged in from 127.0.0.1.
+01:35:55: Admin/oooo has began playing GameName.
+01:47:11: Admin has logged in from 127.0.0.1.
+01:47:12: Admin/Admin has began playing GameName.
+01:47:35: Admin has logged in from 127.0.0.1.
+01:47:36: Admin/Admin has began playing GameName.
+01:47:55: Admin has logged in from 127.0.0.1.
+01:47:56: Admin/Admin has began playing GameName.
+01:48:15: Admin has logged in from 127.0.0.1.
+01:48:16: Admin/Admin has began playing GameName.
+01:48:50: Admin has logged in from 127.0.0.1.
+01:48:52: Admin/oooo has began playing GameName.
+01:49:18: Admin has logged in from 127.0.0.1.
+01:49:19: Admin/Admin has began playing GameName.
+01:50:03: Admin has logged in from 127.0.0.1.
+01:50:04: Admin/Admin has began playing GameName.
+17:24:42: Admin has logged in from 127.0.0.1.
+17:24:44: Admin/Admin has began playing GameName.
+17:25:24: Admin has logged in from 127.0.0.1.
+17:25:27: Admin/Admin has began playing GameName.
+17:30:21: Admin has logged in from 127.0.0.1.
+17:30:22: Admin/Admin has began playing GameName.
+17:31:28: Admin has logged in from 127.0.0.1.
+17:31:30: Admin/Admin has began playing GameName.
+17:33:24: Admin has logged in from 127.0.0.1.
+17:33:26: Admin/Admin has began playing GameName.
+17:34:05: Admin has logged in from 127.0.0.1.
+17:34:06: Admin/Admin has began playing GameName.
+17:34:56: Admin has logged in from 127.0.0.1.
+17:34:58: Admin/Admin has began playing GameName.
+17:35:27: Admin has logged in from 127.0.0.1.
+17:35:29: Admin/Admin has began playing GameName.
+17:36:07: Admin has logged in from 127.0.0.1.
+17:36:08: Admin/Admin has began playing GameName.
+17:36:38: Admin has logged in from 127.0.0.1.
+17:36:42: Admin/Admin has began playing GameName.
+17:37:06: Admin has logged in from 127.0.0.1.
+17:37:08: Admin/Admin has began playing GameName.
+17:37:43: Admin has logged in from 127.0.0.1.
+17:37:44: Admin/Admin has began playing GameName.
+17:38:05: Admin has logged in from 127.0.0.1.
+17:38:07: Admin/Admin has began playing GameName.
+17:38:36: Admin has logged in from 127.0.0.1.
+17:38:38: Admin/Admin has began playing GameName.
+17:41:20: Admin has logged in from 127.0.0.1.
+17:41:21: Admin/Admin has began playing GameName.
+17:41:58: Admin has logged in from 127.0.0.1.
+17:41:59: Admin/Admin has began playing GameName.
+17:42:35: Admin has logged in from 127.0.0.1.
+17:42:37: Admin/Admin has began playing GameName.
+17:43:03: Admin has logged in from 127.0.0.1.
+17:43:04: Admin/Admin has began playing GameName.
+17:43:29: Admin has logged in from 127.0.0.1.
+17:43:31: Admin/Admin has began playing GameName.
+17:44:47: Admin has logged in from 127.0.0.1.
+17:44:48: Admin/Admin has began playing GameName.
+17:45:13: Admin has logged in from 127.0.0.1.
+17:45:14: Admin/Admin has began playing GameName.
+22:31:08: Admin has logged in from 127.0.0.1.
+22:31:10: Admin/Admin has began playing GameName.
+22:31:52: Admin has logged in from 127.0.0.1.
+22:31:54: Admin/Admin has began playing GameName.
+22:37:11: Admin has logged in from 127.0.0.1.
+22:37:13: Admin/Admin has began playing GameName.
+22:43:22: Admin has logged in from 127.0.0.1.
+22:43:24: Admin/Admin has began playing GameName.
+15:52:22: Admin has logged in from 127.0.0.1.
+15:52:24: Admin/Admin has began playing GameName.
+16:03:19: Admin has logged in from 127.0.0.1.
+16:03:20: Admin/Admin has began playing GameName.
+16:04:49: Admin has logged in from 127.0.0.1.
+16:04:50: Admin/Admin has began playing GameName.
+16:05:54: Admin has logged in from 127.0.0.1.
+16:05:55: Admin/Admin has began playing GameName.
+16:07:05: Admin has logged in from 127.0.0.1.
+16:07:06: Admin/Admin has began playing GameName.
+16:07:47: Admin has logged in from 127.0.0.1.
+16:07:48: Admin/Admin has began playing GameName.
+16:08:13: Admin has logged in from 127.0.0.1.
+16:08:15: Admin/Admin has began playing GameName.
+15:20:42: Admin has logged in from 127.0.0.1.
+15:20:43: Admin/Admin has began playing GameName.
+15:22:43: Admin has logged in from 127.0.0.1.
+15:23:02: Admin/Admin has began playing GameName.
+15:37:06: Admin has logged in from 127.0.0.1.
+15:37:07: Admin/Admin has began playing GameName.
+15:37:58: Admin has logged in from 127.0.0.1.
+15:37:59: Admin/Admin has began playing GameName.
+15:40:11: Admin has logged in from 127.0.0.1.
+15:40:13: Admin/Admin has began playing GameName.
+15:40:55: Admin has logged in from 127.0.0.1.
+15:40:57: Admin/Admin has began playing GameName.
+15:41:56: Admin has logged in from 127.0.0.1.
+15:41:58: Admin/Admin has began playing GameName.
+15:42:39: Admin has logged in from 127.0.0.1.
+15:42:40: Admin/Admin has began playing GameName.
+15:43:18: Admin has logged in from 127.0.0.1.
+15:43:19: Admin/Admin has began playing GameName.
+15:44:53: Admin/Admin has began playing GameName.
+15:44:58: Admin has logged in from 127.0.0.1.
+15:45:44: Admin has logged in from 127.0.0.1.
+15:45:45: Admin/Admin has began playing GameName.
+15:47:08: Admin has logged in from 127.0.0.1.
+15:47:11: Admin/Admin has began playing GameName.
+15:48:56: Admin has logged in from 127.0.0.1.
+15:48:59: Admin/Admin has began playing GameName.
+15:49:28: Admin has logged in from 127.0.0.1.
+15:49:30: Admin/Admin has began playing GameName.
+15:52:31: Admin has logged in from 127.0.0.1.
+15:52:34: Admin/Admin has began playing GameName.
+15:53:08: Admin has logged in from 127.0.0.1.
+15:53:16: Admin/Admin has began playing GameName.
+15:54:10: Admin has logged in from 127.0.0.1.
+15:54:12: Admin/Admin has began playing GameName.
+15:55:05: Admin/Admin has began playing GameName.
+15:55:05: Admin has logged in from 127.0.0.1.
+15:57:18: Admin has logged in from 127.0.0.1.
+15:57:20: Admin/Admin has began playing GameName.
+15:57:51: Admin has logged in from 127.0.0.1.
+15:57:52: Admin/Admin has began playing GameName.
+15:58:29: Admin has logged in from 127.0.0.1.
+15:58:30: Admin/Admin has began playing GameName.
+15:58:54: Admin has logged in from 127.0.0.1.
+15:58:55: Admin/Admin has began playing GameName.
+15:59:55: Admin has logged in from 127.0.0.1.
+15:59:56: Admin/Admin has began playing GameName.
+16:09:19: Admin has logged in from 127.0.0.1.
+16:09:21: Admin/Admin has began playing GameName.
+16:09:56: Admin has logged in from 127.0.0.1.
+16:09:57: Admin/Admin has began playing GameName.
+16:10:42: Admin has logged in from 127.0.0.1.
+16:10:45: Admin/Admin has began playing GameName.
+16:12:07: Admin has logged in from 127.0.0.1.
+16:12:09: Admin/Admin has began playing GameName.
+16:13:00: Admin has logged in from 127.0.0.1.
+16:13:01: Admin/Admin has began playing GameName.
+16:13:57: Admin has logged in from 127.0.0.1.
+16:13:59: Admin/Admin has began playing GameName.
+16:14:25: Admin has logged in from 127.0.0.1.
+16:14:26: Admin/Admin has began playing GameName.
+16:15:57: Admin has logged in from 127.0.0.1.
+16:15:58: Admin/Admin has began playing GameName.
+16:17:08: Admin has logged in from 127.0.0.1.
+16:17:10: Admin/Admin has began playing GameName.
+16:17:47: Admin has logged in from 127.0.0.1.
+16:17:50: Admin/Admin has began playing GameName.
+16:18:48: Admin has logged in from 127.0.0.1.
+16:18:48: Admin/Admin has began playing GameName.
+16:19:15: Admin has logged in from 127.0.0.1.
+16:19:17: Admin/Admin has began playing GameName.
+16:20:23: Admin has logged in from 127.0.0.1.
+16:20:25: Admin/Admin has began playing GameName.
+16:20:52: Admin has logged in from 127.0.0.1.
+16:20:54: Admin/Admin has began playing GameName.
+16:21:24: Admin has logged in from 127.0.0.1.
+16:21:37: Admin/Admin has began playing GameName.
+16:32:47: Admin has logged in from 127.0.0.1.
+16:32:49: Admin/Admin has began playing GameName.
+16:36:01: Admin has logged in from 127.0.0.1.
+16:36:04: Admin/Admin has began playing GameName.
+16:40:17: Admin has logged in from 127.0.0.1.
+16:40:20: Admin/Admin has began playing GameName.
+16:50:32: Admin has logged in from 127.0.0.1.
+16:50:34: Admin/Admin has began playing GameName.
+16:54:10: Admin has logged in from 127.0.0.1.
+16:54:13: Admin/Admin has began playing GameName.
+16:56:09: Admin has logged in from 127.0.0.1.
+16:56:11: Admin/Admin has began playing GameName.
+16:59:07: Admin has logged in from 127.0.0.1.
+16:59:08: Admin/Admin has began playing GameName.
+17:33:37: Admin has logged in from 127.0.0.1.
+17:33:39: Admin/Admin has began playing GameName.
+17:34:21: Admin has logged in from 127.0.0.1.
+17:34:22: Admin/Admin has began playing GameName.
+17:42:47: Admin has logged in from 127.0.0.1.
+17:42:48: Admin/Admin has began playing GameName.
+17:43:23: Admin has logged in from 127.0.0.1.
+17:43:24: Admin/Admin has began playing GameName.
+17:43:53: Admin has logged in from 127.0.0.1.
+17:43:54: Admin/Admin has began playing GameName.
+17:44:27: Admin has logged in from 127.0.0.1.
+17:44:29: Admin/Admin has began playing GameName.
+17:45:01: Admin has logged in from 127.0.0.1.
+17:45:02: Admin/Admin has began playing GameName.
+17:45:27: Admin has logged in from 127.0.0.1.
+17:45:29: Admin/Admin has began playing GameName.
+17:46:30: Admin has logged in from 127.0.0.1.
+17:46:32: Admin/Admin has began playing GameName.
+17:47:05: Admin has logged in from 127.0.0.1.
+17:47:06: Admin/Admin has began playing GameName.
+17:49:35: Admin has logged in from 127.0.0.1.
+17:49:37: Admin/Admin has began playing GameName.
+17:50:23: Admin has logged in from 127.0.0.1.
+17:50:24: Admin/Admin has began playing GameName.
+18:14:12: Admin has logged in from 127.0.0.1.
+18:14:15: Admin/Admin has began playing GameName.
+18:29:15: Admin has logged in from 127.0.0.1.
+18:29:16: Admin/Admin has began playing GameName.
+18:30:31: Admin has logged in from 127.0.0.1.
+18:30:32: Admin/Admin has began playing GameName.
+18:32:00: Admin has logged in from 127.0.0.1.
+18:32:01: Admin/Admin has began playing GameName.
+18:32:30: Admin has logged in from 127.0.0.1.
+18:32:31: Admin/Admin has began playing GameName.
+18:33:03: Admin has logged in from 127.0.0.1.
+18:33:04: Admin/Admin has began playing GameName.
+18:33:29: Admin has logged in from 127.0.0.1.
+18:33:31: Admin/Admin has began playing GameName.
+18:33:56: Admin has logged in from 127.0.0.1.
+18:33:57: Admin/Admin has began playing GameName.
+18:35:03: Admin has logged in from 127.0.0.1.
+18:35:05: Admin/Admin has began playing GameName.
+18:35:50: Admin has logged in from 127.0.0.1.
+18:35:54: Admin/Admin has began playing GameName.
+18:37:12: Admin has logged in from 127.0.0.1.
+18:37:13: Admin/Admin has began playing GameName.
+18:37:44: Admin has logged in from 127.0.0.1.
+18:37:46: Admin/Admin has began playing GameName.
+18:38:06: Admin has logged in from 127.0.0.1.
+18:38:08: Admin/Admin has began playing GameName.
+18:40:29: Admin has logged in from 127.0.0.1.
+18:40:30: Admin/Admin has began playing GameName.
+18:45:24: Admin has logged in from 127.0.0.1.
+18:45:25: Admin/Admin has began playing GameName.
+21:38:26: Admin has logged in from 127.0.0.1.
+21:38:28: Admin/Admin has began playing GameName.
+21:42:00: Admin has logged in from 127.0.0.1.
+21:42:01: Admin/Admin has began playing GameName.
+21:42:59: Admin has logged in from 127.0.0.1.
+21:43:00: Admin/Admin has began playing GameName.
+21:44:00: Admin has logged in from 127.0.0.1.
+21:44:01: Admin/Admin has began playing GameName.
+21:45:00: Admin has logged in from 127.0.0.1.
+21:45:02: Admin/Admin has began playing GameName.
+21:45:24: Admin has logged in from 127.0.0.1.
+21:45:25: Admin/Admin has began playing GameName.
+21:45:47: Admin has logged in from 127.0.0.1.
+21:45:49: Admin/Admin has began playing GameName.
+21:58:11: Admin has logged in from 127.0.0.1.
+21:58:13: Admin/Admin has began playing GameName.
+21:59:26: Admin has logged in from 127.0.0.1.
+21:59:29: Admin/Admin has began playing GameName.
+22:01:35: Admin has logged in from 127.0.0.1.
+22:01:37: Admin/Admin has began playing GameName.
+22:02:55: Admin has logged in from 127.0.0.1.
+22:02:56: Admin/Admin has began playing GameName.
+18:22:49: Admin has logged in from 127.0.0.1.
+18:22:51: Admin/Admin has began playing GameName.
+18:23:36: Admin has logged in from 127.0.0.1.
+18:23:38: Admin/Admin has began playing GameName.
+18:24:00: Admin has logged in from 127.0.0.1.
+18:24:02: Admin/Admin has began playing GameName.
+23:47:11: Admin has logged in from 127.0.0.1.
+23:47:12: Admin/Admin has began playing GameName.
+23:49:39: Admin has logged in from 127.0.0.1.
+23:49:40: Admin/Admin has began playing GameName.
+23:50:32: Admin has logged in from 127.0.0.1.
+23:50:33: Admin/Admin has began playing GameName.
+23:55:00: Admin has logged in from 127.0.0.1.
+23:55:01: Admin/Admin has began playing GameName.
+23:57:50: Admin has logged in from 127.0.0.1.
+23:57:51: Admin/Admin has began playing GameName.
+23:58:33: Admin has logged in from 127.0.0.1.
+23:58:35: Admin/Admin has began playing GameName.
+21:05:58: Admin has logged in from 127.0.0.1.
+21:07:36: Admin has logged in from 127.0.0.1.
+21:07:39: Admin/Admin has began playing GameName.
+21:08:56: Admin has logged in from 127.0.0.1.
+21:08:58: Admin/Admin has began playing GameName.
+21:10:33: Admin has logged in from 127.0.0.1.
+21:10:35: Admin/Admin has began playing GameName.
+21:12:45: Admin has logged in from 127.0.0.1.
+21:13:09: Admin/Admin has began playing GameName.
+21:18:15: Admin has logged in from 127.0.0.1.
+21:18:16: Admin/Admin has began playing GameName.
+21:20:13: Admin has logged in from 127.0.0.1.
+21:20:15: Admin/Admin has began playing GameName.
+21:23:00: Admin has logged in from 127.0.0.1.
+21:23:01: Admin/Admin has began playing GameName.
+21:23:26: Admin has logged in from 127.0.0.1.
+21:23:36: Admin/Admin has began playing GameName.
+21:31:19: Admin has logged in from 127.0.0.1.
+21:31:24: Admin/Admin has began playing GameName.
+21:42:53: Admin has logged in from 127.0.0.1.
+21:42:55: Admin/Admin has began playing GameName.
+22:32:58: Admin has logged in from 127.0.0.1.
+22:33:00: Admin/Admin has began playing GameName.
+22:34:23: Admin has logged in from 127.0.0.1.
+22:34:25: Admin/Admin has began playing GameName.
+23:11:43: Admin has logged in from 127.0.0.1.
+23:11:45: Admin/Admin has began playing GameName.
+23:12:23: Admin has logged in from 127.0.0.1.
+23:12:24: Admin/Admin has began playing GameName.
+23:15:53: Admin has logged in from 127.0.0.1.
+23:15:57: Admin/Admin has began playing GameName.
+23:16:41: Admin has logged in from 127.0.0.1.
+23:16:42: Admin/Admin has began playing GameName.
+23:20:27: Admin has logged in from 127.0.0.1.
+23:20:29: Admin/Admin has began playing GameName.
+23:23:44: Admin has logged in from 127.0.0.1.
+23:23:46: Admin/Admin has began playing GameName.
+23:24:29: Admin has logged in from 127.0.0.1.
+23:24:30: Admin/Admin has began playing GameName.
+23:50:08: Admin has logged in from 127.0.0.1.
+23:50:12: Admin/Admin has began playing GameName.
+23:52:26: Admin has logged in from 127.0.0.1.
+23:52:27: Admin/Admin has began playing GameName.
+23:53:54: Admin has logged in from 127.0.0.1.
+23:53:55: Admin/Admin has began playing GameName.
+23:54:52: Admin has logged in from 127.0.0.1.
+23:54:53: Admin/Admin has began playing GameName.
+00:15:10: Admin has logged in from 127.0.0.1.
+00:15:12: Admin/Admin has began playing GameName.
+00:16:58: Admin has logged in from 127.0.0.1.
+00:16:59: Admin/Admin has began playing GameName.
+00:18:28: Admin has logged in from 127.0.0.1.
+00:18:30: Admin/Admin has began playing GameName.
+00:18:57: Admin has logged in from 127.0.0.1.
+00:18:57: Admin/Admin has began playing GameName.
+00:19:41: Admin has logged in from 127.0.0.1.
+00:19:42: Admin/Admin has began playing GameName.
+00:20:31: Admin has logged in from 127.0.0.1.
+00:20:32: Admin/Admin has began playing GameName.
+00:21:13: Admin has logged in from 127.0.0.1.
+00:21:14: Admin/Admin has began playing GameName.
+00:23:55: Admin has logged in from 127.0.0.1.
+00:23:57: Admin/Admin has began playing GameName.
+13:52:06: Admin has logged in from 127.0.0.1.
+13:52:08: Admin/Admin has began playing GameName.
+13:53:04: Admin has logged in from 127.0.0.1.
+13:53:06: Admin/Admin has began playing GameName.
+14:11:56: Admin has logged in from 127.0.0.1.
+14:11:58: Admin/Admin has began playing GameName.
+14:15:22: Admin has logged in from 127.0.0.1.
+14:15:23: Admin/Admin has began playing GameName.
+14:18:45: Admin has logged in from 127.0.0.1.
+14:18:47: Admin/Admin has began playing GameName.
+14:21:59: Admin has logged in from 127.0.0.1.
+14:22:00: Admin/Admin has began playing GameName.
+14:24:05: Admin has logged in from 127.0.0.1.
+14:24:06: Admin/Admin has began playing GameName.
+14:25:05: Admin has logged in from 127.0.0.1.
+14:25:06: Admin/Admin has began playing GameName.
+14:26:04: Admin has logged in from 127.0.0.1.
+14:26:06: Admin/Admin has began playing GameName.
+14:30:02: Admin has logged in from 127.0.0.1.
+14:30:03: Admin/Admin has began playing GameName.
+14:39:01: Admin has logged in from 127.0.0.1.
+14:39:04: Admin/Admin has began playing GameName.
+14:39:54: Admin has logged in from 127.0.0.1.
+14:39:55: Admin/Admin has began playing GameName.
+20:06:46: Admin has logged in from 127.0.0.1.
+20:06:52: Admin/Admin has began playing GameName.
+20:09:14: Admin has logged in from 127.0.0.1.
+20:09:15: Admin/Admin has began playing GameName.
+20:11:07: Admin has logged in from 127.0.0.1.
+20:11:08: Admin/Admin has began playing GameName.
+20:14:32: Admin has logged in from 127.0.0.1.
+20:14:36: Admin/Admin has began playing GameName.
+20:15:40: Admin has logged in from 127.0.0.1.
+20:15:41: Admin/Admin has began playing GameName.
+12:48:36: Admin has logged in from 127.0.0.1.
+12:48:37: Admin/Admin has began playing GameName.
+12:49:19: Admin has logged in from 127.0.0.1.
+12:49:20: Admin/Admin has began playing GameName.
+12:52:03: Admin has logged in from 127.0.0.1.
+12:52:04: Admin/Admin has began playing GameName.
+12:57:42: Admin has logged in from 127.0.0.1.
+12:57:43: Admin/Admin has began playing GameName.
+13:16:17: Admin has logged in from 127.0.0.1.
+13:16:19: Admin/Admin has began playing GameName.
+13:20:58: Admin has logged in from 127.0.0.1.
+13:20:59: Admin/Admin has began playing GameName.
+13:25:15: Admin has logged in from 127.0.0.1.
+13:25:16: Admin/Admin has began playing GameName.
+13:26:02: Admin has logged in from 127.0.0.1.
+13:26:04: Admin/Admin has began playing GameName.
+12:14:50: Admin has logged in from 127.0.0.1.
+12:14:53: Admin/Admin has began playing GameName.
+13:03:05: Admin has logged in from 127.0.0.1.
+13:03:07: Admin/Admin has began playing GameName.
+13:07:22: Admin has logged in from 127.0.0.1.
+13:07:23: Admin/Admin has began playing GameName.
+13:10:06: Admin has logged in from 127.0.0.1.
+13:10:08: Admin/Admin has began playing GameName.
+13:10:40: Admin has logged in from 127.0.0.1.
+13:10:41: Admin/Admin has began playing GameName.
+13:11:57: Admin has logged in from 127.0.0.1.
+13:11:58: Admin/Admin has began playing GameName.
+23:38:12: Admin has logged in from 127.0.0.1.
+23:38:15: Admin/Admin has began playing GameName.
+23:38:51: Admin has logged in from 127.0.0.1.
+23:38:52: Admin/Admin has began playing GameName.
+10:45:31: Admin has logged in from 127.0.0.1.
+10:45:32: Admin/Admin has began playing GameName.
+10:56:06: Admin has logged in from 127.0.0.1.
+10:56:08: Admin/Admin has began playing GameName.
+13:09:13: Map #1: Admin : ,
+13:28:44: Admin has logged in from 127.0.0.1.
+13:28:48: Admin/Admin has began playing GameName.
+13:30:20: Admin has logged in from 127.0.0.1.
+13:30:22: Admin/Admin has began playing GameName.
+12:48:07: Admin has logged in from 127.0.0.1.
+12:48:09: Admin/Admin has began playing GameName.
+12:49:00: Admin has logged in from 127.0.0.1.
+12:49:01: Admin/Admin has began playing GameName.
+12:59:28: Admin has logged in from 127.0.0.1.
+12:59:29: Admin/Admin has began playing GameName.
+13:14:12: Admin has logged in from 127.0.0.1.
+13:14:15: Admin/Admin has began playing GameName.
+13:15:16: Admin has logged in from 127.0.0.1.
+13:15:18: Admin/Admin has began playing GameName.
+13:21:16: Admin has logged in from 127.0.0.1.
+13:21:28: Character deleted on Admin's account.
+13:21:55: Character indy added to Admin's account.
+13:21:59: Admin/indy has began playing GameName.
+13:23:58: Admin has logged in from 127.0.0.1.
+13:24:01: Admin/Admin has began playing GameName.
+13:24:53: Admin has logged in from 127.0.0.1.
+13:24:56: Admin/indy has began playing GameName.
+13:30:07: Admin has logged in from 127.0.0.1.
+13:30:09: Admin/indy has began playing GameName.
+13:31:51: Admin has logged in from 127.0.0.1.
+13:31:54: Admin/indy has began playing GameName.
+13:34:19: Admin has logged in from 127.0.0.1.
+13:34:22: Admin/Admin has began playing GameName.
+13:46:22: Admin has logged in from 127.0.0.1.
+13:46:26: Admin/Admin has began playing GameName.
+13:48:07: Admin has logged in from 127.0.0.1.
+13:48:08: Admin/Admin has began playing GameName.
+09:03:12: Admin has logged in from 127.0.0.1.
+09:03:13: Admin/Admin has began playing GameName.
+10:58:18: Admin has logged in from 127.0.0.1.
+10:58:19: Admin/Admin has began playing GameName.
+12:29:09: Admin has logged in from 127.0.0.1.
+12:29:11: Admin/Admin has began playing GameName.
+13:32:11: Admin has logged in from 127.0.0.1.
+13:32:12: Admin/Admin has began playing GameName.
+13:40:11: Admin has logged in from 127.0.0.1.
+13:40:14: Admin/Admin has began playing GameName.
+13:43:03: Admin has logged in from 127.0.0.1.
+13:43:04: Admin/Admin has began playing GameName.
+13:49:37: Admin has logged in from 127.0.0.1.
+13:49:40: Admin/Admin has began playing GameName.
+14:18:54: Admin has logged in from 127.0.0.1.
+14:18:56: Admin/Admin has began playing GameName.
+14:19:37: Admin has logged in from 127.0.0.1.
+14:19:38: Admin/Admin has began playing GameName.
+14:23:58: Admin has logged in from 127.0.0.1.
+14:24:00: Admin/Admin has began playing GameName.
+14:26:27: Admin has logged in from 127.0.0.1.
+14:26:28: Admin/Admin has began playing GameName.
+14:27:25: Admin has logged in from 127.0.0.1.
+14:27:26: Admin/Admin has began playing GameName.
+14:28:58: Admin has logged in from 127.0.0.1.
+14:28:59: Admin/Admin has began playing GameName.
+15:33:47: Admin has logged in from 127.0.0.1.
+15:33:50: Admin/Admin has began playing GameName.
+15:35:17: Admin has logged in from 127.0.0.1.
+15:35:19: Admin/Admin has began playing GameName.
+15:41:07: Admin has logged in from 127.0.0.1.
+15:41:10: Admin/Admin has began playing GameName.
+15:45:06: Admin has logged in from 127.0.0.1.
+15:45:08: Admin/Admin has began playing GameName.
+15:53:58: Admin has logged in from 127.0.0.1.
+15:54:00: Admin/Admin has began playing GameName.
+15:57:03: Admin has logged in from 127.0.0.1.
+15:57:04: Admin/Admin has began playing GameName.
+16:00:46: Admin has logged in from 127.0.0.1.
+16:00:47: Admin/Admin has began playing GameName.
+16:47:36: Admin has logged in from 127.0.0.1.
+16:47:41: Admin/Admin has began playing GameName.
+16:51:50: Admin has logged in from 127.0.0.1.
+16:51:51: Admin/Admin has began playing GameName.
+16:53:27: Admin has logged in from 127.0.0.1.
+16:53:28: Admin/Admin has began playing GameName.
+16:54:18: Admin has logged in from 127.0.0.1.
+16:54:20: Admin/Admin has began playing GameName.
+16:58:20: Admin has logged in from 127.0.0.1.
+16:58:21: Admin/Admin has began playing GameName.
+11:36:43: Admin has logged in from 127.0.0.1.
+11:36:45: Admin/Admin has began playing GameName.
+11:39:44: Admin has logged in from 127.0.0.1.
+11:39:45: Admin/Admin has began playing GameName.
+11:41:08: Admin has logged in from 127.0.0.1.
+11:41:10: Admin/Admin has began playing GameName.
+11:42:27: Admin has logged in from 127.0.0.1.
+11:42:29: Admin/Admin has began playing GameName.
+11:48:44: Admin has logged in from 127.0.0.1.
+11:48:45: Admin/Admin has began playing GameName.
+11:52:55: Admin has logged in from 127.0.0.1.
+11:52:59: Admin/Admin has began playing GameName.
+11:55:37: Admin has logged in from 127.0.0.1.
+11:55:38: Admin/Admin has began playing GameName.
+12:01:16: Admin has logged in from 127.0.0.1.
+12:01:18: Admin/Admin has began playing GameName.
+12:01:44: Admin has logged in from 127.0.0.1.
+12:01:45: Admin/Admin has began playing GameName.
+12:02:25: Admin has logged in from 127.0.0.1.
+12:02:26: Admin/Admin has began playing GameName.
+12:03:59: Admin has logged in from 127.0.0.1.
+12:04:00: Admin/Admin has began playing GameName.
+14:58:40: Admin has logged in from 127.0.0.1.
+14:58:41: Admin/Admin has began playing GameName.
+15:30:41: Admin has logged in from 127.0.0.1.
+15:32:51: Admin/Admin has began playing GameName.
+15:37:36: Admin has logged in from 127.0.0.1.
+15:37:37: Admin/Admin has began playing GameName.
+15:38:34: Admin has logged in from 127.0.0.1.
+15:38:35: Admin/Admin has began playing GameName.
+15:40:11: Admin has logged in from 127.0.0.1.
+15:40:13: Admin/Admin has began playing GameName.
+15:43:29: Admin has logged in from 127.0.0.1.
+15:43:31: Admin/Admin has began playing GameName.
+15:44:09: Admin has logged in from 127.0.0.1.
+15:44:10: Admin/Admin has began playing GameName.
+15:45:41: Admin has logged in from 127.0.0.1.
+15:45:43: Admin/Admin has began playing GameName.
+15:46:10: Admin has logged in from 127.0.0.1.
+15:46:12: Admin/Admin has began playing GameName.
+16:00:08: Admin has logged in from 127.0.0.1.
+16:00:10: Admin/Admin has began playing GameName.
+16:01:10: Admin has logged in from 127.0.0.1.
+16:01:11: Admin/Admin has began playing GameName.
+16:01:47: Admin has logged in from 127.0.0.1.
+16:01:49: Admin/Admin has began playing GameName.
+16:02:42: Admin has logged in from 127.0.0.1.
+16:02:45: Admin/Admin has began playing GameName.
+16:04:55: Admin has logged in from 127.0.0.1.
+16:04:56: Admin/Admin has began playing GameName.
+16:05:23: Admin has logged in from 127.0.0.1.
+16:05:25: Admin/Admin has began playing GameName.
+16:06:09: Admin has logged in from 127.0.0.1.
+16:06:10: Admin/Admin has began playing GameName.
+23:59:18: Admin has logged in from 127.0.0.1.
+23:59:27: Admin/Admin has began playing GameName.
+00:00:43: Admin has logged in from 127.0.0.1.
+00:00:45: Admin/Admin has began playing GameName.
+00:02:54: Admin has logged in from 127.0.0.1.
+00:03:01: Admin/Admin has began playing GameName.
+00:24:56: Admin has logged in from 127.0.0.1.
+00:25:01: Admin/Admin has began playing GameName.
+00:25:58: Admin has logged in from 127.0.0.1.
+00:25:59: Admin/Admin has began playing GameName.
+00:30:15: Admin has logged in from 127.0.0.1.
+00:30:27: Admin/ggggggggg has began playing GameName.
+00:32:12: Admin has logged in from 127.0.0.1.
+00:32:14: Admin/ggggggggg has began playing GameName.
+00:41:44: Admin has logged in from 127.0.0.1.
+00:41:49: Admin/vvv has began playing GameName.
+00:45:25: Admin has logged in from 127.0.0.1.
+00:45:26: Admin/vvv has began playing GameName.
+00:58:59: Admin has logged in from 127.0.0.1.
+00:59:04: Admin/vvv has began playing GameName.
+01:01:24: Admin has logged in from 127.0.0.1.
+01:01:26: Admin/vvv has began playing GameName.
+01:03:56: Admin has logged in from 127.0.0.1.
+01:03:57: Admin/vvv has began playing GameName.
+01:17:27: Admin has logged in from 127.0.0.1.
+01:17:30: Admin/oo has began playing GameName.
+01:18:24: Admin has logged in from 127.0.0.1.
+01:18:26: Admin/oo has began playing GameName.
+01:21:54: Admin has logged in from 127.0.0.1.
+01:21:55: Admin/oo has began playing GameName.
+16:43:41: Admin has logged in from 127.0.0.1.
+16:43:44: Admin/oo has began playing GameName.
+15:25:38: Admin has logged in from 127.0.0.1.
+15:26:52: Admin has logged in from 127.0.0.1.
+15:27:57: Admin has logged in from 127.0.0.1.
+15:32:40: Admin has logged in from 127.0.0.1.
+15:32:52: Character deleted on Admin's account.
+15:33:14: Character Wiiihoo added to Admin's account.
+15:34:57: Admin has logged in from 127.0.0.1.
+11:52:17: Account Willy has been created.
+11:52:18: Willy has logged in from 127.0.0.1.
+11:52:42: Character William Robhe added to Willy's account.
+11:52:44: Willy/William Robhe has began playing GameName.
+12:04:16: Willy has logged in from 127.0.0.1.
+12:04:18: Willy/William Robhe has began playing GameName.
+12:08:50: Willy has logged in from 127.0.0.1.
+12:08:52: Willy/William Robhe has began playing GameName.
+12:25:48: Willy has logged in from 127.0.0.1.
+12:25:52: Willy/William Robhe has began playing GameName.
+12:29:15: Willy has logged in from 127.0.0.1.
+12:29:16: Willy/William Robhe has began playing GameName.
+12:32:23: Willy has logged in from 127.0.0.1.
+12:32:24: Willy/William Robhe has began playing GameName.
+12:08:52: Willy has logged in from 127.0.0.1.
+12:09:08: Willy/William Robhe has began playing GameName.
+12:10:01: Willy has logged in from 127.0.0.1.
+12:10:03: Willy/William Robhe has began playing GameName.
+12:10:24: Willy has logged in from 127.0.0.1.
+12:10:26: Willy/William Robhe has began playing GameName.
+12:29:59: Willy has logged in from 127.0.0.1.
+12:30:00: Willy/William Robhe has began playing GameName.
+12:30:47: Willy has logged in from 127.0.0.1.
+12:30:48: Willy/William Robhe has began playing GameName.
+12:34:50: Willy has logged in from 127.0.0.1.
+12:34:52: Willy/William Robhe has began playing GameName.
+12:36:15: Willy has logged in from 127.0.0.1.
+12:36:16: Willy/William Robhe has began playing GameName.
+12:38:46: Willy has logged in from 127.0.0.1.
+12:38:47: Willy/William Robhe has began playing GameName.
+12:43:09: Willy has logged in from 127.0.0.1.
+12:43:10: Willy/William Robhe has began playing GameName.
+12:43:50: Willy has logged in from 127.0.0.1.
+12:43:51: Willy/William Robhe has began playing GameName.
+17:13:05: Willy has logged in from 127.0.0.1.
+17:13:34: Willy has logged in from 127.0.0.1.
+17:13:36: Willy/William Robhe has began playing GameName.
+17:14:47: Willy has logged in from 127.0.0.1.
+17:15:12: Willy has logged in from 127.0.0.1.
+17:16:42: Willy has logged in from 127.0.0.1.
+17:16:45: Willy/William Robhe has began playing GameName.
+17:18:09: Willy has logged in from 127.0.0.1.
+17:18:27: Character rrr added to Willy's account.
+17:19:55: Willy has logged in from 127.0.0.1.
+17:19:57: Willy/William Robhe has began playing GameName.
+17:20:43: Willy has logged in from 127.0.0.1.
+17:21:17: Willy has logged in from 127.0.0.1.
+17:21:20: Willy/rrr has began playing GameName.
+17:22:47: Willy has logged in from 127.0.0.1.
+17:25:11: Willy has logged in from 127.0.0.1.
+17:27:14: Willy has logged in from 127.0.0.1.
+17:28:03: Willy has logged in from 127.0.0.1.
+17:31:01: Willy has logged in from 127.0.0.1.
+17:31:04: Willy/rrr has began playing GameName.
+17:33:49: Willy has logged in from 127.0.0.1.
+17:34:42: Willy has logged in from 127.0.0.1.
+17:43:06: Willy has logged in from 127.0.0.1.
+17:44:43: Willy has logged in from 127.0.0.1.
+17:45:20: Willy has logged in from 127.0.0.1.
+17:46:10: Willy has logged in from 127.0.0.1.
+17:47:53: Willy has logged in from 127.0.0.1.
+17:52:40: Willy has logged in from 127.0.0.1.
+17:55:57: Willy has logged in from 127.0.0.1.
+18:05:00: Willy has logged in from 127.0.0.1.
+18:05:03: Willy/William Robhe has began playing GameName.
+18:09:11: Willy has logged in from 127.0.0.1.
+18:09:47: Willy has logged in from 127.0.0.1.
+18:11:02: Willy has logged in from 127.0.0.1.
+18:12:04: Willy has logged in from 127.0.0.1.
+18:14:10: Willy has logged in from 127.0.0.1.
+18:16:27: Willy has logged in from 127.0.0.1.
+18:19:04: Willy has logged in from 127.0.0.1.
+18:19:58: Willy has logged in from 127.0.0.1.
+18:20:42: Willy has logged in from 127.0.0.1.
+18:22:13: Willy has logged in from 127.0.0.1.
+18:22:14: Willy/William Robhe has began playing GameName.
+18:33:23: Willy has logged in from 127.0.0.1.
+18:33:27: Willy/William Robhe has began playing GameName.
+18:39:16: Willy has logged in from 127.0.0.1.
+18:39:41: Willy has logged in from 127.0.0.1.
+18:39:43: Willy/William Robhe has began playing GameName.
+18:40:07: Willy has logged in from 127.0.0.1.
+18:40:08: Willy/William Robhe has began playing GameName.
+18:43:44: Willy has logged in from 127.0.0.1.
+18:43:46: Willy/William Robhe has began playing GameName.
+18:56:50: Willy has logged in from 127.0.0.1.
+18:57:08: Willy/William Robhe has began playing GameName.
+18:57:38: Willy has logged in from 127.0.0.1.
+18:57:40: Willy/William Robhe has began playing GameName.
+19:20:32: Willy has logged in from 127.0.0.1.
+19:26:57: Willy has logged in from 127.0.0.1.
+19:27:30: Willy/William Robhe has began playing GameName.
+19:31:27: Willy has logged in from 127.0.0.1.
+19:32:44: Willy/William Robhe has began playing GameName.
+19:33:50: Willy has logged in from 127.0.0.1.
+19:33:51: Willy/William Robhe has began playing GameName.
+21:48:46: Willy has logged in from 127.0.0.1.
+21:48:50: Willy/William Robhe has began playing GameName.
+21:51:39: Willy has logged in from 127.0.0.1.
+21:51:41: Willy/William Robhe has began playing GameName.
+21:52:44: Willy has logged in from 127.0.0.1.
+21:52:45: Willy/William Robhe has began playing GameName.
+21:55:15: Willy has logged in from 127.0.0.1.
+21:55:16: Willy/William Robhe has began playing GameName.
+22:56:02: Willy has logged in from 127.0.0.1.
+22:56:09: Willy/William Robhe has began playing GameName.
+22:57:14: Willy has logged in from 127.0.0.1.
+22:57:16: Willy/William Robhe has began playing GameName.
+22:58:36: Willy has logged in from 127.0.0.1.
+22:58:38: Willy/William Robhe has began playing GameName.
+23:19:22: Willy has logged in from 127.0.0.1.
+23:19:26: Willy/William Robhe has began playing GameName.
+23:20:42: Willy has logged in from 127.0.0.1.
+23:20:43: Willy/William Robhe has began playing GameName.
+23:45:28: Willy has logged in from 127.0.0.1.
+23:45:30: Willy/William Robhe has began playing GameName.
+23:48:15: Willy has logged in from 127.0.0.1.
+23:48:17: Willy/William Robhe has began playing GameName.
+23:51:56: Willy has logged in from 127.0.0.1.
+23:51:57: Willy/William Robhe has began playing GameName.
+00:02:38: Willy has logged in from 127.0.0.1.
+00:02:39: Willy/William Robhe has began playing GameName.
+00:03:14: Willy has logged in from 127.0.0.1.
+00:03:15: Willy/William Robhe has began playing GameName.
+00:03:36: Willy has logged in from 127.0.0.1.
+00:03:39: Willy/William Robhe has began playing GameName.
+00:04:20: Willy has logged in from 127.0.0.1.
+00:04:21: Willy/William Robhe has began playing GameName.
+00:04:51: Willy has logged in from 127.0.0.1.
+00:04:52: Willy/William Robhe has began playing GameName.
+00:05:53: Map #1: William Robhe : gfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+10:21:58: Willy has logged in from 127.0.0.1.
+10:22:00: Willy/William Robhe has began playing GameName.
+10:22:34: Willy has logged in from 127.0.0.1.
+10:22:35: Willy/William Robhe has began playing GameName.
+10:23:01: Willy has logged in from 127.0.0.1.
+10:23:03: Willy/William Robhe has began playing GameName.
+10:24:48: Willy has logged in from 127.0.0.1.
+10:24:50: Willy/William Robhe has began playing GameName.
+10:25:18: Willy has logged in from 127.0.0.1.
+10:25:20: Willy/William Robhe has began playing GameName.
+10:27:10: Willy has logged in from 127.0.0.1.
+10:27:11: Willy/William Robhe has began playing GameName.
+10:28:09: Willy has logged in from 127.0.0.1.
+10:28:10: Willy/William Robhe has began playing GameName.
+10:28:57: Willy has logged in from 127.0.0.1.
+10:28:58: Willy/William Robhe has began playing GameName.
+10:32:29: Willy has logged in from 127.0.0.1.
+10:33:24: Willy has logged in from 127.0.0.1.
+10:33:26: Willy/William Robhe has began playing GameName.
+10:34:18: Willy has logged in from 127.0.0.1.
+10:34:20: Willy/William Robhe has began playing GameName.
+10:40:59: Willy has logged in from 127.0.0.1.
+10:41:01: Willy/William Robhe has began playing GameName.
+10:42:13: Willy has logged in from 127.0.0.1.
+10:42:16: Willy/William Robhe has began playing GameName.
+10:46:22: Willy has logged in from 127.0.0.1.
+10:46:24: Willy/William Robhe has began playing GameName.
+11:43:41: Willy has logged in from 127.0.0.1.
+11:43:43: Willy/William Robhe has began playing GameName.
+11:45:27: Willy has logged in from 127.0.0.1.
+11:45:28: Willy/William Robhe has began playing GameName.
+11:49:44: Willy has logged in from 127.0.0.1.
+11:49:46: Willy/William Robhe has began playing GameName.
+11:52:33: Willy has logged in from 127.0.0.1.
+11:52:35: Willy/William Robhe has began playing GameName.
+11:59:25: Willy has logged in from 127.0.0.1.
+11:59:27: Willy/William Robhe has began playing GameName.
+13:02:26: Willy has logged in from 127.0.0.1.
+13:02:30: Willy/William Robhe has began playing GameName.
+13:03:24: Willy has logged in from 127.0.0.1.
+13:03:26: Willy/William Robhe has began playing GameName.
+13:08:05: Willy has logged in from 127.0.0.1.
+13:08:09: Willy/William Robhe has began playing GameName.
+13:13:01: Willy has logged in from 127.0.0.1.
+13:13:04: Willy/William Robhe has began playing GameName.
+13:14:13: Willy has logged in from 127.0.0.1.
+13:14:15: Willy/William Robhe has began playing GameName.
+13:16:02: Willy has logged in from 127.0.0.1.
+13:16:04: Willy/William Robhe has began playing GameName.
+13:19:39: Willy has logged in from 127.0.0.1.
+13:19:43: Willy/William Robhe has began playing GameName.
+13:38:19: Willy has logged in from 127.0.0.1.
+13:38:22: Willy/William Robhe has began playing GameName.
+13:47:25: Willy has logged in from 127.0.0.1.
+13:47:27: Willy/William Robhe has began playing GameName.
+14:58:17: Willy has logged in from 127.0.0.1.
+14:58:22: Willy/William Robhe has began playing GameName.
+14:59:14: Willy has logged in from 127.0.0.1.
+14:59:15: Willy/William Robhe has began playing GameName.
+15:42:19: Willy has logged in from 127.0.0.1.
+15:42:23: Willy/William Robhe has began playing GameName.
+23:30:41: Willy has logged in from 127.0.0.1.
+23:30:47: Willy/William Robhe has began playing GameName.
+23:40:18: Willy has logged in from 127.0.0.1.
+23:40:20: Willy/William Robhe has began playing GameName.
+23:41:44: Willy has logged in from 127.0.0.1.
+23:41:45: Willy/William Robhe has began playing GameName.
+23:47:27: Willy has logged in from 127.0.0.1.
+23:47:38: Willy/William Robhe has began playing GameName.
+23:48:48: Willy has logged in from 127.0.0.1.
+23:48:49: Willy/William Robhe has began playing GameName.
+23:51:51: Willy has logged in from 127.0.0.1.
+23:51:55: Willy/William Robhe has began playing GameName.
+23:53:14: Map #1: William Robhe : yy
+23:53:23: Map #1: William Robhe : gg
+23:53:30: Map #1: William Robhe : kk
+23:53:37: Map #1: William Robhe : p
+00:12:21: Willy has logged in from 127.0.0.1.
+00:12:24: Willy/William Robhe has began playing GameName.
+00:14:10: Willy has logged in from 127.0.0.1.
+00:14:12: Willy/William Robhe has began playing GameName.
+00:16:02: Willy has logged in from 127.0.0.1.
+00:16:21: Willy/William Robhe has began playing GameName.
+00:17:41: Willy has logged in from 127.0.0.1.
+00:17:42: Willy/William Robhe has began playing GameName.
+00:27:51: Willy has logged in from 127.0.0.1.
+00:27:52: Willy/William Robhe has began playing GameName.
+00:29:09: Willy has logged in from 127.0.0.1.
+00:29:14: Willy/William Robhe has began playing GameName.
+00:30:44: Willy has logged in from 127.0.0.1.
+00:30:46: Willy/William Robhe has began playing GameName.
+00:37:28: Willy has logged in from 127.0.0.1.
+00:37:33: Willy/William Robhe has began playing GameName.
+21:47:01: Willy has logged in from 127.0.0.1.
+21:47:05: Willy/William Robhe has began playing GameName.
+21:48:46: Willy has logged in from 127.0.0.1.
+21:48:48: Willy/William Robhe has began playing GameName.
+11:58:44: Willy has logged in from 127.0.0.1.
+11:58:48: Willy/William Robhe has began playing GameName.
+12:04:08: Willy has logged in from 127.0.0.1.
+12:04:11: Willy/William Robhe has began playing GameName.
+12:05:36: Willy has logged in from 127.0.0.1.
+12:05:39: Willy/William Robhe has began playing GameName.
+12:09:55: Willy has logged in from 127.0.0.1.
+12:09:58: Willy/William Robhe has began playing GameName.
+12:12:11: Willy has logged in from 127.0.0.1.
+12:12:14: Willy/William Robhe has began playing GameName.
+12:13:21: Willy has logged in from 127.0.0.1.
+12:13:23: Willy/William Robhe has began playing GameName.
+12:19:59: Willy has logged in from 127.0.0.1.
+12:20:01: Willy/William Robhe has began playing GameName.
+12:51:45: Willy has logged in from 127.0.0.1.
+12:51:49: Willy/William Robhe has began playing GameName.
+12:54:20: Willy has logged in from 127.0.0.1.
+12:54:25: Willy/William Robhe has began playing GameName.
+12:55:26: Willy has logged in from 127.0.0.1.
+12:55:27: Willy/William Robhe has began playing GameName.
+12:57:39: Willy has logged in from 127.0.0.1.
+12:57:41: Willy/William Robhe has began playing GameName.
+12:59:17: Willy has logged in from 127.0.0.1.
+12:59:19: Willy/William Robhe has began playing GameName.
+13:02:59: Willy has logged in from 127.0.0.1.
+13:03:02: Willy/William Robhe has began playing GameName.
+13:15:48: Willy has logged in from 127.0.0.1.
+13:15:55: Willy/William Robhe has began playing GameName.
+13:17:18: Willy has logged in from 127.0.0.1.
+13:17:19: Willy/William Robhe has began playing GameName.
+13:19:23: Willy has logged in from 127.0.0.1.
+13:19:29: Willy/William Robhe has began playing GameName.
+13:20:44: Willy has logged in from 127.0.0.1.
+13:20:46: Willy/William Robhe has began playing GameName.
+13:21:32: Willy has logged in from 127.0.0.1.
+13:21:33: Willy/William Robhe has began playing GameName.
+13:22:42: Willy has logged in from 127.0.0.1.
+13:22:44: Willy/William Robhe has began playing GameName.
+13:34:14: Willy has logged in from 127.0.0.1.
+13:34:58: Willy/William Robhe has began playing GameName.
+13:35:48: Willy has logged in from 127.0.0.1.
+13:35:49: Willy/William Robhe has began playing GameName.
+13:39:06: Willy has logged in from 127.0.0.1.
+13:39:07: Willy/William Robhe has began playing GameName.
+13:40:55: Willy has logged in from 127.0.0.1.
+13:40:57: Willy/William Robhe has began playing GameName.
+13:48:16: Willy has logged in from 127.0.0.1.
+13:48:20: Willy/William Robhe has began playing GameName.
+13:49:16: Willy has logged in from 127.0.0.1.
+13:49:18: Willy/William Robhe has began playing GameName.
+13:55:15: Willy has logged in from 127.0.0.1.
+13:55:18: Willy/William Robhe has began playing GameName.
+13:59:27: Willy has logged in from 127.0.0.1.
+13:59:29: Willy/William Robhe has began playing GameName.
+14:04:23: Willy has logged in from 127.0.0.1.
+14:04:39: Willy/William Robhe has began playing GameName.
+14:07:29: Willy has logged in from 127.0.0.1.
+14:07:30: Willy/William Robhe has began playing GameName.
+14:11:53: Willy has logged in from 127.0.0.1.
+14:11:56: Willy/William Robhe has began playing GameName.
+14:19:47: Willy has logged in from 127.0.0.1.
+14:19:50: Willy/William Robhe has began playing GameName.
+15:17:06: Willy has logged in from 127.0.0.1.
+15:17:19: Willy/William Robhe has began playing GameName.
+15:18:28: Willy has logged in from 127.0.0.1.
+15:18:28: Willy/William Robhe has began playing GameName.
+15:30:03: Willy has logged in from 127.0.0.1.
+15:31:07: Willy/William Robhe has began playing GameName.
+15:33:33: Willy has logged in from 127.0.0.1.
+15:33:34: Willy/William Robhe has began playing GameName.
+15:34:12: Willy has logged in from 127.0.0.1.
+15:34:14: Willy/William Robhe has began playing GameName.
+15:52:43: Willy has logged in from 127.0.0.1.
+15:52:47: Willy/William Robhe has began playing GameName.
+15:54:06: Willy has logged in from 127.0.0.1.
+15:54:07: Willy/William Robhe has began playing GameName.
+15:58:50: Willy has logged in from 127.0.0.1.
+15:58:53: Willy/William Robhe has began playing GameName.
+16:02:58: Willy has logged in from 127.0.0.1.
+16:02:59: Willy/William Robhe has began playing GameName.
+16:04:45: Willy has logged in from 127.0.0.1.
+16:04:53: Willy/William Robhe has began playing GameName.
+16:07:36: Willy has logged in from 127.0.0.1.
+16:07:37: Willy/William Robhe has began playing GameName.
+16:08:27: Willy has logged in from 127.0.0.1.
+16:08:29: Willy/William Robhe has began playing GameName.
+16:17:43: Willy has logged in from 127.0.0.1.
+16:17:44: Willy/William Robhe has began playing GameName.
+16:21:49: Willy has logged in from 127.0.0.1.
+16:21:53: Willy/William Robhe has began playing GameName.
+16:23:08: Willy has logged in from 127.0.0.1.
+16:23:09: Willy/William Robhe has began playing GameName.
+16:29:04: Willy has logged in from 127.0.0.1.
+16:31:23: Willy/William Robhe has began playing GameName.
+16:33:07: Willy has logged in from 127.0.0.1.
+16:33:10: Willy/William Robhe has began playing GameName.
+16:35:07: Willy has logged in from 127.0.0.1.
+16:35:13: Willy/William Robhe has began playing GameName.
+16:36:05: Willy has logged in from 127.0.0.1.
+16:36:07: Willy/William Robhe has began playing GameName.
+16:37:46: Willy has logged in from 127.0.0.1.
+16:37:48: Willy/William Robhe has began playing GameName.
+16:41:37: Willy has logged in from 127.0.0.1.
+16:41:41: Willy/William Robhe has began playing GameName.
+16:51:37: Willy has logged in from 127.0.0.1.
+16:51:39: Willy/William Robhe has began playing GameName.
+16:53:48: Willy has logged in from 127.0.0.1.
+16:53:50: Willy/William Robhe has began playing GameName.
+16:56:55: Willy has logged in from 127.0.0.1.
+16:56:57: Willy/William Robhe has began playing GameName.
+16:58:22: Willy has logged in from 127.0.0.1.
+16:58:23: Willy/William Robhe has began playing GameName.
+16:58:56: Willy has logged in from 127.0.0.1.
+16:58:57: Willy/William Robhe has began playing GameName.
+16:59:37: Willy has logged in from 127.0.0.1.
+16:59:39: Willy/William Robhe has began playing GameName.
+17:01:01: Willy has logged in from 127.0.0.1.
+17:01:04: Willy/William Robhe has began playing GameName.
+17:03:15: Willy has logged in from 127.0.0.1.
+17:03:17: Willy/William Robhe has began playing GameName.
+17:03:54: Willy has logged in from 127.0.0.1.
+17:03:56: Willy/William Robhe has began playing GameName.
+17:05:14: Willy has logged in from 127.0.0.1.
+17:05:17: Willy/William Robhe has began playing GameName.
+17:06:48: Willy has logged in from 127.0.0.1.
+17:06:49: Willy/William Robhe has began playing GameName.
+17:08:45: Willy has logged in from 127.0.0.1.
+17:08:47: Willy/William Robhe has began playing GameName.
+17:10:18: Willy has logged in from 127.0.0.1.
+17:10:20: Willy/William Robhe has began playing GameName.
+17:11:00: Willy has logged in from 127.0.0.1.
+17:11:01: Willy/William Robhe has began playing GameName.
+17:13:01: Willy has logged in from 127.0.0.1.
+17:13:02: Willy/William Robhe has began playing GameName.
+23:44:15: Willy has logged in from 127.0.0.1.
+23:44:17: Willy/William Robhe has began playing GameName.
+23:47:24: Willy has logged in from 127.0.0.1.
+23:47:26: Willy/William Robhe has began playing GameName.
+23:48:18: Willy has logged in from 127.0.0.1.
+23:48:19: Willy/William Robhe has began playing GameName.
+23:49:18: Willy has logged in from 127.0.0.1.
+23:49:19: Willy/William Robhe has began playing GameName.
+23:49:52: Willy has logged in from 127.0.0.1.
+23:49:54: Willy/William Robhe has began playing GameName.
+23:50:24: Willy has logged in from 127.0.0.1.
+23:50:25: Willy/William Robhe has began playing GameName.
+23:51:04: Willy has logged in from 127.0.0.1.
+23:51:06: Willy/William Robhe has began playing GameName.
+23:52:10: Willy has logged in from 127.0.0.1.
+23:52:11: Willy/William Robhe has began playing GameName.
+23:52:55: Willy has logged in from 127.0.0.1.
+23:52:57: Willy/William Robhe has began playing GameName.
+23:54:40: Willy has logged in from 127.0.0.1.
+23:54:41: Willy/William Robhe has began playing GameName.
+23:56:54: Willy has logged in from 127.0.0.1.
+23:56:56: Willy/William Robhe has began playing GameName.
+23:58:16: Willy has logged in from 127.0.0.1.
+23:58:17: Willy/William Robhe has began playing GameName.
+23:58:56: Willy has logged in from 127.0.0.1.
+23:58:57: Willy/William Robhe has began playing GameName.
+23:59:36: Willy has logged in from 127.0.0.1.
+23:59:37: Willy/William Robhe has began playing GameName.
+00:00:22: Willy has logged in from 127.0.0.1.
+00:00:23: Willy/William Robhe has began playing GameName.
+00:01:16: Willy has logged in from 127.0.0.1.
+00:01:18: Willy/William Robhe has began playing GameName.
+00:02:15: Willy has logged in from 127.0.0.1.
+00:02:17: Willy/William Robhe has began playing GameName.
+00:02:51: Willy has logged in from 127.0.0.1.
+00:02:52: Willy/William Robhe has began playing GameName.
+00:04:38: Willy has logged in from 127.0.0.1.
+00:04:39: Willy/William Robhe has began playing GameName.
+00:09:56: Willy has logged in from 127.0.0.1.
+00:09:58: Willy/William Robhe has began playing GameName.
+00:11:04: Willy has logged in from 127.0.0.1.
+00:11:05: Willy/William Robhe has began playing GameName.
+00:11:58: Willy has logged in from 127.0.0.1.
+00:12:00: Willy/William Robhe has began playing GameName.
+00:12:26: Willy has logged in from 127.0.0.1.
+00:12:27: Willy/William Robhe has began playing GameName.
+00:12:50: Willy has logged in from 127.0.0.1.
+00:12:52: Willy/William Robhe has began playing GameName.
+00:13:40: Willy has logged in from 127.0.0.1.
+00:13:43: Willy/William Robhe has began playing GameName.
+00:15:09: Willy has logged in from 127.0.0.1.
+00:15:10: Willy/William Robhe has began playing GameName.
+00:15:40: Willy has logged in from 127.0.0.1.
+00:15:42: Willy/William Robhe has began playing GameName.
+00:16:46: Willy has logged in from 127.0.0.1.
+00:16:47: Willy/William Robhe has began playing GameName.
+00:17:25: Willy has logged in from 127.0.0.1.
+00:17:27: Willy/William Robhe has began playing GameName.
+00:17:53: Willy has logged in from 127.0.0.1.
+00:17:55: Willy/William Robhe has began playing GameName.
+00:18:18: Willy has logged in from 127.0.0.1.
+00:18:20: Willy/William Robhe has began playing GameName.
+00:18:53: Willy has logged in from 127.0.0.1.
+00:18:54: Willy/William Robhe has began playing GameName.
+00:19:17: Willy has logged in from 127.0.0.1.
+00:19:19: Willy/William Robhe has began playing GameName.
+00:20:14: Willy has logged in from 127.0.0.1.
+00:20:16: Willy/William Robhe has began playing GameName.
+00:21:39: Willy has logged in from 127.0.0.1.
+00:21:42: Willy/William Robhe has began playing GameName.
+00:22:51: Willy has logged in from 127.0.0.1.
+00:22:53: Willy/William Robhe has began playing GameName.
+00:34:00: Willy has logged in from 127.0.0.1.
+00:34:02: Willy/William Robhe has began playing GameName.
+00:35:58: Willy has logged in from 127.0.0.1.
+00:36:00: Willy/William Robhe has began playing GameName.
+00:38:16: Willy has logged in from 127.0.0.1.
+00:38:17: Willy/William Robhe has began playing GameName.
+00:39:52: Willy has logged in from 127.0.0.1.
+00:39:54: Willy/William Robhe has began playing GameName.
+00:40:51: Willy has logged in from 127.0.0.1.
+00:40:52: Willy/William Robhe has began playing GameName.
+00:41:40: Willy has logged in from 127.0.0.1.
+00:41:41: Willy/William Robhe has began playing GameName.
+00:42:28: Willy has logged in from 127.0.0.1.
+00:42:29: Willy/William Robhe has began playing GameName.
+00:43:23: Willy has logged in from 127.0.0.1.
+00:43:24: Willy/William Robhe has began playing GameName.
+00:44:27: Willy has logged in from 127.0.0.1.
+00:44:29: Willy/William Robhe has began playing GameName.
+00:47:01: Willy has logged in from 127.0.0.1.
+00:47:03: Willy/William Robhe has began playing GameName.
+00:48:19: Willy has logged in from 127.0.0.1.
+00:48:20: Willy/William Robhe has began playing GameName.
+00:49:08: Willy has logged in from 127.0.0.1.
+00:49:09: Willy/William Robhe has began playing GameName.
+00:50:05: Willy has logged in from 127.0.0.1.
+00:50:06: Willy/William Robhe has began playing GameName.
+00:50:35: Willy has logged in from 127.0.0.1.
+00:50:37: Willy/William Robhe has began playing GameName.
+00:51:42: Willy has logged in from 127.0.0.1.
+00:51:43: Willy/William Robhe has began playing GameName.
+00:52:55: Willy has logged in from 127.0.0.1.
+00:52:57: Willy/William Robhe has began playing GameName.
+00:53:24: Willy has logged in from 127.0.0.1.
+00:53:26: Willy/William Robhe has began playing GameName.
+00:54:18: Willy has logged in from 127.0.0.1.
+00:54:20: Willy/William Robhe has began playing GameName.
+00:55:51: Willy has logged in from 127.0.0.1.
+00:55:53: Willy/William Robhe has began playing GameName.
+00:57:17: Willy has logged in from 127.0.0.1.
+00:57:18: Willy/William Robhe has began playing GameName.
+00:58:13: Willy has logged in from 127.0.0.1.
+00:58:14: Willy/William Robhe has began playing GameName.
+00:59:06: Willy has logged in from 127.0.0.1.
+00:59:08: Willy/William Robhe has began playing GameName.
+01:00:00: Willy has logged in from 127.0.0.1.
+01:00:01: Willy/William Robhe has began playing GameName.
+01:01:15: Willy has logged in from 127.0.0.1.
+01:01:16: Willy/William Robhe has began playing GameName.
+01:02:42: Willy has logged in from 127.0.0.1.
+01:02:44: Willy/William Robhe has began playing GameName.
+01:03:26: Willy has logged in from 127.0.0.1.
+01:03:26: Willy/William Robhe has began playing GameName.
+01:05:47: Willy has logged in from 127.0.0.1.
+01:05:48: Willy/William Robhe has began playing GameName.
+01:06:31: Willy has logged in from 127.0.0.1.
+01:06:32: Willy/William Robhe has began playing GameName.
+01:08:10: Willy has logged in from 127.0.0.1.
+01:08:11: Willy/William Robhe has began playing GameName.
+01:08:51: Willy has logged in from 127.0.0.1.
+01:08:52: Willy/William Robhe has began playing GameName.
+01:09:32: Willy has logged in from 127.0.0.1.
+01:09:33: Willy/William Robhe has began playing GameName.
+01:10:09: Willy has logged in from 127.0.0.1.
+01:10:10: Willy/William Robhe has began playing GameName.
+01:10:35: Willy has logged in from 127.0.0.1.
+01:10:36: Willy/William Robhe has began playing GameName.
+01:10:58: Willy has logged in from 127.0.0.1.
+01:11:00: Willy/William Robhe has began playing GameName.
+01:12:58: Willy has logged in from 127.0.0.1.
+01:13:00: Willy/William Robhe has began playing GameName.
+01:13:58: Willy has logged in from 127.0.0.1.
+01:13:59: Willy/William Robhe has began playing GameName.
+01:14:23: Willy has logged in from 127.0.0.1.
+01:14:25: Willy/William Robhe has began playing GameName.
+01:15:22: Willy has logged in from 127.0.0.1.
+01:15:24: Willy/William Robhe has began playing GameName.
+01:15:53: Willy has logged in from 127.0.0.1.
+01:15:54: Willy/William Robhe has began playing GameName.
+01:16:14: Willy has logged in from 127.0.0.1.
+01:16:16: Willy/William Robhe has began playing GameName.
+01:17:01: Willy has logged in from 127.0.0.1.
+01:17:03: Willy/William Robhe has began playing GameName.
+01:17:46: Willy has logged in from 127.0.0.1.
+01:17:48: Willy/William Robhe has began playing GameName.
+01:18:36: Willy has logged in from 127.0.0.1.
+01:18:38: Willy/William Robhe has began playing GameName.
+01:19:22: Willy has logged in from 127.0.0.1.
+01:19:24: Willy/William Robhe has began playing GameName.
+01:19:59: Willy has logged in from 127.0.0.1.
+01:19:59: Willy/William Robhe has began playing GameName.
+01:20:43: Willy has logged in from 127.0.0.1.
+01:20:44: Willy/William Robhe has began playing GameName.
+01:21:08: Willy has logged in from 127.0.0.1.
+01:21:10: Willy/William Robhe has began playing GameName.
+01:21:38: Willy has logged in from 127.0.0.1.
+01:21:39: Willy/William Robhe has began playing GameName.
+01:22:10: Willy has logged in from 127.0.0.1.
+01:22:12: Willy/William Robhe has began playing GameName.
+01:23:40: Willy has logged in from 127.0.0.1.
+01:23:41: Willy/William Robhe has began playing GameName.
+01:24:15: Willy has logged in from 127.0.0.1.
+01:24:17: Willy/William Robhe has began playing GameName.
+01:24:52: Willy has logged in from 127.0.0.1.
+01:24:53: Willy/William Robhe has began playing GameName.
+01:25:38: Willy has logged in from 127.0.0.1.
+01:25:40: Willy/William Robhe has began playing GameName.
+01:26:06: Willy has logged in from 127.0.0.1.
+01:26:07: Willy/William Robhe has began playing GameName.
+01:26:58: Willy has logged in from 127.0.0.1.
+01:27:00: Willy/William Robhe has began playing GameName.
+01:27:32: Willy has logged in from 127.0.0.1.
+01:27:33: Willy/William Robhe has began playing GameName.
+10:05:07: Willy has logged in from 127.0.0.1.
+10:07:41: Willy has logged in from 127.0.0.1.
+10:10:31: Willy has logged in from 127.0.0.1.
+10:21:20: Willy has logged in from 127.0.0.1.
+10:22:52: Willy has logged in from 127.0.0.1.
+10:24:24: Willy has logged in from 127.0.0.1.
+10:24:53: Willy has logged in from 127.0.0.1.
+10:33:03: Willy has logged in from 127.0.0.1.
+10:35:25: Willy has logged in from 127.0.0.1.
+10:39:56: Willy has logged in from 127.0.0.1.
+10:45:37: Willy has logged in from 127.0.0.1.
+10:56:15: Willy has logged in from 127.0.0.1.
+12:03:38: Willy has logged in from 127.0.0.1.
+12:06:05: Willy has logged in from 127.0.0.1.
+12:08:33: Willy has logged in from 127.0.0.1.
+12:09:06: Willy/William Robhe has began playing GameName.
+12:12:57: Willy has logged in from 127.0.0.1.
+12:12:59: Willy/William Robhe has began playing GameName.
+12:16:15: Willy has logged in from 127.0.0.1.
+12:16:22: Willy/William Robhe has began playing GameName.
+12:17:45: Willy has logged in from 127.0.0.1.
+12:17:47: Willy/William Robhe has began playing GameName.
+12:19:15: Willy has logged in from 127.0.0.1.
+12:19:16: Willy/William Robhe has began playing GameName.
+12:20:31: Willy has logged in from 127.0.0.1.
+12:20:34: Willy/William Robhe has began playing GameName.
+12:21:46: Willy has logged in from 127.0.0.1.
+12:21:50: Willy/William Robhe has began playing GameName.
+12:26:03: Willy has logged in from 127.0.0.1.
+12:26:05: Willy/William Robhe has began playing GameName.
+14:06:48: Willy has logged in from 127.0.0.1.
+14:06:57: Willy/William Robhe has began playing GameName.
+14:09:20: Willy has logged in from 127.0.0.1.
+14:09:22: Willy/William Robhe has began playing GameName.
+14:11:12: Willy has logged in from 127.0.0.1.
+14:11:13: Willy/William Robhe has began playing GameName.
+14:16:53: Willy has logged in from 127.0.0.1.
+14:17:50: Willy has logged in from 127.0.0.1.
+14:18:45: Willy has logged in from 127.0.0.1.
+14:19:14: Willy has logged in from 127.0.0.1.
+14:19:17: Willy/William Robhe has began playing GameName.
+14:21:18: Willy has logged in from 127.0.0.1.
+14:21:20: Willy/William Robhe has began playing GameName.
+14:23:13: Willy has logged in from 127.0.0.1.
+14:23:16: Willy/William Robhe has began playing GameName.
+14:32:39: Willy has logged in from 127.0.0.1.
+14:32:44: Willy/William Robhe has began playing GameName.
+14:56:47: Willy has logged in from 127.0.0.1.
+14:57:00: Willy/William Robhe has began playing GameName.
+14:57:54: Willy has logged in from 127.0.0.1.
+14:57:56: Willy/William Robhe has began playing GameName.
+15:01:57: Willy has logged in from 127.0.0.1.
+15:01:59: Willy/William Robhe has began playing GameName.
+15:16:56: Willy has logged in from 127.0.0.1.
+15:17:00: Willy/William Robhe has began playing GameName.
+15:25:10: Willy has logged in from 127.0.0.1.
+15:25:11: Willy/William Robhe has began playing GameName.
+15:26:09: Willy has logged in from 127.0.0.1.
+15:26:10: Willy/William Robhe has began playing GameName.
+15:28:04: Willy has logged in from 127.0.0.1.
+15:28:08: Willy/William Robhe has began playing GameName.
+15:29:42: Willy has logged in from 127.0.0.1.
+15:29:44: Willy/William Robhe has began playing GameName.
+15:32:12: Willy has logged in from 127.0.0.1.
+15:32:13: Willy/William Robhe has began playing GameName.
+15:37:02: Willy has logged in from 127.0.0.1.
+15:37:05: Willy/William Robhe has began playing GameName.
+15:41:06: Willy has logged in from 127.0.0.1.
+15:41:09: Willy/rrr has began playing GameName.
+15:42:19: Willy has logged in from 127.0.0.1.
+15:42:20: Willy/William Robhe has began playing GameName.
+15:43:35: Willy has logged in from 127.0.0.1.
+15:43:36: Willy/William Robhe has began playing GameName.
+15:44:21: Willy has logged in from 127.0.0.1.
+15:44:22: Willy/William Robhe has began playing GameName.
+15:44:57: Map #1: William Robhe : tt
+15:48:58: Willy has logged in from 127.0.0.1.
+15:48:59: Willy/William Robhe has began playing GameName.
+15:53:08: Willy has logged in from 127.0.0.1.
+15:53:10: Willy/William Robhe has began playing GameName.
+15:56:28: Willy has logged in from 127.0.0.1.
+15:56:32: Willy/William Robhe has began playing GameName.
+19:49:35: Willy has logged in from 127.0.0.1.
+19:49:41: Willy/William Robhe has began playing GameName.
+19:52:18: Willy has logged in from 127.0.0.1.
+19:52:20: Willy/William Robhe has began playing GameName.
+19:54:13: Willy has logged in from 127.0.0.1.
+19:54:14: Willy/William Robhe has began playing GameName.
+19:57:52: Willy has logged in from 127.0.0.1.
+19:57:54: Willy/William Robhe has began playing GameName.
+19:59:14: Willy has logged in from 127.0.0.1.
+19:59:16: Willy/William Robhe has began playing GameName.
+20:01:54: Willy has logged in from 127.0.0.1.
+20:01:56: Willy/William Robhe has began playing GameName.
+20:05:20: Willy has logged in from 127.0.0.1.
+20:05:23: Willy/William Robhe has began playing GameName.
+21:55:53: Willy has logged in from 127.0.0.1.
+21:55:55: Willy/William Robhe has began playing GameName.
+22:00:35: Willy has logged in from 127.0.0.1.
+22:00:38: Willy/William Robhe has began playing GameName.
+22:05:39: Willy has logged in from 127.0.0.1.
+22:05:40: Willy/William Robhe has began playing GameName.
+22:06:38: Willy has logged in from 127.0.0.1.
+22:06:39: Willy/William Robhe has began playing GameName.
+22:08:18: Willy has logged in from 127.0.0.1.
+22:08:20: Willy/William Robhe has began playing GameName.
+22:10:05: Willy has logged in from 127.0.0.1.
+22:10:06: Willy/William Robhe has began playing GameName.
+22:10:40: Willy has logged in from 127.0.0.1.
+22:10:42: Willy/William Robhe has began playing GameName.
+22:11:43: Willy has logged in from 127.0.0.1.
+22:11:44: Willy/William Robhe has began playing GameName.
+22:13:02: Willy has logged in from 127.0.0.1.
+22:13:03: Willy/William Robhe has began playing GameName.
+22:16:21: Willy has logged in from 127.0.0.1.
+22:16:23: Willy/William Robhe has began playing GameName.
+22:18:32: Willy has logged in from 127.0.0.1.
+22:18:33: Willy/William Robhe has began playing GameName.
+22:19:24: Willy has logged in from 127.0.0.1.
+22:19:25: Willy/William Robhe has began playing GameName.
+15:22:30: Willy has logged in from 127.0.0.1.
+15:28:35: Willy has logged in from 127.0.0.1.
+15:41:39: Willy has logged in from 127.0.0.1.
+15:41:50: Willy/William Robhe has began playing GameName.
+15:46:06: Willy has logged in from 127.0.0.1.
+15:47:12: Willy/William Robhe has began playing GameName.
+15:51:46: Willy has logged in from 127.0.0.1.
+15:52:59: Willy/William Robhe has began playing GameName.
+15:53:21: Willy has logged in from 127.0.0.1.
+15:54:49: /                     has began playing GameName.
+15:56:24: Willy has logged in from 127.0.0.1.
+15:56:42: Willy/William Robhe has began playing GameName.
+15:58:55: Willy has logged in from 127.0.0.1.
+15:58:57: Willy/William Robhe has began playing GameName.
+16:04:57: Willy has logged in from 127.0.0.1.
+16:05:18: Willy/William Robhe has began playing GameName.
+16:06:34: Willy has logged in from 127.0.0.1.
+16:06:36: Willy/William Robhe has began playing GameName.
+16:09:51: Willy has logged in from 127.0.0.1.
+16:09:54: Willy/William Robhe has began playing GameName.
+16:18:35: Willy has logged in from 127.0.0.1.
+16:18:37: Willy/William Robhe has began playing GameName.
+16:19:03: Map #1: William Robhe : uu
+16:23:01: Willy has logged in from 127.0.0.1.
+16:23:03: Willy/William Robhe has began playing GameName.
+16:23:37: Willy has logged in from 127.0.0.1.
+16:23:38: Willy/William Robhe has began playing GameName.
+17:06:23: Willy has logged in from 127.0.0.1.
+17:06:25: Willy/William Robhe has began playing GameName.
+17:09:18: Willy has logged in from 127.0.0.1.
+17:09:20: Willy/William Robhe has began playing GameName.
+17:12:38: Willy has logged in from 127.0.0.1.
+17:12:39: Willy/William Robhe has began playing GameName.
+17:13:00: Willy has logged in from 127.0.0.1.
+17:13:01: Willy/William Robhe has began playing GameName.
+17:15:07: Willy has logged in from 127.0.0.1.
+17:15:08: Willy/William Robhe has began playing GameName.
+17:15:41: Willy has logged in from 127.0.0.1.
+17:15:58: Willy/William Robhe has began playing GameName.
+17:17:23: Willy has logged in from 127.0.0.1.
+17:17:33: Willy/William Robhe has began playing GameName.
+17:23:00: Willy has logged in from 127.0.0.1.
+17:23:12: Willy/William Robhe has began playing GameName.
+17:24:20: Willy has logged in from 127.0.0.1.
+17:24:22: Willy/William Robhe has began playing GameName.
+17:27:52: Willy has logged in from 127.0.0.1.
+17:28:05: Willy/William Robhe has began playing GameName.
+17:49:02: Willy has logged in from 127.0.0.1.
+17:49:49: Willy/William Robhe has began playing GameName.
+17:50:39: Willy has logged in from 127.0.0.1.
+17:50:57: Willy/William Robhe has began playing GameName.
+17:52:03: Willy has logged in from 127.0.0.1.
+17:52:05: Willy/William Robhe has began playing GameName.
+17:56:53: Willy has logged in from 127.0.0.1.
+17:57:08: Willy/William Robhe has began playing GameName.
+18:00:56: Willy has logged in from 127.0.0.1.
+18:01:17: Willy/William Robhe has began playing GameName.
+18:06:50: Willy has logged in from 127.0.0.1.
+18:07:06: Willy/William Robhe has began playing GameName.
+18:14:28: Willy has logged in from 127.0.0.1.
+18:14:52: Willy/William Robhe has began playing GameName.
+18:15:51: Willy has logged in from 127.0.0.1.
+18:16:05: Willy/William Robhe has began playing GameName.
+18:16:41: Willy has logged in from 127.0.0.1.
+18:16:53: Willy/William Robhe has began playing GameName.
+18:17:12: Willy has logged in from 127.0.0.1.
+18:17:23: Willy/William Robhe has began playing GameName.
+18:18:00: Willy has logged in from 127.0.0.1.
+18:18:11: Willy/William Robhe has began playing GameName.
+18:18:26: Willy has logged in from 127.0.0.1.
+18:18:37: Willy/William Robhe has began playing GameName.
+18:18:58: Willy has logged in from 127.0.0.1.
+18:19:09: Willy/William Robhe has began playing GameName.
+18:28:18: Willy has logged in from 127.0.0.1.
+18:28:20: Willy/William Robhe has began playing GameName.
+18:45:20: Willy has logged in from 127.0.0.1.
+18:45:22: Willy/William Robhe has began playing GameName.
+18:48:29: Willy has logged in from 127.0.0.1.
+18:48:31: Willy/William Robhe has began playing GameName.
+18:50:23: Willy has logged in from 127.0.0.1.
+18:50:25: Willy/William Robhe has began playing GameName.
+18:52:09: Map #1: William Robhe : ii
+19:16:12: Willy has logged in from 127.0.0.1.
+19:16:14: Willy/William Robhe has began playing GameName.
+21:39:20: Willy has logged in from 127.0.0.1.
+21:39:23: Willy/William Robhe has began playing GameName.
+21:50:17: Willy has logged in from 127.0.0.1.
+21:50:20: Willy/William Robhe has began playing GameName.
+11:08:51: Willy has logged in from 127.0.0.1.
+11:08:53: Willy/William Robhe has began playing GameName.
+11:10:56: Willy has logged in from 127.0.0.1.
+11:11:06: Willy/William Robhe has began playing GameName.
+11:15:11: Willy has logged in from 127.0.0.1.
+11:15:13: Willy/William Robhe has began playing GameName.
+14:24:32: Willy has logged in from 127.0.0.1.
+14:24:34: Willy/William Robhe has began playing GameName.
+14:25:25: Willy has logged in from 127.0.0.1.
+14:25:26: Willy/William Robhe has began playing GameName.
+14:39:49: Willy has logged in from 127.0.0.1.
+14:39:53: Willy/William Robhe has began playing GameName.
+14:40:52: Willy has logged in from 127.0.0.1.
+14:40:54: Willy/William Robhe has began playing GameName.
+14:44:08: Willy has logged in from 127.0.0.1.
+14:44:10: Willy/William Robhe has began playing GameName.
+14:44:34: Willy has logged in from 127.0.0.1.
+14:44:36: Willy/William Robhe has began playing GameName.
+14:49:37: Willy has logged in from 127.0.0.1.
+14:49:39: Willy/William Robhe has began playing GameName.
+15:22:24: Willy has logged in from 127.0.0.1.
+15:22:29: Willy/William Robhe has began playing GameName.
+15:30:23: Willy has logged in from 127.0.0.1.
+15:30:24: Willy/William Robhe has began playing GameName.
+15:31:15: Willy has logged in from 127.0.0.1.
+15:31:17: Willy/William Robhe has began playing GameName.
+15:34:51: Willy has logged in from 127.0.0.1.
+15:34:54: Willy/William Robhe has began playing GameName.
+17:06:51: Willy has logged in from 127.0.0.1.
+17:06:56: Willy/William Robhe has began playing GameName.
+17:11:38: Willy has logged in from 127.0.0.1.
+17:11:41: Willy/William Robhe has began playing GameName.
+17:14:30: Willy has logged in from 127.0.0.1.
+17:14:55: Willy has logged in from 127.0.0.1.
+17:15:15: Willy has logged in from 127.0.0.1.
+17:15:18: Willy/William Robhe has began playing GameName.
+17:18:29: Willy has logged in from 127.0.0.1.
+17:19:02: Willy/William Robhe has began playing GameName.
+17:20:15: Willy has logged in from 127.0.0.1.
+17:20:17: Willy/William Robhe has began playing GameName.
+17:21:02: Willy has logged in from 127.0.0.1.
+17:21:04: Willy/William Robhe has began playing GameName.
+17:27:55: Willy has logged in from 127.0.0.1.
+17:28:02: Willy/William Robhe has began playing GameName.
+17:29:38: Willy has logged in from 127.0.0.1.
+17:29:41: Willy/William Robhe has began playing GameName.
+17:32:06: Willy has logged in from 127.0.0.1.
+17:32:08: Willy/William Robhe has began playing GameName.
+17:36:02: Willy has logged in from 127.0.0.1.
+17:36:38: Willy/William Robhe has began playing GameName.
+17:50:00: Willy has logged in from 127.0.0.1.
+17:50:03: Willy/William Robhe has began playing GameName.
+17:53:26: Willy has logged in from 127.0.0.1.
+17:53:28: Willy/William Robhe has began playing GameName.
+17:55:00: Willy has logged in from 127.0.0.1.
+17:55:02: Willy/William Robhe has began playing GameName.
+18:00:07: Willy has logged in from 127.0.0.1.
+18:00:09: Willy/William Robhe has began playing GameName.
+18:01:59: Willy has logged in from 127.0.0.1.
+18:02:01: Willy/William Robhe has began playing GameName.
+18:07:15: Willy has logged in from 127.0.0.1.
+18:07:17: Willy/William Robhe has began playing GameName.
+18:08:18: Willy has logged in from 127.0.0.1.
+18:08:19: Willy/William Robhe has began playing GameName.
+18:10:41: Willy has logged in from 127.0.0.1.
+18:10:43: Willy/William Robhe has began playing GameName.
+18:13:02: Willy has logged in from 127.0.0.1.
+18:13:03: Willy/William Robhe has began playing GameName.
+18:14:34: Willy has logged in from 127.0.0.1.
+18:14:36: Willy/William Robhe has began playing GameName.
+18:50:50: Willy has logged in from 127.0.0.1.
+18:50:53: Willy/William Robhe has began playing GameName.
+18:51:46: Willy/William Robhe has began playing GameName.
+18:52:09: Willy has logged in from 127.0.0.1.
+21:04:39: Willy has logged in from 127.0.0.1.
+21:04:47: Willy/William Robhe has began playing GameName.
+21:05:44: Willy has logged in from 127.0.0.1.
+21:05:45: Willy/William Robhe has began playing GameName.
+21:14:11: Willy has logged in from 127.0.0.1.
+21:14:16: Willy/William Robhe has began playing GameName.
+21:16:08: Willy has logged in from 127.0.0.1.
+21:16:13: Willy/William Robhe has began playing GameName.
+21:19:27: Willy has logged in from 127.0.0.1.
+21:19:39: Willy/William Robhe has began playing GameName.
+21:41:23: Willy has logged in from 127.0.0.1.
+21:45:22: Willy has logged in from 127.0.0.1.
+21:45:25: Willy/William Robhe has began playing GameName.
+22:12:00: Willy has logged in from 127.0.0.1.
+22:12:04: Willy/William Robhe has began playing GameName.
+22:15:50: Willy has logged in from 127.0.0.1.
+22:15:54: Willy/William Robhe has began playing GameName.
+22:22:13: Willy has logged in from 127.0.0.1.
+22:22:15: Willy/William Robhe has began playing GameName.
+22:26:31: Willy has logged in from 127.0.0.1.
+22:48:30: Willy has logged in from 127.0.0.1.
+22:49:40: Willy has logged in from 127.0.0.1.
+22:49:46: Willy/William Robhe has began playing GameName.
+23:36:39: Willy has logged in from 127.0.0.1.
+23:36:42: Willy/William Robhe has began playing GameName.
+00:09:40: Willy has logged in from 127.0.0.1.
+00:09:44: Willy/William Robhe has began playing GameName.
+00:10:40: Willy has logged in from 127.0.0.1.
+00:10:43: Willy/William Robhe has began playing GameName.
+00:23:39: Willy has logged in from 127.0.0.1.
+00:23:45: Willy/William Robhe has began playing GameName.
+00:25:24: Willy has logged in from 127.0.0.1.
+00:25:27: Willy/William Robhe has began playing GameName.
+00:26:15: Map #1: William Robhe : gg
+00:42:01: Willy has logged in from 127.0.0.1.
+00:42:53: Willy/William Robhe has began playing GameName.
+00:50:28: Willy has logged in from 127.0.0.1.
+00:50:42: Willy/William Robhe has began playing GameName.
+00:52:32: Willy has logged in from 127.0.0.1.
+00:52:45: Willy/William Robhe has began playing GameName.
+00:53:49: Willy has logged in from 127.0.0.1.
+00:53:50: Willy/William Robhe has began playing GameName.
+11:41:46: Willy has logged in from 127.0.0.1.
+11:41:49: Willy/William Robhe has began playing GameName.
+12:16:44: Willy has logged in from 127.0.0.1.
+12:16:49: Willy/William Robhe has began playing GameName.
+12:18:23: Willy has logged in from 127.0.0.1.
+12:18:26: Willy/William Robhe has began playing GameName.
+12:22:45: Willy has logged in from 127.0.0.1.
+12:22:47: Willy/William Robhe has began playing GameName.
+12:41:03: Willy has logged in from 127.0.0.1.
+12:41:08: Willy/William Robhe has began playing GameName.
+12:42:35: Willy has logged in from 127.0.0.1.
+12:42:36: Willy/William Robhe has began playing GameName.
+13:01:09: Willy has logged in from 127.0.0.1.
+13:01:13: Willy/William Robhe has began playing GameName.
+13:05:25: Willy has logged in from 127.0.0.1.
+13:05:27: Willy/William Robhe has began playing GameName.
+13:06:15: Willy has logged in from 127.0.0.1.
+13:06:17: Willy/William Robhe has began playing GameName.
+13:07:16: Willy has logged in from 127.0.0.1.
+13:07:19: Willy/William Robhe has began playing GameName.
+13:45:23: Willy has logged in from 127.0.0.1.
+13:49:22: Willy has logged in from 127.0.0.1.
+13:51:25: Willy has logged in from 127.0.0.1.
+13:53:10: Willy has logged in from 127.0.0.1.
+13:55:25: Willy has logged in from 127.0.0.1.
+13:58:34: Willy has logged in from 127.0.0.1.
+14:00:03: Willy has logged in from 127.0.0.1.
+14:00:52: Willy has logged in from 127.0.0.1.
+14:01:19: Willy has logged in from 127.0.0.1.
+14:01:52: Willy has logged in from 127.0.0.1.
+14:02:53: Willy has logged in from 127.0.0.1.
+14:04:12: Willy has logged in from 127.0.0.1.
+14:05:39: Willy has logged in from 127.0.0.1.
+14:07:34: Willy has logged in from 127.0.0.1.
+14:09:31: Willy has logged in from 127.0.0.1.
+14:11:00: Willy has logged in from 127.0.0.1.
+14:11:43: Willy has logged in from 127.0.0.1.
+14:13:13: Willy has logged in from 127.0.0.1.
+14:13:39: Willy has logged in from 127.0.0.1.
+14:40:34: Willy has logged in from 127.0.0.1.
+14:41:04: Willy has logged in from 127.0.0.1.
+14:41:53: Willy has logged in from 127.0.0.1.
+14:43:02: Willy has logged in from 127.0.0.1.
+14:54:16: Willy has logged in from 127.0.0.1.
+14:54:20: Willy/William Robhe has began playing GameName.
+15:00:10: Admin has logged in from 127.0.0.1.
+15:00:14: Admin/oo has began playing GameName.
+15:00:38: Admin has logged in from 127.0.0.1.
+15:00:40: Admin/oo has began playing GameName.
+15:03:38: Admin has logged in from 127.0.0.1.
+15:03:41: Admin/oo has began playing GameName.
+15:04:18: Admin has logged in from 127.0.0.1.
+15:04:33: Admin/oo has began playing GameName.
+15:06:56: Willy has logged in from 127.0.0.1.
+15:06:59: Willy/William Robhe has began playing GameName.
+15:08:44: Willy has logged in from 127.0.0.1.
+15:08:54: Willy/William Robhe has began playing GameName.
+16:39:54: Willy has logged in from 127.0.0.1.
+16:39:56: Willy/William Robhe has began playing GameName.
+16:42:26: Willy has logged in from 127.0.0.1.
+16:42:28: Willy/William Robhe has began playing GameName.
+16:42:55: Willy has logged in from 127.0.0.1.
+16:42:57: Willy/William Robhe has began playing GameName.
+23:22:58: Willy has logged in from 127.0.0.1.
+23:23:00: Willy/William Robhe has began playing GameName.
+23:23:56: Willy has logged in from 127.0.0.1.
+23:23:58: Willy/William Robhe has began playing GameName.
+23:27:19: Willy has logged in from 127.0.0.1.
+23:27:23: Willy/William Robhe has began playing GameName.
+23:29:10: Map #1: William Robhe : hh
+23:41:50: Willy has logged in from 127.0.0.1.
+23:41:53: Willy/William Robhe has began playing GameName.
+23:43:39: Willy has logged in from 127.0.0.1.
+23:43:40: Willy/William Robhe has began playing GameName.
+23:51:36: Willy has logged in from 127.0.0.1.
+23:51:38: Willy/William Robhe has began playing GameName.
+23:55:02: Willy has logged in from 127.0.0.1.
+23:55:03: Willy/William Robhe has began playing GameName.
+23:56:57: Willy has logged in from 127.0.0.1.
+23:56:58: Willy/William Robhe has began playing GameName.
+23:57:58: Willy has logged in from 127.0.0.1.
+23:57:59: Willy/William Robhe has began playing GameName.
+00:00:27: Willy has logged in from 127.0.0.1.
+00:00:28: Willy/William Robhe has began playing GameName.
+00:04:31: Willy has logged in from 127.0.0.1.
+00:04:33: Willy/William Robhe has began playing GameName.
+00:10:32: Willy has logged in from 127.0.0.1.
+00:10:34: Willy/William Robhe has began playing GameName.
+00:11:18: Willy has logged in from 127.0.0.1.
+00:11:20: Willy/William Robhe has began playing GameName.
+00:28:08: Willy has logged in from 127.0.0.1.
+00:28:21: Willy/William Robhe has began playing GameName.
+00:30:44: Willy has logged in from 127.0.0.1.
+00:30:46: Willy/William Robhe has began playing GameName.
+00:41:22: Willy has logged in from 127.0.0.1.
+00:41:37: Willy/William Robhe has began playing GameName.
+00:56:45: Willy has logged in from 127.0.0.1.
+00:56:59: Willy/William Robhe has began playing GameName.
+00:59:40: Map #1: William Robhe : ff
+01:04:19: Willy has logged in from 127.0.0.1.
+01:04:33: Willy/William Robhe has began playing GameName.
+01:18:30: Willy has logged in from 127.0.0.1.
+01:18:35: Willy/William Robhe has began playing GameName.
+01:25:03: Willy has logged in from 127.0.0.1.
+01:25:16: Willy/William Robhe has began playing GameName.
+01:55:25: Willy has logged in from 127.0.0.1.
+01:56:22: Willy/William Robhe has began playing GameName.
+01:57:10: Willy has logged in from 127.0.0.1.
+01:57:12: Willy/William Robhe has began playing GameName.
+11:20:07: Willy has logged in from 127.0.0.1.
+11:20:09: Willy/William Robhe has began playing GameName.
+11:29:52: Willy has logged in from 127.0.0.1.
+11:29:56: Willy/William Robhe has began playing GameName.
+11:41:16: Willy has logged in from 127.0.0.1.
+11:41:18: Willy/William Robhe has began playing GameName.
+11:43:12: Willy has logged in from 127.0.0.1.
+11:43:15: Willy/William Robhe has began playing GameName.
+12:42:21: Willy has logged in from 127.0.0.1.
+12:42:36: Willy/William Robhe has began playing GameName.
+13:17:58: Willy has logged in from 127.0.0.1.
+13:18:00: Willy/William Robhe has began playing GameName.
+13:30:10: Willy has logged in from 127.0.0.1.
+13:30:14: Willy/William Robhe has began playing GameName.
+15:01:08: Willy has logged in from 127.0.0.1.
+15:01:11: Willy/William Robhe has began playing GameName.
+15:03:54: Willy has logged in from 127.0.0.1.
+15:04:06: Willy/William Robhe has began playing GameName.
+15:08:27: Willy has logged in from 127.0.0.1.
+15:08:42: Willy/William Robhe has began playing GameName.
+16:09:35: Map #1: William Robhe : ss
+19:17:34: Willy has logged in from 127.0.0.1.
+19:17:37: Willy/William Robhe has began playing GameName.
+10:00:12: Willy has logged in from 127.0.0.1.
+10:00:17: Willy/William Robhe has began playing GameName.
+08:02:54: Willy has logged in from 127.0.0.1.
+08:02:57: Willy/William Robhe has began playing GameName.
+13:59:32: Account fff has been created.
+14:03:34: fff has logged in from 127.0.0.1.
+14:04:44: fff has logged in from 127.0.0.1.
+14:06:09: fff has logged in from 127.0.0.1.
+14:20:32: Willy has logged in from 127.0.0.1.
+14:20:55: Character ddd added to Willy's account.
+14:21:00: Willy/ddd has began playing GameName.
+18:18:27: Willy has logged in from 127.0.0.1.
+18:18:30: Willy/William Robhe has began playing GameName.
+22:25:58: Admin has logged in from 127.0.0.1.
+22:25:59: Admin/oo has began playing GameName.

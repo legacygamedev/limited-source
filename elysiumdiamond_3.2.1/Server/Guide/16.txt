@@ -1,0 +1,23 @@
+- f. Shop Editor
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: Requirements ::
+The shop editor is reached by typing "/editshop" or "/shopeditor" by a person with developer access or higher.
+
+
+:: The basics ::
+You make shops here. It's fairly simple.
+
+Heck, I'm getting tired of explaining things that you need to be pretty stupid to not get.
+
+The only thing worth explaining with the shop editor is the way it works with trades.
+
+
+:: Give/Get ::
+The tabs represent all the possible things you can sell. If you try to put some armor in the weapon tab, you'll get a message box telling you that it's the wrong slot.
+
+Okay, you need to first define what splot of the shop you want to put a trade in. Let's say we want to sell a spell in the first slot. We click on the "Spell" tab and click on the first blank slot that opens up. You choose the item you want to buyer to trade in the "Item Give" area and the number of those items you want them to trade. Most of the time, this is for currency and the value is just the number of coins. The "Item Get" is just the item they get in return for trading the first items.
+
+Click on "update" and your slot will be updated with your info. Just click on a slot again to edit it.

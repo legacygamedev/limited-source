@@ -1,0 +1,16 @@
+- b. Monitors
+Elysium Guide v 1.0
+Written by pingu
+
+
+:: The basics ::
+Monitors are just VIP users. They come in a lot of use when making a game because they still play the game while looking out for trouble makers. As for specific powers, they don't have many, but an abuse of power can still be disastrous. Don't give monitor access to just anyone, as they might just harass everybody. Also, monitors only have reason to exist when the game is publicly released, so don't make the decision to add some and then bore them to death.
+
+
+:: The commands ::
+
+/daynight - Changes the game time. If it was night, it is now day and the other way around.
+
+/weather (type) - You can specify the type as "none", "rain", "snow", "thunder". This changes the weather globally.
+
+/kick (player name) - Forces the player to quit the game. They can log back on right away, but this is a good way to warn somebody that a ban may be coming soon.

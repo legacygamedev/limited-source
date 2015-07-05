@@ -1,0 +1,67 @@
+
+storm On Map 1: nice :)  big    ohhh :)
+Atlantis On Map 1: Hehehe...
+Atlantis On Map 1: Cool, eh?
+Atlantis On Map 1: Lol...
+Atlantis On Map 1: For me you seem to walk to the map corner.
+Atlantis On Map 1: But there is still a bug in the blit player thing, so it doesn't look like it for you.
+storm On Map 1: i cant see you  or get to the coner 
+Atlantis On Map 1: It's a graphics bug.
+Atlantis On Map 1: That's what I am working on right now. ^^
+storm On Map 1: yahh 
+Atlantis On Map 1: But the size is okay, eh?
+storm On Map 1: okyes its perfick :)
+Atlantis On Map 1: Hehehe...
+storm On Map 1: out standing  
+Atlantis On Map 1: Hmm... Okay, more experiments, BRB.
+Atlantis On Map 1: Oh my god! xD
+Atlantis On Map 1: Looks better and worse at the same time...
+Atlantis On Map 1: brb
+storm On Map 1: will the chat bubbel is shot and you keep warping in and out 
+Atlantis On Map 1: Still a slight glitch but it seems I found a way to fix it.
+Atlantis On Map 1: Almost... ^^
+storm On Map 1: boy your one ugly looking dud :)
+Atlantis On Map 1: xD
+Atlantis On Map 1: Same for you... xDD
+Atlantis On Map 1: Okay, got one side fixed, 3 left...
+storm On Map 1: nahh i better looking  i chang my troll socks to day :)
+storm On Map 1: hmm you no what this mite have something to do with the scrolling screen
+Atlantis On Map 1: Meh...
+storm On Map 1: yahh its the scrooling screen that missing you up
+Atlantis On Map 1: Yep.
+Atlantis On Map 1: Did you notice the bars and names work?
+Atlantis On Map 1: I will use their coordinate code for that... xD
+Atlantis On Map 1: brb
+storm On Map 1: yes i did :)
+Atlantis On Map 1: wtf, I still can't walk to the corner...
+storm On Map 1: ther 2 of you now
+Atlantis On Map 1: 2 of me? oO
+Atlantis On Map 1: Do you see me twice or what? xD
+storm On Map 1: okyes 
+storm On Map 1: yes
+Atlantis On Map 1: OH MY GOD xDD
+storm On Map 1: ok ther only one of you now 
+Atlantis On Map 1: Oh, there's something wrong... xD
+storm On Map 1: thing do nut miss up in tell you get to this pont 
+Atlantis On Map 1: brb (again *sigh*)
+storm On Map 1: this is the spot it all gos to hell
+storm On Map 1: good hear
+Atlantis On Map 1: lol
+storm On Map 1: not good hear
+storm On Map 1: good spot 
+Atlantis On Map 1: I am slowly understanding why... xD
+storm On Map 1: bad spot 
+Atlantis On Map 1: Hmm...
+Atlantis On Map 1: Damn you, GSD! xD
+Atlantis On Map 1: He must have hardcoded the Elysium display size in some more places...
+storm On Map 1: he lift you a puzzel did he 
+Atlantis On Map 1: lol
+Atlantis On Map 1: Please don't put in any block attribs, okay?
+storm On Map 1: lettel bit of eye candy 
+storm On Map 1: ok not a problem  this is just a test :)
+Atlantis On Map 1: It helps keeping an orientation. xD
+Atlantis On Map 1: And it looks cool.
+storm On Map 1: yahh it sort of give you a better idea in whats going on 
+storm On Map 1: you no one side of the screen is a difrint rez 
+storm On Map 1: him this side is looking small  and onthe other side it gets realy big :)
+Atlantis On Map 1: Hehe...

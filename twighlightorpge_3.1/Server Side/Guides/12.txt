@@ -1,0 +1,122 @@
+Ver 3.0
+
+-Big Enemies 64x64 
+-Looping Midi's 
+-Fill Attribute Button 
+-Regeneration Option 
+-Tiles Width Two Times Bigger 
+-Items Sheet Way Bigger 
+-Fully Customizable GUI 
+-Setting The Max Of Everything 
+-Shop Attribute 
+-More Durability *1000* 
+-Indestructible Items 
+-NPC Chooser Has A Copy Previous NPC 
+-Special Block Attribute 
+-Map Grid 
+-Stretching Tile Has Been Fixed 
+-Better Music Selection (You can name your music whatever you want!) 
+-Item Requirements 
+-Speed Does Something (Its a requirement for items Razz) 
+-Set NPC Hp And EXP 
+-Player To Player Trade 
+-Memorize Spell (Hit Insert to use it, and double click the spell you want to memorize) 
+-2 Class Sprites (Male/Female) 
+-Arena Attribute 
+-Scripting (Like PW's Main.as) 
+-Player To Player Chat 
+-Turn In Place (Hit End to turn) 
+-Refresh Command (If you player is stuck type /refresh) 
+-Changeable Key Message 
+-Sound Effects 
+-Spell Have Sound Effect Chooser 
+-Seperate Spell Attributes 
+-Reload Script Button *reloads the scripts instead of restarting the server to reload* 
+-Specific Items (Choose Class Req And Access Req) 
+-Less Death Lose (You script whatever they drop) 
+-Sprite Attribute 
+-SFX Attribute 
+-Scrolling Maps Option 
+-Guild Members Cant Attack Each Other 
+-Screenshot Mode 
+-Check If The /*command* Is Valid 
+-Removed Annoying Chat Beep 
+-Signs 
+-Map Without Death Penalty 
+-Changeable Class Start Location 
+-Admin Call 
+-Door Attribute 
+-Class Change Attribute 
+-Notice Attribute 
+-When Attacked Auto Face 
+-Scripted Tiles 
+-Enemies Drop More Items 
+-More Item Abilites: 
+AddHP 
+AddMP 
+AddSP 
+AddStr 
+AddDef 
+AddMagi 
+AddSpeed 
+AddEXP Percent 
+-Flash Movie Events 
+-Player Prompt 
+-Scripting Commands 
+-Screen Shot Buttons 
+-Emoticons 
+-Map Report 
+-Item Descriptions 
+-Show Item Info In Shop 
+-Inventory Item Info 
+-Spell Range 
+-Fixed Big NPC fringe problem 
+-Better Party System (Customizable Party Sizes) 
+-Map Editor Displays Mouse X/Y 
+-Added some commands to main.txt to make it customizable. 
+-Built in script editor 
+-Some security built in. Its basic but it can stop lots of script kiddies 
+-Day/Night System - Lighting too! 
+-Weather System (Rain or Thunder or Snow) 
+-Spell Animation 
+-Area Effect Spells 
+-Multiple Tile Sheets 
+-On Level Up Display Graphic 
+-A Lot Better Shop System 
+-Multi-Tile Select In Map Editor 
+-Custom Transparent Color (Top Left Pixel Is Transparent Color) 
+-Weapon Attack Speed (In Milleseconds, Possible: 1 To 2000 Milleseconds) 
+-Server changed quite a bit... Well actually a lot 
+-Less Chat Clogging 
+-A Few Bugs Fixed 
+-/refresh Works A Lot Better 
+-Day/Night NPCs 
+-Animated Emoticons (12 frames long) 
+-Colors Of All Controls Are Customizable 
+-Changed The Sprite Changed Tile (Now If Its Free, It Wont Say Anything, It WIll Just Change Their Sprite Without Asking) 
+-Drop Currency Using An Input Box 
+-NPC Spawn Attribute 
+-up to 5 characters per account
+-Server Status Checker
+-Set Access in admin panel 
+-main menu music
+-Set your own game name
+-15 npc's per map
+-seprite panel for items and spells
+-Day/Night according to server time
+-Outboard Editors = Class, MOTD
+-Custom PK Levels
+-Admins can PK and get PKed
+-SP slows down when run or attack
+-Guild member online list
+
+
+Bugs Fixed List 
+--Arrow Range Uped To 30 
+--When Opening Item Editor The Correct Item Picture Shows 
+--Mapeditor Scroll Bars Fixed (They Only Scroll To The Height/Width Of The Tiles#.bmp) 
+--Everything Can Go Past 255 
+--Added OnDeath Sub In Main.txt (Right Now It Warps To Class Map/X/Y) 
+--Day/Night Without Scrolling Maps 
+--Server Player List 
+--Player To Player Trade
